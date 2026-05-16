@@ -1,0 +1,101 @@
+[
+  {
+    "id": "outcome_food_001",
+    "talent_id": "premium_food_director",
+    "client_id": "realistic_professional",
+    "category": "food",
+    "budget_type": "flexible",
+    "lead_time_days": 24,
+    "computed_quote": 20500,
+    "final_quote": 21200,
+    "status": "booked"
+  },
+  {
+    "id": "outcome_food_002",
+    "talent_id": "premium_food_director",
+    "client_id": "flexible_premium_buyer",
+    "category": "food",
+    "budget_type": "flexible",
+    "lead_time_days": 35,
+    "computed_quote": 21800,
+    "final_quote": 22400,
+    "status": "booked"
+  },
+  {
+    "id": "outcome_food_003",
+    "talent_id": "premium_food_director",
+    "client_id": "firm_budget_producer",
+    "category": "food",
+    "budget_type": "firm",
+    "lead_time_days": 21,
+    "computed_quote": 19800,
+    "final_quote": 19800,
+    "status": "failed_budget_gap"
+  },
+  {
+    "id": "outcome_beauty_001",
+    "talent_id": "emerging_beauty_photographer",
+    "client_id": "flexible_premium_buyer",
+    "category": "beauty",
+    "budget_type": "flexible",
+    "lead_time_days": 40,
+    "computed_quote": 8500,
+    "final_quote": 8900,
+    "status": "booked"
+  },
+  {
+    "id": "outcome_beauty_002",
+    "talent_id": "emerging_beauty_photographer",
+    "client_id": "high_trust_repeat_client",
+    "category": "beauty",
+    "budget_type": "flexible",
+    "lead_time_days": 68,
+    "computed_quote": 8700,
+    "final_quote": 9000,
+    "status": "booked"
+  },
+  {
+    "id": "outcome_prestige_001",
+    "talent_id": "luxury_fashion_editor",
+    "client_id": "prestige_overpromiser",
+    "category": "fashion",
+    "budget_type": "prestige",
+    "lead_time_days": 30,
+    "computed_quote": 12300,
+    "final_quote": 12300,
+    "status": "failed_budget_gap"
+  },
+  {
+    "id": "outcome_prestige_002",
+    "talent_id": "emerging_beauty_photographer",
+    "client_id": "prestige_overpromiser",
+    "category": "fashion",
+    "budget_type": "prestige",
+    "lead_time_days": 32,
+    "computed_quote": 7200,
+    "final_quote": 6900,
+    "status": "failed_budget_gap"
+  },
+  {
+    "id": "outcome_reprice_001",
+    "talent_id": "volatile_rep_managed_talent",
+    "client_id": "realistic_professional",
+    "category": "food",
+    "budget_type": "flexible",
+    "lead_time_days": 18,
+    "computed_quote": 11200,
+    "final_quote": 13600,
+    "status": "failed_repricing"
+  },
+  {
+    "id": "outcome_social_001",
+    "talent_id": "low_rate_fast_responder",
+    "client_id": "firm_budget_producer",
+    "category": "social",
+    "budget_type": "firm",
+    "lead_time_days": 12,
+    "computed_quote": 4200,
+    "final_quote": 4000,
+    "status": "booked"
+  }
+]

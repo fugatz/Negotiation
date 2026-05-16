@@ -32,6 +32,8 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - creative, practical, pricing, trust, and market-health scoring
 - small timing-horizon nudges
 - small talent and client behavior nudges
+- deterministic AI pricing rationale over computed nudges
+- shadow-mode outcome-calibrated discretion deltas
 - curated recommendation lanes
 - simple deterministic negotiation outcomes
 - scenario traces for manual review

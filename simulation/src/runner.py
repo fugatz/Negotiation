@@ -4,9 +4,11 @@ import argparse
 import json
 from pathlib import Path
 
+from .ai_rationale import build_pricing_rationale
 from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_behavior_nudge
 from .common import FIXTURE_DIR
 from .negotiation import simulate_negotiation
+from .outcome_calibration import propose_shadow_discretion
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .scoring import score_talent
 from .timing import timing_nudge
@@ -17,11 +19,12 @@ def load_json(path: Path) -> list[dict]:
         return json.load(handle)
 
 
-def load_fixtures() -> tuple[list[dict], list[dict], list[dict]]:
+def load_fixtures() -> tuple[list[dict], list[dict], list[dict], list[dict]]:
     return (
         load_json(FIXTURE_DIR / "talent.json"),
         load_json(FIXTURE_DIR / "clients.json"),
         load_json(FIXTURE_DIR / "projects.json"),
+        load_json(FIXTURE_DIR / "outcomes.json"),
     )
 
 
@@ -54,10 +57,11 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
             "talentReason": rec["talent_behavior_nudge"]["reason"],
             "clientReason": rec["client_behavior_nudge"]["reason"],
         },
+        "aiPricingRationale": rec["ai_pricing_rationale"],
     }
 
 
-def simulate_project(project: dict, talent: list[dict], clients_by_id: dict) -> dict:
+def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, outcomes: list[dict]) -> dict:
     client = clients_by_id[project["client_id"]]
     talent_by_id = {item["id"]: item for item in talent}
     timing = timing_nudge(project, client)
@@ -73,6 +77,15 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict) -> 
             timing,
             talent_behavior_nudge(person),
             client_behavior_nudge(client),
+        )
+        discretion = propose_shadow_discretion(project, person, adjusted, outcomes)
+        adjusted["ai_discretion"] = discretion
+        adjusted["ai_pricing_rationale"] = build_pricing_rationale(
+            project,
+            client,
+            person,
+            adjusted,
+            discretion,
         )
         if adjusted["eligible"]:
             recommendations.append(adjusted)
@@ -137,15 +150,32 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     warnings = [warning for trace in traces for warning in trace["warnings"]]
     behavior_changed = 0
     timing_changed = 0
+    discretion_deltas: list[float] = []
+    rationale_count = 0
+    leakage_count = 0
+    human_review_count = 0
 
     for trace in traces:
-        for rec in trace["recommendedSlate"]:
+        traced_recommendations = trace["recommendedSlate"] + trace.get("stressShortlist", [])
+        for rec in traced_recommendations:
             if rec["behavior"]["combinedBehaviorRateDelta"] != 0:
                 behavior_changed += 1
             if rec["timing"]["rateDelta"] != 0 or rec["timing"]["confidenceDelta"] != 0:
                 timing_changed += 1
+            rationale = rec["aiPricingRationale"]
+            rationale_count += 1
+            discretion_deltas.append(abs(float(rationale["discretionDelta"])))
+            if rationale["leakageWarnings"]:
+                leakage_count += 1
+            if rationale["humanReviewRecommended"]:
+                human_review_count += 1
 
-    total_recommendations = sum(len(trace["recommendedSlate"]) for trace in traces) or 1
+    total_recommendations = sum(
+        len(trace["recommendedSlate"]) + len(trace.get("stressShortlist", []))
+        for trace in traces
+    ) or 1
+    max_discretion = max(discretion_deltas) if discretion_deltas else 0.0
+    avg_discretion = sum(discretion_deltas) / len(discretion_deltas) if discretion_deltas else 0.0
 
     return {
         "scenarioCount": len(traces),
@@ -154,12 +184,17 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "longHorizonScenarioCount": len(long_horizon),
         "behaviorNudgeShareOfRecommendations": round(behavior_changed / total_recommendations, 3),
         "timingNudgeShareOfRecommendations": round(timing_changed / total_recommendations, 3),
+        "aiRationaleCount": rationale_count,
+        "aiRationaleLeakageCount": leakage_count,
+        "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
+        "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
+        "maxAbsoluteShadowDiscretionDelta": round(max_discretion, 4),
         "warningCounts": {warning: warnings.count(warning) for warning in sorted(set(warnings))},
     }
 
 
 def run(project_id: str | None = None) -> dict:
-    talent, clients, projects = load_fixtures()
+    talent, clients, projects, outcomes = load_fixtures()
     clients_by_id = {client["id"]: client for client in clients}
 
     selected = projects
@@ -168,7 +203,7 @@ def run(project_id: str | None = None) -> dict:
         if not selected:
             raise SystemExit(f"Unknown project id: {project_id}")
 
-    traces = [simulate_project(project, talent, clients_by_id) for project in selected]
+    traces = [simulate_project(project, talent, clients_by_id, outcomes) for project in selected]
     return {
         "policy": "phase-2-initial-dry-run",
         "traces": traces,

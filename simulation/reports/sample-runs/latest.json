@@ -32,6 +32,20 @@
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -54,6 +68,20 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -76,6 +104,22 @@
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk.",
+              "The premium posture is defensible because creative fit is unusually strong for this category.",
+              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+            ],
+            "visibility": "human-review",
+            "discretionDelta": 0.01,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+            "humanReviewRecommended": true,
+            "leakageWarnings": []
           }
         },
         {
@@ -98,6 +142,20 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -162,6 +220,21 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk.",
+              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+            ],
+            "visibility": "human-review",
+            "discretionDelta": 0.01,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+            "humanReviewRecommended": true,
+            "leakageWarnings": []
           }
         },
         {
@@ -184,6 +257,20 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -206,6 +293,20 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -228,6 +329,20 @@
             "combinedBehaviorRateDelta": 0.01,
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -307,6 +422,22 @@
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+            "reasons": [
+              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -329,6 +460,22 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+            "reasons": [
+              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -351,6 +498,22 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+            "reasons": [
+              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -373,6 +536,22 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+            "reasons": [
+              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -452,6 +631,21 @@
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+              "The premium posture is defensible because creative fit is unusually strong for this category."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -474,6 +668,20 @@
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -496,6 +704,20 @@
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -518,6 +740,20 @@
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -582,6 +818,21 @@
             "combinedBehaviorRateDelta": 0.06,
             "talentReason": "high quote stability and reliability",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -604,6 +855,23 @@
             "combinedBehaviorRateDelta": 0.06,
             "talentReason": "high quote stability and reliability",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+              "The premium posture is defensible because creative fit is unusually strong for this category.",
+              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+            ],
+            "visibility": "human-review",
+            "discretionDelta": 0.01,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+            "humanReviewRecommended": true,
+            "leakageWarnings": []
           }
         },
         {
@@ -626,6 +894,21 @@
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -648,6 +931,21 @@
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -716,6 +1014,22 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk.",
+              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+            ],
+            "visibility": "human-review",
+            "discretionDelta": 0.01,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+            "humanReviewRecommended": true,
+            "leakageWarnings": []
           }
         },
         {
@@ -738,6 +1052,21 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -760,6 +1089,21 @@
             "combinedBehaviorRateDelta": 0.01,
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -782,6 +1126,21 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk"
+          },
+          "aiPricingRationale": {
+            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+            "reasons": [
+              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -2.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -850,6 +1209,20 @@
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -872,6 +1245,22 @@
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk.",
+              "The premium posture is defensible because creative fit is unusually strong for this category.",
+              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+            ],
+            "visibility": "human-review",
+            "discretionDelta": 0.01,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+            "humanReviewRecommended": true,
+            "leakageWarnings": []
           }
         },
         {
@@ -894,6 +1283,20 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         },
         {
@@ -916,6 +1319,20 @@
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+            "reasons": [
+              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk."
+            ],
+            "visibility": "client-facing",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -940,6 +1357,21 @@
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "repeated unexplained late repricing; reliability premium withheld",
             "clientReason": "solid client reliability"
+          },
+          "aiPricingRationale": {
+            "summary": "Talent-side negotiation history reduces confidence and keeps the rationale internal.",
+            "reasons": [
+              "Talent-side negotiation history reduces confidence and keeps the rationale internal.",
+              "A -1.0% client reliability adjustment reflects lower transaction risk.",
+              "The premium posture is defensible because creative fit is unusually strong for this category."
+            ],
+            "visibility": "internal-only",
+            "discretionDelta": 0.0,
+            "discretionMode": "shadow",
+            "discretionAppliesToLiveQuote": false,
+            "discretionEvidence": "No sufficient similar outcome evidence yet.",
+            "humanReviewRecommended": false,
+            "leakageWarnings": []
           }
         }
       ],
@@ -992,8 +1424,13 @@
     "bookedCount": 5,
     "bookingRate": 0.714,
     "longHorizonScenarioCount": 2,
-    "behaviorNudgeShareOfRecommendations": 0.75,
-    "timingNudgeShareOfRecommendations": 0.429,
+    "behaviorNudgeShareOfRecommendations": 0.759,
+    "timingNudgeShareOfRecommendations": 0.414,
+    "aiRationaleCount": 29,
+    "aiRationaleLeakageCount": 0,
+    "aiHumanReviewShareOfRecommendations": 0.172,
+    "averageAbsoluteShadowDiscretionDelta": 0.0017,
+    "maxAbsoluteShadowDiscretionDelta": 0.01,
     "warningCounts": {
       "final quote exceeded client capacity": 3,
       "long-horizon commitment uncertainty": 2,
