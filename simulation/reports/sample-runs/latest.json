@@ -1,5 +1,6 @@
 {
-  "policy": "phase-2-initial-dry-run",
+  "policy": "phase-2-admin-config-v1",
+  "policyConfigPath": "simulation/config/policy.json",
   "traces": [
     {
       "project": "Firm-Budget Food Social Campaign",

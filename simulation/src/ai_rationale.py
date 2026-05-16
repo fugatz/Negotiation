@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from .timing import classify_timing
+
 
 PRIVATE_SIGNAL_TERMS = (
     "working floor",
@@ -167,7 +169,7 @@ def _build_brand_facing_rationale(project: dict, talent: dict, rec: dict) -> dic
 
     if rec["practical_fit"] >= 0.84:
         reasons.append("Production fit is strong across availability, scope, and schedule needs.")
-    elif project.get("lead_time_days", 999) < 21:
+    elif classify_timing(int(project.get("lead_time_days", 999))) in {"last_minute", "extreme_last_minute"}:
         reasons.append("The profile remains workable for the compressed production window.")
 
     if rec["trust_score"] >= 0.82:

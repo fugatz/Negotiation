@@ -29,3 +29,11 @@ Run the standalone dry-run simulation:
 ```bash
 python3 -m simulation.src.runner
 ```
+
+Run with validation:
+
+```bash
+python3 -m simulation.src.runner --fail-on-validation
+```
+
+Admin-tweakable dry-run settings live in `simulation/config/policy.json`.

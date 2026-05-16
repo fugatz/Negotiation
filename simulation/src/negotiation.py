@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from .common import money
+from .timing import classify_timing
 
 
 def client_capacity(project: dict) -> int:
@@ -39,7 +40,7 @@ def simulate_negotiation(project: dict, talent: dict, rec: dict) -> dict:
     else:
         events.append("quote stayed inside expected band")
 
-    if project["lead_time_days"] >= 90 and project["project_commitment_confidence"] < 0.8:
+    if classify_timing(int(project["lead_time_days"])) == "long_horizon" and project["project_commitment_confidence"] < 0.8:
         return {
             "talent_id": talent["id"],
             "status": "pending_hold",

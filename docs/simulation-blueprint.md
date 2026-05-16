@@ -8,6 +8,11 @@ team can observe incentives, exploitability, and equilibrium risks in a safe env
 
 This is a standalone research tool, not production code.
 
+Admin-tweakable policy settings should live in an explicit versioned config file rather than being
+buried as code constants. The config should cover timing thresholds, behavior caps, AI discretion
+caps, market-health review flags, ranking penalties, launch approval settings, and later any admin UI
+knobs used in dry runs.
+
 ## Simulation Questions
 
 The first simulation should answer:
@@ -648,6 +653,8 @@ When ready, keep the first simulation small and inspectable:
 
 ```text
 simulation/
+  config/
+    policy.json
   README.md
   fixtures/
     talent.json

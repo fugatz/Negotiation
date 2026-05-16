@@ -11,6 +11,7 @@ from .common import FIXTURE_DIR
 from .negotiation import simulate_negotiation
 from .outcome_calibration import propose_shadow_discretion
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
+from .policy_config import POLICY_CONFIG_PATH, policy_version
 from .scoring import score_talent
 from .timing import timing_nudge
 from .validation import validate_report
@@ -248,7 +249,8 @@ def run(project_id: str | None = None) -> dict:
 
     traces = [simulate_project(project, talent, clients_by_id, outcomes) for project in selected]
     report = {
-        "policy": "phase-2-initial-dry-run",
+        "policy": policy_version(),
+        "policyConfigPath": str(POLICY_CONFIG_PATH.relative_to(FIXTURE_DIR.parent.parent)),
         "traces": traces,
         "metrics": aggregate_metrics(traces),
     }

@@ -6,6 +6,10 @@ policies before any production integration.
 The simulation is intentionally small and inspectable. It uses synthetic fixtures and deterministic
 rules so policy changes are easy to understand.
 
+Admin-tweakable dry-run settings live in `simulation/config/policy.json`. The config currently owns
+timing thresholds, behavior caps, AI discretion caps, market-health review flags, ranking penalties,
+and launch approval settings.
+
 ## Run
 
 From the repository root:

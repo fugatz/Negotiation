@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from .behavior import cap_behavior_rate_delta
 from .common import clamp, money, weighted_average
+from .policy_config import load_policy_config
 
 
 def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict, client_behavior: dict) -> dict:
@@ -37,6 +38,7 @@ def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict,
 
 
 def overall_score(rec: dict) -> float:
+    penalties = load_policy_config()["market_health"]["ranking_penalties"]
     score = weighted_average(
         [
             (float(rec["creative_fit"]), 0.3),
@@ -47,10 +49,8 @@ def overall_score(rec: dict) -> float:
             (float(rec["acceptance_probability"]), 0.1),
         ]
     )
-    if "race_to_bottom_risk" in rec.get("market_health_flags", []):
-        score -= 0.12
-    if "price_led_recommendation_risk" in rec.get("market_health_flags", []):
-        score -= 0.06
+    for flag in rec.get("market_health_flags", []):
+        score -= float(penalties.get(flag, 0.0))
     return clamp(score)
 
 

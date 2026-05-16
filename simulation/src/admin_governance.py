@@ -1,22 +1,14 @@
 from __future__ import annotations
 
+from .policy_config import load_policy_config
 
-LAUNCH_ADMIN_SETTING_TWEAK_CAP = 0.02
 
-TWEAKABLE_ADMIN_SETTINGS = (
-    "timing thresholds and caps",
-    "behavior nudge caps",
-    "AI discretion mode and cap",
-    "market-health override thresholds",
-    "brand-facing rationale templates",
-    "quote lock exception categories",
-    "long-horizon hold policy settings",
-)
+def _admin_config() -> dict:
+    return load_policy_config()["admin_governance"]
 
-MARKET_HEALTH_REVIEW_FLAGS = {
-    "price_led_recommendation_risk",
-    "race_to_bottom_risk",
-}
+
+def _market_health_config() -> dict:
+    return load_policy_config()["market_health"]
 
 
 def build_admin_governance(rec: dict) -> dict:
@@ -24,6 +16,8 @@ def build_admin_governance(rec: dict) -> dict:
     admin_rationale = rationales["adminPricingRationale"]
     brand_rationale = rationales["brandFacingRationale"]
     discretion = rec["ai_discretion"]
+    admin_config = _admin_config()
+    market_health_config = _market_health_config()
 
     review_reasons = ["Launch mode requires admin approval before client presentation."]
     exception_triggers: list[str] = []
@@ -35,7 +29,10 @@ def build_admin_governance(rec: dict) -> dict:
     if float(discretion["delta"]) != 0.0:
         exception_triggers.append("nonzero AI discretion proposal")
     market_health_flags = set(rec.get("market_health_flags", []))
-    if market_health_flags & MARKET_HEALTH_REVIEW_FLAGS or float(rec["market_health_score"]) < 0.6:
+    review_flags = set(market_health_config["review_flags"])
+    if market_health_flags & review_flags or float(rec["market_health_score"]) < float(
+        market_health_config["review_score_threshold"]
+    ):
         exception_triggers.append("market-health guardrail")
     if rec["timing_nudge"]["horizon"] == "long_horizon" and rec["timing_nudge"]["platform_trust_tier"] in {
         "new_or_unproven",
@@ -46,13 +43,13 @@ def build_admin_governance(rec: dict) -> dict:
         exception_triggers.append("outside stated budget")
 
     return {
-        "mode": "launch_admin_approval",
-        "approvalRequired": True,
-        "autonomyTarget": "eventual autonomous execution with exception-based admin review",
-        "allowedAdminSettings": list(TWEAKABLE_ADMIN_SETTINGS),
-        "maxSmallSettingTweak": LAUNCH_ADMIN_SETTING_TWEAK_CAP,
+        "mode": admin_config["mode"],
+        "approvalRequired": bool(admin_config["approval_required"]),
+        "autonomyTarget": admin_config["autonomy_target"],
+        "allowedAdminSettings": list(admin_config["allowed_settings"]),
+        "maxSmallSettingTweak": float(admin_config["small_setting_tweak_cap"]),
         "reviewReasons": review_reasons,
         "exceptionTriggers": sorted(set(exception_triggers)),
         "matureAutonomyCandidate": not exception_triggers,
-        "auditRequired": True,
+        "auditRequired": bool(admin_config["audit_required"]),
     }

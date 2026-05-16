@@ -1,12 +1,19 @@
 from __future__ import annotations
 
+from .policy_config import load_policy_config
+
+
+def _timing_config() -> dict:
+    return load_policy_config()["timing"]
+
 
 def classify_timing(lead_time_days: int) -> str:
-    if lead_time_days < 14:
+    config = _timing_config()
+    if lead_time_days < int(config["extreme_last_minute_days"]):
         return "extreme_last_minute"
-    if lead_time_days < 21:
+    if lead_time_days < int(config["last_minute_days"]):
         return "last_minute"
-    if lead_time_days >= 90:
+    if lead_time_days >= int(config["long_horizon_days"]):
         return "long_horizon"
     return "normal"
 
@@ -14,12 +21,20 @@ def classify_timing(lead_time_days: int) -> str:
 def platform_trust_tier(client: dict) -> str:
     completed_projects = int(client.get("platform_completed_projects", 0))
     trust_score = float(client.get("platform_trust_score", 0.0))
+    tiers = _timing_config()["platform_trust_tiers"]
 
-    if completed_projects >= 4 and trust_score >= 0.85:
+    high_repeat = tiers["high_repeat"]
+    if completed_projects >= int(high_repeat["min_completed_projects"]) and trust_score >= float(
+        high_repeat["min_trust_score"]
+    ):
         return "high_repeat"
-    if completed_projects >= 2 and trust_score >= 0.7:
+    known = tiers["known"]
+    if completed_projects >= int(known["min_completed_projects"]) and trust_score >= float(
+        known["min_trust_score"]
+    ):
         return "known"
-    if completed_projects >= 1:
+    limited_history = tiers["limited_history"]
+    if completed_projects >= int(limited_history["min_completed_projects"]):
         return "limited_history"
     return "new_or_unproven"
 
@@ -28,58 +43,47 @@ def timing_nudge(project: dict, client: dict) -> dict:
     lead_time = int(project["lead_time_days"])
     horizon = classify_timing(lead_time)
     trust_tier = platform_trust_tier(client)
+    config = _timing_config()
 
     if horizon == "extreme_last_minute":
+        nudge = config["extreme_last_minute"]
         return {
             "horizon": horizon,
             "platform_trust_tier": trust_tier,
-            "rate_delta": 0.08,
-            "confidence_delta": -0.02,
-            "hold_policy": "confirm immediately before presenting",
-            "reason": "under 14 days; extreme platform compression premium",
+            "rate_delta": float(nudge["rate_delta"]),
+            "confidence_delta": float(nudge["confidence_delta"]),
+            "hold_policy": nudge["hold_policy"],
+            "reason": nudge["reason"],
         }
 
     if horizon == "last_minute":
+        nudge = config["last_minute"]
         return {
             "horizon": horizon,
             "platform_trust_tier": trust_tier,
-            "rate_delta": 0.04,
-            "confidence_delta": 0.0,
-            "hold_policy": "short confirmation window",
-            "reason": "under 21 days; platform last-minute urgency premium",
+            "rate_delta": float(nudge["rate_delta"]),
+            "confidence_delta": float(nudge["confidence_delta"]),
+            "hold_policy": nudge["hold_policy"],
+            "reason": nudge["reason"],
         }
 
     if horizon == "long_horizon":
-        if trust_tier == "high_repeat":
-            penalty = -0.01
-            hold_policy = "soft hold with scheduled confirmation checkpoint"
-            reason = "90+ days out, but high platform trust makes the project materially more credible"
-        elif trust_tier == "known":
-            penalty = -0.04
-            hold_policy = "confirmation checkpoint before firm hold"
-            reason = "90+ days out with some platform history; seriousness confidence modestly reduced"
-        elif trust_tier == "limited_history":
-            penalty = -0.06
-            hold_policy = "short hold only after confirmation milestone"
-            reason = "90+ days out with limited platform history; seriousness confidence reduced"
-        else:
-            penalty = -0.09
-            hold_policy = "no firm hold without stronger confirmation"
-            reason = "90+ days out with no platform history; likely exploratory until proven otherwise"
+        nudge = config["platform_trust_tiers"][trust_tier]
         return {
             "horizon": horizon,
             "platform_trust_tier": trust_tier,
             "rate_delta": 0.0,
-            "confidence_delta": penalty,
-            "hold_policy": hold_policy,
-            "reason": reason,
+            "confidence_delta": float(nudge["long_horizon_confidence_delta"]),
+            "hold_policy": nudge["hold_policy"],
+            "reason": nudge["reason"],
         }
 
+    nudge = config["normal"]
     return {
         "horizon": horizon,
         "platform_trust_tier": trust_tier,
-        "rate_delta": 0.0,
-        "confidence_delta": 0.0,
-        "hold_policy": "standard",
-        "reason": "normal lead time",
+        "rate_delta": float(nudge["rate_delta"]),
+        "confidence_delta": float(nudge["confidence_delta"]),
+        "hold_policy": nudge["hold_policy"],
+        "reason": nudge["reason"],
     }

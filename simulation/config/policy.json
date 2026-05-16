@@ -1,0 +1,92 @@
+{
+  "version": "phase-2-admin-config-v1",
+  "admin_governance": {
+    "mode": "launch_admin_approval",
+    "approval_required": true,
+    "audit_required": true,
+    "autonomy_target": "eventual autonomous execution with exception-based admin review",
+    "small_setting_tweak_cap": 0.02,
+    "allowed_settings": [
+      "timing thresholds and caps",
+      "behavior nudge caps",
+      "AI discretion mode and cap",
+      "market-health override thresholds",
+      "brand-facing rationale templates",
+      "quote lock exception categories",
+      "long-horizon hold policy settings"
+    ]
+  },
+  "timing": {
+    "extreme_last_minute_days": 14,
+    "last_minute_days": 21,
+    "long_horizon_days": 90,
+    "extreme_last_minute": {
+      "rate_delta": 0.08,
+      "confidence_delta": -0.02,
+      "hold_policy": "confirm immediately before presenting",
+      "reason": "under 14 days; extreme platform compression premium"
+    },
+    "last_minute": {
+      "rate_delta": 0.04,
+      "confidence_delta": 0.0,
+      "hold_policy": "short confirmation window",
+      "reason": "under 21 days; platform last-minute urgency premium"
+    },
+    "normal": {
+      "rate_delta": 0.0,
+      "confidence_delta": 0.0,
+      "hold_policy": "standard",
+      "reason": "normal lead time"
+    },
+    "platform_trust_tiers": {
+      "high_repeat": {
+        "min_completed_projects": 4,
+        "min_trust_score": 0.85,
+        "long_horizon_confidence_delta": -0.01,
+        "hold_policy": "soft hold with scheduled confirmation checkpoint",
+        "reason": "90+ days out, but high platform trust makes the project materially more credible"
+      },
+      "known": {
+        "min_completed_projects": 2,
+        "min_trust_score": 0.7,
+        "long_horizon_confidence_delta": -0.04,
+        "hold_policy": "confirmation checkpoint before firm hold",
+        "reason": "90+ days out with some platform history; seriousness confidence modestly reduced"
+      },
+      "limited_history": {
+        "min_completed_projects": 1,
+        "min_trust_score": 0.0,
+        "long_horizon_confidence_delta": -0.06,
+        "hold_policy": "short hold only after confirmation milestone",
+        "reason": "90+ days out with limited platform history; seriousness confidence reduced"
+      },
+      "new_or_unproven": {
+        "min_completed_projects": 0,
+        "min_trust_score": 0.0,
+        "long_horizon_confidence_delta": -0.09,
+        "hold_policy": "no firm hold without stronger confirmation",
+        "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
+      }
+    }
+  },
+  "behavior": {
+    "rate_cap": 0.05
+  },
+  "ai_discretion": {
+    "shadow_cap": 0.01,
+    "launch_live_cap": 0.0,
+    "admin_approved_live_cap": 0.01,
+    "mature_autonomous_cap": 0.03
+  },
+  "market_health": {
+    "review_score_threshold": 0.6,
+    "review_flags": [
+      "price_led_recommendation_risk",
+      "race_to_bottom_risk"
+    ],
+    "ranking_penalties": {
+      "race_to_bottom_risk": 0.12,
+      "price_led_recommendation_risk": 0.06
+    }
+  }
+}

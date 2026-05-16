@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from .common import clamp, weighted_average
+from .policy_config import load_policy_config
 
 
-BEHAVIOR_RATE_CAP = 0.05
+def behavior_rate_cap() -> float:
+    return float(load_policy_config()["behavior"]["rate_cap"])
 
 
 def _upstream_talent_behavior_score(talent: dict) -> float | None:
@@ -129,4 +131,5 @@ def client_behavior_nudge(client: dict) -> dict:
 
 
 def cap_behavior_rate_delta(talent_delta: float, client_delta: float) -> float:
-    return clamp(talent_delta + client_delta, -BEHAVIOR_RATE_CAP, BEHAVIOR_RATE_CAP)
+    cap = behavior_rate_cap()
+    return clamp(talent_delta + client_delta, -cap, cap)

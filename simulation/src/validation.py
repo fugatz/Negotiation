@@ -1,14 +1,7 @@
 from __future__ import annotations
 
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
-
-
-SHADOW_DISCRETION_CAP = 0.01
-BEHAVIOR_RATE_CAP = 0.05
-MARKET_HEALTH_REVIEW_FLAGS = {
-    "price_led_recommendation_risk",
-    "race_to_bottom_risk",
-}
+from .policy_config import load_policy_config
 
 
 def _recommendations(trace: dict) -> list[dict]:
@@ -28,11 +21,12 @@ def _public_forbidden_hits(text: str) -> list[str]:
 
 
 def _expected_timing_horizon(lead_time_days: int) -> str:
-    if lead_time_days < 14:
+    timing = load_policy_config()["timing"]
+    if lead_time_days < int(timing["extreme_last_minute_days"]):
         return "extreme_last_minute"
-    if lead_time_days < 21:
+    if lead_time_days < int(timing["last_minute_days"]):
         return "last_minute"
-    if lead_time_days >= 90:
+    if lead_time_days >= int(timing["long_horizon_days"]):
         return "long_horizon"
     return "normal"
 
@@ -43,9 +37,14 @@ def _check(condition: bool, failures: list[dict], code: str, context: str, detai
 
 
 def validate_report(report: dict) -> dict:
+    config = load_policy_config()
     failures: list[dict] = []
     warnings: list[dict] = []
     recommendation_count = 0
+    shadow_discretion_cap = float(config["ai_discretion"]["shadow_cap"])
+    behavior_rate_cap = float(config["behavior"]["rate_cap"])
+    market_health = config["market_health"]
+    market_health_review_flags = set(market_health["review_flags"])
 
     for trace in report["traces"]:
         expected_horizon = _expected_timing_horizon(int(trace["leadTimeDays"]))
@@ -131,11 +130,11 @@ def validate_report(report: dict) -> dict:
                 "launch discretion must remain shadow/advisory unless separately approved",
             )
             _check(
-                discretion_delta <= SHADOW_DISCRETION_CAP,
+                discretion_delta <= shadow_discretion_cap,
                 failures,
                 "discretion_cap_exceeded",
                 context,
-                f"shadow discretion {discretion_delta} exceeds cap {SHADOW_DISCRETION_CAP}",
+                f"shadow discretion {discretion_delta} exceeds cap {shadow_discretion_cap}",
             )
             if discretion_delta > 0:
                 _check(
@@ -148,15 +147,17 @@ def validate_report(report: dict) -> dict:
 
             behavior_delta = abs(float(rec["behavior"]["combinedBehaviorRateDelta"]))
             _check(
-                behavior_delta <= BEHAVIOR_RATE_CAP,
+                behavior_delta <= behavior_rate_cap,
                 failures,
                 "behavior_cap_exceeded",
                 context,
-                f"combined behavior delta {behavior_delta} exceeds cap {BEHAVIOR_RATE_CAP}",
+                f"combined behavior delta {behavior_delta} exceeds cap {behavior_rate_cap}",
             )
 
             market_flags = rec["marketHealth"]["flags"]
-            if set(market_flags) & MARKET_HEALTH_REVIEW_FLAGS or float(rec["marketHealth"]["score"]) < 0.6:
+            market_score = float(rec["marketHealth"]["score"])
+            review_score_threshold = float(market_health["review_score_threshold"])
+            if set(market_flags) & market_health_review_flags or market_score < review_score_threshold:
                 _check(
                     "market-health guardrail" in governance["exceptionTriggers"],
                     failures,

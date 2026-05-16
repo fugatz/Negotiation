@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from .common import clamp
+from .policy_config import load_policy_config
 
 
-SHADOW_DISCRETION_CAP = 0.01
+def shadow_discretion_cap() -> float:
+    return float(load_policy_config()["ai_discretion"]["shadow_cap"])
 
 
 def _similar_outcomes(project: dict, talent: dict, outcomes: list[dict]) -> list[dict]:
@@ -40,21 +42,23 @@ def propose_shadow_discretion(project: dict, talent: dict, rec: dict, outcomes: 
     if len(booked) >= 2:
         average_gap = sum(_gap(outcome) for outcome in booked) / len(booked)
         if average_gap >= 0.02 and float(rec["creative_fit"]) >= 0.82:
-            delta = min(average_gap / 3.0, SHADOW_DISCRETION_CAP)
+            cap = shadow_discretion_cap()
+            delta = min(average_gap / 3.0, cap)
             proposal.update(
                 {
                     "delta": round(delta, 4),
                     "cappedDelta": round(delta, 4),
                     "direction": "upside",
                     "evidence": "Similar booked outcomes closed slightly above computed quote.",
-                    "humanReviewRecommended": delta >= SHADOW_DISCRETION_CAP,
+                    "humanReviewRecommended": delta >= cap,
                 }
             )
             return proposal
 
     if len(failed) >= 2 and float(rec["price_fit"]) < 0.6:
         average_gap = sum(_gap(outcome) for outcome in failed) / len(failed)
-        delta = max(min(average_gap / 4.0, 0.0), -SHADOW_DISCRETION_CAP)
+        cap = shadow_discretion_cap()
+        delta = max(min(average_gap / 4.0, 0.0), -cap)
         if delta == 0.0:
             delta = -0.005
 
@@ -73,7 +77,7 @@ def propose_shadow_discretion(project: dict, talent: dict, rec: dict, outcomes: 
         proposal.update(
             {
                 "delta": round(delta, 4),
-                "cappedDelta": round(clamp(delta, -SHADOW_DISCRETION_CAP, SHADOW_DISCRETION_CAP), 4),
+                "cappedDelta": round(clamp(delta, -cap, cap), 4),
                 "direction": "soften",
                 "evidence": "Similar failed outcomes suggest this deal may need a softer posture.",
                 "humanReviewRecommended": True,
