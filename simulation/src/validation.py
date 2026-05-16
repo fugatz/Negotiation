@@ -5,6 +5,10 @@ from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
 
 SHADOW_DISCRETION_CAP = 0.01
 BEHAVIOR_RATE_CAP = 0.05
+MARKET_HEALTH_REVIEW_FLAGS = {
+    "price_led_recommendation_risk",
+    "race_to_bottom_risk",
+}
 
 
 def _recommendations(trace: dict) -> list[dict]:
@@ -52,6 +56,15 @@ def validate_report(report: dict) -> dict:
             trace["projectId"],
             f"expected {expected_horizon}, got {trace['timingHorizon']}",
         )
+        if trace["recommendedSlate"]:
+            top_rec = trace["recommendedSlate"][0]
+            _check(
+                "race_to_bottom_risk" not in top_rec["marketHealth"]["flags"],
+                failures,
+                "race_to_bottom_default_winner",
+                _context(trace, top_rec),
+                "market-health override should prevent low-price/low-fit options from defaulting to top rank",
+            )
 
         for rec in _recommendations(trace):
             recommendation_count += 1
@@ -141,6 +154,16 @@ def validate_report(report: dict) -> dict:
                 context,
                 f"combined behavior delta {behavior_delta} exceeds cap {BEHAVIOR_RATE_CAP}",
             )
+
+            market_flags = rec["marketHealth"]["flags"]
+            if set(market_flags) & MARKET_HEALTH_REVIEW_FLAGS or float(rec["marketHealth"]["score"]) < 0.6:
+                _check(
+                    "market-health guardrail" in governance["exceptionTriggers"],
+                    failures,
+                    "market_health_exception_missing",
+                    context,
+                    "market-health flags or low score must trigger admin exception review",
+                )
 
             if rec["clientVisiblePriceState"] == "outside stated budget":
                 _check(

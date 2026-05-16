@@ -43,6 +43,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - no talent-facing job-specific pricing rationale from this layer
 - launch-mode admin approval state and bounded setting-tweak controls
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
+- market-health flags for race-to-bottom and price-led recommendation risk
 - shadow-mode outcome-calibrated discretion deltas
 - upstream-score placeholders for actor readiness, talent reliability, and client trust
 - curated recommendation lanes

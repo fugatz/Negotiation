@@ -824,6 +824,8 @@ These are hypotheses to test in simulation, not final rules.
     autonomous engine with exception-based admin review.
 24. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
     replayable in simulation.
+25. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
+    by price alone, while still allowing them to appear for admin review when relevant.
 
 ## Admin-Only Governance Decisions
 

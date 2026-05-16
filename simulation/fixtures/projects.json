@@ -127,5 +127,26 @@
     "stress_shortlist_ids": [
       "volatile_rep_managed_talent"
     ]
+  },
+  {
+    "id": "race_to_bottom_social_test",
+    "name": "Race-to-Bottom Social Content Test",
+    "category": "social",
+    "subcategory": "social",
+    "budget": 5000,
+    "budget_type": "firm",
+    "client_id": "firm_budget_producer",
+    "lead_time_days": 24,
+    "project_commitment_confidence": 0.78,
+    "schedule_urgency": 0.22,
+    "usage_scope": "social",
+    "creative_specificity": 0.42,
+    "prestige_value": 0.18,
+    "client_flexibility": 0.04,
+    "booking_intent_strength": 0.78,
+    "requires_exclusivity": false,
+    "stress_shortlist_ids": [
+      "low_rate_fast_responder"
+    ]
   }
 ]

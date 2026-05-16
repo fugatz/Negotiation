@@ -1,13 +1,13 @@
 from __future__ import annotations
 
+from .behavior import cap_behavior_rate_delta
 from .common import clamp, money, weighted_average
 
 
 def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict, client_behavior: dict) -> dict:
-    behavior_delta = clamp(
-        float(talent_behavior["rate_delta"]) + float(client_behavior["rate_delta"]),
-        -0.075,
-        0.075,
+    behavior_delta = cap_behavior_rate_delta(
+        float(talent_behavior["rate_delta"]),
+        float(client_behavior["rate_delta"]),
     )
     timing_delta = clamp(float(timing["rate_delta"]), -0.02, 0.08)
     total_delta = timing_delta + behavior_delta
@@ -37,7 +37,7 @@ def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict,
 
 
 def overall_score(rec: dict) -> float:
-    return weighted_average(
+    score = weighted_average(
         [
             (float(rec["creative_fit"]), 0.3),
             (float(rec["practical_fit"]), 0.18),
@@ -47,6 +47,11 @@ def overall_score(rec: dict) -> float:
             (float(rec["acceptance_probability"]), 0.1),
         ]
     )
+    if "race_to_bottom_risk" in rec.get("market_health_flags", []):
+        score -= 0.12
+    if "price_led_recommendation_risk" in rec.get("market_health_flags", []):
+        score -= 0.06
+    return clamp(score)
 
 
 def recommendation_lane(rec: dict, talent: dict, project: dict, index: int) -> str:

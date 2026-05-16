@@ -13,6 +13,11 @@ TWEAKABLE_ADMIN_SETTINGS = (
     "long-horizon hold policy settings",
 )
 
+MARKET_HEALTH_REVIEW_FLAGS = {
+    "price_led_recommendation_risk",
+    "race_to_bottom_risk",
+}
+
 
 def build_admin_governance(rec: dict) -> dict:
     rationales = rec["ai_rationales"]
@@ -29,8 +34,9 @@ def build_admin_governance(rec: dict) -> dict:
         exception_triggers.append("admin pricing rationale flagged for review")
     if float(discretion["delta"]) != 0.0:
         exception_triggers.append("nonzero AI discretion proposal")
-    if float(rec["market_health_score"]) < 0.55:
-        exception_triggers.append("market-health score below override threshold")
+    market_health_flags = set(rec.get("market_health_flags", []))
+    if market_health_flags & MARKET_HEALTH_REVIEW_FLAGS or float(rec["market_health_score"]) < 0.6:
+        exception_triggers.append("market-health guardrail")
     if rec["timing_nudge"]["horizon"] == "long_horizon" and rec["timing_nudge"]["platform_trust_tier"] in {
         "new_or_unproven",
         "limited_history",

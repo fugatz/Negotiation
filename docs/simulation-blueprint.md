@@ -380,6 +380,8 @@ Validation checks:
 - combined behavior nudges must stay inside behavior caps
 - long-horizon uncertainty must not directly change talent price
 - outside-budget recommendations must trigger admin exception review
+- race-to-bottom risk must not become the default top recommendation
+- market-health risk flags or low market-health scores must trigger admin exception review
 
 ## Edge Case Matrix
 
@@ -533,6 +535,31 @@ Question:
 Expected behavior:
 
 - Apply a small risk nudge or reduce flexibility, then monitor whether this discourages abuse.
+
+### Race-To-Bottom Pressure
+
+Question:
+
+- Does a low-rate, fast-response option become the default winner even when creative fit is weaker?
+
+Expected behavior:
+
+- Flag low-price/low-fit options as a market-health risk.
+- Prevent race-to-bottom risk from taking the top rank by price alone.
+- Trigger admin exception review when market-health flags appear.
+
+### Autonomy-Ready Recommendation
+
+Question:
+
+- Which recommendations could eventually run without admin approval once launch review is no longer
+  required?
+
+Expected behavior:
+
+- Mark recommendations as mature autonomy candidates only when there are no exception triggers:
+  leakage, nonzero discretion, outside-budget posture, weak long-horizon trust, or market-health
+  guardrails.
 
 ## Dry-Run Output Format
 

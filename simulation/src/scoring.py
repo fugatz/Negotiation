@@ -88,11 +88,30 @@ def price_fit(talent: dict, project: dict, quote: int) -> float:
     return 0.14
 
 
-def market_health_score(talent: dict, project: dict, fit: float) -> float:
-    specialist_bonus = 0.12 if fit >= 0.82 and talent["target_rate"] > project["budget"] * 0.75 else 0.0
-    lowball_penalty = 0.08 if talent["negotiation_behavior"] == "lowball_accepter" and fit < 0.65 else 0.0
-    idle_access_bonus = 0.03 if talent["utilization_state"] == "idle" and fit >= 0.65 else 0.0
-    return clamp(0.68 + specialist_bonus + idle_access_bonus - lowball_penalty)
+def market_health(talent: dict, project: dict, fit: float, pricing: float) -> dict:
+    flags: list[str] = []
+    score = 0.68
+
+    if fit >= 0.82 and talent["target_rate"] > project["budget"] * 0.75:
+        score += 0.12
+        flags.append("specialist_value_protected")
+
+    if talent["negotiation_behavior"] == "lowball_accepter" and pricing >= 0.86:
+        if fit < 0.75:
+            score -= 0.16
+            flags.append("race_to_bottom_risk")
+        elif fit < 0.82:
+            score -= 0.08
+            flags.append("price_led_recommendation_risk")
+
+    if talent["utilization_state"] == "idle" and fit >= 0.65:
+        score += 0.03
+        flags.append("idle_access_without_discounting")
+
+    return {
+        "score": round(clamp(score), 3),
+        "flags": flags,
+    }
 
 
 def score_talent(talent: dict, project: dict) -> dict:
@@ -102,7 +121,7 @@ def score_talent(talent: dict, project: dict) -> dict:
     quote = base_quote(talent, project, creative)
     pricing = price_fit(talent, project, quote)
     trust = trust_score(talent)
-    market = market_health_score(talent, project, creative)
+    market = market_health(talent, project, creative, pricing)
     acceptance = weighted_average(
         [
             (creative, 0.28),
@@ -124,7 +143,8 @@ def score_talent(talent: dict, project: dict) -> dict:
         "practical_fit": round(practical, 3),
         "price_fit": round(pricing, 3),
         "trust_score": round(trust, 3),
-        "market_health_score": round(market, 3),
+        "market_health_score": market["score"],
+        "market_health_flags": market["flags"],
         "base_quote": quote,
         "acceptance_probability": round(clamp(acceptance), 3),
     }

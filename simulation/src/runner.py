@@ -41,6 +41,10 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "creativeFit": rec["creative_fit"],
         "priceFit": rec["price_fit"],
         "acceptanceProbability": rec["acceptance_probability"],
+        "marketHealth": {
+            "score": rec["market_health_score"],
+            "flags": rec.get("market_health_flags", []),
+        },
         "timing": {
             "horizon": rec["timing_nudge"]["horizon"],
             "platformTrustTier": rec["timing_nudge"]["platform_trust_tier"],
@@ -165,6 +169,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     admin_approval_required_count = 0
     mature_autonomy_candidate_count = 0
     admin_exception_triggers: list[str] = []
+    market_health_flags: list[str] = []
     leakage_count = 0
     human_review_count = 0
 
@@ -175,6 +180,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 behavior_changed += 1
             if rec["timing"]["rateDelta"] != 0 or rec["timing"]["confidenceDelta"] != 0:
                 timing_changed += 1
+            market_health_flags.extend(rec["marketHealth"]["flags"])
             rationales = rec["aiRationales"]
             admin_rationale = rationales["adminPricingRationale"]
             brand_rationale = rationales["brandFacingRationale"]
@@ -221,6 +227,10 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "adminExceptionTriggerCounts": {
             trigger: admin_exception_triggers.count(trigger)
             for trigger in sorted(set(admin_exception_triggers))
+        },
+        "marketHealthFlagCounts": {
+            flag: market_health_flags.count(flag)
+            for flag in sorted(set(market_health_flags))
         },
         "warningCounts": {warning: warnings.count(warning) for warning in sorted(set(warnings))},
     }
