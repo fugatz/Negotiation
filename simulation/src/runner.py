@@ -4,7 +4,8 @@ import argparse
 import json
 from pathlib import Path
 
-from .ai_rationale import build_pricing_rationale
+from .admin_governance import build_admin_governance
+from .ai_rationale import build_ai_rationales
 from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_behavior_nudge
 from .common import FIXTURE_DIR
 from .negotiation import simulate_negotiation
@@ -41,8 +42,11 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "acceptanceProbability": rec["acceptance_probability"],
         "timing": {
             "horizon": rec["timing_nudge"]["horizon"],
+            "platformTrustTier": rec["timing_nudge"]["platform_trust_tier"],
             "rateDelta": round(rec["timing_nudge"]["rate_delta"], 3),
             "confidenceDelta": round(rec["timing_nudge"]["confidence_delta"], 3),
+            "holdPolicy": rec["timing_nudge"]["hold_policy"],
+            "reason": rec["timing_nudge"]["reason"],
         },
         "behavior": {
             "talentRateDelta": round(rec["talent_behavior_nudge"]["rate_delta"], 3),
@@ -56,8 +60,11 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
             ),
             "talentReason": rec["talent_behavior_nudge"]["reason"],
             "clientReason": rec["client_behavior_nudge"]["reason"],
+            "talentSource": rec["talent_behavior_nudge"]["source"],
+            "clientSource": rec["client_behavior_nudge"]["source"],
         },
-        "aiPricingRationale": rec["ai_pricing_rationale"],
+        "aiRationales": rec["ai_rationales"],
+        "adminGovernance": build_admin_governance(rec),
     }
 
 
@@ -80,7 +87,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         )
         discretion = propose_shadow_discretion(project, person, adjusted, outcomes)
         adjusted["ai_discretion"] = discretion
-        adjusted["ai_pricing_rationale"] = build_pricing_rationale(
+        adjusted["ai_rationales"] = build_ai_rationales(
             project,
             client,
             person,
@@ -152,6 +159,11 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     timing_changed = 0
     discretion_deltas: list[float] = []
     rationale_count = 0
+    brand_rationale_count = 0
+    talent_job_specific_rationale_count = 0
+    admin_approval_required_count = 0
+    mature_autonomy_candidate_count = 0
+    admin_exception_triggers: list[str] = []
     leakage_count = 0
     human_review_count = 0
 
@@ -162,13 +174,25 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 behavior_changed += 1
             if rec["timing"]["rateDelta"] != 0 or rec["timing"]["confidenceDelta"] != 0:
                 timing_changed += 1
-            rationale = rec["aiPricingRationale"]
+            rationales = rec["aiRationales"]
+            admin_rationale = rationales["adminPricingRationale"]
+            brand_rationale = rationales["brandFacingRationale"]
+            talent_rationale = rationales["talentFacingRationale"]
             rationale_count += 1
-            discretion_deltas.append(abs(float(rationale["discretionDelta"])))
-            if rationale["leakageWarnings"]:
+            brand_rationale_count += 1
+            discretion_deltas.append(abs(float(admin_rationale["discretionDelta"])))
+            if brand_rationale["leakageWarnings"]:
                 leakage_count += 1
-            if rationale["humanReviewRecommended"]:
+            if talent_rationale.get("available"):
+                talent_job_specific_rationale_count += 1
+            if admin_rationale["humanReviewRecommended"] or brand_rationale["humanReviewRecommended"]:
                 human_review_count += 1
+            governance = rec["adminGovernance"]
+            if governance["approvalRequired"]:
+                admin_approval_required_count += 1
+            if governance["matureAutonomyCandidate"]:
+                mature_autonomy_candidate_count += 1
+            admin_exception_triggers.extend(governance["exceptionTriggers"])
 
     total_recommendations = sum(
         len(trace["recommendedSlate"]) + len(trace.get("stressShortlist", []))
@@ -185,10 +209,18 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "behaviorNudgeShareOfRecommendations": round(behavior_changed / total_recommendations, 3),
         "timingNudgeShareOfRecommendations": round(timing_changed / total_recommendations, 3),
         "aiRationaleCount": rationale_count,
-        "aiRationaleLeakageCount": leakage_count,
+        "brandFacingRationaleCount": brand_rationale_count,
+        "brandFacingRationaleLeakageCount": leakage_count,
+        "talentFacingJobSpecificRationaleCount": talent_job_specific_rationale_count,
+        "adminApprovalRequiredCount": admin_approval_required_count,
+        "matureAutonomyCandidateCount": mature_autonomy_candidate_count,
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
         "maxAbsoluteShadowDiscretionDelta": round(max_discretion, 4),
+        "adminExceptionTriggerCounts": {
+            trigger: admin_exception_triggers.count(trigger)
+            for trigger in sorted(set(admin_exception_triggers))
+        },
         "warningCounts": {warning: warnings.count(warning) for warning in sorted(set(warnings))},
     }
 

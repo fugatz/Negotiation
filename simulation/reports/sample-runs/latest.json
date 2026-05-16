@@ -15,111 +15,260 @@
         {
           "talent": "Reliable Generalist DP",
           "lane": "Budget-Confident",
-          "quote": 6600,
+          "quote": 6700,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.799,
+          "overallScore": 0.797,
           "creativeFit": 0.566,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.887,
+          "acceptanceProbability": 0.867,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "limited_history",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.02,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability"
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
           "talent": "Idle High-Quality Director",
           "lane": "Viable Option",
-          "quote": 11500,
+          "quote": 11600,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
-          "overallScore": 0.789,
+          "overallScore": 0.787,
           "creativeFit": 0.676,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.843,
+          "acceptanceProbability": 0.823,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "limited_history",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.0,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
           "talent": "Premium Food Tabletop Director",
           "lane": "Strong Specialist",
-          "quote": 21000,
+          "quote": 21200,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.759,
+          "overallScore": 0.757,
           "creativeFit": 1.0,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.773,
+          "acceptanceProbability": 0.753,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "limited_history",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.02,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability"
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk.",
-              "The premium posture is defensible because creative fit is unusually strong for this category.",
-              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "The premium posture is defensible because creative fit is unusually strong for this category.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep tabletop experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep tabletop experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "human-review",
-            "discretionDelta": 0.01,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
-            "humanReviewRecommended": true,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "nonzero AI discretion proposal",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -127,35 +276,80 @@
           "lane": "Budget-Confident",
           "quote": 4000,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.74,
+          "overallScore": 0.736,
           "creativeFit": 0.466,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.822,
+          "acceptanceProbability": 0.782,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "limited_history",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
-            "talentRateDelta": 0.01,
-            "clientRateDelta": -0.01,
+            "talentRateDelta": 0.0,
+            "clientRateDelta": 0.0,
             "combinedBehaviorRateDelta": 0.0,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "talentReason": "neutral talent behavior",
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "No special pricing rationale beyond the base computed fit and budget posture.",
+              "reasons": [
+                "No special pricing rationale beyond the base computed fit and budget posture."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": []
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         }
       ],
@@ -164,7 +358,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "final_quote": 6600,
+          "final_quote": 6700,
           "client_capacity": 11400,
           "events": [
             "quote stayed inside expected band"
@@ -174,7 +368,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "failed_budget_gap",
-          "final_quote": 11500,
+          "final_quote": 11600,
           "client_capacity": 11400,
           "events": [
             "quote stayed inside expected band"
@@ -203,110 +397,260 @@
         {
           "talent": "Emerging Beauty Photographer",
           "lane": "Best Fit",
-          "quote": 8800,
+          "quote": 8900,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.896,
+          "overallScore": 0.894,
           "creativeFit": 0.949,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.97,
+          "acceptanceProbability": 0.95,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.02,
-            "combinedBehaviorRateDelta": -0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk.",
-              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep beauty experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep beauty experience and a strong creative match for the brief.",
+                "The portfolio shows meaningful experience in this kind of work.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "human-review",
-            "discretionDelta": 0.01,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
-            "humanReviewRecommended": true,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "nonzero AI discretion proposal"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
           "talent": "Idle High-Quality Director",
           "lane": "Budget-Confident",
-          "quote": 13300,
+          "quote": 13400,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.851,
+          "overallScore": 0.849,
           "creativeFit": 0.737,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.931,
+          "acceptanceProbability": 0.911,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.02,
-            "combinedBehaviorRateDelta": -0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Relevant beauty background with a clear connection to the brief.",
+              "reasons": [
+                "Relevant beauty background with a clear connection to the brief.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
           "talent": "Luxury Fashion Editor",
           "lane": "Budget-Confident",
-          "quote": 13900,
+          "quote": 14000,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.82,
+          "overallScore": 0.818,
           "creativeFit": 0.717,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.903,
+          "acceptanceProbability": 0.883,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.02,
-            "combinedBehaviorRateDelta": -0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -314,35 +658,84 @@
           "lane": "Budget-Confident",
           "quote": 7500,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.792,
+          "overallScore": 0.79,
           "creativeFit": 0.537,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.902,
+          "acceptanceProbability": 0.882,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": -0.02,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         }
       ],
@@ -351,7 +744,7 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "booked",
-          "final_quote": 8800,
+          "final_quote": 8900,
           "client_capacity": 17100,
           "events": [
             "quote stayed inside expected band"
@@ -361,7 +754,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "booked",
-          "final_quote": 13300,
+          "final_quote": 13400,
           "client_capacity": 17100,
           "events": [
             "quote stayed inside expected band"
@@ -413,31 +806,80 @@
           "acceptanceProbability": 0.86,
           "timing": {
             "horizon": "extreme_last_minute",
+            "platformTrustTier": "known",
             "rateDelta": 0.08,
-            "confidenceDelta": -0.02
+            "confidenceDelta": -0.02,
+            "holdPolicy": "confirm immediately before presenting",
+            "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
             "talentRateDelta": 0.03,
             "clientRateDelta": -0.01,
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-            "reasons": [
-              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+                "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -451,31 +893,80 @@
           "acceptanceProbability": 0.81,
           "timing": {
             "horizon": "extreme_last_minute",
+            "platformTrustTier": "known",
             "rateDelta": 0.08,
-            "confidenceDelta": -0.02
+            "confidenceDelta": -0.02,
+            "holdPolicy": "confirm immediately before presenting",
+            "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": -0.01,
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-            "reasons": [
-              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+                "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -483,37 +974,84 @@
           "lane": "Budget-Confident",
           "quote": 4600,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.67,
+          "overallScore": 0.668,
           "creativeFit": 0.258,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.75,
+          "acceptanceProbability": 0.73,
           "timing": {
             "horizon": "extreme_last_minute",
+            "platformTrustTier": "known",
             "rateDelta": 0.08,
-            "confidenceDelta": -0.02
+            "confidenceDelta": -0.02,
+            "holdPolicy": "confirm immediately before presenting",
+            "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
-            "talentRateDelta": 0.01,
+            "talentRateDelta": 0.0,
             "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.0,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "neutral talent behavior",
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-            "reasons": [
-              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+                "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -527,31 +1065,79 @@
           "acceptanceProbability": 0.695,
           "timing": {
             "horizon": "extreme_last_minute",
+            "platformTrustTier": "known",
             "rateDelta": 0.08,
-            "confidenceDelta": -0.02
+            "confidenceDelta": -0.02,
+            "holdPolicy": "confirm immediately before presenting",
+            "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": -0.01,
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-            "reasons": [
-              "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-              "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +8.0% timing premium reflects the short lead time and schedule disruption.",
+                "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         }
       ],
@@ -622,30 +1208,83 @@
           "acceptanceProbability": 0.674,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": 0.03,
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk"
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
-              "The premium posture is defensible because creative fit is unusually strong for this category."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "The premium posture is defensible because creative fit is unusually strong for this category."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep fashion experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep fashion experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -653,35 +1292,84 @@
           "lane": "Budget-Confident",
           "quote": 3700,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.705,
+          "overallScore": 0.703,
           "creativeFit": 0.395,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.683,
+          "acceptanceProbability": 0.663,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
-            "talentRateDelta": 0.01,
+            "talentRateDelta": 0.0,
             "clientRateDelta": 0.03,
-            "combinedBehaviorRateDelta": 0.04,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk"
+            "combinedBehaviorRateDelta": 0.03,
+            "talentReason": "neutral talent behavior",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+              "reasons": [
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -695,29 +1383,81 @@
           "acceptanceProbability": 0.595,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": 0.03,
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk"
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -731,29 +1471,80 @@
           "acceptanceProbability": 0.58,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": 0.03,
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk"
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         }
       ],
@@ -803,36 +1594,88 @@
           "lane": "Budget-Confident",
           "quote": 6900,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.776,
+          "overallScore": 0.774,
           "creativeFit": 0.56,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.669,
+          "acceptanceProbability": 0.649,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.07
+            "confidenceDelta": -0.09,
+            "holdPolicy": "no firm hold without stronger confirmation",
+            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
             "talentRateDelta": 0.03,
             "clientRateDelta": 0.03,
-            "combinedBehaviorRateDelta": 0.06,
+            "combinedBehaviorRateDelta": 0.05,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "high-friction client behavior risk"
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "reasons": [
+                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "long-horizon project without strong client trust"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -840,75 +1683,180 @@
           "lane": "Strong Specialist",
           "quote": 21800,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.737,
+          "overallScore": 0.735,
           "creativeFit": 1.0,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.557,
+          "acceptanceProbability": 0.537,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.07
+            "confidenceDelta": -0.09,
+            "holdPolicy": "no firm hold without stronger confirmation",
+            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
             "talentRateDelta": 0.03,
             "clientRateDelta": 0.03,
-            "combinedBehaviorRateDelta": 0.06,
+            "combinedBehaviorRateDelta": 0.05,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "high-friction client behavior risk"
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
-              "The premium posture is defensible because creative fit is unusually strong for this category.",
-              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "reasons": [
+                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "The premium posture is defensible because creative fit is unusually strong for this category.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep food experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep food experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "human-review",
-            "discretionDelta": 0.01,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
-            "humanReviewRecommended": true,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "long-horizon project without strong client trust",
+              "nonzero AI discretion proposal",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
           "talent": "Low-Rate Fast Responder",
           "lane": "Budget-Confident",
-          "quote": 4200,
+          "quote": 4100,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.716,
+          "overallScore": 0.712,
           "creativeFit": 0.46,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.604,
+          "acceptanceProbability": 0.564,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.07
+            "confidenceDelta": -0.09,
+            "holdPolicy": "no firm hold without stronger confirmation",
+            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
-            "talentRateDelta": 0.01,
+            "talentRateDelta": 0.0,
             "clientRateDelta": 0.03,
-            "combinedBehaviorRateDelta": 0.04,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk"
+            "combinedBehaviorRateDelta": 0.03,
+            "talentReason": "neutral talent behavior",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "reasons": [
+                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "long-horizon project without strong client trust"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -916,36 +1864,89 @@
           "lane": "Viable Option",
           "quote": 12000,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.704,
+          "overallScore": 0.702,
           "creativeFit": 0.67,
           "priceFit": 0.511,
-          "acceptanceProbability": 0.549,
+          "acceptanceProbability": 0.529,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "new_or_unproven",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.07
+            "confidenceDelta": -0.09,
+            "holdPolicy": "no firm hold without stronger confirmation",
+            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": 0.03,
             "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk"
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "reasons": [
+                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "long-horizon project without strong client trust",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         }
       ],
@@ -999,37 +2000,89 @@
           "lane": "Best Fit",
           "quote": 8700,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.891,
+          "overallScore": 0.893,
           "creativeFit": 0.944,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.927,
+          "acceptanceProbability": 0.947,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.03
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": -0.02,
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk.",
-              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep beauty experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep beauty experience and a strong creative match for the brief.",
+                "The portfolio shows meaningful experience in this kind of work.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "human-review",
-            "discretionDelta": 0.01,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
-            "humanReviewRecommended": true,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "nonzero AI discretion proposal"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -1037,36 +2090,85 @@
           "lane": "Viable Option",
           "quote": 13200,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
-          "overallScore": 0.807,
+          "overallScore": 0.809,
           "creativeFit": 0.736,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.842,
+          "acceptanceProbability": 0.862,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.03
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": -0.02,
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Relevant beauty background with a clear connection to the brief.",
+              "reasons": [
+                "Relevant beauty background with a clear connection to the brief.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -1074,36 +2176,85 @@
           "lane": "Budget-Confident",
           "quote": 7400,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.788,
+          "overallScore": 0.79,
           "creativeFit": 0.536,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.861,
+          "acceptanceProbability": 0.881,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.03
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
             "talentRateDelta": 0.03,
             "clientRateDelta": -0.02,
             "combinedBehaviorRateDelta": 0.01,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -1111,36 +2262,85 @@
           "lane": "Viable Option",
           "quote": 13800,
           "clientVisiblePriceState": "premium stretch",
-          "overallScore": 0.777,
+          "overallScore": 0.779,
           "creativeFit": 0.716,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.814,
+          "acceptanceProbability": 0.834,
           "timing": {
             "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.03
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": -0.02,
             "combinedBehaviorRateDelta": -0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "dependable client reduces transaction risk"
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-            "reasons": [
-              "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -2.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         }
       ],
@@ -1200,29 +2400,78 @@
           "acceptanceProbability": 0.887,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.03,
             "clientRateDelta": -0.01,
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -1236,31 +2485,85 @@
           "acceptanceProbability": 0.773,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.03,
             "clientRateDelta": -0.01,
             "combinedBehaviorRateDelta": 0.02,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk.",
-              "The premium posture is defensible because creative fit is unusually strong for this category.",
-              "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk.",
+                "The premium posture is defensible because creative fit is unusually strong for this category.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep food experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep food experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "human-review",
-            "discretionDelta": 0.01,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
-            "humanReviewRecommended": true,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "nonzero AI discretion proposal",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         },
         {
@@ -1268,35 +2571,82 @@
           "lane": "Budget-Confident",
           "quote": 4300,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.74,
+          "overallScore": 0.738,
           "creativeFit": 0.466,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.822,
+          "acceptanceProbability": 0.802,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
-            "talentRateDelta": 0.01,
+            "talentRateDelta": 0.0,
             "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.0,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "neutral talent behavior",
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A -1.0% client reliability adjustment reflects lower transaction risk.",
+              "reasons": [
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         },
         {
@@ -1310,29 +2660,78 @@
           "acceptanceProbability": 0.779,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
             "talentRateDelta": 0.01,
             "clientRateDelta": -0.01,
             "combinedBehaviorRateDelta": 0.0,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability"
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-            "reasons": [
-              "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "client-facing",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
           }
         }
       ],
@@ -1340,38 +2739,88 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "lane": "Stress Test Candidate",
-          "quote": 11300,
-          "clientVisiblePriceState": "premium stretch",
+          "quote": 11100,
+          "clientVisiblePriceState": "likely workable with scoped flexibility",
           "overallScore": 0.693,
           "creativeFit": 0.882,
           "priceFit": 0.78,
           "acceptanceProbability": 0.593,
           "timing": {
             "horizon": "normal",
+            "platformTrustTier": "known",
             "rateDelta": 0.0,
-            "confidenceDelta": 0.0
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
           },
           "behavior": {
-            "talentRateDelta": 0.0,
+            "talentRateDelta": -0.02,
             "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": -0.01,
-            "talentReason": "repeated unexplained late repricing; reliability premium withheld",
-            "clientReason": "solid client reliability"
+            "combinedBehaviorRateDelta": -0.03,
+            "talentReason": "repeated unexplained late repricing; small talent-side friction tax",
+            "clientReason": "solid client reliability",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
           },
-          "aiPricingRationale": {
-            "summary": "Talent-side negotiation history reduces confidence and keeps the rationale internal.",
-            "reasons": [
-              "Talent-side negotiation history reduces confidence and keeps the rationale internal.",
-              "A -1.0% client reliability adjustment reflects lower transaction risk.",
-              "The premium posture is defensible because creative fit is unusually strong for this category."
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A -2.0% talent-side friction adjustment reflects added deal friction.",
+              "reasons": [
+                "A -2.0% talent-side friction adjustment reflects added deal friction.",
+                "A -1.0% client reliability adjustment reflects lower transaction risk.",
+                "The premium posture is defensible because creative fit is unusually strong for this category."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep food experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep food experience and a strong creative match for the brief.",
+                "The portfolio shows meaningful experience in this kind of work."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
             ],
-            "visibility": "internal-only",
-            "discretionDelta": 0.0,
-            "discretionMode": "shadow",
-            "discretionAppliesToLiveQuote": false,
-            "discretionEvidence": "No sufficient similar outcome evidence yet.",
-            "humanReviewRecommended": false,
-            "leakageWarnings": []
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
           }
         }
       ],
@@ -1401,7 +2850,7 @@
         {
           "talent_id": "volatile_rep_managed_talent",
           "status": "failed_budget_gap",
-          "final_quote": 13600,
+          "final_quote": 13300,
           "client_capacity": 11200,
           "events": [
             "talent attempted a 20% post-interest increase"
@@ -1427,10 +2876,20 @@
     "behaviorNudgeShareOfRecommendations": 0.759,
     "timingNudgeShareOfRecommendations": 0.414,
     "aiRationaleCount": 29,
-    "aiRationaleLeakageCount": 0,
-    "aiHumanReviewShareOfRecommendations": 0.172,
+    "brandFacingRationaleCount": 29,
+    "brandFacingRationaleLeakageCount": 0,
+    "talentFacingJobSpecificRationaleCount": 0,
+    "adminApprovalRequiredCount": 29,
+    "matureAutonomyCandidateCount": 16,
+    "aiHumanReviewShareOfRecommendations": 0.448,
     "averageAbsoluteShadowDiscretionDelta": 0.0017,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
+    "adminExceptionTriggerCounts": {
+      "admin pricing rationale flagged for review": 13,
+      "long-horizon project without strong client trust": 4,
+      "nonzero AI discretion proposal": 5,
+      "outside stated budget": 7
+    },
     "warningCounts": {
       "final quote exceeded client capacity": 3,
       "long-horizon commitment uncertainty": 2,

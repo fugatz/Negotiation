@@ -9,6 +9,9 @@
       "fashion": 0.2,
       "automotive": 0.1
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.94,
     "target_rate": 18000,
     "working_floor": 14000,
     "category_premiums": {
@@ -38,6 +41,9 @@
       "food": 0.18,
       "automotive": 0.08
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.83,
     "target_rate": 7500,
     "working_floor": 5200,
     "category_premiums": {
@@ -66,6 +72,9 @@
       "automotive": 0.5,
       "social": 0.68
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.91,
     "target_rate": 6500,
     "working_floor": 4500,
     "category_premiums": {},
@@ -92,6 +101,9 @@
       "food": 0.1,
       "social": 0.4
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.86,
     "target_rate": 16000,
     "working_floor": 12000,
     "category_premiums": {
@@ -120,6 +132,9 @@
       "food": 0.12,
       "automotive": 0.12
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.85,
     "target_rate": 12000,
     "working_floor": 9000,
     "category_premiums": {
@@ -149,6 +164,9 @@
       "automotive": 0.42,
       "social": 0.72
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.88,
     "target_rate": 11500,
     "working_floor": 7800,
     "category_premiums": {
@@ -177,6 +195,9 @@
       "automotive": 0.28,
       "social": 0.7
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.5,
     "target_rate": 10000,
     "working_floor": 7000,
     "category_premiums": {
@@ -206,6 +227,9 @@
       "fashion": 0.38,
       "automotive": 0.24
     },
+    "talent_kind": "non_actor",
+    "upstream_actor_readiness_score": null,
+    "upstream_non_actor_reliability_score": 0.76,
     "target_rate": 4000,
     "working_floor": 2800,
     "category_premiums": {},

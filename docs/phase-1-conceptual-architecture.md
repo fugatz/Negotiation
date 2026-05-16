@@ -127,7 +127,8 @@ Pricing should combine the talent's private pricing states with project context.
 
 Possible internal states:
 
-- target rate: what talent believes they are worth
+- listed rate: the talent-declared market anchor
+- talent-approved operating band: normally 25% below to 30% above listed rate
 - working floor: what talent might accept under the right conditions
 - historical accepted range
 - category premium potential
@@ -160,24 +161,29 @@ shift before booking.
 
 Initial timing hypotheses:
 
-- projects inside 14 days may receive a small urgency premium
-- projects inside 7 days may receive a slightly stronger but still capped urgency premium
-- projects 90 or more days out may receive a small project-confidence reduction
-- strong client or brand reliability can offset some long-horizon uncertainty
-- weak client or brand reliability can increase long-horizon uncertainty
+- projects inside 21 days should be treated as last-minute for the platform
+- projects inside 14 days may receive a stronger but still capped urgency premium
+- projects 90 or more days out may signal exploration rather than serious booking intent
+- platform client trust should heavily offset long-horizon uncertainty
+- a client with no Distinkt history should remain low-confidence at 90+ days
+- a repeat client, especially around a 4th project and beyond, should receive much more benefit of
+  the doubt
 
 Possible timing nudges:
 
-- last-minute urgency premium, for example 2% to 6%
-- extreme last-minute premium, for example up to 8% when disruption is real
-- long-horizon confidence reduction, for example 2% to 5% against booking certainty
+- last-minute urgency premium under 21 days, for example 2% to 6%
+- extreme compression premium under 14 days, for example up to 8% when disruption is real
+- long-horizon seriousness reduction at 90+ days, for example 2% to 5% against booking certainty
 - optional quote confirmation window for far-future work
 
 Guardrails:
 
 - timing should not become a blanket surcharge or discount
-- long-horizon uncertainty should usually affect confidence, holds, and confirmation mechanics before
-  it affects talent compensation
+- 90+ day uncertainty should affect seriousness scoring, confidence, holds, and confirmation mechanics
+  first
+- platform client trust should drive how much 90+ day uncertainty matters
+- 90+ day uncertainty should not directly change talent price unless client-side facts change or a
+  quote/hold expires and must be revalidated
 - timing should never push a deal below a talent's private working floor
 - client-facing language should reference schedule certainty or urgency, not hidden reliability
   scoring
@@ -193,7 +199,19 @@ capped adjustments that reflect deal reliability on both sides.
 The goal is to reward dependable marketplace behavior and price in friction risk without turning the
 system into a punitive reputation machine.
 
-Talent-side behavior signals might include:
+This layer should primarily consume behavior scores from upstream Distinkt services rather than
+recreate those metrics locally.
+
+Known upstream inputs:
+
+- actor readiness score
+- non-actor talent reliability metric
+- client trust metric
+
+Those inputs are still immature and may need to be nudged, recalibrated, or versioned over time, but
+they already exist and should be passed into this pricing/deal layer from outside processes.
+
+Underlying talent-side signals that may feed upstream services include:
 
 - quote stability
 - response consistency
@@ -203,7 +221,7 @@ Talent-side behavior signals might include:
 - scope-change reason quality
 - post-interest repricing frequency
 
-Client-side behavior signals might include:
+Underlying client-side signals that may feed upstream services include:
 
 - brief clarity
 - scope stability
@@ -212,24 +230,38 @@ Client-side behavior signals might include:
 - respectful negotiation behavior
 - rate-shopping or budget-fishing patterns
 - late scope creep after quote lock
+- client-side manager, procurement, or approval-chain intervention that creates friction, delay, or
+  unexplained repricing pressure
 
 Possible pricing nudges:
 
 - dependable talent may receive a small reliability premium
-- volatile talent may lose recommendation confidence or reliability premium
+- difficult talent may receive small downward quote pressure, for example -2%
 - dependable clients may receive slightly more favorable pricing because they reduce transaction risk
-- high-friction clients may see a small risk premium or reduced flexibility
+- high-friction clients may see a small risk premium, for example +2%, or reduced flexibility
+- both talent-side and client-side behavior can apply on the same deal, subject to the total cap
+- disruptive client-side manager or procurement behavior should be attributed to the client side
 
 Initial guardrail hypothesis:
 
-- behavior nudges should usually sit in the 1% to 5% range
-- total behavior impact should be hard-capped, for example at 7.5%
+- behavior is a small friction tax, not a moral ranking system
+- difficult-but-valuable people should not be made unbookable just because they are difficult
+- behavior nudges should usually sit in the 1% to 3% range
+- severe behavior impact should be hard-capped around 5%
+- total behavior impact should not dominate creative fit, specialization, budget reality, or client
+  demand
+- this layer should not silently redefine upstream readiness, reliability, or trust scores
+- this layer may send outcome feedback back to those upstream services for later calibration
+- there should be no separate appeal process inside this pricing layer because the nudge is small and
+  not exposed as a visible penalty
+- recovery should happen as upstream readiness, reliability, or trust scores improve from positive
+  behavior data
 - behavior should never move a deal below a talent's private working floor
 - behavior should never override hard eligibility, creative fit, or major budget incompatibility
 - client-facing explanations should describe process reliability, not expose hidden reputation scores
 
-This layer is intentionally a stub for later policy design. The exact metrics, decay windows, caps,
-and appeal/correction process should be decided after simulation.
+This layer is intentionally a stub for later policy design. Exact metric definitions and decay
+windows should live in the upstream services that own readiness, reliability, and trust.
 
 ### 7. AI Pricing Rationale Layer
 
@@ -239,19 +271,41 @@ normalization, missing-field detection, category identification, or creative-fit
 Instead, AI reasoning should operate after structured project data, eligibility results, match scores,
 pricing intelligence, timing nudges, and behavior nudges already exist.
 
-The useful role for AI is pricing rationale. The math decides the primary bounded adjustment; AI
-explains why that adjustment is reasonable.
+The useful role for AI is admin-only pricing rationale. The math decides the primary bounded
+adjustment; AI explains to Distinkt operators why that adjustment is reasonable.
 
-Examples:
+Admin-only pricing rationale examples:
 
 - explain why a dependable talent earns a 2% reliability premium
 - explain why a dependable client receives a 1% or 2% transaction-risk benefit
 - explain why an under-14-day project has a small urgency premium
-- explain why a 90+ day project has lower confidence until commitments firm up
+- explain why a 90+ day project has lower seriousness confidence until commitments firm up
 - explain why a specialist premium is defensible for a highly relevant category match
 - explain why a high-friction client creates a small risk premium or reduced flexibility
-- translate internal policy outputs into dignified client-facing language
-- generate internal operator notes when the rationale is sensitive or should not be client-facing
+
+That pricing rationale should not be shown to talent or brands. It can mention deltas, timing nudges,
+behavior nudges, trust, discretion, and "why X instead of Y" because it is an internal admin surface.
+
+AI may also generate a separate brand-facing match rationale, but that rationale should be
+deliberately positive and non-pricing. It can say:
+
+- strong category experience
+- relevant specialist background
+- creative fit for the brief
+- production fit
+- confidence in the path to confirmation
+
+It should not say:
+
+- why the rate moved by a specific percentage
+- whether behavior, reliability, readiness, or client trust changed the quote
+- anything about hidden flexibility, floors, discount posture, or willingness to concede
+- why one talent is getting more or less on this job in pricing terms
+
+Talent should not receive a job-specific pricing rationale from this layer. Talent-facing education
+about readiness, reliability, or other score items belongs to the upstream score systems that own
+those metrics. Even then, the talent should never see a negative pricing penalty framed as the reason
+they got less on a specific job.
 
 Optional future extension:
 
@@ -278,6 +332,7 @@ Initial discretion guardrails:
 
 - default discretion starts at 0%
 - early shadow-mode discretion should be advisory only
+- launch-mode live discretion should require admin approval
 - initial live discretion should be very small, for example +/-1%
 - mature discretion might expand only with evidence, for example up to +/-3%
 - discretion must be auditable and tied to outcome evidence
@@ -293,6 +348,8 @@ AI should not:
 - decide base adjustments such as whether the timing or behavior nudge is 1%, 2%, 5%, or 8%
 - apply discretion outside the approved outcome-calibrated band
 - expose floor rates or hidden flexibility
+- expose admin pricing rationale to brands or talent
+- generate negative job-specific score explanations for talent
 - override hard eligibility
 - create uncapped pricing changes
 - invent client or talent reputation facts
@@ -301,27 +358,98 @@ AI should not:
 The operating principle:
 
 - AI reasons about the policy output.
-- AI justifies bounded math with human-readable rationale.
+- AI justifies bounded math with admin-only human-readable rationale.
+- AI generates separate brand-facing match language that is positive, creative, and non-pricing.
 - AI may eventually recommend a tiny outcome-calibrated residual adjustment.
 - The policy engine governs actual eligibility, caps, floors, and pricing movement.
 
-### 8. Negotiation Structure Layer
+### 8. Admin Governance and Launch Approval Layer
+
+These remaining questions are admin-only governance questions:
+
+- which rationales require human review before anything is shown to a client
+- how to audit public explanations for leakage
+- what outcome evidence allows AI discretion to move from advisory to live
+- what cap governs AI discretion
+- how discretion decays when outcomes contradict older patterns
+- what market-health constraints override short-term booking probability
+
+In the ideal mature state, the pricing and negotiation engine should run autonomously inside policy
+guardrails, with admins reviewing exceptions rather than approving every normal deal.
+
+Launch mode should be more conservative:
+
+- every generated slate and pricing posture requires admin approval before client presentation
+- AI discretion remains shadow/advisory unless explicitly approved
+- brand-facing rationale copy is reviewed or at least leakage-checked before presentation
+- admin users can make small bounded adjustments to settings, not arbitrary uncapped price changes
+- every admin approval, rejection, override, and setting tweak is logged with actor, timestamp,
+  reason, policy version, and before/after values
+
+Admin interface controls can include:
+
+- timing threshold and cap settings
+- behavior nudge cap settings
+- AI discretion cap and mode: off, shadow, admin-approved live, or autonomous live
+- market-health override thresholds
+- brand-facing rationale wording/templates
+- quote lock and scope-change exception categories
+- hold policy settings for long-horizon work
+
+Admin adjustment guardrails:
+
+- admin tweaks must remain inside talent-approved operating bands and floor guardrails
+- admin tweaks must not expose private floors, hidden flexibility, or behavior penalties
+- admin tweaks must not weaken the client presentation price lock
+- settings should be versioned so simulations and real outcomes can be replayed against the exact
+  policy used
+- repeated manual overrides should become a signal that the underlying policy needs recalibration
+
+Initial admin-only governance defaults:
+
+- Human review: launch requires approval for all client-presented slates. Mature mode can move to
+  exception review for brand-facing leakage, nonzero AI discretion, weak evidence, low market health,
+  long-horizon uncertainty, or outside-band pricing.
+- Leakage audit: public payloads should be generated from a separate schema, scanned for forbidden
+  terms, checked for percentage/rate language, and regression-tested against synthetic edge cases.
+- Evidence threshold: AI discretion should move from advisory to live only after enough similar
+  outcomes show consistent lift without higher cancellation, repricing, trust damage, or quality
+  degradation.
+- Discretion cap: launch live discretion should be 0% by default, then at most about +/-1% with admin
+  approval; mature autonomous discretion should remain tiny unless outcome evidence is very strong.
+- Decay: discretion should shrink toward 0 when recent outcomes contradict older patterns, when
+  evidence gets stale, or when market conditions change.
+- Market health override: protect specialist value, avoid lowest-bidder ranking, block floor leakage,
+  avoid desperation pricing, preserve slate diversity, and prevent behavior/timing nudges from
+  dominating creative fit.
+
+### 9. Negotiation Structure Layer
 
 Negotiation should remain possible, but bounded.
 
+The core rule: pricing is negotiated and finalized before a talent is presented to the client. Once a
+talent appears in the client-facing slate, that presented number should be treated as locked.
+
 Possible mechanisms:
 
-- pre-submission quote commitment window
-- structured counteroffer bands
+- pre-presentation quote commitment window
+- structured internal counteroffer bands before presentation
 - quote expiration periods
-- scope-change repricing rules
-- explicit "new information" triggers for price changes
-- post-interest repricing penalty when no project variable changed
+- presentation price lock
+- scope-change repricing rules when client-side facts change
+- explicit "new information" triggers for price changes after presentation
 - client budget revision flow when scope or expectations shift
 
-The system should distinguish legitimate repricing from tactical repricing.
+Strong negotiation means being willing to hold the presented price or let the client walk away. It can
+also mean choosing not to present a talent if the project is not economically credible.
 
-Legitimate repricing:
+Because the client receives a range of talent options, the negotiated economics should already be
+baked into the slate at presentation time. The slate itself provides alternatives; late repricing
+should not be used as leverage after the client has shown interest.
+
+Legitimate renegotiation after presentation should require client-side fact changes.
+
+Examples:
 
 - usage expanded
 - timeline compressed
@@ -329,17 +457,23 @@ Legitimate repricing:
 - exclusivity added
 - travel burden changed
 - competitor conflict introduced
+- client approval chain changes the scope, timing, or requirements
 
-High-risk repricing:
+Harmful repricing:
 
 - price rises only after strong client interest
-- no scope change
+- no client-side fact change
 - alternatives have expired
 - pattern repeats across multiple deals
+- the change is driven by leverage rather than scope, usage, timing, or requirements
 
-### 9. Curated Recommendation Layer
+### 10. Curated Recommendation Layer
 
 The client should see a curated slate, not a commodity auction.
+
+Each slate option should carry the negotiated/priced posture at the moment of presentation. The client
+can compare different talent paths, but they should not experience a hidden second negotiation after
+choosing an option unless they change the facts of the project.
 
 Recommendation categories could include:
 
@@ -352,6 +486,38 @@ Recommendation categories could include:
 
 Avoid labels that imply desperation or discounting.
 
+Client-facing trust should be expressed through a composite talent score rather than exact price
+guarantees or pricing explanations.
+
+Possible framing:
+
+- Distinkt Score
+- Match Confidence Score
+- Booking Confidence Score
+
+The exact name can be decided later, but the behavior should be simple: higher is better.
+
+The internal score can combine many factors, such as:
+
+- creative fit
+- category specialization
+- availability confidence
+- pricing confidence
+- professionalism and reliability
+- timing fit
+- relevant outcome history
+- client-side friction risk
+- deal complexity
+
+This score should adjust over time as Distinkt gathers more outcome data. It should not expose exact
+internal components, private floors, negotiation flexibility, behavior penalties, or pricing nudges.
+It should also not imply a guaranteed final price. Its job is to help the client understand which
+options are stronger and more dependable without turning the slate into a lowest-price auction.
+
+The brand-facing AI rationale that accompanies this score should stay positive: experience, creative
+fit, specialist background, production fit, and confidence. Any rationale about why the quoted price
+is 2% higher, 2% lower, or shaped by behavior/trust inputs remains admin-only.
+
 Client-facing pricing language should communicate confidence and fit:
 
 - "Within expected range"
@@ -359,7 +525,7 @@ Client-facing pricing language should communicate confidence and fit:
 - "Premium specialist; budget may need adjustment"
 - "Strong creative fit, lower booking confidence at current budget"
 
-### 10. Deal Outcome Feedback Loop
+### 11. Deal Outcome Feedback Loop
 
 Outcomes should update models slowly enough to avoid overreacting to one-off situations.
 
@@ -383,29 +549,69 @@ The feedback loop should improve prediction without turning private flexibility 
 
 ## Pricing Model Concepts
 
-### Target Rate
+### Listed Rate
 
-Talent's preferred economic anchor. This is useful for dignity, positioning, and premium logic.
+Talent's declared economic anchor. This is useful for dignity, positioning, and premium logic.
+
+Talent sets this rate with the understanding that Distinkt may operate within a normal band around the
+listed rate:
+
+- up to 25% below listed rate
+- up to 30% above listed rate
+
+This band serves two purposes:
+
+- availability-check routing
+- bounded negotiation wiggle room
+
+It is still not a public/client-visible negotiation range and not a disclosed floor.
+
+Example:
+
+- listed rate: $10,000
+- normal availability-check window: $7,500 to $13,000
+
+The purpose is to avoid asking talent about every low-fit or unrealistic opportunity while preserving
+practical flexibility around real projects. Within the band, Distinkt can reason about likely deal
+paths without treating every movement as bespoke renegotiation.
 
 Risk:
 
 - If treated as fixed truth, it may overprice talent out of relevant opportunities.
+- If the lower edge is exposed, clients may treat it as a discount target.
 
 Mitigation:
 
 - Pair it with context and probability rather than using it as a hard rule.
+- Keep the band internal and use it for availability-check routing and bounded negotiation, not
+  client-facing pricing.
+- Let outcomes calibrate where inside or outside the band successful deals actually close.
 
 ### Working Floor
 
 Private minimum viable acceptance under favorable conditions.
 
+Talent should not be asked to maintain separate floor rates for every combination of category, usage,
+client type, timing, exclusivity, and urgency. That would create too much operational burden and too
+much false precision.
+
+Preferred approach:
+
+- talent declares a listed rate
+- Distinkt uses the internal 25% below to 30% above operating band
+- context-specific factors are handled by scoring, pricing intelligence, timing nudges, behavior
+  nudges, and outcome calibration
+- talent can still define explicit exceptions later for truly special cases
+
 Risk:
 
 - If exposed or optimized against, it creates commoditization and distrust.
+- If the system asks for too many floor variants, talent data becomes stale, inconsistent, or unused.
 
 Mitigation:
 
 - Never expose it. Use it only to reason about feasibility and internal negotiation boundaries.
+- Keep talent input simple, then let system intelligence and outcomes handle contextual nuance.
 
 ### Contextual Premium Potential
 
@@ -547,11 +753,17 @@ The system should keep scores separable for explainability and simulation.
 - Practical fit score: timing, location, scope, workflow.
 - Price fit score: how realistic is a successful deal at this budget?
 - Trust score: how stable and professional is negotiation behavior?
+- Client-facing talent score: composite higher-is-better score that summarizes match quality and
+  booking confidence without exposing private inputs.
 - Timing horizon nudge: small capped adjustment for urgent or far-future project timing.
 - Talent behavior nudge: small capped adjustment for dependable or high-friction talent behavior.
 - Client behavior nudge: small capped adjustment for dependable or high-friction client behavior.
-- AI pricing rationale: human-readable explanation of computed pricing, timing, and behavior nudges
-  within hard policy guardrails.
+- Admin pricing rationale: internal human-readable explanation of computed pricing, timing, behavior
+  nudges, and discretion within hard policy guardrails.
+- Brand-facing match rationale: positive explanation of experience, creative fit, specialist value,
+  and production fit, with no pricing or hidden-score logic.
+- Talent-facing score education: handled by upstream score systems, not by the job-specific pricing
+  layer.
 - AI discretion delta: optional tiny learned residual adjustment based on outcome evidence, bounded by
   separate caps.
 - Market health score: does recommending this talent support long-term ecosystem quality?
@@ -576,32 +788,62 @@ These are hypotheses to test in simulation, not final rules.
 8. High-friction client or talent behavior should affect pricing and recommendation confidence only
    through capped, explainable nudges.
 9. Last-minute projects should carry a small urgency premium when they create real disruption.
-10. Projects roughly 90 or more days out should carry slightly lower confidence until the brief,
-    approvals, and schedule become firmer.
+10. Projects under 21 days should be treated as last-minute for the platform, and projects roughly 90
+    or more days out should carry lower seriousness confidence until the brief, approvals, and
+    schedule become firmer.
 11. AI discretion should start at 0%, run in shadow mode first, and only graduate to tiny live
     adjustments when outcome data shows consistent improvement.
+12. Talent declares a listed rate, and the normal internal operating band is 25% below to 30% above
+    that listed rate for availability checks and bounded negotiation.
+13. Talent should not need to maintain separate floor-rate matrices by category, usage, client type,
+    and timing; those contextual differences should be handled by pricing intelligence and outcomes.
+14. Distinkt is the talent-side agent. If a client-side manager, procurement team, or approval chain
+    creates friction, delay, repricing pressure, or bad-faith negotiation behavior, the client side
+    absorbs the same trust/desirability impact as if the client did it directly.
+15. Client-facing trust should be expressed through a composite talent score that improves with fit,
+    reliability, and outcome data, without implying an exact price guarantee.
+16. Once pricing is presented to the client, it is locked unless client-side facts change. Strong
+    negotiation happens before presentation and includes being willing to let a client walk away.
+17. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
+    not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
+18. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
+    client is low-confidence, while a high-trust repeat client around their 4th project or later is
+    much more credible.
+19. Talent/client behavior nudges should consume upstream service scores: actor readiness,
+    non-actor talent reliability, and client trust. This layer applies capped nudges; it does not own
+    the raw metric definitions.
+20. Behavior should function like a small friction tax. It should be meaningful but not terribly
+    detrimental; difficult but valuable talent or clients should not be excluded by behavior scoring
+    alone.
+21. Behavior nudge recovery should happen through positive upstream data improving readiness,
+    reliability, or trust scores. There should not be a separate appeal process in this pricing layer.
+22. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
+    separate positive match rationale only. Talent should not see negative job-specific pricing
+    rationale from this layer.
+23. Launch mode should require admin approval before client presentation. The long-term target is an
+    autonomous engine with exception-based admin review.
+24. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
+    replayable in simulation.
 
-## Open Questions
+## Admin-Only Governance Decisions
 
-- How much pricing flexibility should talent declare directly versus be learned from outcomes?
-- Should talent set separate floors by category, usage, client type, and timing?
-- How should the system handle reps who manage multiple talent with inconsistent negotiation norms?
-- What client-facing language creates trust without implying exact price guarantees?
-- How should Distinkt distinguish strong negotiation from harmful repricing?
-- What timing thresholds should define last-minute, normal, and long-horizon work?
-- Should long-horizon uncertainty affect price, confidence, hold mechanics, or all three?
-- How should brand/client reliability offset uncertainty for projects planned far in advance?
-- What exact talent and client behavior metrics should feed reliability nudges?
-- What cap keeps behavior meaningful but non-dominant?
-- How should behavior scores decay, recover, or be appealed?
-- What should AI be allowed to explain versus keep internal?
-- Which AI-generated rationales should require human review before surfacing to a client?
-- How should the system audit AI explanations for leakage of private floors or hidden flexibility?
-- What outcome evidence is strong enough to let AI discretion move from advisory to live?
-- What cap should govern AI discretion separately from timing and behavior nudges?
-- How should AI discretion decay when recent outcomes contradict older patterns?
-- What market health constraints should override short-term booking probability?
-- How quickly should negative negotiation behavior decay after improved behavior?
+These are not brand-facing or talent-facing questions. They belong in admin tooling, policy
+configuration, simulation review, and audit logs.
+
+- Human review threshold: launch requires approval for all slates and pricing. Mature mode should
+  require review only for exceptions such as public-rationale leakage, nonzero AI discretion,
+  low-confidence evidence, market-health overrides, or unusual deal risk.
+- Leakage tests: audit brand-facing outputs for forbidden terms, percentage/rate language, hidden
+  score references, floor/flexibility language, and any implication that AI set the price.
+- Outcome evidence: require repeated similar outcomes, positive close-rate or value lift, no increase
+  in cancellations/repricing, and no market-health harm before discretion becomes live.
+- AI discretion cap: keep launch at 0% live by default, allow only tiny admin-approved movement, and
+  keep mature autonomous discretion separately capped from timing and behavior nudges.
+- Decay: weight recent outcomes more heavily, shrink discretion toward 0 when newer data contradicts
+  older patterns, and expire stale evidence.
+- Market-health overrides: block decisions that create lowest-bidder dynamics, specialist
+  underpricing, floor leakage, desperation pricing, quote instability, or over-reliance on behavior
+  and timing nudges.
 
 ## Phase 1 Exit Criteria
 
@@ -612,6 +854,7 @@ Before moving to simulation implementation, the team should agree on:
 - negotiation abuse definitions
 - timing nudge boundaries for urgent and long-horizon work
 - behavior nudge boundaries for talent and clients
+- launch admin approval workflow and tweakable policy settings
 - initial policy hypotheses
 - synthetic scenario coverage
 - what success and harm look like in dry runs

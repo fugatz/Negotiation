@@ -8,7 +8,10 @@
     "scope_stability": 0.86,
     "rate_shopping_frequency": 0.08,
     "post_quote_scope_creep": 0.06,
-    "brand_reliability": 0.84
+    "brand_reliability": 0.84,
+    "upstream_client_trust_metric": 0.78,
+    "platform_completed_projects": 2,
+    "platform_trust_score": 0.76
   },
   {
     "id": "firm_budget_producer",
@@ -19,7 +22,10 @@
     "scope_stability": 0.82,
     "rate_shopping_frequency": 0.12,
     "post_quote_scope_creep": 0.08,
-    "brand_reliability": 0.78
+    "brand_reliability": 0.78,
+    "upstream_client_trust_metric": 0.7,
+    "platform_completed_projects": 1,
+    "platform_trust_score": 0.68
   },
   {
     "id": "flexible_premium_buyer",
@@ -30,7 +36,10 @@
     "scope_stability": 0.88,
     "rate_shopping_frequency": 0.04,
     "post_quote_scope_creep": 0.05,
-    "brand_reliability": 0.88
+    "brand_reliability": 0.88,
+    "upstream_client_trust_metric": 0.86,
+    "platform_completed_projects": 3,
+    "platform_trust_score": 0.82
   },
   {
     "id": "budget_fisher",
@@ -41,7 +50,10 @@
     "scope_stability": 0.42,
     "rate_shopping_frequency": 0.78,
     "post_quote_scope_creep": 0.28,
-    "brand_reliability": 0.5
+    "brand_reliability": 0.5,
+    "upstream_client_trust_metric": 0.32,
+    "platform_completed_projects": 0,
+    "platform_trust_score": 0.25
   },
   {
     "id": "prestige_overpromiser",
@@ -52,7 +64,10 @@
     "scope_stability": 0.46,
     "rate_shopping_frequency": 0.42,
     "post_quote_scope_creep": 0.4,
-    "brand_reliability": 0.56
+    "brand_reliability": 0.56,
+    "upstream_client_trust_metric": 0.48,
+    "platform_completed_projects": 0,
+    "platform_trust_score": 0.35
   },
   {
     "id": "slow_decision_maker",
@@ -63,7 +78,10 @@
     "scope_stability": 0.72,
     "rate_shopping_frequency": 0.2,
     "post_quote_scope_creep": 0.16,
-    "brand_reliability": 0.72
+    "brand_reliability": 0.72,
+    "upstream_client_trust_metric": 0.58,
+    "platform_completed_projects": 1,
+    "platform_trust_score": 0.55
   },
   {
     "id": "high_trust_repeat_client",
@@ -74,6 +92,9 @@
     "scope_stability": 0.92,
     "rate_shopping_frequency": 0.02,
     "post_quote_scope_creep": 0.03,
-    "brand_reliability": 0.95
+    "brand_reliability": 0.95,
+    "upstream_client_trust_metric": 0.94,
+    "platform_completed_projects": 4,
+    "platform_trust_score": 0.94
   }
 ]

@@ -9,35 +9,60 @@ PRIVATE_SIGNAL_TERMS = (
     "private floor",
 )
 
+PUBLIC_FORBIDDEN_TERMS = PRIVATE_SIGNAL_TERMS + (
+    "adjustment",
+    "behavior",
+    "client risk",
+    "delta",
+    "discount",
+    "floor",
+    "friction",
+    "penalty",
+    "premium",
+    "price",
+    "pricing",
+    "quote",
+    "rate",
+    "repricing",
+    "risk premium",
+    "shadow",
+    "trust tier",
+    "upstream",
+)
+
 
 def _pct(value: float) -> str:
     sign = "+" if value > 0 else ""
     return f"{sign}{value * 100:.1f}%"
 
 
-def _visibility(rec: dict, discretion: dict, reasons: list[str]) -> str:
+def _leakage_warnings(text: str, terms: tuple[str, ...]) -> list[str]:
+    lowered = text.lower()
+    warnings = [term for term in terms if term in lowered]
+    if "%" in text:
+        warnings.append("percentage")
+    return sorted(set(warnings))
+
+
+def _admin_review_needed(rec: dict, discretion: dict, reasons: list[str]) -> bool:
     reason_text = " ".join(reasons).lower()
     sensitive_reason = any(
-        phrase in " ".join(reasons).lower()
+        phrase in reason_text
         for phrase in ("high-friction", "repeated unexplained", "risk premium", "budget fishing")
     )
-    sensitive_reason = sensitive_reason or "keeps the rationale internal" in reason_text
     sensitive_reason = sensitive_reason or float(rec["talent_behavior_nudge"]["confidence_delta"]) < 0
     sensitive_reason = sensitive_reason or float(rec["client_behavior_nudge"]["confidence_delta"]) < 0
-
-    if discretion["delta"] != 0:
-        return "human-review"
-    if sensitive_reason:
-        return "internal-only"
-    return "client-facing"
+    return bool(discretion["humanReviewRecommended"]) or discretion["delta"] != 0 or sensitive_reason
 
 
-def _leakage_warnings(text: str) -> list[str]:
-    lowered = text.lower()
-    return [term for term in PRIVATE_SIGNAL_TERMS if term in lowered]
-
-
-def build_pricing_rationale(project: dict, client: dict, talent: dict, rec: dict, discretion: dict) -> dict:
+def _build_admin_pricing_rationale(
+    project: dict,
+    client: dict,
+    talent: dict,
+    rec: dict,
+    discretion: dict,
+) -> dict:
+    del project, client, talent
     reasons: list[str] = []
 
     timing = rec["timing_nudge"]
@@ -47,9 +72,18 @@ def build_pricing_rationale(project: dict, client: dict, talent: dict, rec: dict
         )
     if timing["confidence_delta"] < 0:
         if timing["horizon"] == "long_horizon":
-            reasons.append(
-                "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer."
-            )
+            if timing["platform_trust_tier"] == "high_repeat":
+                reasons.append(
+                    "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client."
+                )
+            elif timing["platform_trust_tier"] == "new_or_unproven":
+                reasons.append(
+                    "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet."
+                )
+            else:
+                reasons.append(
+                    "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer."
+                )
         else:
             reasons.append(
                 "The short lead time slightly lowers confidence because availability and coordination risk are higher."
@@ -60,10 +94,12 @@ def build_pricing_rationale(project: dict, client: dict, talent: dict, rec: dict
         reasons.append(
             f"A {_pct(talent_behavior['rate_delta'])} talent reliability premium reflects stable quotes and low booking friction."
         )
-    elif talent_behavior["confidence_delta"] < 0:
+    elif talent_behavior["rate_delta"] < 0:
         reasons.append(
-            "Talent-side negotiation history reduces confidence and keeps the rationale internal."
+            f"A {_pct(talent_behavior['rate_delta'])} talent-side friction adjustment reflects added deal friction."
         )
+    elif talent_behavior["confidence_delta"] < 0:
+        reasons.append("Talent-side negotiation history reduces confidence.")
 
     client_behavior = rec["client_behavior_nudge"]
     if client_behavior["rate_delta"] < 0:
@@ -92,18 +128,81 @@ def build_pricing_rationale(project: dict, client: dict, talent: dict, rec: dict
     if not reasons:
         reasons.append("No special pricing rationale beyond the base computed fit and budget posture.")
 
-    visibility = _visibility(rec, discretion, reasons)
-    summary = reasons[0]
     text = " ".join(reasons)
-
     return {
-        "summary": summary,
+        "audience": "admin",
+        "visibility": "admin-only",
+        "summary": reasons[0],
         "reasons": reasons,
-        "visibility": visibility,
         "discretionDelta": round(float(discretion["delta"]), 4),
         "discretionMode": discretion["mode"],
         "discretionAppliesToLiveQuote": discretion["appliesToLiveQuote"],
         "discretionEvidence": discretion["evidence"],
-        "humanReviewRecommended": visibility == "human-review" or bool(discretion["humanReviewRecommended"]),
-        "leakageWarnings": _leakage_warnings(text),
+        "humanReviewRecommended": _admin_review_needed(rec, discretion, reasons),
+        "leakageWarningsIfSurfaced": _leakage_warnings(text, PRIVATE_SIGNAL_TERMS),
+    }
+
+
+def _category_label(project: dict) -> str:
+    return str(project.get("subcategory") or project.get("category") or "category").replace("_", " ")
+
+
+def _build_brand_facing_rationale(project: dict, talent: dict, rec: dict) -> dict:
+    category = _category_label(project)
+    reasons: list[str] = []
+
+    if rec["creative_fit"] >= 0.86:
+        reasons.append(f"Deep {category} experience and a strong creative match for the brief.")
+    elif rec["creative_fit"] >= 0.72:
+        reasons.append(f"Relevant {category} background with a clear connection to the brief.")
+    else:
+        reasons.append("Useful adjacent experience for the creative direction.")
+
+    category_strength = float(talent["categories"].get(project.get("category", ""), 0.0))
+    subcategory_strength = float(talent["categories"].get(project.get("subcategory", ""), category_strength))
+    if max(category_strength, subcategory_strength) >= 0.9:
+        reasons.append("Specialized portfolio depth supports a confident recommendation.")
+    elif max(category_strength, subcategory_strength) >= 0.75:
+        reasons.append("The portfolio shows meaningful experience in this kind of work.")
+
+    if rec["practical_fit"] >= 0.84:
+        reasons.append("Production fit is strong across availability, scope, and schedule needs.")
+    elif project.get("lead_time_days", 999) < 21:
+        reasons.append("The profile remains workable for the compressed production window.")
+
+    if rec["trust_score"] >= 0.82:
+        reasons.append("The profile supports a confident path through confirmation.")
+
+    if not reasons:
+        reasons.append("A credible creative option for this brief.")
+
+    text = " ".join(reasons)
+    leakage_warnings = _leakage_warnings(text, PUBLIC_FORBIDDEN_TERMS)
+    return {
+        "audience": "brand",
+        "visibility": "brand-facing",
+        "summary": reasons[0],
+        "reasons": reasons,
+        "humanReviewRecommended": bool(leakage_warnings),
+        "leakageWarnings": leakage_warnings,
+    }
+
+
+def _build_talent_facing_rationale() -> dict:
+    return {
+        "audience": "talent",
+        "visibility": "not-generated",
+        "available": False,
+        "adminNote": (
+            "This pricing layer does not generate job-specific pricing rationales for talent. "
+            "Talent-facing score education is handled by upstream readiness or reliability systems."
+        ),
+    }
+
+
+def build_ai_rationales(project: dict, client: dict, talent: dict, rec: dict, discretion: dict) -> dict:
+    return {
+        "adminPricingRationale": _build_admin_pricing_rationale(project, client, talent, rec, discretion),
+        "brandFacingRationale": _build_brand_facing_rationale(project, talent, rec),
+        "talentFacingRationale": _build_talent_facing_rationale(),
     }
