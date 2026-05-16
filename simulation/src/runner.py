@@ -13,6 +13,7 @@ from .outcome_calibration import propose_shadow_discretion
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .scoring import score_talent
 from .timing import timing_nudge
+from .validation import validate_report
 
 
 def load_json(path: Path) -> list[dict]:
@@ -236,17 +237,24 @@ def run(project_id: str | None = None) -> dict:
             raise SystemExit(f"Unknown project id: {project_id}")
 
     traces = [simulate_project(project, talent, clients_by_id, outcomes) for project in selected]
-    return {
+    report = {
         "policy": "phase-2-initial-dry-run",
         "traces": traces,
         "metrics": aggregate_metrics(traces),
     }
+    report["validation"] = validate_report(report)
+    return report
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run Distinkt pricing simulation scenarios.")
     parser.add_argument("--project", help="Run a single project id from simulation/fixtures/projects.json")
     parser.add_argument("--out", help="Optional path to write the JSON report")
+    parser.add_argument(
+        "--fail-on-validation",
+        action="store_true",
+        help="Exit nonzero if validation fails.",
+    )
     args = parser.parse_args()
 
     report = run(args.project)
@@ -258,6 +266,9 @@ def main() -> None:
         path.write_text(encoded + "\n")
 
     print(encoded)
+
+    if args.fail_on_validation and report["validation"]["status"] != "pass":
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

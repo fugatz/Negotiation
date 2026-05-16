@@ -370,6 +370,17 @@ Admin governance metrics:
 - number of manual overrides that later imply policy recalibration
 - difference between admin-approved outcomes and fully autonomous simulated outcomes
 
+Validation checks:
+
+- brand-facing rationale leakage count must be zero
+- talent-facing job-specific pricing rationale count must be zero
+- launch-mode recommendations must require admin approval and audit logging
+- nonzero AI discretion must remain shadow/advisory unless separately approved
+- AI discretion must stay inside its separate cap
+- combined behavior nudges must stay inside behavior caps
+- long-horizon uncertainty must not directly change talent price
+- outside-budget recommendations must trigger admin exception review
+
 ## Edge Case Matrix
 
 ### Premium Specialist, Firm Budget

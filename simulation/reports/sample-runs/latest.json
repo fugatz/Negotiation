@@ -2895,5 +2895,13 @@
       "long-horizon commitment uncertainty": 2,
       "unexplained post-interest repricing": 1
     }
+  },
+  "validation": {
+    "status": "pass",
+    "checkedRecommendationCount": 29,
+    "failureCount": 0,
+    "warningCount": 0,
+    "failures": [],
+    "warnings": []
   }
 }
