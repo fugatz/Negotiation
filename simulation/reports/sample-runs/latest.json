@@ -1,0 +1,1003 @@
+{
+  "policy": "phase-2-initial-dry-run",
+  "traces": [
+    {
+      "project": "Firm-Budget Food Social Campaign",
+      "projectId": "firm_food_social",
+      "client": "Firm-Budget Producer",
+      "budget": 11000,
+      "budgetType": "firm",
+      "leadTimeDays": 28,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 8,
+      "excluded": [],
+      "recommendedSlate": [
+        {
+          "talent": "Reliable Generalist DP",
+          "lane": "Budget-Confident",
+          "quote": 6600,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.799,
+          "creativeFit": 0.566,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.887,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.02,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Viable Option",
+          "quote": 11500,
+          "clientVisiblePriceState": "likely workable with scoped flexibility",
+          "overallScore": 0.789,
+          "creativeFit": 0.676,
+          "priceFit": 0.78,
+          "acceptanceProbability": 0.843,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Premium Food Tabletop Director",
+          "lane": "Strong Specialist",
+          "quote": 21000,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.759,
+          "creativeFit": 1.0,
+          "priceFit": 0.14,
+          "acceptanceProbability": 0.773,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.02,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "lane": "Budget-Confident",
+          "quote": 4000,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.74,
+          "creativeFit": 0.466,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.822,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "negotiations": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "booked",
+          "final_quote": 6600,
+          "client_capacity": 11400,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "failed_budget_gap",
+          "final_quote": 11500,
+          "client_capacity": 11400,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": [
+            "final quote exceeded client capacity"
+          ]
+        }
+      ],
+      "outcome": "booked",
+      "warnings": [
+        "final quote exceeded client capacity"
+      ]
+    },
+    {
+      "project": "Flexible National Beauty Campaign",
+      "projectId": "flexible_beauty_national",
+      "client": "Flexible Premium Buyer",
+      "budget": 14000,
+      "budgetType": "flexible",
+      "leadTimeDays": 42,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 8,
+      "excluded": [],
+      "recommendedSlate": [
+        {
+          "talent": "Emerging Beauty Photographer",
+          "lane": "Best Fit",
+          "quote": 8800,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.896,
+          "creativeFit": 0.949,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.97,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Budget-Confident",
+          "quote": 13300,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.851,
+          "creativeFit": 0.737,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.931,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "lane": "Budget-Confident",
+          "quote": 13900,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.82,
+          "creativeFit": 0.717,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.903,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "lane": "Budget-Confident",
+          "quote": 7500,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.792,
+          "creativeFit": 0.537,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.902,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "negotiations": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "booked",
+          "final_quote": 8800,
+          "client_capacity": 17100,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "booked",
+          "final_quote": 13300,
+          "client_capacity": 17100,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcome": "booked",
+      "warnings": []
+    },
+    {
+      "project": "Last-Minute Automotive Shoot",
+      "projectId": "last_minute_automotive",
+      "client": "Realistic Professional Buyer",
+      "budget": 18000,
+      "budgetType": "flexible",
+      "leadTimeDays": 6,
+      "timingHorizon": "extreme_last_minute",
+      "eligibleTalentCount": 5,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "below talent minimum notice window"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "below talent minimum notice window"
+          ]
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "reasons": [
+            "below talent minimum notice window"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Reliable Generalist DP",
+          "lane": "Budget-Confident",
+          "quote": 7800,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.782,
+          "creativeFit": 0.518,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.86,
+          "timing": {
+            "horizon": "extreme_last_minute",
+            "rateDelta": 0.08,
+            "confidenceDelta": -0.02
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.02,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Budget-Confident",
+          "quote": 13600,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.746,
+          "creativeFit": 0.438,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.81,
+          "timing": {
+            "horizon": "extreme_last_minute",
+            "rateDelta": 0.08,
+            "confidenceDelta": -0.02
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "lane": "Budget-Confident",
+          "quote": 4600,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.67,
+          "creativeFit": 0.258,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.75,
+          "timing": {
+            "horizon": "extreme_last_minute",
+            "rateDelta": 0.08,
+            "confidenceDelta": -0.02
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "lane": "Budget-Confident",
+          "quote": 8900,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.614,
+          "creativeFit": 0.098,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.695,
+          "timing": {
+            "horizon": "extreme_last_minute",
+            "rateDelta": 0.08,
+            "confidenceDelta": -0.02
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "negotiations": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "booked",
+          "final_quote": 7800,
+          "client_capacity": 20900,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "booked",
+          "final_quote": 13600,
+          "client_capacity": 20900,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcome": "booked",
+      "warnings": []
+    },
+    {
+      "project": "Low-Cash Prestige Editorial",
+      "projectId": "prestige_editorial_low_cash",
+      "client": "Prestige Overpromiser",
+      "budget": 4500,
+      "budgetType": "prestige",
+      "leadTimeDays": 30,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 5,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "not opted into prestige/low-cash tradeoffs"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "not opted into prestige/low-cash tradeoffs"
+          ]
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "reasons": [
+            "not opted into prestige/low-cash tradeoffs"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Luxury Fashion Editor",
+          "lane": "Best Fit",
+          "quote": 12400,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.773,
+          "creativeFit": 0.999,
+          "priceFit": 0.36,
+          "acceptanceProbability": 0.674,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk"
+          }
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "lane": "Budget-Confident",
+          "quote": 3700,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.705,
+          "creativeFit": 0.395,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.683,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Viable Option",
+          "quote": 10800,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.666,
+          "creativeFit": 0.635,
+          "priceFit": 0.36,
+          "acceptanceProbability": 0.595,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk"
+          }
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "lane": "Emerging Value",
+          "quote": 7100,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.651,
+          "creativeFit": 0.655,
+          "priceFit": 0.36,
+          "acceptanceProbability": 0.58,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk"
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "negotiations": [
+        {
+          "talent_id": "luxury_fashion_editor",
+          "status": "failed_budget_gap",
+          "final_quote": 12400,
+          "client_capacity": 4600,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": [
+            "final quote exceeded client capacity"
+          ]
+        },
+        {
+          "talent_id": "low_rate_fast_responder",
+          "status": "booked",
+          "final_quote": 3700,
+          "client_capacity": 4600,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcome": "booked",
+      "warnings": [
+        "final quote exceeded client capacity"
+      ]
+    },
+    {
+      "project": "Exploratory Food Research Brief",
+      "projectId": "exploratory_research_brief",
+      "client": "Budget Fisher",
+      "budget": 9000,
+      "budgetType": "exploratory",
+      "leadTimeDays": 95,
+      "timingHorizon": "long_horizon",
+      "eligibleTalentCount": 8,
+      "excluded": [],
+      "recommendedSlate": [
+        {
+          "talent": "Reliable Generalist DP",
+          "lane": "Budget-Confident",
+          "quote": 6900,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.776,
+          "creativeFit": 0.56,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.669,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.07
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.06,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "high-friction client behavior risk"
+          }
+        },
+        {
+          "talent": "Premium Food Tabletop Director",
+          "lane": "Strong Specialist",
+          "quote": 21800,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.737,
+          "creativeFit": 1.0,
+          "priceFit": 0.14,
+          "acceptanceProbability": 0.557,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.07
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.06,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "high-friction client behavior risk"
+          }
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "lane": "Budget-Confident",
+          "quote": 4200,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.716,
+          "creativeFit": 0.46,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.604,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.07
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Viable Option",
+          "quote": 12000,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.704,
+          "creativeFit": 0.67,
+          "priceFit": 0.511,
+          "acceptanceProbability": 0.549,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.07
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk"
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "negotiations": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "pending_hold",
+          "final_quote": 6900,
+          "client_capacity": 9700,
+          "events": [
+            "quote stayed inside expected band",
+            "long-horizon project needs confirmation window"
+          ],
+          "warnings": [
+            "long-horizon commitment uncertainty"
+          ]
+        },
+        {
+          "talent_id": "premium_food_director",
+          "status": "pending_hold",
+          "final_quote": 21800,
+          "client_capacity": 9700,
+          "events": [
+            "quote stayed inside expected band",
+            "long-horizon project needs confirmation window"
+          ],
+          "warnings": [
+            "long-horizon commitment uncertainty"
+          ]
+        }
+      ],
+      "outcome": "pending_hold",
+      "warnings": [
+        "long-horizon commitment uncertainty"
+      ]
+    },
+    {
+      "project": "Long-Horizon Beauty Campaign",
+      "projectId": "long_horizon_beauty_campaign",
+      "client": "High-Trust Repeat Client",
+      "budget": 12000,
+      "budgetType": "flexible",
+      "leadTimeDays": 110,
+      "timingHorizon": "long_horizon",
+      "eligibleTalentCount": 8,
+      "excluded": [],
+      "recommendedSlate": [
+        {
+          "talent": "Emerging Beauty Photographer",
+          "lane": "Best Fit",
+          "quote": 8700,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.891,
+          "creativeFit": 0.944,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.927,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.03
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Viable Option",
+          "quote": 13200,
+          "clientVisiblePriceState": "likely workable with scoped flexibility",
+          "overallScore": 0.807,
+          "creativeFit": 0.736,
+          "priceFit": 0.78,
+          "acceptanceProbability": 0.842,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.03
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "lane": "Budget-Confident",
+          "quote": 7400,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.788,
+          "creativeFit": 0.536,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.861,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.03
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "lane": "Viable Option",
+          "quote": 13800,
+          "clientVisiblePriceState": "premium stretch",
+          "overallScore": 0.777,
+          "creativeFit": 0.716,
+          "priceFit": 0.78,
+          "acceptanceProbability": 0.814,
+          "timing": {
+            "horizon": "long_horizon",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.03
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk"
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "negotiations": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "pending_hold",
+          "final_quote": 8700,
+          "client_capacity": 13900,
+          "events": [
+            "quote stayed inside expected band",
+            "long-horizon project needs confirmation window"
+          ],
+          "warnings": [
+            "long-horizon commitment uncertainty"
+          ]
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "pending_hold",
+          "final_quote": 13200,
+          "client_capacity": 13900,
+          "events": [
+            "quote stayed inside expected band",
+            "long-horizon project needs confirmation window"
+          ],
+          "warnings": [
+            "long-horizon commitment uncertainty"
+          ]
+        }
+      ],
+      "outcome": "pending_hold",
+      "warnings": [
+        "long-horizon commitment uncertainty"
+      ]
+    },
+    {
+      "project": "Bad-Faith Repricing Stress Test",
+      "projectId": "bad_faith_repricing_test",
+      "client": "Realistic Professional Buyer",
+      "budget": 10000,
+      "budgetType": "flexible",
+      "leadTimeDays": 21,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 8,
+      "excluded": [],
+      "recommendedSlate": [
+        {
+          "talent": "Reliable Generalist DP",
+          "lane": "Budget-Confident",
+          "quote": 7100,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.799,
+          "creativeFit": 0.566,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.887,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.02,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Premium Food Tabletop Director",
+          "lane": "Strong Specialist",
+          "quote": 22500,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.759,
+          "creativeFit": 1.0,
+          "priceFit": 0.14,
+          "acceptanceProbability": 0.773,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.02,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "lane": "Budget-Confident",
+          "quote": 4300,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.74,
+          "creativeFit": 0.466,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.822,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "lane": "Viable Option",
+          "quote": 12500,
+          "clientVisiblePriceState": "premium stretch",
+          "overallScore": 0.737,
+          "creativeFit": 0.676,
+          "priceFit": 0.551,
+          "acceptanceProbability": 0.779,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": 0.0,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "solid client reliability"
+          }
+        }
+      ],
+      "stressShortlist": [
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "lane": "Stress Test Candidate",
+          "quote": 11300,
+          "clientVisiblePriceState": "premium stretch",
+          "overallScore": 0.693,
+          "creativeFit": 0.882,
+          "priceFit": 0.78,
+          "acceptanceProbability": 0.593,
+          "timing": {
+            "horizon": "normal",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0
+          },
+          "behavior": {
+            "talentRateDelta": 0.0,
+            "clientRateDelta": -0.01,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "repeated unexplained late repricing; reliability premium withheld",
+            "clientReason": "solid client reliability"
+          }
+        }
+      ],
+      "negotiations": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "booked",
+          "final_quote": 7100,
+          "client_capacity": 11200,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "premium_food_director",
+          "status": "failed_budget_gap",
+          "final_quote": 22500,
+          "client_capacity": 11200,
+          "events": [
+            "quote stayed inside expected band"
+          ],
+          "warnings": [
+            "final quote exceeded client capacity"
+          ]
+        },
+        {
+          "talent_id": "volatile_rep_managed_talent",
+          "status": "failed_budget_gap",
+          "final_quote": 13600,
+          "client_capacity": 11200,
+          "events": [
+            "talent attempted a 20% post-interest increase"
+          ],
+          "warnings": [
+            "unexplained post-interest repricing",
+            "final quote exceeded client capacity"
+          ]
+        }
+      ],
+      "outcome": "booked",
+      "warnings": [
+        "final quote exceeded client capacity",
+        "unexplained post-interest repricing"
+      ]
+    }
+  ],
+  "metrics": {
+    "scenarioCount": 7,
+    "bookedCount": 5,
+    "bookingRate": 0.714,
+    "longHorizonScenarioCount": 2,
+    "behaviorNudgeShareOfRecommendations": 0.75,
+    "timingNudgeShareOfRecommendations": 0.429,
+    "warningCounts": {
+      "final quote exceeded client capacity": 3,
+      "long-horizon commitment uncertainty": 2,
+      "unexplained post-interest repricing": 1
+    }
+  }
+}

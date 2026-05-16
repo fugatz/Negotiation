@@ -21,3 +21,11 @@ freelancer marketplace or an opaque agency system.
 
 - [Phase 1 Conceptual Architecture](docs/phase-1-conceptual-architecture.md)
 - [Simulation Blueprint](docs/simulation-blueprint.md)
+
+## Simulation
+
+Run the standalone dry-run simulation:
+
+```bash
+python3 -m simulation.src.runner
+```

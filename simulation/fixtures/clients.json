@@ -1,0 +1,79 @@
+[
+  {
+    "id": "realistic_professional",
+    "name": "Realistic Professional Buyer",
+    "brief_clarity": 0.86,
+    "decision_speed": 0.78,
+    "payment_reliability": 0.9,
+    "scope_stability": 0.86,
+    "rate_shopping_frequency": 0.08,
+    "post_quote_scope_creep": 0.06,
+    "brand_reliability": 0.84
+  },
+  {
+    "id": "firm_budget_producer",
+    "name": "Firm-Budget Producer",
+    "brief_clarity": 0.82,
+    "decision_speed": 0.72,
+    "payment_reliability": 0.86,
+    "scope_stability": 0.82,
+    "rate_shopping_frequency": 0.12,
+    "post_quote_scope_creep": 0.08,
+    "brand_reliability": 0.78
+  },
+  {
+    "id": "flexible_premium_buyer",
+    "name": "Flexible Premium Buyer",
+    "brief_clarity": 0.9,
+    "decision_speed": 0.84,
+    "payment_reliability": 0.92,
+    "scope_stability": 0.88,
+    "rate_shopping_frequency": 0.04,
+    "post_quote_scope_creep": 0.05,
+    "brand_reliability": 0.88
+  },
+  {
+    "id": "budget_fisher",
+    "name": "Budget Fisher",
+    "brief_clarity": 0.48,
+    "decision_speed": 0.36,
+    "payment_reliability": 0.66,
+    "scope_stability": 0.42,
+    "rate_shopping_frequency": 0.78,
+    "post_quote_scope_creep": 0.28,
+    "brand_reliability": 0.5
+  },
+  {
+    "id": "prestige_overpromiser",
+    "name": "Prestige Overpromiser",
+    "brief_clarity": 0.62,
+    "decision_speed": 0.5,
+    "payment_reliability": 0.62,
+    "scope_stability": 0.46,
+    "rate_shopping_frequency": 0.42,
+    "post_quote_scope_creep": 0.4,
+    "brand_reliability": 0.56
+  },
+  {
+    "id": "slow_decision_maker",
+    "name": "Slow Decision Maker",
+    "brief_clarity": 0.78,
+    "decision_speed": 0.24,
+    "payment_reliability": 0.84,
+    "scope_stability": 0.72,
+    "rate_shopping_frequency": 0.2,
+    "post_quote_scope_creep": 0.16,
+    "brand_reliability": 0.72
+  },
+  {
+    "id": "high_trust_repeat_client",
+    "name": "High-Trust Repeat Client",
+    "brief_clarity": 0.94,
+    "decision_speed": 0.88,
+    "payment_reliability": 0.96,
+    "scope_stability": 0.92,
+    "rate_shopping_frequency": 0.02,
+    "post_quote_scope_creep": 0.03,
+    "brand_reliability": 0.95
+  }
+]

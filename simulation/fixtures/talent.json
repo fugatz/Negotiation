@@ -1,0 +1,225 @@
+[
+  {
+    "id": "premium_food_director",
+    "name": "Premium Food Tabletop Director",
+    "categories": {
+      "food": 0.98,
+      "tabletop": 0.95,
+      "beauty": 0.28,
+      "fashion": 0.2,
+      "automotive": 0.1
+    },
+    "target_rate": 18000,
+    "working_floor": 14000,
+    "category_premiums": {
+      "food": 0.14,
+      "tabletop": 0.12
+    },
+    "availability_score": 0.82,
+    "minimum_notice_days": 10,
+    "responsiveness": 0.86,
+    "reliability_score": 0.93,
+    "quote_stability": 0.95,
+    "cancellation_count": 0,
+    "late_reprice_count": 0,
+    "negotiation_behavior": "stable_professional",
+    "prestige_opt_in": false,
+    "utilization_state": "normal",
+    "scarcity": 0.72,
+    "conflicts": []
+  },
+  {
+    "id": "emerging_beauty_photographer",
+    "name": "Emerging Beauty Photographer",
+    "categories": {
+      "beauty": 0.88,
+      "fashion": 0.64,
+      "social": 0.76,
+      "food": 0.18,
+      "automotive": 0.08
+    },
+    "target_rate": 7500,
+    "working_floor": 5200,
+    "category_premiums": {
+      "beauty": 0.05
+    },
+    "availability_score": 0.88,
+    "minimum_notice_days": 5,
+    "responsiveness": 0.9,
+    "reliability_score": 0.82,
+    "quote_stability": 0.8,
+    "cancellation_count": 1,
+    "late_reprice_count": 0,
+    "negotiation_behavior": "flexible_bounded",
+    "prestige_opt_in": true,
+    "utilization_state": "growing",
+    "scarcity": 0.35,
+    "conflicts": []
+  },
+  {
+    "id": "reliable_generalist_dp",
+    "name": "Reliable Generalist DP",
+    "categories": {
+      "food": 0.55,
+      "beauty": 0.52,
+      "fashion": 0.5,
+      "automotive": 0.5,
+      "social": 0.68
+    },
+    "target_rate": 6500,
+    "working_floor": 4500,
+    "category_premiums": {},
+    "availability_score": 0.94,
+    "minimum_notice_days": 3,
+    "responsiveness": 0.92,
+    "reliability_score": 0.9,
+    "quote_stability": 0.92,
+    "cancellation_count": 0,
+    "late_reprice_count": 0,
+    "negotiation_behavior": "stable_professional",
+    "prestige_opt_in": true,
+    "utilization_state": "normal",
+    "scarcity": 0.2,
+    "conflicts": []
+  },
+  {
+    "id": "automotive_specialist",
+    "name": "Automotive Specialist DP",
+    "categories": {
+      "automotive": 0.96,
+      "beauty": 0.22,
+      "fashion": 0.28,
+      "food": 0.1,
+      "social": 0.4
+    },
+    "target_rate": 16000,
+    "working_floor": 12000,
+    "category_premiums": {
+      "automotive": 0.12
+    },
+    "availability_score": 0.7,
+    "minimum_notice_days": 14,
+    "responsiveness": 0.78,
+    "reliability_score": 0.88,
+    "quote_stability": 0.86,
+    "cancellation_count": 0,
+    "late_reprice_count": 1,
+    "negotiation_behavior": "principled_premium",
+    "prestige_opt_in": false,
+    "utilization_state": "busy",
+    "scarcity": 0.86,
+    "conflicts": []
+  },
+  {
+    "id": "luxury_fashion_editor",
+    "name": "Luxury Fashion Editor",
+    "categories": {
+      "fashion": 0.94,
+      "beauty": 0.7,
+      "social": 0.55,
+      "food": 0.12,
+      "automotive": 0.12
+    },
+    "target_rate": 12000,
+    "working_floor": 9000,
+    "category_premiums": {
+      "fashion": 0.1,
+      "beauty": 0.04
+    },
+    "availability_score": 0.78,
+    "minimum_notice_days": 7,
+    "responsiveness": 0.8,
+    "reliability_score": 0.86,
+    "quote_stability": 0.84,
+    "cancellation_count": 0,
+    "late_reprice_count": 0,
+    "negotiation_behavior": "scope_sensitive_repricer",
+    "prestige_opt_in": true,
+    "utilization_state": "normal",
+    "scarcity": 0.58,
+    "conflicts": []
+  },
+  {
+    "id": "idle_high_quality_director",
+    "name": "Idle High-Quality Director",
+    "categories": {
+      "food": 0.66,
+      "beauty": 0.72,
+      "fashion": 0.62,
+      "automotive": 0.42,
+      "social": 0.72
+    },
+    "target_rate": 11500,
+    "working_floor": 7800,
+    "category_premiums": {
+      "beauty": 0.04
+    },
+    "availability_score": 0.96,
+    "minimum_notice_days": 2,
+    "responsiveness": 0.88,
+    "reliability_score": 0.87,
+    "quote_stability": 0.88,
+    "cancellation_count": 0,
+    "late_reprice_count": 0,
+    "negotiation_behavior": "flexible_bounded",
+    "prestige_opt_in": true,
+    "utilization_state": "idle",
+    "scarcity": 0.3,
+    "conflicts": []
+  },
+  {
+    "id": "volatile_rep_managed_talent",
+    "name": "Volatile Rep-Managed Talent",
+    "categories": {
+      "food": 0.82,
+      "beauty": 0.72,
+      "fashion": 0.5,
+      "automotive": 0.28,
+      "social": 0.7
+    },
+    "target_rate": 10000,
+    "working_floor": 7000,
+    "category_premiums": {
+      "food": 0.06,
+      "beauty": 0.04
+    },
+    "availability_score": 0.84,
+    "minimum_notice_days": 4,
+    "responsiveness": 0.52,
+    "reliability_score": 0.56,
+    "quote_stability": 0.42,
+    "cancellation_count": 1,
+    "late_reprice_count": 4,
+    "negotiation_behavior": "opportunistic_late_repricer",
+    "prestige_opt_in": false,
+    "utilization_state": "normal",
+    "scarcity": 0.45,
+    "conflicts": []
+  },
+  {
+    "id": "low_rate_fast_responder",
+    "name": "Low-Rate Fast Responder",
+    "categories": {
+      "social": 0.72,
+      "food": 0.45,
+      "beauty": 0.42,
+      "fashion": 0.38,
+      "automotive": 0.24
+    },
+    "target_rate": 4000,
+    "working_floor": 2800,
+    "category_premiums": {},
+    "availability_score": 0.98,
+    "minimum_notice_days": 1,
+    "responsiveness": 0.98,
+    "reliability_score": 0.74,
+    "quote_stability": 0.78,
+    "cancellation_count": 0,
+    "late_reprice_count": 0,
+    "negotiation_behavior": "lowball_accepter",
+    "prestige_opt_in": true,
+    "utilization_state": "normal",
+    "scarcity": 0.08,
+    "conflicts": []
+  }
+]
