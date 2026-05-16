@@ -63,6 +63,7 @@ Project Brief
   -> Pricing Intelligence Layer
   -> Timing Horizon Nudge Layer
   -> Behavior Reputation Nudge Layer
+  -> AI Pricing Rationale Layer
   -> Negotiation Structure Layer
   -> Curated Recommendation Layer
   -> Deal Outcome Feedback Loop
@@ -230,7 +231,81 @@ Initial guardrail hypothesis:
 This layer is intentionally a stub for later policy design. The exact metrics, decay windows, caps,
 and appeal/correction process should be decided after simulation.
 
-### 7. Negotiation Structure Layer
+### 7. AI Pricing Rationale Layer
+
+Distinkt already has brief extraction, so this layer should not duplicate brief parsing,
+normalization, missing-field detection, category identification, or creative-fit extraction.
+
+Instead, AI reasoning should operate after structured project data, eligibility results, match scores,
+pricing intelligence, timing nudges, and behavior nudges already exist.
+
+The useful role for AI is pricing rationale. The math decides the primary bounded adjustment; AI
+explains why that adjustment is reasonable.
+
+Examples:
+
+- explain why a dependable talent earns a 2% reliability premium
+- explain why a dependable client receives a 1% or 2% transaction-risk benefit
+- explain why an under-14-day project has a small urgency premium
+- explain why a 90+ day project has lower confidence until commitments firm up
+- explain why a specialist premium is defensible for a highly relevant category match
+- explain why a high-friction client creates a small risk premium or reduced flexibility
+- translate internal policy outputs into dignified client-facing language
+- generate internal operator notes when the rationale is sensitive or should not be client-facing
+
+Optional future extension:
+
+- AI may receive a small outcome-calibrated discretion band that can add or subtract a tiny residual
+  adjustment over time based on observed booking outcomes.
+
+This should be treated as a learned residual, not base pricing authority. For example, if repeated
+outcomes show that a specific kind of deal closes reliably at slightly higher rates, or routinely
+fails unless a small concession is made, the AI can recommend a narrow discretion delta.
+
+The core use case is contextual upside recognition:
+
+- "this talent should get more this time" because the current opportunity is unusually well matched,
+  the market has accepted similar premiums, or recent outcomes show that this talent is underpriced in
+  this context
+- "this deal may need a softer posture this time" because similar opportunities have repeatedly
+  failed at the computed quote despite otherwise strong fit
+
+This is different from exposing a private floor or asking who will concede. It is an evidence-backed
+way to recognize context-specific value or friction that the fixed scoring model has not fully
+learned yet.
+
+Initial discretion guardrails:
+
+- default discretion starts at 0%
+- early shadow-mode discretion should be advisory only
+- initial live discretion should be very small, for example +/-1%
+- mature discretion might expand only with evidence, for example up to +/-3%
+- discretion must be auditable and tied to outcome evidence
+- discretion must decay when outcomes change
+- discretion must never push below a talent floor
+- discretion must never bypass timing, behavior, or market-health caps
+- discretion should require human review when rationale is sensitive or confidence is low
+
+AI should not:
+
+- extract or normalize the original brief
+- decide category fit or creative nuance when that already exists upstream
+- decide base adjustments such as whether the timing or behavior nudge is 1%, 2%, 5%, or 8%
+- apply discretion outside the approved outcome-calibrated band
+- expose floor rates or hidden flexibility
+- override hard eligibility
+- create uncapped pricing changes
+- invent client or talent reputation facts
+- convert a low-price option into the default winner without policy support
+
+The operating principle:
+
+- AI reasons about the policy output.
+- AI justifies bounded math with human-readable rationale.
+- AI may eventually recommend a tiny outcome-calibrated residual adjustment.
+- The policy engine governs actual eligibility, caps, floors, and pricing movement.
+
+### 8. Negotiation Structure Layer
 
 Negotiation should remain possible, but bounded.
 
@@ -262,7 +337,7 @@ High-risk repricing:
 - alternatives have expired
 - pattern repeats across multiple deals
 
-### 8. Curated Recommendation Layer
+### 9. Curated Recommendation Layer
 
 The client should see a curated slate, not a commodity auction.
 
@@ -284,7 +359,7 @@ Client-facing pricing language should communicate confidence and fit:
 - "Premium specialist; budget may need adjustment"
 - "Strong creative fit, lower booking confidence at current budget"
 
-### 9. Deal Outcome Feedback Loop
+### 10. Deal Outcome Feedback Loop
 
 Outcomes should update models slowly enough to avoid overreacting to one-off situations.
 
@@ -475,6 +550,10 @@ The system should keep scores separable for explainability and simulation.
 - Timing horizon nudge: small capped adjustment for urgent or far-future project timing.
 - Talent behavior nudge: small capped adjustment for dependable or high-friction talent behavior.
 - Client behavior nudge: small capped adjustment for dependable or high-friction client behavior.
+- AI pricing rationale: human-readable explanation of computed pricing, timing, and behavior nudges
+  within hard policy guardrails.
+- AI discretion delta: optional tiny learned residual adjustment based on outcome evidence, bounded by
+  separate caps.
 - Market health score: does recommending this talent support long-term ecosystem quality?
 
 The final recommendation should be a policy decision over these scores, not a blind weighted average.
@@ -499,6 +578,8 @@ These are hypotheses to test in simulation, not final rules.
 9. Last-minute projects should carry a small urgency premium when they create real disruption.
 10. Projects roughly 90 or more days out should carry slightly lower confidence until the brief,
     approvals, and schedule become firmer.
+11. AI discretion should start at 0%, run in shadow mode first, and only graduate to tiny live
+    adjustments when outcome data shows consistent improvement.
 
 ## Open Questions
 
@@ -513,6 +594,12 @@ These are hypotheses to test in simulation, not final rules.
 - What exact talent and client behavior metrics should feed reliability nudges?
 - What cap keeps behavior meaningful but non-dominant?
 - How should behavior scores decay, recover, or be appealed?
+- What should AI be allowed to explain versus keep internal?
+- Which AI-generated rationales should require human review before surfacing to a client?
+- How should the system audit AI explanations for leakage of private floors or hidden flexibility?
+- What outcome evidence is strong enough to let AI discretion move from advisory to live?
+- What cap should govern AI discretion separately from timing and behavior nudges?
+- How should AI discretion decay when recent outcomes contradict older patterns?
 - What market health constraints should override short-term booking probability?
 - How quickly should negative negotiation behavior decay after improved behavior?
 
