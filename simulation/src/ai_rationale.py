@@ -113,6 +113,12 @@ def _build_admin_pricing_rationale(
             f"A {_pct(client_behavior['rate_delta'])} client risk adjustment reflects added negotiation or scope uncertainty."
         )
 
+    availability_check = rec.get("availability_check", {})
+    if availability_check.get("status") == "countered_before_client_presentation":
+        reasons.append(
+            "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only."
+        )
+
     if rec["creative_fit"] >= 0.86 and rec["price_fit"] < 0.8:
         reasons.append(
             "The premium posture is defensible because creative fit is unusually strong for this category."

@@ -54,10 +54,11 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - launch-mode admin approval state and bounded setting-tweak controls
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - market-health flags for race-to-bottom and price-led recommendation risk
+- pre-presentation talent availability checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas
 - upstream-score placeholders for actor readiness, talent reliability, and client trust
 - curated recommendation lanes
-- simple deterministic negotiation outcomes
+- simple deterministic client decision outcomes against locked presentation quotes
 - scenario traces for manual review
 
 This is not production pricing logic.

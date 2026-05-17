@@ -73,6 +73,39 @@ def validate_report(report: dict) -> dict:
             brand = rationales["brandFacingRationale"]
             talent = rationales["talentFacingRationale"]
             governance = rec["adminGovernance"]
+            availability_check = rec["availabilityCheck"]
+
+            _check(
+                availability_check["completedBeforeClientPresentation"] is True,
+                failures,
+                "availability_check_missing",
+                context,
+                "talent must opt into the rate before client presentation",
+            )
+            _check(
+                availability_check["clientVisible"] is False,
+                failures,
+                "availability_check_public",
+                context,
+                "availability check details must not be client-facing",
+            )
+            _check(
+                int(availability_check["committedQuote"]) == int(rec["quote"]),
+                failures,
+                "presentation_quote_not_committed",
+                context,
+                "client-facing quote must equal the pre-presentation talent committed quote",
+            )
+            event_text = " ".join(
+                availability_check.get("events", []) + availability_check.get("warnings", [])
+            ).lower()
+            _check(
+                "post-interest" not in event_text,
+                failures,
+                "post_interest_talent_repricing",
+                context,
+                "talent-side rate movement must happen before client presentation",
+            )
 
             _check(
                 admin["visibility"] == "admin-only",
@@ -143,6 +176,14 @@ def validate_report(report: dict) -> dict:
                     "discretion_exception_missing",
                     context,
                     "nonzero discretion must trigger admin exception review",
+                )
+            if availability_check["status"] == "countered_before_client_presentation":
+                _check(
+                    "pre-presentation talent counter" in governance["exceptionTriggers"],
+                    failures,
+                    "pre_presentation_counter_exception_missing",
+                    context,
+                    "pre-presentation talent counters must trigger admin exception review",
                 )
 
             behavior_delta = abs(float(rec["behavior"]["combinedBehaviorRateDelta"]))

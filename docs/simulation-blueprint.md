@@ -205,8 +205,8 @@ Expected risk:
 
 ### Bounded Negotiation Marketplace
 
-Require pre-presentation quote bands, present locked numbers to the client, and only allow
-renegotiation after presentation when client-side facts change.
+Require pre-presentation availability checks at a proposed rate, present locked talent-approved
+numbers to the client, and only allow renegotiation after presentation when client-side facts change.
 
 Expected risk:
 
@@ -269,18 +269,19 @@ Expected risk:
 3. Score creative, practical, pricing, trust, and market-health dimensions.
 4. Apply capped timing-horizon nudges.
 5. Apply capped talent and client behavior nudges.
-6. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
-7. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
-8. Record that this layer does not generate talent-facing job-specific pricing rationale.
-9. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
-10. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
-11. Build a curated recommendation slate.
-12. Simulate client shortlist behavior.
-13. Simulate talent response and negotiation.
-14. Resolve booking, no-booking, repricing, or cancellation.
-15. Update historical outcomes.
-16. Repeat across many rounds.
-17. Evaluate market-level metrics.
+6. Simulate talent availability check at the proposed project rate before client presentation.
+7. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
+8. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
+9. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
+10. Record that this layer does not generate talent-facing job-specific pricing rationale.
+11. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
+12. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
+13. Build a curated recommendation slate from talent-approved rates only.
+14. Simulate client shortlist and decision behavior against locked presentation quotes.
+15. Resolve booking, no-booking, hold, repricing exception, or cancellation.
+16. Update historical outcomes.
+17. Repeat across many rounds.
+18. Evaluate market-level metrics.
 ```
 
 ## Success Metrics
@@ -303,7 +304,8 @@ Talent health metrics:
 
 Client trust metrics:
 
-- late-stage repricing frequency
+- post-presentation repricing exception frequency
+- pre-presentation talent counter frequency
 - budget surprise frequency
 - slate realism
 - number of failed negotiations per booking
@@ -323,7 +325,7 @@ Marketplace health metrics:
 
 Abuse metrics:
 
-- unexplained post-interest repricing
+- attempted post-presentation repricing without client-side fact changes
 - client budget fishing
 - repeated non-booking probes
 - fake prestige offers
@@ -483,11 +485,13 @@ Question:
 Expected behavior:
 
 - Bake negotiated numbers into the slate at presentation time.
+- Talent sees the proposed project rate at availability check and decides whether to be considered at
+  that rate before the client ever sees the option.
 - Treat the presented number as locked.
 - Allow renegotiation only for client-side changes to usage, scope, timing, exclusivity, travel, or
   requirements.
-- Treat any talent-side price movement after interest, without client-side fact changes, as harmful
-  repricing.
+- Treat any talent-side price movement after client presentation, without client-side fact changes, as
+  a policy failure rather than a normal negotiation event.
 
 ### Exploratory Client Budget
 
@@ -575,8 +579,8 @@ Each simulated scenario should produce a compact trace:
 - recommended slate with lanes
 - client-facing talent scores
 - hidden internal reasons
-- client shortlist
-- negotiation events
+- pre-presentation availability checks
+- client decision events
 - final outcome
 - policy warnings
 - admin-only AI pricing rationale notes
@@ -601,7 +605,11 @@ Example trace shape:
       "clientFacingTalentScore": 92,
       "clientVisiblePriceState": "premium stretch",
       "internalAcceptanceProbability": 0.62,
-      "internalRepricingRisk": "low"
+      "availabilityCheck": {
+        "status": "accepted_at_presented_rate",
+        "completedBeforeClientPresentation": true,
+        "clientVisible": false
+      }
     }
   ],
   "outcome": "booked",

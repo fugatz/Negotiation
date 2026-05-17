@@ -22,6 +22,18 @@
           "creativeFit": 0.566,
           "priceFit": 0.95,
           "acceptanceProbability": 0.867,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 6700,
+            "committedQuote": 6700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -110,6 +122,18 @@
           "creativeFit": 0.676,
           "priceFit": 0.78,
           "acceptanceProbability": 0.823,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 11600,
+            "committedQuote": 11600,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.71,
             "flags": [
@@ -200,6 +224,18 @@
           "creativeFit": 1.0,
           "priceFit": 0.14,
           "acceptanceProbability": 0.753,
+          "availabilityCheck": {
+            "talent_id": "premium_food_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 21200,
+            "committedQuote": 21200,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -291,12 +327,26 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "lane": "Strong Specialist",
-          "quote": 10400,
-          "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.731,
+          "quote": 12500,
+          "clientVisiblePriceState": "premium stretch",
+          "overallScore": 0.723,
           "creativeFit": 0.886,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.621,
+          "acceptanceProbability": 0.541,
+          "availabilityCheck": {
+            "talent_id": "volatile_rep_managed_talent",
+            "status": "countered_before_client_presentation",
+            "proposedQuote": 10400,
+            "committedQuote": 12500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent countered during availability check before client presentation"
+            ],
+            "warnings": [
+              "pre-presentation counter increased locked quote"
+            ]
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -326,7 +376,8 @@
               "visibility": "admin-only",
               "summary": "A -2.0% talent-side friction adjustment reflects added deal friction.",
               "reasons": [
-                "A -2.0% talent-side friction adjustment reflects added deal friction."
+                "A -2.0% talent-side friction adjustment reflects added deal friction.",
+                "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -373,7 +424,8 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
-              "admin pricing rationale flagged for review"
+              "admin pricing rationale flagged for review",
+              "pre-presentation talent counter"
             ],
             "matureAutonomyCandidate": false,
             "auditRequired": true
@@ -381,24 +433,50 @@
         }
       ],
       "stressShortlist": [],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 6700,
+          "committedQuote": 6700,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 11600,
+          "committedQuote": 11600,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "final_quote": 6700,
+          "locked_quote": 6700,
           "client_capacity": 11400,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "failed_budget_gap",
-          "final_quote": 11600,
+          "locked_quote": 11600,
           "client_capacity": 11400,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": [
             "final quote exceeded client capacity"
@@ -430,6 +508,18 @@
           "creativeFit": 0.949,
           "priceFit": 0.95,
           "acceptanceProbability": 0.95,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 8900,
+            "committedQuote": 8900,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -523,6 +613,18 @@
           "creativeFit": 0.737,
           "priceFit": 0.95,
           "acceptanceProbability": 0.911,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 13400,
+            "committedQuote": 13400,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.71,
             "flags": [
@@ -614,6 +716,18 @@
           "creativeFit": 0.717,
           "priceFit": 0.95,
           "acceptanceProbability": 0.883,
+          "availabilityCheck": {
+            "talent_id": "luxury_fashion_editor",
+            "status": "accepted_after_scope_confirmation",
+            "proposedQuote": 14000,
+            "committedQuote": 14000,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent requested usage confirmation before quote commitment"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -703,6 +817,18 @@
           "creativeFit": 0.537,
           "priceFit": 0.95,
           "acceptanceProbability": 0.882,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 7500,
+            "committedQuote": 7500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -785,24 +911,50 @@
         }
       ],
       "stressShortlist": [],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 8900,
+          "committedQuote": 8900,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 13400,
+          "committedQuote": 13400,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "booked",
-          "final_quote": 8900,
+          "locked_quote": 8900,
           "client_capacity": 17100,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "booked",
-          "final_quote": 13400,
+          "locked_quote": 13400,
           "client_capacity": 17100,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         }
@@ -849,6 +1001,18 @@
           "creativeFit": 0.518,
           "priceFit": 0.95,
           "acceptanceProbability": 0.86,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 7800,
+            "committedQuote": 7800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -940,6 +1104,18 @@
           "creativeFit": 0.438,
           "priceFit": 0.95,
           "acceptanceProbability": 0.81,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 13600,
+            "committedQuote": 13600,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -1031,6 +1207,18 @@
           "creativeFit": 0.098,
           "priceFit": 0.95,
           "acceptanceProbability": 0.695,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 8900,
+            "committedQuote": 8900,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -1121,6 +1309,18 @@
           "creativeFit": 0.258,
           "priceFit": 0.95,
           "acceptanceProbability": 0.73,
+          "availabilityCheck": {
+            "talent_id": "low_rate_fast_responder",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 4600,
+            "committedQuote": 4600,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.52,
             "flags": [
@@ -1207,24 +1407,50 @@
         }
       ],
       "stressShortlist": [],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 7800,
+          "committedQuote": 7800,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 13600,
+          "committedQuote": 13600,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "final_quote": 7800,
+          "locked_quote": 7800,
           "client_capacity": 20900,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "booked",
-          "final_quote": 13600,
+          "locked_quote": 13600,
           "client_capacity": 20900,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         }
@@ -1271,6 +1497,18 @@
           "creativeFit": 0.999,
           "priceFit": 0.36,
           "acceptanceProbability": 0.674,
+          "availabilityCheck": {
+            "talent_id": "luxury_fashion_editor",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 12400,
+            "committedQuote": 12400,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -1367,6 +1605,18 @@
           "creativeFit": 0.635,
           "priceFit": 0.36,
           "acceptanceProbability": 0.595,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 10800,
+            "committedQuote": 10800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -1459,6 +1709,18 @@
           "creativeFit": 0.655,
           "priceFit": 0.36,
           "acceptanceProbability": 0.58,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 7100,
+            "committedQuote": 7100,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -1550,6 +1812,18 @@
           "creativeFit": 0.515,
           "priceFit": 0.42,
           "acceptanceProbability": 0.605,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 6200,
+            "committedQuote": 6200,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -1635,14 +1909,40 @@
         }
       ],
       "stressShortlist": [],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "luxury_fashion_editor",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 12400,
+          "committedQuote": 12400,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 10800,
+          "committedQuote": 10800,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "luxury_fashion_editor",
           "status": "failed_budget_gap",
-          "final_quote": 12400,
+          "locked_quote": 12400,
           "client_capacity": 4600,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": [
             "final quote exceeded client capacity"
@@ -1651,10 +1951,10 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "failed_budget_gap",
-          "final_quote": 10800,
+          "locked_quote": 10800,
           "client_capacity": 4600,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": [
             "final quote exceeded client capacity"
@@ -1686,6 +1986,18 @@
           "creativeFit": 0.56,
           "priceFit": 0.95,
           "acceptanceProbability": 0.649,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 6800,
+            "committedQuote": 6800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -1779,6 +2091,18 @@
           "creativeFit": 1.0,
           "priceFit": 0.14,
           "acceptanceProbability": 0.537,
+          "availabilityCheck": {
+            "talent_id": "premium_food_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 21600,
+            "committedQuote": 21600,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -1879,6 +2203,18 @@
           "creativeFit": 0.67,
           "priceFit": 0.511,
           "acceptanceProbability": 0.529,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 12000,
+            "committedQuote": 12000,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.71,
             "flags": [
@@ -1969,12 +2305,26 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "lane": "Viable Option",
-          "quote": 10600,
-          "clientVisiblePriceState": "premium stretch",
-          "overallScore": 0.662,
+          "quote": 12700,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.654,
           "creativeFit": 0.858,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.35,
+          "acceptanceProbability": 0.27,
+          "availabilityCheck": {
+            "talent_id": "volatile_rep_managed_talent",
+            "status": "countered_before_client_presentation",
+            "proposedQuote": 10600,
+            "committedQuote": 12700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent countered during availability check before client presentation"
+            ],
+            "warnings": [
+              "pre-presentation counter increased locked quote"
+            ]
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -2006,7 +2356,8 @@
               "reasons": [
                 "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
-                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -2054,7 +2405,9 @@
             ],
             "exceptionTriggers": [
               "admin pricing rationale flagged for review",
-              "long-horizon project without strong client trust"
+              "long-horizon project without strong client trust",
+              "outside stated budget",
+              "pre-presentation talent counter"
             ],
             "matureAutonomyCandidate": false,
             "auditRequired": true
@@ -2062,14 +2415,40 @@
         }
       ],
       "stressShortlist": [],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 6800,
+          "committedQuote": 6800,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "premium_food_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 21600,
+          "committedQuote": 21600,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "reliable_generalist_dp",
           "status": "pending_hold",
-          "final_quote": 6800,
+          "locked_quote": 6800,
           "client_capacity": 9700,
           "events": [
-            "quote stayed inside expected band",
+            "client evaluated locked presentation quote",
             "long-horizon project needs confirmation window"
           ],
           "warnings": [
@@ -2079,10 +2458,10 @@
         {
           "talent_id": "premium_food_director",
           "status": "pending_hold",
-          "final_quote": 21600,
+          "locked_quote": 21600,
           "client_capacity": 9700,
           "events": [
-            "quote stayed inside expected band",
+            "client evaluated locked presentation quote",
             "long-horizon project needs confirmation window"
           ],
           "warnings": [
@@ -2115,6 +2494,18 @@
           "creativeFit": 0.944,
           "priceFit": 0.95,
           "acceptanceProbability": 0.947,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 8700,
+            "committedQuote": 8700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -2209,6 +2600,18 @@
           "creativeFit": 0.736,
           "priceFit": 0.78,
           "acceptanceProbability": 0.862,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 13200,
+            "committedQuote": 13200,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.71,
             "flags": [
@@ -2301,6 +2704,18 @@
           "creativeFit": 0.536,
           "priceFit": 0.95,
           "acceptanceProbability": 0.881,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 7400,
+            "committedQuote": 7400,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -2391,6 +2806,18 @@
           "creativeFit": 0.716,
           "priceFit": 0.78,
           "acceptanceProbability": 0.834,
+          "availabilityCheck": {
+            "talent_id": "luxury_fashion_editor",
+            "status": "accepted_after_scope_confirmation",
+            "proposedQuote": 13800,
+            "committedQuote": 13800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent requested usage confirmation before quote commitment"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -2474,14 +2901,40 @@
         }
       ],
       "stressShortlist": [],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 8700,
+          "committedQuote": 8700,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 13200,
+          "committedQuote": 13200,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "pending_hold",
-          "final_quote": 8700,
+          "locked_quote": 8700,
           "client_capacity": 13900,
           "events": [
-            "quote stayed inside expected band",
+            "client evaluated locked presentation quote",
             "long-horizon project needs confirmation window"
           ],
           "warnings": [
@@ -2491,10 +2944,10 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "pending_hold",
-          "final_quote": 13200,
+          "locked_quote": 13200,
           "client_capacity": 13900,
           "events": [
-            "quote stayed inside expected band",
+            "client evaluated locked presentation quote",
             "long-horizon project needs confirmation window"
           ],
           "warnings": [
@@ -2527,6 +2980,18 @@
           "creativeFit": 0.566,
           "priceFit": 0.95,
           "acceptanceProbability": 0.887,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 7100,
+            "committedQuote": 7100,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -2616,6 +3081,18 @@
           "creativeFit": 1.0,
           "priceFit": 0.14,
           "acceptanceProbability": 0.773,
+          "availabilityCheck": {
+            "talent_id": "premium_food_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 22500,
+            "committedQuote": 22500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -2714,6 +3191,18 @@
           "creativeFit": 0.676,
           "priceFit": 0.551,
           "acceptanceProbability": 0.779,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 12500,
+            "committedQuote": 12500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.71,
             "flags": [
@@ -2799,12 +3288,26 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "lane": "Strong Specialist",
-          "quote": 11100,
-          "clientVisiblePriceState": "likely workable with scoped flexibility",
-          "overallScore": 0.693,
+          "quote": 13300,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.685,
           "creativeFit": 0.882,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.593,
+          "acceptanceProbability": 0.513,
+          "availabilityCheck": {
+            "talent_id": "volatile_rep_managed_talent",
+            "status": "countered_before_client_presentation",
+            "proposedQuote": 11100,
+            "committedQuote": 13300,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent countered during availability check before client presentation"
+            ],
+            "warnings": [
+              "pre-presentation counter increased locked quote"
+            ]
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -2836,6 +3339,7 @@
               "reasons": [
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
                 "A -1.0% client reliability adjustment reflects lower transaction risk.",
+                "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only.",
                 "The premium posture is defensible because creative fit is unusually strong for this category."
               ],
               "discretionDelta": 0.0,
@@ -2883,7 +3387,9 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
-              "admin pricing rationale flagged for review"
+              "admin pricing rationale flagged for review",
+              "outside stated budget",
+              "pre-presentation talent counter"
             ],
             "matureAutonomyCandidate": false,
             "auditRequired": true
@@ -2894,12 +3400,26 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "lane": "Stress Test Candidate",
-          "quote": 11100,
-          "clientVisiblePriceState": "likely workable with scoped flexibility",
-          "overallScore": 0.693,
+          "quote": 13300,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.685,
           "creativeFit": 0.882,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.593,
+          "acceptanceProbability": 0.513,
+          "availabilityCheck": {
+            "talent_id": "volatile_rep_managed_talent",
+            "status": "countered_before_client_presentation",
+            "proposedQuote": 11100,
+            "committedQuote": 13300,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent countered during availability check before client presentation"
+            ],
+            "warnings": [
+              "pre-presentation counter increased locked quote"
+            ]
+          },
           "marketHealth": {
             "score": 0.8,
             "flags": [
@@ -2931,6 +3451,7 @@
               "reasons": [
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
                 "A -1.0% client reliability adjustment reflects lower transaction risk.",
+                "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only.",
                 "The premium posture is defensible because creative fit is unusually strong for this category."
               ],
               "discretionDelta": 0.0,
@@ -2978,31 +3499,73 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
-              "admin pricing rationale flagged for review"
+              "admin pricing rationale flagged for review",
+              "outside stated budget",
+              "pre-presentation talent counter"
             ],
             "matureAutonomyCandidate": false,
             "auditRequired": true
           }
         }
       ],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 7100,
+          "committedQuote": 7100,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "premium_food_director",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 22500,
+          "committedQuote": 22500,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "volatile_rep_managed_talent",
+          "status": "countered_before_client_presentation",
+          "proposedQuote": 11100,
+          "committedQuote": 13300,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent countered during availability check before client presentation"
+          ],
+          "warnings": [
+            "pre-presentation counter increased locked quote"
+          ]
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "final_quote": 7100,
+          "locked_quote": 7100,
           "client_capacity": 11200,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         },
         {
           "talent_id": "premium_food_director",
           "status": "failed_budget_gap",
-          "final_quote": 22500,
+          "locked_quote": 22500,
           "client_capacity": 11200,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": [
             "final quote exceeded client capacity"
@@ -3011,13 +3574,12 @@
         {
           "talent_id": "volatile_rep_managed_talent",
           "status": "failed_budget_gap",
-          "final_quote": 13300,
+          "locked_quote": 13300,
           "client_capacity": 11200,
           "events": [
-            "talent attempted a 20% post-interest increase"
+            "client evaluated locked presentation quote"
           ],
           "warnings": [
-            "unexplained post-interest repricing",
             "final quote exceeded client capacity"
           ]
         }
@@ -3025,7 +3587,7 @@
       "outcome": "booked",
       "warnings": [
         "final quote exceeded client capacity",
-        "unexplained post-interest repricing"
+        "pre-presentation counter increased locked quote"
       ]
     },
     {
@@ -3048,6 +3610,18 @@
           "creativeFit": 0.688,
           "priceFit": 0.49,
           "acceptanceProbability": 0.766,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 6700,
+            "committedQuote": 6700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -3138,6 +3712,18 @@
           "creativeFit": 0.728,
           "priceFit": 0.95,
           "acceptanceProbability": 0.849,
+          "availabilityCheck": {
+            "talent_id": "low_rate_fast_responder",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 4000,
+            "committedQuote": 4000,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.52,
             "flags": [
@@ -3227,6 +3813,18 @@
           "creativeFit": 0.728,
           "priceFit": 0.14,
           "acceptanceProbability": 0.652,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 11600,
+            "committedQuote": 11600,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.71,
             "flags": [
@@ -3319,6 +3917,18 @@
           "creativeFit": 0.794,
           "priceFit": 0.14,
           "acceptanceProbability": 0.65,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 7600,
+            "committedQuote": 7600,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.68,
             "flags": []
@@ -3411,6 +4021,18 @@
           "creativeFit": 0.728,
           "priceFit": 0.95,
           "acceptanceProbability": 0.849,
+          "availabilityCheck": {
+            "talent_id": "low_rate_fast_responder",
+            "status": "accepted_at_presented_rate",
+            "proposedQuote": 4000,
+            "committedQuote": 4000,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted availability check rate before presentation"
+            ],
+            "warnings": []
+          },
           "marketHealth": {
             "score": 0.52,
             "flags": [
@@ -3492,14 +4114,40 @@
           }
         }
       ],
-      "negotiations": [
+      "availabilityChecks": [
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 6700,
+          "committedQuote": 6700,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "low_rate_fast_responder",
+          "status": "accepted_at_presented_rate",
+          "proposedQuote": 4000,
+          "committedQuote": 4000,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted availability check rate before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
         {
           "talent_id": "reliable_generalist_dp",
           "status": "failed_budget_gap",
-          "final_quote": 6700,
+          "locked_quote": 6700,
           "client_capacity": 5200,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": [
             "final quote exceeded client capacity"
@@ -3508,10 +4156,10 @@
         {
           "talent_id": "low_rate_fast_responder",
           "status": "booked",
-          "final_quote": 4000,
+          "locked_quote": 4000,
           "client_capacity": 5200,
           "events": [
-            "quote stayed inside expected band"
+            "client evaluated locked presentation quote"
           ],
           "warnings": []
         }
@@ -3535,6 +4183,8 @@
     "talentFacingJobSpecificRationaleCount": 0,
     "adminApprovalRequiredCount": 34,
     "matureAutonomyCandidateCount": 13,
+    "availabilityCheckCount": 34,
+    "prePresentationTalentCounterCount": 4,
     "aiHumanReviewShareOfRecommendations": 0.441,
     "averageAbsoluteShadowDiscretionDelta": 0.0015,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
@@ -3543,7 +4193,8 @@
       "long-horizon project without strong client trust": 4,
       "market-health guardrail": 3,
       "nonzero AI discretion proposal": 5,
-      "outside stated budget": 11
+      "outside stated budget": 14,
+      "pre-presentation talent counter": 4
     },
     "marketHealthFlagCounts": {
       "idle_access_without_discounting": 6,
@@ -3553,7 +4204,7 @@
     "warningCounts": {
       "final quote exceeded client capacity": 4,
       "long-horizon commitment uncertainty": 2,
-      "unexplained post-interest repricing": 1
+      "pre-presentation counter increased locked quote": 1
     }
   },
   "validation": {

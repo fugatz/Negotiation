@@ -8,7 +8,7 @@ from .admin_governance import build_admin_governance
 from .ai_rationale import build_ai_rationales
 from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_behavior_nudge
 from .common import FIXTURE_DIR
-from .negotiation import simulate_negotiation
+from .negotiation import apply_availability_commitment, simulate_availability_check, simulate_client_decision
 from .outcome_calibration import propose_shadow_discretion
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
@@ -42,6 +42,7 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "creativeFit": rec["creative_fit"],
         "priceFit": rec["price_fit"],
         "acceptanceProbability": rec["acceptance_probability"],
+        "availabilityCheck": rec["availability_check"],
         "marketHealth": {
             "score": rec["market_health_score"],
             "flags": rec.get("market_health_flags", []),
@@ -91,16 +92,18 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
             talent_behavior_nudge(person),
             client_behavior_nudge(client),
         )
-        discretion = propose_shadow_discretion(project, person, adjusted, outcomes)
-        adjusted["ai_discretion"] = discretion
-        adjusted["ai_rationales"] = build_ai_rationales(
-            project,
-            client,
-            person,
-            adjusted,
-            discretion,
-        )
         if adjusted["eligible"]:
+            availability_check = simulate_availability_check(project, person, adjusted)
+            adjusted = apply_availability_commitment(adjusted, availability_check)
+            discretion = propose_shadow_discretion(project, person, adjusted, outcomes)
+            adjusted["ai_discretion"] = discretion
+            adjusted["ai_rationales"] = build_ai_rationales(
+                project,
+                client,
+                person,
+                adjusted,
+                discretion,
+            )
             recommendations.append(adjusted)
         else:
             excluded.append(
@@ -129,15 +132,17 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
             negotiation_candidates.append(item)
             seen.add(item["talent_id"])
 
-    negotiations = [
-        simulate_negotiation(project, talent_by_id[item["talent_id"]], item)
+    client_decisions = [
+        simulate_client_decision(project, talent_by_id[item["talent_id"]], item)
         for item in negotiation_candidates
     ]
-    booked = next((item for item in negotiations if item["status"] == "booked"), None)
+    booked = next((item for item in client_decisions if item["status"] == "booked"), None)
 
     warnings = []
-    for negotiation in negotiations:
-        warnings.extend(negotiation["warnings"])
+    for availability_check in [item["availability_check"] for item in negotiation_candidates]:
+        warnings.extend(availability_check["warnings"])
+    for client_decision in client_decisions:
+        warnings.extend(client_decision["warnings"])
 
     return {
         "project": project["name"],
@@ -151,8 +156,9 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         "excluded": excluded,
         "recommendedSlate": [compact_recommendation(item, talent_by_id) for item in slate],
         "stressShortlist": [compact_recommendation(item, talent_by_id) for item in stress_shortlist],
-        "negotiations": negotiations,
-        "outcome": booked["status"] if booked else (negotiations[0]["status"] if negotiations else "no_viable_slate"),
+        "availabilityChecks": [item["availability_check"] for item in negotiation_candidates],
+        "clientDecisions": client_decisions,
+        "outcome": booked["status"] if booked else (client_decisions[0]["status"] if client_decisions else "no_viable_slate"),
         "warnings": sorted(set(warnings)),
     }
 
@@ -171,6 +177,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     mature_autonomy_candidate_count = 0
     admin_exception_triggers: list[str] = []
     market_health_flags: list[str] = []
+    availability_check_count = 0
+    pre_presentation_counter_count = 0
     leakage_count = 0
     human_review_count = 0
 
@@ -182,6 +190,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
             if rec["timing"]["rateDelta"] != 0 or rec["timing"]["confidenceDelta"] != 0:
                 timing_changed += 1
             market_health_flags.extend(rec["marketHealth"]["flags"])
+            availability_check_count += 1
+            if rec["availabilityCheck"]["status"] == "countered_before_client_presentation":
+                pre_presentation_counter_count += 1
             rationales = rec["aiRationales"]
             admin_rationale = rationales["adminPricingRationale"]
             brand_rationale = rationales["brandFacingRationale"]
@@ -222,6 +233,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "talentFacingJobSpecificRationaleCount": talent_job_specific_rationale_count,
         "adminApprovalRequiredCount": admin_approval_required_count,
         "matureAutonomyCandidateCount": mature_autonomy_candidate_count,
+        "availabilityCheckCount": availability_check_count,
+        "prePresentationTalentCounterCount": pre_presentation_counter_count,
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
         "maxAbsoluteShadowDiscretionDelta": round(max_discretion, 4),

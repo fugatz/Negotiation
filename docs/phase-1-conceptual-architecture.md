@@ -219,7 +219,7 @@ Underlying talent-side signals that may feed upstream services include:
 - accurate availability
 - professional counteroffer behavior
 - scope-change reason quality
-- post-interest repricing frequency
+- attempted post-presentation repricing frequency
 
 Underlying client-side signals that may feed upstream services include:
 
@@ -427,12 +427,14 @@ Initial admin-only governance defaults:
 
 Negotiation should remain possible, but bounded.
 
-The core rule: pricing is negotiated and finalized before a talent is presented to the client. Once a
-talent appears in the client-facing slate, that presented number should be treated as locked.
+The core rule: pricing is negotiated and finalized before a talent is presented to the client. During
+availability check, Distinkt shows the talent the proposed rate for that project. The talent can opt
+in at that rate, decline, or counter before the client ever sees them. Once a talent appears in the
+client-facing slate, that presented number should be treated as locked.
 
 Possible mechanisms:
 
-- pre-presentation quote commitment window
+- pre-presentation availability and quote commitment window
 - structured internal counteroffer bands before presentation
 - quote expiration periods
 - presentation price lock
@@ -443,9 +445,9 @@ Possible mechanisms:
 Strong negotiation means being willing to hold the presented price or let the client walk away. It can
 also mean choosing not to present a talent if the project is not economically credible.
 
-Because the client receives a range of talent options, the negotiated economics should already be
-baked into the slate at presentation time. The slate itself provides alternatives; late repricing
-should not be used as leverage after the client has shown interest.
+Because the client receives a range of talent options, the talent-approved economics should already
+be baked into the slate at presentation time. The slate itself provides alternatives; late talent-side
+repricing should be structurally blocked after the client has shown interest.
 
 Legitimate renegotiation after presentation should require client-side fact changes.
 
@@ -703,9 +705,9 @@ Failure mode:
 
 Defenses:
 
-- Require pre-submission quote bounds.
-- Allow repricing only with scoped reason codes.
-- Track unexplained post-interest increases.
+- Require pre-presentation availability checks at project-specific rates.
+- Allow post-presentation repricing only with scoped client-side change reason codes.
+- Track pre-presentation counters separately from attempted post-presentation price changes.
 - Reduce future recommendation confidence for repeated patterns.
 
 ### Client Budget Fishing
@@ -804,27 +806,29 @@ These are hypotheses to test in simulation, not final rules.
     reliability, and outcome data, without implying an exact price guarantee.
 16. Once pricing is presented to the client, it is locked unless client-side facts change. Strong
     negotiation happens before presentation and includes being willing to let a client walk away.
-17. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
+17. Talent sees the project-specific proposed rate at availability check and decides whether to be
+    considered at that rate before the client sees the slate.
+18. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
     not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
-18. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
+19. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
     client is low-confidence, while a high-trust repeat client around their 4th project or later is
     much more credible.
-19. Talent/client behavior nudges should consume upstream service scores: actor readiness,
+20. Talent/client behavior nudges should consume upstream service scores: actor readiness,
     non-actor talent reliability, and client trust. This layer applies capped nudges; it does not own
     the raw metric definitions.
-20. Behavior should function like a small friction tax. It should be meaningful but not terribly
+21. Behavior should function like a small friction tax. It should be meaningful but not terribly
     detrimental; difficult but valuable talent or clients should not be excluded by behavior scoring
     alone.
-21. Behavior nudge recovery should happen through positive upstream data improving readiness,
+22. Behavior nudge recovery should happen through positive upstream data improving readiness,
     reliability, or trust scores. There should not be a separate appeal process in this pricing layer.
-22. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
+23. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
     separate positive match rationale only. Talent should not see negative job-specific pricing
     rationale from this layer.
-23. Launch mode should require admin approval before client presentation. The long-term target is an
+24. Launch mode should require admin approval before client presentation. The long-term target is an
     autonomous engine with exception-based admin review.
-24. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
+25. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
     replayable in simulation.
-25. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
+26. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
     by price alone, while still allowing them to appear for admin review when relevant.
 
 ## Admin-Only Governance Decisions

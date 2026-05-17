@@ -28,6 +28,8 @@ def build_admin_governance(rec: dict) -> dict:
         exception_triggers.append("admin pricing rationale flagged for review")
     if float(discretion["delta"]) != 0.0:
         exception_triggers.append("nonzero AI discretion proposal")
+    if rec.get("availability_check", {}).get("status") == "countered_before_client_presentation":
+        exception_triggers.append("pre-presentation talent counter")
     market_health_flags = set(rec.get("market_health_flags", []))
     review_flags = set(market_health_config["review_flags"])
     if market_health_flags & review_flags or float(rec["market_health_score"]) < float(
