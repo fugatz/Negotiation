@@ -30,6 +30,12 @@ Run the report with policy validation:
 python3 -m simulation.src.runner --fail-on-validation
 ```
 
+Run with a policy variant:
+
+```bash
+python3 -m simulation.src.runner --policy simulation/config/variants/stricter_market_health.json
+```
+
 Run one scenario:
 
 ```bash

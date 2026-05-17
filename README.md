@@ -37,3 +37,9 @@ python3 -m simulation.src.runner --fail-on-validation
 ```
 
 Admin-tweakable dry-run settings live in `simulation/config/policy.json`.
+
+Run with a policy variant:
+
+```bash
+python3 -m simulation.src.runner --policy simulation/config/variants/stricter_market_health.json
+```

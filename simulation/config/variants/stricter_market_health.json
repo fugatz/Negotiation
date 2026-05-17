@@ -1,0 +1,11 @@
+{
+  "extends": "../policy.json",
+  "version": "phase-2-stricter-market-health-v1",
+  "market_health": {
+    "review_score_threshold": 0.68,
+    "ranking_penalties": {
+      "race_to_bottom_risk": 0.18,
+      "price_led_recommendation_risk": 0.1
+    }
+  }
+}

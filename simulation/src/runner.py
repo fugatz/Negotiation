@@ -11,7 +11,7 @@ from .common import FIXTURE_DIR
 from .negotiation import simulate_negotiation
 from .outcome_calibration import propose_shadow_discretion
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
-from .policy_config import POLICY_CONFIG_PATH, policy_version
+from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
 from .scoring import score_talent
 from .timing import timing_nudge
 from .validation import validate_report
@@ -237,7 +237,10 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     }
 
 
-def run(project_id: str | None = None) -> dict:
+def run(project_id: str | None = None, policy_path: str | None = None) -> dict:
+    if policy_path:
+        configure_policy_config(policy_path)
+
     talent, clients, projects, outcomes = load_fixtures()
     clients_by_id = {client["id"]: client for client in clients}
 
@@ -250,7 +253,7 @@ def run(project_id: str | None = None) -> dict:
     traces = [simulate_project(project, talent, clients_by_id, outcomes) for project in selected]
     report = {
         "policy": policy_version(),
-        "policyConfigPath": str(POLICY_CONFIG_PATH.relative_to(FIXTURE_DIR.parent.parent)),
+        "policyConfigPath": active_policy_config_relative_path(),
         "traces": traces,
         "metrics": aggregate_metrics(traces),
     }
@@ -260,6 +263,7 @@ def run(project_id: str | None = None) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run Distinkt pricing simulation scenarios.")
+    parser.add_argument("--policy", help="Optional policy config or variant JSON path")
     parser.add_argument("--project", help="Run a single project id from simulation/fixtures/projects.json")
     parser.add_argument("--out", help="Optional path to write the JSON report")
     parser.add_argument(
@@ -269,7 +273,7 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    report = run(args.project)
+    report = run(args.project, args.policy)
     encoded = json.dumps(report, indent=2)
 
     if args.out:
