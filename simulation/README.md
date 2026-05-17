@@ -42,6 +42,11 @@ Run one scenario:
 python3 -m simulation.src.runner --project last_minute_automotive
 ```
 
+## Reports
+
+- [Phase 2 Findings Report](reports/phase-2-findings.md)
+- [Policy Comparison Report](reports/policy-comparison.md)
+
 ## Current Scope
 
 - hard eligibility checks
