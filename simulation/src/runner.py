@@ -35,6 +35,8 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
     talent = talent_by_id[rec["talent_id"]]
     return {
         "talent": talent["name"],
+        "talentClass": rec["legal_floor"]["talentClass"],
+        "role": talent.get("actor_role") or talent.get("production_role"),
         "lane": rec.get("lane", "Stress Test Candidate"),
         "quote": rec["final_quote"],
         "clientVisiblePriceState": rec.get("client_visible_price_state", "stress-test only"),
@@ -43,6 +45,7 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "priceFit": rec["price_fit"],
         "acceptanceProbability": rec["acceptance_probability"],
         "availabilityCheck": rec["availability_check"],
+        "legalFloor": rec["legal_floor"],
         "marketHealth": {
             "score": rec["market_health_score"],
             "flags": rec.get("market_health_flags", []),
@@ -141,6 +144,8 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
     warnings = []
     for availability_check in [item["availability_check"] for item in negotiation_candidates]:
         warnings.extend(availability_check["warnings"])
+    for item in negotiation_candidates:
+        warnings.extend(item["legal_floor"].get("warnings", []))
     for client_decision in client_decisions:
         warnings.extend(client_decision["warnings"])
 
@@ -179,6 +184,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     market_health_flags: list[str] = []
     availability_check_count = 0
     pre_presentation_counter_count = 0
+    minimum_wage_floor_applied_count = 0
+    minimum_wage_floor_unknown_count = 0
     leakage_count = 0
     human_review_count = 0
 
@@ -193,6 +200,11 @@ def aggregate_metrics(traces: list[dict]) -> dict:
             availability_check_count += 1
             if rec["availabilityCheck"]["status"] == "countered_before_client_presentation":
                 pre_presentation_counter_count += 1
+            legal_floor = rec["legalFloor"]
+            if legal_floor["basis"] == "local_minimum_wage":
+                minimum_wage_floor_applied_count += 1
+            if legal_floor["minimumWageStatus"] == "unknown":
+                minimum_wage_floor_unknown_count += 1
             rationales = rec["aiRationales"]
             admin_rationale = rationales["adminPricingRationale"]
             brand_rationale = rationales["brandFacingRationale"]
@@ -235,6 +247,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "matureAutonomyCandidateCount": mature_autonomy_candidate_count,
         "availabilityCheckCount": availability_check_count,
         "prePresentationTalentCounterCount": pre_presentation_counter_count,
+        "minimumWageFloorAppliedCount": minimum_wage_floor_applied_count,
+        "minimumWageFloorUnknownCount": minimum_wage_floor_unknown_count,
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
         "maxAbsoluteShadowDiscretionDelta": round(max_discretion, 4),

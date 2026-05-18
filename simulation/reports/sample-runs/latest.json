@@ -11,10 +11,25 @@
       "leadTimeDays": 28,
       "timingHorizon": "normal",
       "eligibleTalentCount": 8,
-      "excluded": [],
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
       "recommendedSlate": [
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 6700,
           "clientVisiblePriceState": "within expected range",
@@ -36,6 +51,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -119,6 +146,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 11600,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
@@ -140,6 +169,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -225,6 +266,8 @@
         },
         {
           "talent": "Premium Food Tabletop Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Strong Specialist",
           "quote": 21200,
           "clientVisiblePriceState": "outside stated budget",
@@ -246,6 +289,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 14000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 14000,
             "warnings": []
           },
           "marketHealth": {
@@ -338,6 +393,8 @@
         },
         {
           "talent": "Volatile Rep-Managed Talent",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Strong Specialist",
           "quote": 12500,
           "clientVisiblePriceState": "premium stretch",
@@ -362,6 +419,18 @@
             "warnings": [
               "pre-presentation counter increased locked quote"
             ]
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7000,
+            "warnings": []
           },
           "marketHealth": {
             "score": 0.8,
@@ -521,10 +590,25 @@
       "leadTimeDays": 42,
       "timingHorizon": "normal",
       "eligibleTalentCount": 8,
-      "excluded": [],
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
       "recommendedSlate": [
         {
           "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Best Fit",
           "quote": 8900,
           "clientVisiblePriceState": "within expected range",
@@ -546,6 +630,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
             "warnings": []
           },
           "marketHealth": {
@@ -634,6 +730,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 13400,
           "clientVisiblePriceState": "within expected range",
@@ -655,6 +753,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -741,6 +851,8 @@
         },
         {
           "talent": "Luxury Fashion Editor",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 14000,
           "clientVisiblePriceState": "within expected range",
@@ -762,6 +874,18 @@
             "events": [
               "talent requested usage confirmation before quote commitment"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 9000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 9000,
             "warnings": []
           },
           "marketHealth": {
@@ -846,6 +970,8 @@
         },
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 7500,
           "clientVisiblePriceState": "within expected range",
@@ -867,6 +993,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -1037,11 +1175,25 @@
           "reasons": [
             "below talent minimum notice window"
           ]
+        },
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
         }
       ],
       "recommendedSlate": [
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 7800,
           "clientVisiblePriceState": "within expected range",
@@ -1063,6 +1215,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -1149,6 +1313,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 13600,
           "clientVisiblePriceState": "within expected range",
@@ -1170,6 +1336,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -1256,6 +1434,8 @@
         },
         {
           "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 8900,
           "clientVisiblePriceState": "within expected range",
@@ -1277,6 +1457,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
             "warnings": []
           },
           "marketHealth": {
@@ -1362,6 +1554,8 @@
         },
         {
           "talent": "Low-Rate Fast Responder",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 4600,
           "clientVisiblePriceState": "within expected range",
@@ -1383,6 +1577,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 2800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 2800,
             "warnings": []
           },
           "marketHealth": {
@@ -1557,11 +1763,25 @@
           "reasons": [
             "not opted into prestige/low-cash tradeoffs"
           ]
+        },
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
         }
       ],
       "recommendedSlate": [
         {
           "talent": "Luxury Fashion Editor",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Best Fit",
           "quote": 12400,
           "clientVisiblePriceState": "outside stated budget",
@@ -1583,6 +1803,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 9000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 9000,
             "warnings": []
           },
           "marketHealth": {
@@ -1674,6 +1906,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 10800,
           "clientVisiblePriceState": "outside stated budget",
@@ -1695,6 +1929,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -1782,6 +2028,8 @@
         },
         {
           "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Emerging Value",
           "quote": 7100,
           "clientVisiblePriceState": "outside stated budget",
@@ -1803,6 +2051,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
             "warnings": []
           },
           "marketHealth": {
@@ -1889,6 +2149,8 @@
         },
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 6200,
           "clientVisiblePriceState": "outside stated budget",
@@ -1910,6 +2172,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -2071,10 +2345,25 @@
       "leadTimeDays": 95,
       "timingHorizon": "long_horizon",
       "eligibleTalentCount": 8,
-      "excluded": [],
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
       "recommendedSlate": [
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 6800,
           "clientVisiblePriceState": "within expected range",
@@ -2096,6 +2385,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -2184,6 +2485,8 @@
         },
         {
           "talent": "Premium Food Tabletop Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Strong Specialist",
           "quote": 21600,
           "clientVisiblePriceState": "outside stated budget",
@@ -2205,6 +2508,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 14000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 14000,
             "warnings": []
           },
           "marketHealth": {
@@ -2300,6 +2615,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 12000,
           "clientVisiblePriceState": "outside stated budget",
@@ -2321,6 +2638,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -2412,6 +2741,8 @@
         },
         {
           "talent": "Volatile Rep-Managed Talent",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 12700,
           "clientVisiblePriceState": "outside stated budget",
@@ -2436,6 +2767,18 @@
             "warnings": [
               "pre-presentation counter increased locked quote"
             ]
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7000,
+            "warnings": []
           },
           "marketHealth": {
             "score": 0.8,
@@ -2603,10 +2946,25 @@
       "leadTimeDays": 110,
       "timingHorizon": "long_horizon",
       "eligibleTalentCount": 8,
-      "excluded": [],
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
       "recommendedSlate": [
         {
           "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Best Fit",
           "quote": 8700,
           "clientVisiblePriceState": "within expected range",
@@ -2628,6 +2986,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
             "warnings": []
           },
           "marketHealth": {
@@ -2717,6 +3087,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 13200,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
@@ -2738,6 +3110,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -2825,6 +3209,8 @@
         },
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 7400,
           "clientVisiblePriceState": "within expected range",
@@ -2846,6 +3232,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -2931,6 +3329,8 @@
         },
         {
           "talent": "Luxury Fashion Editor",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 13800,
           "clientVisiblePriceState": "premium stretch",
@@ -2952,6 +3352,18 @@
             "events": [
               "talent requested usage confirmation before quote commitment"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 9000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 9000,
             "warnings": []
           },
           "marketHealth": {
@@ -3113,10 +3525,25 @@
       "leadTimeDays": 21,
       "timingHorizon": "normal",
       "eligibleTalentCount": 8,
-      "excluded": [],
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
       "recommendedSlate": [
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 7100,
           "clientVisiblePriceState": "within expected range",
@@ -3138,6 +3565,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -3222,6 +3661,8 @@
         },
         {
           "talent": "Premium Food Tabletop Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Strong Specialist",
           "quote": 22500,
           "clientVisiblePriceState": "outside stated budget",
@@ -3243,6 +3684,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 14000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 14000,
             "warnings": []
           },
           "marketHealth": {
@@ -3336,6 +3789,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 12500,
           "clientVisiblePriceState": "premium stretch",
@@ -3357,6 +3812,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -3443,6 +3910,8 @@
         },
         {
           "talent": "Volatile Rep-Managed Talent",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Strong Specialist",
           "quote": 13300,
           "clientVisiblePriceState": "outside stated budget",
@@ -3467,6 +3936,18 @@
             "warnings": [
               "pre-presentation counter increased locked quote"
             ]
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7000,
+            "warnings": []
           },
           "marketHealth": {
             "score": 0.8,
@@ -3559,6 +4040,8 @@
       "stressShortlist": [
         {
           "talent": "Volatile Rep-Managed Talent",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Stress Test Candidate",
           "quote": 13300,
           "clientVisiblePriceState": "outside stated budget",
@@ -3583,6 +4066,18 @@
             "warnings": [
               "pre-presentation counter increased locked quote"
             ]
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7000,
+            "warnings": []
           },
           "marketHealth": {
             "score": 0.8,
@@ -3775,10 +4270,25 @@
       "leadTimeDays": 24,
       "timingHorizon": "normal",
       "eligibleTalentCount": 8,
-      "excluded": [],
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
       "recommendedSlate": [
         {
           "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Best Fit",
           "quote": 6700,
           "clientVisiblePriceState": "outside stated budget",
@@ -3800,6 +4310,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
             "warnings": []
           },
           "marketHealth": {
@@ -3885,6 +4407,8 @@
         },
         {
           "talent": "Low-Rate Fast Responder",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Budget-Confident",
           "quote": 4000,
           "clientVisiblePriceState": "within expected range",
@@ -3906,6 +4430,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 2800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 2800,
             "warnings": []
           },
           "marketHealth": {
@@ -3990,6 +4526,8 @@
         },
         {
           "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Viable Option",
           "quote": 11600,
           "clientVisiblePriceState": "outside stated budget",
@@ -4011,6 +4549,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
             "warnings": []
           },
           "marketHealth": {
@@ -4098,6 +4648,8 @@
         },
         {
           "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Emerging Value",
           "quote": 7600,
           "clientVisiblePriceState": "outside stated budget",
@@ -4119,6 +4671,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
             "warnings": []
           },
           "marketHealth": {
@@ -4206,6 +4770,8 @@
       "stressShortlist": [
         {
           "talent": "Low-Rate Fast Responder",
+          "talentClass": "production_talent",
+          "role": null,
           "lane": "Stress Test Candidate",
           "quote": 4000,
           "clientVisiblePriceState": "within expected range",
@@ -4227,6 +4793,18 @@
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 2800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 2800,
             "warnings": []
           },
           "marketHealth": {
@@ -4372,51 +4950,816 @@
       "warnings": [
         "final quote exceeded client capacity"
       ]
+    },
+    {
+      "project": "Background Extra Minimum Wage Smoke Test",
+      "projectId": "background_extra_minimum_wage_smoke",
+      "client": "Firm-Budget Producer",
+      "budget": 100,
+      "budgetType": "firm",
+      "leadTimeDays": 14,
+      "timingHorizon": "last_minute",
+      "eligibleTalentCount": 2,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Background Extra Actor",
+          "talentClass": "actor",
+          "role": "background",
+          "lane": "Best Fit",
+          "quote": 216,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.748,
+          "creativeFit": 0.993,
+          "priceFit": 0.14,
+          "acceptanceProbability": 0.727,
+          "availabilityCheck": {
+            "talent_id": "background_extra_actor",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 216,
+            "committedQuote": 216,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "local_minimum_wage",
+            "privateWorkingFloor": 100,
+            "localMinimumWageHourly": 18,
+            "localMinimumWageSource": "fixture_city_state_input",
+            "estimatedWorkHours": 12,
+            "minimumWageFloor": 216,
+            "minimumWageStatus": "known",
+            "effectiveFloor": 216,
+            "warnings": []
+          },
+          "marketHealth": {
+            "score": 0.8,
+            "flags": [
+              "specialist_value_protected"
+            ]
+          },
+          "timing": {
+            "horizon": "last_minute",
+            "platformTrustTier": "limited_history",
+            "rateDelta": 0.04,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "short confirmation window",
+            "reason": "under 21 days; platform last-minute urgency premium"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "The premium posture is defensible because creative fit is unusually strong for this category."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep extras experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep extras experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "talentClass": "actor",
+          "role": "featured",
+          "lane": "Emerging Value",
+          "quote": 216,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.686,
+          "creativeFit": 0.846,
+          "priceFit": 0.14,
+          "acceptanceProbability": 0.672,
+          "availabilityCheck": {
+            "talent_id": "featured_actor_unknown_wage",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 216,
+            "committedQuote": 216,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "local_minimum_wage",
+            "privateWorkingFloor": 100,
+            "localMinimumWageHourly": 18,
+            "localMinimumWageSource": "fixture_city_state_input",
+            "estimatedWorkHours": 12,
+            "minimumWageFloor": 216,
+            "minimumWageStatus": "known",
+            "effectiveFloor": 216,
+            "warnings": []
+          },
+          "marketHealth": {
+            "score": 0.8,
+            "flags": [
+              "specialist_value_protected"
+            ]
+          },
+          "timing": {
+            "horizon": "last_minute",
+            "platformTrustTier": "limited_history",
+            "rateDelta": 0.04,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "short confirmation window",
+            "reason": "under 21 days; platform last-minute urgency premium"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Relevant extras background with a clear connection to the brief.",
+              "reasons": [
+                "Relevant extras background with a clear connection to the brief.",
+                "The portfolio shows meaningful experience in this kind of work.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "background_extra_actor",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 216,
+          "committedQuote": 216,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "featured_actor_unknown_wage",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 216,
+          "committedQuote": 216,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "background_extra_actor",
+          "status": "failed_budget_gap",
+          "locked_quote": 216,
+          "client_capacity": 100,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": [
+            "final quote exceeded client capacity"
+          ]
+        },
+        {
+          "talent_id": "featured_actor_unknown_wage",
+          "status": "failed_budget_gap",
+          "locked_quote": 216,
+          "client_capacity": 100,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": [
+            "final quote exceeded client capacity"
+          ]
+        }
+      ],
+      "outcome": "failed_budget_gap",
+      "warnings": [
+        "final quote exceeded client capacity"
+      ]
+    },
+    {
+      "project": "Background Extra Unknown Wage Smoke Test",
+      "projectId": "background_extra_unknown_wage_smoke",
+      "client": "Firm-Budget Producer",
+      "budget": 150,
+      "budgetType": "firm",
+      "leadTimeDays": 14,
+      "timingHorizon": "last_minute",
+      "eligibleTalentCount": 2,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Background Extra Actor",
+          "talentClass": "actor",
+          "role": "background",
+          "lane": "Best Fit",
+          "quote": 100,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.923,
+          "creativeFit": 0.993,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.954,
+          "availabilityCheck": {
+            "talent_id": "background_extra_actor",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 100,
+            "committedQuote": 100,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 100,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": 12,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "unknown",
+            "effectiveFloor": 100,
+            "warnings": [
+              "minimum_wage_floor_unknown"
+            ]
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "last_minute",
+            "platformTrustTier": "limited_history",
+            "rateDelta": 0.04,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "short confirmation window",
+            "reason": "under 21 days; platform last-minute urgency premium"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep extras experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep extras experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "minimum wage floor unknown"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "talentClass": "actor",
+          "role": "featured",
+          "lane": "Emerging Value",
+          "quote": 200,
+          "clientVisiblePriceState": "outside stated budget",
+          "overallScore": 0.782,
+          "creativeFit": 0.846,
+          "priceFit": 0.56,
+          "acceptanceProbability": 0.789,
+          "availabilityCheck": {
+            "talent_id": "featured_actor_unknown_wage",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 200,
+            "committedQuote": 200,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": []
+          },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 100,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": 12,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "unknown",
+            "effectiveFloor": 100,
+            "warnings": [
+              "minimum_wage_floor_unknown"
+            ]
+          },
+          "marketHealth": {
+            "score": 0.8,
+            "flags": [
+              "specialist_value_protected"
+            ]
+          },
+          "timing": {
+            "horizon": "last_minute",
+            "platformTrustTier": "limited_history",
+            "rateDelta": 0.04,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "short confirmation window",
+            "reason": "under 21 days; platform last-minute urgency premium"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "neutral client behavior",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Relevant extras background with a clear connection to the brief.",
+              "reasons": [
+                "Relevant extras background with a clear connection to the brief.",
+                "The portfolio shows meaningful experience in this kind of work.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "minimum wage floor unknown",
+              "outside stated budget"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "background_extra_actor",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 100,
+          "committedQuote": 100,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "featured_actor_unknown_wage",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 200,
+          "committedQuote": 200,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": []
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "background_extra_actor",
+          "status": "booked",
+          "locked_quote": 100,
+          "client_capacity": 200,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "featured_actor_unknown_wage",
+          "status": "booked",
+          "locked_quote": 200,
+          "client_capacity": 200,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcome": "booked",
+      "warnings": [
+        "minimum_wage_floor_unknown"
+      ]
     }
   ],
   "metrics": {
-    "scenarioCount": 8,
-    "bookedCount": 5,
-    "bookingRate": 0.625,
+    "scenarioCount": 10,
+    "bookedCount": 6,
+    "bookingRate": 0.6,
     "longHorizonScenarioCount": 2,
-    "behaviorNudgeShareOfRecommendations": 0.765,
-    "timingNudgeShareOfRecommendations": 0.353,
-    "aiRationaleCount": 34,
-    "brandFacingRationaleCount": 34,
+    "behaviorNudgeShareOfRecommendations": 0.789,
+    "timingNudgeShareOfRecommendations": 0.421,
+    "aiRationaleCount": 38,
+    "brandFacingRationaleCount": 38,
     "brandFacingRationaleLeakageCount": 0,
     "talentFacingJobSpecificRationaleCount": 0,
-    "adminApprovalRequiredCount": 34,
+    "adminApprovalRequiredCount": 38,
     "matureAutonomyCandidateCount": 13,
-    "availabilityCheckCount": 34,
+    "availabilityCheckCount": 38,
     "prePresentationTalentCounterCount": 4,
-    "aiHumanReviewShareOfRecommendations": 0.441,
-    "averageAbsoluteShadowDiscretionDelta": 0.0015,
+    "minimumWageFloorAppliedCount": 2,
+    "minimumWageFloorUnknownCount": 2,
+    "aiHumanReviewShareOfRecommendations": 0.395,
+    "averageAbsoluteShadowDiscretionDelta": 0.0013,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
       "admin pricing rationale flagged for review": 15,
       "long-horizon project without strong client trust": 4,
       "market-health guardrail": 3,
+      "minimum wage floor unknown": 2,
       "nonzero AI discretion proposal": 5,
-      "outside stated budget": 14,
+      "outside stated budget": 17,
       "pre-presentation talent counter": 4
     },
     "marketHealthFlagCounts": {
       "idle_access_without_discounting": 6,
       "race_to_bottom_risk": 3,
-      "specialist_value_protected": 8
+      "specialist_value_protected": 11
     },
     "warningCounts": {
-      "final quote exceeded client capacity": 4,
+      "final quote exceeded client capacity": 5,
       "long-horizon commitment uncertainty": 2,
+      "minimum_wage_floor_unknown": 1,
       "pre-presentation counter increased locked quote": 1
     }
   },
   "validation": {
     "status": "pass",
-    "checkedRecommendationCount": 34,
+    "checkedRecommendationCount": 38,
     "failureCount": 0,
-    "warningCount": 0,
+    "warningCount": 2,
     "failures": [],
-    "warnings": []
+    "warnings": [
+      {
+        "code": "minimum_wage_floor_unknown",
+        "context": "background_extra_unknown_wage_smoke / Background Extra Actor",
+        "detail": "actor quote could not be checked against local minimum wage because wage input is null"
+      },
+      {
+        "code": "minimum_wage_floor_unknown",
+        "context": "background_extra_unknown_wage_smoke / Featured Actor Unknown Wage",
+        "detail": "actor quote could not be checked against local minimum wage because wage input is null"
+      }
+    ]
   }
 }

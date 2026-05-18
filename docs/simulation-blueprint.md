@@ -77,6 +77,7 @@ Synthetic project briefs should include:
 - all-in budget
 - project size band
 - project type
+- talent class scope: actor, production talent, or mixed
 - budget type
 - pricing assumptions: prep, shoot days, fitting, travel, usage, exclusivity, revisions, overtime
 - lead time in days

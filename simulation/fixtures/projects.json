@@ -148,5 +148,59 @@
     "stress_shortlist_ids": [
       "low_rate_fast_responder"
     ]
+  },
+  {
+    "id": "background_extra_minimum_wage_smoke",
+    "name": "Background Extra Minimum Wage Smoke Test",
+    "category": "background",
+    "subcategory": "extras",
+    "budget": 100,
+    "budget_type": "firm",
+    "talent_class_scope": "actor",
+    "client_id": "firm_budget_producer",
+    "lead_time_days": 14,
+    "project_commitment_confidence": 0.82,
+    "schedule_urgency": 0.25,
+    "usage_scope": "background",
+    "creative_specificity": 0.5,
+    "prestige_value": 0.1,
+    "client_flexibility": 0.0,
+    "booking_intent_strength": 0.84,
+    "requires_exclusivity": false,
+    "local_minimum_wage_hourly": 18,
+    "local_minimum_wage_source": "fixture_city_state_input",
+    "estimated_work_hours": 12,
+    "pricing_assumptions": [
+      "12 hour background day",
+      "non-union actor",
+      "local minimum wage supplied by upstream compliance input"
+    ]
+  },
+  {
+    "id": "background_extra_unknown_wage_smoke",
+    "name": "Background Extra Unknown Wage Smoke Test",
+    "category": "background",
+    "subcategory": "extras",
+    "budget": 150,
+    "budget_type": "firm",
+    "talent_class_scope": "actor",
+    "client_id": "firm_budget_producer",
+    "lead_time_days": 14,
+    "project_commitment_confidence": 0.82,
+    "schedule_urgency": 0.25,
+    "usage_scope": "background",
+    "creative_specificity": 0.5,
+    "prestige_value": 0.1,
+    "client_flexibility": 0.0,
+    "booking_intent_strength": 0.84,
+    "requires_exclusivity": false,
+    "local_minimum_wage_hourly": null,
+    "local_minimum_wage_source": null,
+    "estimated_work_hours": 12,
+    "pricing_assumptions": [
+      "12 hour background day",
+      "non-union actor",
+      "local minimum wage input unavailable"
+    ]
   }
 ]

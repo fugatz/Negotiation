@@ -3,10 +3,22 @@ from __future__ import annotations
 from .common import clamp, money, weighted_average
 
 
+def talent_class(talent: dict) -> str:
+    if talent.get("talent_class"):
+        return talent["talent_class"]
+    if talent.get("talent_kind") == "actor":
+        return "actor"
+    return "production_talent"
+
+
 def hard_eligible(talent: dict, project: dict) -> tuple[bool, list[str]]:
     """Small simulation stub for known constraints before rate-quoted outreach."""
     reasons: list[str] = []
     lead_time = int(project["lead_time_days"])
+    talent_scope = project.get("talent_class_scope", "production_talent")
+
+    if talent_scope != "mixed" and talent_class(talent) != talent_scope:
+        reasons.append("outside upstream matched talent class")
 
     if lead_time < int(talent["minimum_notice_days"]):
         reasons.append("below talent minimum notice window")
@@ -58,6 +70,39 @@ def trust_score(talent: dict) -> float:
     return clamp(score - reprice_penalty - cancel_penalty)
 
 
+def legal_floor_state(talent: dict, project: dict) -> dict:
+    private_floor = int(talent["working_floor"])
+    local_minimum_wage = project.get("local_minimum_wage_hourly")
+    estimated_hours = project.get("estimated_work_hours")
+    minimum_wage_floor = None
+    minimum_wage_status = "not_applicable"
+    warnings: list[str] = []
+
+    if talent_class(talent) == "actor":
+        if local_minimum_wage is None or estimated_hours is None:
+            minimum_wage_status = "unknown"
+            warnings.append("minimum_wage_floor_unknown")
+        else:
+            minimum_wage_floor = int(round(float(local_minimum_wage) * float(estimated_hours)))
+            minimum_wage_status = "known"
+
+    effective_floor = max(private_floor, minimum_wage_floor or 0)
+    basis = "local_minimum_wage" if minimum_wage_floor and minimum_wage_floor >= private_floor else "private_working_floor"
+
+    return {
+        "talentClass": talent_class(talent),
+        "basis": basis,
+        "privateWorkingFloor": private_floor,
+        "localMinimumWageHourly": local_minimum_wage,
+        "localMinimumWageSource": project.get("local_minimum_wage_source"),
+        "estimatedWorkHours": estimated_hours,
+        "minimumWageFloor": minimum_wage_floor,
+        "minimumWageStatus": minimum_wage_status,
+        "effectiveFloor": effective_floor,
+        "warnings": warnings,
+    }
+
+
 def base_quote(talent: dict, project: dict, fit: float) -> int:
     category = project["category"]
     premium = float(talent.get("category_premiums", {}).get(category, 0.0))
@@ -71,19 +116,20 @@ def base_quote(talent: dict, project: dict, fit: float) -> int:
         prestige_discount = min(float(project["prestige_value"]) * 0.12, 0.1)
         quote *= 1.0 - prestige_discount
 
-    return money(max(quote, float(talent["working_floor"])))
+    floor = legal_floor_state(talent, project)
+    return max(money(quote), int(floor["effectiveFloor"]))
 
 
-def price_fit(talent: dict, project: dict, quote: int) -> float:
+def price_fit(talent: dict, project: dict, quote: int, floor: dict) -> float:
     budget = float(project["budget"])
-    floor = float(talent["working_floor"])
+    effective_floor = float(floor["effectiveFloor"])
 
     if budget >= quote:
         return 0.95
     if budget >= quote * 0.85:
         return 0.78
-    if budget >= floor:
-        return clamp(0.42 + ((budget - floor) / max(quote - floor, 1.0)) * 0.28)
+    if budget >= effective_floor:
+        return clamp(0.42 + ((budget - effective_floor) / max(quote - effective_floor, 1.0)) * 0.28)
     if project["budget_type"] == "prestige" and talent["prestige_opt_in"]:
         return 0.36
     return 0.14
@@ -119,8 +165,9 @@ def score_talent(talent: dict, project: dict) -> dict:
     eligible, eligibility_reasons = hard_eligible(talent, project)
     creative = creative_fit(talent, project)
     practical = practical_fit(talent, project)
+    floor = legal_floor_state(talent, project)
     quote = base_quote(talent, project, creative)
-    pricing = price_fit(talent, project, quote)
+    pricing = price_fit(talent, project, quote, floor)
     trust = trust_score(talent)
     market = market_health(talent, project, creative, pricing)
     acceptance = weighted_average(
@@ -146,6 +193,7 @@ def score_talent(talent: dict, project: dict) -> dict:
         "trust_score": round(trust, 3),
         "market_health_score": market["score"],
         "market_health_flags": market["flags"],
+        "legal_floor": floor,
         "base_quote": quote,
         "acceptance_probability": round(clamp(acceptance), 3),
     }

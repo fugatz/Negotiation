@@ -14,7 +14,7 @@ def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict,
     total_delta = timing_delta + behavior_delta
 
     quote = money(float(score["base_quote"]) * (1.0 + total_delta))
-    quote = max(quote, int(talent["working_floor"]))
+    quote = max(quote, int(score.get("legal_floor", {}).get("effectiveFloor", talent["working_floor"])))
 
     confidence = clamp(
         float(score["acceptance_probability"])

@@ -74,6 +74,7 @@ def validate_report(report: dict) -> dict:
             talent = rationales["talentFacingRationale"]
             governance = rec["adminGovernance"]
             availability_check = rec["availabilityCheck"]
+            legal_floor = rec["legalFloor"]
 
             _check(
                 availability_check["completedBeforeClientPresentation"] is True,
@@ -238,6 +239,31 @@ def validate_report(report: dict) -> dict:
                     context,
                     "long-horizon uncertainty should affect confidence/holds, not direct price",
                 )
+
+            if rec["talentClass"] == "actor":
+                if legal_floor["minimumWageStatus"] == "known":
+                    _check(
+                        int(rec["quote"]) >= int(legal_floor["minimumWageFloor"]),
+                        failures,
+                        "minimum_wage_floor_violation",
+                        context,
+                        "actor quote must not fall below supplied local minimum wage floor",
+                    )
+                elif legal_floor["minimumWageStatus"] == "unknown":
+                    _check(
+                        "minimum wage floor unknown" in governance["exceptionTriggers"],
+                        failures,
+                        "minimum_wage_unknown_exception_missing",
+                        context,
+                        "unknown actor minimum wage should remain an admin exception before autonomy",
+                    )
+                    warnings.append(
+                        {
+                            "code": "minimum_wage_floor_unknown",
+                            "context": context,
+                            "detail": "actor quote could not be checked against local minimum wage because wage input is null",
+                        }
+                    )
 
             if governance["matureAutonomyCandidate"] and governance["exceptionTriggers"]:
                 warnings.append(

@@ -191,6 +191,18 @@ Actor floors may be driven by:
 - platform minimums
 - role type and work hours
 
+Minimum wage should be treated as an optional upstream compliance input, not a built-in wage-law
+database. State, city, and local wage rules change over time and should be supplied by a compliance
+service or admin input when available.
+
+Initial smoke-test rule:
+
+- if `local_minimum_wage_hourly` and `estimated_work_hours` are supplied, actor quotes must not fall
+  below `local_minimum_wage_hourly * estimated_work_hours`
+- if either value is null, the recommendation may continue but should carry an admin warning
+  `minimum_wage_floor_unknown`
+- the pricing engine should not infer local wage law from location text by itself
+
 Actor upside may be driven by:
 
 - role hierarchy
@@ -384,11 +396,15 @@ Project:
 - `all_in_budget`
 - `project_size_band`
 - `project_type`
+- `talent_class_scope`: actor, production_talent, or mixed
 - `assumptions`
 - `expected_actualization_events`
 - `usage_term`
 - `paid_media`
 - `exclusivity`
+- `local_minimum_wage_hourly`: nullable
+- `local_minimum_wage_source`: nullable
+- `estimated_work_hours`: nullable
 
 Talent:
 
