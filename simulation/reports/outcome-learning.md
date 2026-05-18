@@ -31,6 +31,7 @@ ranges remain the source of authority.
 | Cohort summaries | 27 | 27 |
 | Optional cohort-guidance messages | 12 | 12 |
 | Budget-health warnings | 1 | 1 |
+| Scope-calibration outcomes | 2 | 2 |
 | Average actualization lift | 10.77% | 10.77% |
 | Validation failures | 0 | 0 |
 
@@ -39,6 +40,8 @@ turnaround compression, and overtime stack beyond the expected range. The new $5
 stay inside their wider expected ranges while creating separate large-scale and flagship cohort signals.
 The race-to-bottom stress case now actualizes as `booked_with_market_health_warning`, so it remains part
 of conversion learning while preserving the market-health warning.
+The prestige and minimum-wage smoke cases now resolve as `needs_scope_calibration`, keeping them out of
+actualized-rate learning while preserving budget/scope calibration evidence for admins.
 
 ## Talent Guidance Boundary
 
@@ -58,6 +61,7 @@ Validation enforces:
 - guidance does not apply automatically
 - actualization events must cite allowed triggers from the expected booking range
 - unbooked outcomes do not produce actualized costs
+- scope-calibration outcomes remain admin calibration signals, not talent rate guidance
 
 ## Cohort Learning
 

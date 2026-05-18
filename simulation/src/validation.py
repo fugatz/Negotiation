@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
-from .negotiation import BUDGET_DRIVEN_COMMODITY_WARNING
+from .negotiation import BUDGET_DRIVEN_COMMODITY_WARNING, SCOPE_CALIBRATION_WARNING
 from .policy_config import load_policy_config
-from .statuses import BOOKED_WITH_MARKET_HEALTH_WARNING, is_booked_status
+from .statuses import BOOKED_WITH_MARKET_HEALTH_WARNING, NEEDS_SCOPE_CALIBRATION, is_booked_status
 
 
 def _recommendations(trace: dict) -> list[dict]:
@@ -507,6 +507,23 @@ def validate_report(report: dict) -> dict:
                     f"{trace['projectId']} / {decision['talent_id']}",
                     "budget-health warning outcomes must include the explicit warning label",
                 )
+            if decision["status"] == NEEDS_SCOPE_CALIBRATION:
+                _check(
+                    SCOPE_CALIBRATION_WARNING in decision["warnings"],
+                    failures,
+                    "scope_calibration_warning_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "scope calibration outcomes must include the explicit warning label",
+                )
+
+        if trace["outcome"] == NEEDS_SCOPE_CALIBRATION:
+            _check(
+                all(decision["status"] == NEEDS_SCOPE_CALIBRATION for decision in trace["clientDecisions"]),
+                failures,
+                "scope_calibration_decision_mismatch",
+                trace["projectId"],
+                "project-level scope calibration should apply when all evaluated decisions require calibration",
+            )
 
     return {
         "status": "pass" if not failures else "fail",

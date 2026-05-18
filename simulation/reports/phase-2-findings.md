@@ -1,4 +1,4 @@
-# Phase 2 Findings Report
+# Phase 3 Findings Report
 
 Generated from dry runs on May 18, 2026.
 
@@ -11,7 +11,7 @@ python3 -m simulation.src.runner --policy simulation/config/variants/stricter_ma
 
 ## Executive Read
 
-The Phase 2 simulator is now useful enough to support policy decisions before production integration.
+The Phase 3 simulator is now useful enough to support policy decisions before production integration.
 The most important structural rule is working: after candidate matching, the pricing engine computes the
 project-specific proposed rate and includes it in rate-quoted talent outreach. Talent must accept,
 decline, or counter before the client sees the slate. Client-facing recommendations use locked,
@@ -31,7 +31,7 @@ The simulator also exposes policy work still needed before shadow-mode integrati
 
 - low-budget firm projects can still close through a cheapest stress candidate, but now receive a
   `booked_with_market_health_warning` outcome instead of a clean healthy booking
-- prestige projects need clearer "not viable at stated cash" language instead of appearing like normal
+- prestige and compliance-floor budget mismatches now become `needs_scope_calibration` instead of plain
   booking failures
 - pre-presentation talent counters are now structurally safe, but repeated counters need to feed future
   reliability inputs
@@ -40,7 +40,7 @@ The simulator also exposes policy work still needed before shadow-mode integrati
 
 ## Current Base Run
 
-Policy: `phase-3-budget-health-v1`
+Policy: `phase-3-scope-calibration-v1`
 
 | Metric | Result |
 | --- | ---: |
@@ -54,6 +54,7 @@ Policy: `phase-3-budget-health-v1`
 | Admin approval required | 46 |
 | Mature autonomy candidates | 20 |
 | Budget-health warnings | 1 |
+| Scope-calibration outcomes | 2 |
 | Brand-facing leakage count | 0 |
 | Talent-facing job-specific rationale count | 0 |
 | Max shadow AI discretion | 1.0% |
@@ -67,12 +68,12 @@ Policy: `phase-3-budget-health-v1`
 | $500k+ Large-Scale Beauty Campaign | booked | Large-scale context creates wider expected ranges and a separate cohort signal. | Healthy: all-in scale affects assumption scrutiny without becoming a budget split. |
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
-| Low-Cash Prestige Editorial | failed budget gap | Opt-in filtering works, but all realistic options exceed client capacity. | Needs policy: prestige should not become a pressure mechanism to suppress rates. |
+| Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
 | Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work stays tentative. | Healthy direction, but confirmation mechanics need definition. |
 | Long-Horizon Beauty Campaign | pending hold | High-trust repeat client receives much softer uncertainty treatment. | Healthy: trust offsets timing uncertainty without forcing a hard booking. |
 | Bad-Faith Repricing Stress Test | booked | Volatile talent counters before client presentation; client only sees locked quote. | Structurally fixed: now track this as a pre-presentation counter, not post-interest repricing. |
 | Race-to-Bottom Social Content Test | booked with market-health warning | Higher-fit options exceed capacity; low-rate option can still book in stress path. | Improved: conversion remains possible, but the outcome is no longer treated as a clean marketplace win. |
-| Background Extra Minimum Wage Smoke Test | failed budget gap | Local minimum wage lifts the effective floor above the offered day rate. | Healthy: legal/compliance floors can override client-stated budget. |
+| Background Extra Minimum Wage Smoke Test | needs scope calibration | Local minimum wage lifts the effective floor above the offered day rate. | Healthy: legal/compliance floors can force budget or scope recalibration. |
 | Background Extra Unknown Wage Smoke Test | booked | Nullable wage input produces a validation warning, not a hard block. | Healthy as a smoke test; production should enrich wage data over time. |
 
 ## What Looks Validated
@@ -150,6 +151,17 @@ Policy implication:
 - do not let the cheapest path masquerade as a healthy recommendation outcome
 - use this label to trigger budget education, scope calibration, or admin review
 
+### 7. All-Budget-Gap Paths Require Scope Calibration
+
+When every evaluated candidate exceeds client capacity, the simulator now returns `needs_scope_calibration`.
+This appears in the low-cash prestige case and the minimum-wage smoke case.
+
+Policy implication:
+
+- do not frame structurally underfunded projects as ordinary booking failures
+- require budget, scope, usage, schedule, or opportunity-framing changes before presenting the path as viable
+- keep talent rates intact when the client-side economics are the real constraint
+
 ## Exploit Paths And Risks
 
 ### Race-To-Bottom Survival Path
@@ -168,12 +180,13 @@ Recommended revision:
 
 - require scope remediation, budget education, or admin review before treating this as a healthy booking
 - track whether repeated warnings come from the same client, project type, or market
-- decide whether some warning patterns should become `needs_scope_calibration`
+- consider escalation to `needs_scope_calibration` when warning patterns repeat
 
 ### Prestige As Underpricing Pressure
 
-The prestige editorial scenario correctly fails budget fit, but the product language needs to make clear
-that prestige does not justify suppressing cash rates unless talent explicitly opted into that tradeoff.
+The prestige editorial scenario now requires scope calibration instead of failing as a plain budget gap.
+The product language still needs to make clear that prestige does not justify suppressing cash rates unless
+talent explicitly opted into that tradeoff.
 
 Why it matters:
 
@@ -235,15 +248,13 @@ Recommended revision:
 - use `matureAutonomyCandidate` as the migration path
 - after Phase 3, define which exception-free recommendations can skip human approval
 
-## Recommended Policy Revisions Before Phase 3
+## Recommended Policy Revisions Before Integration
 
-1. Split final outcome labels into `booked`, `booked_with_market_health_warning`, `pending_hold`,
-   `failed_budget_gap`, and `needs_scope_calibration`.
-2. Define long-horizon confirmation mechanics: checkpoint timing, hold expiration, and what counts as
+1. Define long-horizon confirmation mechanics: checkpoint timing, hold expiration, and what counts as
    enough commitment.
-3. Track pre-presentation counter frequency as an upstream reliability signal with a small capped effect.
-4. Preserve strict audience separation for rationales and keep all pricing mechanics admin-only.
-5. Keep AI discretion shadow-only until outcome evidence shows it improves close rates without leakage,
+2. Track pre-presentation counter frequency as an upstream reliability signal with a small capped effect.
+3. Preserve strict audience separation for rationales and keep all pricing mechanics admin-only.
+4. Keep AI discretion shadow-only until outcome evidence shows it improves close rates without leakage,
    underpricing, or higher dispute rates.
 
 ## Phase 3 Stress Suite
@@ -264,9 +275,10 @@ Recommended additions:
 - AI discretion proposals that conflict with recent failed outcomes
 - market-health overrides where booking probability is high but ecosystem risk is unacceptable
 
-## Phase 2 Exit Assessment
+## Phase 3 Exit Assessment
 
-Phase 2 is close to complete but should not exit until the reports drive at least one more simulator pass.
+Phase 3 is now focused on confirmation mechanics, repeated-warning stress tests, and narrowing autonomy
+exceptions.
 
 Exit criteria status:
 
@@ -281,6 +293,5 @@ Exit criteria status:
 
 Recommended next move:
 
-- define the `needs_scope_calibration` outcome for projects that are not viable at the stated budget
 - add long-horizon confirmation mechanics
 - add repeated-client stress fixtures to see whether warnings cluster around the same buyer behavior

@@ -10,8 +10,10 @@ from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_beh
 from .common import FIXTURE_DIR
 from .negotiation import (
     BUDGET_DRIVEN_COMMODITY_WARNING,
+    SCOPE_CALIBRATION_WARNING,
     apply_availability_commitment,
     apply_budget_health_review,
+    apply_scope_calibration_review,
     simulate_availability_check,
     simulate_client_decision,
 )
@@ -21,7 +23,7 @@ from .policies import apply_nudges, build_slate, client_visible_price_state, ove
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
 from .ranges import expected_booking_range, project_context
 from .scoring import score_talent
-from .statuses import is_booked_status
+from .statuses import NEEDS_SCOPE_CALIBRATION, is_booked_status
 from .timing import timing_nudge
 from .validation import validate_report
 
@@ -153,6 +155,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         for item in negotiation_candidates
     ]
     client_decisions = apply_budget_health_review(project, negotiation_candidates, client_decisions)
+    client_decisions = apply_scope_calibration_review(project, negotiation_candidates, client_decisions)
     outcome_learning = build_outcome_learning(
         project,
         talent_by_id,
@@ -196,6 +199,11 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     warnings = [warning for trace in traces for warning in trace["warnings"]]
     budget_health_warnings = sum(
         warning == BUDGET_DRIVEN_COMMODITY_WARNING
+        for warning in warnings
+    )
+    scope_calibrations = sum(1 for trace in traces if trace["outcome"] == NEEDS_SCOPE_CALIBRATION)
+    scope_calibration_warnings = sum(
+        warning == SCOPE_CALIBRATION_WARNING
         for warning in warnings
     )
     behavior_changed = 0
@@ -302,6 +310,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "actualizedAboveExpectedRangeCount": actualized_above_range_count,
         "talentGuidanceCount": talent_guidance_count,
         "budgetHealthWarningCount": budget_health_warnings,
+        "scopeCalibrationCount": scope_calibrations,
+        "scopeCalibrationWarningCount": scope_calibration_warnings,
         "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),

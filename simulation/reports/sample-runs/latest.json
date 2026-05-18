@@ -1,5 +1,5 @@
 {
-  "policy": "phase-3-budget-health-v1",
+  "policy": "phase-3-scope-calibration-v1",
   "policyConfigPath": "simulation/config/policy.json",
   "traces": [
     {
@@ -6645,27 +6645,57 @@
       "clientDecisions": [
         {
           "talent_id": "luxury_fashion_editor",
-          "status": "failed_budget_gap",
+          "status": "needs_scope_calibration",
           "locked_quote": 12400,
           "client_capacity": 4600,
           "events": [
-            "client evaluated locked presentation quote"
+            "client evaluated locked presentation quote",
+            "scope calibration review: all evaluated talent exceeded client capacity"
           ],
           "warnings": [
-            "final quote exceeded client capacity"
-          ]
+            "final quote exceeded client capacity",
+            "scope calibration required"
+          ],
+          "scope_calibration": {
+            "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
+            "clientBudgetType": "prestige",
+            "lowestEvaluatedQuote": 10800,
+            "clientCapacity": 4600,
+            "gapToLowestEvaluatedQuote": 0.5741,
+            "recommendedActions": [
+              "recalibrate client budget",
+              "reduce scope, usage, schedule, or deliverables",
+              "reframe as a special opt-in opportunity if appropriate"
+            ],
+            "talentId": "luxury_fashion_editor"
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
-          "status": "failed_budget_gap",
+          "status": "needs_scope_calibration",
           "locked_quote": 10800,
           "client_capacity": 4600,
           "events": [
-            "client evaluated locked presentation quote"
+            "client evaluated locked presentation quote",
+            "scope calibration review: all evaluated talent exceeded client capacity"
           ],
           "warnings": [
-            "final quote exceeded client capacity"
-          ]
+            "final quote exceeded client capacity",
+            "scope calibration required"
+          ],
+          "scope_calibration": {
+            "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
+            "clientBudgetType": "prestige",
+            "lowestEvaluatedQuote": 10800,
+            "clientCapacity": 4600,
+            "gapToLowestEvaluatedQuote": 0.5741,
+            "recommendedActions": [
+              "recalibrate client budget",
+              "reduce scope, usage, schedule, or deliverables",
+              "reframe as a special opt-in opportunity if appropriate"
+            ],
+            "talentId": "idle_high_quality_director"
+          }
         }
       ],
       "outcomeLearning": {
@@ -6681,7 +6711,7 @@
         "actualizationRecords": [
           {
             "talent_id": "luxury_fashion_editor",
-            "status": "failed_budget_gap",
+            "status": "needs_scope_calibration",
             "cohortSignals": {
               "role": "editor",
               "category": "fashion",
@@ -6711,7 +6741,7 @@
             "rangeState": "not_actualized",
             "varianceFromExpectedRange": null,
             "adminCalibrationNotes": [
-              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+              "Scope calibration required; client budget, usage, schedule, or opportunity framing does not yet support evaluated talent at locked rates."
             ],
             "talentGuidance": {
               "visibility": "talent-guidance",
@@ -6726,7 +6756,7 @@
           },
           {
             "talent_id": "idle_high_quality_director",
-            "status": "failed_budget_gap",
+            "status": "needs_scope_calibration",
             "cohortSignals": {
               "role": "director",
               "category": "fashion",
@@ -6756,7 +6786,7 @@
             "rangeState": "not_actualized",
             "varianceFromExpectedRange": null,
             "adminCalibrationNotes": [
-              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+              "Scope calibration required; client budget, usage, schedule, or opportunity framing does not yet support evaluated talent at locked rates."
             ],
             "talentGuidance": {
               "visibility": "talent-guidance",
@@ -6772,9 +6802,10 @@
         ],
         "talentGuidanceExamples": []
       },
-      "outcome": "failed_budget_gap",
+      "outcome": "needs_scope_calibration",
       "warnings": [
-        "final quote exceeded client capacity"
+        "final quote exceeded client capacity",
+        "scope calibration required"
       ]
     },
     {
@@ -12352,27 +12383,57 @@
       "clientDecisions": [
         {
           "talent_id": "background_extra_actor",
-          "status": "failed_budget_gap",
+          "status": "needs_scope_calibration",
           "locked_quote": 216,
           "client_capacity": 100,
           "events": [
-            "client evaluated locked presentation quote"
+            "client evaluated locked presentation quote",
+            "scope calibration review: all evaluated talent exceeded client capacity"
           ],
           "warnings": [
-            "final quote exceeded client capacity"
-          ]
+            "final quote exceeded client capacity",
+            "scope calibration required"
+          ],
+          "scope_calibration": {
+            "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
+            "clientBudgetType": "firm",
+            "lowestEvaluatedQuote": 216,
+            "clientCapacity": 100,
+            "gapToLowestEvaluatedQuote": 0.537,
+            "recommendedActions": [
+              "recalibrate client budget",
+              "reduce scope, usage, schedule, or deliverables",
+              "reframe as a special opt-in opportunity if appropriate"
+            ],
+            "talentId": "background_extra_actor"
+          }
         },
         {
           "talent_id": "featured_actor_unknown_wage",
-          "status": "failed_budget_gap",
+          "status": "needs_scope_calibration",
           "locked_quote": 216,
           "client_capacity": 100,
           "events": [
-            "client evaluated locked presentation quote"
+            "client evaluated locked presentation quote",
+            "scope calibration review: all evaluated talent exceeded client capacity"
           ],
           "warnings": [
-            "final quote exceeded client capacity"
-          ]
+            "final quote exceeded client capacity",
+            "scope calibration required"
+          ],
+          "scope_calibration": {
+            "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
+            "clientBudgetType": "firm",
+            "lowestEvaluatedQuote": 216,
+            "clientCapacity": 100,
+            "gapToLowestEvaluatedQuote": 0.537,
+            "recommendedActions": [
+              "recalibrate client budget",
+              "reduce scope, usage, schedule, or deliverables",
+              "reframe as a special opt-in opportunity if appropriate"
+            ],
+            "talentId": "featured_actor_unknown_wage"
+          }
         }
       ],
       "outcomeLearning": {
@@ -12388,7 +12449,7 @@
         "actualizationRecords": [
           {
             "talent_id": "background_extra_actor",
-            "status": "failed_budget_gap",
+            "status": "needs_scope_calibration",
             "cohortSignals": {
               "role": "background",
               "category": "background",
@@ -12418,7 +12479,7 @@
             "rangeState": "not_actualized",
             "varianceFromExpectedRange": null,
             "adminCalibrationNotes": [
-              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+              "Scope calibration required; client budget, usage, schedule, or opportunity framing does not yet support evaluated talent at locked rates."
             ],
             "talentGuidance": {
               "visibility": "talent-guidance",
@@ -12433,7 +12494,7 @@
           },
           {
             "talent_id": "featured_actor_unknown_wage",
-            "status": "failed_budget_gap",
+            "status": "needs_scope_calibration",
             "cohortSignals": {
               "role": "featured",
               "category": "background",
@@ -12463,7 +12524,7 @@
             "rangeState": "not_actualized",
             "varianceFromExpectedRange": null,
             "adminCalibrationNotes": [
-              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+              "Scope calibration required; client budget, usage, schedule, or opportunity framing does not yet support evaluated talent at locked rates."
             ],
             "talentGuidance": {
               "visibility": "talent-guidance",
@@ -12479,9 +12540,10 @@
         ],
         "talentGuidanceExamples": []
       },
-      "outcome": "failed_budget_gap",
+      "outcome": "needs_scope_calibration",
       "warnings": [
-        "final quote exceeded client capacity"
+        "final quote exceeded client capacity",
+        "scope calibration required"
       ]
     },
     {
@@ -13949,6 +14011,8 @@
     "actualizedAboveExpectedRangeCount": 2,
     "talentGuidanceCount": 8,
     "budgetHealthWarningCount": 1,
+    "scopeCalibrationCount": 2,
+    "scopeCalibrationWarningCount": 2,
     "averageActualizationLift": 0.1077,
     "aiHumanReviewShareOfRecommendations": 0.348,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,
@@ -13972,7 +14036,8 @@
       "final quote exceeded client capacity": 5,
       "long-horizon commitment uncertainty": 2,
       "minimum_wage_floor_unknown": 1,
-      "pre-presentation counter increased locked quote": 1
+      "pre-presentation counter increased locked quote": 1,
+      "scope calibration required": 2
     },
     "cohortCount": 27,
     "cohortGuidanceCount": 12

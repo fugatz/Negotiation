@@ -1,5 +1,5 @@
 {
-  "version": "phase-3-budget-health-v1",
+  "version": "phase-3-scope-calibration-v1",
   "admin_governance": {
     "mode": "launch_admin_approval",
     "approval_required": true,

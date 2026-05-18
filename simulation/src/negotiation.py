@@ -1,12 +1,19 @@
 from __future__ import annotations
 
 from .common import money
-from .statuses import BOOKED, BOOKED_WITH_MARKET_HEALTH_WARNING
+from .statuses import (
+    BOOKED,
+    BOOKED_WITH_MARKET_HEALTH_WARNING,
+    NEEDS_SCOPE_CALIBRATION,
+    is_booked_status,
+)
 from .timing import classify_timing
 
 
 BUDGET_DRIVEN_COMMODITY_WARNING = "budget-driven commodity booking risk"
+SCOPE_CALIBRATION_WARNING = "scope calibration required"
 MARKET_HEALTH_RISK_FLAGS = {"price_led_recommendation_risk", "race_to_bottom_risk"}
+NON_SCOPE_CALIBRATION_STATUSES = {"pending_hold", "tentative"}
 
 
 def client_capacity(project: dict) -> int:
@@ -83,7 +90,10 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
     events: list[str] = ["client evaluated locked presentation quote"]
     warnings: list[str] = []
 
-    if classify_timing(int(project["lead_time_days"])) == "long_horizon" and project["project_commitment_confidence"] < 0.8:
+    if (
+        classify_timing(int(project["lead_time_days"])) == "long_horizon"
+        and project["project_commitment_confidence"] < 0.8
+    ):
         return {
             "talent_id": talent["id"],
             "status": "pending_hold",
@@ -164,6 +174,49 @@ def apply_budget_health_review(project: dict, candidates: list[dict], decisions:
             "riskFlags": sorted(risk_flags),
             "strongerFailedTalentIds": stronger_failed_options,
             "clientBudgetType": project["budget_type"],
+        }
+        reviewed.append(reviewed_decision)
+
+    return reviewed
+
+
+def apply_scope_calibration_review(project: dict, candidates: list[dict], decisions: list[dict]) -> list[dict]:
+    """Convert all-budget-gap paths into a project-level scope calibration signal."""
+    if not decisions:
+        return decisions
+
+    statuses = {decision["status"] for decision in decisions}
+    if any(is_booked_status(status) for status in statuses) or statuses & NON_SCOPE_CALIBRATION_STATUSES:
+        return decisions
+    if statuses != {"failed_budget_gap"}:
+        return decisions
+
+    reference_quote = min(int(decision["locked_quote"]) for decision in decisions)
+    capacity = max(int(decision["client_capacity"]) for decision in decisions)
+    gap_to_lowest_option = round((reference_quote - capacity) / max(reference_quote, 1), 4)
+
+    reviewed: list[dict] = []
+    for candidate, decision in zip(candidates, decisions):
+        reviewed_decision = dict(decision)
+        reviewed_decision["status"] = NEEDS_SCOPE_CALIBRATION
+        reviewed_decision["events"] = list(decision["events"]) + [
+            "scope calibration review: all evaluated talent exceeded client capacity"
+        ]
+        reviewed_decision["warnings"] = sorted(
+            set(decision["warnings"] + [SCOPE_CALIBRATION_WARNING])
+        )
+        reviewed_decision["scope_calibration"] = {
+            "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
+            "clientBudgetType": project["budget_type"],
+            "lowestEvaluatedQuote": reference_quote,
+            "clientCapacity": capacity,
+            "gapToLowestEvaluatedQuote": gap_to_lowest_option,
+            "recommendedActions": [
+                "recalibrate client budget",
+                "reduce scope, usage, schedule, or deliverables",
+                "reframe as a special opt-in opportunity if appropriate",
+            ],
+            "talentId": candidate["talent_id"],
         }
         reviewed.append(reviewed_decision)
 
