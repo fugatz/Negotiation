@@ -37,6 +37,9 @@ def propose_shadow_discretion(project: dict, talent: dict, rec: dict, outcomes: 
         "evidence": "No sufficient similar outcome evidence yet.",
         "humanReviewRecommended": False,
         "blockedByGuardrail": False,
+        "calibrationAuthority": "guidance_only",
+        "rateAuthority": "talent_owned_rate_range",
+        "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
     }
 
     if len(booked) >= 2:

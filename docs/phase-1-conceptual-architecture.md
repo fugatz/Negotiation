@@ -351,6 +351,8 @@ Optional future extension:
 This should be treated as a learned residual, not base pricing authority. For example, if repeated
 outcomes show that a specific kind of deal closes reliably at slightly higher rates, or routinely
 fails unless a small concession is made, the AI can recommend a narrow discretion delta.
+Talent-owned rate ranges remain the authority; outcome data should become guidance and coaching, not a
+rule that silently overrides what talent declared.
 
 The core use case is contextual upside recognition:
 
@@ -585,6 +587,9 @@ Track:
 - repeat booking behavior
 
 The feedback loop should improve prediction without turning private flexibility into public pressure.
+It should also create optional talent-facing market guidance, such as "people with similar experience in
+your city tend to close higher" or "consider testing a small rate increase next quarter." That guidance
+is educational and talent-owned, not an automatic rate change.
 
 ## Pricing Model Concepts
 
@@ -625,6 +630,7 @@ Mitigation:
 - Keep the band internal and use it for availability-check routing and bounded negotiation, not
   client-facing pricing.
 - Let outcomes calibrate where inside or outside the band successful deals actually close.
+- Use outcome calibration as market guidance, not as a replacement for talent-declared pricing.
 
 ### Working Floor
 
@@ -834,40 +840,42 @@ These are hypotheses to test in simulation, not final rules.
     adjustments when outcome data shows consistent improvement.
 12. Talent declares a listed rate, and the normal internal operating band is 25% below to 30% above
     that listed rate for availability checks and bounded negotiation.
-13. Talent should not need to maintain separate floor-rate matrices by category, usage, client type,
+13. Outcome data may inform guidance and coaching, but talent-owned ranges remain the pricing
+    authority.
+14. Talent should not need to maintain separate floor-rate matrices by category, usage, client type,
     and timing; those contextual differences should be handled by pricing intelligence and outcomes.
-14. Distinkt is the talent-side agent. If a client-side manager, procurement team, or approval chain
+15. Distinkt is the talent-side agent. If a client-side manager, procurement team, or approval chain
     creates friction, delay, repricing pressure, or bad-faith negotiation behavior, the client side
     absorbs the same trust/desirability impact as if the client did it directly.
-15. Client-facing trust should be expressed through a composite talent score that improves with fit,
+16. Client-facing trust should be expressed through a composite talent score that improves with fit,
     reliability, and outcome data, without implying an exact price guarantee.
-16. Once pricing is presented to the client, it is locked unless client-side facts change. Strong
+17. Once pricing is presented to the client, it is locked unless client-side facts change. Strong
     negotiation happens before presentation and includes being willing to let a client walk away.
-17. Talent sees the project-specific proposed rate during outreach or availability check and decides
+18. Talent sees the project-specific proposed rate during outreach or availability check and decides
     whether to be considered at that rate before the client sees the slate.
-18. The pricing engine should run after upstream matching but before talent outreach is complete, because
+19. The pricing engine should run after upstream matching but before talent outreach is complete, because
     the WhatsApp/email outreach should include the proposed project rate.
-19. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
+20. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
     not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
-20. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
+21. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
     client is low-confidence, while a high-trust repeat client around their 4th project or later is
     much more credible.
-21. Talent/client behavior nudges should consume upstream service scores: actor readiness,
+22. Talent/client behavior nudges should consume upstream service scores: actor readiness,
     non-actor talent reliability, and client trust. This layer applies capped nudges; it does not own
     the raw metric definitions.
-22. Behavior should function like a small friction tax. It should be meaningful but not terribly
+23. Behavior should function like a small friction tax. It should be meaningful but not terribly
     detrimental; difficult but valuable talent or clients should not be excluded by behavior scoring
     alone.
-23. Behavior nudge recovery should happen through positive upstream data improving readiness,
+24. Behavior nudge recovery should happen through positive upstream data improving readiness,
     reliability, or trust scores. There should not be a separate appeal process in this pricing layer.
-24. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
+25. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
     separate positive match rationale only. Talent should not see negative job-specific pricing
     rationale from this layer.
-25. Launch mode should require admin approval before client presentation. The long-term target is an
+26. Launch mode should require admin approval before client presentation. The long-term target is an
     autonomous engine with exception-based admin review.
-26. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
+27. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
     replayable in simulation.
-27. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
+28. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
     by price alone, while still allowing them to appear for admin review when relevant.
 
 ## Admin-Only Governance Decisions

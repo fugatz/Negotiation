@@ -193,6 +193,20 @@ def validate_report(report: dict) -> dict:
                 "launch discretion must remain shadow/advisory unless separately approved",
             )
             _check(
+                admin["calibrationAuthority"] == "guidance_only",
+                failures,
+                "calibration_authority_invalid",
+                context,
+                "outcome calibration should produce guidance, not binding price rules",
+            )
+            _check(
+                admin["rateAuthority"] == "talent_owned_rate_range",
+                failures,
+                "rate_authority_invalid",
+                context,
+                "talent-owned rate ranges remain the pricing authority",
+            )
+            _check(
                 discretion_delta <= shadow_discretion_cap,
                 failures,
                 "discretion_cap_exceeded",

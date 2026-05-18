@@ -89,6 +89,10 @@ Important rule:
   leverage.
 - This should be treated as strategic opening positioning, not hidden markup.
 - The literal private floor should not be exposed to clients or talent-facing job rationales.
+- Talent-owned rate ranges remain the authority. Outcome data should create guidance, coaching, and
+  admin calibration signals, not unilateral system rules that override talent-declared pricing.
+- Future talent guidance should be framed as optional market intelligence, for example: similar people
+  in your city are closing higher, or consider testing a small rate increase next quarter.
 
 ## Project Size Rules
 
@@ -354,6 +358,7 @@ Over time this enables:
 - actor vs production-talent model separation
 - buyer behavior forecasting
 - market-health monitoring
+- talent-facing rate guidance that is positive, optional, and non-revealing
 
 Examples of future learned insights:
 
@@ -361,6 +366,8 @@ Examples of future learned insights:
 - union actors with travel exceed estimate 28% of the time
 - automotive directors close near the upper end of the range on premium projects
 - prestige editorial clients with weak trust frequently fail budget calibration
+- people with similar experience in a talent's city tend to close at higher rates
+- a talent may want to test a small rate increase next quarter based on recent outcomes
 
 ## Creator Economy Exclusion
 

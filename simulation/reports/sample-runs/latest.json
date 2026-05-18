@@ -179,6 +179,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -374,6 +377,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -571,6 +577,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -774,6 +783,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -1166,6 +1178,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -1365,6 +1380,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -1559,6 +1577,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -1753,6 +1774,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -2158,6 +2182,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -2354,6 +2381,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -2550,6 +2580,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -2746,6 +2779,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -3153,6 +3189,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -3351,6 +3390,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -3548,6 +3590,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -3744,6 +3789,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -4139,6 +4187,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -4341,6 +4392,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -4544,6 +4598,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -4748,6 +4805,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -5147,6 +5207,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -5347,6 +5410,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -5542,6 +5608,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -5737,6 +5806,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -6130,6 +6202,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -6328,6 +6403,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -6529,6 +6607,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -6729,6 +6810,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -6934,6 +7018,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -7405,6 +7492,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -7602,6 +7692,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": []
             },
@@ -7796,6 +7889,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -7991,6 +8087,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -8190,6 +8289,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": []
             },
@@ -8613,6 +8715,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -8809,6 +8914,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -9234,6 +9342,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"
@@ -9432,6 +9543,9 @@
               "discretionMode": "shadow",
               "discretionAppliesToLiveQuote": false,
               "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
               "humanReviewRecommended": false,
               "leakageWarningsIfSurfaced": [
                 "percentage"

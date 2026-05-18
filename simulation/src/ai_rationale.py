@@ -146,6 +146,9 @@ def _build_admin_pricing_rationale(
         "discretionMode": discretion["mode"],
         "discretionAppliesToLiveQuote": discretion["appliesToLiveQuote"],
         "discretionEvidence": discretion["evidence"],
+        "calibrationAuthority": discretion["calibrationAuthority"],
+        "rateAuthority": discretion["rateAuthority"],
+        "guidanceNote": discretion["guidanceNote"],
         "humanReviewRecommended": _admin_review_needed(rec, discretion, reasons),
         "leakageWarningsIfSurfaced": _leakage_warnings(text, PRIVATE_SIGNAL_TERMS),
     }
