@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from .common import money
+from .statuses import is_booked_status
 
 
 GUIDANCE_AUTHORITY = "guidance_only"
@@ -96,11 +97,13 @@ def _range_variance(actualized_cost: int | None, expected_range: dict) -> float 
 
 
 def _admin_notes(status: str, range_state: str, events: list[str]) -> list[str]:
-    if status == "booked" and range_state == "inside_expected_range" and events:
+    if status == "booked_with_market_health_warning":
+        return ["Booked under market-health warning; use as client budget calibration signal, not proof that the low-price path is healthy."]
+    if is_booked_status(status) and range_state == "inside_expected_range" and events:
         return ["Actualized inside the expected range; assumption language covered the event-driven variance."]
-    if status == "booked" and range_state == "inside_expected_range":
+    if is_booked_status(status) and range_state == "inside_expected_range":
         return ["Booked at the locked quote inside the expected range; no formula pressure."]
-    if status == "booked" and range_state == "above_expected_range":
+    if is_booked_status(status) and range_state == "above_expected_range":
         return ["Actualized above expected range; review range width or assumption language for similar future deals."]
     if status == "failed_budget_gap":
         return ["Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."]
@@ -157,7 +160,7 @@ def simulate_actualization(project: dict, talent: dict, rec: dict, decision: dic
     events: list[str] = []
     actualized_cost = None
 
-    if status == "booked":
+    if is_booked_status(status):
         events = _booked_events(project, talent, rec)
         event_delta = sum(_event_delta(project, talent, event) for event in events)
         actualized_cost = money(locked_quote * (1.0 + event_delta))
@@ -187,7 +190,7 @@ def simulate_actualization(project: dict, talent: dict, rec: dict, decision: dic
 
 
 def summarize_outcome_learning(records: list[dict]) -> dict:
-    booked = [record for record in records if record["status"] == "booked"]
+    booked = [record for record in records if is_booked_status(record["status"])]
     actualized = [record for record in booked if record["actualizedCost"] is not None]
     above_range = [record for record in actualized if record["rangeState"] == "above_expected_range"]
     guidance = [record for record in records if record["talentGuidance"]["available"]]
@@ -265,7 +268,7 @@ def _cohort_guidance(dimension: str, value: str, average_lift: float, actualized
 
 
 def _summarize_cohort(dimension: str, value: str, records: list[dict]) -> dict:
-    booked = [record for record in records if record["status"] == "booked"]
+    booked = [record for record in records if is_booked_status(record["status"])]
     actualized = [record for record in booked if record["actualizedCost"] is not None]
     above_range = [record for record in actualized if record["rangeState"] == "above_expected_range"]
     lifts = [_actualization_lift(record) for record in actualized]

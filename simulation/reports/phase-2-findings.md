@@ -29,8 +29,8 @@ The current system protects against several core failure modes:
 
 The simulator also exposes policy work still needed before shadow-mode integration:
 
-- low-budget firm projects can still book the cheapest stress candidate after stronger options exceed
-  client capacity
+- low-budget firm projects can still close through a cheapest stress candidate, but now receive a
+  `booked_with_market_health_warning` outcome instead of a clean healthy booking
 - prestige projects need clearer "not viable at stated cash" language instead of appearing like normal
   booking failures
 - pre-presentation talent counters are now structurally safe, but repeated counters need to feed future
@@ -40,7 +40,7 @@ The simulator also exposes policy work still needed before shadow-mode integrati
 
 ## Current Base Run
 
-Policy: `phase-2-admin-config-v1`
+Policy: `phase-3-budget-health-v1`
 
 | Metric | Result |
 | --- | ---: |
@@ -53,6 +53,7 @@ Policy: `phase-2-admin-config-v1`
 | Pre-presentation talent counters | 4 |
 | Admin approval required | 46 |
 | Mature autonomy candidates | 20 |
+| Budget-health warnings | 1 |
 | Brand-facing leakage count | 0 |
 | Talent-facing job-specific rationale count | 0 |
 | Max shadow AI discretion | 1.0% |
@@ -70,7 +71,7 @@ Policy: `phase-2-admin-config-v1`
 | Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work stays tentative. | Healthy direction, but confirmation mechanics need definition. |
 | Long-Horizon Beauty Campaign | pending hold | High-trust repeat client receives much softer uncertainty treatment. | Healthy: trust offsets timing uncertainty without forcing a hard booking. |
 | Bad-Faith Repricing Stress Test | booked | Volatile talent counters before client presentation; client only sees locked quote. | Structurally fixed: now track this as a pre-presentation counter, not post-interest repricing. |
-| Race-to-Bottom Social Content Test | booked | Higher-fit options exceed capacity; low-rate option can still book in stress path. | Needs stronger policy: ranking penalty alone does not prevent budget-driven commoditization. |
+| Race-to-Bottom Social Content Test | booked with market-health warning | Higher-fit options exceed capacity; low-rate option can still book in stress path. | Improved: conversion remains possible, but the outcome is no longer treated as a clean marketplace win. |
 | Background Extra Minimum Wage Smoke Test | failed budget gap | Local minimum wage lifts the effective floor above the offered day rate. | Healthy: legal/compliance floors can override client-stated budget. |
 | Background Extra Unknown Wage Smoke Test | booked | Nullable wage input produces a validation warning, not a hard block. | Healthy as a smoke test; production should enrich wage data over time. |
 
@@ -137,12 +138,25 @@ Policy implication:
 - even high-trust long-horizon work should not become an unconditional firm hold
 - the next design task is confirmation mechanics
 
+### 6. Budget-Driven Commodity Wins Are Now Labeled
+
+The race-to-bottom social stress case now returns `booked_with_market_health_warning`. The booking still
+counts as conversion, but it carries an internal warning when a market-health risk candidate books only
+after stronger options fail client capacity.
+
+Policy implication:
+
+- do not block affordable talent simply for being affordable
+- do not let the cheapest path masquerade as a healthy recommendation outcome
+- use this label to trigger budget education, scope calibration, or admin review
+
 ## Exploit Paths And Risks
 
 ### Race-To-Bottom Survival Path
 
 The low-rate fast responder is flagged, penalized, and pushed down by stricter market-health policy, but
-can still book when higher-quality options exceed the client's capacity.
+can still book when higher-quality options exceed the client's capacity. This now becomes
+`booked_with_market_health_warning` instead of a clean `booked` outcome.
 
 Why it matters:
 
@@ -152,9 +166,9 @@ Why it matters:
 
 Recommended revision:
 
-- add a firm-budget market-health rule that detects "only low-rate option can clear capacity"
-- require scope remediation, budget education, or admin review before calling that a healthy booking
-- distinguish "booked" from "booked under market-health warning"
+- require scope remediation, budget education, or admin review before treating this as a healthy booking
+- track whether repeated warnings come from the same client, project type, or market
+- decide whether some warning patterns should become `needs_scope_calibration`
 
 ### Prestige As Underpricing Pressure
 
@@ -223,15 +237,13 @@ Recommended revision:
 
 ## Recommended Policy Revisions Before Phase 3
 
-1. Add a "budget-driven commodity booking" warning when a low-rate candidate books only after stronger
-   options fail client capacity.
-2. Split final outcome labels into `booked`, `booked_with_market_health_warning`, `pending_hold`,
+1. Split final outcome labels into `booked`, `booked_with_market_health_warning`, `pending_hold`,
    `failed_budget_gap`, and `needs_scope_calibration`.
-3. Define long-horizon confirmation mechanics: checkpoint timing, hold expiration, and what counts as
+2. Define long-horizon confirmation mechanics: checkpoint timing, hold expiration, and what counts as
    enough commitment.
-4. Track pre-presentation counter frequency as an upstream reliability signal with a small capped effect.
-5. Preserve strict audience separation for rationales and keep all pricing mechanics admin-only.
-6. Keep AI discretion shadow-only until outcome evidence shows it improves close rates without leakage,
+3. Track pre-presentation counter frequency as an upstream reliability signal with a small capped effect.
+4. Preserve strict audience separation for rationales and keep all pricing mechanics admin-only.
+5. Keep AI discretion shadow-only until outcome evidence shows it improves close rates without leakage,
    underpricing, or higher dispute rates.
 
 ## Phase 3 Stress Suite
@@ -269,6 +281,6 @@ Exit criteria status:
 
 Recommended next move:
 
-- implement the budget-driven commodity booking warning
-- add one or two Phase 3 stress fixtures
-- rerun base and strict policies to see whether the warning changes outcomes cleanly
+- define the `needs_scope_calibration` outcome for projects that are not viable at the stated budget
+- add long-horizon confirmation mechanics
+- add repeated-client stress fixtures to see whether warnings cluster around the same buyer behavior

@@ -30,12 +30,15 @@ ranges remain the source of authority.
 | Optional talent-guidance messages | 8 | 8 |
 | Cohort summaries | 27 | 27 |
 | Optional cohort-guidance messages | 12 | 12 |
+| Budget-health warnings | 1 | 1 |
 | Average actualization lift | 10.77% | 10.77% |
 | Validation failures | 0 | 0 |
 
 The two above-range records still come from the last-minute automotive stress case, where prep, travel,
 turnaround compression, and overtime stack beyond the expected range. The new $500k+ and $1M+ scenarios
 stay inside their wider expected ranges while creating separate large-scale and flagship cohort signals.
+The race-to-bottom stress case now actualizes as `booked_with_market_health_warning`, so it remains part
+of conversion learning while preserving the market-health warning.
 
 ## Talent Guidance Boundary
 

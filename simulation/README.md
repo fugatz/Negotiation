@@ -71,6 +71,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - outcome-learning records that compare locked quotes, booking outcomes, and actualized costs
 - cohort-learning summaries by role, category, project size, market, and client trust tier
 - market-health flags for race-to-bottom and price-led recommendation risk
+- `booked_with_market_health_warning` outcomes for budget-driven commodity booking paths
 - pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas
 - upstream-score placeholders for actor readiness, talent reliability, and client trust

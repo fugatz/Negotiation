@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from .common import clamp
 from .policy_config import load_policy_config
+from .statuses import is_booked_status
 
 
 def shadow_discretion_cap() -> float:
@@ -24,8 +25,8 @@ def _gap(outcome: dict) -> float:
 
 def propose_shadow_discretion(project: dict, talent: dict, rec: dict, outcomes: list[dict]) -> dict:
     similar = _similar_outcomes(project, talent, outcomes)
-    booked = [outcome for outcome in similar if outcome["status"] == "booked"]
-    failed = [outcome for outcome in similar if outcome["status"] != "booked"]
+    booked = [outcome for outcome in similar if is_booked_status(outcome["status"])]
+    failed = [outcome for outcome in similar if not is_booked_status(outcome["status"])]
 
     proposal = {
         "mode": "shadow",

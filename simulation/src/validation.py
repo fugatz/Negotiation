@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
+from .negotiation import BUDGET_DRIVEN_COMMODITY_WARNING
 from .policy_config import load_policy_config
+from .statuses import BOOKED_WITH_MARKET_HEALTH_WARNING, is_booked_status
 
 
 def _recommendations(trace: dict) -> list[dict]:
@@ -170,7 +172,7 @@ def validate_report(report: dict) -> dict:
                 context,
                 "talent-owned rate ranges remain the outcome-learning pricing authority",
             )
-            if record["status"] == "booked":
+            if is_booked_status(record["status"]):
                 _check(
                     record["actualizedCost"] is not None,
                     failures,
@@ -494,6 +496,16 @@ def validate_report(report: dict) -> dict:
                         "context": context,
                         "detail": "autonomy candidates should have no exception triggers",
                     }
+                )
+
+        for decision in trace["clientDecisions"]:
+            if decision["status"] == BOOKED_WITH_MARKET_HEALTH_WARNING:
+                _check(
+                    BUDGET_DRIVEN_COMMODITY_WARNING in decision["warnings"],
+                    failures,
+                    "budget_health_warning_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "budget-health warning outcomes must include the explicit warning label",
                 )
 
     return {

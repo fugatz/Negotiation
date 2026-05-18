@@ -4,8 +4,8 @@ Generated from dry runs on May 18, 2026.
 
 Compared policies:
 
-- Base: `phase-2-admin-config-v1`
-- Variant: `phase-2-stricter-market-health-v1`
+- Base: `phase-3-budget-health-v1`
+- Variant: `phase-3-stricter-market-health-v1`
 
 Source commands:
 
@@ -18,13 +18,14 @@ python3 -m simulation.src.runner --policy simulation/config/variants/stricter_ma
 
 The stricter market-health variant is directionally useful, but it is not sufficient by itself. It reduces
 race-to-bottom visibility in the slate by applying stronger ranking penalties, yet the low-rate candidate
-can still book in the race-to-bottom stress path when higher-quality options exceed client capacity.
+can still close in the race-to-bottom stress path when higher-quality options exceed client capacity. The
+new budget-health layer now labels that close as `booked_with_market_health_warning`.
 
 The interpretation is important:
 
 - stricter ranking helps presentation quality
 - stricter ranking does not solve client budget reality
-- budget-driven commoditization needs an outcome-level guardrail, not only a ranking penalty
+- budget-driven commoditization now has an outcome-level warning, not only a ranking penalty
 
 ## Policy Differences
 
@@ -50,6 +51,7 @@ All other config inherits from the base policy.
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
 | Human review share | 34.8% | 37.0% | Stricter policy slightly increases admin attention. |
 | Mature autonomy candidates | 20 | 20 | No autonomy readiness gain yet. |
+| Budget-health warnings | 1 | 1 | Race-to-bottom stress booking is now labeled rather than treated as clean. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
 | Market-health guardrail triggers | 3 | 2 | Fewer flagged recs reach reviewed recommendation surfaces. |
 | Outside-budget triggers | 17 | 17 | Budget mismatch is unchanged. |
@@ -74,20 +76,20 @@ Read:
 ### Race-To-Bottom Social Content Test
 
 Base policy ranks the Low-Rate Fast Responder second. The stricter variant pushes that candidate to
-fourth. However, the stress harness still tests the candidate, and the candidate still books after
-higher-quality options fail budget capacity.
+fourth. However, the stress harness still tests the candidate, and the candidate still closes after
+higher-quality options fail budget capacity. The difference now is that the final outcome is
+`booked_with_market_health_warning`.
 
 Read:
 
 - the ranking penalty is working
-- the low-rate booking exploit still exists
-- the missing guardrail is at the client decision/outcome layer, not only the recommendation ranking layer
+- the low-rate booking path still exists, but it is now explicitly labeled
+- the outcome layer can distinguish conversion from marketplace health
 
-Recommended change:
+Recommended follow-up:
 
-- add a warning or outcome state when the only bookable option is a low-rate market-health risk
-- consider requiring admin approval, scope calibration, or budget education before presenting that as a
-  normal successful booking
+- decide when repeated budget-health warnings should become `needs_scope_calibration`
+- consider requiring budget education before presenting a warning-labeled option as a normal success path
 
 ### Other Scenarios
 
@@ -108,16 +110,15 @@ as sufficient.
 Recommended next policy variant:
 
 ```text
-phase-3-budget-health-v1
+phase-3-scope-calibration-v1
 ```
 
 Suggested changes:
 
-- inherit from `phase-2-stricter-market-health-v1`
-- add an outcome warning for budget-driven commodity bookings
-- optionally change outcome from `booked` to `booked_with_market_health_warning`
-- add a firm-budget rule that detects when all higher-fit recommendations fail capacity and only a
-  low-rate flagged candidate books
+- inherit from `phase-3-stricter-market-health-v1`
+- introduce `needs_scope_calibration` for projects whose stated budget cannot support healthy options
+- define when budget education, scope reduction, or client-side budget revision should happen
+- track repeated warning patterns by client and project type
 - keep race-to-bottom ranking penalties at the stricter level until more stress data exists
 
 ## Decision Notes

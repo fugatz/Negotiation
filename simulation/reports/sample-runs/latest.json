@@ -1,5 +1,5 @@
 {
-  "policy": "phase-2-admin-config-v1",
+  "policy": "phase-3-budget-health-v1",
   "policyConfigPath": "simulation/config/policy.json",
   "traces": [
     {
@@ -11619,13 +11619,26 @@
         },
         {
           "talent_id": "low_rate_fast_responder",
-          "status": "booked",
+          "status": "booked_with_market_health_warning",
           "locked_quote": 4000,
           "client_capacity": 5200,
           "events": [
-            "client evaluated locked presentation quote"
+            "client evaluated locked presentation quote",
+            "market-health review: lower-price risk option booked after stronger options exceeded client capacity"
           ],
-          "warnings": []
+          "warnings": [
+            "budget-driven commodity booking risk"
+          ],
+          "market_health_review": {
+            "reason": "A market-health risk candidate booked after stronger options failed client capacity.",
+            "riskFlags": [
+              "race_to_bottom_risk"
+            ],
+            "strongerFailedTalentIds": [
+              "reliable_generalist_dp"
+            ],
+            "clientBudgetType": "firm"
+          }
         }
       ],
       "outcomeLearning": {
@@ -11686,7 +11699,7 @@
           },
           {
             "talent_id": "low_rate_fast_responder",
-            "status": "booked",
+            "status": "booked_with_market_health_warning",
             "cohortSignals": {
               "role": "photographer",
               "category": "social",
@@ -11716,7 +11729,7 @@
             "rangeState": "inside_expected_range",
             "varianceFromExpectedRange": 0.0,
             "adminCalibrationNotes": [
-              "Booked at the locked quote inside the expected range; no formula pressure."
+              "Booked under market-health warning; use as client budget calibration signal, not proof that the low-price path is healthy."
             ],
             "talentGuidance": {
               "visibility": "talent-guidance",
@@ -11732,8 +11745,9 @@
         ],
         "talentGuidanceExamples": []
       },
-      "outcome": "booked",
+      "outcome": "booked_with_market_health_warning",
       "warnings": [
+        "budget-driven commodity booking risk",
         "final quote exceeded client capacity"
       ]
     },
@@ -13934,6 +13948,7 @@
     "actualizedRecordCount": 13,
     "actualizedAboveExpectedRangeCount": 2,
     "talentGuidanceCount": 8,
+    "budgetHealthWarningCount": 1,
     "averageActualizationLift": 0.1077,
     "aiHumanReviewShareOfRecommendations": 0.348,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,
@@ -13953,6 +13968,7 @@
       "specialist_value_protected": 11
     },
     "warningCounts": {
+      "budget-driven commodity booking risk": 1,
       "final quote exceeded client capacity": 5,
       "long-horizon commitment uncertainty": 2,
       "minimum_wage_floor_unknown": 1,

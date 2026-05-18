@@ -8,13 +8,20 @@ from .admin_governance import build_admin_governance
 from .ai_rationale import build_ai_rationales
 from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_behavior_nudge
 from .common import FIXTURE_DIR
-from .negotiation import apply_availability_commitment, simulate_availability_check, simulate_client_decision
+from .negotiation import (
+    BUDGET_DRIVEN_COMMODITY_WARNING,
+    apply_availability_commitment,
+    apply_budget_health_review,
+    simulate_availability_check,
+    simulate_client_decision,
+)
 from .outcome_calibration import propose_shadow_discretion
 from .outcome_learning import build_cohort_learning, build_outcome_learning
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
 from .ranges import expected_booking_range, project_context
 from .scoring import score_talent
+from .statuses import is_booked_status
 from .timing import timing_nudge
 from .validation import validate_report
 
@@ -145,13 +152,14 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         simulate_client_decision(project, talent_by_id[item["talent_id"]], item)
         for item in negotiation_candidates
     ]
+    client_decisions = apply_budget_health_review(project, negotiation_candidates, client_decisions)
     outcome_learning = build_outcome_learning(
         project,
         talent_by_id,
         negotiation_candidates,
         client_decisions,
     )
-    booked = next((item for item in client_decisions if item["status"] == "booked"), None)
+    booked = next((item for item in client_decisions if is_booked_status(item["status"])), None)
 
     warnings = []
     for availability_check in [item["availability_check"] for item in negotiation_candidates]:
@@ -183,9 +191,13 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
 
 
 def aggregate_metrics(traces: list[dict]) -> dict:
-    booked = sum(1 for trace in traces if trace["outcome"] == "booked")
+    booked = sum(1 for trace in traces if is_booked_status(trace["outcome"]))
     long_horizon = [trace for trace in traces if trace["timingHorizon"] == "long_horizon"]
     warnings = [warning for trace in traces for warning in trace["warnings"]]
+    budget_health_warnings = sum(
+        warning == BUDGET_DRIVEN_COMMODITY_WARNING
+        for warning in warnings
+    )
     behavior_changed = 0
     timing_changed = 0
     discretion_deltas: list[float] = []
@@ -289,6 +301,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "actualizedRecordCount": actualized_record_count,
         "actualizedAboveExpectedRangeCount": actualized_above_range_count,
         "talentGuidanceCount": talent_guidance_count,
+        "budgetHealthWarningCount": budget_health_warnings,
         "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),

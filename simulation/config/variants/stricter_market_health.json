@@ -1,6 +1,6 @@
 {
   "extends": "../policy.json",
-  "version": "phase-2-stricter-market-health-v1",
+  "version": "phase-3-stricter-market-health-v1",
   "market_health": {
     "review_score_threshold": 0.68,
     "ranking_penalties": {
