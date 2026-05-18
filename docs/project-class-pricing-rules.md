@@ -349,6 +349,12 @@ The system should eventually record:
 - talent readiness or reliability signals
 - outcome: booked, held, cancelled, lost, revised, actualized over range
 
+Outcome learning should separate:
+
+- admin calibration, which can review range width, assumptions, and formula pressure
+- talent guidance, which can suggest optional market tests without changing rates automatically
+- client trust learning, which can separate real budget misses from talent pricing problems
+
 Over time this enables:
 
 - expected actualization curves

@@ -395,6 +395,15 @@ AI rationale and discretion safety metrics:
 - number of AI discretion recommendations lacking sufficient outcome evidence
 - number of "talent should get more this time" recommendations and their later outcomes
 
+Outcome-learning metrics:
+
+- number of booked outcomes that receive actualized cost records
+- number of actualized costs inside, above, or below the expected booking range
+- average actualization lift over locked quote
+- number of actualization events tied to allowed triggers
+- number of optional talent-guidance messages generated
+- number of guidance messages that would automatically change talent rates, which should remain zero
+
 Admin governance metrics:
 
 - number of recommendations requiring launch admin approval
@@ -609,6 +618,7 @@ Each simulated scenario should produce a compact trace:
 - project context and expected booking ranges
 - pre-presentation rate-quoted outreach checks
 - client decision events
+- post-decision outcome-learning and actualization records
 - final outcome
 - policy warnings
 - admin-only AI pricing rationale notes

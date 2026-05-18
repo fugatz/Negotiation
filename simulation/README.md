@@ -52,6 +52,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 
 - [Phase 2 Findings Report](reports/phase-2-findings.md)
 - [Policy Comparison Report](reports/policy-comparison.md)
+- [Outcome Learning Report](reports/outcome-learning.md)
 
 ## Current Scope
 
@@ -66,6 +67,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - nullable local minimum wage smoke checks for actor legal floors
 - expected booking ranges with assumptions and actualization triggers
+- outcome-learning records that compare locked quotes, booking outcomes, and actualized costs
 - market-health flags for race-to-bottom and price-led recommendation risk
 - pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas

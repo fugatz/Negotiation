@@ -585,6 +585,8 @@ Track:
 - talent satisfaction
 - production outcome
 - repeat booking behavior
+- actualized cost against the expected booking range
+- optional talent guidance generated from repeated market signals
 
 The feedback loop should improve prediction without turning private flexibility into public pressure.
 It should also create optional talent-facing market guidance, such as "people with similar experience in

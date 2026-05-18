@@ -10,6 +10,7 @@ from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_beh
 from .common import FIXTURE_DIR
 from .negotiation import apply_availability_commitment, simulate_availability_check, simulate_client_decision
 from .outcome_calibration import propose_shadow_discretion
+from .outcome_learning import build_outcome_learning
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
 from .ranges import expected_booking_range, project_context
@@ -144,6 +145,12 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         simulate_client_decision(project, talent_by_id[item["talent_id"]], item)
         for item in negotiation_candidates
     ]
+    outcome_learning = build_outcome_learning(
+        project,
+        talent_by_id,
+        negotiation_candidates,
+        client_decisions,
+    )
     booked = next((item for item in client_decisions if item["status"] == "booked"), None)
 
     warnings = []
@@ -169,6 +176,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         "stressShortlist": [compact_recommendation(item, talent_by_id) for item in stress_shortlist],
         "availabilityChecks": [item["availability_check"] for item in negotiation_candidates],
         "clientDecisions": client_decisions,
+        "outcomeLearning": outcome_learning,
         "outcome": booked["status"] if booked else (client_decisions[0]["status"] if client_decisions else "no_viable_slate"),
         "warnings": sorted(set(warnings)),
     }
@@ -193,10 +201,24 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     minimum_wage_floor_applied_count = 0
     minimum_wage_floor_unknown_count = 0
     expected_range_count = 0
+    actualized_record_count = 0
+    actualized_above_range_count = 0
+    talent_guidance_count = 0
+    actualization_lifts: list[float] = []
     leakage_count = 0
     human_review_count = 0
 
     for trace in traces:
+        outcome_summary = trace["outcomeLearning"]["summary"]
+        actualized_record_count += int(outcome_summary["actualizedRecordCount"])
+        actualized_above_range_count += int(outcome_summary["actualizedAboveExpectedRangeCount"])
+        talent_guidance_count += int(outcome_summary["talentGuidanceCount"])
+        for record in trace["outcomeLearning"]["actualizationRecords"]:
+            if record["actualizedCost"] is not None:
+                locked_quote = max(int(record["lockedQuote"]), 1)
+                actualization_lifts.append(
+                    (int(record["actualizedCost"]) - int(record["lockedQuote"])) / locked_quote
+                )
         traced_recommendations = trace["recommendedSlate"] + trace.get("stressShortlist", [])
         for rec in traced_recommendations:
             if rec["behavior"]["combinedBehaviorRateDelta"] != 0:
@@ -240,6 +262,11 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     ) or 1
     max_discretion = max(discretion_deltas) if discretion_deltas else 0.0
     avg_discretion = sum(discretion_deltas) / len(discretion_deltas) if discretion_deltas else 0.0
+    avg_actualization_lift = (
+        sum(actualization_lifts) / len(actualization_lifts)
+        if actualization_lifts
+        else 0.0
+    )
 
     return {
         "scenarioCount": len(traces),
@@ -259,6 +286,10 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "minimumWageFloorAppliedCount": minimum_wage_floor_applied_count,
         "minimumWageFloorUnknownCount": minimum_wage_floor_unknown_count,
         "expectedBookingRangeCount": expected_range_count,
+        "actualizedRecordCount": actualized_record_count,
+        "actualizedAboveExpectedRangeCount": actualized_above_range_count,
+        "talentGuidanceCount": talent_guidance_count,
+        "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
         "maxAbsoluteShadowDiscretionDelta": round(max_discretion, 4),

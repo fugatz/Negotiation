@@ -1,0 +1,68 @@
+# Outcome Learning Report
+
+Generated from dry runs on May 18, 2026.
+
+Source commands:
+
+```bash
+python3 -m simulation.src.runner --fail-on-validation
+python3 -m simulation.src.runner --policy simulation/config/variants/stricter_market_health.json --fail-on-validation
+```
+
+## Executive Read
+
+Outcome learning now runs after client decision simulation. It compares the locked talent-approved quote
+against the expected booking range, applies event-based actualization, and produces two separate signals:
+
+- admin calibration notes for range width, assumptions, and formula pressure
+- optional talent guidance that never changes rates automatically
+
+The important boundary is intact: outcome data is guidance, not pricing authority. Talent-owned rate
+ranges remain the source of authority.
+
+## Current Dry-Run Signal
+
+| Metric | Base | Stricter Market Health |
+| --- | ---: | ---: |
+| Validation status | pass | pass |
+| Actualized records | 9 | 9 |
+| Actualized above expected range | 2 | 2 |
+| Optional talent-guidance messages | 4 | 4 |
+| Average actualization lift | 9.16% | 9.16% |
+| Validation failures | 0 | 0 |
+
+The two above-range records come from the last-minute automotive stress case, where prep, travel,
+turnaround compression, and overtime stack beyond the expected range. That is the right kind of signal:
+admins should review assumption language or range width for similar future projects.
+
+## Talent Guidance Boundary
+
+Talent-facing guidance is generated only as optional market intelligence.
+
+Example shape:
+
+```text
+Similar automotive outcomes are landing about 25% above the accepted project rate in this simulation cohort.
+Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change.
+```
+
+Validation enforces:
+
+- guidance authority is `guidance_only`
+- rate authority is `talent_owned_rate_range`
+- guidance does not apply automatically
+- actualization events must cite allowed triggers from the expected booking range
+- unbooked outcomes do not produce actualized costs
+
+## Product Implication
+
+This creates the first loop toward pricing intelligence without turning Distinkt into a rate-setting
+authority. Over time, the same structure can support:
+
+- "people with similar experience in your market are closing higher"
+- "your beauty work supports a stronger next-quarter rate test"
+- "this client repeatedly misses budget calibration"
+- "this project type actualizes above range when travel appears"
+
+The next useful pass is to split outcome learning by cohort: talent role, category, project size band,
+market/location, and client trust tier.

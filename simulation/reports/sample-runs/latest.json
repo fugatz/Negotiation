@@ -994,6 +994,96 @@
           ]
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "reliable_generalist_dp",
+            "status": "booked",
+            "lockedQuote": 6700,
+            "expectedRange": {
+              "low": 6200,
+              "high": 7200,
+              "expectedClose": 6700,
+              "currency": "USD"
+            },
+            "actualizedCost": 6700,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Booked at the locked quote inside the expected range; no formula pressure."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "failed_budget_gap",
+            "lockedQuote": 11600,
+            "expectedRange": {
+              "low": 10700,
+              "high": 12500,
+              "expectedClose": 11600,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "booked",
       "warnings": [
         "final quote exceeded client capacity"
@@ -1981,6 +2071,131 @@
           "warnings": []
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 2,
+          "averageActualizationLift": 0.1308,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "booked",
+            "lockedQuote": 8900,
+            "expectedRange": {
+              "low": 7400,
+              "high": 10400,
+              "expectedClose": 8900,
+              "currency": "USD"
+            },
+            "actualizedCost": 10100,
+            "actualizationEvents": [
+              "prep day added",
+              "usage expanded"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar beauty outcomes are landing about 13% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "booked",
+            "lockedQuote": 13400,
+            "expectedRange": {
+              "low": 11100,
+              "high": 15700,
+              "expectedClose": 13400,
+              "currency": "USD"
+            },
+            "actualizedCost": 15100,
+            "actualizationEvents": [
+              "prep day added",
+              "usage expanded"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar beauty outcomes are landing about 13% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": [
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar beauty outcomes are landing about 13% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          },
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar beauty outcomes are landing about 13% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          }
+        ]
+      },
       "outcome": "booked",
       "warnings": []
     },
@@ -2987,6 +3202,135 @@
           "warnings": []
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 2,
+          "talentGuidanceCount": 2,
+          "averageActualizationLift": 0.2532,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "reliable_generalist_dp",
+            "status": "booked",
+            "lockedQuote": 7800,
+            "expectedRange": {
+              "low": 6500,
+              "high": 9100,
+              "expectedClose": 7800,
+              "currency": "USD"
+            },
+            "actualizedCost": 9800,
+            "actualizationEvents": [
+              "prep day added",
+              "travel required",
+              "turnaround compressed",
+              "overtime triggered"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "above_expected_range",
+            "varianceFromExpectedRange": 0.0769,
+            "adminCalibrationNotes": [
+              "Actualized above expected range; review range width or assumption language for similar future deals."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar automotive outcomes are landing about 26% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "booked",
+            "lockedQuote": 13600,
+            "expectedRange": {
+              "low": 11300,
+              "high": 15900,
+              "expectedClose": 13600,
+              "currency": "USD"
+            },
+            "actualizedCost": 17000,
+            "actualizationEvents": [
+              "prep day added",
+              "travel required",
+              "turnaround compressed",
+              "overtime triggered"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "above_expected_range",
+            "varianceFromExpectedRange": 0.0692,
+            "adminCalibrationNotes": [
+              "Actualized above expected range; review range width or assumption language for similar future deals."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar automotive outcomes are landing about 25% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": [
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar automotive outcomes are landing about 26% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          },
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar automotive outcomes are landing about 25% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          }
+        ]
+      },
       "outcome": "booked",
       "warnings": []
     },
@@ -4003,6 +4347,96 @@
           ]
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "luxury_fashion_editor",
+            "status": "failed_budget_gap",
+            "lockedQuote": 12400,
+            "expectedRange": {
+              "low": 10400,
+              "high": 14400,
+              "expectedClose": 12400,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "failed_budget_gap",
+            "lockedQuote": 10800,
+            "expectedRange": {
+              "low": 9100,
+              "high": 12500,
+              "expectedClose": 10800,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "failed_budget_gap",
       "warnings": [
         "final quote exceeded client capacity"
@@ -5022,6 +5456,96 @@
           ]
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "reliable_generalist_dp",
+            "status": "pending_hold",
+            "lockedQuote": 6800,
+            "expectedRange": {
+              "low": 5400,
+              "high": 8200,
+              "expectedClose": 6800,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Hold did not become an actualized outcome; keep it in seriousness-confidence data."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "premium_food_director",
+            "status": "pending_hold",
+            "lockedQuote": 21600,
+            "expectedRange": {
+              "low": 17300,
+              "high": 25900,
+              "expectedClose": 21600,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Hold did not become an actualized outcome; keep it in seriousness-confidence data."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "pending_hold",
       "warnings": [
         "long-horizon commitment uncertainty"
@@ -6019,6 +6543,96 @@
           ]
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "pending_hold",
+            "lockedQuote": 8700,
+            "expectedRange": {
+              "low": 7500,
+              "high": 9900,
+              "expectedClose": 8700,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Hold did not become an actualized outcome; keep it in seriousness-confidence data."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "pending_hold",
+            "lockedQuote": 13200,
+            "expectedRange": {
+              "low": 11400,
+              "high": 15000,
+              "expectedClose": 13200,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Hold did not become an actualized outcome; keep it in seriousness-confidence data."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "pending_hold",
       "warnings": [
         "long-horizon commitment uncertainty"
@@ -7309,6 +7923,136 @@
           ]
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0563,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "reliable_generalist_dp",
+            "status": "booked",
+            "lockedQuote": 7100,
+            "expectedRange": {
+              "low": 6100,
+              "high": 8100,
+              "expectedClose": 7100,
+              "currency": "USD"
+            },
+            "actualizedCost": 7500,
+            "actualizationEvents": [
+              "prep day added"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "premium_food_director",
+            "status": "failed_budget_gap",
+            "lockedQuote": 22500,
+            "expectedRange": {
+              "low": 19400,
+              "high": 25700,
+              "expectedClose": 22500,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "volatile_rep_managed_talent",
+            "status": "failed_budget_gap",
+            "lockedQuote": 13300,
+            "expectedRange": {
+              "low": 11400,
+              "high": 15200,
+              "expectedClose": 13300,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "booked",
       "warnings": [
         "final quote exceeded client capacity",
@@ -8496,6 +9240,96 @@
           "warnings": []
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "reliable_generalist_dp",
+            "status": "failed_budget_gap",
+            "lockedQuote": 6700,
+            "expectedRange": {
+              "low": 6200,
+              "high": 7200,
+              "expectedClose": 6700,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "low_rate_fast_responder",
+            "status": "booked",
+            "lockedQuote": 4000,
+            "expectedRange": {
+              "low": 3700,
+              "high": 4300,
+              "expectedClose": 4000,
+              "currency": "USD"
+            },
+            "actualizedCost": 4000,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Booked at the locked quote inside the expected range; no formula pressure."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "booked",
       "warnings": [
         "final quote exceeded client capacity"
@@ -9124,6 +9958,96 @@
           ]
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "background_extra_actor",
+            "status": "failed_budget_gap",
+            "lockedQuote": 216,
+            "expectedRange": {
+              "low": 216,
+              "high": 233,
+              "expectedClose": 216,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "featured_actor_unknown_wage",
+            "status": "failed_budget_gap",
+            "lockedQuote": 216,
+            "expectedRange": {
+              "low": 216,
+              "high": 233,
+              "expectedClose": 216,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "failed_budget_gap",
       "warnings": [
         "final quote exceeded client capacity"
@@ -9750,6 +10674,96 @@
           "warnings": []
         }
       ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "background_extra_actor",
+            "status": "booked",
+            "lockedQuote": 100,
+            "expectedRange": {
+              "low": 100,
+              "high": 108,
+              "expectedClose": 100,
+              "currency": "USD"
+            },
+            "actualizedCost": 100,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Booked at the locked quote inside the expected range; no formula pressure."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "featured_actor_unknown_wage",
+            "status": "booked",
+            "lockedQuote": 200,
+            "expectedRange": {
+              "low": 184,
+              "high": 216,
+              "expectedClose": 200,
+              "currency": "USD"
+            },
+            "actualizedCost": 200,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Booked at the locked quote inside the expected range; no formula pressure."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
       "outcome": "booked",
       "warnings": [
         "minimum_wage_floor_unknown"
@@ -9774,6 +10788,10 @@
     "minimumWageFloorAppliedCount": 2,
     "minimumWageFloorUnknownCount": 2,
     "expectedBookingRangeCount": 38,
+    "actualizedRecordCount": 9,
+    "actualizedAboveExpectedRangeCount": 2,
+    "talentGuidanceCount": 4,
+    "averageActualizationLift": 0.0916,
     "aiHumanReviewShareOfRecommendations": 0.395,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,
     "maxAbsoluteShadowDiscretionDelta": 0.01,

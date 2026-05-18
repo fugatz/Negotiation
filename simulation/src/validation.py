@@ -36,6 +36,20 @@ def _check(condition: bool, failures: list[dict], code: str, context: str, detai
         failures.append({"code": code, "context": context, "detail": detail})
 
 
+def _talent_guidance_forbidden_hits(text: str) -> list[str]:
+    forbidden = [
+        "behavior",
+        "desperation",
+        "failure",
+        "floor",
+        "hidden",
+        "penalty",
+        "punish",
+    ]
+    lowered = text.lower()
+    return sorted(term for term in forbidden if term in lowered)
+
+
 def validate_report(report: dict) -> dict:
     config = load_policy_config()
     failures: list[dict] = []
@@ -64,6 +78,90 @@ def validate_report(report: dict) -> dict:
                 _context(trace, top_rec),
                 "market-health override should prevent low-price/low-fit options from defaulting to top rank",
             )
+
+        outcome_learning = trace["outcomeLearning"]
+        actualization_records = outcome_learning["actualizationRecords"]
+        _check(
+            len(actualization_records) == len(trace["clientDecisions"]),
+            failures,
+            "actualization_record_count_mismatch",
+            trace["projectId"],
+            "each client decision should have an outcome-learning actualization record",
+        )
+        for record in actualization_records:
+            context = f"{trace['projectId']} / {record['talent_id']}"
+            _check(
+                record["calibrationAuthority"] == "guidance_only",
+                failures,
+                "actualization_calibration_authority_invalid",
+                context,
+                "actualization learning should produce guidance, not binding price rules",
+            )
+            _check(
+                record["rateAuthority"] == "talent_owned_rate_range",
+                failures,
+                "actualization_rate_authority_invalid",
+                context,
+                "talent-owned rate ranges remain the outcome-learning pricing authority",
+            )
+            if record["status"] == "booked":
+                _check(
+                    record["actualizedCost"] is not None,
+                    failures,
+                    "booked_without_actualized_cost",
+                    context,
+                    "booked outcomes should receive an actualized cost for learning",
+                )
+            else:
+                _check(
+                    record["actualizedCost"] is None,
+                    failures,
+                    "unbooked_actualized_cost",
+                    context,
+                    "unbooked outcomes should not produce an actualized cost",
+                )
+            _check(
+                set(record["actualizationEvents"]).issubset(
+                    set(record["allowedActualizationTriggers"])
+                ),
+                failures,
+                "actualization_event_not_allowed",
+                context,
+                "actualization events must cite allowed triggers from the expected booking range",
+            )
+            guidance = record["talentGuidance"]
+            _check(
+                guidance["guidanceAuthority"] == "guidance_only"
+                and guidance["rateAuthority"] == "talent_owned_rate_range",
+                failures,
+                "talent_guidance_authority_invalid",
+                context,
+                "talent-facing guidance must remain advisory and talent-owned",
+            )
+            _check(
+                guidance["appliesAutomatically"] is False,
+                failures,
+                "talent_guidance_applies_automatically",
+                context,
+                "talent-facing rate guidance must never change rates automatically",
+            )
+            if guidance["available"]:
+                guidance_text = " ".join(guidance["messages"])
+                _check(
+                    "optional" in guidance_text.lower(),
+                    failures,
+                    "talent_guidance_not_optional",
+                    context,
+                    "talent-facing guidance should state that it is optional",
+                )
+                forbidden_hits = _talent_guidance_forbidden_hits(guidance_text)
+                _check(
+                    not forbidden_hits,
+                    failures,
+                    "talent_guidance_leakage",
+                    context,
+                    f"talent-facing guidance leaked private or negative terms: {forbidden_hits}",
+                )
 
         for rec in _recommendations(trace):
             recommendation_count += 1
