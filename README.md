@@ -21,6 +21,7 @@ freelancer marketplace or an opaque agency system.
 
 - [Phase 1 Conceptual Architecture](docs/phase-1-conceptual-architecture.md)
 - [Simulation Blueprint](docs/simulation-blueprint.md)
+- [Project And Talent Class Pricing Rules](docs/project-class-pricing-rules.md)
 - [Phase 2 Findings Report](simulation/reports/phase-2-findings.md)
 - [Policy Comparison Report](simulation/reports/policy-comparison.md)
 

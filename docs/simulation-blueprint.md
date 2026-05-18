@@ -35,6 +35,10 @@ The first simulation should answer:
 Synthetic talent profiles should include:
 
 - id and display archetype
+- talent class: actor or production talent
+- production role, when applicable: director, photographer, DP, editor, producer
+- actor role, when applicable: lead, co-lead, supporting, featured, background
+- union status and legal floor basis, when applicable
 - categories and specialization depth
 - listed rate
 - talent-approved operating band, initially 25% below to 30% above listed rate
@@ -70,8 +74,11 @@ Example archetypes:
 Synthetic project briefs should include:
 
 - category
-- budget
+- all-in budget
+- project size band
+- project type
 - budget type
+- pricing assumptions: prep, shoot days, fitting, travel, usage, exclusivity, revisions, overtime
 - lead time in days
 - timing horizon: last-minute, normal, long-horizon
 - project commitment confidence
@@ -93,6 +100,10 @@ Example briefs:
 - last-minute automotive shoot
 - exploratory brand research brief
 - high-usage luxury fashion campaign
+
+Project size, project type, and talent class should be modeled explicitly before adding more scoring
+complexity. The system should not price a $50k social project, a $50k national actor role, a $100k
+director-led campaign, and a $100k lead-actor campaign with one generic budget-fit formula.
 
 ### Client
 

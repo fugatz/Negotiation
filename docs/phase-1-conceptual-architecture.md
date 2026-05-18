@@ -152,6 +152,10 @@ reason codes; externally, it should support curated recommendations.
 
 Pricing should combine the talent's private pricing states with project context.
 
+Project context should include project size, project type, assumptions, and talent class. Actor pricing
+and production-talent pricing should not share the same floor and ceiling logic. See
+[Project And Talent Class Pricing Rules](project-class-pricing-rules.md) for the working rule set.
+
 Possible internal states:
 
 - listed rate: the talent-declared market anchor
@@ -168,7 +172,8 @@ The output should be a recommendation state rather than a single mechanical numb
 
 Example internal outputs:
 
-- likely quote range
+- expected booking range
+- estimated production range when assumptions are broad enough
 - defensible premium range
 - client budget fit state
 - talent acceptance probability
@@ -176,6 +181,10 @@ Example internal outputs:
 - counteroffer risk
 - late-stage repricing risk
 - recommended negotiation posture
+- assumption set and allowed actualization triggers
+
+Pricing should not be a single fixed number unless scope is stable enough to justify it. Ranges are
+often more honest and more trustworthy because production assumptions change.
 
 ### 5. Timing Horizon Nudge Layer
 
