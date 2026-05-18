@@ -110,7 +110,13 @@ Initial simulation bands:
 | Small | $25k to $50k | Limited flexibility; talent pricing must be tightly tied to role and usage. |
 | Mid | $50k to $100k | Meaningful room for specialists or leads, but still needs allocation discipline. |
 | Premium | $100k to $250k | Stronger talent pricing support; higher usage and complexity expected. |
-| Major | $250k+ | High sophistication; usage, exclusivity, and prominence can materially lift rates. |
+| Major | $250k to $500k | High sophistication; usage, exclusivity, and prominence can materially lift rates. |
+| Large-scale | $500k to $1M | Serious production scale; stronger assumption tracking for usage, travel, approvals, and scope variance. |
+| Flagship | $1M+ | Highest scale signal; expect senior stakeholders, meaningful usage/exclusivity risk, and wider actualization exposure. |
+
+The $500k+ and $1M+ bands should remain contextual signals. They can widen expected ranges and
+increase scrutiny on assumptions, but they should not mechanically allocate a percentage of the all-in
+budget to talent.
 
 These bands should be calibrated later by category, market, and actual outcomes.
 
@@ -463,5 +469,7 @@ Example:
 - $50k national usage actor role
 - $100k campaign with a production director
 - $100k campaign with a lead actor
+- $500k large-scale campaign with high assumption complexity
+- $1M+ flagship campaign with senior-stakeholder and usage risk
 
 The system should not price these by a single budget-fit formula.

@@ -14,7 +14,11 @@ def infer_project_size_band(all_in_budget: int | float) -> str:
         return "mid"
     if amount <= 250000:
         return "premium"
-    return "major"
+    if amount < 500000:
+        return "major"
+    if amount < 1000000:
+        return "large_scale"
+    return "flagship"
 
 
 def project_context(project: dict) -> dict:
@@ -106,6 +110,10 @@ def _range_width(project: dict, talent: dict) -> float:
 
     if size_band in {"premium", "major"}:
         width += 0.03
+    elif size_band == "large_scale":
+        width += 0.04
+    elif size_band == "flagship":
+        width += 0.05
     if project["budget_type"] == "exploratory":
         width += 0.04
 

@@ -25,17 +25,17 @@ ranges remain the source of authority.
 | Metric | Base | Stricter Market Health |
 | --- | ---: | ---: |
 | Validation status | pass | pass |
-| Actualized records | 9 | 9 |
+| Actualized records | 13 | 13 |
 | Actualized above expected range | 2 | 2 |
-| Optional talent-guidance messages | 4 | 4 |
-| Cohort summaries | 25 | 25 |
-| Optional cohort-guidance messages | 8 | 8 |
-| Average actualization lift | 9.16% | 9.16% |
+| Optional talent-guidance messages | 8 | 8 |
+| Cohort summaries | 27 | 27 |
+| Optional cohort-guidance messages | 12 | 12 |
+| Average actualization lift | 10.77% | 10.77% |
 | Validation failures | 0 | 0 |
 
-The two above-range records come from the last-minute automotive stress case, where prep, travel,
-turnaround compression, and overtime stack beyond the expected range. That is the right kind of signal:
-admins should review assumption language or range width for similar future projects.
+The two above-range records still come from the last-minute automotive stress case, where prep, travel,
+turnaround compression, and overtime stack beyond the expected range. The new $500k+ and $1M+ scenarios
+stay inside their wider expected ranges while creating separate large-scale and flagship cohort signals.
 
 ## Talent Guidance Boundary
 
@@ -70,11 +70,17 @@ Current directional signals:
 
 | Cohort | Signal |
 | --- | --- |
-| Category: automotive | 25.32% average actualization lift, above-range actualization in the last-minute stress case |
-| Market: Detroit | 25.32% average actualization lift, directional-only sample |
+| Category: automotive | 20.08% average actualization lift, above-range actualization in the last-minute stress case |
+| Category: beauty | 13.52% average actualization lift, medium-confidence sample |
+| Market: Detroit | 20.08% average actualization lift, medium-confidence sample |
+| Market: New York | 13.52% average actualization lift, medium-confidence sample |
+| Project size: flagship | 14.83% average actualization lift, directional-only sample |
+| Project size: large-scale | 13.96% average actualization lift, directional-only sample |
 | Project size: premium | 19.20% average actualization lift, medium-confidence sample |
-| Role: DP | 10.42% average actualization lift, directional-only sample |
-| Role: director | 18.84% average actualization lift, directional-only sample |
+| Role: DP | 12.19% average actualization lift, medium-confidence sample |
+| Role: director | 17.32% average actualization lift, directional-only sample |
+| Role: photographer | 9.04% average actualization lift, directional-only sample |
+| Client trust: high repeat | 14.40% average actualization lift, medium-confidence sample |
 | Client trust: known | 16.49% average actualization lift, medium-confidence sample |
 
 These are intentionally weak early signals. The simulator labels small cohorts as `directional_only`; they

@@ -2230,6 +2230,2281 @@
       "warnings": []
     },
     {
+      "project": "$500k+ Large-Scale Beauty Campaign",
+      "projectId": "large_scale_beauty_campaign",
+      "client": "High-Trust Repeat Client",
+      "budget": 28000,
+      "projectContext": {
+        "allInBudget": 500000,
+        "projectSizeBand": "large_scale",
+        "projectType": "national_campaign",
+        "market": "new_york",
+        "talentClassScope": "production_talent"
+      },
+      "budgetType": "flexible",
+      "leadTimeDays": 49,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 8,
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": "photographer",
+          "lane": "Best Fit",
+          "quote": 8800,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.898,
+          "creativeFit": 0.952,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.972,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 8800,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 7200,
+              "high": 10400,
+              "expectedClose": 8800,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 8800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 7200,
+              "high": 10400,
+              "expectedClose": 8800,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 7200,
+            "high": 10400,
+            "expectedClose": 8800,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep beauty experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep beauty experience and a strong creative match for the brief.",
+                "The portfolio shows meaningful experience in this kind of work.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "nonzero AI discretion proposal"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": "director",
+          "lane": "Budget-Confident",
+          "quote": 13300,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.851,
+          "creativeFit": 0.738,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.933,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 13300,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10900,
+              "high": 15700,
+              "expectedClose": 13300,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 13300,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10900,
+              "high": 15700,
+              "expectedClose": 13300,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10900,
+            "high": 15700,
+            "expectedClose": 13300,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.71,
+            "flags": [
+              "idle_access_without_discounting"
+            ]
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Relevant beauty background with a clear connection to the brief.",
+              "reasons": [
+                "Relevant beauty background with a clear connection to the brief.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "talentClass": "production_talent",
+          "role": "editor",
+          "lane": "Budget-Confident",
+          "quote": 13900,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.82,
+          "creativeFit": 0.718,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.905,
+          "availabilityCheck": {
+            "talent_id": "luxury_fashion_editor",
+            "status": "accepted_after_scope_confirmation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 13900,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 16400,
+              "expectedClose": 13900,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 13900,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent requested usage confirmation before quote commitment"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 16400,
+              "expectedClose": 13900,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 9000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 9000,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 16400,
+            "expectedClose": 13900,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": "dp",
+          "lane": "Budget-Confident",
+          "quote": 7500,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.793,
+          "creativeFit": 0.538,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.904,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 7500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 8800,
+              "expectedClose": 7500,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 7500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 8800,
+              "expectedClose": 7500,
+              "currency": "USD",
+              "rangeWidth": 0.18,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 shoot day assumed",
+                "national paid usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 8800,
+            "expectedClose": 7500,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 8800,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 7200,
+            "high": 10400,
+            "expectedClose": 8800,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 8800,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 7200,
+            "high": 10400,
+            "expectedClose": 8800,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 13300,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 10900,
+            "high": 15700,
+            "expectedClose": 13300,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 13300,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 10900,
+            "high": 15700,
+            "expectedClose": 13300,
+            "currency": "USD",
+            "rangeWidth": 0.18,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 shoot day assumed",
+              "national paid usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "booked",
+          "locked_quote": 8800,
+          "client_capacity": 34700,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "booked",
+          "locked_quote": 13300,
+          "client_capacity": 34700,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 2,
+          "averageActualizationLift": 0.1396,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "photographer",
+              "category": "beauty",
+              "projectSizeBand": "large_scale",
+              "market": "new_york",
+              "clientTrustTier": "high_repeat"
+            },
+            "lockedQuote": 8800,
+            "expectedRange": {
+              "low": 7200,
+              "high": 10400,
+              "expectedClose": 8800,
+              "currency": "USD"
+            },
+            "actualizedCost": 10000,
+            "actualizationEvents": [
+              "prep day added",
+              "usage expanded"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar beauty outcomes are landing about 14% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "director",
+              "category": "beauty",
+              "projectSizeBand": "large_scale",
+              "market": "new_york",
+              "clientTrustTier": "high_repeat"
+            },
+            "lockedQuote": 13300,
+            "expectedRange": {
+              "low": 10900,
+              "high": 15700,
+              "expectedClose": 13300,
+              "currency": "USD"
+            },
+            "actualizedCost": 15200,
+            "actualizationEvents": [
+              "prep day added",
+              "usage expanded"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar beauty outcomes are landing about 14% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": [
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar beauty outcomes are landing about 14% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          },
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar beauty outcomes are landing about 14% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          }
+        ]
+      },
+      "outcome": "booked",
+      "warnings": []
+    },
+    {
+      "project": "$1M+ Flagship Automotive Launch",
+      "projectId": "flagship_automotive_launch",
+      "client": "High-Trust Repeat Client",
+      "budget": 65000,
+      "projectContext": {
+        "allInBudget": 1000000,
+        "projectSizeBand": "flagship",
+        "projectType": "commercial_campaign",
+        "market": "detroit",
+        "talentClassScope": "production_talent"
+      },
+      "budgetType": "flexible",
+      "leadTimeDays": 56,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 8,
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Automotive Specialist DP",
+          "talentClass": "production_talent",
+          "role": "dp",
+          "lane": "Best Fit",
+          "quote": 20000,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.897,
+          "creativeFit": 1.0,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.97,
+          "availabilityCheck": {
+            "talent_id": "automotive_specialist",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 20000,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 16200,
+              "high": 23800,
+              "expectedClose": 20000,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 20000,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 16200,
+              "high": 23800,
+              "expectedClose": 20000,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 12000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 12000,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 16200,
+            "high": 23800,
+            "expectedClose": 20000,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep automotive experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep automotive experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": "dp",
+          "lane": "Budget-Confident",
+          "quote": 7500,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.786,
+          "creativeFit": 0.519,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.9,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 7500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6100,
+              "high": 8900,
+              "expectedClose": 7500,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 7500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6100,
+              "high": 8900,
+              "expectedClose": 7500,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8900,
+            "expectedClose": 7500,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": "director",
+          "lane": "Budget-Confident",
+          "quote": 12900,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.751,
+          "creativeFit": 0.439,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.851,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 12900,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10400,
+              "high": 15400,
+              "expectedClose": 12900,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 12900,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10400,
+              "high": 15400,
+              "expectedClose": 12900,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10400,
+            "high": 15400,
+            "expectedClose": 12900,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Premium Food Tabletop Director",
+          "talentClass": "production_talent",
+          "role": "director",
+          "lane": "Budget-Confident",
+          "quote": 20700,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.648,
+          "creativeFit": 0.119,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.78,
+          "availabilityCheck": {
+            "talent_id": "premium_food_director",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 20700,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 16800,
+              "high": 24600,
+              "expectedClose": 20700,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 20700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 16800,
+              "high": 24600,
+              "expectedClose": 20700,
+              "currency": "USD",
+              "rangeWidth": 0.19,
+              "assumptionsIncluded": [
+                "2 prep days assumed",
+                "1 hero shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 14000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 14000,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 16800,
+            "high": 24600,
+            "expectedClose": 20700,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "automotive_specialist",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 20000,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 16200,
+            "high": 23800,
+            "expectedClose": 20000,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 20000,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 16200,
+            "high": 23800,
+            "expectedClose": 20000,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        },
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 7500,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8900,
+            "expectedClose": 7500,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 7500,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8900,
+            "expectedClose": 7500,
+            "currency": "USD",
+            "rangeWidth": 0.19,
+            "assumptionsIncluded": [
+              "2 prep days assumed",
+              "1 hero shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "automotive_specialist",
+          "status": "booked",
+          "locked_quote": 20000,
+          "client_capacity": 83200,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "reliable_generalist_dp",
+          "status": "booked",
+          "locked_quote": 7500,
+          "client_capacity": 83200,
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 2,
+          "averageActualizationLift": 0.1483,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "automotive_specialist",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "automotive",
+              "projectSizeBand": "flagship",
+              "market": "detroit",
+              "clientTrustTier": "high_repeat"
+            },
+            "lockedQuote": 20000,
+            "expectedRange": {
+              "low": 16200,
+              "high": 23800,
+              "expectedClose": 20000,
+              "currency": "USD"
+            },
+            "actualizedCost": 23000,
+            "actualizationEvents": [
+              "prep day added",
+              "travel required"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar automotive outcomes are landing about 15% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "reliable_generalist_dp",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "automotive",
+              "projectSizeBand": "flagship",
+              "market": "detroit",
+              "clientTrustTier": "high_repeat"
+            },
+            "lockedQuote": 7500,
+            "expectedRange": {
+              "low": 6100,
+              "high": 8900,
+              "expectedClose": 7500,
+              "currency": "USD"
+            },
+            "actualizedCost": 8600,
+            "actualizationEvents": [
+              "prep day added",
+              "travel required"
+            ],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar automotive outcomes are landing about 15% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": [
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar automotive outcomes are landing about 15% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          },
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar automotive outcomes are landing about 15% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          }
+        ]
+      },
+      "outcome": "booked",
+      "warnings": []
+    },
+    {
       "project": "Last-Minute Automotive Shoot",
       "projectId": "last_minute_automotive",
       "client": "Realistic Professional Buyer",
@@ -10936,8 +13211,8 @@
       "clientTrustTier"
     ],
     "summary": {
-      "cohortCount": 25,
-      "cohortGuidanceCount": 8,
+      "cohortCount": 27,
+      "cohortGuidanceCount": 12,
       "calibrationAuthority": "guidance_only",
       "rateAuthority": "talent_owned_rate_range"
     },
@@ -10970,11 +13245,11 @@
         {
           "dimension": "role",
           "value": "director",
-          "recordCount": 8,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 9,
+          "bookedRecordCount": 3,
+          "actualizedRecordCount": 3,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1884,
+          "averageActualizationLift": 0.1732,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -10987,7 +13262,7 @@
             "rateAuthority": "talent_owned_rate_range",
             "confidence": "directional_only",
             "messages": [
-              "Directional role cohort signal: director outcomes are landing about 19% above accepted project rates in this simulation sample.",
+              "Directional role cohort signal: director outcomes are landing about 17% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -10997,12 +13272,12 @@
         {
           "dimension": "role",
           "value": "dp",
-          "recordCount": 5,
-          "bookedRecordCount": 3,
-          "actualizedRecordCount": 3,
+          "recordCount": 7,
+          "bookedRecordCount": 5,
+          "actualizedRecordCount": 5,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1042,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.1219,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
@@ -11012,9 +13287,9 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": [
-              "Directional role cohort signal: dp outcomes are landing about 10% above accepted project rates in this simulation sample.",
+              "Directional role cohort signal: dp outcomes are landing about 12% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -11072,40 +13347,14 @@
         {
           "dimension": "role",
           "value": "photographer",
-          "recordCount": 3,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 4,
+          "bookedRecordCount": 3,
+          "actualizedRecordCount": 3,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0674,
+          "averageActualizationLift": 0.0904,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
-          ],
-          "talentGuidance": {
-            "visibility": "talent-guidance",
-            "available": false,
-            "appliesAutomatically": false,
-            "guidanceAuthority": "guidance_only",
-            "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
-            "messages": []
-          },
-          "calibrationAuthority": "guidance_only",
-          "rateAuthority": "talent_owned_rate_range"
-        }
-      ],
-      "category": [
-        {
-          "dimension": "category",
-          "value": "automotive",
-          "recordCount": 2,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
-          "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.2532,
-          "confidence": "directional_only",
-          "adminCalibrationNotes": [
-            "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
           "talentGuidance": {
             "visibility": "talent-guidance",
@@ -11115,7 +13364,36 @@
             "rateAuthority": "talent_owned_rate_range",
             "confidence": "directional_only",
             "messages": [
-              "Directional category cohort signal: automotive outcomes are landing about 25% above accepted project rates in this simulation sample.",
+              "Directional role cohort signal: photographer outcomes are landing about 9% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        }
+      ],
+      "category": [
+        {
+          "dimension": "category",
+          "value": "automotive",
+          "recordCount": 4,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.2008,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": [
+              "Directional category cohort signal: automotive outcomes are landing about 20% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -11149,12 +13427,12 @@
         {
           "dimension": "category",
           "value": "beauty",
-          "recordCount": 4,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 6,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.1308,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.1352,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
@@ -11164,9 +13442,9 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": [
-              "Directional category cohort signal: beauty outcomes are landing about 13% above accepted project rates in this simulation sample.",
+              "Directional category cohort signal: beauty outcomes are landing about 14% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -11247,6 +13525,60 @@
         }
       ],
       "projectSizeBand": [
+        {
+          "dimension": "projectSizeBand",
+          "value": "flagship",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.1483,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional project-size cohort signal: flagship outcomes are landing about 15% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "projectSizeBand",
+          "value": "large_scale",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.1396,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional project-size cohort signal: large scale outcomes are landing about 14% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
         {
           "dimension": "projectSizeBand",
           "value": "low_cash",
@@ -11375,12 +13707,12 @@
         {
           "dimension": "market",
           "value": "detroit",
-          "recordCount": 2,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 4,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.2532,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.2008,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
@@ -11390,9 +13722,9 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": [
-              "Directional market cohort signal: detroit outcomes are landing about 25% above accepted project rates in this simulation sample.",
+              "Directional market cohort signal: detroit outcomes are landing about 20% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -11426,12 +13758,12 @@
         {
           "dimension": "market",
           "value": "new_york",
-          "recordCount": 4,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 6,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.1308,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.1352,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
@@ -11441,9 +13773,9 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": [
-              "Directional market cohort signal: new york outcomes are landing about 13% above accepted project rates in this simulation sample.",
+              "Directional market cohort signal: new york outcomes are landing about 14% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -11479,23 +13811,26 @@
         {
           "dimension": "clientTrustTier",
           "value": "high_repeat",
-          "recordCount": 2,
-          "bookedRecordCount": 0,
-          "actualizedRecordCount": 0,
+          "recordCount": 6,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.144,
+          "confidence": "medium",
           "adminCalibrationNotes": [
-            "No booked actualization evidence yet; keep this cohort advisory-only."
+            "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
           "talentGuidance": {
             "visibility": "talent-guidance",
-            "available": false,
+            "available": true,
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
-            "messages": []
+            "confidence": "medium",
+            "messages": [
+              "Directional client-trust cohort signal: high repeat outcomes are landing about 14% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
           },
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
@@ -11579,41 +13914,41 @@
     }
   },
   "metrics": {
-    "scenarioCount": 10,
-    "bookedCount": 6,
-    "bookingRate": 0.6,
+    "scenarioCount": 12,
+    "bookedCount": 8,
+    "bookingRate": 0.667,
     "longHorizonScenarioCount": 2,
-    "behaviorNudgeShareOfRecommendations": 0.789,
-    "timingNudgeShareOfRecommendations": 0.421,
-    "aiRationaleCount": 38,
-    "brandFacingRationaleCount": 38,
+    "behaviorNudgeShareOfRecommendations": 0.826,
+    "timingNudgeShareOfRecommendations": 0.348,
+    "aiRationaleCount": 46,
+    "brandFacingRationaleCount": 46,
     "brandFacingRationaleLeakageCount": 0,
     "talentFacingJobSpecificRationaleCount": 0,
-    "adminApprovalRequiredCount": 38,
-    "matureAutonomyCandidateCount": 13,
-    "availabilityCheckCount": 38,
+    "adminApprovalRequiredCount": 46,
+    "matureAutonomyCandidateCount": 20,
+    "availabilityCheckCount": 46,
     "prePresentationTalentCounterCount": 4,
     "minimumWageFloorAppliedCount": 2,
     "minimumWageFloorUnknownCount": 2,
-    "expectedBookingRangeCount": 38,
-    "actualizedRecordCount": 9,
+    "expectedBookingRangeCount": 46,
+    "actualizedRecordCount": 13,
     "actualizedAboveExpectedRangeCount": 2,
-    "talentGuidanceCount": 4,
-    "averageActualizationLift": 0.0916,
-    "aiHumanReviewShareOfRecommendations": 0.395,
+    "talentGuidanceCount": 8,
+    "averageActualizationLift": 0.1077,
+    "aiHumanReviewShareOfRecommendations": 0.348,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
-      "admin pricing rationale flagged for review": 15,
+      "admin pricing rationale flagged for review": 16,
       "long-horizon project without strong client trust": 4,
       "market-health guardrail": 3,
       "minimum wage floor unknown": 2,
-      "nonzero AI discretion proposal": 5,
+      "nonzero AI discretion proposal": 6,
       "outside stated budget": 17,
       "pre-presentation talent counter": 4
     },
     "marketHealthFlagCounts": {
-      "idle_access_without_discounting": 6,
+      "idle_access_without_discounting": 7,
       "race_to_bottom_risk": 3,
       "specialist_value_protected": 11
     },
@@ -11623,12 +13958,12 @@
       "minimum_wage_floor_unknown": 1,
       "pre-presentation counter increased locked quote": 1
     },
-    "cohortCount": 25,
-    "cohortGuidanceCount": 8
+    "cohortCount": 27,
+    "cohortGuidanceCount": 12
   },
   "validation": {
     "status": "pass",
-    "checkedRecommendationCount": 38,
+    "checkedRecommendationCount": 46,
     "failureCount": 0,
     "warningCount": 2,
     "failures": [],

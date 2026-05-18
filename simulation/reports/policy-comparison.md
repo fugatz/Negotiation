@@ -1,6 +1,6 @@
 # Policy Comparison Report
 
-Generated from dry runs on May 17, 2026.
+Generated from dry runs on May 18, 2026.
 
 Compared policies:
 
@@ -41,18 +41,18 @@ All other config inherits from the base policy.
 | Metric | Base | Stricter | Read |
 | --- | ---: | ---: | --- |
 | Validation | pass | pass | No policy validity regressions. |
-| Scenarios | 8 | 8 | Same fixture set. |
-| Booked scenarios | 5 | 5 | Stricter ranking did not reduce booking count. |
-| Booking rate | 62.5% | 62.5% | No aggregate conversion change in this fixture set. |
-| Availability checks | 34 | 34 | Same recommendation volume. |
+| Scenarios | 12 | 12 | Same fixture set. |
+| Booked scenarios | 8 | 8 | Stricter ranking did not reduce booking count. |
+| Booking rate | 66.7% | 66.7% | No aggregate conversion change in this fixture set. |
+| Availability checks | 46 | 46 | Same recommendation volume. |
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 44.1% | 47.1% | Stricter policy slightly increases admin attention. |
-| Mature autonomy candidates | 13 | 13 | No autonomy readiness gain yet. |
+| Human review share | 34.8% | 37.0% | Stricter policy slightly increases admin attention. |
+| Mature autonomy candidates | 20 | 20 | No autonomy readiness gain yet. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
 | Market-health guardrail triggers | 3 | 2 | Fewer flagged recs reach reviewed recommendation surfaces. |
-| Outside-budget triggers | 14 | 14 | Budget mismatch is unchanged. |
+| Outside-budget triggers | 17 | 17 | Budget mismatch is unchanged. |
 | Max shadow AI discretion | 1.0% | 1.0% | AI discretion remains capped and shadow-only. |
 
 ## Scenario-Level Differences
@@ -91,8 +91,8 @@ Recommended change:
 
 ### Other Scenarios
 
-Firm food, flexible beauty, prestige editorial, long-horizon, and bad-faith repricing scenarios have the
-same high-level outcomes under both policies.
+Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, prestige editorial, long-horizon, minimum
+wage, and bad-faith repricing scenarios have the same high-level outcomes under both policies.
 
 Read:
 

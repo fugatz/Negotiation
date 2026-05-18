@@ -35,11 +35,15 @@ def _event_delta(project: dict, talent: dict, event: str) -> float:
         "additional revision round requested": 0.04,
         "turnaround compressed": 0.04,
     }
-    if (
-        project.get("project_size_band") in {"premium", "major"}
-        and event in {"usage expanded", "travel required"}
-    ):
-        return production_deltas.get(event, 0.0) + 0.02
+    if event in {"usage expanded", "travel required"}:
+        scale_event_lift = {
+            "premium": 0.02,
+            "major": 0.02,
+            "large_scale": 0.03,
+            "flagship": 0.04,
+        }.get(project.get("project_size_band"), 0.0)
+        if scale_event_lift:
+            return production_deltas.get(event, 0.0) + scale_event_lift
     return production_deltas.get(event, 0.0)
 
 

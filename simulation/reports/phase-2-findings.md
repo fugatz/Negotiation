@@ -1,6 +1,6 @@
 # Phase 2 Findings Report
 
-Generated from dry runs on May 17, 2026.
+Generated from dry runs on May 18, 2026.
 
 Source commands:
 
@@ -23,6 +23,7 @@ The current system protects against several core failure modes:
 - no brand-facing leakage of hidden floors, negative behavior signals, or AI pricing math
 - no job-specific talent-facing pricing rationale
 - specialist value remains visible even when budget fit is weak
+- project-size context now separates $500k+ large-scale and $1M+ flagship productions
 - long-horizon work is held as uncertain rather than treated as a normal booking
 - race-to-bottom candidates are flagged and penalized in ranking
 
@@ -44,14 +45,14 @@ Policy: `phase-2-admin-config-v1`
 | Metric | Result |
 | --- | ---: |
 | Validation status | pass |
-| Scenario count | 8 |
-| Booked scenarios | 5 |
-| Booking rate | 62.5% |
+| Scenario count | 12 |
+| Booked scenarios | 8 |
+| Booking rate | 66.7% |
 | Long-horizon scenarios | 2 |
-| Availability checks | 34 |
+| Availability checks | 46 |
 | Pre-presentation talent counters | 4 |
-| Admin approval required | 34 |
-| Mature autonomy candidates | 13 |
+| Admin approval required | 46 |
+| Mature autonomy candidates | 20 |
 | Brand-facing leakage count | 0 |
 | Talent-facing job-specific rationale count | 0 |
 | Max shadow AI discretion | 1.0% |
@@ -62,12 +63,16 @@ Policy: `phase-2-admin-config-v1`
 | --- | --- | --- | --- |
 | Firm-Budget Food Social Campaign | booked | Generalist books cleanly; premium specialist remains visible but outside budget. | Healthy: slate can include value range without hiding premium expertise. |
 | Flexible National Beauty Campaign | booked | Best-fit beauty talent books with no warnings. | Healthy: specialization, fit, and budget all align. |
+| $500k+ Large-Scale Beauty Campaign | booked | Large-scale context creates wider expected ranges and a separate cohort signal. | Healthy: all-in scale affects assumption scrutiny without becoming a budget split. |
+| $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
 | Low-Cash Prestige Editorial | failed budget gap | Opt-in filtering works, but all realistic options exceed client capacity. | Needs policy: prestige should not become a pressure mechanism to suppress rates. |
 | Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work stays tentative. | Healthy direction, but confirmation mechanics need definition. |
 | Long-Horizon Beauty Campaign | pending hold | High-trust repeat client receives much softer uncertainty treatment. | Healthy: trust offsets timing uncertainty without forcing a hard booking. |
 | Bad-Faith Repricing Stress Test | booked | Volatile talent counters before client presentation; client only sees locked quote. | Structurally fixed: now track this as a pre-presentation counter, not post-interest repricing. |
 | Race-to-Bottom Social Content Test | booked | Higher-fit options exceed capacity; low-rate option can still book in stress path. | Needs stronger policy: ranking penalty alone does not prevent budget-driven commoditization. |
+| Background Extra Minimum Wage Smoke Test | failed budget gap | Local minimum wage lifts the effective floor above the offered day rate. | Healthy: legal/compliance floors can override client-stated budget. |
+| Background Extra Unknown Wage Smoke Test | booked | Nullable wage input produces a validation warning, not a hard block. | Healthy as a smoke test; production should enrich wage data over time. |
 
 ## What Looks Validated
 
@@ -87,7 +92,7 @@ Policy implication:
 
 ### 2. Behavior Nudges Are Small But Useful
 
-Behavior adjustments appear in 76.5% of recommendations, but caps keep them non-dominant. Reliable
+Behavior adjustments appear in 82.6% of recommendations, but caps keep them non-dominant. Reliable
 talent can receive small premiums, dependable clients can reduce transaction risk, and high-friction
 clients can create small risk adjustments.
 
@@ -99,7 +104,7 @@ Policy implication:
 
 ### 3. AI Rationales Are Separated By Audience
 
-The run generated 34 admin pricing rationales and 34 brand-facing match rationales. Brand-facing leakage
+The run generated 46 admin pricing rationales and 46 brand-facing match rationales. Brand-facing leakage
 count was zero, and talent-facing job-specific rationale count was zero.
 
 Policy implication:
@@ -202,7 +207,7 @@ Recommended revision:
 
 ### Admin Review Load
 
-Launch mode requires admin approval for all 34 recommendations. That is correct for early validation, but
+Launch mode requires admin approval for all 46 recommendations. That is correct for early validation, but
 too heavy for a mature autonomous system.
 
 Why it matters:

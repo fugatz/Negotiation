@@ -67,6 +67,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - nullable local minimum wage smoke checks for actor legal floors
 - expected booking ranges with assumptions and actualization triggers
+- project-size context bands through $500k+ large-scale and $1M+ flagship productions
 - outcome-learning records that compare locked quotes, booking outcomes, and actualized costs
 - cohort-learning summaries by role, category, project size, market, and client trust tier
 - market-health flags for race-to-bottom and price-led recommendation risk
