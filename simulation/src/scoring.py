@@ -4,6 +4,7 @@ from .common import clamp, money, weighted_average
 
 
 def hard_eligible(talent: dict, project: dict) -> tuple[bool, list[str]]:
+    """Small simulation stub for upstream outreach eligibility results."""
     reasons: list[str] = []
     lead_time = int(project["lead_time_days"])
 

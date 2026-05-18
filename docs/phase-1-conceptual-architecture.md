@@ -58,8 +58,9 @@ Private or internal:
 
 ```text
 Project Brief
-  -> Hard Eligibility Filtering
-  -> Creative + Practical Match Scoring
+  -> Upstream Matching + Outreach
+  -> Matched Talent + Outreach Eligibility Results
+  -> Late-Stage Creative + Practical Scoring
   -> Pricing Intelligence Layer
   -> Timing Horizon Nudge Layer
   -> Behavior Reputation Nudge Layer
@@ -70,6 +71,23 @@ Project Brief
 ```
 
 ## Layer Responsibilities
+
+### System Boundary
+
+This pricing and deal intelligence layer should run late in the booking workflow. It is not the
+top-of-funnel matcher and should not be responsible for initial outreach.
+
+By the time this engine runs, Distinkt has already done most of the work:
+
+- the brief has been structured
+- candidate talent has been matched by upstream systems or human operators
+- outreach has happened through channels such as WhatsApp and email
+- basic availability, interest, and hard constraints have been collected
+- upstream services have supplied readiness, reliability, and client trust signals
+
+This engine then determines the project-specific rate posture for matched talent and feeds that rate
+back into the talent availability check. Talent decides whether to be considered at that rate before the
+client sees the slate.
 
 ### 1. Project Brief
 
@@ -86,10 +104,14 @@ Capture enough structure to prevent fake precision later:
 
 The brief should produce a budget confidence state, not just a number.
 
-### 2. Hard Eligibility Filtering
+### 2. Outreach Eligibility Results
 
-This layer should be deterministic where possible. It should remove talent who cannot reasonably do
-the job, before price optimization begins.
+This stage should be treated as an input from upstream matching and outreach, not as the primary job of
+the pricing engine. In production, hard eligibility is the result of outreach and operational checks
+through channels such as WhatsApp, email, and internal booking workflow.
+
+The pricing engine should consume the result: which matched talent can reasonably be considered, which
+constraints have been confirmed, and which candidates should be excluded before client presentation.
 
 Examples:
 
@@ -100,11 +122,13 @@ Examples:
 - required credential missing
 - budget fundamentally incompatible unless flagged as an intentional stretch
 
-This is mostly SQL/business-rule territory.
+The simulation may keep a tiny deterministic eligibility stub so test scenarios remain inspectable, but
+that stub represents upstream outreach output. It should not be interpreted as the future production
+matching system.
 
 ### 3. Creative + Practical Match Scoring
 
-This layer estimates fit and booking usefulness.
+This layer estimates fit and booking usefulness for the already-matched and outreach-screened talent set.
 
 Signals:
 
@@ -257,7 +281,7 @@ Initial guardrail hypothesis:
 - recovery should happen as upstream readiness, reliability, or trust scores improve from positive
   behavior data
 - behavior should never move a deal below a talent's private working floor
-- behavior should never override hard eligibility, creative fit, or major budget incompatibility
+- behavior should never override outreach eligibility, creative fit, or major budget incompatibility
 - client-facing explanations should describe process reliability, not expose hidden reputation scores
 
 This layer is intentionally a stub for later policy design. Exact metric definitions and decay
@@ -350,7 +374,7 @@ AI should not:
 - expose floor rates or hidden flexibility
 - expose admin pricing rationale to brands or talent
 - generate negative job-specific score explanations for talent
-- override hard eligibility
+- override outreach eligibility
 - create uncapped pricing changes
 - invent client or talent reputation facts
 - convert a low-price option into the default winner without policy support
@@ -808,27 +832,29 @@ These are hypotheses to test in simulation, not final rules.
     negotiation happens before presentation and includes being willing to let a client walk away.
 17. Talent sees the project-specific proposed rate at availability check and decides whether to be
     considered at that rate before the client sees the slate.
-18. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
+18. The pricing engine should run late in the process, after upstream matching and outreach have already
+    produced a candidate set with availability and eligibility results.
+19. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
     not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
-19. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
+20. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
     client is low-confidence, while a high-trust repeat client around their 4th project or later is
     much more credible.
-20. Talent/client behavior nudges should consume upstream service scores: actor readiness,
+21. Talent/client behavior nudges should consume upstream service scores: actor readiness,
     non-actor talent reliability, and client trust. This layer applies capped nudges; it does not own
     the raw metric definitions.
-21. Behavior should function like a small friction tax. It should be meaningful but not terribly
+22. Behavior should function like a small friction tax. It should be meaningful but not terribly
     detrimental; difficult but valuable talent or clients should not be excluded by behavior scoring
     alone.
-22. Behavior nudge recovery should happen through positive upstream data improving readiness,
+23. Behavior nudge recovery should happen through positive upstream data improving readiness,
     reliability, or trust scores. There should not be a separate appeal process in this pricing layer.
-23. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
+24. Admins may see the detailed pricing rationale, including nudges and discretion. Brands should see
     separate positive match rationale only. Talent should not see negative job-specific pricing
     rationale from this layer.
-24. Launch mode should require admin approval before client presentation. The long-term target is an
+25. Launch mode should require admin approval before client presentation. The long-term target is an
     autonomous engine with exception-based admin review.
-25. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
+26. Admins may tune small policy settings, but all adjustments must be bounded, versioned, logged, and
     replayable in simulation.
-26. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
+27. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
     by price alone, while still allowing them to appear for admin review when relevant.
 
 ## Admin-Only Governance Decisions

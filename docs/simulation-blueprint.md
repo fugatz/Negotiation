@@ -141,7 +141,7 @@ Behavior types:
 
 The simulation should generate these internal values:
 
-- hard eligibility pass/fail
+- upstream outreach eligibility pass/fail
 - operating band state: below band, in band, above band, or intentional stretch
 - creative fit score
 - practical fit score
@@ -265,24 +265,34 @@ Expected risk:
 
 ```text
 1. Generate synthetic project brief.
-2. Filter eligible synthetic talent.
-3. Score creative, practical, pricing, trust, and market-health dimensions.
-4. Apply capped timing-horizon nudges.
-5. Apply capped talent and client behavior nudges.
-6. Simulate talent availability check at the proposed project rate before client presentation.
-7. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
-8. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
-9. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
-10. Record that this layer does not generate talent-facing job-specific pricing rationale.
-11. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
-12. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
-13. Build a curated recommendation slate from talent-approved rates only.
-14. Simulate client shortlist and decision behavior against locked presentation quotes.
-15. Resolve booking, no-booking, hold, repricing exception, or cancellation.
-16. Update historical outcomes.
-17. Repeat across many rounds.
-18. Evaluate market-level metrics.
+2. Import or emulate upstream-matched talent from outreach channels such as WhatsApp and email.
+3. Consume outreach eligibility results: availability, interest, minimum notice, opt-ins, conflicts.
+4. Score creative, practical, pricing, trust, and market-health dimensions for that late-stage set.
+5. Apply capped timing-horizon nudges.
+6. Apply capped talent and client behavior nudges.
+7. Feed each matched talent the proposed project rate during availability check.
+8. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
+9. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
+10. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
+11. Record that this layer does not generate talent-facing job-specific pricing rationale.
+12. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
+13. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
+14. Build a curated recommendation slate from talent-approved rates only.
+15. Simulate client shortlist and decision behavior against locked presentation quotes.
+16. Resolve booking, no-booking, hold, repricing exception, or cancellation.
+17. Update historical outcomes.
+18. Repeat across many rounds.
+19. Evaluate market-level metrics.
 ```
+
+Production boundary:
+
+- the real system should enter this flow after matching and outreach are mostly complete
+- hard eligibility is an outreach result, not a pricing-engine-owned discovery process
+- the simulation's deterministic eligibility checks only emulate upstream outreach output so edge cases
+  remain easy to inspect
+- this layer's key action is to compute the project-specific rate and route that rate back to talent for
+  the pre-client availability decision
 
 ## Success Metrics
 

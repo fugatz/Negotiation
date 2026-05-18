@@ -1,10 +1,16 @@
 # Distinkt Deal Simulation
 
-This is a standalone dry-run environment for testing pricing, timing, behavior, and negotiation
-policies before any production integration.
+This is a standalone dry-run environment for testing late-stage pricing, timing, behavior, and
+negotiation policies before any production integration.
 
 The simulation is intentionally small and inspectable. It uses synthetic fixtures and deterministic
 rules so policy changes are easy to understand.
+
+Production boundary: this layer is expected to run after upstream matching and outreach have already
+identified candidate talent through channels such as WhatsApp and email. The simulator's eligibility
+checks are a small stand-in for those outreach results; the main purpose here is to compute the
+project-specific rate, feed it to matched talent for availability check, and build the client slate only
+from talent-approved locked rates.
 
 Admin-tweakable dry-run settings live in `simulation/config/policy.json`. The config currently owns
 timing thresholds, behavior caps, AI discretion caps, market-health review flags, ranking penalties,
@@ -49,7 +55,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 
 ## Current Scope
 
-- hard eligibility checks
+- synthetic outreach eligibility results
 - creative, practical, pricing, trust, and market-health scoring
 - small timing-horizon nudges
 - small talent and client behavior nudges
