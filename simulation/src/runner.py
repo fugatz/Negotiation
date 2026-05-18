@@ -10,7 +10,7 @@ from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_beh
 from .common import FIXTURE_DIR
 from .negotiation import apply_availability_commitment, simulate_availability_check, simulate_client_decision
 from .outcome_calibration import propose_shadow_discretion
-from .outcome_learning import build_outcome_learning
+from .outcome_learning import build_cohort_learning, build_outcome_learning
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
 from .ranges import expected_booking_range, project_context
@@ -319,12 +319,16 @@ def run(project_id: str | None = None, policy_path: str | None = None) -> dict:
             raise SystemExit(f"Unknown project id: {project_id}")
 
     traces = [simulate_project(project, talent, clients_by_id, outcomes) for project in selected]
+    cohort_learning = build_cohort_learning(traces)
     report = {
         "policy": policy_version(),
         "policyConfigPath": active_policy_config_relative_path(),
         "traces": traces,
+        "cohortLearning": cohort_learning,
         "metrics": aggregate_metrics(traces),
     }
+    report["metrics"]["cohortCount"] = cohort_learning["summary"]["cohortCount"]
+    report["metrics"]["cohortGuidanceCount"] = cohort_learning["summary"]["cohortGuidanceCount"]
     report["validation"] = validate_report(report)
     return report
 

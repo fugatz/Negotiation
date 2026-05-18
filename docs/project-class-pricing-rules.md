@@ -333,6 +333,7 @@ The system should eventually record:
 
 - project size band
 - project type
+- market or location cohort supplied by upstream project data
 - talent class
 - production role or actor role
 - union/non-union status where relevant
@@ -360,6 +361,7 @@ Over time this enables:
 - expected actualization curves
 - role-specific pricing behavior
 - category-specific negotiation patterns
+- market-specific pricing guidance
 - project-type pricing calibration
 - actor vs production-talent model separation
 - buyer behavior forecasting

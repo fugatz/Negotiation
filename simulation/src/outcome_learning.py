@@ -5,6 +5,14 @@ from .common import money
 
 GUIDANCE_AUTHORITY = "guidance_only"
 RATE_AUTHORITY = "talent_owned_rate_range"
+COHORT_DIMENSIONS = ["role", "category", "projectSizeBand", "market", "clientTrustTier"]
+COHORT_DIMENSION_LABELS = {
+    "role": "role",
+    "category": "category",
+    "projectSizeBand": "project-size",
+    "market": "market",
+    "clientTrustTier": "client-trust",
+}
 
 
 def _event_delta(project: dict, talent: dict, event: str) -> float:
@@ -128,6 +136,16 @@ def _talent_guidance(project: dict, actualized_cost: int | None, locked_quote: i
     return guidance
 
 
+def _cohort_signals(project: dict, talent: dict, rec: dict) -> dict:
+    return {
+        "role": talent.get("actor_role") or talent.get("production_role") or "unknown_role",
+        "category": project["category"],
+        "projectSizeBand": project.get("project_size_band", "unknown_size"),
+        "market": project.get("market", "unknown_market"),
+        "clientTrustTier": rec["timing_nudge"]["platform_trust_tier"],
+    }
+
+
 def simulate_actualization(project: dict, talent: dict, rec: dict, decision: dict) -> dict:
     expected_range = rec["expected_booking_range"]
     status = decision["status"]
@@ -144,6 +162,7 @@ def simulate_actualization(project: dict, talent: dict, rec: dict, decision: dic
     return {
         "talent_id": talent["id"],
         "status": status,
+        "cohortSignals": _cohort_signals(project, talent, rec),
         "lockedQuote": locked_quote,
         "expectedRange": {
             "low": expected_range["low"],
@@ -197,4 +216,115 @@ def build_outcome_learning(project: dict, talent_by_id: dict, candidates: list[d
             for record in records
             if record["talentGuidance"]["available"]
         ],
+    }
+
+
+def _actualization_lift(record: dict) -> float:
+    return (int(record["actualizedCost"]) - int(record["lockedQuote"])) / max(int(record["lockedQuote"]), 1)
+
+
+def _cohort_confidence(actualized_count: int) -> str:
+    if actualized_count >= 10:
+        return "strong"
+    if actualized_count >= 4:
+        return "medium"
+    return "directional_only"
+
+
+def _cohort_guidance(dimension: str, value: str, average_lift: float, actualized_count: int) -> dict:
+    guidance = {
+        "visibility": "talent-guidance",
+        "available": False,
+        "appliesAutomatically": False,
+        "guidanceAuthority": GUIDANCE_AUTHORITY,
+        "rateAuthority": RATE_AUTHORITY,
+        "confidence": _cohort_confidence(actualized_count),
+        "messages": [],
+    }
+    if actualized_count == 0 or average_lift < 0.08:
+        return guidance
+
+    label = value.replace("_", " ")
+    dimension_label = COHORT_DIMENSION_LABELS.get(dimension, dimension)
+    guidance["available"] = True
+    guidance["messages"] = [
+        (
+            f"Directional {dimension_label} cohort signal: {label} outcomes are landing about "
+            f"{round(average_lift * 100)}% above accepted project rates in this simulation sample."
+        ),
+        (
+            "Use this as optional market guidance only; talent-owned rates remain the authority "
+            "and no rate changes apply automatically."
+        ),
+    ]
+    return guidance
+
+
+def _summarize_cohort(dimension: str, value: str, records: list[dict]) -> dict:
+    booked = [record for record in records if record["status"] == "booked"]
+    actualized = [record for record in booked if record["actualizedCost"] is not None]
+    above_range = [record for record in actualized if record["rangeState"] == "above_expected_range"]
+    lifts = [_actualization_lift(record) for record in actualized]
+    average_lift = round(sum(lifts) / len(lifts), 4) if lifts else 0.0
+    guidance = _cohort_guidance(dimension, value, average_lift, len(actualized))
+
+    notes = []
+    if above_range:
+        notes.append("Above-range actualization appeared in this cohort; review range width and assumptions.")
+    elif actualized:
+        notes.append("Actualized outcomes stayed inside expected ranges for this cohort.")
+    else:
+        notes.append("No booked actualization evidence yet; keep this cohort advisory-only.")
+
+    return {
+        "dimension": dimension,
+        "value": value,
+        "recordCount": len(records),
+        "bookedRecordCount": len(booked),
+        "actualizedRecordCount": len(actualized),
+        "actualizedAboveExpectedRangeCount": len(above_range),
+        "averageActualizationLift": average_lift,
+        "confidence": _cohort_confidence(len(actualized)),
+        "adminCalibrationNotes": notes,
+        "talentGuidance": guidance,
+        "calibrationAuthority": GUIDANCE_AUTHORITY,
+        "rateAuthority": RATE_AUTHORITY,
+    }
+
+
+def _all_actualization_records(traces: list[dict]) -> list[dict]:
+    return [
+        record
+        for trace in traces
+        for record in trace["outcomeLearning"]["actualizationRecords"]
+    ]
+
+
+def build_cohort_learning(traces: list[dict]) -> dict:
+    records = _all_actualization_records(traces)
+    by_dimension: dict[str, list[dict]] = {}
+    total_guidance = 0
+
+    for dimension in COHORT_DIMENSIONS:
+        values = sorted({record["cohortSignals"][dimension] for record in records})
+        cohort_records = [
+            _summarize_cohort(
+                dimension,
+                value,
+                [record for record in records if record["cohortSignals"][dimension] == value],
+            )
+            for value in values
+        ]
+        total_guidance += sum(1 for record in cohort_records if record["talentGuidance"]["available"])
+        by_dimension[dimension] = cohort_records
+
+    return {
+        "dimensions": list(COHORT_DIMENSIONS),
+        "summary": {
+            "cohortCount": sum(len(records) for records in by_dimension.values()),
+            "cohortGuidanceCount": total_guidance,
+            "calibrationAuthority": GUIDANCE_AUTHORITY,
+            "rateAuthority": RATE_AUTHORITY,
+        },
+        "byDimension": by_dimension,
     }

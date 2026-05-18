@@ -78,6 +78,7 @@ Synthetic project briefs should include:
 - all-in budget
 - project size band
 - project type
+- market or location cohort supplied by upstream project data
 - talent class scope: actor, production talent, or mixed
 - budget type
 - pricing assumptions: prep, shoot days, fitting, travel, usage, exclusivity, revisions, overtime
@@ -403,6 +404,8 @@ Outcome-learning metrics:
 - number of actualization events tied to allowed triggers
 - number of optional talent-guidance messages generated
 - number of guidance messages that would automatically change talent rates, which should remain zero
+- cohort summaries by role, category, project size band, market, and client trust tier
+- number of optional cohort-guidance messages generated
 
 Admin governance metrics:
 

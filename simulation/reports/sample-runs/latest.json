@@ -11,6 +11,7 @@
         "allInBudget": 50000,
         "projectSizeBand": "small",
         "projectType": "social_content",
+        "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
       "budgetType": "firm",
@@ -1008,6 +1009,13 @@
           {
             "talent_id": "reliable_generalist_dp",
             "status": "booked",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "food",
+              "projectSizeBand": "small",
+              "market": "los_angeles",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 6700,
             "expectedRange": {
               "low": 6200,
@@ -1046,6 +1054,13 @@
           {
             "talent_id": "idle_high_quality_director",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "director",
+              "category": "food",
+              "projectSizeBand": "small",
+              "market": "los_angeles",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 11600,
             "expectedRange": {
               "low": 10700,
@@ -1098,6 +1113,7 @@
         "allInBudget": 125000,
         "projectSizeBand": "premium",
         "projectType": "national_campaign",
+        "market": "new_york",
         "talentClassScope": "production_talent"
       },
       "budgetType": "flexible",
@@ -2085,6 +2101,13 @@
           {
             "talent_id": "emerging_beauty_photographer",
             "status": "booked",
+            "cohortSignals": {
+              "role": "photographer",
+              "category": "beauty",
+              "projectSizeBand": "premium",
+              "market": "new_york",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 8900,
             "expectedRange": {
               "low": 7400,
@@ -2129,6 +2152,13 @@
           {
             "talent_id": "idle_high_quality_director",
             "status": "booked",
+            "cohortSignals": {
+              "role": "director",
+              "category": "beauty",
+              "projectSizeBand": "premium",
+              "market": "new_york",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 13400,
             "expectedRange": {
               "low": 11100,
@@ -2208,6 +2238,7 @@
         "allInBudget": 150000,
         "projectSizeBand": "premium",
         "projectType": "commercial_campaign",
+        "market": "detroit",
         "talentClassScope": "production_talent"
       },
       "budgetType": "flexible",
@@ -3216,6 +3247,13 @@
           {
             "talent_id": "reliable_generalist_dp",
             "status": "booked",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "automotive",
+              "projectSizeBand": "premium",
+              "market": "detroit",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 7800,
             "expectedRange": {
               "low": 6500,
@@ -3262,6 +3300,13 @@
           {
             "talent_id": "idle_high_quality_director",
             "status": "booked",
+            "cohortSignals": {
+              "role": "director",
+              "category": "automotive",
+              "projectSizeBand": "premium",
+              "market": "detroit",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 13600,
             "expectedRange": {
               "low": 11300,
@@ -3343,6 +3388,7 @@
         "allInBudget": 20000,
         "projectSizeBand": "low_cash",
         "projectType": "editorial_prestige",
+        "market": "new_york",
         "talentClassScope": "production_talent"
       },
       "budgetType": "prestige",
@@ -4361,6 +4407,13 @@
           {
             "talent_id": "luxury_fashion_editor",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "editor",
+              "category": "fashion",
+              "projectSizeBand": "low_cash",
+              "market": "new_york",
+              "clientTrustTier": "new_or_unproven"
+            },
             "lockedQuote": 12400,
             "expectedRange": {
               "low": 10400,
@@ -4399,6 +4452,13 @@
           {
             "talent_id": "idle_high_quality_director",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "director",
+              "category": "fashion",
+              "projectSizeBand": "low_cash",
+              "market": "new_york",
+              "clientTrustTier": "new_or_unproven"
+            },
             "lockedQuote": 10800,
             "expectedRange": {
               "low": 9100,
@@ -4451,6 +4511,7 @@
         "allInBudget": 50000,
         "projectSizeBand": "small",
         "projectType": "exploratory_research",
+        "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
       "budgetType": "exploratory",
@@ -5470,6 +5531,13 @@
           {
             "talent_id": "reliable_generalist_dp",
             "status": "pending_hold",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "food",
+              "projectSizeBand": "small",
+              "market": "los_angeles",
+              "clientTrustTier": "new_or_unproven"
+            },
             "lockedQuote": 6800,
             "expectedRange": {
               "low": 5400,
@@ -5508,6 +5576,13 @@
           {
             "talent_id": "premium_food_director",
             "status": "pending_hold",
+            "cohortSignals": {
+              "role": "director",
+              "category": "food",
+              "projectSizeBand": "small",
+              "market": "los_angeles",
+              "clientTrustTier": "new_or_unproven"
+            },
             "lockedQuote": 21600,
             "expectedRange": {
               "low": 17300,
@@ -5560,6 +5635,7 @@
         "allInBudget": 100000,
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
+        "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
       "budgetType": "flexible",
@@ -6557,6 +6633,13 @@
           {
             "talent_id": "emerging_beauty_photographer",
             "status": "pending_hold",
+            "cohortSignals": {
+              "role": "photographer",
+              "category": "beauty",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "high_repeat"
+            },
             "lockedQuote": 8700,
             "expectedRange": {
               "low": 7500,
@@ -6595,6 +6678,13 @@
           {
             "talent_id": "idle_high_quality_director",
             "status": "pending_hold",
+            "cohortSignals": {
+              "role": "director",
+              "category": "beauty",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "high_repeat"
+            },
             "lockedQuote": 13200,
             "expectedRange": {
               "low": 11400,
@@ -6647,6 +6737,7 @@
         "allInBudget": 75000,
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
+        "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
       "budgetType": "flexible",
@@ -7937,6 +8028,13 @@
           {
             "talent_id": "reliable_generalist_dp",
             "status": "booked",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "food",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 7100,
             "expectedRange": {
               "low": 6100,
@@ -7977,6 +8075,13 @@
           {
             "talent_id": "premium_food_director",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "director",
+              "category": "food",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 22500,
             "expectedRange": {
               "low": 19400,
@@ -8015,6 +8120,13 @@
           {
             "talent_id": "volatile_rep_managed_talent",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "director",
+              "category": "food",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "known"
+            },
             "lockedQuote": 13300,
             "expectedRange": {
               "low": 11400,
@@ -8068,6 +8180,7 @@
         "allInBudget": 25000,
         "projectSizeBand": "small",
         "projectType": "social_content",
+        "market": "austin",
         "talentClassScope": "production_talent"
       },
       "budgetType": "firm",
@@ -9254,6 +9367,13 @@
           {
             "talent_id": "reliable_generalist_dp",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "dp",
+              "category": "social",
+              "projectSizeBand": "small",
+              "market": "austin",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 6700,
             "expectedRange": {
               "low": 6200,
@@ -9292,6 +9412,13 @@
           {
             "talent_id": "low_rate_fast_responder",
             "status": "booked",
+            "cohortSignals": {
+              "role": "photographer",
+              "category": "social",
+              "projectSizeBand": "small",
+              "market": "austin",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 4000,
             "expectedRange": {
               "low": 3700,
@@ -9344,6 +9471,7 @@
         "allInBudget": 5000,
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
+        "market": "los_angeles",
         "talentClassScope": "actor"
       },
       "budgetType": "firm",
@@ -9972,6 +10100,13 @@
           {
             "talent_id": "background_extra_actor",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "background",
+              "category": "background",
+              "projectSizeBand": "low_cash",
+              "market": "los_angeles",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 216,
             "expectedRange": {
               "low": 216,
@@ -10010,6 +10145,13 @@
           {
             "talent_id": "featured_actor_unknown_wage",
             "status": "failed_budget_gap",
+            "cohortSignals": {
+              "role": "featured",
+              "category": "background",
+              "projectSizeBand": "low_cash",
+              "market": "los_angeles",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 216,
             "expectedRange": {
               "low": 216,
@@ -10062,6 +10204,7 @@
         "allInBudget": 5000,
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
+        "market": "unknown_market",
         "talentClassScope": "actor"
       },
       "budgetType": "firm",
@@ -10688,6 +10831,13 @@
           {
             "talent_id": "background_extra_actor",
             "status": "booked",
+            "cohortSignals": {
+              "role": "background",
+              "category": "background",
+              "projectSizeBand": "low_cash",
+              "market": "unknown_market",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 100,
             "expectedRange": {
               "low": 100,
@@ -10726,6 +10876,13 @@
           {
             "talent_id": "featured_actor_unknown_wage",
             "status": "booked",
+            "cohortSignals": {
+              "role": "featured",
+              "category": "background",
+              "projectSizeBand": "low_cash",
+              "market": "unknown_market",
+              "clientTrustTier": "limited_history"
+            },
             "lockedQuote": 200,
             "expectedRange": {
               "low": 184,
@@ -10770,6 +10927,657 @@
       ]
     }
   ],
+  "cohortLearning": {
+    "dimensions": [
+      "role",
+      "category",
+      "projectSizeBand",
+      "market",
+      "clientTrustTier"
+    ],
+    "summary": {
+      "cohortCount": 25,
+      "cohortGuidanceCount": 8,
+      "calibrationAuthority": "guidance_only",
+      "rateAuthority": "talent_owned_rate_range"
+    },
+    "byDimension": {
+      "role": [
+        {
+          "dimension": "role",
+          "value": "background",
+          "recordCount": 2,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "role",
+          "value": "director",
+          "recordCount": 8,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 1,
+          "averageActualizationLift": 0.1884,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional role cohort signal: director outcomes are landing about 19% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "role",
+          "value": "dp",
+          "recordCount": 5,
+          "bookedRecordCount": 3,
+          "actualizedRecordCount": 3,
+          "actualizedAboveExpectedRangeCount": 1,
+          "averageActualizationLift": 0.1042,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional role cohort signal: dp outcomes are landing about 10% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "role",
+          "value": "editor",
+          "recordCount": 1,
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "No booked actualization evidence yet; keep this cohort advisory-only."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "role",
+          "value": "featured",
+          "recordCount": 2,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "role",
+          "value": "photographer",
+          "recordCount": 3,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0674,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        }
+      ],
+      "category": [
+        {
+          "dimension": "category",
+          "value": "automotive",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.2532,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional category cohort signal: automotive outcomes are landing about 25% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "category",
+          "value": "background",
+          "recordCount": 4,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "category",
+          "value": "beauty",
+          "recordCount": 4,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.1308,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional category cohort signal: beauty outcomes are landing about 13% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "category",
+          "value": "fashion",
+          "recordCount": 2,
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "No booked actualization evidence yet; keep this cohort advisory-only."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "category",
+          "value": "food",
+          "recordCount": 7,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0282,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "category",
+          "value": "social",
+          "recordCount": 2,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        }
+      ],
+      "projectSizeBand": [
+        {
+          "dimension": "projectSizeBand",
+          "value": "low_cash",
+          "recordCount": 6,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "projectSizeBand",
+          "value": "mid",
+          "recordCount": 5,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0563,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "projectSizeBand",
+          "value": "premium",
+          "recordCount": 4,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.192,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": [
+              "Directional project-size cohort signal: premium outcomes are landing about 19% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "projectSizeBand",
+          "value": "small",
+          "recordCount": 6,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        }
+      ],
+      "market": [
+        {
+          "dimension": "market",
+          "value": "austin",
+          "recordCount": 2,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
+          "value": "detroit",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.2532,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional market cohort signal: detroit outcomes are landing about 25% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
+          "value": "los_angeles",
+          "recordCount": 11,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0282,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
+          "value": "new_york",
+          "recordCount": 4,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.1308,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional market cohort signal: new york outcomes are landing about 13% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
+          "value": "unknown_market",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        }
+      ],
+      "clientTrustTier": [
+        {
+          "dimension": "clientTrustTier",
+          "value": "high_repeat",
+          "recordCount": 2,
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "No booked actualization evidence yet; keep this cohort advisory-only."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "clientTrustTier",
+          "value": "known",
+          "recordCount": 7,
+          "bookedRecordCount": 5,
+          "actualizedRecordCount": 5,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.1649,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": [
+              "Directional client-trust cohort signal: known outcomes are landing about 16% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "clientTrustTier",
+          "value": "limited_history",
+          "recordCount": 8,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "clientTrustTier",
+          "value": "new_or_unproven",
+          "recordCount": 4,
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "No booked actualization evidence yet; keep this cohort advisory-only."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        }
+      ]
+    }
+  },
   "metrics": {
     "scenarioCount": 10,
     "bookedCount": 6,
@@ -10814,7 +11622,9 @@
       "long-horizon commitment uncertainty": 2,
       "minimum_wage_floor_unknown": 1,
       "pre-presentation counter increased locked quote": 1
-    }
+    },
+    "cohortCount": 25,
+    "cohortGuidanceCount": 8
   },
   "validation": {
     "status": "pass",

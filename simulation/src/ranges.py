@@ -23,6 +23,7 @@ def project_context(project: dict) -> dict:
         "allInBudget": all_in_budget,
         "projectSizeBand": project.get("project_size_band", infer_project_size_band(all_in_budget)),
         "projectType": project.get("project_type", project["usage_scope"]),
+        "market": project.get("market", "unknown_market"),
         "talentClassScope": project.get("talent_class_scope", "production_talent"),
     }
 

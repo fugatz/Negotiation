@@ -59,6 +59,72 @@ def validate_report(report: dict) -> dict:
     behavior_rate_cap = float(config["behavior"]["rate_cap"])
     market_health = config["market_health"]
     market_health_review_flags = set(market_health["review_flags"])
+    expected_cohort_dimensions = {"role", "category", "projectSizeBand", "market", "clientTrustTier"}
+
+    cohort_learning = report["cohortLearning"]
+    _check(
+        set(cohort_learning["dimensions"]) == expected_cohort_dimensions,
+        failures,
+        "cohort_dimensions_invalid",
+        "cohortLearning",
+        "cohort learning should split by role, category, project size, market, and client trust tier",
+    )
+    _check(
+        cohort_learning["summary"]["calibrationAuthority"] == "guidance_only",
+        failures,
+        "cohort_calibration_authority_invalid",
+        "cohortLearning",
+        "cohort learning should produce guidance, not binding price rules",
+    )
+    _check(
+        cohort_learning["summary"]["rateAuthority"] == "talent_owned_rate_range",
+        failures,
+        "cohort_rate_authority_invalid",
+        "cohortLearning",
+        "talent-owned rate ranges remain the cohort-learning pricing authority",
+    )
+    for dimension, cohorts in cohort_learning["byDimension"].items():
+        for cohort in cohorts:
+            context = f"{dimension} / {cohort['value']}"
+            _check(
+                cohort["calibrationAuthority"] == "guidance_only",
+                failures,
+                "cohort_record_calibration_authority_invalid",
+                context,
+                "cohort records must stay advisory",
+            )
+            _check(
+                cohort["rateAuthority"] == "talent_owned_rate_range",
+                failures,
+                "cohort_record_rate_authority_invalid",
+                context,
+                "cohort records must keep talent-owned rates as authority",
+            )
+            guidance = cohort["talentGuidance"]
+            _check(
+                guidance["appliesAutomatically"] is False,
+                failures,
+                "cohort_guidance_applies_automatically",
+                context,
+                "cohort guidance must never change rates automatically",
+            )
+            if guidance["available"]:
+                guidance_text = " ".join(guidance["messages"])
+                _check(
+                    "optional" in guidance_text.lower(),
+                    failures,
+                    "cohort_guidance_not_optional",
+                    context,
+                    "cohort guidance should state that it is optional",
+                )
+                forbidden_hits = _talent_guidance_forbidden_hits(guidance_text)
+                _check(
+                    not forbidden_hits,
+                    failures,
+                    "cohort_guidance_leakage",
+                    context,
+                    f"cohort guidance leaked private or negative terms: {forbidden_hits}",
+                )
 
     for trace in report["traces"]:
         expected_horizon = _expected_timing_horizon(int(trace["leadTimeDays"]))

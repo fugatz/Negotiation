@@ -68,6 +68,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - nullable local minimum wage smoke checks for actor legal floors
 - expected booking ranges with assumptions and actualization triggers
 - outcome-learning records that compare locked quotes, booking outcomes, and actualized costs
+- cohort-learning summaries by role, category, project size, market, and client trust tier
 - market-health flags for race-to-bottom and price-led recommendation risk
 - pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas

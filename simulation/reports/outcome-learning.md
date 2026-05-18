@@ -28,6 +28,8 @@ ranges remain the source of authority.
 | Actualized records | 9 | 9 |
 | Actualized above expected range | 2 | 2 |
 | Optional talent-guidance messages | 4 | 4 |
+| Cohort summaries | 25 | 25 |
+| Optional cohort-guidance messages | 8 | 8 |
 | Average actualization lift | 9.16% | 9.16% |
 | Validation failures | 0 | 0 |
 
@@ -54,6 +56,30 @@ Validation enforces:
 - actualization events must cite allowed triggers from the expected booking range
 - unbooked outcomes do not produce actualized costs
 
+## Cohort Learning
+
+The report now also groups outcome learning by:
+
+- role
+- category
+- project size band
+- market
+- client trust tier
+
+Current directional signals:
+
+| Cohort | Signal |
+| --- | --- |
+| Category: automotive | 25.32% average actualization lift, above-range actualization in the last-minute stress case |
+| Market: Detroit | 25.32% average actualization lift, directional-only sample |
+| Project size: premium | 19.20% average actualization lift, medium-confidence sample |
+| Role: DP | 10.42% average actualization lift, directional-only sample |
+| Role: director | 18.84% average actualization lift, directional-only sample |
+| Client trust: known | 16.49% average actualization lift, medium-confidence sample |
+
+These are intentionally weak early signals. The simulator labels small cohorts as `directional_only`; they
+can create admin review and optional talent guidance, but they should not change rates automatically.
+
 ## Product Implication
 
 This creates the first loop toward pricing intelligence without turning Distinkt into a rate-setting
@@ -64,5 +90,5 @@ authority. Over time, the same structure can support:
 - "this client repeatedly misses budget calibration"
 - "this project type actualizes above range when travel appears"
 
-The next useful pass is to split outcome learning by cohort: talent role, category, project size band,
-market/location, and client trust tier.
+The next useful pass is to define confidence thresholds for graduating cohort guidance from
+`directional_only` to stronger advisory language.
