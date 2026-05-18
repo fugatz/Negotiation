@@ -75,6 +75,7 @@ def validate_report(report: dict) -> dict:
             governance = rec["adminGovernance"]
             availability_check = rec["availabilityCheck"]
             legal_floor = rec["legalFloor"]
+            expected_range = rec["expectedBookingRange"]
 
             _check(
                 availability_check["completedBeforeClientPresentation"] is True,
@@ -110,6 +111,20 @@ def validate_report(report: dict) -> dict:
                 "presentation_quote_not_committed",
                 context,
                 "client-facing quote must equal the pre-presentation talent committed quote",
+            )
+            _check(
+                availability_check.get("proposedRange") is not None,
+                failures,
+                "outreach_range_missing",
+                context,
+                "rate-quoted outreach should include an expected booking range",
+            )
+            _check(
+                availability_check.get("committedRange") == expected_range,
+                failures,
+                "committed_range_mismatch",
+                context,
+                "final trace range must reflect the talent-approved locked quote after outreach",
             )
             event_text = " ".join(
                 availability_check.get("events", []) + availability_check.get("warnings", [])
@@ -240,6 +255,28 @@ def validate_report(report: dict) -> dict:
                     "long-horizon uncertainty should affect confidence/holds, not direct price",
                 )
 
+            _check(
+                int(expected_range["low"]) <= int(rec["quote"]) <= int(expected_range["high"]),
+                failures,
+                "quote_outside_expected_booking_range",
+                context,
+                "committed quote must sit inside the expected booking range",
+            )
+            _check(
+                bool(expected_range["assumptionsIncluded"]),
+                failures,
+                "range_assumptions_missing",
+                context,
+                "expected booking ranges must include assumptions",
+            )
+            _check(
+                bool(expected_range["actualizationTriggers"]),
+                failures,
+                "range_actualization_triggers_missing",
+                context,
+                "expected booking ranges must list allowed actualization triggers",
+            )
+
             if rec["talentClass"] == "actor":
                 if legal_floor["minimumWageStatus"] == "known":
                     _check(
@@ -248,6 +285,13 @@ def validate_report(report: dict) -> dict:
                         "minimum_wage_floor_violation",
                         context,
                         "actor quote must not fall below supplied local minimum wage floor",
+                    )
+                    _check(
+                        int(expected_range["low"]) >= int(legal_floor["minimumWageFloor"]),
+                        failures,
+                        "range_below_minimum_wage_floor",
+                        context,
+                        "actor expected booking range must not dip below supplied local minimum wage floor",
                     )
                 elif legal_floor["minimumWageStatus"] == "unknown":
                     _check(

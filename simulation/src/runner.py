@@ -12,6 +12,7 @@ from .negotiation import apply_availability_commitment, simulate_availability_ch
 from .outcome_calibration import propose_shadow_discretion
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
+from .ranges import expected_booking_range, project_context
 from .scoring import score_talent
 from .timing import timing_nudge
 from .validation import validate_report
@@ -46,6 +47,7 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "acceptanceProbability": rec["acceptance_probability"],
         "availabilityCheck": rec["availability_check"],
         "legalFloor": rec["legal_floor"],
+        "expectedBookingRange": rec["expected_booking_range"],
         "marketHealth": {
             "score": rec["market_health_score"],
             "flags": rec.get("market_health_flags", []),
@@ -96,8 +98,11 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
             client_behavior_nudge(client),
         )
         if adjusted["eligible"]:
+            adjusted["expected_booking_range"] = expected_booking_range(project, person, adjusted)
             availability_check = simulate_availability_check(project, person, adjusted)
             adjusted = apply_availability_commitment(adjusted, availability_check)
+            adjusted["expected_booking_range"] = expected_booking_range(project, person, adjusted)
+            adjusted["availability_check"]["committedRange"] = adjusted["expected_booking_range"]
             discretion = propose_shadow_discretion(project, person, adjusted, outcomes)
             adjusted["ai_discretion"] = discretion
             adjusted["ai_rationales"] = build_ai_rationales(
@@ -154,6 +159,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         "projectId": project["id"],
         "client": client["name"],
         "budget": project["budget"],
+        "projectContext": project_context(project),
         "budgetType": project["budget_type"],
         "leadTimeDays": project["lead_time_days"],
         "timingHorizon": timing["horizon"],
@@ -186,6 +192,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     pre_presentation_counter_count = 0
     minimum_wage_floor_applied_count = 0
     minimum_wage_floor_unknown_count = 0
+    expected_range_count = 0
     leakage_count = 0
     human_review_count = 0
 
@@ -205,6 +212,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 minimum_wage_floor_applied_count += 1
             if legal_floor["minimumWageStatus"] == "unknown":
                 minimum_wage_floor_unknown_count += 1
+            if rec.get("expectedBookingRange"):
+                expected_range_count += 1
             rationales = rec["aiRationales"]
             admin_rationale = rationales["adminPricingRationale"]
             brand_rationale = rationales["brandFacingRationale"]
@@ -249,6 +258,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "prePresentationTalentCounterCount": pre_presentation_counter_count,
         "minimumWageFloorAppliedCount": minimum_wage_floor_applied_count,
         "minimumWageFloorUnknownCount": minimum_wage_floor_unknown_count,
+        "expectedBookingRangeCount": expected_range_count,
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
         "maxAbsoluteShadowDiscretionDelta": round(max_discretion, 4),

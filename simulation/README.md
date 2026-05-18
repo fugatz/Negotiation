@@ -65,6 +65,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - launch-mode admin approval state and bounded setting-tweak controls
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - nullable local minimum wage smoke checks for actor legal floors
+- expected booking ranges with assumptions and actualization triggers
 - market-health flags for race-to-bottom and price-led recommendation risk
 - pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas

@@ -266,6 +266,9 @@ Talent can then:
 - ask for assumption clarification before commitment
 
 The talent response establishes the project-specific talent rate or range for client presentation.
+The simulator records both the proposed outreach range and the committed range after any
+pre-presentation counter, so later reports can separate normal upfront negotiation from prohibited
+post-interest repricing.
 
 ## Client-Facing Range Rule
 

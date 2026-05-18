@@ -604,6 +604,7 @@ Each simulated scenario should produce a compact trace:
 - recommended slate with lanes
 - client-facing talent scores
 - hidden internal reasons
+- project context and expected booking ranges
 - pre-presentation rate-quoted outreach checks
 - client decision events
 - final outcome
@@ -630,8 +631,22 @@ Example trace shape:
       "clientFacingTalentScore": 92,
       "clientVisiblePriceState": "premium stretch",
       "internalAcceptanceProbability": 0.62,
+      "expectedBookingRange": {
+        "label": "Expected Booking Range",
+        "low": 18000,
+        "high": 24000,
+        "expectedClose": 21000,
+        "assumptionsIncluded": ["1 shoot day assumed", "campaign usage assumed"],
+        "actualizationTriggers": ["prep day added", "travel required", "usage expanded"]
+      },
       "availabilityCheck": {
         "status": "accepted_at_presented_rate",
+        "proposedRange": {
+          "label": "Expected Booking Range"
+        },
+        "committedRange": {
+          "label": "Expected Booking Range"
+        },
         "completedBeforeClientPresentation": true,
         "clientVisible": false
       }
@@ -702,6 +717,7 @@ simulation/
     outcome_calibration.*
     negotiation.*
     policies.*
+    ranges.*
     runner.*
   reports/
     sample-runs/

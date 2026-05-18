@@ -7,6 +7,12 @@
       "projectId": "firm_food_social",
       "client": "Firm-Budget Producer",
       "budget": 11000,
+      "projectContext": {
+        "allInBudget": 50000,
+        "projectSizeBand": "small",
+        "projectType": "social_content",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "firm",
       "leadTimeDays": 28,
       "timingHorizon": "normal",
@@ -29,7 +35,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Budget-Confident",
           "quote": 6700,
           "clientVisiblePriceState": "within expected range",
@@ -45,13 +51,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 6700,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 7200,
+              "expectedClose": 6700,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 6700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 7200,
+              "expectedClose": 6700,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -64,6 +120,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 7200,
+            "expectedClose": 6700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -147,7 +228,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 11600,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
@@ -163,13 +244,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 11600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10700,
+              "high": 12500,
+              "expectedClose": 11600,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 11600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10700,
+              "high": 12500,
+              "expectedClose": 11600,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -182,6 +313,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 12500,
+            "expectedClose": 11600,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.71,
@@ -267,7 +423,7 @@
         {
           "talent": "Premium Food Tabletop Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Strong Specialist",
           "quote": 21200,
           "clientVisiblePriceState": "outside stated budget",
@@ -283,13 +439,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 21200,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 19500,
+              "high": 22900,
+              "expectedClose": 21200,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 21200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 19500,
+              "high": 22900,
+              "expectedClose": 21200,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -302,6 +508,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 19500,
+            "high": 22900,
+            "expectedClose": 21200,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -394,7 +625,7 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Strong Specialist",
           "quote": 12500,
           "clientVisiblePriceState": "premium stretch",
@@ -410,6 +641,31 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 10400,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9600,
+              "high": 11200,
+              "expectedClose": 10400,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 12500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
@@ -418,7 +674,32 @@
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
-            ]
+            ],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11500,
+              "high": 13500,
+              "expectedClose": 12500,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "social usage assumed",
+                "no travel included",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -431,6 +712,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11500,
+            "high": 13500,
+            "expectedClose": 12500,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -527,13 +833,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 6700,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 7200,
+            "expectedClose": 6700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 6700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 7200,
+            "expectedClose": 6700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
@@ -543,13 +899,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 11600,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 12500,
+            "expectedClose": 11600,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 11600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 12500,
+            "expectedClose": 11600,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "social usage assumed",
+              "no travel included",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -586,6 +992,12 @@
       "projectId": "flexible_beauty_national",
       "client": "Flexible Premium Buyer",
       "budget": 14000,
+      "projectContext": {
+        "allInBudget": 125000,
+        "projectSizeBand": "premium",
+        "projectType": "national_campaign",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "flexible",
       "leadTimeDays": 42,
       "timingHorizon": "normal",
@@ -608,7 +1020,7 @@
         {
           "talent": "Emerging Beauty Photographer",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Best Fit",
           "quote": 8900,
           "clientVisiblePriceState": "within expected range",
@@ -624,13 +1036,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 8900,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 7400,
+              "high": 10400,
+              "expectedClose": 8900,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 8900,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 7400,
+              "high": 10400,
+              "expectedClose": 8900,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -643,6 +1105,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 7400,
+            "high": 10400,
+            "expectedClose": 8900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -731,7 +1218,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Budget-Confident",
           "quote": 13400,
           "clientVisiblePriceState": "within expected range",
@@ -747,13 +1234,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 13400,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11100,
+              "high": 15700,
+              "expectedClose": 13400,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 13400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11100,
+              "high": 15700,
+              "expectedClose": 13400,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -766,6 +1303,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11100,
+            "high": 15700,
+            "expectedClose": 13400,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.71,
@@ -852,7 +1414,7 @@
         {
           "talent": "Luxury Fashion Editor",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "editor",
           "lane": "Budget-Confident",
           "quote": 14000,
           "clientVisiblePriceState": "within expected range",
@@ -868,13 +1430,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 14000,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11600,
+              "high": 16400,
+              "expectedClose": 14000,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 14000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent requested usage confirmation before quote commitment"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11600,
+              "high": 16400,
+              "expectedClose": 14000,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -887,6 +1499,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11600,
+            "high": 16400,
+            "expectedClose": 14000,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -971,7 +1608,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Budget-Confident",
           "quote": 7500,
           "clientVisiblePriceState": "within expected range",
@@ -987,13 +1624,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 7500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 8800,
+              "expectedClose": 7500,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 7500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 8800,
+              "expectedClose": 7500,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "1 prep day assumed",
+                "1 shoot day assumed",
+                "national usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1006,6 +1693,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 8800,
+            "expectedClose": 7500,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -1098,13 +1810,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 8900,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 7400,
+            "high": 10400,
+            "expectedClose": 8900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 8900,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 7400,
+            "high": 10400,
+            "expectedClose": 8900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
@@ -1114,13 +1876,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 13400,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 11100,
+            "high": 15700,
+            "expectedClose": 13400,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 13400,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 11100,
+            "high": 15700,
+            "expectedClose": 13400,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "1 prep day assumed",
+              "1 shoot day assumed",
+              "national usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -1153,6 +1965,12 @@
       "projectId": "last_minute_automotive",
       "client": "Realistic Professional Buyer",
       "budget": 18000,
+      "projectContext": {
+        "allInBudget": 150000,
+        "projectSizeBand": "premium",
+        "projectType": "commercial_campaign",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "flexible",
       "leadTimeDays": 6,
       "timingHorizon": "extreme_last_minute",
@@ -1193,7 +2011,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Budget-Confident",
           "quote": 7800,
           "clientVisiblePriceState": "within expected range",
@@ -1209,13 +2027,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 7800,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6500,
+              "high": 9100,
+              "expectedClose": 7800,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 7800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6500,
+              "high": 9100,
+              "expectedClose": 7800,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1228,6 +2096,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6500,
+            "high": 9100,
+            "expectedClose": 7800,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -1314,7 +2207,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Budget-Confident",
           "quote": 13600,
           "clientVisiblePriceState": "within expected range",
@@ -1330,13 +2223,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 13600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11300,
+              "high": 15900,
+              "expectedClose": 13600,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 13600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11300,
+              "high": 15900,
+              "expectedClose": 13600,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1349,6 +2292,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11300,
+            "high": 15900,
+            "expectedClose": 13600,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -1435,7 +2403,7 @@
         {
           "talent": "Emerging Beauty Photographer",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Budget-Confident",
           "quote": 8900,
           "clientVisiblePriceState": "within expected range",
@@ -1451,13 +2419,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 8900,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 7400,
+              "high": 10400,
+              "expectedClose": 8900,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 8900,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 7400,
+              "high": 10400,
+              "expectedClose": 8900,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1470,6 +2488,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 7400,
+            "high": 10400,
+            "expectedClose": 8900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -1555,7 +2598,7 @@
         {
           "talent": "Low-Rate Fast Responder",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Budget-Confident",
           "quote": 4600,
           "clientVisiblePriceState": "within expected range",
@@ -1571,13 +2614,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 4600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 3800,
+              "high": 5400,
+              "expectedClose": 4600,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 4600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 3800,
+              "high": 5400,
+              "expectedClose": 4600,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "compressed schedule assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "travel excluded unless listed"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1590,6 +2683,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 2800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 3800,
+            "high": 5400,
+            "expectedClose": 4600,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.52,
@@ -1686,13 +2804,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 7800,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 6500,
+            "high": 9100,
+            "expectedClose": 7800,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 7800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 6500,
+            "high": 9100,
+            "expectedClose": 7800,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
@@ -1702,13 +2870,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 13600,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 11300,
+            "high": 15900,
+            "expectedClose": 13600,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 13600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 11300,
+            "high": 15900,
+            "expectedClose": 13600,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "compressed schedule assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "travel excluded unless listed"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -1741,6 +2959,12 @@
       "projectId": "prestige_editorial_low_cash",
       "client": "Prestige Overpromiser",
       "budget": 4500,
+      "projectContext": {
+        "allInBudget": 20000,
+        "projectSizeBand": "low_cash",
+        "projectType": "editorial_prestige",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "prestige",
       "leadTimeDays": 30,
       "timingHorizon": "normal",
@@ -1781,7 +3005,7 @@
         {
           "talent": "Luxury Fashion Editor",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "editor",
           "lane": "Best Fit",
           "quote": 12400,
           "clientVisiblePriceState": "outside stated budget",
@@ -1797,13 +3021,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 12400,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10400,
+              "high": 14400,
+              "expectedClose": 12400,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 12400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10400,
+              "high": 14400,
+              "expectedClose": 12400,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1816,6 +3090,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10400,
+            "high": 14400,
+            "expectedClose": 12400,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -1907,7 +3206,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 10800,
           "clientVisiblePriceState": "outside stated budget",
@@ -1923,13 +3222,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 10800,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9100,
+              "high": 12500,
+              "expectedClose": 10800,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 10800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 9100,
+              "high": 12500,
+              "expectedClose": 10800,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -1942,6 +3291,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 9100,
+            "high": 12500,
+            "expectedClose": 10800,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -2029,7 +3403,7 @@
         {
           "talent": "Emerging Beauty Photographer",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Emerging Value",
           "quote": 7100,
           "clientVisiblePriceState": "outside stated budget",
@@ -2045,13 +3419,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 7100,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6000,
+              "high": 8200,
+              "expectedClose": 7100,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 7100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6000,
+              "high": 8200,
+              "expectedClose": 7100,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2064,6 +3488,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6000,
+            "high": 8200,
+            "expectedClose": 7100,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -2150,7 +3599,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Viable Option",
           "quote": 6200,
           "clientVisiblePriceState": "outside stated budget",
@@ -2166,13 +3615,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 6200,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 5200,
+              "high": 7200,
+              "expectedClose": 6200,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 6200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 5200,
+              "high": 7200,
+              "expectedClose": 6200,
+              "currency": "USD",
+              "rangeWidth": 0.16,
+              "assumptionsIncluded": [
+                "editorial prestige value assumed",
+                "1 shoot day assumed",
+                "limited usage assumed",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2185,6 +3684,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 5200,
+            "high": 7200,
+            "expectedClose": 6200,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -2280,13 +3804,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 12400,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 10400,
+            "high": 14400,
+            "expectedClose": 12400,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 12400,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 10400,
+            "high": 14400,
+            "expectedClose": 12400,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
@@ -2296,13 +3870,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 10800,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 9100,
+            "high": 12500,
+            "expectedClose": 10800,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 10800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 9100,
+            "high": 12500,
+            "expectedClose": 10800,
+            "currency": "USD",
+            "rangeWidth": 0.16,
+            "assumptionsIncluded": [
+              "editorial prestige value assumed",
+              "1 shoot day assumed",
+              "limited usage assumed",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -2341,6 +3965,12 @@
       "projectId": "exploratory_research_brief",
       "client": "Budget Fisher",
       "budget": 9000,
+      "projectContext": {
+        "allInBudget": 50000,
+        "projectSizeBand": "small",
+        "projectType": "exploratory_research",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "exploratory",
       "leadTimeDays": 95,
       "timingHorizon": "long_horizon",
@@ -2363,7 +3993,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Budget-Confident",
           "quote": 6800,
           "clientVisiblePriceState": "within expected range",
@@ -2379,13 +4009,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 6800,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 5400,
+              "high": 8200,
+              "expectedClose": 6800,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 6800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 5400,
+              "high": 8200,
+              "expectedClose": 6800,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2398,6 +4078,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 5400,
+            "high": 8200,
+            "expectedClose": 6800,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -2486,7 +4191,7 @@
         {
           "talent": "Premium Food Tabletop Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Strong Specialist",
           "quote": 21600,
           "clientVisiblePriceState": "outside stated budget",
@@ -2502,13 +4207,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 21600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 17300,
+              "high": 25900,
+              "expectedClose": 21600,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 21600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 17300,
+              "high": 25900,
+              "expectedClose": 21600,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2521,6 +4276,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 17300,
+            "high": 25900,
+            "expectedClose": 21600,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -2616,7 +4396,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 12000,
           "clientVisiblePriceState": "outside stated budget",
@@ -2632,13 +4412,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 12000,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9600,
+              "high": 14400,
+              "expectedClose": 12000,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 12000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 9600,
+              "high": 14400,
+              "expectedClose": 12000,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2651,6 +4481,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 9600,
+            "high": 14400,
+            "expectedClose": 12000,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.71,
@@ -2742,7 +4597,7 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 12700,
           "clientVisiblePriceState": "outside stated budget",
@@ -2758,6 +4613,31 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 10600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 8500,
+              "high": 12700,
+              "expectedClose": 10600,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 12700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
@@ -2766,7 +4646,32 @@
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
-            ]
+            ],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10200,
+              "high": 15200,
+              "expectedClose": 12700,
+              "currency": "USD",
+              "rangeWidth": 0.2,
+              "assumptionsIncluded": [
+                "scope still exploratory",
+                "usage unknown",
+                "no firm hold without confirmation",
+                "travel excluded"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2779,6 +4684,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10200,
+            "high": 15200,
+            "expectedClose": 12700,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -2879,13 +4809,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 6800,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 5400,
+            "high": 8200,
+            "expectedClose": 6800,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 6800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 5400,
+            "high": 8200,
+            "expectedClose": 6800,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "premium_food_director",
@@ -2895,13 +4875,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 21600,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 17300,
+            "high": 25900,
+            "expectedClose": 21600,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 21600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 17300,
+            "high": 25900,
+            "expectedClose": 21600,
+            "currency": "USD",
+            "rangeWidth": 0.2,
+            "assumptionsIncluded": [
+              "scope still exploratory",
+              "usage unknown",
+              "no firm hold without confirmation",
+              "travel excluded"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -2942,6 +4972,12 @@
       "projectId": "long_horizon_beauty_campaign",
       "client": "High-Trust Repeat Client",
       "budget": 12000,
+      "projectContext": {
+        "allInBudget": 100000,
+        "projectSizeBand": "mid",
+        "projectType": "commercial_campaign",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "flexible",
       "leadTimeDays": 110,
       "timingHorizon": "long_horizon",
@@ -2964,7 +5000,7 @@
         {
           "talent": "Emerging Beauty Photographer",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Best Fit",
           "quote": 8700,
           "clientVisiblePriceState": "within expected range",
@@ -2980,13 +5016,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 8700,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 7500,
+              "high": 9900,
+              "expectedClose": 8700,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 8700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 7500,
+              "high": 9900,
+              "expectedClose": 8700,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -2999,6 +5085,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 7500,
+            "high": 9900,
+            "expectedClose": 8700,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -3088,7 +5199,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 13200,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
@@ -3104,13 +5215,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 13200,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 15000,
+              "expectedClose": 13200,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 13200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 15000,
+              "expectedClose": 13200,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3123,6 +5284,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15000,
+            "expectedClose": 13200,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.71,
@@ -3210,7 +5396,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Budget-Confident",
           "quote": 7400,
           "clientVisiblePriceState": "within expected range",
@@ -3226,13 +5412,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 7400,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6400,
+              "high": 8400,
+              "expectedClose": 7400,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 7400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6400,
+              "high": 8400,
+              "expectedClose": 7400,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3245,6 +5481,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6400,
+            "high": 8400,
+            "expectedClose": 7400,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -3330,7 +5591,7 @@
         {
           "talent": "Luxury Fashion Editor",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "editor",
           "lane": "Viable Option",
           "quote": 13800,
           "clientVisiblePriceState": "premium stretch",
@@ -3346,13 +5607,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 13800,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11900,
+              "high": 15700,
+              "expectedClose": 13800,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 13800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent requested usage confirmation before quote commitment"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11900,
+              "high": 15700,
+              "expectedClose": 13800,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3365,6 +5676,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11900,
+            "high": 15700,
+            "expectedClose": 13800,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -3458,13 +5794,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 8700,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 7500,
+            "high": 9900,
+            "expectedClose": 8700,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 8700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 7500,
+            "high": 9900,
+            "expectedClose": 8700,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
@@ -3474,13 +5860,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 13200,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15000,
+            "expectedClose": 13200,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 13200,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15000,
+            "expectedClose": 13200,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -3521,6 +5957,12 @@
       "projectId": "bad_faith_repricing_test",
       "client": "Realistic Professional Buyer",
       "budget": 10000,
+      "projectContext": {
+        "allInBudget": 75000,
+        "projectSizeBand": "mid",
+        "projectType": "commercial_campaign",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "flexible",
       "leadTimeDays": 21,
       "timingHorizon": "normal",
@@ -3543,7 +5985,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Budget-Confident",
           "quote": 7100,
           "clientVisiblePriceState": "within expected range",
@@ -3559,13 +6001,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 7100,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6100,
+              "high": 8100,
+              "expectedClose": 7100,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 7100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6100,
+              "high": 8100,
+              "expectedClose": 7100,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3578,6 +6070,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8100,
+            "expectedClose": 7100,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -3662,7 +6179,7 @@
         {
           "talent": "Premium Food Tabletop Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Strong Specialist",
           "quote": 22500,
           "clientVisiblePriceState": "outside stated budget",
@@ -3678,13 +6195,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 22500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 19400,
+              "high": 25700,
+              "expectedClose": 22500,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 22500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 19400,
+              "high": 25700,
+              "expectedClose": 22500,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3697,6 +6264,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 19400,
+            "high": 25700,
+            "expectedClose": 22500,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -3790,7 +6382,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 12500,
           "clientVisiblePriceState": "premium stretch",
@@ -3806,13 +6398,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 12500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10800,
+              "high": 14300,
+              "expectedClose": 12500,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 12500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10800,
+              "high": 14300,
+              "expectedClose": 12500,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3825,6 +6467,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10800,
+            "high": 14300,
+            "expectedClose": 12500,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.71,
@@ -3911,7 +6578,7 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Strong Specialist",
           "quote": 13300,
           "clientVisiblePriceState": "outside stated budget",
@@ -3927,6 +6594,31 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 11100,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9500,
+              "high": 12700,
+              "expectedClose": 11100,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 13300,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
@@ -3935,7 +6627,32 @@
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
-            ]
+            ],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 15200,
+              "expectedClose": 13300,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -3948,6 +6665,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15200,
+            "expectedClose": 13300,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -4041,7 +6783,7 @@
         {
           "talent": "Volatile Rep-Managed Talent",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Stress Test Candidate",
           "quote": 13300,
           "clientVisiblePriceState": "outside stated budget",
@@ -4057,6 +6799,31 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 11100,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9500,
+              "high": 12700,
+              "expectedClose": 11100,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 13300,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
@@ -4065,7 +6832,32 @@
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
-            ]
+            ],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 15200,
+              "expectedClose": 13300,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "1 shoot day assumed",
+                "campaign usage assumed",
+                "no exclusivity assumed",
+                "no post-presentation talent repricing allowed without client-side changes"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -4078,6 +6870,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15200,
+            "expectedClose": 13300,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -4176,13 +6993,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 7100,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8100,
+            "expectedClose": 7100,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 7100,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8100,
+            "expectedClose": 7100,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "premium_food_director",
@@ -4192,13 +7059,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 22500,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 19400,
+            "high": 25700,
+            "expectedClose": 22500,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 22500,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 19400,
+            "high": 25700,
+            "expectedClose": 22500,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "volatile_rep_managed_talent",
@@ -4208,6 +7125,31 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 11100,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 9500,
+            "high": 12700,
+            "expectedClose": 11100,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 13300,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
@@ -4216,7 +7158,32 @@
           ],
           "warnings": [
             "pre-presentation counter increased locked quote"
-          ]
+          ],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15200,
+            "expectedClose": 13300,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "1 shoot day assumed",
+              "campaign usage assumed",
+              "no exclusivity assumed",
+              "no post-presentation talent repricing allowed without client-side changes"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -4266,6 +7233,12 @@
       "projectId": "race_to_bottom_social_test",
       "client": "Firm-Budget Producer",
       "budget": 5000,
+      "projectContext": {
+        "allInBudget": 25000,
+        "projectSizeBand": "small",
+        "projectType": "social_content",
+        "talentClassScope": "production_talent"
+      },
       "budgetType": "firm",
       "leadTimeDays": 24,
       "timingHorizon": "normal",
@@ -4288,7 +7261,7 @@
         {
           "talent": "Reliable Generalist DP",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "dp",
           "lane": "Best Fit",
           "quote": 6700,
           "clientVisiblePriceState": "outside stated budget",
@@ -4304,13 +7277,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 6700,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 7200,
+              "expectedClose": 6700,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 6700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6200,
+              "high": 7200,
+              "expectedClose": 6700,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -4323,6 +7346,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 7200,
+            "expectedClose": 6700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -4408,7 +7456,7 @@
         {
           "talent": "Low-Rate Fast Responder",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Budget-Confident",
           "quote": 4000,
           "clientVisiblePriceState": "within expected range",
@@ -4424,13 +7472,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 4000,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 3700,
+              "high": 4300,
+              "expectedClose": 4000,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 4000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 3700,
+              "high": 4300,
+              "expectedClose": 4000,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -4443,6 +7541,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 2800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 3700,
+            "high": 4300,
+            "expectedClose": 4000,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.52,
@@ -4527,7 +7650,7 @@
         {
           "talent": "Idle High-Quality Director",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "director",
           "lane": "Viable Option",
           "quote": 11600,
           "clientVisiblePriceState": "outside stated budget",
@@ -4543,13 +7666,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 11600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10700,
+              "high": 12500,
+              "expectedClose": 11600,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 11600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10700,
+              "high": 12500,
+              "expectedClose": 11600,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -4562,6 +7735,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 12500,
+            "expectedClose": 11600,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.71,
@@ -4649,7 +7847,7 @@
         {
           "talent": "Emerging Beauty Photographer",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Emerging Value",
           "quote": 7600,
           "clientVisiblePriceState": "outside stated budget",
@@ -4665,13 +7863,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 7600,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 7000,
+              "high": 8200,
+              "expectedClose": 7600,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 7600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 7000,
+              "high": 8200,
+              "expectedClose": 7600,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -4684,6 +7932,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 7000,
+            "high": 8200,
+            "expectedClose": 7600,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -4771,7 +8044,7 @@
         {
           "talent": "Low-Rate Fast Responder",
           "talentClass": "production_talent",
-          "role": null,
+          "role": "photographer",
           "lane": "Stress Test Candidate",
           "quote": 4000,
           "clientVisiblePriceState": "within expected range",
@@ -4787,13 +8060,63 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 4000,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 3700,
+              "high": 4300,
+              "expectedClose": 4000,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 4000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 3700,
+              "high": 4300,
+              "expectedClose": 4000,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "1 social shoot day assumed",
+                "organic social usage assumed",
+                "no exclusivity assumed",
+                "low-budget scope requires market-health review"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "production_talent",
@@ -4806,6 +8129,31 @@
             "minimumWageStatus": "not_applicable",
             "effectiveFloor": 2800,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 3700,
+            "high": 4300,
+            "expectedClose": 4000,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.52,
@@ -4897,13 +8245,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 6700,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 7200,
+            "expectedClose": 6700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 6700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 6200,
+            "high": 7200,
+            "expectedClose": 6700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "low_rate_fast_responder",
@@ -4913,13 +8311,63 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 4000,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 3700,
+            "high": 4300,
+            "expectedClose": 4000,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 4000,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 3700,
+            "high": 4300,
+            "expectedClose": 4000,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "1 social shoot day assumed",
+              "organic social usage assumed",
+              "no exclusivity assumed",
+              "low-budget scope requires market-health review"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -4956,6 +8404,12 @@
       "projectId": "background_extra_minimum_wage_smoke",
       "client": "Firm-Budget Producer",
       "budget": 100,
+      "projectContext": {
+        "allInBudget": 5000,
+        "projectSizeBand": "low_cash",
+        "projectType": "background_casting",
+        "talentClassScope": "actor"
+      },
       "budgetType": "firm",
       "leadTimeDays": 14,
       "timingHorizon": "last_minute",
@@ -5030,13 +8484,61 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 216,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 216,
+              "high": 233,
+              "expectedClose": 216,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage supplied by upstream compliance input"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 216,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 216,
+              "high": 233,
+              "expectedClose": 216,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage supplied by upstream compliance input"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "actor",
@@ -5049,6 +8551,30 @@
             "minimumWageStatus": "known",
             "effectiveFloor": 216,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 216,
+            "high": 233,
+            "expectedClose": 216,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage supplied by upstream compliance input"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -5155,13 +8681,61 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 216,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 216,
+              "high": 233,
+              "expectedClose": 216,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage supplied by upstream compliance input"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 216,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 216,
+              "high": 233,
+              "expectedClose": 216,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage supplied by upstream compliance input"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "actor",
@@ -5174,6 +8748,30 @@
             "minimumWageStatus": "known",
             "effectiveFloor": 216,
             "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 216,
+            "high": 233,
+            "expectedClose": 216,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage supplied by upstream compliance input"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -5271,13 +8869,61 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 216,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 216,
+            "high": 233,
+            "expectedClose": 216,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage supplied by upstream compliance input"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 216,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 216,
+            "high": 233,
+            "expectedClose": 216,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage supplied by upstream compliance input"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "featured_actor_unknown_wage",
@@ -5287,13 +8933,61 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 216,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 216,
+            "high": 233,
+            "expectedClose": 216,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage supplied by upstream compliance input"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 216,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 216,
+            "high": 233,
+            "expectedClose": 216,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage supplied by upstream compliance input"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -5332,6 +9026,12 @@
       "projectId": "background_extra_unknown_wage_smoke",
       "client": "Firm-Budget Producer",
       "budget": 150,
+      "projectContext": {
+        "allInBudget": 5000,
+        "projectSizeBand": "low_cash",
+        "projectType": "background_casting",
+        "talentClassScope": "actor"
+      },
       "budgetType": "firm",
       "leadTimeDays": 14,
       "timingHorizon": "last_minute",
@@ -5406,13 +9106,61 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 100,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 100,
+              "high": 108,
+              "expectedClose": 100,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage input unavailable"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 100,
+              "high": 108,
+              "expectedClose": 100,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage input unavailable"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "actor",
@@ -5427,6 +9175,30 @@
             "warnings": [
               "minimum_wage_floor_unknown"
             ]
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 100,
+            "high": 108,
+            "expectedClose": 100,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage input unavailable"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.68,
@@ -5530,13 +9302,61 @@
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
             "proposedQuote": 200,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 184,
+              "high": 216,
+              "expectedClose": 200,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage input unavailable"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
             "committedQuote": 200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
               "talent accepted rate-quoted outreach before presentation"
             ],
-            "warnings": []
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 184,
+              "high": 216,
+              "expectedClose": 200,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "12 hour background day",
+                "non-union actor",
+                "local minimum wage input unavailable"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
           "legalFloor": {
             "talentClass": "actor",
@@ -5551,6 +9371,30 @@
             "warnings": [
               "minimum_wage_floor_unknown"
             ]
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 184,
+            "high": 216,
+            "expectedClose": 200,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage input unavailable"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
           },
           "marketHealth": {
             "score": 0.8,
@@ -5649,13 +9493,61 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 100,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 100,
+            "high": 108,
+            "expectedClose": 100,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage input unavailable"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 100,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 100,
+            "high": 108,
+            "expectedClose": 100,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage input unavailable"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         },
         {
           "talent_id": "featured_actor_unknown_wage",
@@ -5665,13 +9557,61 @@
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
           "proposedQuote": 200,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 184,
+            "high": 216,
+            "expectedClose": 200,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage input unavailable"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
           "committedQuote": 200,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
             "talent accepted rate-quoted outreach before presentation"
           ],
-          "warnings": []
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 184,
+            "high": 216,
+            "expectedClose": 200,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "12 hour background day",
+              "non-union actor",
+              "local minimum wage input unavailable"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
         }
       ],
       "clientDecisions": [
@@ -5719,6 +9659,7 @@
     "prePresentationTalentCounterCount": 4,
     "minimumWageFloorAppliedCount": 2,
     "minimumWageFloorUnknownCount": 2,
+    "expectedBookingRangeCount": 38,
     "aiHumanReviewShareOfRecommendations": 0.395,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,
     "maxAbsoluteShadowDiscretionDelta": 0.01,

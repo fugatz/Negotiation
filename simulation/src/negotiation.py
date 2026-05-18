@@ -51,6 +51,7 @@ def simulate_availability_check(project: dict, talent: dict, rec: dict) -> dict:
         "ratePresentedDuringOutreach": True,
         "talentVisibleRate": True,
         "proposedQuote": quote,
+        "proposedRange": rec.get("expected_booking_range"),
         "committedQuote": committed_quote,
         "completedBeforeClientPresentation": True,
         "clientVisible": False,
