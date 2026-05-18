@@ -31,8 +31,9 @@ ranges remain the source of authority.
 | Cohort summaries | 27 | 27 |
 | Optional cohort-guidance messages | 12 | 12 |
 | Pending holds | 2 | 2 |
-| Confirmation checkpoints | 4 | 4 |
-| Hold expirations | 4 | 4 |
+| Confirmation checkpoints | 6 | 6 |
+| Hold expirations | 6 | 6 |
+| Expired holds | 1 | 1 |
 | Budget-health warnings | 1 | 1 |
 | Scope-calibration outcomes | 2 | 2 |
 | Average actualization lift | 10.77% | 10.77% |
@@ -47,6 +48,8 @@ The prestige and minimum-wage smoke cases now resolve as `needs_scope_calibratio
 actualized-rate learning while preserving budget/scope calibration evidence for admins.
 Long-horizon pending holds now carry confirmation checkpoints and hold expiration metadata, so they remain
 seriousness-confidence signals rather than actualized-rate signals.
+The missed-checkpoint fixture now resolves as `hold_expired`, which also stays out of actualized-rate
+learning and requires fresh rate-quoted outreach before reactivation.
 
 ## Talent Guidance Boundary
 
@@ -68,6 +71,7 @@ Validation enforces:
 - unbooked outcomes do not produce actualized costs
 - scope-calibration outcomes remain admin calibration signals, not talent rate guidance
 - pending holds require confirmation mechanics before they can become firm commitments
+- expired holds require fresh rate-quoted outreach before any reactivation
 
 ## Cohort Learning
 

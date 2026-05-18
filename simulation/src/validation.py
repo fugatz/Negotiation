@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
-from .negotiation import BUDGET_DRIVEN_COMMODITY_WARNING, SCOPE_CALIBRATION_WARNING
+from .negotiation import BUDGET_DRIVEN_COMMODITY_WARNING, HOLD_EXPIRED_WARNING, SCOPE_CALIBRATION_WARNING
 from .policy_config import load_policy_config
-from .statuses import BOOKED_WITH_MARKET_HEALTH_WARNING, NEEDS_SCOPE_CALIBRATION, is_booked_status
+from .statuses import BOOKED_WITH_MARKET_HEALTH_WARNING, HOLD_EXPIRED, NEEDS_SCOPE_CALIBRATION, is_booked_status
 
 
 def _recommendations(trace: dict) -> list[dict]:
@@ -550,6 +550,29 @@ def validate_report(report: dict) -> dict:
                     "pending_hold_expiration_missing",
                     f"{trace['projectId']} / {decision['talent_id']}",
                     "pending holds must expire without confirmation",
+                )
+            if decision["status"] == HOLD_EXPIRED:
+                hold = decision.get("hold_management", {})
+                _check(
+                    HOLD_EXPIRED_WARNING in decision["warnings"],
+                    failures,
+                    "hold_expired_warning_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "expired holds must include the explicit warning label",
+                )
+                _check(
+                    hold.get("state") == "expired",
+                    failures,
+                    "hold_expired_management_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "expired holds must preserve hold-management state",
+                )
+                _check(
+                    "fresh rate-quoted outreach" in hold.get("nextAction", ""),
+                    failures,
+                    "hold_expired_reactivation_rule_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "expired holds must require fresh rate-quoted outreach before reactivation",
                 )
             if decision["status"] == BOOKED_WITH_MARKET_HEALTH_WARNING:
                 _check(

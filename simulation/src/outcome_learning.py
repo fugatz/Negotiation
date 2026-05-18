@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from .common import money
-from .statuses import NEEDS_SCOPE_CALIBRATION, is_booked_status
+from .statuses import HOLD_EXPIRED, NEEDS_SCOPE_CALIBRATION, is_booked_status
 
 
 GUIDANCE_AUTHORITY = "guidance_only"
@@ -109,6 +109,8 @@ def _admin_notes(status: str, range_state: str, events: list[str]) -> list[str]:
         return ["Budget gap before booking; use as client budget calibration signal, not an automatic talent rate cut."]
     if status == NEEDS_SCOPE_CALIBRATION:
         return ["Scope calibration required; client budget, usage, schedule, or opportunity framing does not yet support evaluated talent at locked rates."]
+    if status == HOLD_EXPIRED:
+        return ["Long-horizon hold expired after missed confirmation; require fresh rate-quoted outreach before reactivation."]
     if status == "pending_hold":
         return ["Hold did not become an actualized outcome; keep it in seriousness-confidence data."]
     if status == "tentative":

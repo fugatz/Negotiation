@@ -1,5 +1,5 @@
 {
-  "version": "phase-3-confirmation-mechanics-v1",
+  "version": "phase-3-hold-expiration-v1",
   "admin_governance": {
     "mode": "launch_admin_approval",
     "approval_required": true,

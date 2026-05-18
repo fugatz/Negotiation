@@ -74,6 +74,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - `booked_with_market_health_warning` outcomes for budget-driven commodity booking paths
 - `needs_scope_calibration` outcomes when all evaluated talent exceed client capacity
 - long-horizon confirmation checkpoints, hold expiration, and firm-hold requirements
+- `hold_expired` outcomes when a client misses a confirmation checkpoint
 - pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas
 - upstream-score placeholders for actor readiness, talent reliability, and client trust

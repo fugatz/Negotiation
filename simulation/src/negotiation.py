@@ -4,6 +4,7 @@ from .common import money
 from .statuses import (
     BOOKED,
     BOOKED_WITH_MARKET_HEALTH_WARNING,
+    HOLD_EXPIRED,
     NEEDS_SCOPE_CALIBRATION,
     is_booked_status,
 )
@@ -11,9 +12,10 @@ from .timing import classify_timing
 
 
 BUDGET_DRIVEN_COMMODITY_WARNING = "budget-driven commodity booking risk"
+HOLD_EXPIRED_WARNING = "long-horizon hold expired"
 SCOPE_CALIBRATION_WARNING = "scope calibration required"
 MARKET_HEALTH_RISK_FLAGS = {"price_led_recommendation_risk", "race_to_bottom_risk"}
-NON_SCOPE_CALIBRATION_STATUSES = {"pending_hold", "tentative"}
+NON_SCOPE_CALIBRATION_STATUSES = {HOLD_EXPIRED, "pending_hold", "tentative"}
 
 
 def client_capacity(project: dict) -> int:
@@ -98,6 +100,17 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
         )
     ):
         hold_management = build_hold_management(project, rec)
+        if project.get("confirmation_status") == "missed_checkpoint":
+            hold_management = expire_hold_management(hold_management)
+            return {
+                "talent_id": talent["id"],
+                "status": HOLD_EXPIRED,
+                "locked_quote": quote,
+                "client_capacity": capacity,
+                "events": events + hold_management["events"],
+                "warnings": warnings + [HOLD_EXPIRED_WARNING],
+                "hold_management": hold_management,
+            }
         return {
             "talent_id": talent["id"],
             "status": "pending_hold",
@@ -157,6 +170,18 @@ def build_hold_management(project: dict, rec: dict) -> dict:
         "nextAction": "collect confirmation signals before firm hold",
         "events": events,
     }
+
+
+def expire_hold_management(hold_management: dict) -> dict:
+    expired = dict(hold_management)
+    expired["state"] = "expired"
+    expired["expiredReason"] = "missed confirmation checkpoint"
+    expired["nextAction"] = "release hold and require fresh rate-quoted outreach before reactivation"
+    expired["events"] = list(hold_management["events"]) + [
+        "confirmation checkpoint missed",
+        "soft hold released; fresh rate-quoted outreach required before reactivation",
+    ]
+    return expired
 
 
 def _candidate_strength(candidate: dict) -> float:

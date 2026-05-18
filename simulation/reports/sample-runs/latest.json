@@ -1,5 +1,5 @@
 {
-  "policy": "phase-3-confirmation-mechanics-v1",
+  "policy": "phase-3-hold-expiration-v1",
   "policyConfigPath": "simulation/config/policy.json",
   "traces": [
     {
@@ -10949,6 +10949,1220 @@
       ]
     },
     {
+      "project": "Long-Horizon Missed Checkpoint",
+      "projectId": "long_horizon_missed_checkpoint",
+      "client": "High-Trust Repeat Client",
+      "budget": 12500,
+      "projectContext": {
+        "allInBudget": 100000,
+        "projectSizeBand": "mid",
+        "projectType": "commercial_campaign",
+        "market": "los_angeles",
+        "talentClassScope": "production_talent"
+      },
+      "budgetType": "flexible",
+      "leadTimeDays": 120,
+      "timingHorizon": "long_horizon",
+      "eligibleTalentCount": 8,
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Emerging Beauty Photographer",
+          "talentClass": "production_talent",
+          "role": "photographer",
+          "lane": "Best Fit",
+          "quote": 8700,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.893,
+          "creativeFit": 0.946,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.944,
+          "availabilityCheck": {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 8700,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 7500,
+              "high": 9900,
+              "expectedClose": 8700,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 8700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 7500,
+              "high": 9900,
+              "expectedClose": 8700,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 5200,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 5200,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 7500,
+            "high": 9900,
+            "expectedClose": 8700,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep beauty experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep beauty experience and a strong creative match for the brief.",
+                "The portfolio shows meaningful experience in this kind of work.",
+                "Production fit is strong across availability, scope, and schedule needs."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "nonzero AI discretion proposal"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": "director",
+          "lane": "Viable Option",
+          "quote": 13200,
+          "clientVisiblePriceState": "likely workable with scoped flexibility",
+          "overallScore": 0.809,
+          "creativeFit": 0.736,
+          "priceFit": 0.78,
+          "acceptanceProbability": 0.859,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 13200,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 15000,
+              "expectedClose": 13200,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 13200,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11400,
+              "high": 15000,
+              "expectedClose": 13200,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15000,
+            "expectedClose": 13200,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.71,
+            "flags": [
+              "idle_access_without_discounting"
+            ]
+          },
+          "timing": {
+            "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Relevant beauty background with a clear connection to the brief.",
+              "reasons": [
+                "Relevant beauty background with a clear connection to the brief.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": "dp",
+          "lane": "Budget-Confident",
+          "quote": 7400,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.789,
+          "creativeFit": 0.536,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.878,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 7400,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6400,
+              "high": 8400,
+              "expectedClose": 7400,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 7400,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6400,
+              "high": 8400,
+              "expectedClose": 7400,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6400,
+            "high": 8400,
+            "expectedClose": 7400,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "talentClass": "production_talent",
+          "role": "editor",
+          "lane": "Viable Option",
+          "quote": 13800,
+          "clientVisiblePriceState": "likely workable with scoped flexibility",
+          "overallScore": 0.778,
+          "creativeFit": 0.716,
+          "priceFit": 0.78,
+          "acceptanceProbability": 0.831,
+          "availabilityCheck": {
+            "talent_id": "luxury_fashion_editor",
+            "status": "accepted_after_scope_confirmation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 13800,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 11900,
+              "high": 15700,
+              "expectedClose": 13800,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 13800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent requested usage confirmation before quote commitment"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11900,
+              "high": 15700,
+              "expectedClose": 13800,
+              "currency": "USD",
+              "rangeWidth": 0.14,
+              "assumptionsIncluded": [
+                "long-horizon soft hold assumed",
+                "confirmation checkpoint missed",
+                "campaign usage assumed",
+                "exclusivity included in current scope"
+              ],
+              "actualizationTriggers": [
+                "additional revision round requested",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 9000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 9000,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11900,
+            "high": 15700,
+            "expectedClose": 13800,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "long_horizon",
+            "platformTrustTier": "high_repeat",
+            "rateDelta": 0.0,
+            "confidenceDelta": -0.01,
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
+            "reason": "90+ days out, but high platform trust makes the project materially more credible"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "upstream client trust metric"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+              "reasons": [
+                "The 90+ day horizon only slightly lowers confidence because this is a high-trust repeat client.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [],
+            "matureAutonomyCandidate": true,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 8700,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 7500,
+            "high": 9900,
+            "expectedClose": 8700,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 8700,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 7500,
+            "high": 9900,
+            "expectedClose": 8700,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 13200,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15000,
+            "expectedClose": 13200,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 13200,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 11400,
+            "high": 15000,
+            "expectedClose": 13200,
+            "currency": "USD",
+            "rangeWidth": 0.14,
+            "assumptionsIncluded": [
+              "long-horizon soft hold assumed",
+              "confirmation checkpoint missed",
+              "campaign usage assumed",
+              "exclusivity included in current scope"
+            ],
+            "actualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "emerging_beauty_photographer",
+          "status": "hold_expired",
+          "locked_quote": 8700,
+          "client_capacity": 14500,
+          "events": [
+            "client evaluated locked presentation quote",
+            "long-horizon project needs confirmation window",
+            "confirmation checkpoint scheduled 60 days before start",
+            "soft hold expires in 21 days without confirmation",
+            "confirmation checkpoint missed",
+            "soft hold released; fresh rate-quoted outreach required before reactivation"
+          ],
+          "warnings": [
+            "long-horizon hold expired"
+          ],
+          "hold_management": {
+            "state": "expired",
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "projectLeadTimeDays": 120,
+            "projectCommitmentConfidence": 0.72,
+            "firmHoldMinimumConfidence": 0.8,
+            "checkpointDaysBeforeStart": 60,
+            "softHoldExpiresInDays": 21,
+            "expiresWithoutConfirmation": true,
+            "firmHoldRequires": [
+              "confirmed shoot window",
+              "approved scope assumptions",
+              "budget owner confirmation"
+            ],
+            "nextAction": "release hold and require fresh rate-quoted outreach before reactivation",
+            "events": [
+              "long-horizon project needs confirmation window",
+              "confirmation checkpoint scheduled 60 days before start",
+              "soft hold expires in 21 days without confirmation",
+              "confirmation checkpoint missed",
+              "soft hold released; fresh rate-quoted outreach required before reactivation"
+            ],
+            "expiredReason": "missed confirmation checkpoint"
+          }
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "hold_expired",
+          "locked_quote": 13200,
+          "client_capacity": 14500,
+          "events": [
+            "client evaluated locked presentation quote",
+            "long-horizon project needs confirmation window",
+            "confirmation checkpoint scheduled 60 days before start",
+            "soft hold expires in 21 days without confirmation",
+            "confirmation checkpoint missed",
+            "soft hold released; fresh rate-quoted outreach required before reactivation"
+          ],
+          "warnings": [
+            "long-horizon hold expired"
+          ],
+          "hold_management": {
+            "state": "expired",
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "projectLeadTimeDays": 120,
+            "projectCommitmentConfidence": 0.72,
+            "firmHoldMinimumConfidence": 0.8,
+            "checkpointDaysBeforeStart": 60,
+            "softHoldExpiresInDays": 21,
+            "expiresWithoutConfirmation": true,
+            "firmHoldRequires": [
+              "confirmed shoot window",
+              "approved scope assumptions",
+              "budget owner confirmation"
+            ],
+            "nextAction": "release hold and require fresh rate-quoted outreach before reactivation",
+            "events": [
+              "long-horizon project needs confirmation window",
+              "confirmation checkpoint scheduled 60 days before start",
+              "soft hold expires in 21 days without confirmation",
+              "confirmation checkpoint missed",
+              "soft hold released; fresh rate-quoted outreach required before reactivation"
+            ],
+            "expiredReason": "missed confirmation checkpoint"
+          }
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 0,
+          "actualizedRecordCount": 0,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "emerging_beauty_photographer",
+            "status": "hold_expired",
+            "cohortSignals": {
+              "role": "photographer",
+              "category": "beauty",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "high_repeat"
+            },
+            "lockedQuote": 8700,
+            "expectedRange": {
+              "low": 7500,
+              "high": 9900,
+              "expectedClose": 8700,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Long-horizon hold expired after missed confirmation; require fresh rate-quoted outreach before reactivation."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "hold_expired",
+            "cohortSignals": {
+              "role": "director",
+              "category": "beauty",
+              "projectSizeBand": "mid",
+              "market": "los_angeles",
+              "clientTrustTier": "high_repeat"
+            },
+            "lockedQuote": 13200,
+            "expectedRange": {
+              "low": 11400,
+              "high": 15000,
+              "expectedClose": 13200,
+              "currency": "USD"
+            },
+            "actualizedCost": null,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "additional revision round requested",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "not_actualized",
+            "varianceFromExpectedRange": null,
+            "adminCalibrationNotes": [
+              "Long-horizon hold expired after missed confirmation; require fresh rate-quoted outreach before reactivation."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
+      "outcome": "hold_expired",
+      "warnings": [
+        "long-horizon hold expired"
+      ]
+    },
+    {
       "project": "Race-to-Bottom Social Content Test",
       "projectId": "race_to_bottom_social_test",
       "client": "Firm-Budget Producer",
@@ -13873,7 +15087,7 @@
         {
           "dimension": "role",
           "value": "director",
-          "recordCount": 9,
+          "recordCount": 10,
           "bookedRecordCount": 3,
           "actualizedRecordCount": 3,
           "actualizedAboveExpectedRangeCount": 1,
@@ -13975,7 +15189,7 @@
         {
           "dimension": "role",
           "value": "photographer",
-          "recordCount": 4,
+          "recordCount": 5,
           "bookedRecordCount": 3,
           "actualizedRecordCount": 3,
           "actualizedAboveExpectedRangeCount": 0,
@@ -14055,7 +15269,7 @@
         {
           "dimension": "category",
           "value": "beauty",
-          "recordCount": 6,
+          "recordCount": 8,
           "bookedRecordCount": 4,
           "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
@@ -14234,7 +15448,7 @@
         {
           "dimension": "projectSizeBand",
           "value": "mid",
-          "recordCount": 5,
+          "recordCount": 7,
           "bookedRecordCount": 1,
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 0,
@@ -14362,7 +15576,7 @@
         {
           "dimension": "market",
           "value": "los_angeles",
-          "recordCount": 11,
+          "recordCount": 13,
           "bookedRecordCount": 2,
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
@@ -14439,7 +15653,7 @@
         {
           "dimension": "clientTrustTier",
           "value": "high_repeat",
-          "recordCount": 6,
+          "recordCount": 8,
           "bookedRecordCount": 4,
           "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
@@ -14542,23 +15756,23 @@
     }
   },
   "metrics": {
-    "scenarioCount": 12,
+    "scenarioCount": 13,
     "bookedCount": 8,
-    "bookingRate": 0.667,
-    "longHorizonScenarioCount": 2,
-    "behaviorNudgeShareOfRecommendations": 0.826,
-    "timingNudgeShareOfRecommendations": 0.348,
-    "aiRationaleCount": 46,
-    "brandFacingRationaleCount": 46,
+    "bookingRate": 0.615,
+    "longHorizonScenarioCount": 3,
+    "behaviorNudgeShareOfRecommendations": 0.84,
+    "timingNudgeShareOfRecommendations": 0.4,
+    "aiRationaleCount": 50,
+    "brandFacingRationaleCount": 50,
     "brandFacingRationaleLeakageCount": 0,
     "talentFacingJobSpecificRationaleCount": 0,
-    "adminApprovalRequiredCount": 46,
-    "matureAutonomyCandidateCount": 20,
-    "availabilityCheckCount": 46,
+    "adminApprovalRequiredCount": 50,
+    "matureAutonomyCandidateCount": 23,
+    "availabilityCheckCount": 50,
     "prePresentationTalentCounterCount": 4,
     "minimumWageFloorAppliedCount": 2,
     "minimumWageFloorUnknownCount": 2,
-    "expectedBookingRangeCount": 46,
+    "expectedBookingRangeCount": 50,
     "actualizedRecordCount": 13,
     "actualizedAboveExpectedRangeCount": 2,
     "talentGuidanceCount": 8,
@@ -14566,23 +15780,25 @@
     "scopeCalibrationCount": 2,
     "scopeCalibrationWarningCount": 2,
     "pendingHoldCount": 2,
-    "confirmationCheckpointCount": 4,
-    "holdExpirationCount": 4,
+    "confirmationCheckpointCount": 6,
+    "holdExpirationCount": 6,
+    "holdExpiredCount": 1,
+    "holdExpiredWarningCount": 1,
     "averageActualizationLift": 0.1077,
-    "aiHumanReviewShareOfRecommendations": 0.348,
-    "averageAbsoluteShadowDiscretionDelta": 0.0013,
+    "aiHumanReviewShareOfRecommendations": 0.34,
+    "averageAbsoluteShadowDiscretionDelta": 0.0014,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
-      "admin pricing rationale flagged for review": 16,
+      "admin pricing rationale flagged for review": 17,
       "long-horizon project without strong client trust": 4,
       "market-health guardrail": 3,
       "minimum wage floor unknown": 2,
-      "nonzero AI discretion proposal": 6,
+      "nonzero AI discretion proposal": 7,
       "outside stated budget": 17,
       "pre-presentation talent counter": 4
     },
     "marketHealthFlagCounts": {
-      "idle_access_without_discounting": 7,
+      "idle_access_without_discounting": 8,
       "race_to_bottom_risk": 3,
       "specialist_value_protected": 11
     },
@@ -14590,6 +15806,7 @@
       "budget-driven commodity booking risk": 1,
       "final quote exceeded client capacity": 5,
       "long-horizon commitment uncertainty": 2,
+      "long-horizon hold expired": 1,
       "minimum_wage_floor_unknown": 1,
       "pre-presentation counter increased locked quote": 1,
       "scope calibration required": 2
@@ -14599,7 +15816,7 @@
   },
   "validation": {
     "status": "pass",
-    "checkedRecommendationCount": 46,
+    "checkedRecommendationCount": 50,
     "failureCount": 0,
     "warningCount": 2,
     "failures": [],

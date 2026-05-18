@@ -1,6 +1,6 @@
 {
   "extends": "../policy.json",
-  "version": "phase-3-confirmation-mechanics-stricter-market-health-v1",
+  "version": "phase-3-hold-expiration-stricter-market-health-v1",
   "market_health": {
     "review_score_threshold": 0.68,
     "ranking_penalties": {

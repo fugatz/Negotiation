@@ -266,6 +266,36 @@
     ]
   },
   {
+    "id": "long_horizon_missed_checkpoint",
+    "name": "Long-Horizon Missed Checkpoint",
+    "category": "beauty",
+    "subcategory": "beauty",
+    "budget": 12500,
+    "all_in_budget": 100000,
+    "project_size_band": "mid",
+    "project_type": "commercial_campaign",
+    "market": "los_angeles",
+    "budget_type": "flexible",
+    "talent_class_scope": "production_talent",
+    "client_id": "high_trust_repeat_client",
+    "lead_time_days": 120,
+    "project_commitment_confidence": 0.72,
+    "confirmation_status": "missed_checkpoint",
+    "schedule_urgency": 0.04,
+    "usage_scope": "campaign",
+    "creative_specificity": 0.82,
+    "prestige_value": 0.48,
+    "client_flexibility": 0.16,
+    "booking_intent_strength": 0.72,
+    "requires_exclusivity": true,
+    "pricing_assumptions": [
+      "long-horizon soft hold assumed",
+      "confirmation checkpoint missed",
+      "campaign usage assumed",
+      "exclusivity included in current scope"
+    ]
+  },
+  {
     "id": "race_to_bottom_social_test",
     "name": "Race-to-Bottom Social Content Test",
     "category": "social",

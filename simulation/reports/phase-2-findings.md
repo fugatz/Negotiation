@@ -25,6 +25,7 @@ The current system protects against several core failure modes:
 - specialist value remains visible even when budget fit is weak
 - project-size context now separates $500k+ large-scale and $1M+ flagship productions
 - long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
+- missed long-horizon checkpoints release holds and require fresh rate-quoted outreach before reactivation
 - race-to-bottom candidates are flagged and penalized in ranking
 
 The simulator also exposes policy work still needed before shadow-mode integration:
@@ -35,27 +36,28 @@ The simulator also exposes policy work still needed before shadow-mode integrati
   booking failures
 - pre-presentation talent counters are now structurally safe, but repeated counters need to feed future
   reliability inputs
-- long-horizon projects still need follow-up stress tests for missed checkpoints and later scope changes
+- long-horizon projects still need follow-up stress tests for late scope changes after confirmation
 - admin review load is intentionally high in launch mode and needs exception-based narrowing later
 
 ## Current Base Run
 
-Policy: `phase-3-confirmation-mechanics-v1`
+Policy: `phase-3-hold-expiration-v1`
 
 | Metric | Result |
 | --- | ---: |
 | Validation status | pass |
-| Scenario count | 12 |
+| Scenario count | 13 |
 | Booked scenarios | 8 |
-| Booking rate | 66.7% |
-| Long-horizon scenarios | 2 |
+| Booking rate | 61.5% |
+| Long-horizon scenarios | 3 |
 | Pending holds | 2 |
-| Confirmation checkpoints | 4 |
-| Hold expirations | 4 |
-| Availability checks | 46 |
+| Confirmation checkpoints | 6 |
+| Hold expirations | 6 |
+| Expired holds | 1 |
+| Availability checks | 50 |
 | Pre-presentation talent counters | 4 |
-| Admin approval required | 46 |
-| Mature autonomy candidates | 20 |
+| Admin approval required | 50 |
+| Mature autonomy candidates | 23 |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 2 |
 | Brand-facing leakage count | 0 |
@@ -74,6 +76,7 @@ Policy: `phase-3-confirmation-mechanics-v1`
 | Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
 | Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work gets no soft hold until confirmation signals arrive. | Healthy: weak trust creates a tighter hold path without changing price. |
 | Long-Horizon Beauty Campaign | pending hold | High-trust repeat client gets a 21-day soft hold and a 60-day-before-start checkpoint. | Healthy: trust offsets uncertainty without granting unlimited calendar hold. |
+| Long-Horizon Missed Checkpoint | hold expired | High-trust soft hold expires after the client misses confirmation. | Healthy: expired holds require fresh rate-quoted outreach before reactivation. |
 | Bad-Faith Repricing Stress Test | booked | Volatile talent counters before client presentation; client only sees locked quote. | Structurally fixed: now track this as a pre-presentation counter, not post-interest repricing. |
 | Race-to-Bottom Social Content Test | booked with market-health warning | Higher-fit options exceed capacity; low-rate option can still book in stress path. | Improved: conversion remains possible, but the outcome is no longer treated as a clean marketplace win. |
 | Background Extra Minimum Wage Smoke Test | needs scope calibration | Local minimum wage lifts the effective floor above the offered day rate. | Healthy: legal/compliance floors can force budget or scope recalibration. |
@@ -134,13 +137,15 @@ Policy implication:
 
 The exploratory food brief from a weak-trust client becomes pending hold with no soft hold until
 confirmation signals arrive. The long-horizon beauty campaign from a high-trust repeat client also stays
-pending hold, but receives a 21-day soft hold and a 60-day-before-start checkpoint.
+pending hold, but receives a 21-day soft hold and a 60-day-before-start checkpoint. A missed-checkpoint
+fixture now expires the soft hold and requires fresh rate-quoted outreach before reactivation.
 
 Policy implication:
 
 - client trust should strongly offset long-horizon uncertainty
 - even high-trust long-horizon work should not become an unconditional firm hold
 - pending holds must define checkpoint timing, expiration, and what turns them into firm holds
+- missed checkpoints should release the hold rather than silently preserving old rates
 
 ### 6. Budget-Driven Commodity Wins Are Now Labeled
 
@@ -220,8 +225,8 @@ Recommended revision:
 
 ### Long-Horizon Follow-Through Risk
 
-Long-horizon work now has confirmation mechanics, but the simulator does not yet test what happens when a
-client misses a checkpoint, changes scope, or later becomes more serious.
+Long-horizon work now has confirmation mechanics and a missed-checkpoint expiration path, but the simulator
+does not yet test what happens when a client changes scope after confirmation or becomes more serious late.
 
 Why it matters:
 
@@ -231,7 +236,6 @@ Why it matters:
 
 Recommended revision:
 
-- add missed-checkpoint and late-confirmation fixtures
 - test high-trust clients who later change dates, usage, or scope
 - decide whether expired holds require a fresh rate-quoted outreach pass
 
@@ -267,7 +271,7 @@ Recommended additions:
 - many low-rate candidates competing against one strong specialist
 - repeated firm-budget clients whose only successful bookings are low-rate options
 - prestige clients with repeated low-cash asks and weak follow-through
-- high-trust long-horizon clients who later cancel or change scope
+- high-trust long-horizon clients who later cancel or change scope after confirmation
 - new long-horizon clients who become real after confirmation milestones
 - pre-presentation counter patterns across multiple projects
 - legitimate post-presentation renegotiation after client-side scope, usage, travel, exclusivity, or date
@@ -295,4 +299,4 @@ Exit criteria status:
 Recommended next move:
 
 - add repeated-client stress fixtures to see whether warnings cluster around the same buyer behavior
-- add missed-checkpoint long-horizon fixtures
+- add late-scope-change long-horizon fixtures

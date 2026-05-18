@@ -10,6 +10,7 @@ from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_beh
 from .common import FIXTURE_DIR
 from .negotiation import (
     BUDGET_DRIVEN_COMMODITY_WARNING,
+    HOLD_EXPIRED_WARNING,
     SCOPE_CALIBRATION_WARNING,
     apply_availability_commitment,
     apply_budget_health_review,
@@ -23,7 +24,7 @@ from .policies import apply_nudges, build_slate, client_visible_price_state, ove
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
 from .ranges import expected_booking_range, project_context
 from .scoring import score_talent
-from .statuses import NEEDS_SCOPE_CALIBRATION, is_booked_status
+from .statuses import HOLD_EXPIRED, NEEDS_SCOPE_CALIBRATION, is_booked_status
 from .timing import timing_nudge
 from .validation import validate_report
 
@@ -212,13 +213,18 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         1
         for trace in traces
         for decision in trace["clientDecisions"]
-        if decision.get("hold_management", {}).get("state") == "pending_confirmation"
+        if decision.get("hold_management", {}).get("checkpointDaysBeforeStart") is not None
     )
     hold_expiration_count = sum(
         1
         for trace in traces
         for decision in trace["clientDecisions"]
         if decision.get("hold_management", {}).get("expiresWithoutConfirmation")
+    )
+    hold_expired_count = sum(1 for trace in traces if trace["outcome"] == HOLD_EXPIRED)
+    hold_expired_warning_count = sum(
+        warning == HOLD_EXPIRED_WARNING
+        for warning in warnings
     )
     behavior_changed = 0
     timing_changed = 0
@@ -329,6 +335,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "pendingHoldCount": pending_hold_count,
         "confirmationCheckpointCount": confirmation_checkpoint_count,
         "holdExpirationCount": hold_expiration_count,
+        "holdExpiredCount": hold_expired_count,
+        "holdExpiredWarningCount": hold_expired_warning_count,
         "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),

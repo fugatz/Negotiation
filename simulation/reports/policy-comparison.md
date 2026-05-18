@@ -4,8 +4,8 @@ Generated from dry runs on May 18, 2026.
 
 Compared policies:
 
-- Base: `phase-3-confirmation-mechanics-v1`
-- Variant: `phase-3-confirmation-mechanics-stricter-market-health-v1`
+- Base: `phase-3-hold-expiration-v1`
+- Variant: `phase-3-hold-expiration-stricter-market-health-v1`
 
 Source commands:
 
@@ -24,6 +24,8 @@ All-budget-gap paths now become `needs_scope_calibration`, so structurally under
 separated from ordinary candidate-level budget gaps.
 Long-horizon pending holds now include confirmation checkpoints, hold expiration, and firm-hold
 requirements.
+Missed checkpoints now produce `hold_expired`, which releases the hold and requires fresh rate-quoted
+outreach before reactivation.
 
 The interpretation is important:
 
@@ -46,18 +48,19 @@ All other config inherits from the base policy.
 | Metric | Base | Stricter | Read |
 | --- | ---: | ---: | --- |
 | Validation | pass | pass | No policy validity regressions. |
-| Scenarios | 12 | 12 | Same fixture set. |
+| Scenarios | 13 | 13 | Same fixture set. |
 | Booked scenarios | 8 | 8 | Stricter ranking did not reduce booking count. |
-| Booking rate | 66.7% | 66.7% | No aggregate conversion change in this fixture set. |
-| Availability checks | 46 | 46 | Same recommendation volume. |
+| Booking rate | 61.5% | 61.5% | New missed-checkpoint fixture lowers aggregate conversion. |
+| Availability checks | 50 | 50 | Same recommendation volume. |
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 34.8% | 37.0% | Stricter policy slightly increases admin attention. |
-| Mature autonomy candidates | 20 | 20 | No autonomy readiness gain yet. |
+| Human review share | 34.0% | 36.0% | Stricter policy slightly increases admin attention. |
+| Mature autonomy candidates | 23 | 23 | No autonomy readiness gain yet. |
 | Pending holds | 2 | 2 | Long-horizon work stays out of normal booking flow. |
-| Confirmation checkpoints | 4 | 4 | Each pending-hold decision carries a checkpoint plan. |
-| Hold expirations | 4 | 4 | Pending holds expire without confirmation signals. |
+| Confirmation checkpoints | 6 | 6 | Pending and expired holds carry checkpoint plans. |
+| Hold expirations | 6 | 6 | Pending and expired holds expire without confirmation signals. |
+| Expired holds | 1 | 1 | Missed checkpoint fixture releases the hold. |
 | Budget-health warnings | 1 | 1 | Race-to-bottom stress booking is now labeled rather than treated as clean. |
 | Scope-calibration outcomes | 2 | 2 | Prestige and compliance-floor cases require budget/scope recalibration. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
@@ -103,7 +106,8 @@ Recommended follow-up:
 
 Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, prestige editorial, long-horizon, minimum
 wage, and bad-faith repricing scenarios have the same high-level outcomes under both policies. Prestige
-and the minimum-wage smoke case now resolve as `needs_scope_calibration` under both policies.
+and the minimum-wage smoke case resolve as `needs_scope_calibration`; the missed-checkpoint fixture
+resolves as `hold_expired` under both policies.
 
 Read:
 
@@ -124,9 +128,9 @@ phase-3-warning-cluster-stress-v1
 
 Suggested changes:
 
-- inherit from `phase-3-confirmation-mechanics-stricter-market-health-v1`
+- inherit from `phase-3-hold-expiration-stricter-market-health-v1`
 - add repeated-client stress fixtures for budget-health warnings and scope calibration
-- add missed-checkpoint long-horizon fixtures
+- add late-scope-change long-horizon fixtures after confirmation
 - define when `needs_scope_calibration` becomes budget education, scope reduction, or client-side budget revision
 - track repeated warning patterns by client and project type
 - keep race-to-bottom ranking penalties at the stricter level until more stress data exists
