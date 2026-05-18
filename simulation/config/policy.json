@@ -1,5 +1,5 @@
 {
-  "version": "phase-3-scope-calibration-v1",
+  "version": "phase-3-confirmation-mechanics-v1",
   "admin_governance": {
     "mode": "launch_admin_approval",
     "approval_required": true,
@@ -44,6 +44,14 @@
         "min_trust_score": 0.85,
         "long_horizon_confidence_delta": -0.01,
         "hold_policy": "soft hold with scheduled confirmation checkpoint",
+        "checkpoint_days_before_start": 60,
+        "soft_hold_expires_in_days": 21,
+        "firm_hold_min_confidence": 0.8,
+        "firm_hold_requires": [
+          "confirmed shoot window",
+          "approved scope assumptions",
+          "budget owner confirmation"
+        ],
         "reason": "90+ days out, but high platform trust makes the project materially more credible"
       },
       "known": {
@@ -51,6 +59,14 @@
         "min_trust_score": 0.7,
         "long_horizon_confidence_delta": -0.04,
         "hold_policy": "confirmation checkpoint before firm hold",
+        "checkpoint_days_before_start": 45,
+        "soft_hold_expires_in_days": 14,
+        "firm_hold_min_confidence": 0.84,
+        "firm_hold_requires": [
+          "confirmed shoot window",
+          "approved scope assumptions",
+          "budget owner confirmation"
+        ],
         "reason": "90+ days out with some platform history; seriousness confidence modestly reduced"
       },
       "limited_history": {
@@ -58,6 +74,15 @@
         "min_trust_score": 0.0,
         "long_horizon_confidence_delta": -0.06,
         "hold_policy": "short hold only after confirmation milestone",
+        "checkpoint_days_before_start": 30,
+        "soft_hold_expires_in_days": 7,
+        "firm_hold_min_confidence": 0.88,
+        "firm_hold_requires": [
+          "confirmed shoot window",
+          "approved scope assumptions",
+          "budget owner confirmation",
+          "confirmation deposit or equivalent commitment"
+        ],
         "reason": "90+ days out with limited platform history; seriousness confidence reduced"
       },
       "new_or_unproven": {
@@ -65,6 +90,15 @@
         "min_trust_score": 0.0,
         "long_horizon_confidence_delta": -0.09,
         "hold_policy": "no firm hold without stronger confirmation",
+        "checkpoint_days_before_start": 21,
+        "soft_hold_expires_in_days": 0,
+        "firm_hold_min_confidence": 0.9,
+        "firm_hold_requires": [
+          "confirmed shoot window",
+          "approved scope assumptions",
+          "budget owner confirmation",
+          "confirmation deposit or equivalent commitment"
+        ],
         "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
       }
     }

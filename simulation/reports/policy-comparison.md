@@ -4,8 +4,8 @@ Generated from dry runs on May 18, 2026.
 
 Compared policies:
 
-- Base: `phase-3-scope-calibration-v1`
-- Variant: `phase-3-scope-calibration-stricter-market-health-v1`
+- Base: `phase-3-confirmation-mechanics-v1`
+- Variant: `phase-3-confirmation-mechanics-stricter-market-health-v1`
 
 Source commands:
 
@@ -22,6 +22,8 @@ can still close in the race-to-bottom stress path when higher-quality options ex
 new budget-health layer now labels that close as `booked_with_market_health_warning`.
 All-budget-gap paths now become `needs_scope_calibration`, so structurally underfunded projects are
 separated from ordinary candidate-level budget gaps.
+Long-horizon pending holds now include confirmation checkpoints, hold expiration, and firm-hold
+requirements.
 
 The interpretation is important:
 
@@ -53,6 +55,9 @@ All other config inherits from the base policy.
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
 | Human review share | 34.8% | 37.0% | Stricter policy slightly increases admin attention. |
 | Mature autonomy candidates | 20 | 20 | No autonomy readiness gain yet. |
+| Pending holds | 2 | 2 | Long-horizon work stays out of normal booking flow. |
+| Confirmation checkpoints | 4 | 4 | Each pending-hold decision carries a checkpoint plan. |
+| Hold expirations | 4 | 4 | Pending holds expire without confirmation signals. |
 | Budget-health warnings | 1 | 1 | Race-to-bottom stress booking is now labeled rather than treated as clean. |
 | Scope-calibration outcomes | 2 | 2 | Prestige and compliance-floor cases require budget/scope recalibration. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
@@ -114,13 +119,14 @@ as sufficient.
 Recommended next policy variant:
 
 ```text
-phase-3-confirmation-mechanics-v1
+phase-3-warning-cluster-stress-v1
 ```
 
 Suggested changes:
 
-- inherit from `phase-3-scope-calibration-stricter-market-health-v1`
-- define long-horizon confirmation checkpoints and hold expiration
+- inherit from `phase-3-confirmation-mechanics-stricter-market-health-v1`
+- add repeated-client stress fixtures for budget-health warnings and scope calibration
+- add missed-checkpoint long-horizon fixtures
 - define when `needs_scope_calibration` becomes budget education, scope reduction, or client-side budget revision
 - track repeated warning patterns by client and project type
 - keep race-to-bottom ranking penalties at the stricter level until more stress data exists

@@ -89,18 +89,23 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
     capacity = client_capacity(project)
     events: list[str] = ["client evaluated locked presentation quote"]
     warnings: list[str] = []
+    confirmation = rec["timing_nudge"].get("confirmation", {})
 
     if (
         classify_timing(int(project["lead_time_days"])) == "long_horizon"
-        and project["project_commitment_confidence"] < 0.8
+        and project["project_commitment_confidence"] < float(
+            confirmation.get("firmHoldMinimumConfidence") or 0.8
+        )
     ):
+        hold_management = build_hold_management(project, rec)
         return {
             "talent_id": talent["id"],
             "status": "pending_hold",
             "locked_quote": quote,
             "client_capacity": capacity,
-            "events": events + ["long-horizon project needs confirmation window"],
+            "events": events + hold_management["events"],
             "warnings": warnings + ["long-horizon commitment uncertainty"],
+            "hold_management": hold_management,
         }
 
     if quote <= capacity and rec["acceptance_probability"] >= 0.48:
@@ -119,6 +124,38 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
         "client_capacity": capacity,
         "events": events,
         "warnings": warnings,
+    }
+
+
+def build_hold_management(project: dict, rec: dict) -> dict:
+    confirmation = rec["timing_nudge"]["confirmation"]
+    requirements = list(confirmation["firmHoldRequires"])
+    events = [
+        "long-horizon project needs confirmation window",
+        (
+            "confirmation checkpoint scheduled "
+            f"{confirmation['checkpointDaysBeforeStart']} days before start"
+        ),
+    ]
+    if confirmation["softHoldExpiresInDays"] == 0:
+        events.append("no soft hold granted until confirmation signals arrive")
+    else:
+        events.append(
+            f"soft hold expires in {confirmation['softHoldExpiresInDays']} days without confirmation"
+        )
+
+    return {
+        "state": "pending_confirmation",
+        "holdPolicy": rec["timing_nudge"]["hold_policy"],
+        "projectLeadTimeDays": int(project["lead_time_days"]),
+        "projectCommitmentConfidence": float(project["project_commitment_confidence"]),
+        "firmHoldMinimumConfidence": confirmation["firmHoldMinimumConfidence"],
+        "checkpointDaysBeforeStart": confirmation["checkpointDaysBeforeStart"],
+        "softHoldExpiresInDays": confirmation["softHoldExpiresInDays"],
+        "expiresWithoutConfirmation": confirmation["expiresWithoutConfirmation"],
+        "firmHoldRequires": requirements,
+        "nextAction": "collect confirmation signals before firm hold",
+        "events": events,
     }
 
 

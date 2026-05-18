@@ -13,8 +13,8 @@ compute the project-specific rate, include it in outreach to matched talent, and
 only from talent-approved locked rates.
 
 Admin-tweakable dry-run settings live in `simulation/config/policy.json`. The config currently owns
-timing thresholds, behavior caps, AI discretion caps, market-health review flags, ranking penalties,
-and launch approval settings.
+timing thresholds, long-horizon confirmation rules, behavior caps, AI discretion caps, market-health
+review flags, ranking penalties, and launch approval settings.
 
 ## Run
 
@@ -73,6 +73,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - market-health flags for race-to-bottom and price-led recommendation risk
 - `booked_with_market_health_warning` outcomes for budget-driven commodity booking paths
 - `needs_scope_calibration` outcomes when all evaluated talent exceed client capacity
+- long-horizon confirmation checkpoints, hold expiration, and firm-hold requirements
 - pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas
 - upstream-score placeholders for actor readiness, talent reliability, and client trust

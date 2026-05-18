@@ -1,5 +1,5 @@
 {
-  "policy": "phase-3-scope-calibration-v1",
+  "policy": "phase-3-confirmation-mechanics-v1",
   "policyConfigPath": "simulation/config/policy.json",
   "traces": [
     {
@@ -157,6 +157,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -355,6 +364,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -553,6 +571,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -760,6 +787,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -1259,6 +1295,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -1462,6 +1507,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -1659,6 +1713,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -1856,6 +1919,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -2387,6 +2459,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -2593,6 +2674,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -2793,6 +2883,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -2993,6 +3092,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -3528,6 +3636,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -3727,6 +3844,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -3927,6 +4053,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -4127,6 +4262,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -4677,6 +4821,15 @@
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
@@ -4876,6 +5029,15 @@
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
@@ -5075,6 +5237,15 @@
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
@@ -5275,6 +5446,15 @@
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 14 days; extreme platform compression premium"
           },
           "behavior": {
@@ -5829,6 +6009,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -6031,6 +6220,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -6231,6 +6429,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -6430,6 +6637,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -6963,6 +7179,21 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.09,
             "holdPolicy": "no firm hold without stronger confirmation",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 21,
+              "softHoldExpiresInDays": 0,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation",
+                "confirmation deposit or equivalent commitment"
+              ],
+              "platformTrustTier": "new_or_unproven"
+            },
             "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
@@ -7166,6 +7397,21 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.09,
             "holdPolicy": "no firm hold without stronger confirmation",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 21,
+              "softHoldExpiresInDays": 0,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation",
+                "confirmation deposit or equivalent commitment"
+              ],
+              "platformTrustTier": "new_or_unproven"
+            },
             "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
@@ -7374,6 +7620,21 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.09,
             "holdPolicy": "no firm hold without stronger confirmation",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 21,
+              "softHoldExpiresInDays": 0,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation",
+                "confirmation deposit or equivalent commitment"
+              ],
+              "platformTrustTier": "new_or_unproven"
+            },
             "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
@@ -7580,6 +7841,21 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.09,
             "holdPolicy": "no firm hold without stronger confirmation",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 21,
+              "softHoldExpiresInDays": 0,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation",
+                "confirmation deposit or equivalent commitment"
+              ],
+              "platformTrustTier": "new_or_unproven"
+            },
             "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
           },
           "behavior": {
@@ -7803,11 +8079,35 @@
           "client_capacity": 9700,
           "events": [
             "client evaluated locked presentation quote",
-            "long-horizon project needs confirmation window"
+            "long-horizon project needs confirmation window",
+            "confirmation checkpoint scheduled 21 days before start",
+            "no soft hold granted until confirmation signals arrive"
           ],
           "warnings": [
             "long-horizon commitment uncertainty"
-          ]
+          ],
+          "hold_management": {
+            "state": "pending_confirmation",
+            "holdPolicy": "no firm hold without stronger confirmation",
+            "projectLeadTimeDays": 95,
+            "projectCommitmentConfidence": 0.38,
+            "firmHoldMinimumConfidence": 0.9,
+            "checkpointDaysBeforeStart": 21,
+            "softHoldExpiresInDays": 0,
+            "expiresWithoutConfirmation": true,
+            "firmHoldRequires": [
+              "confirmed shoot window",
+              "approved scope assumptions",
+              "budget owner confirmation",
+              "confirmation deposit or equivalent commitment"
+            ],
+            "nextAction": "collect confirmation signals before firm hold",
+            "events": [
+              "long-horizon project needs confirmation window",
+              "confirmation checkpoint scheduled 21 days before start",
+              "no soft hold granted until confirmation signals arrive"
+            ]
+          }
         },
         {
           "talent_id": "premium_food_director",
@@ -7816,11 +8116,35 @@
           "client_capacity": 9700,
           "events": [
             "client evaluated locked presentation quote",
-            "long-horizon project needs confirmation window"
+            "long-horizon project needs confirmation window",
+            "confirmation checkpoint scheduled 21 days before start",
+            "no soft hold granted until confirmation signals arrive"
           ],
           "warnings": [
             "long-horizon commitment uncertainty"
-          ]
+          ],
+          "hold_management": {
+            "state": "pending_confirmation",
+            "holdPolicy": "no firm hold without stronger confirmation",
+            "projectLeadTimeDays": 95,
+            "projectCommitmentConfidence": 0.38,
+            "firmHoldMinimumConfidence": 0.9,
+            "checkpointDaysBeforeStart": 21,
+            "softHoldExpiresInDays": 0,
+            "expiresWithoutConfirmation": true,
+            "firmHoldRequires": [
+              "confirmed shoot window",
+              "approved scope assumptions",
+              "budget owner confirmation",
+              "confirmation deposit or equivalent commitment"
+            ],
+            "nextAction": "collect confirmation signals before firm hold",
+            "events": [
+              "long-horizon project needs confirmation window",
+              "confirmation checkpoint scheduled 21 days before start",
+              "no soft hold granted until confirmation signals arrive"
+            ]
+          }
         }
       ],
       "outcomeLearning": {
@@ -8087,6 +8411,20 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
             "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
@@ -8291,6 +8629,20 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
             "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
@@ -8489,6 +8841,20 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
             "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
@@ -8687,6 +9053,20 @@
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "confirmation": {
+              "required": true,
+              "state": "confirmation_required",
+              "checkpointDaysBeforeStart": 60,
+              "softHoldExpiresInDays": 21,
+              "expiresWithoutConfirmation": true,
+              "firmHoldMinimumConfidence": 0.8,
+              "firmHoldRequires": [
+                "confirmed shoot window",
+                "approved scope assumptions",
+                "budget owner confirmation"
+              ],
+              "platformTrustTier": "high_repeat"
+            },
             "reason": "90+ days out, but high platform trust makes the project materially more credible"
           },
           "behavior": {
@@ -8905,11 +9285,34 @@
           "client_capacity": 13900,
           "events": [
             "client evaluated locked presentation quote",
-            "long-horizon project needs confirmation window"
+            "long-horizon project needs confirmation window",
+            "confirmation checkpoint scheduled 60 days before start",
+            "soft hold expires in 21 days without confirmation"
           ],
           "warnings": [
             "long-horizon commitment uncertainty"
-          ]
+          ],
+          "hold_management": {
+            "state": "pending_confirmation",
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "projectLeadTimeDays": 110,
+            "projectCommitmentConfidence": 0.74,
+            "firmHoldMinimumConfidence": 0.8,
+            "checkpointDaysBeforeStart": 60,
+            "softHoldExpiresInDays": 21,
+            "expiresWithoutConfirmation": true,
+            "firmHoldRequires": [
+              "confirmed shoot window",
+              "approved scope assumptions",
+              "budget owner confirmation"
+            ],
+            "nextAction": "collect confirmation signals before firm hold",
+            "events": [
+              "long-horizon project needs confirmation window",
+              "confirmation checkpoint scheduled 60 days before start",
+              "soft hold expires in 21 days without confirmation"
+            ]
+          }
         },
         {
           "talent_id": "idle_high_quality_director",
@@ -8918,11 +9321,34 @@
           "client_capacity": 13900,
           "events": [
             "client evaluated locked presentation quote",
-            "long-horizon project needs confirmation window"
+            "long-horizon project needs confirmation window",
+            "confirmation checkpoint scheduled 60 days before start",
+            "soft hold expires in 21 days without confirmation"
           ],
           "warnings": [
             "long-horizon commitment uncertainty"
-          ]
+          ],
+          "hold_management": {
+            "state": "pending_confirmation",
+            "holdPolicy": "soft hold with scheduled confirmation checkpoint",
+            "projectLeadTimeDays": 110,
+            "projectCommitmentConfidence": 0.74,
+            "firmHoldMinimumConfidence": 0.8,
+            "checkpointDaysBeforeStart": 60,
+            "softHoldExpiresInDays": 21,
+            "expiresWithoutConfirmation": true,
+            "firmHoldRequires": [
+              "confirmed shoot window",
+              "approved scope assumptions",
+              "budget owner confirmation"
+            ],
+            "nextAction": "collect confirmation signals before firm hold",
+            "events": [
+              "long-horizon project needs confirmation window",
+              "confirmation checkpoint scheduled 60 days before start",
+              "soft hold expires in 21 days without confirmation"
+            ]
+          }
         }
       ],
       "outcomeLearning": {
@@ -9189,6 +9615,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -9388,6 +9823,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -9594,6 +10038,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -9795,6 +10248,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -10003,6 +10465,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -10632,6 +11103,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -10832,6 +11312,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -11029,6 +11518,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -11227,6 +11725,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -11429,6 +11936,15 @@
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "normal lead time"
           },
           "behavior": {
@@ -11972,6 +12488,15 @@
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 21 days; platform last-minute urgency premium"
           },
           "behavior": {
@@ -12172,6 +12697,15 @@
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 21 days; platform last-minute urgency premium"
           },
           "behavior": {
@@ -12736,6 +13270,15 @@
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 21 days; platform last-minute urgency premium"
           },
           "behavior": {
@@ -12937,6 +13480,15 @@
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
             "reason": "under 21 days; platform last-minute urgency premium"
           },
           "behavior": {
@@ -14013,6 +14565,9 @@
     "budgetHealthWarningCount": 1,
     "scopeCalibrationCount": 2,
     "scopeCalibrationWarningCount": 2,
+    "pendingHoldCount": 2,
+    "confirmationCheckpointCount": 4,
+    "holdExpirationCount": 4,
     "averageActualizationLift": 0.1077,
     "aiHumanReviewShareOfRecommendations": 0.348,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,

@@ -68,6 +68,7 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
             "rateDelta": round(rec["timing_nudge"]["rate_delta"], 3),
             "confidenceDelta": round(rec["timing_nudge"]["confidence_delta"], 3),
             "holdPolicy": rec["timing_nudge"]["hold_policy"],
+            "confirmation": rec["timing_nudge"]["confirmation"],
             "reason": rec["timing_nudge"]["reason"],
         },
         "behavior": {
@@ -206,6 +207,19 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         warning == SCOPE_CALIBRATION_WARNING
         for warning in warnings
     )
+    pending_hold_count = sum(1 for trace in traces if trace["outcome"] == "pending_hold")
+    confirmation_checkpoint_count = sum(
+        1
+        for trace in traces
+        for decision in trace["clientDecisions"]
+        if decision.get("hold_management", {}).get("state") == "pending_confirmation"
+    )
+    hold_expiration_count = sum(
+        1
+        for trace in traces
+        for decision in trace["clientDecisions"]
+        if decision.get("hold_management", {}).get("expiresWithoutConfirmation")
+    )
     behavior_changed = 0
     timing_changed = 0
     discretion_deltas: list[float] = []
@@ -312,6 +326,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "budgetHealthWarningCount": budget_health_warnings,
         "scopeCalibrationCount": scope_calibrations,
         "scopeCalibrationWarningCount": scope_calibration_warnings,
+        "pendingHoldCount": pending_hold_count,
+        "confirmationCheckpointCount": confirmation_checkpoint_count,
+        "holdExpirationCount": hold_expiration_count,
         "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),

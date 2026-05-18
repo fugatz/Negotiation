@@ -434,6 +434,35 @@ def validate_report(report: dict) -> dict:
                     context,
                     "long-horizon uncertainty should affect confidence/holds, not direct price",
                 )
+                confirmation = rec["timing"]["confirmation"]
+                _check(
+                    confirmation["required"] is True,
+                    failures,
+                    "long_horizon_confirmation_missing",
+                    context,
+                    "long-horizon recommendations must include confirmation mechanics",
+                )
+                _check(
+                    int(confirmation["checkpointDaysBeforeStart"]) > 0,
+                    failures,
+                    "long_horizon_checkpoint_missing",
+                    context,
+                    "long-horizon confirmation should include a checkpoint before start",
+                )
+                _check(
+                    bool(confirmation["firmHoldRequires"]),
+                    failures,
+                    "long_horizon_firm_hold_requirements_missing",
+                    context,
+                    "long-horizon firm holds must list required confirmation signals",
+                )
+                _check(
+                    confirmation["expiresWithoutConfirmation"] is True,
+                    failures,
+                    "long_horizon_hold_should_expire",
+                    context,
+                    "long-horizon holds should expire without confirmation signals",
+                )
 
             _check(
                 int(expected_range["low"]) <= int(rec["quote"]) <= int(expected_range["high"]),
@@ -499,6 +528,29 @@ def validate_report(report: dict) -> dict:
                 )
 
         for decision in trace["clientDecisions"]:
+            if decision["status"] == "pending_hold":
+                hold = decision.get("hold_management", {})
+                _check(
+                    hold.get("state") == "pending_confirmation",
+                    failures,
+                    "pending_hold_management_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "pending holds must include confirmation checkpoint and expiration mechanics",
+                )
+                _check(
+                    bool(hold.get("firmHoldRequires")),
+                    failures,
+                    "pending_hold_requirements_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "pending holds must define what turns them into firm holds",
+                )
+                _check(
+                    hold.get("expiresWithoutConfirmation") is True,
+                    failures,
+                    "pending_hold_expiration_missing",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "pending holds must expire without confirmation",
+                )
             if decision["status"] == BOOKED_WITH_MARKET_HEALTH_WARNING:
                 _check(
                     BUDGET_DRIVEN_COMMODITY_WARNING in decision["warnings"],

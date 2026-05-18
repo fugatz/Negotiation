@@ -30,6 +30,9 @@ ranges remain the source of authority.
 | Optional talent-guidance messages | 8 | 8 |
 | Cohort summaries | 27 | 27 |
 | Optional cohort-guidance messages | 12 | 12 |
+| Pending holds | 2 | 2 |
+| Confirmation checkpoints | 4 | 4 |
+| Hold expirations | 4 | 4 |
 | Budget-health warnings | 1 | 1 |
 | Scope-calibration outcomes | 2 | 2 |
 | Average actualization lift | 10.77% | 10.77% |
@@ -42,6 +45,8 @@ The race-to-bottom stress case now actualizes as `booked_with_market_health_warn
 of conversion learning while preserving the market-health warning.
 The prestige and minimum-wage smoke cases now resolve as `needs_scope_calibration`, keeping them out of
 actualized-rate learning while preserving budget/scope calibration evidence for admins.
+Long-horizon pending holds now carry confirmation checkpoints and hold expiration metadata, so they remain
+seriousness-confidence signals rather than actualized-rate signals.
 
 ## Talent Guidance Boundary
 
@@ -62,6 +67,7 @@ Validation enforces:
 - actualization events must cite allowed triggers from the expected booking range
 - unbooked outcomes do not produce actualized costs
 - scope-calibration outcomes remain admin calibration signals, not talent rate guidance
+- pending holds require confirmation mechanics before they can become firm commitments
 
 ## Cohort Learning
 

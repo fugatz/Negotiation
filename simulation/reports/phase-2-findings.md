@@ -24,7 +24,7 @@ The current system protects against several core failure modes:
 - no job-specific talent-facing pricing rationale
 - specialist value remains visible even when budget fit is weak
 - project-size context now separates $500k+ large-scale and $1M+ flagship productions
-- long-horizon work is held as uncertain rather than treated as a normal booking
+- long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
 - race-to-bottom candidates are flagged and penalized in ranking
 
 The simulator also exposes policy work still needed before shadow-mode integration:
@@ -35,12 +35,12 @@ The simulator also exposes policy work still needed before shadow-mode integrati
   booking failures
 - pre-presentation talent counters are now structurally safe, but repeated counters need to feed future
   reliability inputs
-- long-horizon projects need concrete confirmation mechanics, not just confidence penalties
+- long-horizon projects still need follow-up stress tests for missed checkpoints and later scope changes
 - admin review load is intentionally high in launch mode and needs exception-based narrowing later
 
 ## Current Base Run
 
-Policy: `phase-3-scope-calibration-v1`
+Policy: `phase-3-confirmation-mechanics-v1`
 
 | Metric | Result |
 | --- | ---: |
@@ -49,6 +49,9 @@ Policy: `phase-3-scope-calibration-v1`
 | Booked scenarios | 8 |
 | Booking rate | 66.7% |
 | Long-horizon scenarios | 2 |
+| Pending holds | 2 |
+| Confirmation checkpoints | 4 |
+| Hold expirations | 4 |
 | Availability checks | 46 |
 | Pre-presentation talent counters | 4 |
 | Admin approval required | 46 |
@@ -69,8 +72,8 @@ Policy: `phase-3-scope-calibration-v1`
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
 | Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
-| Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work stays tentative. | Healthy direction, but confirmation mechanics need definition. |
-| Long-Horizon Beauty Campaign | pending hold | High-trust repeat client receives much softer uncertainty treatment. | Healthy: trust offsets timing uncertainty without forcing a hard booking. |
+| Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work gets no soft hold until confirmation signals arrive. | Healthy: weak trust creates a tighter hold path without changing price. |
+| Long-Horizon Beauty Campaign | pending hold | High-trust repeat client gets a 21-day soft hold and a 60-day-before-start checkpoint. | Healthy: trust offsets uncertainty without granting unlimited calendar hold. |
 | Bad-Faith Repricing Stress Test | booked | Volatile talent counters before client presentation; client only sees locked quote. | Structurally fixed: now track this as a pre-presentation counter, not post-interest repricing. |
 | Race-to-Bottom Social Content Test | booked with market-health warning | Higher-fit options exceed capacity; low-rate option can still book in stress path. | Improved: conversion remains possible, but the outcome is no longer treated as a clean marketplace win. |
 | Background Extra Minimum Wage Smoke Test | needs scope calibration | Local minimum wage lifts the effective floor above the offered day rate. | Healthy: legal/compliance floors can force budget or scope recalibration. |
@@ -127,17 +130,17 @@ Policy implication:
 - require outcome evidence before any live discretion
 - do not let AI discretion stack into a meaningful hidden price engine without caps and audit trails
 
-### 5. Long-Horizon Trust Differentiation Works
+### 5. Long-Horizon Confirmation Mechanics Work
 
-The exploratory food brief from a weak-trust client becomes pending hold with a stronger uncertainty
-warning. The long-horizon beauty campaign from a high-trust repeat client also stays pending hold, but
-with softer confidence impact and a more workable hold policy.
+The exploratory food brief from a weak-trust client becomes pending hold with no soft hold until
+confirmation signals arrive. The long-horizon beauty campaign from a high-trust repeat client also stays
+pending hold, but receives a 21-day soft hold and a 60-day-before-start checkpoint.
 
 Policy implication:
 
 - client trust should strongly offset long-horizon uncertainty
 - even high-trust long-horizon work should not become an unconditional firm hold
-- the next design task is confirmation mechanics
+- pending holds must define checkpoint timing, expiration, and what turns them into firm holds
 
 ### 6. Budget-Driven Commodity Wins Are Now Labeled
 
@@ -215,10 +218,10 @@ Recommended revision:
 - keep the pricing impact small
 - never expose the negative reason to talent or client
 
-### Long-Horizon Hold Ambiguity
+### Long-Horizon Follow-Through Risk
 
-Long-horizon work is correctly marked as pending hold, but the simulator does not yet define what turns a
-pending hold into a firm hold.
+Long-horizon work now has confirmation mechanics, but the simulator does not yet test what happens when a
+client misses a checkpoint, changes scope, or later becomes more serious.
 
 Why it matters:
 
@@ -228,9 +231,9 @@ Why it matters:
 
 Recommended revision:
 
-- define confirmation checkpoints
-- consider deposits, scope locks, or production milestone requirements
-- expire soft holds automatically unless the client reconfirms
+- add missed-checkpoint and late-confirmation fixtures
+- test high-trust clients who later change dates, usage, or scope
+- decide whether expired holds require a fresh rate-quoted outreach pass
 
 ### Admin Review Load
 
@@ -250,11 +253,9 @@ Recommended revision:
 
 ## Recommended Policy Revisions Before Integration
 
-1. Define long-horizon confirmation mechanics: checkpoint timing, hold expiration, and what counts as
-   enough commitment.
-2. Track pre-presentation counter frequency as an upstream reliability signal with a small capped effect.
-3. Preserve strict audience separation for rationales and keep all pricing mechanics admin-only.
-4. Keep AI discretion shadow-only until outcome evidence shows it improves close rates without leakage,
+1. Track pre-presentation counter frequency as an upstream reliability signal with a small capped effect.
+2. Preserve strict audience separation for rationales and keep all pricing mechanics admin-only.
+3. Keep AI discretion shadow-only until outcome evidence shows it improves close rates without leakage,
    underpricing, or higher dispute rates.
 
 ## Phase 3 Stress Suite
@@ -277,7 +278,7 @@ Recommended additions:
 
 ## Phase 3 Exit Assessment
 
-Phase 3 is now focused on confirmation mechanics, repeated-warning stress tests, and narrowing autonomy
+Phase 3 is now focused on repeated-warning stress tests, hold follow-through, and narrowing autonomy
 exceptions.
 
 Exit criteria status:
@@ -293,5 +294,5 @@ Exit criteria status:
 
 Recommended next move:
 
-- add long-horizon confirmation mechanics
 - add repeated-client stress fixtures to see whether warnings cluster around the same buyer behavior
+- add missed-checkpoint long-horizon fixtures
