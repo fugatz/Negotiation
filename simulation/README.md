@@ -6,11 +6,11 @@ negotiation policies before any production integration.
 The simulation is intentionally small and inspectable. It uses synthetic fixtures and deterministic
 rules so policy changes are easy to understand.
 
-Production boundary: this layer is expected to run after upstream matching and outreach have already
-identified candidate talent through channels such as WhatsApp and email. The simulator's eligibility
-checks are a small stand-in for those outreach results; the main purpose here is to compute the
-project-specific rate, feed it to matched talent for availability check, and build the client slate only
-from talent-approved locked rates.
+Production boundary: this layer is expected to run after upstream matching has identified candidate
+talent, but before rate-quoted WhatsApp/email outreach is complete. The simulator's eligibility checks
+are a small stand-in for known candidate constraints and talent responses. The main purpose here is to
+compute the project-specific rate, include it in outreach to matched talent, and build the client slate
+only from talent-approved locked rates.
 
 Admin-tweakable dry-run settings live in `simulation/config/policy.json`. The config currently owns
 timing thresholds, behavior caps, AI discretion caps, market-health review flags, ranking penalties,
@@ -55,7 +55,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 
 ## Current Scope
 
-- synthetic outreach eligibility results
+- synthetic rate-quoted outreach responses
 - creative, practical, pricing, trust, and market-health scoring
 - small timing-horizon nudges
 - small talent and client behavior nudges
@@ -65,7 +65,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - launch-mode admin approval state and bounded setting-tweak controls
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - market-health flags for race-to-bottom and price-led recommendation risk
-- pre-presentation talent availability checks at proposed project rates
+- pre-presentation talent outreach checks at proposed project rates
 - shadow-mode outcome-calibrated discretion deltas
 - upstream-score placeholders for actor readiness, talent reliability, and client trust
 - curated recommendation lanes

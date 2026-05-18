@@ -141,7 +141,7 @@ Behavior types:
 
 The simulation should generate these internal values:
 
-- upstream outreach eligibility pass/fail
+- rate-quoted outreach response state
 - operating band state: below band, in band, above band, or intentional stretch
 - creative fit score
 - practical fit score
@@ -265,34 +265,37 @@ Expected risk:
 
 ```text
 1. Generate synthetic project brief.
-2. Import or emulate upstream-matched talent from outreach channels such as WhatsApp and email.
-3. Consume outreach eligibility results: availability, interest, minimum notice, opt-ins, conflicts.
+2. Import or emulate an upstream-matched talent candidate set.
+3. Consume known candidate constraints: minimum notice, opt-ins, conflicts, and upstream scores.
 4. Score creative, practical, pricing, trust, and market-health dimensions for that late-stage set.
 5. Apply capped timing-horizon nudges.
 6. Apply capped talent and client behavior nudges.
-7. Feed each matched talent the proposed project rate during availability check.
-8. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
-9. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
-10. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
-11. Record that this layer does not generate talent-facing job-specific pricing rationale.
-12. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
-13. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
-14. Build a curated recommendation slate from talent-approved rates only.
-15. Simulate client shortlist and decision behavior against locked presentation quotes.
-16. Resolve booking, no-booking, hold, repricing exception, or cancellation.
-17. Update historical outcomes.
-18. Repeat across many rounds.
-19. Evaluate market-level metrics.
+7. Compute the proposed project rate for each matched talent.
+8. Simulate WhatsApp/email talent outreach that includes job basics and the proposed project rate.
+9. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
+10. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
+11. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
+12. Record that this layer does not generate talent-facing job-specific pricing rationale.
+13. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
+14. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
+15. Build a curated recommendation slate from talent-approved rates only.
+16. Simulate client shortlist and decision behavior against locked presentation quotes.
+17. Resolve booking, no-booking, hold, repricing exception, or cancellation.
+18. Update historical outcomes.
+19. Repeat across many rounds.
+20. Evaluate market-level metrics.
 ```
 
 Production boundary:
 
-- the real system should enter this flow after matching and outreach are mostly complete
-- hard eligibility is an outreach result, not a pricing-engine-owned discovery process
-- the simulation's deterministic eligibility checks only emulate upstream outreach output so edge cases
-  remain easy to inspect
-- this layer's key action is to compute the project-specific rate and route that rate back to talent for
-  the pre-client availability decision
+- the real system should enter this flow after candidate matching, but before rate-quoted outreach is
+  complete
+- hard eligibility for client presentation is established by the WhatsApp/email availability response at
+  the proposed project rate
+- the simulation's deterministic eligibility checks only emulate known candidate constraints and
+  rate-quoted outreach responses so edge cases remain easy to inspect
+- this layer's key action is to compute the project-specific rate and include that rate in talent
+  outreach before the client sees the slate
 
 ## Success Metrics
 
@@ -495,8 +498,8 @@ Question:
 Expected behavior:
 
 - Bake negotiated numbers into the slate at presentation time.
-- Talent sees the proposed project rate at availability check and decides whether to be considered at
-  that rate before the client ever sees the option.
+- Talent sees the proposed project rate in outreach or availability check and decides whether to be
+  considered at that rate before the client ever sees the option.
 - Treat the presented number as locked.
 - Allow renegotiation only for client-side changes to usage, scope, timing, exclusivity, travel, or
   requirements.
@@ -589,7 +592,7 @@ Each simulated scenario should produce a compact trace:
 - recommended slate with lanes
 - client-facing talent scores
 - hidden internal reasons
-- pre-presentation availability checks
+- pre-presentation rate-quoted outreach checks
 - client decision events
 - final outcome
 - policy warnings

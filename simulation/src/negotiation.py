@@ -31,7 +31,7 @@ def simulate_availability_check(project: dict, talent: dict, rec: dict) -> dict:
     if talent["negotiation_behavior"] == "opportunistic_late_repricer" and rec["creative_fit"] >= 0.75:
         committed_quote = money(quote * 1.2)
         status = "countered_before_client_presentation"
-        events.append("talent countered during availability check before client presentation")
+        events.append("talent countered during rate-quoted outreach before client presentation")
         warnings.append("pre-presentation counter increased locked quote")
     elif talent["negotiation_behavior"] == "scope_sensitive_repricer" and project["usage_scope"] in {"national", "campaign"}:
         status = "accepted_after_scope_confirmation"
@@ -41,11 +41,15 @@ def simulate_availability_check(project: dict, talent: dict, rec: dict) -> dict:
         events.append("talent accepted premium rate and offered scope tradeoffs before presentation")
     else:
         status = "accepted_at_presented_rate"
-        events.append("talent accepted availability check rate before presentation")
+        events.append("talent accepted rate-quoted outreach before presentation")
 
     return {
         "talent_id": talent["id"],
         "status": status,
+        "outreachChannel": "whatsapp_or_email",
+        "rateSource": "pricing_engine_project_rate",
+        "ratePresentedDuringOutreach": True,
+        "talentVisibleRate": True,
         "proposedQuote": quote,
         "committedQuote": committed_quote,
         "completedBeforeClientPresentation": True,

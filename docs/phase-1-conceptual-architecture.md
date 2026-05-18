@@ -58,14 +58,15 @@ Private or internal:
 
 ```text
 Project Brief
-  -> Upstream Matching + Outreach
-  -> Matched Talent + Outreach Eligibility Results
+  -> Upstream Candidate Matching
+  -> Matched Talent Candidate Set
   -> Late-Stage Creative + Practical Scoring
   -> Pricing Intelligence Layer
   -> Timing Horizon Nudge Layer
   -> Behavior Reputation Nudge Layer
   -> AI Pricing Rationale Layer
-  -> Negotiation Structure Layer
+  -> Rate-Quoted Talent Outreach / Availability Check
+  -> Talent Project-Rate Commitment
   -> Curated Recommendation Layer
   -> Deal Outcome Feedback Loop
 ```
@@ -81,13 +82,13 @@ By the time this engine runs, Distinkt has already done most of the work:
 
 - the brief has been structured
 - candidate talent has been matched by upstream systems or human operators
-- outreach has happened through channels such as WhatsApp and email
-- basic availability, interest, and hard constraints have been collected
+- obvious pre-outreach constraints have been screened where available
 - upstream services have supplied readiness, reliability, and client trust signals
 
-This engine then determines the project-specific rate posture for matched talent and feeds that rate
-back into the talent availability check. Talent decides whether to be considered at that rate before the
-client sees the slate.
+This engine then determines the project-specific rate posture for matched talent. That rate is included
+in the talent outreach or availability-check message through channels such as WhatsApp and email, along
+with the job basics. The talent's response establishes whether they want to be considered for that
+project at that rate before the client sees the slate.
 
 ### 1. Project Brief
 
@@ -104,14 +105,15 @@ Capture enough structure to prevent fake precision later:
 
 The brief should produce a budget confidence state, not just a number.
 
-### 2. Outreach Eligibility Results
+### 2. Matched Candidate Inputs
 
-This stage should be treated as an input from upstream matching and outreach, not as the primary job of
-the pricing engine. In production, hard eligibility is the result of outreach and operational checks
-through channels such as WhatsApp, email, and internal booking workflow.
+This stage should be treated as an input from upstream matching, not as the primary job of the pricing
+engine. The pricing engine should receive matched talent candidates plus any known constraints before
+rate-quoted outreach begins.
 
-The pricing engine should consume the result: which matched talent can reasonably be considered, which
-constraints have been confirmed, and which candidates should be excluded before client presentation.
+The pricing engine consumes enough context to decide the project-specific rate to put in front of talent
+during outreach. The final eligibility signal for client presentation comes from the rate-quoted
+availability response: accept, decline, or counter before the client sees the talent.
 
 Examples:
 
@@ -123,12 +125,13 @@ Examples:
 - budget fundamentally incompatible unless flagged as an intentional stretch
 
 The simulation may keep a tiny deterministic eligibility stub so test scenarios remain inspectable, but
-that stub represents upstream outreach output. It should not be interpreted as the future production
-matching system.
+that stub represents known pre-outreach constraints plus the later rate-quoted availability response. It
+should not be interpreted as the future production matching system.
 
 ### 3. Creative + Practical Match Scoring
 
-This layer estimates fit and booking usefulness for the already-matched and outreach-screened talent set.
+This layer estimates fit and booking usefulness for the already-matched candidate set before rate-quoted
+talent outreach.
 
 Signals:
 
@@ -451,9 +454,10 @@ Initial admin-only governance defaults:
 
 Negotiation should remain possible, but bounded.
 
-The core rule: pricing is negotiated and finalized before a talent is presented to the client. During
-availability check, Distinkt shows the talent the proposed rate for that project. The talent can opt
-in at that rate, decline, or counter before the client ever sees them. Once a talent appears in the
+The core rule: pricing is negotiated and finalized before a talent is presented to the client. At talent
+outreach or availability check, Distinkt shows the talent the job basics and the proposed rate for that
+project. The proposed rate comes from this pricing engine at that point in the workflow. The talent can
+opt in at that rate, decline, or counter before the client ever sees them. Once a talent appears in the
 client-facing slate, that presented number should be treated as locked.
 
 Possible mechanisms:
@@ -830,10 +834,10 @@ These are hypotheses to test in simulation, not final rules.
     reliability, and outcome data, without implying an exact price guarantee.
 16. Once pricing is presented to the client, it is locked unless client-side facts change. Strong
     negotiation happens before presentation and includes being willing to let a client walk away.
-17. Talent sees the project-specific proposed rate at availability check and decides whether to be
-    considered at that rate before the client sees the slate.
-18. The pricing engine should run late in the process, after upstream matching and outreach have already
-    produced a candidate set with availability and eligibility results.
+17. Talent sees the project-specific proposed rate during outreach or availability check and decides
+    whether to be considered at that rate before the client sees the slate.
+18. The pricing engine should run after upstream matching but before talent outreach is complete, because
+    the WhatsApp/email outreach should include the proposed project rate.
 19. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
     not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
 20. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new

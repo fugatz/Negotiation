@@ -12,9 +12,10 @@ python3 -m simulation.src.runner --policy simulation/config/variants/stricter_ma
 ## Executive Read
 
 The Phase 2 simulator is now useful enough to support policy decisions before production integration.
-The most important structural rule is working: talent sees the project-specific proposed rate during
-availability check and must accept, decline, or counter before the client sees the slate. Client-facing
-recommendations use locked, talent-approved numbers only.
+The most important structural rule is working: after candidate matching, the pricing engine computes the
+project-specific proposed rate and includes it in rate-quoted talent outreach. Talent must accept,
+decline, or counter before the client sees the slate. Client-facing recommendations use locked,
+talent-approved numbers only.
 
 The current system protects against several core failure modes:
 
@@ -72,10 +73,10 @@ Policy: `phase-2-admin-config-v1`
 
 ### 1. The Rate Commitment Flow Is Correct
 
-Talent is presented with a project-specific proposed rate at availability check. If they accept, that
-rate becomes the locked client-facing number. If they counter, the counter happens before client
-presentation and is visible internally as an availability event. The client decision simulation then
-evaluates the locked quote only.
+Talent is presented with a project-specific proposed rate during WhatsApp/email outreach or availability
+check. If they accept, that rate becomes the locked client-facing number. If they counter, the counter
+happens before client presentation and is visible internally as an availability event. The client decision
+simulation then evaluates the locked quote only.
 
 Policy implication:
 
@@ -173,7 +174,7 @@ repeated countering can still create friction and reduce predictability.
 
 Why it matters:
 
-- a talent can stay technically compliant while regularly increasing quotes after availability check
+- a talent can stay technically compliant while regularly increasing quotes during rate-quoted outreach
 - if untracked, this recreates some instability earlier in the funnel
 
 Recommended revision:

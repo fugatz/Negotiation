@@ -25,12 +25,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 6700,
             "committedQuote": 6700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -125,12 +129,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 11600,
             "committedQuote": 11600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -227,12 +235,16 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 21200,
             "committedQuote": 21200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -336,12 +348,16 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 10400,
             "committedQuote": 12500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent countered during availability check before client presentation"
+              "talent countered during rate-quoted outreach before client presentation"
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
@@ -437,24 +453,32 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 6700,
           "committedQuote": 6700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 11600,
           "committedQuote": 11600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
@@ -511,12 +535,16 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 8900,
             "committedQuote": 8900,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -616,12 +644,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 13400,
             "committedQuote": 13400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -719,6 +751,10 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_after_scope_confirmation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 14000,
             "committedQuote": 14000,
             "completedBeforeClientPresentation": true,
@@ -820,12 +856,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 7500,
             "committedQuote": 7500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -915,24 +955,32 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 8900,
           "committedQuote": 8900,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 13400,
           "committedQuote": 13400,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
@@ -1004,12 +1052,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 7800,
             "committedQuote": 7800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1107,12 +1159,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 13600,
             "committedQuote": 13600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1210,12 +1266,16 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 8900,
             "committedQuote": 8900,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1312,12 +1372,16 @@
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 4600,
             "committedQuote": 4600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1411,24 +1475,32 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 7800,
           "committedQuote": 7800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 13600,
           "committedQuote": 13600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
@@ -1500,12 +1572,16 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 12400,
             "committedQuote": 12400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1608,12 +1684,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 10800,
             "committedQuote": 10800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1712,12 +1792,16 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 7100,
             "committedQuote": 7100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1815,12 +1899,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 6200,
             "committedQuote": 6200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -1913,24 +2001,32 @@
         {
           "talent_id": "luxury_fashion_editor",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 12400,
           "committedQuote": 12400,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 10800,
           "committedQuote": 10800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
@@ -1989,12 +2085,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 6800,
             "committedQuote": 6800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -2094,12 +2194,16 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 21600,
             "committedQuote": 21600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -2206,12 +2310,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 12000,
             "committedQuote": 12000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -2314,12 +2422,16 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 10600,
             "committedQuote": 12700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent countered during availability check before client presentation"
+              "talent countered during rate-quoted outreach before client presentation"
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
@@ -2419,24 +2531,32 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 6800,
           "committedQuote": 6800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "premium_food_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 21600,
           "committedQuote": 21600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
@@ -2497,12 +2617,16 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 8700,
             "committedQuote": 8700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -2603,12 +2727,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 13200,
             "committedQuote": 13200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -2707,12 +2835,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 7400,
             "committedQuote": 7400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -2809,6 +2941,10 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_after_scope_confirmation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 13800,
             "committedQuote": 13800,
             "completedBeforeClientPresentation": true,
@@ -2905,24 +3041,32 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 8700,
           "committedQuote": 8700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 13200,
           "committedQuote": 13200,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
@@ -2983,12 +3127,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 7100,
             "committedQuote": 7100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -3084,12 +3232,16 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 22500,
             "committedQuote": 22500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -3194,12 +3346,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 12500,
             "committedQuote": 12500,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -3297,12 +3453,16 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 11100,
             "committedQuote": 13300,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent countered during availability check before client presentation"
+              "talent countered during rate-quoted outreach before client presentation"
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
@@ -3409,12 +3569,16 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 11100,
             "committedQuote": 13300,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent countered during availability check before client presentation"
+              "talent countered during rate-quoted outreach before client presentation"
             ],
             "warnings": [
               "pre-presentation counter increased locked quote"
@@ -3512,36 +3676,48 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 7100,
           "committedQuote": 7100,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "premium_food_director",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 22500,
           "committedQuote": 22500,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "volatile_rep_managed_talent",
           "status": "countered_before_client_presentation",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 11100,
           "committedQuote": 13300,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent countered during availability check before client presentation"
+            "talent countered during rate-quoted outreach before client presentation"
           ],
           "warnings": [
             "pre-presentation counter increased locked quote"
@@ -3613,12 +3789,16 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 6700,
             "committedQuote": 6700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -3715,12 +3895,16 @@
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 4000,
             "committedQuote": 4000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -3816,12 +4000,16 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 11600,
             "committedQuote": 11600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -3920,12 +4108,16 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 7600,
             "committedQuote": 7600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -4024,12 +4216,16 @@
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
+            "outreachChannel": "whatsapp_or_email",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
             "proposedQuote": 4000,
             "committedQuote": 4000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
-              "talent accepted availability check rate before presentation"
+              "talent accepted rate-quoted outreach before presentation"
             ],
             "warnings": []
           },
@@ -4118,24 +4314,32 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 6700,
           "committedQuote": 6700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         },
         {
           "talent_id": "low_rate_fast_responder",
           "status": "accepted_at_presented_rate",
+          "outreachChannel": "whatsapp_or_email",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
           "proposedQuote": 4000,
           "committedQuote": 4000,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
-            "talent accepted availability check rate before presentation"
+            "talent accepted rate-quoted outreach before presentation"
           ],
           "warnings": []
         }
