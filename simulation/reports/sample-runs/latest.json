@@ -14,6 +14,28 @@
         "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
+      "clientCredibility": {
+        "clientTrustScore": 45,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 1,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 10,
+          "completedProjectCount": 1,
+          "paymentSpeed": 15,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 86,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
       "budgetType": "firm",
       "leadTimeDays": 28,
       "timingHorizon": "normal",
@@ -40,12 +62,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Budget-Confident",
-          "quote": 6700,
+          "quote": 6800,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.797,
+          "overallScore": 0.789,
           "creativeFit": 0.566,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.867,
+          "acceptanceProbability": 0.787,
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
@@ -53,12 +75,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 6700,
+            "proposedQuote": 6800,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 6200,
-              "high": 7200,
-              "expectedClose": 6700,
+              "low": 6300,
+              "high": 7300,
+              "expectedClose": 6800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -79,7 +101,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 6700,
+            "committedQuote": 6800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -88,9 +110,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 6200,
-              "high": 7200,
-              "expectedClose": 6700,
+              "low": 6300,
+              "high": 7300,
+              "expectedClose": 6800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -126,9 +148,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 6200,
-            "high": 7200,
-            "expectedClose": 6700,
+            "low": 6300,
+            "high": 7300,
+            "expectedClose": 6800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -155,7 +177,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -172,12 +196,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.05,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -185,7 +209,8 @@
               "visibility": "admin-only",
               "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +3.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -194,7 +219,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -235,8 +260,10 @@
             "reviewReasons": [
               "Launch mode requires admin approval before client presentation."
             ],
-            "exceptionTriggers": [],
-            "matureAutonomyCandidate": true,
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review"
+            ],
+            "matureAutonomyCandidate": false,
             "auditRequired": true
           }
         },
@@ -247,12 +274,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Viable Option",
-          "quote": 11600,
+          "quote": 12000,
           "clientVisiblePriceState": "likely workable with scoped flexibility",
-          "overallScore": 0.787,
+          "overallScore": 0.779,
           "creativeFit": 0.676,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.823,
+          "acceptanceProbability": 0.743,
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
@@ -260,12 +287,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 11600,
+            "proposedQuote": 12000,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 10700,
-              "high": 12500,
-              "expectedClose": 11600,
+              "low": 11000,
+              "high": 13000,
+              "expectedClose": 12000,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -286,7 +313,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 11600,
+            "committedQuote": 12000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -295,9 +322,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 10700,
-              "high": 12500,
-              "expectedClose": 11600,
+              "low": 11000,
+              "high": 13000,
+              "expectedClose": 12000,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -333,9 +360,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 10700,
-            "high": 12500,
-            "expectedClose": 11600,
+            "low": 11000,
+            "high": 13000,
+            "expectedClose": 12000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -364,7 +391,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -381,12 +410,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -394,7 +423,8 @@
               "visibility": "admin-only",
               "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -403,7 +433,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -444,8 +474,10 @@
             "reviewReasons": [
               "Launch mode requires admin approval before client presentation."
             ],
-            "exceptionTriggers": [],
-            "matureAutonomyCandidate": true,
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review"
+            ],
+            "matureAutonomyCandidate": false,
             "auditRequired": true
           }
         },
@@ -456,12 +488,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Strong Specialist",
-          "quote": 21200,
+          "quote": 21600,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.757,
+          "overallScore": 0.749,
           "creativeFit": 1.0,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.753,
+          "acceptanceProbability": 0.673,
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
@@ -469,12 +501,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 21200,
+            "proposedQuote": 21600,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 19500,
-              "high": 22900,
-              "expectedClose": 21200,
+              "low": 19900,
+              "high": 23300,
+              "expectedClose": 21600,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -495,7 +527,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 21200,
+            "committedQuote": 21600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -504,9 +536,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 19500,
-              "high": 22900,
-              "expectedClose": 21200,
+              "low": 19900,
+              "high": 23300,
+              "expectedClose": 21600,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -542,9 +574,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 19500,
-            "high": 22900,
-            "expectedClose": 21200,
+            "low": 19900,
+            "high": 23300,
+            "expectedClose": 21600,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -573,7 +605,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -590,12 +624,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.05,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -604,6 +638,7 @@
               "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
                 "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
                 "The premium posture is defensible because creative fit is unusually strong for this category.",
                 "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
               ],
@@ -672,12 +707,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Strong Specialist",
-          "quote": 12500,
+          "quote": 12800,
           "clientVisiblePriceState": "premium stretch",
-          "overallScore": 0.723,
+          "overallScore": 0.715,
           "creativeFit": 0.886,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.541,
+          "acceptanceProbability": 0.461,
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
@@ -685,12 +720,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 10400,
+            "proposedQuote": 10700,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 9600,
-              "high": 11200,
-              "expectedClose": 10400,
+              "low": 9800,
+              "high": 11600,
+              "expectedClose": 10700,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -711,7 +746,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 12500,
+            "committedQuote": 12800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -722,9 +757,9 @@
             ],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 11500,
-              "high": 13500,
-              "expectedClose": 12500,
+              "low": 11800,
+              "high": 13800,
+              "expectedClose": 12800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -760,9 +795,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 11500,
-            "high": 13500,
-            "expectedClose": 12500,
+            "low": 11800,
+            "high": 13800,
+            "expectedClose": 12800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -791,7 +826,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -808,12 +845,12 @@
           },
           "behavior": {
             "talentRateDelta": -0.02,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": -0.02,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.01,
             "talentReason": "repeated unexplained late repricing; small talent-side friction tax",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -822,6 +859,7 @@
               "summary": "A -2.0% talent-side friction adjustment reflects added deal friction.",
               "reasons": [
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
                 "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only."
               ],
               "discretionDelta": 0.0,
@@ -891,12 +929,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 6700,
+          "proposedQuote": 6800,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 6200,
-            "high": 7200,
-            "expectedClose": 6700,
+            "low": 6300,
+            "high": 7300,
+            "expectedClose": 6800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -917,7 +955,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 6700,
+          "committedQuote": 6800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -926,9 +964,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 6200,
-            "high": 7200,
-            "expectedClose": 6700,
+            "low": 6300,
+            "high": 7300,
+            "expectedClose": 6800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -957,12 +995,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 11600,
+          "proposedQuote": 12000,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 10700,
-            "high": 12500,
-            "expectedClose": 11600,
+            "low": 11000,
+            "high": 13000,
+            "expectedClose": 12000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -983,7 +1021,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 11600,
+          "committedQuote": 12000,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -992,9 +1030,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 10700,
-            "high": 12500,
-            "expectedClose": 11600,
+            "low": 11000,
+            "high": 13000,
+            "expectedClose": 12000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -1021,7 +1059,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "locked_quote": 6700,
+          "locked_quote": 6800,
           "client_capacity": 11400,
           "events": [
             "client evaluated locked presentation quote"
@@ -1031,7 +1069,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "failed_budget_gap",
-          "locked_quote": 11600,
+          "locked_quote": 12000,
           "client_capacity": 11400,
           "events": [
             "client evaluated locked presentation quote"
@@ -1060,16 +1098,16 @@
               "category": "food",
               "projectSizeBand": "small",
               "market": "los_angeles",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 6700,
+            "lockedQuote": 6800,
             "expectedRange": {
-              "low": 6200,
-              "high": 7200,
-              "expectedClose": 6700,
+              "low": 6300,
+              "high": 7300,
+              "expectedClose": 6800,
               "currency": "USD"
             },
-            "actualizedCost": 6700,
+            "actualizedCost": 6800,
             "actualizationEvents": [],
             "allowedActualizationTriggers": [
               "additional revision round requested",
@@ -1105,13 +1143,13 @@
               "category": "food",
               "projectSizeBand": "small",
               "market": "los_angeles",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 11600,
+            "lockedQuote": 12000,
             "expectedRange": {
-              "low": 10700,
-              "high": 12500,
-              "expectedClose": 11600,
+              "low": 11000,
+              "high": 13000,
+              "expectedClose": 12000,
               "currency": "USD"
             },
             "actualizedCost": null,
@@ -1161,6 +1199,28 @@
         "projectType": "national_campaign",
         "market": "new_york",
         "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 80,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 3,
+        "verifiedBrand": true,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 20,
+          "completedProjectCount": 3,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 90,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "flexible",
       "leadTimeDays": 42,
@@ -1304,6 +1364,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 80,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -1325,7 +1387,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -1518,6 +1580,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 80,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -1539,7 +1603,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -1726,6 +1790,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 80,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -1747,7 +1813,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "solid client reliability",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -1934,6 +2000,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 80,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -1955,7 +2023,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -2156,6 +2224,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 80,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -2177,7 +2247,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "solid client reliability",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -2499,7 +2569,7 @@
               "category": "beauty",
               "projectSizeBand": "premium",
               "market": "new_york",
-              "clientTrustTier": "known"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 8900,
             "expectedRange": {
@@ -2550,7 +2620,7 @@
               "category": "beauty",
               "projectSizeBand": "premium",
               "market": "new_york",
-              "clientTrustTier": "known"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 13400,
             "expectedRange": {
@@ -2601,7 +2671,7 @@
               "category": "beauty",
               "projectSizeBand": "premium",
               "market": "new_york",
-              "clientTrustTier": "known"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 20900,
             "expectedRange": {
@@ -2680,6 +2750,28 @@
         "projectType": "national_campaign",
         "market": "new_york",
         "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 95,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "high_repeat",
+        "completedProjectCount": 4,
+        "verifiedBrand": true,
+        "agencyAccount": true,
+        "scoreBreakdown": {
+          "completedProjects": 25,
+          "completedProjectCount": 4,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 92,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "flexible",
       "leadTimeDays": 49,
@@ -2826,6 +2918,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -2847,7 +2941,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -3043,6 +3137,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -3064,7 +3160,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -3254,6 +3350,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -3275,7 +3373,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -3465,6 +3563,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -3486,7 +3586,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -3733,7 +3833,7 @@
               "category": "beauty",
               "projectSizeBand": "large_scale",
               "market": "new_york",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 8800,
             "expectedRange": {
@@ -3784,7 +3884,7 @@
               "category": "beauty",
               "projectSizeBand": "large_scale",
               "market": "new_york",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 13300,
             "expectedRange": {
@@ -3867,6 +3967,28 @@
         "projectType": "commercial_campaign",
         "market": "detroit",
         "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 95,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "high_repeat",
+        "completedProjectCount": 4,
+        "verifiedBrand": true,
+        "agencyAccount": true,
+        "scoreBreakdown": {
+          "completedProjects": 25,
+          "completedProjectCount": 4,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 94,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "flexible",
       "leadTimeDays": 56,
@@ -4013,6 +4135,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -4034,7 +4158,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -4223,6 +4347,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -4244,7 +4370,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -4434,6 +4560,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -4455,7 +4583,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -4645,6 +4773,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -4666,7 +4796,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -4913,7 +5043,7 @@
               "category": "automotive",
               "projectSizeBand": "flagship",
               "market": "detroit",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 20000,
             "expectedRange": {
@@ -4964,7 +5094,7 @@
               "category": "automotive",
               "projectSizeBand": "flagship",
               "market": "detroit",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 7500,
             "expectedRange": {
@@ -5048,6 +5178,28 @@
         "market": "detroit",
         "talentClassScope": "production_talent"
       },
+      "clientCredibility": {
+        "clientTrustScore": 70,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 2,
+        "verifiedBrand": false,
+        "agencyAccount": true,
+        "scoreBreakdown": {
+          "completedProjects": 15,
+          "completedProjectCount": 2,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 92,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
       "budgetType": "flexible",
       "leadTimeDays": 6,
       "timingHorizon": "extreme_last_minute",
@@ -5092,12 +5244,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Budget-Confident",
-          "quote": 7800,
+          "quote": 7900,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.782,
+          "overallScore": 0.78,
           "creativeFit": 0.518,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.86,
+          "acceptanceProbability": 0.84,
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
@@ -5105,12 +5257,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 7800,
+            "proposedQuote": 7900,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 6500,
-              "high": 9100,
-              "expectedClose": 7800,
+              "low": 6600,
+              "high": 9200,
+              "expectedClose": 7900,
               "currency": "USD",
               "rangeWidth": 0.17,
               "assumptionsIncluded": [
@@ -5131,7 +5283,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 7800,
+            "committedQuote": 7900,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -5140,9 +5292,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 6500,
-              "high": 9100,
-              "expectedClose": 7800,
+              "low": 6600,
+              "high": 9200,
+              "expectedClose": 7900,
               "currency": "USD",
               "rangeWidth": 0.17,
               "assumptionsIncluded": [
@@ -5178,9 +5330,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 6500,
-            "high": 9100,
-            "expectedClose": 7800,
+            "low": 6600,
+            "high": 9200,
+            "expectedClose": 7900,
             "currency": "USD",
             "rangeWidth": 0.17,
             "assumptionsIncluded": [
@@ -5208,6 +5360,8 @@
           "timing": {
             "horizon": "extreme_last_minute",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
@@ -5224,12 +5378,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.02,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -5239,8 +5393,7 @@
               "reasons": [
                 "A +8.0% timing premium reflects the short lead time and schedule disruption.",
                 "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk."
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -5302,12 +5455,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Budget-Confident",
-          "quote": 13600,
+          "quote": 13700,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.746,
+          "overallScore": 0.744,
           "creativeFit": 0.438,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.81,
+          "acceptanceProbability": 0.79,
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
@@ -5315,12 +5468,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 13600,
+            "proposedQuote": 13700,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 11300,
-              "high": 15900,
-              "expectedClose": 13600,
+              "low": 11400,
+              "high": 16000,
+              "expectedClose": 13700,
               "currency": "USD",
               "rangeWidth": 0.17,
               "assumptionsIncluded": [
@@ -5341,7 +5494,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 13600,
+            "committedQuote": 13700,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -5350,9 +5503,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 11300,
-              "high": 15900,
-              "expectedClose": 13600,
+              "low": 11400,
+              "high": 16000,
+              "expectedClose": 13700,
               "currency": "USD",
               "rangeWidth": 0.17,
               "assumptionsIncluded": [
@@ -5388,9 +5541,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 11300,
-            "high": 15900,
-            "expectedClose": 13600,
+            "low": 11400,
+            "high": 16000,
+            "expectedClose": 13700,
             "currency": "USD",
             "rangeWidth": 0.17,
             "assumptionsIncluded": [
@@ -5418,6 +5571,8 @@
           "timing": {
             "horizon": "extreme_last_minute",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
@@ -5434,12 +5589,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.0,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -5449,8 +5604,7 @@
               "reasons": [
                 "A +8.0% timing premium reflects the short lead time and schedule disruption.",
                 "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -5514,10 +5668,10 @@
           "lane": "Budget-Confident",
           "quote": 8900,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.614,
+          "overallScore": 0.612,
           "creativeFit": 0.098,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.695,
+          "acceptanceProbability": 0.675,
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
@@ -5628,6 +5782,8 @@
           "timing": {
             "horizon": "extreme_last_minute",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
@@ -5644,12 +5800,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.0,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -5659,8 +5815,7 @@
               "reasons": [
                 "A +8.0% timing premium reflects the short lead time and schedule disruption.",
                 "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -5723,10 +5878,10 @@
           "lane": "Budget-Confident",
           "quote": 4600,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.542,
+          "overallScore": 0.54,
           "creativeFit": 0.258,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.73,
+          "acceptanceProbability": 0.71,
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
@@ -5839,6 +5994,8 @@
           "timing": {
             "horizon": "extreme_last_minute",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.08,
             "confidenceDelta": -0.02,
             "holdPolicy": "confirm immediately before presenting",
@@ -5855,12 +6012,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.0,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": -0.01,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.0,
             "talentReason": "neutral talent behavior",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -5869,8 +6026,7 @@
               "summary": "A +8.0% timing premium reflects the short lead time and schedule disruption.",
               "reasons": [
                 "A +8.0% timing premium reflects the short lead time and schedule disruption.",
-                "The short lead time slightly lowers confidence because availability and coordination risk are higher.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk."
+                "The short lead time slightly lowers confidence because availability and coordination risk are higher."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -5938,12 +6094,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 7800,
+          "proposedQuote": 7900,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 6500,
-            "high": 9100,
-            "expectedClose": 7800,
+            "low": 6600,
+            "high": 9200,
+            "expectedClose": 7900,
             "currency": "USD",
             "rangeWidth": 0.17,
             "assumptionsIncluded": [
@@ -5964,7 +6120,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 7800,
+          "committedQuote": 7900,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -5973,9 +6129,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 6500,
-            "high": 9100,
-            "expectedClose": 7800,
+            "low": 6600,
+            "high": 9200,
+            "expectedClose": 7900,
             "currency": "USD",
             "rangeWidth": 0.17,
             "assumptionsIncluded": [
@@ -6004,12 +6160,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 13600,
+          "proposedQuote": 13700,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 11300,
-            "high": 15900,
-            "expectedClose": 13600,
+            "low": 11400,
+            "high": 16000,
+            "expectedClose": 13700,
             "currency": "USD",
             "rangeWidth": 0.17,
             "assumptionsIncluded": [
@@ -6030,7 +6186,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 13600,
+          "committedQuote": 13700,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -6039,9 +6195,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 11300,
-            "high": 15900,
-            "expectedClose": 13600,
+            "low": 11400,
+            "high": 16000,
+            "expectedClose": 13700,
             "currency": "USD",
             "rangeWidth": 0.17,
             "assumptionsIncluded": [
@@ -6068,7 +6224,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "locked_quote": 7800,
+          "locked_quote": 7900,
           "client_capacity": 20900,
           "events": [
             "client evaluated locked presentation quote"
@@ -6078,7 +6234,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "booked",
-          "locked_quote": 13600,
+          "locked_quote": 13700,
           "client_capacity": 20900,
           "events": [
             "client evaluated locked presentation quote"
@@ -6092,7 +6248,7 @@
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 2,
           "talentGuidanceCount": 2,
-          "averageActualizationLift": 0.2532,
+          "averageActualizationLift": 0.2507,
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
         },
@@ -6105,16 +6261,16 @@
               "category": "automotive",
               "projectSizeBand": "premium",
               "market": "detroit",
-              "clientTrustTier": "known"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 7800,
+            "lockedQuote": 7900,
             "expectedRange": {
-              "low": 6500,
-              "high": 9100,
-              "expectedClose": 7800,
+              "low": 6600,
+              "high": 9200,
+              "expectedClose": 7900,
               "currency": "USD"
             },
-            "actualizedCost": 9800,
+            "actualizedCost": 9900,
             "actualizationEvents": [
               "prep day added",
               "travel required",
@@ -6132,7 +6288,7 @@
               "usage expanded"
             ],
             "rangeState": "above_expected_range",
-            "varianceFromExpectedRange": 0.0769,
+            "varianceFromExpectedRange": 0.0761,
             "adminCalibrationNotes": [
               "Actualized above expected range; review range width or assumption language for similar future deals."
             ],
@@ -6143,7 +6299,7 @@
               "guidanceAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "messages": [
-                "Similar automotive outcomes are landing about 26% above the accepted project rate in this simulation cohort.",
+                "Similar automotive outcomes are landing about 25% above the accepted project rate in this simulation cohort.",
                 "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
               ]
             },
@@ -6158,16 +6314,16 @@
               "category": "automotive",
               "projectSizeBand": "premium",
               "market": "detroit",
-              "clientTrustTier": "known"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 13600,
+            "lockedQuote": 13700,
             "expectedRange": {
-              "low": 11300,
-              "high": 15900,
-              "expectedClose": 13600,
+              "low": 11400,
+              "high": 16000,
+              "expectedClose": 13700,
               "currency": "USD"
             },
-            "actualizedCost": 17000,
+            "actualizedCost": 17100,
             "actualizationEvents": [
               "prep day added",
               "travel required",
@@ -6185,7 +6341,7 @@
               "usage expanded"
             ],
             "rangeState": "above_expected_range",
-            "varianceFromExpectedRange": 0.0692,
+            "varianceFromExpectedRange": 0.0688,
             "adminCalibrationNotes": [
               "Actualized above expected range; review range width or assumption language for similar future deals."
             ],
@@ -6212,7 +6368,7 @@
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
             "messages": [
-              "Similar automotive outcomes are landing about 26% above the accepted project rate in this simulation cohort.",
+              "Similar automotive outcomes are landing about 25% above the accepted project rate in this simulation cohort.",
               "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
             ]
           },
@@ -6243,6 +6399,28 @@
         "projectType": "editorial_prestige",
         "market": "new_york",
         "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 5,
+        "clientTrustTier": "emerging",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "limited_history",
+        "completedProjectCount": 0,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 0,
+          "completedProjectCount": 0,
+          "paymentSpeed": 0,
+          "personaIdVerification": 0,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 58,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "prestige",
       "leadTimeDays": 30,
@@ -6405,7 +6583,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -6427,7 +6607,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -6618,7 +6798,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -6640,7 +6822,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -6829,7 +7011,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -6851,7 +7035,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -7039,7 +7223,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -7061,7 +7247,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -7341,7 +7527,7 @@
               "category": "fashion",
               "projectSizeBand": "low_cash",
               "market": "new_york",
-              "clientTrustTier": "new_or_unproven"
+              "clientTrustTier": "emerging"
             },
             "lockedQuote": 12400,
             "expectedRange": {
@@ -7386,7 +7572,7 @@
               "category": "fashion",
               "projectSizeBand": "low_cash",
               "market": "new_york",
-              "clientTrustTier": "new_or_unproven"
+              "clientTrustTier": "emerging"
             },
             "lockedQuote": 10800,
             "expectedRange": {
@@ -7444,6 +7630,28 @@
         "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
+      "clientCredibility": {
+        "clientTrustScore": 5,
+        "clientTrustTier": "emerging",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "limited_history",
+        "completedProjectCount": 0,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 0,
+          "completedProjectCount": 0,
+          "paymentSpeed": 0,
+          "personaIdVerification": 0,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 38,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
       "budgetType": "exploratory",
       "leadTimeDays": 95,
       "timingHorizon": "long_horizon",
@@ -7472,10 +7680,10 @@
           "lane": "Budget-Confident",
           "quote": 6800,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.774,
+          "overallScore": 0.777,
           "creativeFit": 0.56,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.649,
+          "acceptanceProbability": 0.679,
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
@@ -7585,26 +7793,28 @@
           },
           "timing": {
             "horizon": "long_horizon",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.09,
-            "holdPolicy": "no firm hold without stronger confirmation",
+            "confidenceDelta": -0.06,
+            "holdPolicy": "short hold only after confirmation milestone",
             "confirmation": {
               "required": true,
               "state": "confirmation_required",
-              "checkpointDaysBeforeStart": 21,
-              "softHoldExpiresInDays": 0,
+              "checkpointDaysBeforeStart": 30,
+              "softHoldExpiresInDays": 7,
               "expiresWithoutConfirmation": true,
-              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldMinimumConfidence": 0.88,
               "firmHoldRequires": [
                 "confirmed shoot window",
                 "approved scope assumptions",
                 "budget owner confirmation",
                 "confirmation deposit or equivalent commitment"
               ],
-              "platformTrustTier": "new_or_unproven"
+              "platformTrustTier": "limited_history"
             },
-            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
+            "reason": "90+ days out with limited platform history; seriousness confidence reduced"
           },
           "behavior": {
             "talentRateDelta": 0.03,
@@ -7613,15 +7823,15 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
               "visibility": "admin-only",
-              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
               "reasons": [
-                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
                 "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
@@ -7690,10 +7900,10 @@
           "lane": "Strong Specialist",
           "quote": 21600,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.735,
+          "overallScore": 0.738,
           "creativeFit": 1.0,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.537,
+          "acceptanceProbability": 0.567,
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
@@ -7805,26 +8015,28 @@
           },
           "timing": {
             "horizon": "long_horizon",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.09,
-            "holdPolicy": "no firm hold without stronger confirmation",
+            "confidenceDelta": -0.06,
+            "holdPolicy": "short hold only after confirmation milestone",
             "confirmation": {
               "required": true,
               "state": "confirmation_required",
-              "checkpointDaysBeforeStart": 21,
-              "softHoldExpiresInDays": 0,
+              "checkpointDaysBeforeStart": 30,
+              "softHoldExpiresInDays": 7,
               "expiresWithoutConfirmation": true,
-              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldMinimumConfidence": 0.88,
               "firmHoldRequires": [
                 "confirmed shoot window",
                 "approved scope assumptions",
                 "budget owner confirmation",
                 "confirmation deposit or equivalent commitment"
               ],
-              "platformTrustTier": "new_or_unproven"
+              "platformTrustTier": "limited_history"
             },
-            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
+            "reason": "90+ days out with limited platform history; seriousness confidence reduced"
           },
           "behavior": {
             "talentRateDelta": 0.03,
@@ -7833,15 +8045,15 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
               "visibility": "admin-only",
-              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
               "reasons": [
-                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
                 "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
                 "The premium posture is defensible because creative fit is unusually strong for this category.",
@@ -7915,10 +8127,10 @@
           "lane": "Viable Option",
           "quote": 12000,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.702,
+          "overallScore": 0.705,
           "creativeFit": 0.67,
           "priceFit": 0.511,
-          "acceptanceProbability": 0.529,
+          "acceptanceProbability": 0.559,
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
@@ -8030,26 +8242,28 @@
           },
           "timing": {
             "horizon": "long_horizon",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.09,
-            "holdPolicy": "no firm hold without stronger confirmation",
+            "confidenceDelta": -0.06,
+            "holdPolicy": "short hold only after confirmation milestone",
             "confirmation": {
               "required": true,
               "state": "confirmation_required",
-              "checkpointDaysBeforeStart": 21,
-              "softHoldExpiresInDays": 0,
+              "checkpointDaysBeforeStart": 30,
+              "softHoldExpiresInDays": 7,
               "expiresWithoutConfirmation": true,
-              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldMinimumConfidence": 0.88,
               "firmHoldRequires": [
                 "confirmed shoot window",
                 "approved scope assumptions",
                 "budget owner confirmation",
                 "confirmation deposit or equivalent commitment"
               ],
-              "platformTrustTier": "new_or_unproven"
+              "platformTrustTier": "limited_history"
             },
-            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
+            "reason": "90+ days out with limited platform history; seriousness confidence reduced"
           },
           "behavior": {
             "talentRateDelta": 0.01,
@@ -8058,15 +8272,15 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
               "visibility": "admin-only",
-              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
               "reasons": [
-                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
@@ -8136,10 +8350,10 @@
           "lane": "Viable Option",
           "quote": 12700,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.654,
+          "overallScore": 0.657,
           "creativeFit": 0.858,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.27,
+          "acceptanceProbability": 0.3,
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
@@ -8253,26 +8467,28 @@
           },
           "timing": {
             "horizon": "long_horizon",
-            "platformTrustTier": "new_or_unproven",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 5,
+            "clientTrustTier": "emerging",
             "rateDelta": 0.0,
-            "confidenceDelta": -0.09,
-            "holdPolicy": "no firm hold without stronger confirmation",
+            "confidenceDelta": -0.06,
+            "holdPolicy": "short hold only after confirmation milestone",
             "confirmation": {
               "required": true,
               "state": "confirmation_required",
-              "checkpointDaysBeforeStart": 21,
-              "softHoldExpiresInDays": 0,
+              "checkpointDaysBeforeStart": 30,
+              "softHoldExpiresInDays": 7,
               "expiresWithoutConfirmation": true,
-              "firmHoldMinimumConfidence": 0.9,
+              "firmHoldMinimumConfidence": 0.88,
               "firmHoldRequires": [
                 "confirmed shoot window",
                 "approved scope assumptions",
                 "budget owner confirmation",
                 "confirmation deposit or equivalent commitment"
               ],
-              "platformTrustTier": "new_or_unproven"
+              "platformTrustTier": "limited_history"
             },
-            "reason": "90+ days out with no platform history; likely exploratory until proven otherwise"
+            "reason": "90+ days out with limited platform history; seriousness confidence reduced"
           },
           "behavior": {
             "talentRateDelta": -0.02,
@@ -8281,15 +8497,15 @@
             "talentReason": "repeated unexplained late repricing; small talent-side friction tax",
             "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
               "visibility": "admin-only",
-              "summary": "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+              "summary": "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
               "reasons": [
-                "The 90+ day horizon materially lowers seriousness confidence because there is no platform history yet.",
+                "The long planning horizon lowers confidence until approvals, scope, and schedule are firmer.",
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
                 "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
                 "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only."
@@ -8498,20 +8714,20 @@
           "events": [
             "client evaluated locked presentation quote",
             "long-horizon project needs confirmation window",
-            "confirmation checkpoint scheduled 21 days before start",
-            "no soft hold granted until confirmation signals arrive"
+            "confirmation checkpoint scheduled 30 days before start",
+            "soft hold expires in 7 days without confirmation"
           ],
           "warnings": [
             "long-horizon commitment uncertainty"
           ],
           "hold_management": {
             "state": "pending_confirmation",
-            "holdPolicy": "no firm hold without stronger confirmation",
+            "holdPolicy": "short hold only after confirmation milestone",
             "projectLeadTimeDays": 95,
             "projectCommitmentConfidence": 0.38,
-            "firmHoldMinimumConfidence": 0.9,
-            "checkpointDaysBeforeStart": 21,
-            "softHoldExpiresInDays": 0,
+            "firmHoldMinimumConfidence": 0.88,
+            "checkpointDaysBeforeStart": 30,
+            "softHoldExpiresInDays": 7,
             "expiresWithoutConfirmation": true,
             "firmHoldRequires": [
               "confirmed shoot window",
@@ -8522,8 +8738,8 @@
             "nextAction": "collect confirmation signals before firm hold",
             "events": [
               "long-horizon project needs confirmation window",
-              "confirmation checkpoint scheduled 21 days before start",
-              "no soft hold granted until confirmation signals arrive"
+              "confirmation checkpoint scheduled 30 days before start",
+              "soft hold expires in 7 days without confirmation"
             ]
           }
         },
@@ -8535,20 +8751,20 @@
           "events": [
             "client evaluated locked presentation quote",
             "long-horizon project needs confirmation window",
-            "confirmation checkpoint scheduled 21 days before start",
-            "no soft hold granted until confirmation signals arrive"
+            "confirmation checkpoint scheduled 30 days before start",
+            "soft hold expires in 7 days without confirmation"
           ],
           "warnings": [
             "long-horizon commitment uncertainty"
           ],
           "hold_management": {
             "state": "pending_confirmation",
-            "holdPolicy": "no firm hold without stronger confirmation",
+            "holdPolicy": "short hold only after confirmation milestone",
             "projectLeadTimeDays": 95,
             "projectCommitmentConfidence": 0.38,
-            "firmHoldMinimumConfidence": 0.9,
-            "checkpointDaysBeforeStart": 21,
-            "softHoldExpiresInDays": 0,
+            "firmHoldMinimumConfidence": 0.88,
+            "checkpointDaysBeforeStart": 30,
+            "softHoldExpiresInDays": 7,
             "expiresWithoutConfirmation": true,
             "firmHoldRequires": [
               "confirmed shoot window",
@@ -8559,8 +8775,8 @@
             "nextAction": "collect confirmation signals before firm hold",
             "events": [
               "long-horizon project needs confirmation window",
-              "confirmation checkpoint scheduled 21 days before start",
-              "no soft hold granted until confirmation signals arrive"
+              "confirmation checkpoint scheduled 30 days before start",
+              "soft hold expires in 7 days without confirmation"
             ]
           }
         }
@@ -8584,7 +8800,7 @@
               "category": "food",
               "projectSizeBand": "small",
               "market": "los_angeles",
-              "clientTrustTier": "new_or_unproven"
+              "clientTrustTier": "emerging"
             },
             "lockedQuote": 6800,
             "expectedRange": {
@@ -8629,7 +8845,7 @@
               "category": "food",
               "projectSizeBand": "small",
               "market": "los_angeles",
-              "clientTrustTier": "new_or_unproven"
+              "clientTrustTier": "emerging"
             },
             "lockedQuote": 21600,
             "expectedRange": {
@@ -8685,6 +8901,28 @@
         "projectType": "commercial_campaign",
         "market": "los_angeles",
         "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 95,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "high_repeat",
+        "completedProjectCount": 4,
+        "verifiedBrand": true,
+        "agencyAccount": true,
+        "scoreBreakdown": {
+          "completedProjects": 25,
+          "completedProjectCount": 4,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 74,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "flexible",
       "leadTimeDays": 110,
@@ -8828,6 +9066,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -8854,7 +9094,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -9048,6 +9288,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -9074,7 +9316,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -9262,6 +9504,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -9288,7 +9532,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -9476,6 +9720,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -9502,7 +9748,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -9798,7 +10044,7 @@
               "category": "beauty",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 8700,
             "expectedRange": {
@@ -9843,7 +10089,7 @@
               "category": "beauty",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 13200,
             "expectedRange": {
@@ -9900,6 +10146,28 @@
         "market": "los_angeles",
         "talentClassScope": "production_talent"
       },
+      "clientCredibility": {
+        "clientTrustScore": 70,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 2,
+        "verifiedBrand": false,
+        "agencyAccount": true,
+        "scoreBreakdown": {
+          "completedProjects": 15,
+          "completedProjectCount": 2,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 82,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
       "budgetType": "flexible",
       "leadTimeDays": 21,
       "timingHorizon": "normal",
@@ -9926,12 +10194,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Budget-Confident",
-          "quote": 7100,
+          "quote": 7200,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.799,
+          "overallScore": 0.797,
           "creativeFit": 0.566,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.887,
+          "acceptanceProbability": 0.867,
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
@@ -9939,12 +10207,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 7100,
+            "proposedQuote": 7200,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 6100,
-              "high": 8100,
-              "expectedClose": 7100,
+              "low": 6200,
+              "high": 8200,
+              "expectedClose": 7200,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -9965,7 +10233,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 7100,
+            "committedQuote": 7200,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -9974,9 +10242,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 6100,
-              "high": 8100,
-              "expectedClose": 7100,
+              "low": 6200,
+              "high": 8200,
+              "expectedClose": 7200,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10012,9 +10280,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 6100,
-            "high": 8100,
-            "expectedClose": 7100,
+            "low": 6200,
+            "high": 8200,
+            "expectedClose": 7200,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -10042,6 +10310,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -10058,12 +10328,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.02,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -10071,8 +10341,7 @@
               "visibility": "admin-only",
               "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk."
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -10134,12 +10403,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Strong Specialist",
-          "quote": 22500,
+          "quote": 22800,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.759,
+          "overallScore": 0.757,
           "creativeFit": 1.0,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.773,
+          "acceptanceProbability": 0.753,
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
@@ -10147,12 +10416,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 22500,
+            "proposedQuote": 22800,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 19400,
-              "high": 25700,
-              "expectedClose": 22500,
+              "low": 19600,
+              "high": 26000,
+              "expectedClose": 22800,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10173,7 +10442,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 22500,
+            "committedQuote": 22800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -10182,9 +10451,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 19400,
-              "high": 25700,
-              "expectedClose": 22500,
+              "low": 19600,
+              "high": 26000,
+              "expectedClose": 22800,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10220,9 +10489,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 19400,
-            "high": 25700,
-            "expectedClose": 22500,
+            "low": 19600,
+            "high": 26000,
+            "expectedClose": 22800,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -10252,6 +10521,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -10268,12 +10539,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.02,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -10282,7 +10553,6 @@
               "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
                 "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk.",
                 "The premium posture is defensible because creative fit is unusually strong for this category.",
                 "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
               ],
@@ -10351,12 +10621,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Viable Option",
-          "quote": 12500,
+          "quote": 12600,
           "clientVisiblePriceState": "premium stretch",
-          "overallScore": 0.737,
+          "overallScore": 0.735,
           "creativeFit": 0.676,
           "priceFit": 0.551,
-          "acceptanceProbability": 0.779,
+          "acceptanceProbability": 0.759,
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
@@ -10364,12 +10634,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 12500,
+            "proposedQuote": 12600,
             "proposedRange": {
               "label": "Expected Booking Range",
               "low": 10800,
-              "high": 14300,
-              "expectedClose": 12500,
+              "high": 14400,
+              "expectedClose": 12600,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10390,7 +10660,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 12500,
+            "committedQuote": 12600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -10400,8 +10670,8 @@
             "committedRange": {
               "label": "Expected Booking Range",
               "low": 10800,
-              "high": 14300,
-              "expectedClose": 12500,
+              "high": 14400,
+              "expectedClose": 12600,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10438,8 +10708,8 @@
           "expectedBookingRange": {
             "label": "Expected Booking Range",
             "low": 10800,
-            "high": 14300,
-            "expectedClose": 12500,
+            "high": 14400,
+            "expectedClose": 12600,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -10469,6 +10739,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -10485,12 +10757,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": 0.0,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": 0.01,
             "talentReason": "solid dependable behavior",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -10498,8 +10770,7 @@
               "visibility": "admin-only",
               "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -10561,12 +10832,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Strong Specialist",
-          "quote": 13300,
+          "quote": 13400,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.685,
+          "overallScore": 0.683,
           "creativeFit": 0.882,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.513,
+          "acceptanceProbability": 0.493,
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
@@ -10574,12 +10845,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 11100,
+            "proposedQuote": 11200,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 9500,
-              "high": 12700,
-              "expectedClose": 11100,
+              "low": 9600,
+              "high": 12800,
+              "expectedClose": 11200,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10600,7 +10871,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 13300,
+            "committedQuote": 13400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -10611,9 +10882,9 @@
             ],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 11400,
-              "high": 15200,
-              "expectedClose": 13300,
+              "low": 11500,
+              "high": 15300,
+              "expectedClose": 13400,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10649,9 +10920,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 11400,
-            "high": 15200,
-            "expectedClose": 13300,
+            "low": 11500,
+            "high": 15300,
+            "expectedClose": 13400,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -10681,6 +10952,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -10697,12 +10970,12 @@
           },
           "behavior": {
             "talentRateDelta": -0.02,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": -0.03,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": -0.02,
             "talentReason": "repeated unexplained late repricing; small talent-side friction tax",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -10711,7 +10984,6 @@
               "summary": "A -2.0% talent-side friction adjustment reflects added deal friction.",
               "reasons": [
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk.",
                 "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only.",
                 "The premium posture is defensible because creative fit is unusually strong for this category."
               ],
@@ -10780,12 +11052,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Stress Test Candidate",
-          "quote": 13300,
+          "quote": 13400,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.685,
+          "overallScore": 0.683,
           "creativeFit": 0.882,
           "priceFit": 0.78,
-          "acceptanceProbability": 0.513,
+          "acceptanceProbability": 0.493,
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
@@ -10793,12 +11065,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 11100,
+            "proposedQuote": 11200,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 9500,
-              "high": 12700,
-              "expectedClose": 11100,
+              "low": 9600,
+              "high": 12800,
+              "expectedClose": 11200,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10819,7 +11091,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 13300,
+            "committedQuote": 13400,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -10830,9 +11102,9 @@
             ],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 11400,
-              "high": 15200,
-              "expectedClose": 13300,
+              "low": 11500,
+              "high": 15300,
+              "expectedClose": 13400,
               "currency": "USD",
               "rangeWidth": 0.14,
               "assumptionsIncluded": [
@@ -10868,9 +11140,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 11400,
-            "high": 15200,
-            "expectedClose": 13300,
+            "low": 11500,
+            "high": 15300,
+            "expectedClose": 13400,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -10900,6 +11172,8 @@
           "timing": {
             "horizon": "normal",
             "platformTrustTier": "known",
+            "clientTrustScore": 70,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -10916,12 +11190,12 @@
           },
           "behavior": {
             "talentRateDelta": -0.02,
-            "clientRateDelta": -0.01,
-            "combinedBehaviorRateDelta": -0.03,
+            "clientRateDelta": 0.0,
+            "combinedBehaviorRateDelta": -0.02,
             "talentReason": "repeated unexplained late repricing; small talent-side friction tax",
-            "clientReason": "solid client reliability",
+            "clientReason": "neutral client behavior",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -10930,7 +11204,6 @@
               "summary": "A -2.0% talent-side friction adjustment reflects added deal friction.",
               "reasons": [
                 "A -2.0% talent-side friction adjustment reflects added deal friction.",
-                "A -1.0% client reliability adjustment reflects lower transaction risk.",
                 "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only.",
                 "The premium posture is defensible because creative fit is unusually strong for this category."
               ],
@@ -11001,12 +11274,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 7100,
+          "proposedQuote": 7200,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 6100,
-            "high": 8100,
-            "expectedClose": 7100,
+            "low": 6200,
+            "high": 8200,
+            "expectedClose": 7200,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -11027,7 +11300,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 7100,
+          "committedQuote": 7200,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -11036,9 +11309,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 6100,
-            "high": 8100,
-            "expectedClose": 7100,
+            "low": 6200,
+            "high": 8200,
+            "expectedClose": 7200,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -11067,12 +11340,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 22500,
+          "proposedQuote": 22800,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 19400,
-            "high": 25700,
-            "expectedClose": 22500,
+            "low": 19600,
+            "high": 26000,
+            "expectedClose": 22800,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -11093,7 +11366,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 22500,
+          "committedQuote": 22800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -11102,9 +11375,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 19400,
-            "high": 25700,
-            "expectedClose": 22500,
+            "low": 19600,
+            "high": 26000,
+            "expectedClose": 22800,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -11133,12 +11406,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 11100,
+          "proposedQuote": 11200,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 9500,
-            "high": 12700,
-            "expectedClose": 11100,
+            "low": 9600,
+            "high": 12800,
+            "expectedClose": 11200,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -11159,7 +11432,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 13300,
+          "committedQuote": 13400,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -11170,9 +11443,9 @@
           ],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 11400,
-            "high": 15200,
-            "expectedClose": 13300,
+            "low": 11500,
+            "high": 15300,
+            "expectedClose": 13400,
             "currency": "USD",
             "rangeWidth": 0.14,
             "assumptionsIncluded": [
@@ -11199,7 +11472,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "booked",
-          "locked_quote": 7100,
+          "locked_quote": 7200,
           "client_capacity": 11200,
           "events": [
             "client evaluated locked presentation quote"
@@ -11209,7 +11482,7 @@
         {
           "talent_id": "premium_food_director",
           "status": "failed_budget_gap",
-          "locked_quote": 22500,
+          "locked_quote": 22800,
           "client_capacity": 11200,
           "events": [
             "client evaluated locked presentation quote"
@@ -11221,7 +11494,7 @@
         {
           "talent_id": "volatile_rep_managed_talent",
           "status": "failed_budget_gap",
-          "locked_quote": 13300,
+          "locked_quote": 13400,
           "client_capacity": 11200,
           "events": [
             "client evaluated locked presentation quote"
@@ -11237,7 +11510,7 @@
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 0,
           "talentGuidanceCount": 0,
-          "averageActualizationLift": 0.0563,
+          "averageActualizationLift": 0.0556,
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
         },
@@ -11250,16 +11523,16 @@
               "category": "food",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "known"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 7100,
+            "lockedQuote": 7200,
             "expectedRange": {
-              "low": 6100,
-              "high": 8100,
-              "expectedClose": 7100,
+              "low": 6200,
+              "high": 8200,
+              "expectedClose": 7200,
               "currency": "USD"
             },
-            "actualizedCost": 7500,
+            "actualizedCost": 7600,
             "actualizationEvents": [
               "prep day added"
             ],
@@ -11297,13 +11570,13 @@
               "category": "food",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "known"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 22500,
+            "lockedQuote": 22800,
             "expectedRange": {
-              "low": 19400,
-              "high": 25700,
-              "expectedClose": 22500,
+              "low": 19600,
+              "high": 26000,
+              "expectedClose": 22800,
               "currency": "USD"
             },
             "actualizedCost": null,
@@ -11342,13 +11615,13 @@
               "category": "food",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "known"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 13300,
+            "lockedQuote": 13400,
             "expectedRange": {
-              "low": 11400,
-              "high": 15200,
-              "expectedClose": 13300,
+              "low": 11500,
+              "high": 15300,
+              "expectedClose": 13400,
               "currency": "USD"
             },
             "actualizedCost": null,
@@ -11399,6 +11672,28 @@
         "projectType": "commercial_campaign",
         "market": "los_angeles",
         "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 95,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "high_repeat",
+        "completedProjectCount": 4,
+        "verifiedBrand": true,
+        "agencyAccount": true,
+        "scoreBreakdown": {
+          "completedProjects": 25,
+          "completedProjectCount": 4,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 72,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "flexible",
       "leadTimeDays": 120,
@@ -11542,6 +11837,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -11568,7 +11865,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -11762,6 +12059,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -11788,7 +12087,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -11976,6 +12275,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -12002,7 +12303,7 @@
             "talentReason": "high quote stability and reliability",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -12190,6 +12491,8 @@
           "timing": {
             "horizon": "long_horizon",
             "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
             "rateDelta": 0.0,
             "confidenceDelta": -0.01,
             "holdPolicy": "soft hold with scheduled confirmation checkpoint",
@@ -12216,7 +12519,7 @@
             "talentReason": "solid dependable behavior",
             "clientReason": "dependable client reduces transaction risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -12522,7 +12825,7 @@
               "category": "beauty",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 8700,
             "expectedRange": {
@@ -12567,7 +12870,7 @@
               "category": "beauty",
               "projectSizeBand": "mid",
               "market": "los_angeles",
-              "clientTrustTier": "high_repeat"
+              "clientTrustTier": "premium"
             },
             "lockedQuote": 13200,
             "expectedRange": {
@@ -12624,6 +12927,28 @@
         "market": "austin",
         "talentClassScope": "production_talent"
       },
+      "clientCredibility": {
+        "clientTrustScore": 45,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 1,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 10,
+          "completedProjectCount": 1,
+          "paymentSpeed": 15,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 78,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
       "budgetType": "firm",
       "leadTimeDays": 24,
       "timingHorizon": "normal",
@@ -12650,12 +12975,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Best Fit",
-          "quote": 6700,
+          "quote": 6800,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.732,
+          "overallScore": 0.724,
           "creativeFit": 0.688,
           "priceFit": 0.49,
-          "acceptanceProbability": 0.766,
+          "acceptanceProbability": 0.686,
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
@@ -12663,12 +12988,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 6700,
+            "proposedQuote": 6800,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 6200,
-              "high": 7200,
-              "expectedClose": 6700,
+              "low": 6300,
+              "high": 7300,
+              "expectedClose": 6800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -12689,7 +13014,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 6700,
+            "committedQuote": 6800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -12698,9 +13023,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 6200,
-              "high": 7200,
-              "expectedClose": 6700,
+              "low": 6300,
+              "high": 7300,
+              "expectedClose": 6800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -12736,9 +13061,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 6200,
-            "high": 7200,
-            "expectedClose": 6700,
+            "low": 6300,
+            "high": 7300,
+            "expectedClose": 6800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -12765,7 +13090,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -12782,12 +13109,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.03,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.05,
             "talentReason": "high quote stability and reliability",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -12795,7 +13122,8 @@
               "visibility": "admin-only",
               "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +3.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -12804,7 +13132,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -12846,6 +13174,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "outside stated budget"
             ],
             "matureAutonomyCandidate": false,
@@ -12859,12 +13188,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Budget-Confident",
-          "quote": 4000,
+          "quote": 4100,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.695,
+          "overallScore": 0.687,
           "creativeFit": 0.728,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.849,
+          "acceptanceProbability": 0.769,
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
@@ -12872,12 +13201,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 4000,
+            "proposedQuote": 4100,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 3700,
-              "high": 4300,
-              "expectedClose": 4000,
+              "low": 3800,
+              "high": 4400,
+              "expectedClose": 4100,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -12898,7 +13227,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 4000,
+            "committedQuote": 4100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -12907,9 +13236,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 3700,
-              "high": 4300,
-              "expectedClose": 4000,
+              "low": 3800,
+              "high": 4400,
+              "expectedClose": 4100,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -12945,9 +13274,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 3700,
-            "high": 4300,
-            "expectedClose": 4000,
+            "low": 3800,
+            "high": 4400,
+            "expectedClose": 4100,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -12976,7 +13305,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -12993,20 +13324,20 @@
           },
           "behavior": {
             "talentRateDelta": 0.0,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.0,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "neutral talent behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
               "visibility": "admin-only",
-              "summary": "No special pricing rationale beyond the base computed fit and budget posture.",
+              "summary": "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
               "reasons": [
-                "No special pricing rationale beyond the base computed fit and budget posture."
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -13015,8 +13346,10 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
-              "leakageWarningsIfSurfaced": []
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
             },
             "brandFacingRationale": {
               "audience": "brand",
@@ -13054,6 +13387,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "market-health guardrail"
             ],
             "matureAutonomyCandidate": false,
@@ -13067,12 +13401,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Viable Option",
-          "quote": 11600,
+          "quote": 12000,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.658,
+          "overallScore": 0.65,
           "creativeFit": 0.728,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.652,
+          "acceptanceProbability": 0.572,
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
@@ -13080,12 +13414,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 11600,
+            "proposedQuote": 12000,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 10700,
-              "high": 12500,
-              "expectedClose": 11600,
+              "low": 11000,
+              "high": 13000,
+              "expectedClose": 12000,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -13106,7 +13440,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 11600,
+            "committedQuote": 12000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -13115,9 +13449,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 10700,
-              "high": 12500,
-              "expectedClose": 11600,
+              "low": 11000,
+              "high": 13000,
+              "expectedClose": 12000,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -13153,9 +13487,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 10700,
-            "high": 12500,
-            "expectedClose": 11600,
+            "low": 11000,
+            "high": 13000,
+            "expectedClose": 12000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13184,7 +13518,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -13201,12 +13537,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -13214,7 +13550,8 @@
               "visibility": "admin-only",
               "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -13223,7 +13560,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -13265,6 +13602,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "outside stated budget"
             ],
             "matureAutonomyCandidate": false,
@@ -13278,12 +13616,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Emerging Value",
-          "quote": 7600,
+          "quote": 7800,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.656,
+          "overallScore": 0.648,
           "creativeFit": 0.794,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.65,
+          "acceptanceProbability": 0.57,
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
@@ -13291,12 +13629,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 7600,
+            "proposedQuote": 7800,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 7000,
-              "high": 8200,
-              "expectedClose": 7600,
+              "low": 7200,
+              "high": 8400,
+              "expectedClose": 7800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -13317,7 +13655,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 7600,
+            "committedQuote": 7800,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -13326,9 +13664,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 7000,
-              "high": 8200,
-              "expectedClose": 7600,
+              "low": 7200,
+              "high": 8400,
+              "expectedClose": 7800,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -13364,9 +13702,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 7000,
-            "high": 8200,
-            "expectedClose": 7600,
+            "low": 7200,
+            "high": 8400,
+            "expectedClose": 7800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13393,7 +13731,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -13410,12 +13750,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -13423,7 +13763,8 @@
               "visibility": "admin-only",
               "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
               "reasons": [
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -13432,7 +13773,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -13474,6 +13815,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "outside stated budget"
             ],
             "matureAutonomyCandidate": false,
@@ -13489,12 +13831,12 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Stress Test Candidate",
-          "quote": 4000,
+          "quote": 4100,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.695,
+          "overallScore": 0.687,
           "creativeFit": 0.728,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.849,
+          "acceptanceProbability": 0.769,
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
@@ -13502,12 +13844,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 4000,
+            "proposedQuote": 4100,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 3700,
-              "high": 4300,
-              "expectedClose": 4000,
+              "low": 3800,
+              "high": 4400,
+              "expectedClose": 4100,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -13528,7 +13870,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 4000,
+            "committedQuote": 4100,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -13537,9 +13879,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 3700,
-              "high": 4300,
-              "expectedClose": 4000,
+              "low": 3800,
+              "high": 4400,
+              "expectedClose": 4100,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -13575,9 +13917,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 3700,
-            "high": 4300,
-            "expectedClose": 4000,
+            "low": 3800,
+            "high": 4400,
+            "expectedClose": 4100,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13606,7 +13948,9 @@
           },
           "timing": {
             "horizon": "normal",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.0,
             "confidenceDelta": 0.0,
             "holdPolicy": "standard",
@@ -13623,20 +13967,20 @@
           },
           "behavior": {
             "talentRateDelta": 0.0,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.0,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.03,
             "talentReason": "neutral talent behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream talent reliability metric",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
               "visibility": "admin-only",
-              "summary": "No special pricing rationale beyond the base computed fit and budget posture.",
+              "summary": "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
               "reasons": [
-                "No special pricing rationale beyond the base computed fit and budget posture."
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -13645,8 +13989,10 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
-              "leakageWarningsIfSurfaced": []
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
             },
             "brandFacingRationale": {
               "audience": "brand",
@@ -13684,6 +14030,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "market-health guardrail"
             ],
             "matureAutonomyCandidate": false,
@@ -13701,12 +14048,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 6700,
+          "proposedQuote": 6800,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 6200,
-            "high": 7200,
-            "expectedClose": 6700,
+            "low": 6300,
+            "high": 7300,
+            "expectedClose": 6800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13727,7 +14074,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 6700,
+          "committedQuote": 6800,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -13736,9 +14083,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 6200,
-            "high": 7200,
-            "expectedClose": 6700,
+            "low": 6300,
+            "high": 7300,
+            "expectedClose": 6800,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13767,12 +14114,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 4000,
+          "proposedQuote": 4100,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 3700,
-            "high": 4300,
-            "expectedClose": 4000,
+            "low": 3800,
+            "high": 4400,
+            "expectedClose": 4100,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13793,7 +14140,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 4000,
+          "committedQuote": 4100,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -13802,9 +14149,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 3700,
-            "high": 4300,
-            "expectedClose": 4000,
+            "low": 3800,
+            "high": 4400,
+            "expectedClose": 4100,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -13831,7 +14178,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "failed_budget_gap",
-          "locked_quote": 6700,
+          "locked_quote": 6800,
           "client_capacity": 5200,
           "events": [
             "client evaluated locked presentation quote"
@@ -13843,7 +14190,7 @@
         {
           "talent_id": "low_rate_fast_responder",
           "status": "booked_with_market_health_warning",
-          "locked_quote": 4000,
+          "locked_quote": 4100,
           "client_capacity": 5200,
           "events": [
             "client evaluated locked presentation quote",
@@ -13883,13 +14230,13 @@
               "category": "social",
               "projectSizeBand": "small",
               "market": "austin",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 6700,
+            "lockedQuote": 6800,
             "expectedRange": {
-              "low": 6200,
-              "high": 7200,
-              "expectedClose": 6700,
+              "low": 6300,
+              "high": 7300,
+              "expectedClose": 6800,
               "currency": "USD"
             },
             "actualizedCost": null,
@@ -13928,16 +14275,16 @@
               "category": "social",
               "projectSizeBand": "small",
               "market": "austin",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
-            "lockedQuote": 4000,
+            "lockedQuote": 4100,
             "expectedRange": {
-              "low": 3700,
-              "high": 4300,
-              "expectedClose": 4000,
+              "low": 3800,
+              "high": 4400,
+              "expectedClose": 4100,
               "currency": "USD"
             },
-            "actualizedCost": 4000,
+            "actualizedCost": 4100,
             "actualizationEvents": [],
             "allowedActualizationTriggers": [
               "additional revision round requested",
@@ -13985,6 +14332,28 @@
         "projectType": "background_casting",
         "market": "los_angeles",
         "talentClassScope": "actor"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 45,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 1,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 10,
+          "completedProjectCount": 1,
+          "paymentSpeed": 15,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 82,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "firm",
       "leadTimeDays": 14,
@@ -14050,10 +14419,10 @@
           "lane": "Best Fit",
           "quote": 216,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.748,
+          "overallScore": 0.74,
           "creativeFit": 0.993,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.727,
+          "acceptanceProbability": 0.647,
           "availabilityCheck": {
             "talent_id": "background_extra_actor",
             "status": "accepted_at_presented_rate",
@@ -14162,7 +14531,9 @@
           },
           "timing": {
             "horizon": "last_minute",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
@@ -14179,12 +14550,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream actor readiness score",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -14194,6 +14565,7 @@
               "reasons": [
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
                 "The premium posture is defensible because creative fit is unusually strong for this category."
               ],
               "discretionDelta": 0.0,
@@ -14203,7 +14575,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -14246,6 +14618,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "outside stated budget"
             ],
             "matureAutonomyCandidate": false,
@@ -14261,10 +14634,10 @@
           "lane": "Emerging Value",
           "quote": 216,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.686,
+          "overallScore": 0.678,
           "creativeFit": 0.846,
           "priceFit": 0.14,
-          "acceptanceProbability": 0.672,
+          "acceptanceProbability": 0.592,
           "availabilityCheck": {
             "talent_id": "featured_actor_unknown_wage",
             "status": "accepted_at_presented_rate",
@@ -14373,7 +14746,9 @@
           },
           "timing": {
             "horizon": "last_minute",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
@@ -14390,12 +14765,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream actor readiness score",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -14404,7 +14779,8 @@
               "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
               "reasons": [
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -14413,7 +14789,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -14456,6 +14832,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "outside stated budget"
             ],
             "matureAutonomyCandidate": false,
@@ -14671,7 +15048,7 @@
               "category": "background",
               "projectSizeBand": "low_cash",
               "market": "los_angeles",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
             "lockedQuote": 216,
             "expectedRange": {
@@ -14716,7 +15093,7 @@
               "category": "background",
               "projectSizeBand": "low_cash",
               "market": "los_angeles",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
             "lockedQuote": 216,
             "expectedRange": {
@@ -14773,6 +15150,28 @@
         "projectType": "background_casting",
         "market": "unknown_market",
         "talentClassScope": "actor"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 45,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 1,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "scoreBreakdown": {
+          "completedProjects": 10,
+          "completedProjectCount": 1,
+          "paymentSpeed": 15,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 82,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
       },
       "budgetType": "firm",
       "leadTimeDays": 14,
@@ -14838,10 +15237,10 @@
           "lane": "Best Fit",
           "quote": 100,
           "clientVisiblePriceState": "within expected range",
-          "overallScore": 0.923,
+          "overallScore": 0.915,
           "creativeFit": 0.993,
           "priceFit": 0.95,
-          "acceptanceProbability": 0.954,
+          "acceptanceProbability": 0.874,
           "availabilityCheck": {
             "talent_id": "background_extra_actor",
             "status": "accepted_at_presented_rate",
@@ -14950,7 +15349,9 @@
           },
           "timing": {
             "horizon": "last_minute",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
@@ -14967,12 +15368,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream actor readiness score",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -14981,7 +15382,8 @@
               "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
               "reasons": [
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -14990,7 +15392,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -15033,6 +15435,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "minimum wage floor unknown"
             ],
             "matureAutonomyCandidate": false,
@@ -15048,10 +15451,10 @@
           "lane": "Emerging Value",
           "quote": 200,
           "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.782,
+          "overallScore": 0.774,
           "creativeFit": 0.846,
           "priceFit": 0.56,
-          "acceptanceProbability": 0.789,
+          "acceptanceProbability": 0.709,
           "availabilityCheck": {
             "talent_id": "featured_actor_unknown_wage",
             "status": "accepted_at_presented_rate",
@@ -15162,7 +15565,9 @@
           },
           "timing": {
             "horizon": "last_minute",
-            "platformTrustTier": "limited_history",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
             "rateDelta": 0.04,
             "confidenceDelta": 0.0,
             "holdPolicy": "short confirmation window",
@@ -15179,12 +15584,12 @@
           },
           "behavior": {
             "talentRateDelta": 0.01,
-            "clientRateDelta": 0.0,
-            "combinedBehaviorRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
             "talentReason": "solid dependable behavior",
-            "clientReason": "neutral client behavior",
+            "clientReason": "high-friction client behavior risk",
             "talentSource": "upstream actor readiness score",
-            "clientSource": "upstream client trust metric"
+            "clientSource": "main site clientTrustScore"
           },
           "aiRationales": {
             "adminPricingRationale": {
@@ -15193,7 +15598,8 @@
               "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
               "reasons": [
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction."
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -15202,7 +15608,7 @@
               "calibrationAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
               "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": false,
+              "humanReviewRecommended": true,
               "leakageWarningsIfSurfaced": [
                 "percentage"
               ]
@@ -15245,6 +15651,7 @@
               "Launch mode requires admin approval before client presentation."
             ],
             "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
               "minimum wage floor unknown",
               "outside stated budget"
             ],
@@ -15427,7 +15834,7 @@
               "category": "background",
               "projectSizeBand": "low_cash",
               "market": "unknown_market",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
             "lockedQuote": 100,
             "expectedRange": {
@@ -15472,7 +15879,7 @@
               "category": "background",
               "projectSizeBand": "low_cash",
               "market": "unknown_market",
-              "clientTrustTier": "limited_history"
+              "clientTrustTier": "established"
             },
             "lockedQuote": 200,
             "expectedRange": {
@@ -15527,8 +15934,8 @@
       "clientTrustTier"
     ],
     "summary": {
-      "cohortCount": 27,
-      "cohortGuidanceCount": 12,
+      "cohortCount": 26,
+      "cohortGuidanceCount": 11,
       "calibrationAuthority": "guidance_only",
       "rateAuthority": "talent_owned_rate_range"
     },
@@ -15565,7 +15972,7 @@
           "bookedRecordCount": 3,
           "actualizedRecordCount": 3,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1732,
+          "averageActualizationLift": 0.1726,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -15592,7 +15999,7 @@
           "bookedRecordCount": 5,
           "actualizedRecordCount": 5,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1219,
+          "averageActualizationLift": 0.1211,
           "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -15696,7 +16103,7 @@
           "bookedRecordCount": 4,
           "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.2008,
+          "averageActualizationLift": 0.1995,
           "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -15798,7 +16205,7 @@
           "bookedRecordCount": 2,
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0282,
+          "averageActualizationLift": 0.0278,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
@@ -15926,7 +16333,7 @@
           "bookedRecordCount": 1,
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0563,
+          "averageActualizationLift": 0.0556,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
@@ -15950,7 +16357,7 @@
           "bookedRecordCount": 4,
           "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.192,
+          "averageActualizationLift": 0.1908,
           "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -16027,7 +16434,7 @@
           "bookedRecordCount": 4,
           "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.2008,
+          "averageActualizationLift": 0.1995,
           "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -16054,7 +16461,7 @@
           "bookedRecordCount": 2,
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0282,
+          "averageActualizationLift": 0.0278,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
@@ -16126,85 +16533,7 @@
       "clientTrustTier": [
         {
           "dimension": "clientTrustTier",
-          "value": "high_repeat",
-          "recordCount": 8,
-          "bookedRecordCount": 4,
-          "actualizedRecordCount": 4,
-          "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.144,
-          "confidence": "medium",
-          "adminCalibrationNotes": [
-            "Actualized outcomes stayed inside expected ranges for this cohort."
-          ],
-          "talentGuidance": {
-            "visibility": "talent-guidance",
-            "available": true,
-            "appliesAutomatically": false,
-            "guidanceAuthority": "guidance_only",
-            "rateAuthority": "talent_owned_rate_range",
-            "confidence": "medium",
-            "messages": [
-              "Directional client-trust cohort signal: high repeat outcomes are landing about 14% above accepted project rates in this simulation sample.",
-              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
-            ]
-          },
-          "calibrationAuthority": "guidance_only",
-          "rateAuthority": "talent_owned_rate_range"
-        },
-        {
-          "dimension": "clientTrustTier",
-          "value": "known",
-          "recordCount": 8,
-          "bookedRecordCount": 5,
-          "actualizedRecordCount": 5,
-          "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.1649,
-          "confidence": "medium",
-          "adminCalibrationNotes": [
-            "Above-range actualization appeared in this cohort; review range width and assumptions."
-          ],
-          "talentGuidance": {
-            "visibility": "talent-guidance",
-            "available": true,
-            "appliesAutomatically": false,
-            "guidanceAuthority": "guidance_only",
-            "rateAuthority": "talent_owned_rate_range",
-            "confidence": "medium",
-            "messages": [
-              "Directional client-trust cohort signal: known outcomes are landing about 16% above accepted project rates in this simulation sample.",
-              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
-            ]
-          },
-          "calibrationAuthority": "guidance_only",
-          "rateAuthority": "talent_owned_rate_range"
-        },
-        {
-          "dimension": "clientTrustTier",
-          "value": "limited_history",
-          "recordCount": 8,
-          "bookedRecordCount": 4,
-          "actualizedRecordCount": 4,
-          "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0,
-          "confidence": "medium",
-          "adminCalibrationNotes": [
-            "Actualized outcomes stayed inside expected ranges for this cohort."
-          ],
-          "talentGuidance": {
-            "visibility": "talent-guidance",
-            "available": false,
-            "appliesAutomatically": false,
-            "guidanceAuthority": "guidance_only",
-            "rateAuthority": "talent_owned_rate_range",
-            "confidence": "medium",
-            "messages": []
-          },
-          "calibrationAuthority": "guidance_only",
-          "rateAuthority": "talent_owned_rate_range"
-        },
-        {
-          "dimension": "clientTrustTier",
-          "value": "new_or_unproven",
+          "value": "emerging",
           "recordCount": 4,
           "bookedRecordCount": 0,
           "actualizedRecordCount": 0,
@@ -16225,6 +16554,57 @@
           },
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "clientTrustTier",
+          "value": "established",
+          "recordCount": 13,
+          "bookedRecordCount": 7,
+          "actualizedRecordCount": 7,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.0796,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "clientTrustTier",
+          "value": "premium",
+          "recordCount": 11,
+          "bookedRecordCount": 6,
+          "actualizedRecordCount": 6,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.1396,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": [
+              "Directional client-trust cohort signal: premium outcomes are landing about 14% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
         }
       ]
     }
@@ -16234,14 +16614,14 @@
     "bookedCount": 8,
     "bookingRate": 0.615,
     "longHorizonScenarioCount": 3,
-    "behaviorNudgeShareOfRecommendations": 0.843,
+    "behaviorNudgeShareOfRecommendations": 0.922,
     "timingNudgeShareOfRecommendations": 0.392,
     "aiRationaleCount": 51,
     "brandFacingRationaleCount": 51,
     "brandFacingRationaleLeakageCount": 0,
     "talentFacingJobSpecificRationaleCount": 0,
     "adminApprovalRequiredCount": 51,
-    "matureAutonomyCandidateCount": 23,
+    "matureAutonomyCandidateCount": 21,
     "availabilityCheckCount": 51,
     "prePresentationTalentCounterCount": 4,
     "minimumWageFloorAppliedCount": 2,
@@ -16259,13 +16639,13 @@
     "holdExpiredCount": 1,
     "holdExpiredWarningCount": 1,
     "adminInclusionOverrideCount": 1,
-    "averageActualizationLift": 0.1077,
-    "aiHumanReviewShareOfRecommendations": 0.333,
+    "averageActualizationLift": 0.1073,
+    "aiHumanReviewShareOfRecommendations": 0.549,
     "averageAbsoluteShadowDiscretionDelta": 0.0014,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
       "admin inclusion override": 1,
-      "admin pricing rationale flagged for review": 17,
+      "admin pricing rationale flagged for review": 28,
       "long-horizon project without strong client trust": 4,
       "market-health guardrail": 3,
       "minimum wage floor unknown": 2,
@@ -16287,8 +16667,8 @@
       "pre-presentation counter increased locked quote": 1,
       "scope calibration required": 2
     },
-    "cohortCount": 27,
-    "cohortGuidanceCount": 12
+    "cohortCount": 26,
+    "cohortGuidanceCount": 11
   },
   "validation": {
     "status": "pass",

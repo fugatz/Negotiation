@@ -124,7 +124,10 @@ Client behavior types should include:
 
 Synthetic client profiles should also include behavior history:
 
-- upstream client trust metric
+- main-site `clientTrustScore`, from 0 to 100
+- main-site `clientTrustTier`: Premium, Established, Emerging, or New
+- client trust score breakdown, when available for admin audit
+- Verified Brand and Agency Account admin flags
 - brief clarity
 - decision speed
 - payment reliability
@@ -132,7 +135,15 @@ Synthetic client profiles should also include behavior history:
 - rate-shopping frequency
 - post-quote scope creep frequency
 - completed Distinkt project count
-- platform client trust score
+
+The simulator treats `clientTrustScore` and `clientTrustTier` as upstream product inputs. It does not
+own the formula. The current product score gives up to 30 points for completed projects, 20 for payment
+speed, 15 for Persona ID verification, 5 for website presence, 20 for the Verified Brand admin flag, and
+10 for the Agency Account admin flag. Score tiers are Premium at 71+ or Verified Brand, Established at
+41+ or Agency Account, Emerging at 1-40, and New at 0.
+
+There is also a separate project credibility score in the main product. This simulator can consume it
+when supplied; otherwise fixtures may use project commitment confidence as a proxy.
 
 ### Negotiation Agent
 
@@ -269,7 +280,7 @@ Expected behavior:
 - projects under 14 days receive a stronger but capped compression premium
 - projects 90 or more days out receive a small seriousness/confidence reduction
 - 90+ day timing affects hold/confirmation mechanics rather than direct price
-- platform client trust heavily offsets 90+ day uncertainty
+- `clientTrustScore` and `clientTrustTier` heavily offset 90+ day uncertainty
 - new clients remain low-confidence at 90+ days
 - high-trust repeat clients around their 4th project or later are treated as much more credible
 

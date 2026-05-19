@@ -153,7 +153,10 @@ def _cohort_signals(project: dict, talent: dict, rec: dict) -> dict:
         "category": project["category"],
         "projectSizeBand": project.get("project_size_band", "unknown_size"),
         "market": project.get("market", "unknown_market"),
-        "clientTrustTier": rec["timing_nudge"]["platform_trust_tier"],
+        "clientTrustTier": rec["timing_nudge"].get(
+            "client_trust_tier",
+            rec["timing_nudge"]["platform_trust_tier"],
+        ),
     }
 
 

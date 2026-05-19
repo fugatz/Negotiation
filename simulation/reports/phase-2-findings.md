@@ -58,7 +58,7 @@ Policy: `phase-3-hold-expiration-v1`
 | Availability checks | 51 |
 | Pre-presentation talent counters | 4 |
 | Admin approval required | 51 |
-| Mature autonomy candidates | 23 |
+| Mature autonomy candidates | 21 |
 | Admin inclusion overrides | 1 |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 2 |
@@ -102,7 +102,7 @@ Policy implication:
 
 ### 2. Behavior Nudges Are Small But Useful
 
-Behavior adjustments appear in 84.3% of recommendations, but caps keep them non-dominant. Reliable
+Behavior adjustments appear in 92.2% of recommendations, but caps keep them non-dominant. Reliable
 talent can receive small premiums, dependable clients can reduce transaction risk, and high-friction
 clients can create small risk adjustments.
 
@@ -110,9 +110,24 @@ Policy implication:
 
 - keep behavior as a minor pricing input
 - keep behavior rationale admin-only
-- consume upstream readiness/reliability/trust scores rather than making this engine the source of truth
+- consume upstream readiness/reliability and main-site `clientTrustScore` / `clientTrustTier` rather
+  than making this engine the source of truth
 
-### 3. AI Rationales Are Separated By Audience
+### 3. Client Trust Is Now Product-Owned Input
+
+The simulator now consumes `clientTrustScore` and `clientTrustTier` from the main product scoring system.
+Fixture traces include the score breakdown for audit, but the pricing engine does not own the formula.
+Verified Brand and Agency Account remain powerful admin fast-track flags, and validation checks that
+those flags produce the expected tier behavior.
+
+Policy implication:
+
+- keep score calculation in the main app
+- pass score, tier, flags, and project credibility into this engine as structured context
+- do not mix client trust with brand desirability; a prestigious brand can still have messy project data
+- use score/tier to shape confidence and holds, not to bypass talent-owned rates
+
+### 4. AI Rationales Are Separated By Audience
 
 The run generated 51 admin pricing rationales and 51 brand-facing match rationales. Brand-facing leakage
 count was zero, and talent-facing job-specific rationale count was zero.
@@ -124,7 +139,7 @@ Policy implication:
 - brand rationales should stay positive and fit-based
 - talent education should remain upstream and score-based, not job-specific pricing disclosure
 
-### 4. Shadow AI Discretion Is Properly Contained
+### 5. Shadow AI Discretion Is Properly Contained
 
 AI discretion remains shadow-only with a max absolute proposal of 1.0%. Nonzero discretion triggers admin
 review and does not apply to live quotes.
@@ -135,7 +150,7 @@ Policy implication:
 - require outcome evidence before any live discretion
 - do not let AI discretion stack into a meaningful hidden price engine without caps and audit trails
 
-### 5. Long-Horizon Confirmation Mechanics Work
+### 6. Long-Horizon Confirmation Mechanics Work
 
 The exploratory food brief from a weak-trust client becomes pending hold with no soft hold until
 confirmation signals arrive. The long-horizon beauty campaign from a high-trust repeat client also stays
@@ -149,7 +164,7 @@ Policy implication:
 - pending holds must define checkpoint timing, expiration, and what turns them into firm holds
 - missed checkpoints should release the hold rather than silently preserving old rates
 
-### 6. Budget-Driven Commodity Wins Are Now Labeled
+### 7. Budget-Driven Commodity Wins Are Now Labeled
 
 The race-to-bottom social stress case now returns `booked_with_market_health_warning`. The booking still
 counts as conversion, but it carries an internal warning when a market-health risk candidate books only
@@ -161,7 +176,7 @@ Policy implication:
 - do not let the cheapest path masquerade as a healthy recommendation outcome
 - use this label to trigger budget education, scope calibration, or admin review
 
-### 7. All-Budget-Gap Paths Require Scope Calibration
+### 8. All-Budget-Gap Paths Require Scope Calibration
 
 When every evaluated candidate exceeds client capacity, the simulator now returns `needs_scope_calibration`.
 This appears in the low-cash prestige case and the minimum-wage smoke case.

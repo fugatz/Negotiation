@@ -200,7 +200,7 @@ Initial timing hypotheses:
 - projects inside 21 days should be treated as last-minute for the platform
 - projects inside 14 days may receive a stronger but still capped urgency premium
 - projects 90 or more days out may signal exploration rather than serious booking intent
-- platform client trust should heavily offset long-horizon uncertainty
+- main-site client trust score and tier should heavily offset long-horizon uncertainty
 - a client with no Distinkt history should remain low-confidence at 90+ days
 - a repeat client, especially around a 4th project and beyond, should receive much more benefit of
   the doubt
@@ -217,7 +217,7 @@ Guardrails:
 - timing should not become a blanket surcharge or discount
 - 90+ day uncertainty should affect seriousness scoring, confidence, holds, and confirmation mechanics
   first
-- platform client trust should drive how much 90+ day uncertainty matters
+- main-site client trust score and tier should drive how much 90+ day uncertainty matters
 - 90+ day uncertainty should not directly change talent price unless client-side facts change or a
   quote/hold expires and must be revalidated
 - timing should never push a deal below a talent's private working floor
@@ -242,10 +242,33 @@ Known upstream inputs:
 
 - actor readiness score
 - non-actor talent reliability metric
-- client trust metric
+- client trust score and tier
 
 Those inputs are still immature and may need to be nudged, recalibrated, or versioned over time, but
 they already exist and should be passed into this pricing/deal layer from outside processes.
+
+The production client trust input is `clientTrustScore`, a 0-100 score owned by the main site. This
+pricing engine should consume the score and tier, not recreate the formula. Current score components:
+
+| Signal | Max Points | Rule |
+| --- | ---: | --- |
+| Completed projects | 30 | 10 for the first project, then 5 for each additional project. |
+| Payment speed | 20 | 7 days or less: 20; 14 or less: 15; 21 or less: 10; 30 or less: 5. |
+| Persona ID verification | 15 | Verified receives 15. |
+| Website on profile | 5 | Website present receives 5. |
+| Verified Brand admin flag | 20 | Admin-controlled fast-track signal. |
+| Agency Account admin flag | 10 | Admin-controlled fast-track signal. |
+
+The visible `clientTrustTier` should be consumed as:
+
+- Premium: score 71 or higher, or Verified Brand flag.
+- Established: score 41 or higher, or Agency Account flag.
+- Emerging: score 1-40.
+- New: score 0.
+
+The admin flags are intentionally powerful onboarding shortcuts for known agencies and brands. They
+should be used deliberately and audited, because they can affect who gets surfaced even before the
+client has completed projects on Distinkt.
 
 Underlying talent-side signals that may feed upstream services include:
 
@@ -869,12 +892,12 @@ These are hypotheses to test in simulation, not final rules.
     the call-for-details or email-offer outreach should include the proposed project rate.
 20. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
     not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
-21. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new
-    client is low-confidence, while a high-trust repeat client around their 4th project or later is
-    much more credible.
+21. For projects planned 90+ days out, main-site `clientTrustScore` / `clientTrustTier` should strongly
+    offset uncertainty: a new client is low-confidence, while a premium repeat client around their 4th
+    project or later is much more credible.
 22. Talent/client behavior nudges should consume upstream service scores: actor readiness,
-    non-actor talent reliability, and client trust. This layer applies capped nudges; it does not own
-    the raw metric definitions.
+    non-actor talent reliability, and main-site `clientTrustScore` / `clientTrustTier`. This layer
+    applies capped nudges; it does not own the raw metric definitions.
 23. Behavior should function like a small friction tax. It should be meaningful but not terribly
     detrimental; difficult but valuable talent or clients should not be excluded by behavior scoring
     alone.

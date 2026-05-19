@@ -28,8 +28,8 @@ ranges remain the source of authority.
 | Actualized records | 13 | 13 |
 | Actualized above expected range | 2 | 2 |
 | Optional talent-guidance messages | 8 | 8 |
-| Cohort summaries | 27 | 27 |
-| Optional cohort-guidance messages | 12 | 12 |
+| Cohort summaries | 26 | 26 |
+| Optional cohort-guidance messages | 11 | 11 |
 | Pending holds | 2 | 2 |
 | Confirmation checkpoints | 6 | 6 |
 | Hold expirations | 6 | 6 |
@@ -99,11 +99,16 @@ Current directional signals:
 | Role: DP | 12.19% average actualization lift, medium-confidence sample |
 | Role: director | 17.32% average actualization lift, directional-only sample |
 | Role: photographer | 9.04% average actualization lift, directional-only sample |
-| Client trust: high repeat | 14.40% average actualization lift, medium-confidence sample |
-| Client trust: known | 16.49% average actualization lift, medium-confidence sample |
+| Client trust: Premium | 13.96% average actualization lift, medium-confidence sample |
+| Client trust: Established | 7.96% average actualization lift, medium-confidence sample |
+| Client trust: Emerging | No actualized bookings in current fixtures; useful as budget/scope calibration signal. |
 
 These are intentionally weak early signals. The simulator labels small cohorts as `directional_only`; they
 can create admin review and optional talent guidance, but they should not change rates automatically.
+
+Client trust cohorts now use the main product's visible tier labels rather than the simulator's internal
+hold-management labels. Internal timing still keeps a separate platform trust tier for long-horizon hold
+behavior.
 
 ## Product Implication
 

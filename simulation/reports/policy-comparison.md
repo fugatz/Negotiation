@@ -28,6 +28,8 @@ Missed checkpoints now produce `hold_expired`, which releases the hold and requi
 outreach before reactivation.
 Admin-curated inclusion overrides now add a separate manual curation surface without changing the
 talent-owned rate or bypassing rate-quoted outreach.
+The simulator now consumes main-site `clientTrustScore` / `clientTrustTier` as product-owned inputs
+instead of treating fixture-only platform trust fields as the source of truth.
 
 The interpretation is important:
 
@@ -57,8 +59,8 @@ All other config inherits from the base policy.
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 33.3% | 35.3% | Stricter policy slightly increases admin attention. |
-| Mature autonomy candidates | 23 | 23 | No autonomy readiness gain yet. |
+| Human review share | 54.9% | 56.9% | Product trust score inputs increase admin rationale review. |
+| Mature autonomy candidates | 21 | 21 | No autonomy readiness gain yet. |
 | Admin inclusion overrides | 1 | 1 | Manual curation is policy-stable across variants. |
 | Pending holds | 2 | 2 | Long-horizon work stays out of normal booking flow. |
 | Confirmation checkpoints | 6 | 6 | Pending and expired holds carry checkpoint plans. |
@@ -68,8 +70,21 @@ All other config inherits from the base policy.
 | Scope-calibration outcomes | 2 | 2 | Prestige and compliance-floor cases require budget/scope recalibration. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
 | Market-health guardrail triggers | 3 | 2 | Fewer flagged recs reach reviewed recommendation surfaces. |
-| Outside-budget triggers | 17 | 17 | Budget mismatch is unchanged. |
+| Outside-budget triggers | 18 | 18 | Budget mismatch is unchanged. |
 | Max shadow AI discretion | 1.0% | 1.0% | AI discretion remains capped and shadow-only. |
+
+## Client Trust Input Change
+
+Both policies now consume `clientTrustScore` and `clientTrustTier` from the main product model. The
+visible tiers are Premium, Established, Emerging, and New. The simulator still maps those into internal
+timing/hold tiers, so a Premium repeat client can receive high-repeat long-horizon handling while a
+Premium but lower-history brand remains credible without receiving unlimited hold privilege.
+
+Read:
+
+- trust score ownership stays in the main app
+- pricing and negotiation consume score/tier as context
+- project credibility remains separate and should be passed in when production integration begins
 
 ## Scenario-Level Differences
 

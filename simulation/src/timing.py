@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .client_context import client_credibility_context, timing_platform_trust_tier
 from .policy_config import load_policy_config
 
 
@@ -19,24 +20,7 @@ def classify_timing(lead_time_days: int) -> str:
 
 
 def platform_trust_tier(client: dict) -> str:
-    completed_projects = int(client.get("platform_completed_projects", 0))
-    trust_score = float(client.get("platform_trust_score", 0.0))
-    tiers = _timing_config()["platform_trust_tiers"]
-
-    high_repeat = tiers["high_repeat"]
-    if completed_projects >= int(high_repeat["min_completed_projects"]) and trust_score >= float(
-        high_repeat["min_trust_score"]
-    ):
-        return "high_repeat"
-    known = tiers["known"]
-    if completed_projects >= int(known["min_completed_projects"]) and trust_score >= float(
-        known["min_trust_score"]
-    ):
-        return "known"
-    limited_history = tiers["limited_history"]
-    if completed_projects >= int(limited_history["min_completed_projects"]):
-        return "limited_history"
-    return "new_or_unproven"
+    return timing_platform_trust_tier(client)
 
 
 def _confirmation_plan(horizon: str, trust_tier: str, nudge: dict | None = None) -> dict:
@@ -68,6 +52,7 @@ def timing_nudge(project: dict, client: dict) -> dict:
     lead_time = int(project["lead_time_days"])
     horizon = classify_timing(lead_time)
     trust_tier = platform_trust_tier(client)
+    credibility = client_credibility_context(client, project)
     config = _timing_config()
 
     if horizon == "extreme_last_minute":
@@ -75,6 +60,8 @@ def timing_nudge(project: dict, client: dict) -> dict:
         return {
             "horizon": horizon,
             "platform_trust_tier": trust_tier,
+            "client_trust_score": credibility["clientTrustScore"],
+            "client_trust_tier": credibility["clientTrustTier"],
             "rate_delta": float(nudge["rate_delta"]),
             "confidence_delta": float(nudge["confidence_delta"]),
             "hold_policy": nudge["hold_policy"],
@@ -87,6 +74,8 @@ def timing_nudge(project: dict, client: dict) -> dict:
         return {
             "horizon": horizon,
             "platform_trust_tier": trust_tier,
+            "client_trust_score": credibility["clientTrustScore"],
+            "client_trust_tier": credibility["clientTrustTier"],
             "rate_delta": float(nudge["rate_delta"]),
             "confidence_delta": float(nudge["confidence_delta"]),
             "hold_policy": nudge["hold_policy"],
@@ -99,6 +88,8 @@ def timing_nudge(project: dict, client: dict) -> dict:
         return {
             "horizon": horizon,
             "platform_trust_tier": trust_tier,
+            "client_trust_score": credibility["clientTrustScore"],
+            "client_trust_tier": credibility["clientTrustTier"],
             "rate_delta": 0.0,
             "confidence_delta": float(nudge["long_horizon_confidence_delta"]),
             "hold_policy": nudge["hold_policy"],
@@ -110,6 +101,8 @@ def timing_nudge(project: dict, client: dict) -> dict:
     return {
         "horizon": horizon,
         "platform_trust_tier": trust_tier,
+        "client_trust_score": credibility["clientTrustScore"],
+        "client_trust_tier": credibility["clientTrustTier"],
         "rate_delta": float(nudge["rate_delta"]),
         "confidence_delta": float(nudge["confidence_delta"]),
         "hold_policy": nudge["hold_policy"],

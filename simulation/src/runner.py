@@ -7,6 +7,7 @@ from pathlib import Path
 from .admin_governance import build_admin_governance
 from .ai_rationale import build_ai_rationales
 from .behavior import cap_behavior_rate_delta, client_behavior_nudge, talent_behavior_nudge
+from .client_context import client_credibility_context
 from .common import FIXTURE_DIR
 from .negotiation import (
     BUDGET_DRIVEN_COMMODITY_WARNING,
@@ -99,6 +100,8 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "timing": {
             "horizon": rec["timing_nudge"]["horizon"],
             "platformTrustTier": rec["timing_nudge"]["platform_trust_tier"],
+            "clientTrustScore": rec["timing_nudge"]["client_trust_score"],
+            "clientTrustTier": rec["timing_nudge"]["client_trust_tier"],
             "rateDelta": round(rec["timing_nudge"]["rate_delta"], 3),
             "confidenceDelta": round(rec["timing_nudge"]["confidence_delta"], 3),
             "holdPolicy": rec["timing_nudge"]["hold_policy"],
@@ -267,6 +270,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         "client": client["name"],
         "budget": project["budget"],
         "projectContext": project_context(project),
+        "clientCredibility": client_credibility_context(client, project),
         "budgetType": project["budget_type"],
         "leadTimeDays": project["lead_time_days"],
         "timingHorizon": timing["horizon"],

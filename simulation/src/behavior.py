@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .client_context import normalized_client_trust
 from .common import clamp, weighted_average
 from .policy_config import load_policy_config
 
@@ -78,7 +79,10 @@ def talent_behavior_nudge(talent: dict) -> dict:
 
 
 def client_behavior_nudge(client: dict) -> dict:
-    if client.get("upstream_client_trust_metric") is not None:
+    if client.get("clientTrustScore") is not None or client.get("client_trust_score") is not None:
+        dependability = normalized_client_trust(client)
+        source = "main site clientTrustScore"
+    elif client.get("upstream_client_trust_metric") is not None:
         dependability = float(client["upstream_client_trust_metric"])
         source = "upstream client trust metric"
     else:

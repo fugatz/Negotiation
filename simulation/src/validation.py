@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from .admin_governance import ADMIN_INCLUSION_OVERRIDE_TRIGGER
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
+from .client_context import CLIENT_TRUST_TIERS
 from .negotiation import (
     BUDGET_DRIVEN_COMMODITY_WARNING,
     HOLD_EXPIRED_WARNING,
@@ -145,6 +146,46 @@ def validate_report(report: dict) -> dict:
 
     for trace in report["traces"]:
         expected_horizon = _expected_timing_horizon(int(trace["leadTimeDays"]))
+        credibility = trace.get("clientCredibility", {})
+        _check(
+            0 <= int(credibility.get("clientTrustScore", -1)) <= 100,
+            failures,
+            "client_trust_score_invalid",
+            trace["projectId"],
+            "clientTrustScore must be a 0-100 upstream score",
+        )
+        _check(
+            credibility.get("clientTrustTier") in CLIENT_TRUST_TIERS,
+            failures,
+            "client_trust_tier_invalid",
+            trace["projectId"],
+            "clientTrustTier must be one of premium, established, emerging, or new",
+        )
+        if credibility.get("verifiedBrand"):
+            _check(
+                credibility.get("clientTrustTier") == "premium",
+                failures,
+                "verified_brand_not_premium",
+                trace["projectId"],
+                "verified brand flag should fast-track clientTrustTier to premium",
+            )
+        if credibility.get("agencyAccount"):
+            _check(
+                credibility.get("clientTrustTier") in {"premium", "established"},
+                failures,
+                "agency_account_not_established",
+                trace["projectId"],
+                "agency account flag should fast-track clientTrustTier to established or better",
+            )
+        project_score = credibility.get("projectCredibilityScore")
+        if project_score is not None:
+            _check(
+                0 <= int(project_score) <= 100,
+                failures,
+                "project_credibility_score_invalid",
+                trace["projectId"],
+                "projectCredibilityScore must be null or a 0-100 upstream score",
+            )
         _check(
             trace["timingHorizon"] == expected_horizon,
             failures,
@@ -258,6 +299,21 @@ def validate_report(report: dict) -> dict:
             legal_floor = rec["legalFloor"]
             expected_range = rec["expectedBookingRange"]
             admin_override = rec.get("adminInclusionOverride")
+
+            _check(
+                int(rec["timing"]["clientTrustScore"]) == int(credibility["clientTrustScore"]),
+                failures,
+                "recommendation_client_trust_score_mismatch",
+                context,
+                "recommendation timing should carry the same upstream clientTrustScore as the trace",
+            )
+            _check(
+                rec["timing"]["clientTrustTier"] == credibility["clientTrustTier"],
+                failures,
+                "recommendation_client_trust_tier_mismatch",
+                context,
+                "recommendation timing should carry the same upstream clientTrustTier as the trace",
+            )
 
             _check(
                 availability_check["completedBeforeClientPresentation"] is True,
