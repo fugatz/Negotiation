@@ -88,10 +88,10 @@ Policy: `phase-3-hold-expiration-v1`
 
 ### 1. The Rate Commitment Flow Is Correct
 
-Talent is presented with a project-specific proposed rate during WhatsApp/email outreach or availability
-check. If they accept, that rate becomes the locked client-facing number. If they counter, the counter
-happens before client presentation and is visible internally as an availability event. The client decision
-simulation then evaluates the locked quote only.
+Talent is presented with a project-specific proposed rate during a call for details, an emailed offer, or
+availability check. If they accept, that rate becomes the locked client-facing number. If they counter,
+the counter happens before client presentation and is visible internally as an availability event. The
+client decision simulation then evaluates the locked quote only.
 
 Policy implication:
 

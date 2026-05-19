@@ -86,9 +86,9 @@ By the time this engine runs, Distinkt has already done most of the work:
 - upstream services have supplied readiness, reliability, and client trust signals
 
 This engine then determines the project-specific rate posture for matched talent. That rate is included
-in the talent outreach or availability-check message through channels such as WhatsApp and email, along
-with the job basics. The talent's response establishes whether they want to be considered for that
-project at that rate before the client sees the slate.
+in the talent outreach or availability-check message through channels such as a call for details or an
+emailed offer, along with the job basics. The talent's response establishes whether they want to be
+considered for that project at that rate before the client sees the slate.
 
 ### 1. Project Brief
 
@@ -866,7 +866,7 @@ These are hypotheses to test in simulation, not final rules.
 18. Talent sees the project-specific proposed rate during outreach or availability check and decides
     whether to be considered at that rate before the client sees the slate.
 19. The pricing engine should run after upstream matching but before talent outreach is complete, because
-    the WhatsApp/email outreach should include the proposed project rate.
+    the call-for-details or email-offer outreach should include the proposed project rate.
 20. Long-horizon uncertainty should affect seriousness confidence and hold/confirmation mechanics,
     not direct talent price, unless facts change or a quote/hold expires and must be revalidated.
 21. For projects planned 90+ days out, platform client trust should strongly offset uncertainty: a new

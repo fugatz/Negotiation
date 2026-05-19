@@ -5,6 +5,7 @@ from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
 from .negotiation import (
     BUDGET_DRIVEN_COMMODITY_WARNING,
     HOLD_EXPIRED_WARNING,
+    RATE_QUOTED_OUTREACH_CHANNEL,
     SCOPE_CALIBRATION_WARNING,
 )
 from .policy_config import load_policy_config
@@ -277,7 +278,14 @@ def validate_report(report: dict) -> dict:
                 failures,
                 "rate_not_presented_during_outreach",
                 context,
-                "talent must see the pricing-engine rate during WhatsApp/email outreach",
+                "talent must see the pricing-engine rate during call-for-details or email-offer outreach",
+            )
+            _check(
+                availability_check["outreachChannel"] == RATE_QUOTED_OUTREACH_CHANNEL,
+                failures,
+                "outreach_channel_invalid",
+                context,
+                "rate-quoted outreach should be modeled as call for details or email offer",
             )
             _check(
                 availability_check["rateSource"] == "pricing_engine_project_rate",

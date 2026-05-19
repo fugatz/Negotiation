@@ -16,6 +16,7 @@ HOLD_EXPIRED_WARNING = "long-horizon hold expired"
 SCOPE_CALIBRATION_WARNING = "scope calibration required"
 MARKET_HEALTH_RISK_FLAGS = {"price_led_recommendation_risk", "race_to_bottom_risk"}
 NON_SCOPE_CALIBRATION_STATUSES = {HOLD_EXPIRED, "pending_hold", "tentative"}
+RATE_QUOTED_OUTREACH_CHANNEL = "call_for_details_or_email_offer"
 
 
 def client_capacity(project: dict) -> int:
@@ -60,7 +61,7 @@ def simulate_availability_check(project: dict, talent: dict, rec: dict) -> dict:
     return {
         "talent_id": talent["id"],
         "status": status,
-        "outreachChannel": "whatsapp_or_email",
+        "outreachChannel": RATE_QUOTED_OUTREACH_CHANNEL,
         "rateSource": "pricing_engine_project_rate",
         "ratePresentedDuringOutreach": True,
         "talentVisibleRate": True,

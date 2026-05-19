@@ -7,10 +7,10 @@ The simulation is intentionally small and inspectable. It uses synthetic fixture
 rules so policy changes are easy to understand.
 
 Production boundary: this layer is expected to run after upstream matching has identified candidate
-talent, but before rate-quoted WhatsApp/email outreach is complete. The simulator's eligibility checks
-are a small stand-in for known candidate constraints and talent responses. The main purpose here is to
-compute the project-specific rate, include it in outreach to matched talent, and build the client slate
-only from talent-approved locked rates.
+talent, but before rate-quoted call-for-details or email-offer outreach is complete. The simulator's
+eligibility checks are a small stand-in for known candidate constraints and talent responses. The main
+purpose here is to compute the project-specific rate, include it in outreach to matched talent, and build
+the client slate only from talent-approved locked rates.
 
 Admin-tweakable dry-run settings live in `simulation/config/policy.json`. The config currently owns
 timing thresholds, long-horizon confirmation rules, behavior caps, AI discretion caps, market-health

@@ -289,7 +289,7 @@ Expected risk:
 5. Apply capped timing-horizon nudges.
 6. Apply capped talent and client behavior nudges.
 7. Compute the proposed project rate for each matched talent.
-8. Simulate WhatsApp/email talent outreach that includes job basics and the proposed project rate.
+8. Simulate call-for-details or email-offer talent outreach that includes job basics and the proposed project rate.
 9. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
 10. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
 11. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
@@ -309,7 +309,7 @@ Production boundary:
 
 - the real system should enter this flow after candidate matching, but before rate-quoted outreach is
   complete
-- hard eligibility for client presentation is established by the WhatsApp/email availability response at
+- hard eligibility for client presentation is established by the call-for-details or email-offer response at
   the proposed project rate
 - the simulation's deterministic eligibility checks only emulate known candidate constraints and
   rate-quoted outreach responses so edge cases remain easy to inspect

@@ -49,7 +49,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -256,7 +256,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -465,7 +465,7 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -681,7 +681,7 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -887,7 +887,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -953,7 +953,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -1197,7 +1197,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -1409,7 +1409,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -1619,7 +1619,7 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_after_scope_confirmation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -1827,7 +1827,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -2049,7 +2049,7 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -2250,7 +2250,7 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -2316,7 +2316,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -2382,7 +2382,7 @@
         {
           "talent_id": "premium_food_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -2716,7 +2716,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -2931,7 +2931,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -3144,7 +3144,7 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_after_scope_confirmation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -3355,7 +3355,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -3558,7 +3558,7 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -3626,7 +3626,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -3903,7 +3903,7 @@
           "availabilityCheck": {
             "talent_id": "automotive_specialist",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -4113,7 +4113,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -4324,7 +4324,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -4535,7 +4535,7 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -4738,7 +4738,7 @@
         {
           "talent_id": "automotive_specialist",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -4806,7 +4806,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -5101,7 +5101,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -5311,7 +5311,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -5521,7 +5521,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -5730,7 +5730,7 @@
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -5934,7 +5934,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -6000,7 +6000,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -6297,7 +6297,7 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -6512,7 +6512,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -6723,7 +6723,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -6933,7 +6933,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -7136,7 +7136,7 @@
         {
           "talent_id": "luxury_fashion_editor",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -7202,7 +7202,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -7479,7 +7479,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -7697,7 +7697,7 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -7922,7 +7922,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -8143,7 +8143,7 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -8359,7 +8359,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -8425,7 +8425,7 @@
         {
           "talent_id": "premium_food_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -8721,7 +8721,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -8939,7 +8939,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -9155,7 +9155,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -9369,7 +9369,7 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_after_scope_confirmation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -9575,7 +9575,7 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -9641,7 +9641,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -9935,7 +9935,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -10143,7 +10143,7 @@
           "availabilityCheck": {
             "talent_id": "premium_food_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -10360,7 +10360,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -10570,7 +10570,7 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -10789,7 +10789,7 @@
           "availabilityCheck": {
             "talent_id": "volatile_rep_managed_talent",
             "status": "countered_before_client_presentation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -10997,7 +10997,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -11063,7 +11063,7 @@
         {
           "talent_id": "premium_food_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -11129,7 +11129,7 @@
         {
           "talent_id": "volatile_rep_managed_talent",
           "status": "countered_before_client_presentation",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -11435,7 +11435,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -11653,7 +11653,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -11869,7 +11869,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -12083,7 +12083,7 @@
           "availabilityCheck": {
             "talent_id": "luxury_fashion_editor",
             "status": "accepted_after_scope_confirmation",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -12289,7 +12289,7 @@
         {
           "talent_id": "emerging_beauty_photographer",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -12355,7 +12355,7 @@
         {
           "talent_id": "idle_high_quality_director",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -12659,7 +12659,7 @@
           "availabilityCheck": {
             "talent_id": "reliable_generalist_dp",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -12868,7 +12868,7 @@
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -13076,7 +13076,7 @@
           "availabilityCheck": {
             "talent_id": "idle_high_quality_director",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -13287,7 +13287,7 @@
           "availabilityCheck": {
             "talent_id": "emerging_beauty_photographer",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -13498,7 +13498,7 @@
           "availabilityCheck": {
             "talent_id": "low_rate_fast_responder",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -13697,7 +13697,7 @@
         {
           "talent_id": "reliable_generalist_dp",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -13763,7 +13763,7 @@
         {
           "talent_id": "low_rate_fast_responder",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -14057,7 +14057,7 @@
           "availabilityCheck": {
             "talent_id": "background_extra_actor",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -14268,7 +14268,7 @@
           "availabilityCheck": {
             "talent_id": "featured_actor_unknown_wage",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -14470,7 +14470,7 @@
         {
           "talent_id": "background_extra_actor",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -14534,7 +14534,7 @@
         {
           "talent_id": "featured_actor_unknown_wage",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -14845,7 +14845,7 @@
           "availabilityCheck": {
             "talent_id": "background_extra_actor",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -15055,7 +15055,7 @@
           "availabilityCheck": {
             "talent_id": "featured_actor_unknown_wage",
             "status": "accepted_at_presented_rate",
-            "outreachChannel": "whatsapp_or_email",
+            "outreachChannel": "call_for_details_or_email_offer",
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
@@ -15260,7 +15260,7 @@
         {
           "talent_id": "background_extra_actor",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
@@ -15324,7 +15324,7 @@
         {
           "talent_id": "featured_actor_unknown_wage",
           "status": "accepted_at_presented_rate",
-          "outreachChannel": "whatsapp_or_email",
+          "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
