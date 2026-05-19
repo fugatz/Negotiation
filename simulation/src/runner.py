@@ -23,7 +23,9 @@ from .outcome_calibration import propose_shadow_discretion
 from .outcome_learning import build_cohort_learning, build_outcome_learning
 from .policies import apply_nudges, build_slate, client_visible_price_state, overall_score
 from .policy_config import active_policy_config_relative_path, configure_policy_config, policy_version
+from .quote_contract import build_quote_contract
 from .ranges import expected_booking_range, project_context
+from .readiness import project_readiness_context
 from .scoring import score_talent
 from .statuses import HOLD_EXPIRED, NEEDS_SCOPE_CALIBRATION, is_booked_status
 from .timing import timing_nudge
@@ -93,6 +95,7 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "availabilityCheck": rec["availability_check"],
         "legalFloor": rec["legal_floor"],
         "expectedBookingRange": rec["expected_booking_range"],
+        "quoteLifecycle": rec["quote_contract"],
         "marketHealth": {
             "score": rec["market_health_score"],
             "flags": rec.get("market_health_flags", []),
@@ -132,6 +135,33 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
     client = clients_by_id[project["client_id"]]
     talent_by_id = {item["id"]: item for item in talent}
     timing = timing_nudge(project, client)
+    readiness = project_readiness_context(project)
+
+    if not readiness["bindingQuoteAllowed"]:
+        warnings = [SCOPE_CALIBRATION_WARNING]
+        return {
+            "project": project["name"],
+            "projectId": project["id"],
+            "client": client["name"],
+            "budget": project["budget"],
+            "projectContext": project_context(project),
+            "clientCredibility": client_credibility_context(client, project),
+            "readinessGate": readiness,
+            "budgetType": project["budget_type"],
+            "leadTimeDays": project["lead_time_days"],
+            "timingHorizon": timing["horizon"],
+            "eligibleTalentCount": 0,
+            "excluded": [],
+            "recommendedSlate": [],
+            "stressShortlist": [],
+            "adminOverrideSlate": [],
+            "adminOverrideExcluded": [],
+            "availabilityChecks": [],
+            "clientDecisions": [],
+            "outcomeLearning": build_outcome_learning(project, talent_by_id, [], []),
+            "outcome": NEEDS_SCOPE_CALIBRATION,
+            "warnings": warnings,
+        }
 
     recommendations: list[dict] = []
     excluded: list[dict] = []
@@ -160,6 +190,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
                 adjusted,
                 discretion,
             )
+            adjusted["quote_contract"] = build_quote_contract(project, client, person, adjusted)
             recommendations.append(adjusted)
         else:
             excluded.append(
@@ -271,6 +302,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         "budget": project["budget"],
         "projectContext": project_context(project),
         "clientCredibility": client_credibility_context(client, project),
+        "readinessGate": readiness,
         "budgetType": project["budget_type"],
         "leadTimeDays": project["lead_time_days"],
         "timingHorizon": timing["horizon"],
@@ -341,8 +373,14 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     leakage_count = 0
     human_review_count = 0
     admin_inclusion_override_count = 0
+    readiness_blocked_count = 0
+    quote_audit_event_count = 0
+    brand_prestige_tiers: list[str] = []
 
     for trace in traces:
+        if not trace.get("readinessGate", {}).get("bindingQuoteAllowed", True):
+            readiness_blocked_count += 1
+        brand_prestige_tiers.append(trace["clientCredibility"].get("brandPrestigeTier", "none"))
         outcome_summary = trace["outcomeLearning"]["summary"]
         actualized_record_count += int(outcome_summary["actualizedRecordCount"])
         actualized_above_range_count += int(outcome_summary["actualizedAboveExpectedRangeCount"])
@@ -371,6 +409,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 minimum_wage_floor_unknown_count += 1
             if rec.get("expectedBookingRange"):
                 expected_range_count += 1
+            quote_audit_event_count += len(rec["quoteLifecycle"]["auditEvents"])
             rationales = rec["aiRationales"]
             admin_rationale = rationales["adminPricingRationale"]
             brand_rationale = rationales["brandFacingRationale"]
@@ -433,6 +472,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "holdExpiredCount": hold_expired_count,
         "holdExpiredWarningCount": hold_expired_warning_count,
         "adminInclusionOverrideCount": admin_inclusion_override_count,
+        "readinessBlockedCount": readiness_blocked_count,
+        "quoteAuditEventCount": quote_audit_event_count,
         "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),
@@ -446,6 +487,10 @@ def aggregate_metrics(traces: list[dict]) -> dict:
             for flag in sorted(set(market_health_flags))
         },
         "warningCounts": {warning: warnings.count(warning) for warning in sorted(set(warnings))},
+        "brandPrestigeTierCounts": {
+            tier: brand_prestige_tiers.count(tier)
+            for tier in sorted(set(brand_prestige_tiers))
+        },
     }
 
 

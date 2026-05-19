@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from .admin_governance import ADMIN_INCLUSION_OVERRIDE_TRIGGER
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
-from .client_context import CLIENT_TRUST_TIERS
+from .client_context import BRAND_PRESTIGE_TIERS, CLIENT_TRUST_TIERS
 from .negotiation import (
     BUDGET_DRIVEN_COMMODITY_WARNING,
     HOLD_EXPIRED_WARNING,
@@ -147,6 +147,7 @@ def validate_report(report: dict) -> dict:
     for trace in report["traces"]:
         expected_horizon = _expected_timing_horizon(int(trace["leadTimeDays"]))
         credibility = trace.get("clientCredibility", {})
+        readiness = trace.get("readinessGate", {})
         _check(
             0 <= int(credibility.get("clientTrustScore", -1)) <= 100,
             failures,
@@ -160,6 +161,20 @@ def validate_report(report: dict) -> dict:
             "client_trust_tier_invalid",
             trace["projectId"],
             "clientTrustTier must be one of premium, established, emerging, or new",
+        )
+        _check(
+            credibility.get("brandPrestigeTier") in BRAND_PRESTIGE_TIERS,
+            failures,
+            "brand_prestige_tier_invalid",
+            trace["projectId"],
+            "brandPrestigeTier must be separate from clientTrustTier and use a supported value",
+        )
+        _check(
+            0 <= int(credibility.get("brandPrestigeScore", -1)) <= 100,
+            failures,
+            "brand_prestige_score_invalid",
+            trace["projectId"],
+            "brandPrestigeScore must be a 0-100 upstream/admin score",
         )
         if credibility.get("verifiedBrand"):
             _check(
@@ -193,6 +208,35 @@ def validate_report(report: dict) -> dict:
             trace["projectId"],
             f"expected {expected_horizon}, got {trace['timingHorizon']}",
         )
+        _check(
+            0 <= int(readiness.get("projectCredibilityScore", -1)) <= 100,
+            failures,
+            "readiness_project_credibility_invalid",
+            trace["projectId"],
+            "readiness gate must carry a 0-100 project credibility score",
+        )
+        _check(
+            isinstance(readiness.get("bindingQuoteAllowed"), bool),
+            failures,
+            "readiness_binding_flag_invalid",
+            trace["projectId"],
+            "readiness gate must state whether binding Outreach & Lock is allowed",
+        )
+        if not readiness.get("bindingQuoteAllowed", True):
+            _check(
+                trace["outcome"] == NEEDS_SCOPE_CALIBRATION,
+                failures,
+                "readiness_blocked_wrong_outcome",
+                trace["projectId"],
+                "projects below the readiness gate should stop at scope calibration",
+            )
+            _check(
+                not _recommendations(trace),
+                failures,
+                "readiness_blocked_has_client_recommendations",
+                trace["projectId"],
+                "projects below the readiness gate must not create client-presentable locked quotes",
+            )
         if trace["recommendedSlate"]:
             top_rec = trace["recommendedSlate"][0]
             _check(
@@ -299,6 +343,7 @@ def validate_report(report: dict) -> dict:
             legal_floor = rec["legalFloor"]
             expected_range = rec["expectedBookingRange"]
             admin_override = rec.get("adminInclusionOverride")
+            quote_lifecycle = rec["quoteLifecycle"]
 
             _check(
                 int(rec["timing"]["clientTrustScore"]) == int(credibility["clientTrustScore"]),
@@ -371,6 +416,66 @@ def validate_report(report: dict) -> dict:
                 context,
                 "final trace range must reflect the talent-approved locked quote after outreach",
             )
+            _check(
+                quote_lifecycle["quoteState"] == "locked",
+                failures,
+                "quote_lifecycle_not_locked",
+                context,
+                "client-presentable recommendations must carry a locked quote lifecycle",
+            )
+            _check(
+                int(quote_lifecycle["activeQuoteVersion"]) == int(quote_lifecycle["quoteVersion"]),
+                failures,
+                "active_quote_version_mismatch",
+                context,
+                "active quote version should match the locked quote version presented to the client",
+            )
+            _check(
+                int(quote_lifecycle["lockedGrossQuote"]) == int(rec["quote"]),
+                failures,
+                "locked_gross_quote_mismatch",
+                context,
+                "locked gross quote must equal the client-presented quote",
+            )
+            _check(
+                quote_lifecycle["dfosHandoff"]["dfosMayRecalculateQuote"] is False,
+                failures,
+                "dfos_recalculation_allowed",
+                context,
+                "DFOS should consume the locked gross quote, not recalculate it",
+            )
+            event_types = {event["eventType"] for event in quote_lifecycle["auditEvents"]}
+            required_events = {
+                "quote_generated",
+                "quote_sent_to_talent",
+                "quote_locked",
+                "quote_presented_to_client",
+            }
+            _check(
+                required_events.issubset(event_types),
+                failures,
+                "quote_audit_events_missing",
+                context,
+                f"quote audit events must include {sorted(required_events)}",
+            )
+            if availability_check["status"] == "countered_before_client_presentation":
+                _check(
+                    "talent_countered_before_presentation" in event_types,
+                    failures,
+                    "quote_audit_counter_event_missing",
+                    context,
+                    "pre-presentation counters must be captured as quote audit events",
+                )
+            else:
+                _check(
+                    "talent_accepted_quote" in event_types
+                    or "talent_requested_clarification" in event_types,
+                    failures,
+                    "quote_audit_talent_response_missing",
+                    context,
+                    "quote audit events must capture talent acceptance or clarification before lock",
+                )
+
             event_text = " ".join(
                 availability_check.get("events", []) + availability_check.get("warnings", [])
             ).lower()
@@ -674,7 +779,34 @@ def validate_report(report: dict) -> dict:
                     }
                 )
 
+        recommendation_by_quote_id = {
+            item["quoteLifecycle"]["quoteId"]: item
+            for item in _recommendations(trace)
+        }
         for decision in trace["clientDecisions"]:
+            _check(
+                decision.get("quote_id") in recommendation_by_quote_id,
+                failures,
+                "decision_quote_id_missing",
+                f"{trace['projectId']} / {decision['talent_id']}",
+                "client decisions must reference a locked quote id from the recommendation slate",
+            )
+            if decision.get("quote_id") in recommendation_by_quote_id:
+                lifecycle = recommendation_by_quote_id[decision["quote_id"]]["quoteLifecycle"]
+                _check(
+                    int(decision["active_quote_version"]) == int(lifecycle["activeQuoteVersion"]),
+                    failures,
+                    "decision_active_quote_version_mismatch",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "client decisions must bind to the server-authoritative active quote version",
+                )
+                _check(
+                    decision["dfos_handoff"]["dfosMayRecalculateQuote"] is False,
+                    failures,
+                    "decision_dfos_recalculation_allowed",
+                    f"{trace['projectId']} / {decision['talent_id']}",
+                    "decision handoff should preserve the DFOS no-recalculation contract",
+                )
             if decision["status"] == "pending_hold":
                 hold = decision.get("hold_management", {})
                 _check(

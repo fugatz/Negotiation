@@ -16,6 +16,12 @@
       "agencyAccount": true,
       "agencyAccountPoints": 10
     },
+    "brandPrestigeTier": "tier_3",
+    "brandPrestigeScore": 45,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [
+      "reliable regional commercial buyer"
+    ],
     "brief_clarity": 0.86,
     "decision_speed": 0.78,
     "payment_reliability": 0.9,
@@ -44,6 +50,10 @@
       "agencyAccount": false,
       "agencyAccountPoints": 0
     },
+    "brandPrestigeTier": "none",
+    "brandPrestigeScore": 0,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [],
     "brief_clarity": 0.82,
     "decision_speed": 0.72,
     "payment_reliability": 0.86,
@@ -72,6 +82,12 @@
       "agencyAccount": false,
       "agencyAccountPoints": 0
     },
+    "brandPrestigeTier": "tier_1",
+    "brandPrestigeScore": 92,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [
+      "national prestige buyer likely to attract top-tier talent"
+    ],
     "brief_clarity": 0.9,
     "decision_speed": 0.84,
     "payment_reliability": 0.92,
@@ -100,6 +116,10 @@
       "agencyAccount": false,
       "agencyAccountPoints": 0
     },
+    "brandPrestigeTier": "none",
+    "brandPrestigeScore": 0,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [],
     "brief_clarity": 0.48,
     "decision_speed": 0.36,
     "payment_reliability": 0.66,
@@ -128,6 +148,12 @@
       "agencyAccount": false,
       "agencyAccountPoints": 0
     },
+    "brandPrestigeTier": "tier_2",
+    "brandPrestigeScore": 68,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [
+      "prestige editorial context separated from weak transaction trust"
+    ],
     "brief_clarity": 0.62,
     "decision_speed": 0.5,
     "payment_reliability": 0.62,
@@ -156,6 +182,12 @@
       "agencyAccount": true,
       "agencyAccountPoints": 10
     },
+    "brandPrestigeTier": "tier_2",
+    "brandPrestigeScore": 65,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [
+      "strategic agency account with slower decisions"
+    ],
     "brief_clarity": 0.78,
     "decision_speed": 0.24,
     "payment_reliability": 0.84,
@@ -184,6 +216,12 @@
       "agencyAccount": true,
       "agencyAccountPoints": 10
     },
+    "brandPrestigeTier": "tier_1",
+    "brandPrestigeScore": 95,
+    "brandPrestigeSource": "main_site_admin_field",
+    "brandPrestigeNotes": [
+      "high-trust repeat client with strong brand pull"
+    ],
     "brief_clarity": 0.94,
     "decision_speed": 0.88,
     "payment_reliability": 0.96,

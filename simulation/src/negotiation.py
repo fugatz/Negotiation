@@ -19,6 +19,17 @@ NON_SCOPE_CALIBRATION_STATUSES = {HOLD_EXPIRED, "pending_hold", "tentative"}
 RATE_QUOTED_OUTREACH_CHANNEL = "call_for_details_or_email_offer"
 
 
+def _decision_quote_context(rec: dict) -> dict:
+    quote_contract = rec.get("quote_contract", {})
+    return {
+        "quote_id": quote_contract.get("quoteId"),
+        "quote_version": quote_contract.get("quoteVersion"),
+        "active_quote_version": quote_contract.get("activeQuoteVersion"),
+        "locked_gross_quote": quote_contract.get("lockedGrossQuote", rec["final_quote"]),
+        "dfos_handoff": quote_contract.get("dfosHandoff"),
+    }
+
+
 def client_capacity(project: dict) -> int:
     budget = float(project["budget"])
     budget_type = project["budget_type"]
@@ -108,6 +119,7 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
                 "status": HOLD_EXPIRED,
                 "locked_quote": quote,
                 "client_capacity": capacity,
+                **_decision_quote_context(rec),
                 "events": events + hold_management["events"],
                 "warnings": warnings + [HOLD_EXPIRED_WARNING],
                 "hold_management": hold_management,
@@ -117,6 +129,7 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
             "status": "pending_hold",
             "locked_quote": quote,
             "client_capacity": capacity,
+            **_decision_quote_context(rec),
             "events": events + hold_management["events"],
             "warnings": warnings + ["long-horizon commitment uncertainty"],
             "hold_management": hold_management,
@@ -136,6 +149,7 @@ def simulate_client_decision(project: dict, talent: dict, rec: dict) -> dict:
         "status": status,
         "locked_quote": quote,
         "client_capacity": capacity,
+        **_decision_quote_context(rec),
         "events": events,
         "warnings": warnings,
     }

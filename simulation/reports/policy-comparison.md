@@ -26,10 +26,15 @@ Long-horizon pending holds now include confirmation checkpoints, hold expiration
 requirements.
 Missed checkpoints now produce `hold_expired`, which releases the hold and requires fresh rate-quoted
 outreach before reactivation.
+The new readiness gate blocks low-credibility projects before binding Outreach & Lock, so the
+exploratory food brief now moves directly to `needs_scope_calibration`.
+Client-presentable recommendations now carry active quote versions, quote audit events, and a DFOS
+handoff contract.
 Admin-curated inclusion overrides now add a separate manual curation surface without changing the
 talent-owned rate or bypassing rate-quoted outreach.
 The simulator now consumes main-site `clientTrustScore` / `clientTrustTier` as product-owned inputs
-instead of treating fixture-only platform trust fields as the source of truth.
+instead of treating fixture-only platform trust fields as the source of truth, and consumes brand
+prestige as a separate desirability signal.
 
 The interpretation is important:
 
@@ -55,36 +60,57 @@ All other config inherits from the base policy.
 | Scenarios | 13 | 13 | Same fixture set. |
 | Booked scenarios | 8 | 8 | Stricter ranking did not reduce booking count. |
 | Booking rate | 61.5% | 61.5% | New missed-checkpoint fixture lowers aggregate conversion. |
-| Availability checks | 51 | 51 | Same recommendation volume including the manual override candidate. |
-| Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
+| Availability checks | 47 | 47 | Readiness gate blocks the exploratory low-credibility project before outreach. |
+| Pre-presentation counters | 3 | 3 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 54.9% | 56.9% | Product trust score inputs increase admin rationale review. |
+| Human review share | 51.1% | 53.2% | Stricter policy increases review share slightly. |
 | Mature autonomy candidates | 21 | 21 | No autonomy readiness gain yet. |
 | Admin inclusion overrides | 1 | 1 | Manual curation is policy-stable across variants. |
-| Pending holds | 2 | 2 | Long-horizon work stays out of normal booking flow. |
-| Confirmation checkpoints | 6 | 6 | Pending and expired holds carry checkpoint plans. |
-| Hold expirations | 6 | 6 | Pending and expired holds expire without confirmation signals. |
+| Readiness-blocked scenarios | 1 | 1 | Low-readiness project does not enter binding Outreach & Lock. |
+| Quote audit events | 239 | 239 | Every client-presentable recommendation has quote lifecycle audit events. |
+| Pending holds | 1 | 1 | Ready long-horizon work stays out of normal booking flow. |
+| Confirmation checkpoints | 4 | 4 | Pending and expired holds carry checkpoint plans. |
+| Hold expirations | 4 | 4 | Pending and expired holds expire without confirmation signals. |
 | Expired holds | 1 | 1 | Missed checkpoint fixture releases the hold. |
 | Budget-health warnings | 1 | 1 | Race-to-bottom stress booking is now labeled rather than treated as clean. |
-| Scope-calibration outcomes | 2 | 2 | Prestige and compliance-floor cases require budget/scope recalibration. |
+| Scope-calibration outcomes | 3 | 3 | Prestige, readiness, and compliance-floor cases require budget/scope recalibration. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
 | Market-health guardrail triggers | 3 | 2 | Fewer flagged recs reach reviewed recommendation surfaces. |
 | Outside-budget triggers | 18 | 18 | Budget mismatch is unchanged. |
 | Max shadow AI discretion | 1.0% | 1.0% | AI discretion remains capped and shadow-only. |
 
-## Client Trust Input Change
+## Client Trust And Prestige Inputs
 
 Both policies now consume `clientTrustScore` and `clientTrustTier` from the main product model. The
 visible tiers are Premium, Established, Emerging, and New. The simulator still maps those into internal
 timing/hold tiers, so a Premium repeat client can receive high-repeat long-horizon handling while a
 Premium but lower-history brand remains credible without receiving unlimited hold privilege.
 
+Both policies also consume `brandPrestigeTier` / `brandPrestigeScore` separately from trust. Prestige
+can appear in admin rationale as context, but launch policy does not let prestige automatically discount
+or reprice talent.
+
 Read:
 
 - trust score ownership stays in the main app
 - pricing and negotiation consume score/tier as context
 - project credibility remains separate and should be passed in when production integration begins
+- brand prestige should remain separate from transaction reliability
+
+## Readiness And Quote Lifecycle Change
+
+Both policies now apply a binding quote readiness gate. The exploratory food research brief has a
+readiness score of 38, below the threshold of 50, so it does not generate locked quotes, availability
+checks, client slate options, or hold mechanics. It returns `needs_scope_calibration` instead.
+
+Each recommendation that does reach client visibility carries a quote lifecycle with:
+
+- active quote version
+- locked gross quote
+- input snapshot hash
+- append-only audit events
+- DFOS handoff set to consume, not recalculate, the locked quote
 
 ## Scenario-Level Differences
 
@@ -122,10 +148,10 @@ Recommended follow-up:
 
 ### Other Scenarios
 
-Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, prestige editorial, long-horizon, minimum
-wage, and bad-faith repricing scenarios have the same high-level outcomes under both policies. Prestige
-and the minimum-wage smoke case resolve as `needs_scope_calibration`; the missed-checkpoint fixture
-resolves as `hold_expired` under both policies.
+Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, prestige editorial, exploratory readiness,
+long-horizon, minimum wage, and bad-faith repricing scenarios have the same high-level outcomes under
+both policies. Prestige, exploratory readiness, and the minimum-wage smoke case resolve as
+`needs_scope_calibration`; the missed-checkpoint fixture resolves as `hold_expired` under both policies.
 
 Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
 That candidate appears in the admin override slate at a locked talent-approved quote, remains outside

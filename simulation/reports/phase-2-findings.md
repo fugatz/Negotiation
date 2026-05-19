@@ -23,6 +23,9 @@ The current system protects against several core failure modes:
 - no brand-facing leakage of hidden floors, negative behavior signals, or AI pricing math
 - no job-specific talent-facing pricing rationale
 - specialist value remains visible even when budget fit is weak
+- low-readiness projects are blocked before binding Outreach & Lock
+- client-visible recommendations now carry active quote versions and quote audit events
+- brand prestige/desirability is tracked separately from client trust
 - project-size context now separates $500k+ large-scale and $1M+ flagship productions
 - long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
 - missed long-horizon checkpoints release holds and require fresh rate-quoted outreach before reactivation
@@ -33,6 +36,8 @@ The simulator also exposes policy work still needed before shadow-mode integrati
 
 - low-budget firm projects can still close through a cheapest stress candidate, but now receive a
   `booked_with_market_health_warning` outcome instead of a clean healthy booking
+- readiness-blocked projects now require scope calibration before talent outreach instead of consuming
+  top-talent attention with vague opportunities
 - prestige and compliance-floor budget mismatches now become `needs_scope_calibration` instead of plain
   booking failures
 - pre-presentation talent counters are now structurally safe, but repeated counters need to feed future
@@ -51,17 +56,19 @@ Policy: `phase-3-hold-expiration-v1`
 | Booked scenarios | 8 |
 | Booking rate | 61.5% |
 | Long-horizon scenarios | 3 |
-| Pending holds | 2 |
-| Confirmation checkpoints | 6 |
-| Hold expirations | 6 |
+| Pending holds | 1 |
+| Confirmation checkpoints | 4 |
+| Hold expirations | 4 |
 | Expired holds | 1 |
-| Availability checks | 51 |
-| Pre-presentation talent counters | 4 |
-| Admin approval required | 51 |
+| Availability checks | 47 |
+| Pre-presentation talent counters | 3 |
+| Admin approval required | 47 |
 | Mature autonomy candidates | 21 |
 | Admin inclusion overrides | 1 |
+| Readiness-blocked scenarios | 1 |
+| Quote audit events | 239 |
 | Budget-health warnings | 1 |
-| Scope-calibration outcomes | 2 |
+| Scope-calibration outcomes | 3 |
 | Brand-facing leakage count | 0 |
 | Talent-facing job-specific rationale count | 0 |
 | Max shadow AI discretion | 1.0% |
@@ -76,7 +83,7 @@ Policy: `phase-3-hold-expiration-v1`
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
 | Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
-| Exploratory Food Research Brief | pending hold | New/low-trust long-horizon work gets no soft hold until confirmation signals arrive. | Healthy: weak trust creates a tighter hold path without changing price. |
+| Exploratory Food Research Brief | needs scope calibration | Project readiness score is 38, so binding Outreach & Lock is blocked before talent outreach. | Healthy: vague long-horizon projects should calibrate scope before consuming talent attention. |
 | Long-Horizon Beauty Campaign | pending hold | High-trust repeat client gets a 21-day soft hold and a 60-day-before-start checkpoint. | Healthy: trust offsets uncertainty without granting unlimited calendar hold. |
 | Long-Horizon Missed Checkpoint | hold expired | High-trust soft hold expires after the client misses confirmation. | Healthy: expired holds require fresh rate-quoted outreach before reactivation. |
 | Bad-Faith Repricing Stress Test | booked | Volatile talent counters before client presentation; client only sees locked quote. | Structurally fixed: now track this as a pre-presentation counter, not post-interest repricing. |
@@ -102,7 +109,7 @@ Policy implication:
 
 ### 2. Behavior Nudges Are Small But Useful
 
-Behavior adjustments appear in 92.2% of recommendations, but caps keep them non-dominant. Reliable
+Behavior adjustments appear in most recommendations, but caps keep them non-dominant. Reliable
 talent can receive small premiums, dependable clients can reduce transaction risk, and high-friction
 clients can create small risk adjustments.
 
@@ -120,6 +127,10 @@ Fixture traces include the score breakdown for audit, but the pricing engine doe
 Verified Brand and Agency Account remain powerful admin fast-track flags, and validation checks that
 those flags produce the expected tier behavior.
 
+The simulator also consumes `brandPrestigeTier` and `brandPrestigeScore` as separate context. Prestige
+may explain why talent interest is higher, but it does not rewrite client trust or automatically move
+rates in launch mode.
+
 Policy implication:
 
 - keep score calculation in the main app
@@ -127,9 +138,35 @@ Policy implication:
 - do not mix client trust with brand desirability; a prestigious brand can still have messy project data
 - use score/tier to shape confidence and holds, not to bypass talent-owned rates
 
-### 4. AI Rationales Are Separated By Audience
+### 4. Readiness Gate Protects Talent Attention
 
-The run generated 51 admin pricing rationales and 51 brand-facing match rationales. Brand-facing leakage
+The exploratory food brief now stops at `needs_scope_calibration` because the readiness score is 38,
+below the binding threshold of 50. No client-presentable quote is created, no talent-facing outreach is
+simulated, and the project receives a scope calibration warning instead.
+
+Policy implication:
+
+- binding Outreach & Lock should require ready-enough project data
+- admin-only ranges can still help operators calibrate the project
+- under-baked briefs should not reach top talent simply because a brand is curious
+- admin override should exist, but it must be logged and reasoned
+
+### 5. Quote Lifecycle Is Now Auditable
+
+Each client-presentable recommendation now includes a `quoteLifecycle` with active quote version,
+locked gross quote, input snapshot hash, DFOS handoff contract, and append-only quote audit events.
+The base run produced 239 quote audit events across 47 recommendations.
+
+Policy implication:
+
+- Pitch Review Room should read the active locked quote version, not transient pricing output
+- client decisions should bind to the quote version they saw
+- DFOS should consume the locked gross quote and apply downstream commission rules without
+  recalculating the quote
+
+### 6. AI Rationales Are Separated By Audience
+
+The run generated 47 admin pricing rationales and 47 brand-facing match rationales. Brand-facing leakage
 count was zero, and talent-facing job-specific rationale count was zero.
 
 Policy implication:
@@ -139,7 +176,7 @@ Policy implication:
 - brand rationales should stay positive and fit-based
 - talent education should remain upstream and score-based, not job-specific pricing disclosure
 
-### 5. Shadow AI Discretion Is Properly Contained
+### 7. Shadow AI Discretion Is Properly Contained
 
 AI discretion remains shadow-only with a max absolute proposal of 1.0%. Nonzero discretion triggers admin
 review and does not apply to live quotes.
@@ -150,12 +187,11 @@ Policy implication:
 - require outcome evidence before any live discretion
 - do not let AI discretion stack into a meaningful hidden price engine without caps and audit trails
 
-### 6. Long-Horizon Confirmation Mechanics Work
+### 8. Long-Horizon Confirmation Mechanics Work
 
-The exploratory food brief from a weak-trust client becomes pending hold with no soft hold until
-confirmation signals arrive. The long-horizon beauty campaign from a high-trust repeat client also stays
-pending hold, but receives a 21-day soft hold and a 60-day-before-start checkpoint. A missed-checkpoint
-fixture now expires the soft hold and requires fresh rate-quoted outreach before reactivation.
+The long-horizon beauty campaign from a high-trust repeat client stays pending hold, receives a 21-day
+soft hold, and carries a 60-day-before-start checkpoint. A missed-checkpoint fixture expires the soft
+hold and requires fresh rate-quoted outreach before reactivation.
 
 Policy implication:
 
@@ -164,7 +200,7 @@ Policy implication:
 - pending holds must define checkpoint timing, expiration, and what turns them into firm holds
 - missed checkpoints should release the hold rather than silently preserving old rates
 
-### 7. Budget-Driven Commodity Wins Are Now Labeled
+### 9. Budget-Driven Commodity Wins Are Now Labeled
 
 The race-to-bottom social stress case now returns `booked_with_market_health_warning`. The booking still
 counts as conversion, but it carries an internal warning when a market-health risk candidate books only
@@ -176,10 +212,11 @@ Policy implication:
 - do not let the cheapest path masquerade as a healthy recommendation outcome
 - use this label to trigger budget education, scope calibration, or admin review
 
-### 8. All-Budget-Gap Paths Require Scope Calibration
+### 10. All-Budget-Gap Paths Require Scope Calibration
 
 When every evaluated candidate exceeds client capacity, the simulator now returns `needs_scope_calibration`.
-This appears in the low-cash prestige case and the minimum-wage smoke case.
+This appears in the low-cash prestige case, the exploratory low-readiness case, and the minimum-wage
+smoke case.
 
 Policy implication:
 
@@ -276,7 +313,7 @@ Recommended revision:
 
 ### Admin Review Load
 
-Launch mode requires admin approval for all 51 recommendations. That is correct for early validation, but
+Launch mode requires admin approval for all 47 recommendations. That is correct for early validation, but
 too heavy for a mature autonomous system.
 
 Why it matters:

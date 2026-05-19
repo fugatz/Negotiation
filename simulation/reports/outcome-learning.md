@@ -30,13 +30,13 @@ ranges remain the source of authority.
 | Optional talent-guidance messages | 8 | 8 |
 | Cohort summaries | 26 | 26 |
 | Optional cohort-guidance messages | 11 | 11 |
-| Pending holds | 2 | 2 |
-| Confirmation checkpoints | 6 | 6 |
-| Hold expirations | 6 | 6 |
+| Pending holds | 1 | 1 |
+| Confirmation checkpoints | 4 | 4 |
+| Hold expirations | 4 | 4 |
 | Expired holds | 1 | 1 |
 | Budget-health warnings | 1 | 1 |
-| Scope-calibration outcomes | 2 | 2 |
-| Average actualization lift | 10.77% | 10.77% |
+| Scope-calibration outcomes | 3 | 3 |
+| Average actualization lift | 10.73% | 10.73% |
 | Validation failures | 0 | 0 |
 
 The two above-range records still come from the last-minute automotive stress case, where prep, travel,
@@ -44,8 +44,9 @@ turnaround compression, and overtime stack beyond the expected range. The new $5
 stay inside their wider expected ranges while creating separate large-scale and flagship cohort signals.
 The race-to-bottom stress case now actualizes as `booked_with_market_health_warning`, so it remains part
 of conversion learning while preserving the market-health warning.
-The prestige and minimum-wage smoke cases now resolve as `needs_scope_calibration`, keeping them out of
-actualized-rate learning while preserving budget/scope calibration evidence for admins.
+The prestige, exploratory-readiness, and minimum-wage smoke cases now resolve as
+`needs_scope_calibration`, keeping them out of actualized-rate learning while preserving budget/scope
+calibration evidence for admins.
 Long-horizon pending holds now carry confirmation checkpoints and hold expiration metadata, so they remain
 seriousness-confidence signals rather than actualized-rate signals.
 The missed-checkpoint fixture now resolves as `hold_expired`, which also stays out of actualized-rate

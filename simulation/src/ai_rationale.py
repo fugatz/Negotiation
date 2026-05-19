@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .client_context import brand_prestige_context
 from .timing import classify_timing
 
 
@@ -64,8 +65,9 @@ def _build_admin_pricing_rationale(
     rec: dict,
     discretion: dict,
 ) -> dict:
-    del project, client, talent
+    del project, talent
     reasons: list[str] = []
+    prestige = brand_prestige_context(client)
 
     timing = rec["timing_nudge"]
     if timing["rate_delta"] > 0:
@@ -111,6 +113,15 @@ def _build_admin_pricing_rationale(
     elif client_behavior["rate_delta"] > 0:
         reasons.append(
             f"A {_pct(client_behavior['rate_delta'])} client risk adjustment reflects added negotiation or scope uncertainty."
+        )
+
+    if prestige["brandPrestigeTier"] == "tier_1":
+        reasons.append(
+            "Brand prestige is high, but launch policy keeps desirability separate from client trust and does not apply automatic rate movement from prestige alone."
+        )
+    elif prestige["brandPrestigeTier"] == "tier_2":
+        reasons.append(
+            "Brand prestige may improve talent interest, but it remains a separate context signal rather than a client reliability score."
         )
 
     availability_check = rec.get("availability_check", {})

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 
 CLIENT_TRUST_TIERS = {"premium", "established", "emerging", "new"}
+BRAND_PRESTIGE_TIERS = {"tier_1", "tier_2", "tier_3", "none"}
 
 
 def _bool_flag(client: dict, key: str) -> bool:
@@ -67,6 +68,26 @@ def timing_platform_trust_tier(client: dict) -> str:
     return "new_or_unproven"
 
 
+def brand_prestige_context(client: dict) -> dict:
+    raw_tier = client.get("brandPrestigeTier") or client.get("brand_prestige_tier") or "none"
+    tier = str(raw_tier).lower()
+    if tier not in BRAND_PRESTIGE_TIERS:
+        tier = "none"
+
+    raw_score = client.get("brandPrestigeScore")
+    if raw_score is None:
+        raw_score = client.get("brand_prestige_score")
+    if raw_score is None:
+        raw_score = {"tier_1": 90, "tier_2": 70, "tier_3": 45, "none": 0}[tier]
+
+    return {
+        "brandPrestigeTier": tier,
+        "brandPrestigeScore": max(0, min(int(raw_score), 100)),
+        "brandPrestigeSource": client.get("brandPrestigeSource", "main_site_admin_field"),
+        "brandPrestigeNotes": client.get("brandPrestigeNotes", []),
+    }
+
+
 def client_credibility_context(client: dict, project: dict | None = None) -> dict:
     breakdown = client.get("clientTrustScoreBreakdown", {})
     score = client_trust_score(client)
@@ -92,6 +113,7 @@ def client_credibility_context(client: dict, project: dict | None = None) -> dic
         "completedProjectCount": completed_project_count(client),
         "verifiedBrand": _bool_flag(client, "verifiedBrand"),
         "agencyAccount": _bool_flag(client, "agencyAccount"),
+        **brand_prestige_context(client),
         "scoreBreakdown": breakdown,
         "projectCredibilityScore": project_score,
         "projectCredibilitySource": project_score_source,

@@ -66,12 +66,15 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - launch-mode admin approval state and bounded setting-tweak controls
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - nullable local minimum wage smoke checks for actor legal floors
+- readiness gate that blocks binding Outreach & Lock when project credibility is below threshold
+- active quote lifecycle records with quote version, audit events, and DFOS no-recalculation handoff
 - expected booking ranges with assumptions and actualization triggers
 - project-size context bands through $500k+ large-scale and $1M+ flagship productions
 - outcome-learning records that compare locked quotes, booking outcomes, and actualized costs
 - cohort-learning summaries by role, category, project size, market, and client trust tier
 - market-health flags for race-to-bottom and price-led recommendation risk
 - main-site `clientTrustScore` and `clientTrustTier` consumption, with fixture score breakdowns for audit
+- separate `brandPrestigeTier` / `brandPrestigeScore` context so desirability does not collapse into trust
 - `booked_with_market_health_warning` outcomes for budget-driven commodity booking paths
 - `needs_scope_calibration` outcomes when all evaluated talent exceed client capacity
 - long-horizon confirmation checkpoints, hold expiration, and firm-hold requirements
