@@ -98,6 +98,9 @@ def client_credibility_context(client: dict, project: dict | None = None) -> dic
         if project.get("projectCredibilityScore") is not None:
             project_score = max(0, min(int(project["projectCredibilityScore"]), 100))
             project_score_source = "main_site_project_credibility_score"
+        elif project.get("project_credibility_score") is not None:
+            project_score = max(0, min(int(project["project_credibility_score"]), 100))
+            project_score_source = "main_site_project_credibility_score"
         elif project.get("project_commitment_confidence") is not None:
             project_score = max(
                 0,

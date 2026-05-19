@@ -49,6 +49,8 @@ def build_admin_governance(rec: dict) -> dict:
         exception_triggers.append("long-horizon project without strong client trust")
     if rec.get("client_visible_price_state") == "outside stated budget":
         exception_triggers.append("outside stated budget")
+    if rec.get("budget_context", {}).get("talentBudgetMayBeWrong"):
+        exception_triggers.append("derived talent budget requires review")
 
     return {
         "mode": admin_config["mode"],

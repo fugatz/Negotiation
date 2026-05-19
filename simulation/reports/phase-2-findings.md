@@ -52,21 +52,22 @@ Policy: `phase-3-hold-expiration-v1`
 | Metric | Result |
 | --- | ---: |
 | Validation status | pass |
-| Scenario count | 13 |
-| Booked scenarios | 8 |
-| Booking rate | 61.5% |
+| Scenario count | 14 |
+| Booked scenarios | 9 |
+| Booking rate | 64.3% |
 | Long-horizon scenarios | 3 |
 | Pending holds | 1 |
 | Confirmation checkpoints | 4 |
 | Hold expirations | 4 |
 | Expired holds | 1 |
-| Availability checks | 47 |
-| Pre-presentation talent counters | 3 |
-| Admin approval required | 47 |
+| Availability checks | 51 |
+| Pre-presentation talent counters | 4 |
+| Admin approval required | 51 |
 | Mature autonomy candidates | 21 |
 | Admin inclusion overrides | 1 |
 | Readiness-blocked scenarios | 1 |
-| Quote audit events | 239 |
+| Quote audit events | 259 |
+| Derived talent budget review triggers | 4 |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 3 |
 | Brand-facing leakage count | 0 |
@@ -81,6 +82,7 @@ Policy: `phase-3-hold-expiration-v1`
 | Flexible National Beauty Campaign | booked | Best-fit beauty talent books; a manually curated high-profile food director appears only in the admin override slate and fails budget at their locked rate. | Healthy: admin can rescue visibility without overriding talent-owned pricing. |
 | $500k+ Large-Scale Beauty Campaign | booked | Large-scale context creates wider expected ranges and a separate cohort signal. | Healthy: all-in scale affects assumption scrutiny without becoming a budget split. |
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
+| Ingested Mike and Ike Campaign | booked | Real-shaped brief extraction maps to a major all-in CPG campaign; trust is emerging while brand prestige is tier 2. | Healthy: project readiness can allow Outreach & Lock while all-in budget stays separate from talent allocation. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
 | Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
 | Exploratory Food Research Brief | needs scope calibration | Project readiness score is 38, so binding Outreach & Lock is blocked before talent outreach. | Healthy: vague long-horizon projects should calibrate scope before consuming talent attention. |
@@ -155,7 +157,7 @@ Policy implication:
 
 Each client-presentable recommendation now includes a `quoteLifecycle` with active quote version,
 locked gross quote, input snapshot hash, DFOS handoff contract, and append-only quote audit events.
-The base run produced 239 quote audit events across 47 recommendations.
+The base run produced 259 quote audit events across 51 recommendations.
 
 Policy implication:
 
@@ -164,9 +166,22 @@ Policy implication:
 - DFOS should consume the locked gross quote and apply downstream commission rules without
   recalculating the quote
 
-### 6. AI Rationales Are Separated By Audience
+### 6. Derived Talent Budgets Stay Reviewable
 
-The run generated 47 admin pricing rationales and 47 brand-facing match rationales. Brand-facing leakage
+The ingested Mike and Ike sample provides a $400K all-in production/post/talent budget, but not a
+talent-only budget. The simulator construes a placeholder talent budget so the scenario can run, marks
+that budget as low-confidence, and triggers admin review on all four client-presentable recommendations.
+
+Policy implication:
+
+- extracting a talent budget is better than deriving one
+- deriving from all-in budget is acceptable as a temporary estimate only when the uncertainty travels
+  with the quote
+- client-facing confidence should not imply that a construed budget is exact
+
+### 7. AI Rationales Are Separated By Audience
+
+The run generated 51 admin pricing rationales and 51 brand-facing match rationales. Brand-facing leakage
 count was zero, and talent-facing job-specific rationale count was zero.
 
 Policy implication:
@@ -176,7 +191,7 @@ Policy implication:
 - brand rationales should stay positive and fit-based
 - talent education should remain upstream and score-based, not job-specific pricing disclosure
 
-### 7. Shadow AI Discretion Is Properly Contained
+### 8. Shadow AI Discretion Is Properly Contained
 
 AI discretion remains shadow-only with a max absolute proposal of 1.0%. Nonzero discretion triggers admin
 review and does not apply to live quotes.
@@ -187,7 +202,7 @@ Policy implication:
 - require outcome evidence before any live discretion
 - do not let AI discretion stack into a meaningful hidden price engine without caps and audit trails
 
-### 8. Long-Horizon Confirmation Mechanics Work
+### 9. Long-Horizon Confirmation Mechanics Work
 
 The long-horizon beauty campaign from a high-trust repeat client stays pending hold, receives a 21-day
 soft hold, and carries a 60-day-before-start checkpoint. A missed-checkpoint fixture expires the soft
@@ -200,7 +215,7 @@ Policy implication:
 - pending holds must define checkpoint timing, expiration, and what turns them into firm holds
 - missed checkpoints should release the hold rather than silently preserving old rates
 
-### 9. Budget-Driven Commodity Wins Are Now Labeled
+### 10. Budget-Driven Commodity Wins Are Now Labeled
 
 The race-to-bottom social stress case now returns `booked_with_market_health_warning`. The booking still
 counts as conversion, but it carries an internal warning when a market-health risk candidate books only
@@ -212,7 +227,7 @@ Policy implication:
 - do not let the cheapest path masquerade as a healthy recommendation outcome
 - use this label to trigger budget education, scope calibration, or admin review
 
-### 10. All-Budget-Gap Paths Require Scope Calibration
+### 11. All-Budget-Gap Paths Require Scope Calibration
 
 When every evaluated candidate exceeds client capacity, the simulator now returns `needs_scope_calibration`.
 This appears in the low-cash prestige case, the exploratory low-readiness case, and the minimum-wage
@@ -313,7 +328,7 @@ Recommended revision:
 
 ### Admin Review Load
 
-Launch mode requires admin approval for all 47 recommendations. That is correct for early validation, but
+Launch mode requires admin approval for all 51 recommendations. That is correct for early validation, but
 too heavy for a mature autonomous system.
 
 Why it matters:

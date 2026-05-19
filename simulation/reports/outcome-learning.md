@@ -25,10 +25,10 @@ ranges remain the source of authority.
 | Metric | Base | Stricter Market Health |
 | --- | ---: | ---: |
 | Validation status | pass | pass |
-| Actualized records | 13 | 13 |
+| Actualized records | 15 | 15 |
 | Actualized above expected range | 2 | 2 |
 | Optional talent-guidance messages | 8 | 8 |
-| Cohort summaries | 26 | 26 |
+| Cohort summaries | 27 | 27 |
 | Optional cohort-guidance messages | 11 | 11 |
 | Pending holds | 1 | 1 |
 | Confirmation checkpoints | 4 | 4 |
@@ -36,12 +36,13 @@ ranges remain the source of authority.
 | Expired holds | 1 | 1 |
 | Budget-health warnings | 1 | 1 |
 | Scope-calibration outcomes | 3 | 3 |
-| Average actualization lift | 10.73% | 10.73% |
+| Average actualization lift | 10.11% | 10.11% |
 | Validation failures | 0 | 0 |
 
 The two above-range records still come from the last-minute automotive stress case, where prep, travel,
-turnaround compression, and overtime stack beyond the expected range. The new $500k+ and $1M+ scenarios
-stay inside their wider expected ranges while creating separate large-scale and flagship cohort signals.
+turnaround compression, and overtime stack beyond the expected range. The new $500k+, $1M+, and ingested
+Mike and Ike scenarios stay inside their wider expected ranges while creating separate large-scale,
+flagship, and major CPG cohort signals.
 The race-to-bottom stress case now actualizes as `booked_with_market_health_warning`, so it remains part
 of conversion learning while preserving the market-health warning.
 The prestige, exploratory-readiness, and minimum-wage smoke cases now resolve as
@@ -92,17 +93,20 @@ Current directional signals:
 | --- | --- |
 | Category: automotive | 20.08% average actualization lift, above-range actualization in the last-minute stress case |
 | Category: beauty | 13.52% average actualization lift, medium-confidence sample |
+| Category: food | 4.45% average actualization lift, medium-confidence sample |
 | Market: Detroit | 20.08% average actualization lift, medium-confidence sample |
 | Market: New York | 13.52% average actualization lift, medium-confidence sample |
+| Market: Unknown | 3.06% average actualization lift, medium-confidence sample |
 | Project size: flagship | 14.83% average actualization lift, directional-only sample |
 | Project size: large-scale | 13.96% average actualization lift, directional-only sample |
+| Project size: major | 6.12% average actualization lift, directional-only sample |
 | Project size: premium | 19.20% average actualization lift, medium-confidence sample |
 | Role: DP | 12.19% average actualization lift, medium-confidence sample |
-| Role: director | 17.32% average actualization lift, directional-only sample |
+| Role: director | 12.81% average actualization lift, medium-confidence sample |
 | Role: photographer | 9.04% average actualization lift, directional-only sample |
 | Client trust: Premium | 13.96% average actualization lift, medium-confidence sample |
 | Client trust: Established | 7.96% average actualization lift, medium-confidence sample |
-| Client trust: Emerging | No actualized bookings in current fixtures; useful as budget/scope calibration signal. |
+| Client trust: Emerging | 6.12% average actualization lift, directional-only sample. |
 
 These are intentionally weak early signals. The simulator labels small cohorts as `directional_only`; they
 can create admin review and optional talent guidance, but they should not change rates automatically.

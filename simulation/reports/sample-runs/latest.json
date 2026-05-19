@@ -9,6 +9,11 @@
       "budget": 11000,
       "projectContext": {
         "allInBudget": 50000,
+        "talentBudget": 11000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "small",
         "projectType": "social_content",
         "market": "los_angeles",
@@ -191,6 +196,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 50000,
+            "talentBudget": 11000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -199,7 +216,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "b1d1c1ddffc92e16",
+            "inputSnapshotHash": "5daa2ddbe3f6279a",
             "lockedGrossQuote": 6800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -468,6 +485,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 50000,
+            "talentBudget": 11000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -476,7 +505,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "d77ffff2b9e0446b",
+            "inputSnapshotHash": "8b8bfa396d42e81f",
             "lockedGrossQuote": 12000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -747,6 +776,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 50000,
+            "talentBudget": 11000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__premium_food_director__v1",
             "quoteVersion": 1,
@@ -755,7 +796,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e0494fa47325e2c5",
+            "inputSnapshotHash": "f944e3890fb6411e",
             "lockedGrossQuote": 21600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1033,6 +1074,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 50000,
+            "talentBudget": 11000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__volatile_rep_managed_talent__v1",
             "quoteVersion": 1,
@@ -1041,7 +1094,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e9f89d3506115490",
+            "inputSnapshotHash": "b102a8343a7d3c93",
             "lockedGrossQuote": 12800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1497,6 +1550,11 @@
       "budget": 14000,
       "projectContext": {
         "allInBudget": 125000,
+        "talentBudget": 14000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "premium",
         "projectType": "national_campaign",
         "market": "new_york",
@@ -1681,6 +1739,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 125000,
+            "talentBudget": 14000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -1689,7 +1759,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "1c015a5b249eb02d",
+            "inputSnapshotHash": "0c052cba008e1eff",
             "lockedGrossQuote": 8900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1961,6 +2031,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 125000,
+            "talentBudget": 14000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -1969,7 +2051,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "aa2d3a23e0bff7d3",
+            "inputSnapshotHash": "7479b55022657dbe",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2239,6 +2321,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 125000,
+            "talentBudget": 14000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__luxury_fashion_editor__v1",
             "quoteVersion": 1,
@@ -2247,7 +2341,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "8bae70a042a4ab4f",
+            "inputSnapshotHash": "3d81e9b727c9cc48",
             "lockedGrossQuote": 14000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2524,6 +2618,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 125000,
+            "talentBudget": 14000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -2532,7 +2638,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e169ab213fe28e5e",
+            "inputSnapshotHash": "ac1d6bd94c37e4b1",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2814,6 +2920,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 125000,
+            "talentBudget": 14000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__premium_food_director__v1",
             "quoteVersion": 1,
@@ -2822,7 +2940,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "01b2e01ddc1d64e1",
+            "inputSnapshotHash": "f68c9f01ea81748a",
             "lockedGrossQuote": 20900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -3442,6 +3560,11 @@
       "budget": 28000,
       "projectContext": {
         "allInBudget": 500000,
+        "talentBudget": 28000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "large_scale",
         "projectType": "national_campaign",
         "market": "new_york",
@@ -3629,6 +3752,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 500000,
+            "talentBudget": 28000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "large_scale",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -3637,7 +3772,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "731a23ce92e193b4",
+            "inputSnapshotHash": "c0d360a441e17d47",
             "lockedGrossQuote": 8800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -3912,6 +4047,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 500000,
+            "talentBudget": 28000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "large_scale",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -3920,7 +4067,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e56a1ea60982a7a5",
+            "inputSnapshotHash": "12048e8d5b6ab257",
             "lockedGrossQuote": 13300,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4193,6 +4340,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 500000,
+            "talentBudget": 28000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "large_scale",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__luxury_fashion_editor__v1",
             "quoteVersion": 1,
@@ -4201,7 +4360,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "c6b6a5e564601940",
+            "inputSnapshotHash": "8617bdbd5888b74f",
             "lockedGrossQuote": 13900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4481,6 +4640,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 500000,
+            "talentBudget": 28000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "large_scale",
+            "projectType": "national_campaign",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -4489,7 +4660,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "52ee0886b443dab4",
+            "inputSnapshotHash": "b534a2d4933d8064",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4976,6 +5147,11 @@
       "budget": 65000,
       "projectContext": {
         "allInBudget": 1000000,
+        "talentBudget": 65000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "flagship",
         "projectType": "commercial_campaign",
         "market": "detroit",
@@ -5163,6 +5339,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 1000000,
+            "talentBudget": 65000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "flagship",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__automotive_specialist__v1",
             "quoteVersion": 1,
@@ -5171,7 +5359,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a027d63b0be25d57",
+            "inputSnapshotHash": "49483a8e4dcfa720",
             "lockedGrossQuote": 20000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5441,6 +5629,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 1000000,
+            "talentBudget": 65000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "flagship",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -5449,7 +5649,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0dd1ad242ce170c6",
+            "inputSnapshotHash": "387149361576c087",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5720,6 +5920,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 1000000,
+            "talentBudget": 65000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "flagship",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -5728,7 +5940,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0b4159f07ca31a63",
+            "inputSnapshotHash": "7019003624920e69",
             "lockedGrossQuote": 12900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5999,6 +6211,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 1000000,
+            "talentBudget": 65000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "flagship",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__premium_food_director__v1",
             "quoteVersion": 1,
@@ -6007,7 +6231,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3ff41becc3b7279b",
+            "inputSnapshotHash": "7eb176cb7a30c6d1",
             "lockedGrossQuote": 20700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6494,6 +6718,11 @@
       "budget": 18000,
       "projectContext": {
         "allInBudget": 150000,
+        "talentBudget": 18000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "premium",
         "projectType": "commercial_campaign",
         "market": "detroit",
@@ -6696,6 +6925,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 150000,
+            "talentBudget": 18000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -6704,7 +6945,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5a90fa431602999c",
+            "inputSnapshotHash": "cf741082d7a581ea",
             "lockedGrossQuote": 7900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6972,6 +7213,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 150000,
+            "talentBudget": 18000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -6980,7 +7233,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f6107e28add1344e",
+            "inputSnapshotHash": "5a107d533812eee2",
             "lockedGrossQuote": 13700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7248,6 +7501,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 150000,
+            "talentBudget": 18000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -7256,7 +7521,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3da87bb4882d383e",
+            "inputSnapshotHash": "90741f79bec87ab7",
             "lockedGrossQuote": 8900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7523,6 +7788,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 150000,
+            "talentBudget": 18000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "commercial_campaign",
+            "market": "detroit",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__low_rate_fast_responder__v1",
             "quoteVersion": 1,
@@ -7531,7 +7808,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "04085c9f9f7503f3",
+            "inputSnapshotHash": "9be31c4c5f53853e",
             "lockedGrossQuote": 4600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8020,6 +8297,11 @@
       "budget": 4500,
       "projectContext": {
         "allInBudget": 20000,
+        "talentBudget": 4500,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "low_cash",
         "projectType": "editorial_prestige",
         "market": "new_york",
@@ -8222,6 +8504,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 20000,
+            "talentBudget": 4500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "editorial_prestige",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__luxury_fashion_editor__v1",
             "quoteVersion": 1,
@@ -8230,7 +8524,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "df1cd65f3ec1cea9",
+            "inputSnapshotHash": "46de70d523072356",
             "lockedGrossQuote": 12400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8505,6 +8799,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 20000,
+            "talentBudget": 4500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "editorial_prestige",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -8513,7 +8819,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "160720998c8edb9b",
+            "inputSnapshotHash": "22346647b22a55f1",
             "lockedGrossQuote": 10800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8784,6 +9090,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 20000,
+            "talentBudget": 4500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "editorial_prestige",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -8792,7 +9110,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a0d6b0e773a2aa65",
+            "inputSnapshotHash": "a98d187b7ceb3207",
             "lockedGrossQuote": 7100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9062,6 +9380,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 20000,
+            "talentBudget": 4500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "editorial_prestige",
+            "market": "new_york",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -9070,7 +9400,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e55489793d120b56",
+            "inputSnapshotHash": "328d660502a8c976",
             "lockedGrossQuote": 6200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9558,6 +9888,11 @@
       "budget": 9000,
       "projectContext": {
         "allInBudget": 50000,
+        "talentBudget": 9000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "small",
         "projectType": "exploratory_research",
         "market": "los_angeles",
@@ -9641,6 +9976,11 @@
       "budget": 12000,
       "projectContext": {
         "allInBudget": 100000,
+        "talentBudget": 12000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
@@ -9825,6 +10165,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -9833,7 +10185,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "ab5d32e19864b196",
+            "inputSnapshotHash": "075485e2008ce2d7",
             "lockedGrossQuote": 8700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10111,6 +10463,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -10119,7 +10483,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "de5d3a26a8c806ab",
+            "inputSnapshotHash": "a334cb497335dd0c",
             "lockedGrossQuote": 13200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10395,6 +10759,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -10403,7 +10779,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "c28a99c1620b0776",
+            "inputSnapshotHash": "e80f5e4ee144f6c2",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10677,6 +11053,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__luxury_fashion_editor__v1",
             "quoteVersion": 1,
@@ -10685,7 +11073,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e4bb074964f5b907",
+            "inputSnapshotHash": "dfc3b9bcc3612707",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11202,6 +11590,11 @@
       "budget": 10000,
       "projectContext": {
         "allInBudget": 75000,
+        "talentBudget": 10000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
@@ -11386,6 +11779,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 75000,
+            "talentBudget": 10000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -11394,7 +11799,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "090b8ab29a9825f5",
+            "inputSnapshotHash": "7c414f2a9c50efc7",
             "lockedGrossQuote": 7200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11660,6 +12065,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 75000,
+            "talentBudget": 10000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__premium_food_director__v1",
             "quoteVersion": 1,
@@ -11668,7 +12085,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "63b407845eb25413",
+            "inputSnapshotHash": "548acf7bd26729a5",
             "lockedGrossQuote": 22800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11943,6 +12360,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 75000,
+            "talentBudget": 10000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -11951,7 +12380,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "754620a735409fd8",
+            "inputSnapshotHash": "dae0d99697c0a5e9",
             "lockedGrossQuote": 12600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12221,6 +12650,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 75000,
+            "talentBudget": 10000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__volatile_rep_managed_talent__v1",
             "quoteVersion": 1,
@@ -12229,7 +12670,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "720a8f9cb6701549",
+            "inputSnapshotHash": "3929b370dd51524a",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12506,6 +12947,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 75000,
+            "talentBudget": 10000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__volatile_rep_managed_talent__v1",
             "quoteVersion": 1,
@@ -12514,7 +12967,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "720a8f9cb6701549",
+            "inputSnapshotHash": "3929b370dd51524a",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -13109,6 +13562,11 @@
       "budget": 12500,
       "projectContext": {
         "allInBudget": 100000,
+        "talentBudget": 12500,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
@@ -13293,6 +13751,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -13301,7 +13771,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f34d7f99bcb9faf4",
+            "inputSnapshotHash": "94c927c2708a2fe1",
             "lockedGrossQuote": 8700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -13579,6 +14049,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -13587,7 +14069,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "856435175ad17395",
+            "inputSnapshotHash": "27e366c295e2573b",
             "lockedGrossQuote": 13200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -13863,6 +14345,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -13871,7 +14365,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f74ad28cb681dcbc",
+            "inputSnapshotHash": "259c5f25de632fa1",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14145,6 +14639,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 100000,
+            "talentBudget": 12500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "mid",
+            "projectType": "commercial_campaign",
+            "market": "los_angeles",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__luxury_fashion_editor__v1",
             "quoteVersion": 1,
@@ -14153,7 +14659,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "bc6b4421ecb40a19",
+            "inputSnapshotHash": "b9e838a2d51e7474",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14680,6 +15186,11 @@
       "budget": 5000,
       "projectContext": {
         "allInBudget": 25000,
+        "talentBudget": 5000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "small",
         "projectType": "social_content",
         "market": "austin",
@@ -14862,6 +15373,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 25000,
+            "talentBudget": 5000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "austin",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__reliable_generalist_dp__v1",
             "quoteVersion": 1,
@@ -14870,7 +15393,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7789c3228d982361",
+            "inputSnapshotHash": "910c88f8a43afd93",
             "lockedGrossQuote": 6800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15140,6 +15663,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 25000,
+            "talentBudget": 5000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "austin",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__low_rate_fast_responder__v1",
             "quoteVersion": 1,
@@ -15148,7 +15683,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "246e003c3447fb2d",
+            "inputSnapshotHash": "5aeb47b510796131",
             "lockedGrossQuote": 4100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15418,6 +15953,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 25000,
+            "talentBudget": 5000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "austin",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__idle_high_quality_director__v1",
             "quoteVersion": 1,
@@ -15426,7 +15973,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0477530aa2c43af1",
+            "inputSnapshotHash": "8d62bb1a7eb282b6",
             "lockedGrossQuote": 12000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15698,6 +16245,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 25000,
+            "talentBudget": 5000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "austin",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__emerging_beauty_photographer__v1",
             "quoteVersion": 1,
@@ -15706,7 +16265,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "734ff059fcb0c503",
+            "inputSnapshotHash": "6d7fde9ec809f9cb",
             "lockedGrossQuote": 7800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15978,6 +16537,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 25000,
+            "talentBudget": 5000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "small",
+            "projectType": "social_content",
+            "market": "austin",
+            "talentClassScope": "production_talent"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__low_rate_fast_responder__v1",
             "quoteVersion": 1,
@@ -15986,7 +16557,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "246e003c3447fb2d",
+            "inputSnapshotHash": "5aeb47b510796131",
             "lockedGrossQuote": 4100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16447,12 +17018,1664 @@
       ]
     },
     {
+      "project": "Ingested Mike and Ike Campaign",
+      "projectId": "ingested_mike_and_ike_campaign",
+      "client": "Mike and Ike Test Brand",
+      "budget": 40000,
+      "projectContext": {
+        "allInBudget": 400000,
+        "talentBudget": 40000,
+        "talentBudgetSource": "simulated_talent_budget_placeholder_from_400k_all_in_production_post_talent_budget",
+        "talentBudgetConfidence": "low",
+        "talentBudgetMayBeWrong": true,
+        "talentBudgetDerivation": "The source brief gives a $400K all-in production/post/talent budget, not a talent-only budget. Simulator uses a 10% placeholder allocation so the scenario can run, but production should extract or admin-confirm a talent budget.",
+        "projectSizeBand": "major",
+        "projectType": "commercial_campaign",
+        "market": "unknown_market",
+        "talentClassScope": "production_talent"
+      },
+      "clientCredibility": {
+        "clientTrustScore": 20,
+        "clientTrustTier": "emerging",
+        "source": "main_site_clientScoring_placeholder",
+        "timingPlatformTrustTier": "limited_history",
+        "completedProjectCount": 0,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "brandPrestigeTier": "tier_2",
+        "brandPrestigeScore": 72,
+        "brandPrestigeSource": "mapped_from_ingested_test_brand",
+        "brandPrestigeNotes": [
+          "recognizable CPG brand, but low platform history in this fixture"
+        ],
+        "scoreBreakdown": {
+          "completedProjects": 0,
+          "completedProjectCount": 0,
+          "paymentSpeed": 0,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 80,
+        "projectCredibilitySource": "main_site_project_credibility_score"
+      },
+      "readinessGate": {
+        "projectCredibilityScore": 80,
+        "projectCredibilitySource": "main_site_project_credibility_score",
+        "projectReadinessTier": "strong",
+        "projectReadinessTierSource": "main_site_project_readiness_tier",
+        "bindingQuoteThreshold": 50,
+        "bindingQuoteAllowed": true,
+        "gateState": "binding_quote_allowed",
+        "reason": "project is ready enough for binding Outreach & Lock",
+        "adminOverride": {
+          "applied": false,
+          "reasonCode": null,
+          "reason": null,
+          "actor": null
+        }
+      },
+      "budgetType": "flexible",
+      "leadTimeDays": 64,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 8,
+      "excluded": [
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "talentClass": "production_talent",
+          "role": "director",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Best Fit",
+          "quote": 23200,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.923,
+          "creativeFit": 1.0,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.897,
+          "availabilityCheck": {
+            "talent_id": "premium_food_director",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 23200,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 19300,
+              "high": 27100,
+              "expectedClose": 23200,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 23200,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 19300,
+              "high": 27100,
+              "expectedClose": 23200,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 14000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 14000,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 19300,
+            "high": 27100,
+            "expectedClose": 23200,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 400000,
+            "talentBudget": 40000,
+            "talentBudgetSource": "simulated_talent_budget_placeholder_from_400k_all_in_production_post_talent_budget",
+            "talentBudgetConfidence": "low",
+            "talentBudgetMayBeWrong": true,
+            "talentBudgetDerivation": "The source brief gives a $400K all-in production/post/talent budget, not a talent-only budget. Simulator uses a 10% placeholder allocation so the scenario can run, but production should extract or admin-confirm a talent budget.",
+            "projectSizeBand": "major",
+            "projectType": "commercial_campaign",
+            "market": "unknown_market",
+            "talentClassScope": "production_talent"
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "ec935c823e8b9b11",
+            "lockedGrossQuote": 23200,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 23200,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_accepted_quote",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "accepted_project_specific_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 20,
+            "clientTrustTier": "emerging",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.05,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "Brand prestige may improve talent interest, but it remains a separate context signal rather than a client reliability score.",
+                "Shadow discretion proposes +1.0%: this talent may get more this time because similar outcomes closed above the computed quote."
+              ],
+              "discretionDelta": 0.01,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "Similar booked outcomes closed slightly above computed quote.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep food experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep food experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "derived talent budget requires review",
+              "nonzero AI discretion proposal"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "talentClass": "production_talent",
+          "role": "director",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Budget-Confident",
+          "quote": 12900,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.819,
+          "creativeFit": 0.678,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.788,
+          "availabilityCheck": {
+            "talent_id": "idle_high_quality_director",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 12900,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 10700,
+              "high": 15100,
+              "expectedClose": 12900,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 12900,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 10700,
+              "high": 15100,
+              "expectedClose": 12900,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7800,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 15100,
+            "expectedClose": 12900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 400000,
+            "talentBudget": 40000,
+            "talentBudgetSource": "simulated_talent_budget_placeholder_from_400k_all_in_production_post_talent_budget",
+            "talentBudgetConfidence": "low",
+            "talentBudgetMayBeWrong": true,
+            "talentBudgetDerivation": "The source brief gives a $400K all-in production/post/talent budget, not a talent-only budget. Simulator uses a 10% placeholder allocation so the scenario can run, but production should extract or admin-confirm a talent budget.",
+            "projectSizeBand": "major",
+            "projectType": "commercial_campaign",
+            "market": "unknown_market",
+            "talentClassScope": "production_talent"
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "9756ee1f5522d8b0",
+            "lockedGrossQuote": 12900,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 12900,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_accepted_quote",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "accepted_project_specific_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.71,
+            "flags": [
+              "idle_access_without_discounting"
+            ]
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 20,
+            "clientTrustTier": "emerging",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "Brand prestige may improve talent interest, but it remains a separate context signal rather than a client reliability score."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "derived talent budget requires review"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "talentClass": "production_talent",
+          "role": "dp",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Budget-Confident",
+          "quote": 7400,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.79,
+          "creativeFit": 0.568,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.784,
+          "availabilityCheck": {
+            "talent_id": "reliable_generalist_dp",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 7400,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 6100,
+              "high": 8700,
+              "expectedClose": 7400,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 7400,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 6100,
+              "high": 8700,
+              "expectedClose": 7400,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 4500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 4500,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 6100,
+            "high": 8700,
+            "expectedClose": 7400,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 400000,
+            "talentBudget": 40000,
+            "talentBudgetSource": "simulated_talent_budget_placeholder_from_400k_all_in_production_post_talent_budget",
+            "talentBudgetConfidence": "low",
+            "talentBudgetMayBeWrong": true,
+            "talentBudgetDerivation": "The source brief gives a $400K all-in production/post/talent budget, not a talent-only budget. Simulator uses a 10% placeholder allocation so the scenario can run, but production should extract or admin-confirm a talent budget.",
+            "projectSizeBand": "major",
+            "projectType": "commercial_campaign",
+            "market": "unknown_market",
+            "talentClassScope": "production_talent"
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "39cf15560f51c38f",
+            "lockedGrossQuote": 7400,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 7400,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_accepted_quote",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "accepted_project_specific_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 20,
+            "clientTrustTier": "emerging",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.03,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.05,
+            "talentReason": "high quote stability and reliability",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +3.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "Brand prestige may improve talent interest, but it remains a separate context signal rather than a client reliability score."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Useful adjacent experience for the creative direction.",
+              "reasons": [
+                "Useful adjacent experience for the creative direction.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "derived talent budget requires review"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "talentClass": "production_talent",
+          "role": "director",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Strong Specialist",
+          "quote": 13800,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.707,
+          "creativeFit": 0.89,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.46,
+          "availabilityCheck": {
+            "talent_id": "volatile_rep_managed_talent",
+            "status": "countered_before_client_presentation",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 11500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9500,
+              "high": 13500,
+              "expectedClose": 11500,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 13800,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent countered during rate-quoted outreach before client presentation"
+            ],
+            "warnings": [
+              "pre-presentation counter increased locked quote"
+            ],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 11500,
+              "high": 16100,
+              "expectedClose": 13800,
+              "currency": "USD",
+              "rangeWidth": 0.17,
+              "assumptionsIncluded": [
+                "$400k all-in production/post/talent budget from ingested brief",
+                "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+                "TV commercial plus social campaign assumed",
+                "15s, 6s, and social short assets assumed",
+                "VFX compositing and green screen mascot work assumed",
+                "primary shoot location TBD",
+                "no exclusivity assumed because source brief does not specify it"
+              ],
+              "actualizationTriggers": [
+                "VFX scope expands",
+                "additional revision round requested",
+                "additional social cutdowns requested",
+                "location or stage requirements confirmed",
+                "overtime triggered",
+                "prep day added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "travel required",
+                "turnaround compressed",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "production_talent",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 7000,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": null,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_applicable",
+            "effectiveFloor": 7000,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 11500,
+            "high": 16100,
+            "expectedClose": 13800,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 400000,
+            "talentBudget": 40000,
+            "talentBudgetSource": "simulated_talent_budget_placeholder_from_400k_all_in_production_post_talent_budget",
+            "talentBudgetConfidence": "low",
+            "talentBudgetMayBeWrong": true,
+            "talentBudgetDerivation": "The source brief gives a $400K all-in production/post/talent budget, not a talent-only budget. Simulator uses a 10% placeholder allocation so the scenario can run, but production should extract or admin-confirm a talent budget.",
+            "projectSizeBand": "major",
+            "projectType": "commercial_campaign",
+            "market": "unknown_market",
+            "talentClassScope": "production_talent"
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "77e34d39da3cf104",
+            "lockedGrossQuote": 13800,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 13800,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_countered_before_presentation",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "talent_countered_inside_outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "limited_history",
+            "clientTrustScore": 20,
+            "clientTrustTier": "emerging",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": -0.02,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.01,
+            "talentReason": "repeated unexplained late repricing; small talent-side friction tax",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream talent reliability metric",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A -2.0% talent-side friction adjustment reflects added deal friction.",
+              "reasons": [
+                "A -2.0% talent-side friction adjustment reflects added deal friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "Brand prestige may improve talent interest, but it remains a separate context signal rather than a client reliability score.",
+                "Talent countered during the pre-presentation availability check; the client slate uses the committed quote only."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep food experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep food experience and a strong creative match for the brief.",
+                "The portfolio shows meaningful experience in this kind of work."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review",
+              "derived talent budget requires review",
+              "pre-presentation talent counter"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "adminOverrideSlate": [],
+      "adminOverrideExcluded": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "premium_food_director",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "call_for_details_or_email_offer",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 23200,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 19300,
+            "high": 27100,
+            "expectedClose": 23200,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 23200,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 19300,
+            "high": 27100,
+            "expectedClose": 23200,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "call_for_details_or_email_offer",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 12900,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 15100,
+            "expectedClose": 12900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 12900,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 10700,
+            "high": 15100,
+            "expectedClose": 12900,
+            "currency": "USD",
+            "rangeWidth": 0.17,
+            "assumptionsIncluded": [
+              "$400k all-in production/post/talent budget from ingested brief",
+              "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+              "TV commercial plus social campaign assumed",
+              "15s, 6s, and social short assets assumed",
+              "VFX compositing and green screen mascot work assumed",
+              "primary shoot location TBD",
+              "no exclusivity assumed because source brief does not specify it"
+            ],
+            "actualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "premium_food_director",
+          "status": "booked",
+          "locked_quote": 23200,
+          "client_capacity": 47200,
+          "quote_id": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
+          "quote_version": 1,
+          "active_quote_version": 1,
+          "locked_gross_quote": 23200,
+          "dfos_handoff": {
+            "source": "locked_gross_quote",
+            "lockedGrossQuote": 23200,
+            "dfosMayRecalculateQuote": false,
+            "commissionCapHandledDownstream": true,
+            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+          },
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        },
+        {
+          "talent_id": "idle_high_quality_director",
+          "status": "booked",
+          "locked_quote": 12900,
+          "client_capacity": 47200,
+          "quote_id": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
+          "quote_version": 1,
+          "active_quote_version": 1,
+          "locked_gross_quote": 12900,
+          "dfos_handoff": {
+            "source": "locked_gross_quote",
+            "lockedGrossQuote": 12900,
+            "dfosMayRecalculateQuote": false,
+            "commissionCapHandledDownstream": true,
+            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+          },
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0612,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "premium_food_director",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "director",
+              "category": "food",
+              "projectSizeBand": "major",
+              "market": "unknown_market",
+              "clientTrustTier": "emerging"
+            },
+            "lockedQuote": 23200,
+            "expectedRange": {
+              "low": 19300,
+              "high": 27100,
+              "expectedClose": 23200,
+              "currency": "USD"
+            },
+            "actualizedCost": 24600,
+            "actualizationEvents": [
+              "prep day added"
+            ],
+            "allowedActualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          },
+          {
+            "talent_id": "idle_high_quality_director",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "director",
+              "category": "food",
+              "projectSizeBand": "major",
+              "market": "unknown_market",
+              "clientTrustTier": "emerging"
+            },
+            "lockedQuote": 12900,
+            "expectedRange": {
+              "low": 10700,
+              "high": 15100,
+              "expectedClose": 12900,
+              "currency": "USD"
+            },
+            "actualizedCost": 13700,
+            "actualizationEvents": [
+              "prep day added"
+            ],
+            "allowedActualizationTriggers": [
+              "VFX scope expands",
+              "additional revision round requested",
+              "additional social cutdowns requested",
+              "location or stage requirements confirmed",
+              "overtime triggered",
+              "prep day added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "travel required",
+              "turnaround compressed",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Actualized inside the expected range; assumption language covered the event-driven variance."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
+      "outcome": "booked",
+      "warnings": []
+    },
+    {
       "project": "Background Extra Minimum Wage Smoke Test",
       "projectId": "background_extra_minimum_wage_smoke",
       "client": "Firm-Budget Producer",
       "budget": 100,
       "projectContext": {
         "allInBudget": 5000,
+        "talentBudget": 100,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
         "market": "los_angeles",
@@ -16668,6 +18891,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 5000,
+            "talentBudget": 100,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "background_casting",
+            "market": "los_angeles",
+            "talentClassScope": "actor"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_background_extra_minimum_wage_smoke__background_extra_actor__v1",
             "quoteVersion": 1,
@@ -16676,7 +18911,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0bcf7be7f5f4d15e",
+            "inputSnapshotHash": "f85bc9949c0d45f9",
             "lockedGrossQuote": 216,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16948,6 +19183,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 5000,
+            "talentBudget": 100,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "background_casting",
+            "market": "los_angeles",
+            "talentClassScope": "actor"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
             "quoteVersion": 1,
@@ -16956,7 +19203,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "41ee356fb8ece6a4",
+            "inputSnapshotHash": "e89faefada34d78d",
             "lockedGrossQuote": 216,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17443,6 +19690,11 @@
       "budget": 150,
       "projectContext": {
         "allInBudget": 5000,
+        "talentBudget": 150,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
         "market": "unknown_market",
@@ -17660,6 +19912,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 5000,
+            "talentBudget": 150,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "background_casting",
+            "market": "unknown_market",
+            "talentClassScope": "actor"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_background_extra_unknown_wage_smoke__background_extra_actor__v1",
             "quoteVersion": 1,
@@ -17668,7 +19932,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "d3c6b484b509b4e8",
+            "inputSnapshotHash": "5f6a39866b33b00b",
             "lockedGrossQuote": 100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17939,6 +20203,18 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
+          "budgetContext": {
+            "allInBudget": 5000,
+            "talentBudget": 150,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "background_casting",
+            "market": "unknown_market",
+            "talentClassScope": "actor"
+          },
           "quoteLifecycle": {
             "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
             "quoteVersion": 1,
@@ -17947,7 +20223,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a275a619009f4e09",
+            "inputSnapshotHash": "197eaf509ea2d469",
             "lockedGrossQuote": 200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -18403,7 +20679,7 @@
       "clientTrustTier"
     ],
     "summary": {
-      "cohortCount": 26,
+      "cohortCount": 27,
       "cohortGuidanceCount": 11,
       "calibrationAuthority": "guidance_only",
       "rateAuthority": "talent_owned_rate_range"
@@ -18437,12 +20713,12 @@
         {
           "dimension": "role",
           "value": "director",
-          "recordCount": 10,
-          "bookedRecordCount": 3,
-          "actualizedRecordCount": 3,
+          "recordCount": 12,
+          "bookedRecordCount": 5,
+          "actualizedRecordCount": 5,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1726,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.1281,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
@@ -18452,9 +20728,9 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": [
-              "Directional role cohort signal: director outcomes are landing about 17% above accepted project rates in this simulation sample.",
+              "Directional role cohort signal: director outcomes are landing about 13% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -18670,12 +20946,12 @@
         {
           "dimension": "category",
           "value": "food",
-          "recordCount": 5,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 7,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0278,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.0445,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
@@ -18685,7 +20961,7 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": []
           },
           "calibrationAuthority": "guidance_only",
@@ -18779,6 +21055,30 @@
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
           "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "projectSizeBand",
+          "value": "major",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0612,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
@@ -18977,12 +21277,12 @@
         {
           "dimension": "market",
           "value": "unknown_market",
-          "recordCount": 2,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 4,
+          "bookedRecordCount": 4,
+          "actualizedRecordCount": 4,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0,
-          "confidence": "directional_only",
+          "averageActualizationLift": 0.0306,
+          "confidence": "medium",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
@@ -18992,7 +21292,7 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "directional_only",
+            "confidence": "medium",
             "messages": []
           },
           "calibrationAuthority": "guidance_only",
@@ -19003,14 +21303,14 @@
         {
           "dimension": "clientTrustTier",
           "value": "emerging",
-          "recordCount": 2,
-          "bookedRecordCount": 0,
-          "actualizedRecordCount": 0,
+          "recordCount": 4,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0,
+          "averageActualizationLift": 0.0612,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
-            "No booked actualization evidence yet; keep this cohort advisory-only."
+            "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
           "talentGuidance": {
             "visibility": "talent-guidance",
@@ -19079,24 +21379,24 @@
     }
   },
   "metrics": {
-    "scenarioCount": 13,
-    "bookedCount": 8,
-    "bookingRate": 0.615,
+    "scenarioCount": 14,
+    "bookedCount": 9,
+    "bookingRate": 0.643,
     "longHorizonScenarioCount": 3,
-    "behaviorNudgeShareOfRecommendations": 0.915,
-    "timingNudgeShareOfRecommendations": 0.34,
-    "aiRationaleCount": 47,
-    "brandFacingRationaleCount": 47,
+    "behaviorNudgeShareOfRecommendations": 0.922,
+    "timingNudgeShareOfRecommendations": 0.314,
+    "aiRationaleCount": 51,
+    "brandFacingRationaleCount": 51,
     "brandFacingRationaleLeakageCount": 0,
     "talentFacingJobSpecificRationaleCount": 0,
-    "adminApprovalRequiredCount": 47,
+    "adminApprovalRequiredCount": 51,
     "matureAutonomyCandidateCount": 21,
-    "availabilityCheckCount": 47,
-    "prePresentationTalentCounterCount": 3,
+    "availabilityCheckCount": 51,
+    "prePresentationTalentCounterCount": 4,
     "minimumWageFloorAppliedCount": 2,
     "minimumWageFloorUnknownCount": 2,
-    "expectedBookingRangeCount": 47,
-    "actualizedRecordCount": 13,
+    "expectedBookingRangeCount": 51,
+    "actualizedRecordCount": 15,
     "actualizedAboveExpectedRangeCount": 2,
     "talentGuidanceCount": 8,
     "budgetHealthWarningCount": 1,
@@ -19109,22 +21409,23 @@
     "holdExpiredWarningCount": 1,
     "adminInclusionOverrideCount": 1,
     "readinessBlockedCount": 1,
-    "quoteAuditEventCount": 239,
-    "averageActualizationLift": 0.1073,
-    "aiHumanReviewShareOfRecommendations": 0.511,
-    "averageAbsoluteShadowDiscretionDelta": 0.0013,
+    "quoteAuditEventCount": 259,
+    "averageActualizationLift": 0.1011,
+    "aiHumanReviewShareOfRecommendations": 0.549,
+    "averageAbsoluteShadowDiscretionDelta": 0.0014,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
       "admin inclusion override": 1,
-      "admin pricing rationale flagged for review": 24,
+      "admin pricing rationale flagged for review": 28,
+      "derived talent budget requires review": 4,
       "market-health guardrail": 3,
       "minimum wage floor unknown": 2,
-      "nonzero AI discretion proposal": 6,
+      "nonzero AI discretion proposal": 7,
       "outside stated budget": 15,
-      "pre-presentation talent counter": 3
+      "pre-presentation talent counter": 4
     },
     "marketHealthFlagCounts": {
-      "idle_access_without_discounting": 7,
+      "idle_access_without_discounting": 8,
       "race_to_bottom_risk": 3,
       "specialist_value_protected": 9
     },
@@ -19140,15 +21441,15 @@
     "brandPrestigeTierCounts": {
       "none": 5,
       "tier_1": 5,
-      "tier_2": 1,
+      "tier_2": 2,
       "tier_3": 2
     },
-    "cohortCount": 26,
+    "cohortCount": 27,
     "cohortGuidanceCount": 11
   },
   "validation": {
     "status": "pass",
-    "checkedRecommendationCount": 47,
+    "checkedRecommendationCount": 51,
     "failureCount": 0,
     "warningCount": 2,
     "failures": [],

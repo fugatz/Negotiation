@@ -132,6 +132,8 @@ Rules:
 - do not assume the client has shared the full production budget
 - treat project size as a scale signal, not as proof of exact willingness to pay
 - let project type and role hierarchy shape the talent allocation
+- when talent budget is derived from all-in budget, carry low-confidence budget context and require
+  admin review because the allocation may be wrong
 
 ## Project Type Rules
 

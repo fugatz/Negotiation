@@ -337,6 +337,57 @@
     ]
   },
   {
+    "id": "ingested_mike_and_ike_campaign",
+    "source_brief_id": 787,
+    "source_title": "Mike and Ike — “We Got’chew” Campaign",
+    "name": "Ingested Mike and Ike Campaign",
+    "category": "food",
+    "subcategory": "food",
+    "budget": 40000,
+    "budget_source": "simulated_talent_budget_placeholder_from_400k_all_in_production_post_talent_budget",
+    "talent_budget_is_estimated": true,
+    "talent_budget_confidence": "low",
+    "talent_budget_derivation": "The source brief gives a $400K all-in production/post/talent budget, not a talent-only budget. Simulator uses a 10% placeholder allocation so the scenario can run, but production should extract or admin-confirm a talent budget.",
+    "all_in_budget": 400000,
+    "project_size_band": "major",
+    "project_type": "commercial_campaign",
+    "source_project_type": [
+      "Television Commercial",
+      "Social Media Campaign"
+    ],
+    "market": "unknown_market",
+    "budget_type": "flexible",
+    "talent_class_scope": "production_talent",
+    "client_id": "mike_and_ike_test_brand",
+    "lead_time_days": 64,
+    "project_commitment_confidence": 0.8,
+    "project_credibility_score": 80,
+    "project_readiness_tier": "strong",
+    "funding_status": "budgeted_approved",
+    "funding_source": "brand_direct",
+    "schedule_urgency": 0.2,
+    "usage_scope": "campaign",
+    "creative_specificity": 0.88,
+    "prestige_value": 0.58,
+    "client_flexibility": 0.18,
+    "booking_intent_strength": 0.82,
+    "requires_exclusivity": false,
+    "pricing_assumptions": [
+      "$400k all-in production/post/talent budget from ingested brief",
+      "talent-only budget is not present in source brief; simulator uses placeholder allocation",
+      "TV commercial plus social campaign assumed",
+      "15s, 6s, and social short assets assumed",
+      "VFX compositing and green screen mascot work assumed",
+      "primary shoot location TBD",
+      "no exclusivity assumed because source brief does not specify it"
+    ],
+    "expected_actualization_events": [
+      "VFX scope expands",
+      "additional social cutdowns requested",
+      "location or stage requirements confirmed"
+    ]
+  },
+  {
     "id": "background_extra_minimum_wage_smoke",
     "name": "Background Extra Minimum Wage Smoke Test",
     "category": "background",

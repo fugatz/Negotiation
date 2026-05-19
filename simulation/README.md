@@ -75,6 +75,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - market-health flags for race-to-bottom and price-led recommendation risk
 - main-site `clientTrustScore` and `clientTrustTier` consumption, with fixture score breakdowns for audit
 - separate `brandPrestigeTier` / `brandPrestigeScore` context so desirability does not collapse into trust
+- ingested Mike and Ike brief fixture with low-confidence derived talent budget review
 - `booked_with_market_health_warning` outcomes for budget-driven commodity booking paths
 - `needs_scope_calibration` outcomes when all evaluated talent exceed client capacity
 - long-horizon confirmation checkpoints, hold expiration, and firm-hold requirements

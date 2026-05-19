@@ -95,6 +95,7 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
         "availabilityCheck": rec["availability_check"],
         "legalFloor": rec["legal_floor"],
         "expectedBookingRange": rec["expected_booking_range"],
+        "budgetContext": rec["budget_context"],
         "quoteLifecycle": rec["quote_contract"],
         "marketHealth": {
             "score": rec["market_health_score"],
@@ -176,6 +177,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
             client_behavior_nudge(client),
         )
         if adjusted["eligible"]:
+            adjusted["budget_context"] = project_context(project)
             adjusted["expected_booking_range"] = expected_booking_range(project, person, adjusted)
             availability_check = simulate_availability_check(project, person, adjusted)
             adjusted = apply_availability_commitment(adjusted, availability_check)

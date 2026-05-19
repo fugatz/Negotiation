@@ -84,9 +84,9 @@ Latest validated dry-run metrics:
 ```json
 {
   "policy": "phase-3-hold-expiration-v1",
-  "scenarioCount": 13,
-  "bookedCount": 8,
-  "bookingRate": 0.615,
+  "scenarioCount": 14,
+  "bookedCount": 9,
+  "bookingRate": 0.643,
   "availabilityCheckCount": 51,
   "adminApprovalRequiredCount": 51,
   "adminInclusionOverrideCount": 1,
@@ -150,9 +150,10 @@ NEGOTIATION ENGINE SUMMARY:
 - Does not generate job-specific talent-facing pricing rationale.
 - Uses outcome learning as optional guidance only.
 - Uses admin inclusion overrides only to rescue visibility, not to override rates.
+- Uses readiness gate, quote lifecycle audit, and an ingested Mike and Ike fixture.
 
 CURRENT VALIDATION:
-- 13 scenarios.
+- 14 scenarios.
 - 51 checked recommendations.
 - 0 validation failures.
 - Brand-facing leakage count: 0.
@@ -226,4 +227,3 @@ Ask the main-site AI to be strict about:
 - keeping talent-owned rates as authority
 - separating trust, prestige/desirability, and project readiness
 - making admin review triggers explicit before shadow-mode integration
-

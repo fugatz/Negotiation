@@ -40,13 +40,16 @@ def build_quote_contract(project: dict, client: dict, talent: dict, rec: dict) -
         "projectId": project["id"],
         "clientId": client["id"],
         "talentId": talent["id"],
-        "projectCredibilityScore": project.get("projectCredibilityScore"),
-        "projectReadinessTier": project.get("projectReadinessTier"),
+        "projectCredibilityScore": project.get("projectCredibilityScore")
+        or project.get("project_credibility_score"),
+        "projectReadinessTier": project.get("projectReadinessTier")
+        or project.get("project_readiness_tier"),
         "clientTrustScore": client.get("clientTrustScore"),
         "clientTrustTier": client.get("clientTrustTier"),
         "brandPrestigeTier": client.get("brandPrestigeTier"),
         "targetRate": talent.get("target_rate"),
         "quote": rec["final_quote"],
+        "budgetContext": rec.get("budget_context"),
         "expectedBookingRange": rec["expected_booking_range"],
         "timingNudge": rec["timing_nudge"],
         "talentBehaviorNudge": rec["talent_behavior_nudge"],

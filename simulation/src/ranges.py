@@ -25,6 +25,11 @@ def project_context(project: dict) -> dict:
     all_in_budget = int(project.get("all_in_budget", project["budget"]))
     return {
         "allInBudget": all_in_budget,
+        "talentBudget": int(project["budget"]),
+        "talentBudgetSource": project.get("budget_source", "stated_or_fixture_talent_budget"),
+        "talentBudgetConfidence": project.get("talent_budget_confidence", "normal"),
+        "talentBudgetMayBeWrong": bool(project.get("talent_budget_is_estimated", False)),
+        "talentBudgetDerivation": project.get("talent_budget_derivation"),
         "projectSizeBand": project.get("project_size_band", infer_project_size_band(all_in_budget)),
         "projectType": project.get("project_type", project["usage_scope"]),
         "market": project.get("market", "unknown_market"),

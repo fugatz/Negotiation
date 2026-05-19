@@ -57,18 +57,19 @@ All other config inherits from the base policy.
 | Metric | Base | Stricter | Read |
 | --- | ---: | ---: | --- |
 | Validation | pass | pass | No policy validity regressions. |
-| Scenarios | 13 | 13 | Same fixture set. |
-| Booked scenarios | 8 | 8 | Stricter ranking did not reduce booking count. |
-| Booking rate | 61.5% | 61.5% | New missed-checkpoint fixture lowers aggregate conversion. |
-| Availability checks | 47 | 47 | Readiness gate blocks the exploratory low-credibility project before outreach. |
-| Pre-presentation counters | 3 | 3 | Market-health policy does not affect counter behavior. |
+| Scenarios | 14 | 14 | Same fixture set, now including the ingested Mike and Ike brief fixture. |
+| Booked scenarios | 9 | 9 | Stricter ranking did not reduce booking count. |
+| Booking rate | 64.3% | 64.3% | Ingested CPG campaign books cleanly; scope calibration and missed holds still restrain conversion. |
+| Availability checks | 51 | 51 | Readiness gate blocks the exploratory low-credibility project before outreach. |
+| Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 51.1% | 53.2% | Stricter policy increases review share slightly. |
+| Human review share | 54.9% | 56.9% | Stricter policy increases review share slightly. |
 | Mature autonomy candidates | 21 | 21 | No autonomy readiness gain yet. |
 | Admin inclusion overrides | 1 | 1 | Manual curation is policy-stable across variants. |
 | Readiness-blocked scenarios | 1 | 1 | Low-readiness project does not enter binding Outreach & Lock. |
-| Quote audit events | 239 | 239 | Every client-presentable recommendation has quote lifecycle audit events. |
+| Quote audit events | 259 | 259 | Every client-presentable recommendation has quote lifecycle audit events. |
+| Derived talent budget review triggers | 4 | 4 | Ingested all-in budget estimate stays admin-reviewed. |
 | Pending holds | 1 | 1 | Ready long-horizon work stays out of normal booking flow. |
 | Confirmation checkpoints | 4 | 4 | Pending and expired holds carry checkpoint plans. |
 | Hold expirations | 4 | 4 | Pending and expired holds expire without confirmation signals. |
@@ -77,7 +78,7 @@ All other config inherits from the base policy.
 | Scope-calibration outcomes | 3 | 3 | Prestige, readiness, and compliance-floor cases require budget/scope recalibration. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
 | Market-health guardrail triggers | 3 | 2 | Fewer flagged recs reach reviewed recommendation surfaces. |
-| Outside-budget triggers | 18 | 18 | Budget mismatch is unchanged. |
+| Outside-budget triggers | 15 | 15 | Budget mismatch is unchanged. |
 | Max shadow AI discretion | 1.0% | 1.0% | AI discretion remains capped and shadow-only. |
 
 ## Client Trust And Prestige Inputs
@@ -111,6 +112,10 @@ Each recommendation that does reach client visibility carries a quote lifecycle 
 - input snapshot hash
 - append-only audit events
 - DFOS handoff set to consume, not recalculate, the locked quote
+
+The ingested Mike and Ike fixture also carries a low-confidence derived talent budget. The source budget
+is $400K all-in production/post/talent, so the simulator construes a placeholder talent budget and
+triggers admin review rather than pretending the allocation is exact.
 
 ## Scenario-Level Differences
 
@@ -148,10 +153,15 @@ Recommended follow-up:
 
 ### Other Scenarios
 
-Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, prestige editorial, exploratory readiness,
-long-horizon, minimum wage, and bad-faith repricing scenarios have the same high-level outcomes under
-both policies. Prestige, exploratory readiness, and the minimum-wage smoke case resolve as
-`needs_scope_calibration`; the missed-checkpoint fixture resolves as `hold_expired` under both policies.
+Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, ingested Mike and Ike, prestige editorial,
+exploratory readiness, long-horizon, minimum wage, and bad-faith repricing scenarios have the same
+high-level outcomes under both policies. Prestige, exploratory readiness, and the minimum-wage smoke case
+resolve as `needs_scope_calibration`; the missed-checkpoint fixture resolves as `hold_expired` under both
+policies.
+
+The ingested Mike and Ike fixture confirms that a real-shaped extraction payload can map into the
+simulation while preserving the critical distinction between all-in project budget and talent-specific
+quote capacity.
 
 Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
 That candidate appears in the admin override slate at a locked talent-approved quote, remains outside

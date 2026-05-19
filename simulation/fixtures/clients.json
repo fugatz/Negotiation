@@ -232,5 +232,39 @@
     "upstream_client_trust_metric": 0.94,
     "platform_completed_projects": 4,
     "platform_trust_score": 0.94
+  },
+  {
+    "id": "mike_and_ike_test_brand",
+    "name": "Mike and Ike Test Brand",
+    "clientTrustScore": 20,
+    "clientTrustTier": "emerging",
+    "clientTrustScoreSource": "main_site_clientScoring_placeholder",
+    "clientTrustScoreBreakdown": {
+      "completedProjects": 0,
+      "completedProjectCount": 0,
+      "paymentSpeed": 0,
+      "personaIdVerification": 15,
+      "hasWebsite": 5,
+      "verifiedBrand": false,
+      "verifiedBrandPoints": 0,
+      "agencyAccount": false,
+      "agencyAccountPoints": 0
+    },
+    "brandPrestigeTier": "tier_2",
+    "brandPrestigeScore": 72,
+    "brandPrestigeSource": "mapped_from_ingested_test_brand",
+    "brandPrestigeNotes": [
+      "recognizable CPG brand, but low platform history in this fixture"
+    ],
+    "brief_clarity": 0.86,
+    "decision_speed": 0.7,
+    "payment_reliability": 0.68,
+    "scope_stability": 0.72,
+    "rate_shopping_frequency": 0.18,
+    "post_quote_scope_creep": 0.14,
+    "brand_reliability": 0.72,
+    "upstream_client_trust_metric": 0.62,
+    "platform_completed_projects": 0,
+    "platform_trust_score": 0.2
   }
 ]

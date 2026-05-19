@@ -342,6 +342,7 @@ def validate_report(report: dict) -> dict:
             availability_check = rec["availabilityCheck"]
             legal_floor = rec["legalFloor"]
             expected_range = rec["expectedBookingRange"]
+            budget_context = rec["budgetContext"]
             admin_override = rec.get("adminInclusionOverride")
             quote_lifecycle = rec["quoteLifecycle"]
 
@@ -402,6 +403,21 @@ def validate_report(report: dict) -> dict:
                 context,
                 "client-facing quote must equal the pre-presentation talent committed quote",
             )
+            if budget_context.get("talentBudgetMayBeWrong"):
+                _check(
+                    "derived talent budget requires review" in governance["exceptionTriggers"],
+                    failures,
+                    "derived_talent_budget_exception_missing",
+                    context,
+                    "talent budgets construed from all-in budgets must trigger admin review",
+                )
+                _check(
+                    budget_context.get("talentBudgetConfidence") in {"low", "estimated", "directional"},
+                    failures,
+                    "derived_talent_budget_confidence_invalid",
+                    context,
+                    "derived talent budget should carry low or directional confidence",
+                )
             _check(
                 availability_check.get("proposedRange") is not None,
                 failures,
