@@ -55,7 +55,16 @@
       "1 shoot day assumed",
       "national usage assumed",
       "exclusivity included in current scope"
-    ]
+    ],
+    "admin_inclusion_override_ids": [
+      "premium_food_director"
+    ],
+    "admin_inclusion_override_reason_codes": {
+      "premium_food_director": "high_profile_manual_curation"
+    },
+    "admin_inclusion_override_reasons": {
+      "premium_food_director": "Admin requested a high-profile manual review even though normal ranking would not naturally surface this talent for the beauty brief; rate remains talent-owned."
+    }
   },
   {
     "id": "large_scale_beauty_campaign",

@@ -43,12 +43,45 @@ def load_fixtures() -> tuple[list[dict], list[dict], list[dict], list[dict]]:
     )
 
 
+def traced_recommendations(trace: dict) -> list[dict]:
+    return (
+        trace["recommendedSlate"]
+        + trace.get("stressShortlist", [])
+        + trace.get("adminOverrideSlate", [])
+    )
+
+
+def admin_inclusion_override(project: dict, talent_id: str) -> dict | None:
+    if talent_id not in set(project.get("admin_inclusion_override_ids", [])):
+        return None
+
+    reasons = project.get("admin_inclusion_override_reasons", {})
+    reason_codes = project.get("admin_inclusion_override_reason_codes", {})
+    return {
+        "visibility": "admin-only",
+        "clientVisible": False,
+        "reasonCode": reason_codes.get(talent_id, "manual_curation"),
+        "reason": reasons.get(
+            talent_id,
+            "Admin requested manual inclusion review for this talent.",
+        ),
+        "curationOnly": True,
+        "doesNotOverrideRate": True,
+        "doesNotOverrideTalentAcceptance": True,
+        "doesNotOverrideHardEligibility": True,
+        "requiresRateQuotedOutreach": True,
+        "requiresAdminApproval": True,
+    }
+
+
 def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
     talent = talent_by_id[rec["talent_id"]]
     return {
         "talent": talent["name"],
         "talentClass": rec["legal_floor"]["talentClass"],
         "role": talent.get("actor_role") or talent.get("production_role"),
+        "candidateSource": rec.get("candidate_source", "algorithmic"),
+        "adminInclusionOverride": rec.get("admin_inclusion_override"),
         "lane": rec.get("lane", "Stress Test Candidate"),
         "quote": rec["final_quote"],
         "clientVisiblePriceState": rec.get("client_visible_price_state", "stress-test only"),
@@ -135,6 +168,21 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
 
     slate = build_slate(recommendations, talent_by_id, project)
     rec_by_talent_id = {item["talent_id"]: item for item in recommendations}
+    override_by_talent_id = {
+        talent_id: admin_inclusion_override(project, talent_id)
+        for talent_id in project.get("admin_inclusion_override_ids", [])
+    }
+    override_by_talent_id = {
+        talent_id: override
+        for talent_id, override in override_by_talent_id.items()
+        if override is not None
+    }
+
+    for item in slate:
+        override = override_by_talent_id.get(item["talent_id"])
+        if override:
+            item["candidate_source"] = "algorithmic_with_admin_inclusion_override"
+            item["admin_inclusion_override"] = override
 
     stress_shortlist = []
     for talent_id in project.get("stress_shortlist_ids", []):
@@ -145,9 +193,48 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
             item["overall_score"] = round(overall_score(item), 3)
             stress_shortlist.append(item)
 
+    slate_talent_ids = {item["talent_id"] for item in slate}
+    admin_override_slate = []
+    admin_override_excluded = []
+    excluded_by_name = {item["talent"]: item for item in excluded}
+    for talent_id, override in override_by_talent_id.items():
+        if talent_id in slate_talent_ids:
+            continue
+
+        rec = rec_by_talent_id.get(talent_id)
+        talent_item = talent_by_id.get(talent_id)
+        if not rec:
+            if talent_item:
+                excluded_item = excluded_by_name.get(talent_item["name"])
+                admin_override_excluded.append(
+                    {
+                        "talent": talent_item["name"],
+                        "reasonCode": override["reasonCode"],
+                        "reason": override["reason"],
+                        "blockedBy": (
+                            excluded_item["reasons"]
+                            if excluded_item
+                            else ["not in eligible candidate set"]
+                        ),
+                    }
+                )
+            continue
+
+        item = dict(rec)
+        item["candidate_source"] = "admin_inclusion_override"
+        item["admin_inclusion_override"] = override
+        item["lane"] = "Admin Curated"
+        item["client_visible_price_state"] = client_visible_price_state(item, project)
+        item["overall_score"] = round(overall_score(item), 3)
+        admin_override_slate.append(item)
+
     negotiation_candidates = slate[:2]
     seen = {item["talent_id"] for item in negotiation_candidates}
     for item in stress_shortlist:
+        if item["talent_id"] not in seen:
+            negotiation_candidates.append(item)
+            seen.add(item["talent_id"])
+    for item in admin_override_slate:
         if item["talent_id"] not in seen:
             negotiation_candidates.append(item)
             seen.add(item["talent_id"])
@@ -187,6 +274,8 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         "excluded": excluded,
         "recommendedSlate": [compact_recommendation(item, talent_by_id) for item in slate],
         "stressShortlist": [compact_recommendation(item, talent_by_id) for item in stress_shortlist],
+        "adminOverrideSlate": [compact_recommendation(item, talent_by_id) for item in admin_override_slate],
+        "adminOverrideExcluded": admin_override_excluded,
         "availabilityChecks": [item["availability_check"] for item in negotiation_candidates],
         "clientDecisions": client_decisions,
         "outcomeLearning": outcome_learning,
@@ -247,6 +336,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     actualization_lifts: list[float] = []
     leakage_count = 0
     human_review_count = 0
+    admin_inclusion_override_count = 0
 
     for trace in traces:
         outcome_summary = trace["outcomeLearning"]["summary"]
@@ -259,8 +349,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 actualization_lifts.append(
                     (int(record["actualizedCost"]) - int(record["lockedQuote"])) / locked_quote
                 )
-        traced_recommendations = trace["recommendedSlate"] + trace.get("stressShortlist", [])
-        for rec in traced_recommendations:
+        for rec in traced_recommendations(trace):
+            if rec.get("adminInclusionOverride"):
+                admin_inclusion_override_count += 1
             if rec["behavior"]["combinedBehaviorRateDelta"] != 0:
                 behavior_changed += 1
             if rec["timing"]["rateDelta"] != 0 or rec["timing"]["confidenceDelta"] != 0:
@@ -297,7 +388,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
             admin_exception_triggers.extend(governance["exceptionTriggers"])
 
     total_recommendations = sum(
-        len(trace["recommendedSlate"]) + len(trace.get("stressShortlist", []))
+        len(traced_recommendations(trace))
         for trace in traces
     ) or 1
     max_discretion = max(discretion_deltas) if discretion_deltas else 0.0
@@ -337,6 +428,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "holdExpirationCount": hold_expiration_count,
         "holdExpiredCount": hold_expired_count,
         "holdExpiredWarningCount": hold_expired_warning_count,
+        "adminInclusionOverrideCount": admin_inclusion_override_count,
         "averageActualizationLift": round(avg_actualization_lift, 4),
         "aiHumanReviewShareOfRecommendations": round(human_review_count / total_recommendations, 3),
         "averageAbsoluteShadowDiscretionDelta": round(avg_discretion, 4),

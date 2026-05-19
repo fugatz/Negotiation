@@ -1,6 +1,6 @@
 # Phase 3 Findings Report
 
-Generated from dry runs on May 18, 2026.
+Generated from dry runs on May 19, 2026.
 
 Source commands:
 
@@ -26,6 +26,7 @@ The current system protects against several core failure modes:
 - project-size context now separates $500k+ large-scale and $1M+ flagship productions
 - long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
 - missed long-horizon checkpoints release holds and require fresh rate-quoted outreach before reactivation
+- admin-curated inclusion overrides can surface edge-case talent without changing their owned rate
 - race-to-bottom candidates are flagged and penalized in ranking
 
 The simulator also exposes policy work still needed before shadow-mode integration:
@@ -54,10 +55,11 @@ Policy: `phase-3-hold-expiration-v1`
 | Confirmation checkpoints | 6 |
 | Hold expirations | 6 |
 | Expired holds | 1 |
-| Availability checks | 50 |
+| Availability checks | 51 |
 | Pre-presentation talent counters | 4 |
-| Admin approval required | 50 |
+| Admin approval required | 51 |
 | Mature autonomy candidates | 23 |
+| Admin inclusion overrides | 1 |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 2 |
 | Brand-facing leakage count | 0 |
@@ -69,7 +71,7 @@ Policy: `phase-3-hold-expiration-v1`
 | Scenario | Outcome | Finding | Policy Read |
 | --- | --- | --- | --- |
 | Firm-Budget Food Social Campaign | booked | Generalist books cleanly; premium specialist remains visible but outside budget. | Healthy: slate can include value range without hiding premium expertise. |
-| Flexible National Beauty Campaign | booked | Best-fit beauty talent books with no warnings. | Healthy: specialization, fit, and budget all align. |
+| Flexible National Beauty Campaign | booked | Best-fit beauty talent books; a manually curated high-profile food director appears only in the admin override slate and fails budget at their locked rate. | Healthy: admin can rescue visibility without overriding talent-owned pricing. |
 | $500k+ Large-Scale Beauty Campaign | booked | Large-scale context creates wider expected ranges and a separate cohort signal. | Healthy: all-in scale affects assumption scrutiny without becoming a budget split. |
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
@@ -100,7 +102,7 @@ Policy implication:
 
 ### 2. Behavior Nudges Are Small But Useful
 
-Behavior adjustments appear in 82.6% of recommendations, but caps keep them non-dominant. Reliable
+Behavior adjustments appear in 84.3% of recommendations, but caps keep them non-dominant. Reliable
 talent can receive small premiums, dependable clients can reduce transaction risk, and high-friction
 clients can create small risk adjustments.
 
@@ -112,7 +114,7 @@ Policy implication:
 
 ### 3. AI Rationales Are Separated By Audience
 
-The run generated 46 admin pricing rationales and 46 brand-facing match rationales. Brand-facing leakage
+The run generated 51 admin pricing rationales and 51 brand-facing match rationales. Brand-facing leakage
 count was zero, and talent-facing job-specific rationale count was zero.
 
 Policy implication:
@@ -239,9 +241,27 @@ Recommended revision:
 - test high-trust clients who later change dates, usage, or scope
 - decide whether expired holds require a fresh rate-quoted outreach pass
 
+### Manual Inclusion Abuse
+
+Admin inclusion overrides now let a human surface a high-profile or strategically requested talent who
+would otherwise be omitted by default ranking. The current stress path keeps this safe: the override is
+admin-only, rate-owned by talent, and still requires rate-quoted outreach before client presentation.
+
+Why it matters:
+
+- manual inclusion could become a hidden way to bypass ranking quality if it is not audited
+- high-profile talent can be worth reviewing even when fit or budget is weak
+- the override should create a learning signal when repeated manual picks fail or calibrate policy gaps
+
+Recommended revision:
+
+- track override reason codes and later outcomes
+- require launch approval on every override
+- separate "policy missed this person" from "admin wanted a one-off review"
+
 ### Admin Review Load
 
-Launch mode requires admin approval for all 46 recommendations. That is correct for early validation, but
+Launch mode requires admin approval for all 51 recommendations. That is correct for early validation, but
 too heavy for a mature autonomous system.
 
 Why it matters:
@@ -277,6 +297,7 @@ Recommended additions:
 - legitimate post-presentation renegotiation after client-side scope, usage, travel, exclusivity, or date
   changes
 - client-side manager intervention that slows decisions, changes requirements, or creates ambiguity
+- admin inclusion overrides for high-profile talent with weak fit, high price, or client-specific demand
 - AI discretion proposals that conflict with recent failed outcomes
 - market-health overrides where booking probability is high but ecosystem risk is unacceptable
 

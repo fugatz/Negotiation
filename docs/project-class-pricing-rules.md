@@ -93,6 +93,9 @@ Important rule:
   admin calibration signals, not unilateral system rules that override talent-declared pricing.
 - Future talent guidance should be framed as optional market intelligence, for example: similar people
   in your city are closing higher, or consider testing a small rate increase next quarter.
+- Admin inclusion overrides are curation controls, not rate controls. They can make a talent visible for
+  manual review when default ranking would omit them, but they cannot override talent-owned rates, legal
+  floors, or rate-quoted outreach acceptance.
 
 ## Project Size Rules
 
@@ -279,6 +282,10 @@ The talent response establishes the project-specific talent rate or range for cl
 The simulator records both the proposed outreach range and the committed range after any
 pre-presentation counter, so later reports can separate normal upfront negotiation from prohibited
 post-interest repricing.
+
+Admin-curated inclusion overrides still enter through this outreach rule. A manually included talent is
+not client-presentable until they have accepted or countered the project-specific rate before the client
+sees them.
 
 ## Client-Facing Range Rule
 

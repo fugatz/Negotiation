@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from .policy_config import load_policy_config
 
+ADMIN_INCLUSION_OVERRIDE_TRIGGER = "admin inclusion override"
+
 
 def _admin_config() -> dict:
     return load_policy_config()["admin_governance"]
@@ -30,6 +32,8 @@ def build_admin_governance(rec: dict) -> dict:
         exception_triggers.append("nonzero AI discretion proposal")
     if rec.get("availability_check", {}).get("status") == "countered_before_client_presentation":
         exception_triggers.append("pre-presentation talent counter")
+    if rec.get("admin_inclusion_override"):
+        exception_triggers.append(ADMIN_INCLUSION_OVERRIDE_TRIGGER)
     if "minimum_wage_floor_unknown" in rec.get("legal_floor", {}).get("warnings", []):
         exception_triggers.append("minimum wage floor unknown")
     market_health_flags = set(rec.get("market_health_flags", []))

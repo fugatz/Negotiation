@@ -94,6 +94,8 @@ Synthetic project briefs should include:
 - client flexibility
 - booking intent strength
 - conflict or exclusivity requirements
+- admin inclusion override ids and reason codes, when a human wants an edge-case talent reviewed
+  despite default ranking
 
 Example briefs:
 
@@ -188,6 +190,7 @@ Recommendation lanes:
 - Premium Stretch
 - Emerging Value
 - Fastest Viable Path
+- Admin Curated
 
 ## Negotiation Policy Variants To Test
 
@@ -293,12 +296,13 @@ Expected risk:
 12. Record that this layer does not generate talent-facing job-specific pricing rationale.
 13. Optionally apply shadow-mode AI discretion deltas based on outcome evidence.
 14. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
-15. Build a curated recommendation slate from talent-approved rates only.
-16. Simulate client shortlist and decision behavior against locked presentation quotes.
-17. Resolve booking, no-booking, hold, repricing exception, or cancellation.
-18. Update historical outcomes.
-19. Repeat across many rounds.
-20. Evaluate market-level metrics.
+15. Add any admin inclusion overrides as a separate curation surface from talent-approved rates only.
+16. Build a curated recommendation slate from talent-approved rates only.
+17. Simulate client shortlist and decision behavior against locked presentation quotes.
+18. Resolve booking, no-booking, hold, repricing exception, or cancellation.
+19. Update historical outcomes.
+20. Repeat across many rounds.
+21. Evaluate market-level metrics.
 ```
 
 Production boundary:
@@ -413,6 +417,7 @@ Admin governance metrics:
 - number of recommendations that would be mature-mode autonomy candidates
 - exception trigger counts by reason
 - number of admin setting tweaks used in dry runs
+- number of admin inclusion overrides and whether they later booked, failed, or required calibration
 - number of manual overrides that later imply policy recalibration
 - difference between admin-approved outcomes and fully autonomous simulated outcomes
 
@@ -428,6 +433,8 @@ Validation checks:
 - outside-budget recommendations must trigger admin exception review
 - race-to-bottom risk must not become the default top recommendation
 - market-health risk flags or low market-health scores must trigger admin exception review
+- admin inclusion overrides must be admin-only, curation-only, and unable to bypass rates, hard
+  eligibility, or rate-quoted talent acceptance
 
 ## Edge Case Matrix
 
@@ -514,6 +521,18 @@ Question:
 Expected behavior:
 
 - Do not recommend unless alternate timing is viable.
+
+### Admin-Curated High-Profile Talent
+
+Question:
+
+- Can an admin rescue a famous, infamous, or strategically requested talent from being invisible without
+  changing their rate?
+
+Expected behavior:
+
+- Add the talent to an admin-only curation lane, require launch approval, keep the rate talent-owned,
+  and still require rate-quoted outreach acceptance before client presentation.
 
 ### Post-Interest Repricing
 

@@ -1,6 +1,6 @@
 # Policy Comparison Report
 
-Generated from dry runs on May 18, 2026.
+Generated from dry runs on May 19, 2026.
 
 Compared policies:
 
@@ -26,6 +26,8 @@ Long-horizon pending holds now include confirmation checkpoints, hold expiration
 requirements.
 Missed checkpoints now produce `hold_expired`, which releases the hold and requires fresh rate-quoted
 outreach before reactivation.
+Admin-curated inclusion overrides now add a separate manual curation surface without changing the
+talent-owned rate or bypassing rate-quoted outreach.
 
 The interpretation is important:
 
@@ -51,12 +53,13 @@ All other config inherits from the base policy.
 | Scenarios | 13 | 13 | Same fixture set. |
 | Booked scenarios | 8 | 8 | Stricter ranking did not reduce booking count. |
 | Booking rate | 61.5% | 61.5% | New missed-checkpoint fixture lowers aggregate conversion. |
-| Availability checks | 50 | 50 | Same recommendation volume. |
+| Availability checks | 51 | 51 | Same recommendation volume including the manual override candidate. |
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 34.0% | 36.0% | Stricter policy slightly increases admin attention. |
+| Human review share | 33.3% | 35.3% | Stricter policy slightly increases admin attention. |
 | Mature autonomy candidates | 23 | 23 | No autonomy readiness gain yet. |
+| Admin inclusion overrides | 1 | 1 | Manual curation is policy-stable across variants. |
 | Pending holds | 2 | 2 | Long-horizon work stays out of normal booking flow. |
 | Confirmation checkpoints | 6 | 6 | Pending and expired holds carry checkpoint plans. |
 | Hold expirations | 6 | 6 | Pending and expired holds expire without confirmation signals. |
@@ -108,6 +111,11 @@ Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, prestige editorial, 
 wage, and bad-faith repricing scenarios have the same high-level outcomes under both policies. Prestige
 and the minimum-wage smoke case resolve as `needs_scope_calibration`; the missed-checkpoint fixture
 resolves as `hold_expired` under both policies.
+
+Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
+That candidate appears in the admin override slate at a locked talent-approved quote, remains outside
+the stated budget, and fails budget capacity under both policies. This confirms the override affects
+visibility, not rate authority.
 
 Read:
 

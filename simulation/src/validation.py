@@ -1,13 +1,27 @@
 from __future__ import annotations
 
+from .admin_governance import ADMIN_INCLUSION_OVERRIDE_TRIGGER
 from .ai_rationale import PUBLIC_FORBIDDEN_TERMS
-from .negotiation import BUDGET_DRIVEN_COMMODITY_WARNING, HOLD_EXPIRED_WARNING, SCOPE_CALIBRATION_WARNING
+from .negotiation import (
+    BUDGET_DRIVEN_COMMODITY_WARNING,
+    HOLD_EXPIRED_WARNING,
+    SCOPE_CALIBRATION_WARNING,
+)
 from .policy_config import load_policy_config
-from .statuses import BOOKED_WITH_MARKET_HEALTH_WARNING, HOLD_EXPIRED, NEEDS_SCOPE_CALIBRATION, is_booked_status
+from .statuses import (
+    BOOKED_WITH_MARKET_HEALTH_WARNING,
+    HOLD_EXPIRED,
+    NEEDS_SCOPE_CALIBRATION,
+    is_booked_status,
+)
 
 
 def _recommendations(trace: dict) -> list[dict]:
-    return trace["recommendedSlate"] + trace.get("stressShortlist", [])
+    return (
+        trace["recommendedSlate"]
+        + trace.get("stressShortlist", [])
+        + trace.get("adminOverrideSlate", [])
+    )
 
 
 def _context(trace: dict, rec: dict) -> str:
@@ -242,6 +256,7 @@ def validate_report(report: dict) -> dict:
             availability_check = rec["availabilityCheck"]
             legal_floor = rec["legalFloor"]
             expected_range = rec["expectedBookingRange"]
+            admin_override = rec.get("adminInclusionOverride")
 
             _check(
                 availability_check["completedBeforeClientPresentation"] is True,
@@ -349,6 +364,74 @@ def validate_report(report: dict) -> dict:
                 context,
                 "launch mode must require audit logging for approvals and tweaks",
             )
+
+            if admin_override:
+                _check(
+                    admin_override["visibility"] == "admin-only",
+                    failures,
+                    "admin_override_visibility",
+                    context,
+                    "admin inclusion overrides must remain admin-only",
+                )
+                _check(
+                    admin_override["clientVisible"] is False,
+                    failures,
+                    "admin_override_public",
+                    context,
+                    "admin inclusion overrides must not be client-facing",
+                )
+                _check(
+                    admin_override["curationOnly"] is True,
+                    failures,
+                    "admin_override_not_curation_only",
+                    context,
+                    "admin inclusion overrides should only affect curation visibility",
+                )
+                _check(
+                    admin_override["doesNotOverrideRate"] is True,
+                    failures,
+                    "admin_override_rate_override",
+                    context,
+                    "admin inclusion overrides must not override talent-owned rates",
+                )
+                _check(
+                    admin_override["doesNotOverrideTalentAcceptance"] is True,
+                    failures,
+                    "admin_override_acceptance_override",
+                    context,
+                    "admin inclusion overrides must not bypass talent acceptance",
+                )
+                _check(
+                    admin_override["doesNotOverrideHardEligibility"] is True,
+                    failures,
+                    "admin_override_hard_eligibility_override",
+                    context,
+                    "admin inclusion overrides must not bypass hard eligibility constraints",
+                )
+                _check(
+                    admin_override["requiresRateQuotedOutreach"] is True,
+                    failures,
+                    "admin_override_outreach_missing",
+                    context,
+                    "admin inclusion overrides must still go through rate-quoted outreach",
+                )
+                _check(
+                    ADMIN_INCLUSION_OVERRIDE_TRIGGER in governance["exceptionTriggers"],
+                    failures,
+                    "admin_override_exception_missing",
+                    context,
+                    "admin inclusion overrides must trigger admin exception review",
+                )
+                _check(
+                    rec["candidateSource"] in {
+                        "admin_inclusion_override",
+                        "algorithmic_with_admin_inclusion_override",
+                    },
+                    failures,
+                    "admin_override_source_invalid",
+                    context,
+                    "override recommendations must carry an admin override candidate source",
+                )
 
             discretion_delta = abs(float(admin["discretionDelta"]))
             _check(

@@ -1,6 +1,6 @@
 # Outcome Learning Report
 
-Generated from dry runs on May 18, 2026.
+Generated from dry runs on May 19, 2026.
 
 Source commands:
 
@@ -50,6 +50,8 @@ Long-horizon pending holds now carry confirmation checkpoints and hold expiratio
 seriousness-confidence signals rather than actualized-rate signals.
 The missed-checkpoint fixture now resolves as `hold_expired`, which also stays out of actualized-rate
 learning and requires fresh rate-quoted outreach before reactivation.
+The admin-curated high-profile inclusion path creates a failed-budget record for calibration, but it does
+not generate talent guidance or modify the talent-owned rate.
 
 ## Talent Guidance Boundary
 

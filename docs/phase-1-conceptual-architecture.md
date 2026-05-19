@@ -433,12 +433,16 @@ Admin interface controls can include:
 - brand-facing rationale wording/templates
 - quote lock and scope-change exception categories
 - hold policy settings for long-horizon work
+- admin-curated inclusion overrides for edge-case talent who should be manually reviewed even when
+  default ranking would not surface them
 
 Admin adjustment guardrails:
 
 - admin tweaks must remain inside talent-approved operating bands and floor guardrails
 - admin tweaks must not expose private floors, hidden flexibility, or behavior penalties
 - admin tweaks must not weaken the client presentation price lock
+- admin inclusion overrides may affect curation visibility only; they must not override the talent's
+  owned rate, hard eligibility constraints, or rate-quoted outreach acceptance
 - settings should be versioned so simulations and real outcomes can be replayed against the exact
   policy used
 - repeated manual overrides should become a signal that the underlying policy needs recalibration
@@ -558,6 +562,12 @@ options are stronger and more dependable without turning the slate into a lowest
 The brand-facing AI rationale that accompanies this score should stay positive: experience, creative
 fit, specialist background, production fit, and confidence. Any rationale about why the quoted price
 is 2% higher, 2% lower, or shaped by behavior/trust inputs remains admin-only.
+
+Admins may add an inclusion override when a high-profile, infamous, unusually requested, or strategically
+important talent should be considered despite default ranking or matching not surfacing them. This is a
+curation override, not a rate override. The talent still controls their rate, the system still computes
+the project-specific offer, and the talent must still opt in during rate-quoted outreach before any
+client-facing presentation.
 
 Client-facing pricing language should communicate confidence and fit:
 
