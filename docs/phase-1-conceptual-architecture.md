@@ -65,6 +65,7 @@ Project Brief
   -> Timing Horizon Nudge Layer
   -> Behavior Reputation Nudge Layer
   -> AI Pricing Rationale Layer
+  -> Outreach & Lock
   -> Rate-Quoted Talent Outreach / Availability Check
   -> Talent Project-Rate Commitment
   -> Curated Recommendation Layer
@@ -89,6 +90,14 @@ This engine then determines the project-specific rate posture for matched talent
 in the talent outreach or availability-check message through channels such as a call for details or an
 emailed offer, along with the job basics. The talent's response establishes whether they want to be
 considered for that project at that rate before the client sees the slate.
+
+Production integration should name this gate explicitly as `Outreach & Lock`: matched talent receive
+the project-specific rate, accept/decline/counter before client visibility, and only accepted quote
+versions become eligible for the Pitch Review Room. The locked quote then becomes a one-way input to
+DFOS and downstream booking flows; DFOS should consume the locked gross quote rather than regenerate it.
+
+See [Integration Contract](integration-contract.md) for the proposed handoff fields, quote versioning,
+audit events, readiness gate, and Pitch Review Room policy.
 
 ### 1. Project Brief
 
@@ -270,6 +279,12 @@ The admin flags are intentionally powerful onboarding shortcuts for known agenci
 should be used deliberately and audited, because they can affect who gets surfaced even before the
 client has completed projects on Distinkt.
 
+Client trust should not carry all brand desirability. Production integration should consume a separate
+brand prestige or strategic desirability input, such as `brandPrestigeTier` or `brandPrestigeScore`.
+A regional client can be dependable but not especially career-making; a famous brand can be highly
+desirable while still carrying scope or payment risk. Those signals can affect acceptance probability,
+curation priority, and admin review differently, so they should remain separate.
+
 Underlying talent-side signals that may feed upstream services include:
 
 - quote stability
@@ -446,6 +461,9 @@ Launch mode should be more conservative:
 - admin users can make small bounded adjustments to settings, not arbitrary uncapped price changes
 - every admin approval, rejection, override, and setting tweak is logged with actor, timestamp,
   reason, policy version, and before/after values
+- every quote has an append-only audit trail and server-authoritative active quote version
+- every client-visible manual quote either passes through the pricing gateway or is flagged as an
+  off-engine exception with a logged reason
 
 Admin interface controls can include:
 
@@ -516,6 +534,11 @@ be baked into the slate at presentation time. The slate itself provides alternat
 repricing should be structurally blocked after the client has shown interest.
 
 Legitimate renegotiation after presentation should require client-side fact changes.
+
+Pitch Review Room policy should be explicit: locked quotes are fixed accept/reject unless scope, usage,
+timing, travel, exclusivity, budget facts, or other client-side requirements materially change. A client
+counter without a material fact change should not quietly change the quote; it should either be rejected
+under the lock policy or reopen the quote for fresh talent approval and admin review.
 
 Examples:
 
@@ -912,6 +935,21 @@ These are hypotheses to test in simulation, not final rules.
     replayable in simulation.
 28. Market-health overrides should prevent low-price/low-fit options from becoming the default winner
     by price alone, while still allowing them to appear for admin review when relevant.
+29. Production integration needs an explicit `Outreach & Lock` workflow state between matching and
+    client slate visibility.
+30. Locked talent-approved quotes should be one-way inputs to DFOS; DFOS should not recalculate the
+    talent quote.
+31. Binding quote generation should require a ready-enough project, such as `projectReadinessTier >=
+    Ready` or `projectCredibilityScore >= 50`, unless admin override is logged.
+32. Brand prestige/desirability should be a separate upstream signal from client trust/reliability.
+33. Talent rate ranges should carry `rates_updated_at`; stale rates should trigger refresh, confidence
+    reduction, or admin review before binding outreach.
+34. Public language should avoid implying that an algorithm set the price. Admin surfaces can show the
+    math; user surfaces should read as professional recommendation and representation judgment.
+35. Public "agent" or "fiduciary" language needs legal review before appearing in external copy, ToS,
+    or product claims.
+36. Real shadow mode means production data flows through the engine in parallel with no outcome effect,
+    followed by admin comparison over several weeks.
 
 ## Admin-Only Governance Decisions
 

@@ -65,6 +65,9 @@ Common assumptions:
 - overtime treatment
 - union or non-union status
 - role hierarchy or screen-time assumptions for actors
+- buyout versus day-rate structure
+- conflict and category-exclusivity checks
+- minor status, when applicable
 
 Pricing changes should map to assumption changes or production events. If the assumption did not change,
 the price should not move after presentation except through an approved policy exception.
@@ -429,6 +432,8 @@ Project:
 - `project_type`
 - `talent_class_scope`: actor, production_talent, or mixed
 - `assumptions`
+- `project_readiness_tier`
+- `project_credibility_score`
 - `expected_actualization_events`
 - `usage_term`
 - `paid_media`
@@ -436,6 +441,16 @@ Project:
 - `local_minimum_wage_hourly`: nullable
 - `local_minimum_wage_source`: nullable
 - `estimated_work_hours`: nullable
+- `usage_rights`
+- `buyout_or_day_rate`
+- `conflict_check_required`
+- `minor_status`
+
+Client:
+
+- `clientTrustScore`
+- `clientTrustTier`
+- `brandPrestigeTier` or `brandPrestigeScore`, separate from trust
 
 Talent:
 
@@ -445,6 +460,8 @@ Talent:
 - `union_status`
 - `legal_floor_basis`
 - `range_width_preference`
+- `rates_updated_at`
+- `recent_confirmed_platform_rates`
 
 Recommendation:
 
@@ -453,6 +470,8 @@ Recommendation:
 - `actualizationTriggers`
 - `talentOutreachRateState`
 - `clientRangeState`
+- `activeQuoteVersion`
+- `quoteAuditRequired`
 
 Validation:
 
@@ -461,6 +480,8 @@ Validation:
 - client-facing ranges must include assumptions
 - actualization must cite an allowed event trigger
 - creator/influencer fixtures should be rejected or marked out of scope
+- stale talent rates should trigger refresh, confidence reduction, or admin review
+- below-ready project credibility should block binding quotes or require logged admin override
 
 ## Near-Term Rule To Test
 

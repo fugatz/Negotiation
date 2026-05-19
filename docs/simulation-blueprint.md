@@ -45,6 +45,8 @@ Synthetic talent profiles should include:
 - talent-owned rate authority; platform outcome data guides but does not override declared pricing
 - private working floor
 - rate history
+- rates updated timestamp
+- recent confirmed platform rates, when available
 - availability
 - upstream actor readiness score, when applicable
 - upstream non-actor reliability score, when applicable
@@ -85,6 +87,7 @@ Synthetic project briefs should include:
 - lead time in days
 - timing horizon: last-minute, normal, long-horizon
 - project commitment confidence
+- project readiness tier or project credibility score
 - brand reliability signal
 - schedule urgency
 - location
@@ -128,6 +131,7 @@ Synthetic client profiles should also include behavior history:
 - main-site `clientTrustTier`: Premium, Established, Emerging, or New
 - client trust score breakdown, when available for admin audit
 - Verified Brand and Agency Account admin flags
+- brand prestige tier or brand desirability score, separate from client trust
 - brief clarity
 - decision speed
 - payment reliability
@@ -144,6 +148,10 @@ speed, 15 for Persona ID verification, 5 for website presence, 20 for the Verifi
 
 There is also a separate project credibility score in the main product. This simulator can consume it
 when supplied; otherwise fixtures may use project commitment confidence as a proxy.
+
+Production integration should also consume a separate brand prestige or strategic desirability signal.
+The simulator should not overload `clientTrustScore` with brand desirability because trust and prestige
+can push deal posture in opposite directions.
 
 ### Negotiation Agent
 
@@ -300,7 +308,7 @@ Expected risk:
 5. Apply capped timing-horizon nudges.
 6. Apply capped talent and client behavior nudges.
 7. Compute the proposed project rate for each matched talent.
-8. Simulate call-for-details or email-offer talent outreach that includes job basics and the proposed project rate.
+8. Enter `Outreach & Lock`: simulate call-for-details or email-offer talent outreach that includes job basics and the proposed project rate.
 9. Record opt-in, decline, or pre-presentation counter as the committed talent-side quote state.
 10. Generate admin-only AI pricing rationale from computed adjustments and structured policy outputs.
 11. Generate separate brand-facing AI match rationale that avoids pricing and hidden-score logic.
@@ -309,7 +317,7 @@ Expected risk:
 14. Add launch-mode admin governance: approval required, exception triggers, and tweakable settings.
 15. Add any admin inclusion overrides as a separate curation surface from talent-approved rates only.
 16. Build a curated recommendation slate from talent-approved rates only.
-17. Simulate client shortlist and decision behavior against locked presentation quotes.
+17. Simulate client shortlist and decision behavior against locked active quote versions.
 18. Resolve booking, no-booking, hold, repricing exception, or cancellation.
 19. Update historical outcomes.
 20. Repeat across many rounds.
@@ -320,12 +328,18 @@ Production boundary:
 
 - the real system should enter this flow after candidate matching, but before rate-quoted outreach is
   complete
+- production should represent this as an explicit `Outreach & Lock` workflow state before Pitch Review
+  Room visibility
 - hard eligibility for client presentation is established by the call-for-details or email-offer response at
   the proposed project rate
 - the simulation's deterministic eligibility checks only emulate known candidate constraints and
   rate-quoted outreach responses so edge cases remain easy to inspect
 - this layer's key action is to compute the project-specific rate and include that rate in talent
   outreach before the client sees the slate
+- DFOS should consume the locked gross quote as a one-way input, not recalculate the quote
+- quote records should be versioned and audit logged so client slates cannot display stale values
+- binding Outreach & Lock should be gated by project readiness; under-baked briefs should produce
+  admin-only ranges or scope calibration unless an admin override is logged
 
 ## Success Metrics
 
@@ -446,6 +460,10 @@ Validation checks:
 - market-health risk flags or low market-health scores must trigger admin exception review
 - admin inclusion overrides must be admin-only, curation-only, and unable to bypass rates, hard
   eligibility, or rate-quoted talent acceptance
+- client-visible quote version must match the talent-approved active quote version
+- binding quote generation should be blocked or exception-reviewed when project readiness is below the
+  agreed threshold
+- public rationales must not make the price appear algorithm-derived
 
 ## Edge Case Matrix
 

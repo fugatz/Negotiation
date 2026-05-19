@@ -23,6 +23,8 @@ freelancer marketplace or an opaque agency system.
 - [Simulation Blueprint](docs/simulation-blueprint.md)
 - [Project And Talent Class Pricing Rules](docs/project-class-pricing-rules.md)
 - [Main Site AI Review Packet](docs/main-site-ai-review-packet.md)
+- [Main Site AI Review Findings](docs/main-site-ai-review-findings.md)
+- [Integration Contract](docs/integration-contract.md)
 - [Phase 2 Findings Report](simulation/reports/phase-2-findings.md)
 - [Policy Comparison Report](simulation/reports/policy-comparison.md)
 
