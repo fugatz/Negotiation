@@ -57,6 +57,13 @@ const els = {
   detailPane: document.querySelector("#detailPane"),
 };
 
+const tooltipEl = document.createElement("div");
+tooltipEl.className = "floating-tooltip";
+tooltipEl.setAttribute("role", "tooltip");
+document.body.appendChild(tooltipEl);
+let activeTooltipTarget = null;
+let tooltipFrame = null;
+
 function loadActions() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
@@ -610,6 +617,71 @@ function refreshIcons() {
   }
 }
 
+function showTooltip(target) {
+  const text = target?.dataset?.tooltip;
+  if (!text) return;
+
+  activeTooltipTarget = target;
+  tooltipEl.textContent = text;
+  tooltipEl.classList.add("visible");
+
+  const targetRect = target.getBoundingClientRect();
+  const tooltipRect = tooltipEl.getBoundingClientRect();
+  const margin = 12;
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+
+  if (
+    targetRect.bottom < 0 ||
+    targetRect.top > viewportHeight ||
+    targetRect.right < 0 ||
+    targetRect.left > viewportWidth
+  ) {
+    hideTooltip(target);
+    return;
+  }
+
+  let left = targetRect.left + targetRect.width / 2 - tooltipRect.width / 2;
+  left = Math.max(margin, Math.min(left, viewportWidth - tooltipRect.width - margin));
+
+  let top = targetRect.bottom + 10;
+  if (top + tooltipRect.height + margin > viewportHeight) {
+    top = targetRect.top - tooltipRect.height - 10;
+  }
+  top = Math.max(margin, Math.min(top, viewportHeight - tooltipRect.height - margin));
+
+  tooltipEl.style.left = `${left}px`;
+  tooltipEl.style.top = `${top}px`;
+}
+
+function hideTooltip(target = null) {
+  if (target && activeTooltipTarget && target !== activeTooltipTarget) return;
+
+  activeTooltipTarget = null;
+  tooltipEl.classList.remove("visible");
+  tooltipEl.textContent = "";
+}
+
+function refreshTooltip() {
+  if (!activeTooltipTarget || tooltipFrame) return;
+
+  tooltipFrame = window.requestAnimationFrame(() => {
+    tooltipFrame = null;
+    const target = activeTooltipTarget;
+    const targetStillRelevant =
+      target &&
+      document.contains(target) &&
+      (target.matches(":hover") || target.contains(document.activeElement));
+
+    if (!targetStillRelevant) {
+      hideTooltip(target);
+      return;
+    }
+
+    showTooltip(target);
+  });
+}
+
 async function loadReport() {
   els.policyPill.textContent = "Loading";
   let lastError;
@@ -687,6 +759,37 @@ document.addEventListener("click", (event) => {
     render();
   }
 });
+
+document.addEventListener("mouseover", (event) => {
+  const target = event.target.closest("[data-tooltip]");
+  if (target) {
+    showTooltip(target);
+  }
+});
+
+document.addEventListener("mouseout", (event) => {
+  const target = event.target.closest("[data-tooltip]");
+  if (target && !target.contains(event.relatedTarget)) {
+    hideTooltip(target);
+  }
+});
+
+document.addEventListener("focusin", (event) => {
+  const target = event.target.closest("[data-tooltip]");
+  if (target) {
+    showTooltip(target);
+  }
+});
+
+document.addEventListener("focusout", (event) => {
+  const target = event.target.closest("[data-tooltip]");
+  if (target) {
+    hideTooltip(target);
+  }
+});
+
+document.addEventListener("scroll", refreshTooltip, true);
+window.addEventListener("resize", refreshTooltip);
 
 els.searchInput.addEventListener("input", (event) => {
   state.search = event.target.value.trim();

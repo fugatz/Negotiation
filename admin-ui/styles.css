@@ -643,53 +643,32 @@ button {
   width: 12px;
 }
 
-.help-bubble::after,
-.action-button[data-tooltip]::after {
+.floating-tooltip {
   background: var(--ink);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   color: #ffffff;
-  content: attr(data-tooltip);
   font-size: 12px;
   font-weight: 700;
-  left: 50%;
   line-height: 1.35;
   opacity: 0;
   padding: 9px 10px;
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   text-transform: none;
-  top: calc(100% + 8px);
-  transform: translate(-50%, -4px);
+  transform: translateY(-3px);
   transition:
     opacity 120ms ease,
     transform 120ms ease;
   visibility: hidden;
   width: min(260px, 70vw);
-  z-index: 30;
+  z-index: 9999;
 }
 
-.detail-pane .help-bubble::after,
-.detail-pane .action-button[data-tooltip]::after {
-  left: auto;
-  right: 0;
-  transform: translate(0, -4px);
-}
-
-.help-bubble:hover::after,
-.help-bubble:focus::after,
-.action-button[data-tooltip]:hover::after,
-.action-button[data-tooltip]:focus::after {
+.floating-tooltip.visible {
   opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translateY(0);
   visibility: visible;
-}
-
-.detail-pane .help-bubble:hover::after,
-.detail-pane .help-bubble:focus::after,
-.detail-pane .action-button[data-tooltip]:hover::after,
-.detail-pane .action-button[data-tooltip]:focus::after {
-  transform: translate(0, 0);
 }
 
 .settings-panel {
