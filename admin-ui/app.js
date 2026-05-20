@@ -3,7 +3,36 @@ const DATA_URLS = [
   "../simulation/reports/sample-runs/latest.json",
 ];
 
-const STORAGE_KEY = "distinkt-pricing-admin-actions";
+const STORAGE_KEY = "distinkt-pricing-admin-actions-v2";
+
+const HELP_TEXT = {
+  approve:
+    "Marks this locked quote as ready for client presentation in the prototype. In production this should create an immutable approval audit event.",
+  hold:
+    "Pauses presentation while an admin clarifies scope, budget, legal floor, or market evidence. Talent acceptance should be rechecked if the quote changes.",
+  reopen:
+    "Sends the quote back for pricing review. In production this should require a reason code and produce a new active quote version.",
+  timing:
+    "Small schedule adjustment. Last-minute projects can price in compression; long-horizon projects mainly affect confidence and hold mechanics.",
+  behavior:
+    "Small reliability or friction adjustment from upstream talent/client behavior signals. It must stay non-dominant and admin-only.",
+  advocacy:
+    "Internal actor-specific representation posture. It tries to improve talent outcomes within caps and still requires talent acceptance.",
+  ai:
+    "AI discretion is shadow-only in this prototype. Nonzero suggestions need admin review and do not affect the live quote.",
+  floor:
+    "The strongest known floor among talent-owned floor, published rate card, and supplied legal/minimum-wage inputs.",
+  market:
+    "Market evidence can explain local rate context, but it remains advisory and cannot override talent-owned rates.",
+  timingCap:
+    "Maximum timing-driven rate movement allowed by policy. Useful for last-minute compression, not a blanket surcharge.",
+  behaviorCap:
+    "Maximum combined client/talent behavior nudge. Keeps reliability meaningful without letting behavior dominate pricing.",
+  advocacyCap:
+    "Maximum actor talent-advocacy uplift. This should stay modest and hidden from client-facing rationale.",
+  aiCap:
+    "Maximum shadow AI discretion. Keep low until real outcome evidence proves the suggestion is reliable.",
+};
 
 const state = {
   report: null,
@@ -164,6 +193,14 @@ function chipClass(kind) {
 
 function chip(label, kind = "neutral") {
   return `<span class="chip ${chipClass(kind)}">${html(label)}</span>`;
+}
+
+function helpBubble(text) {
+  return `
+    <span class="help-bubble" tabindex="0" data-tooltip="${html(text)}" aria-label="${html(text)}">
+      <i data-lucide="info"></i>
+    </span>
+  `;
 }
 
 function renderMetrics() {
@@ -339,14 +376,15 @@ function renderDetail(trace, rec) {
       <span class="quote">${formatMoney(rec.quote, currency)}</span>
       <span class="quote-sub">${html(compact(rec.availabilityCheck?.status || "pending"))}</span>
     </div>
+    ${decisionPanel(rec)}
     <div class="detail-actions">
-      <button class="action-button primary" type="button" data-action="approved" data-quote-id="${html(rec.__quoteId)}">
+      <button class="action-button primary" type="button" data-action="approved" data-quote-id="${html(rec.__quoteId)}" data-tooltip="${html(HELP_TEXT.approve)}">
         <i data-lucide="check"></i> Approve
       </button>
-      <button class="action-button warn" type="button" data-action="hold" data-quote-id="${html(rec.__quoteId)}">
+      <button class="action-button warn" type="button" data-action="hold" data-quote-id="${html(rec.__quoteId)}" data-tooltip="${html(HELP_TEXT.hold)}">
         <i data-lucide="pause"></i> Hold
       </button>
-      <button class="action-button danger" type="button" data-action="reopened" data-quote-id="${html(rec.__quoteId)}">
+      <button class="action-button danger" type="button" data-action="reopened" data-quote-id="${html(rec.__quoteId)}" data-tooltip="${html(HELP_TEXT.reopen)}">
         <i data-lucide="rotate-ccw"></i> Reopen
       </button>
     </div>
@@ -365,16 +403,16 @@ function renderDetail(trace, rec) {
     <section class="detail-section">
       <h3>Pricing Inputs</h3>
       ${rows([
-        ["Timing", `${formatPct(rec.timing?.rateDelta, true)} rate, ${formatPct(rec.timing?.confidenceDelta, true)} confidence`],
-        ["Behavior", formatPct(rec.behavior?.combinedBehaviorRateDelta, true)],
-        ["Advocacy", rec.talentAdvocacy?.applies ? formatPct(rec.talentAdvocacy.rateDelta, true) : "Not applied"],
-        ["AI Discretion", `${formatPct(admin.discretionDelta, true)} ${html(admin.discretionMode || "shadow")}`],
-        ["Legal Floor", `${formatMoney(rec.legalFloor?.effectiveFloor, currency)} ${compact(rec.legalFloor?.basis)}`],
+        ["Timing", `${formatPct(rec.timing?.rateDelta, true)} rate, ${formatPct(rec.timing?.confidenceDelta, true)} confidence`, HELP_TEXT.timing],
+        ["Behavior", formatPct(rec.behavior?.combinedBehaviorRateDelta, true), HELP_TEXT.behavior],
+        ["Advocacy", rec.talentAdvocacy?.applies ? formatPct(rec.talentAdvocacy.rateDelta, true) : "Not applied", HELP_TEXT.advocacy],
+        ["AI Discretion", `${formatPct(admin.discretionDelta, true)} ${html(admin.discretionMode || "shadow")}`, HELP_TEXT.ai],
+        ["Legal Floor", `${formatMoney(rec.legalFloor?.effectiveFloor, currency)} ${compact(rec.legalFloor?.basis)}`, HELP_TEXT.floor],
       ])}
     </section>
 
     <section class="detail-section">
-      <h3>Market Evidence</h3>
+      <h3>Market Evidence ${helpBubble(HELP_TEXT.market)}</h3>
       ${marketEvidence(market, prior, paid, rateCard, currency)}
     </section>
 
@@ -394,6 +432,30 @@ function renderDetail(trace, rec) {
     </section>
 
     ${settingsPanel()}
+  `;
+}
+
+function decisionPanel(rec) {
+  const triggers = rec.adminGovernance?.exceptionTriggers || [];
+  const action = actionFor(rec);
+  const copy =
+    action === "approved"
+      ? "Approved locally for client-slate review. Production approval should write an immutable event."
+      : action === "hold"
+        ? "Held locally. Clarify the review triggers before this quote reaches a client."
+        : action === "reopened"
+          ? "Reopened locally. Repricing should create a new quote version before presentation."
+          : triggers.length
+            ? "Review required before presentation because one or more exception triggers are active."
+            : "No exception triggers. Admin can approve or hold for judgment.";
+  return `
+    <section class="decision-card">
+      <div class="row-between">
+        <span>Decision Effect</span>
+        <strong>${html(compact(action))}</strong>
+      </div>
+      <p>${html(copy)}</p>
+    </section>
   `;
 }
 
@@ -418,9 +480,9 @@ function rangeBar(range, quote, currency) {
 function rows(items) {
   return items
     .map(
-      ([label, value]) => `
+      ([label, value, help]) => `
         <div class="row-between evidence-row">
-          <span>${html(label)}</span>
+          <span class="row-label">${html(label)} ${help ? helpBubble(help) : ""}</span>
           <strong>${html(value)}</strong>
         </div>
       `,
@@ -480,19 +542,23 @@ function list(items, className) {
 
 function settingsPanel() {
   const controls = [
-    ["timingCap", "Timing Cap", 0, 10, 8],
-    ["behaviorCap", "Behavior Cap", 0, 8, 5],
-    ["advocacyCap", "Advocacy Cap", 0, 10, 8],
-    ["aiCap", "AI Shadow", 0, 3, 1],
+    ["timingCap", "Timing Cap", 0, 10, 8, HELP_TEXT.timingCap],
+    ["behaviorCap", "Behavior Cap", 0, 8, 5, HELP_TEXT.behaviorCap],
+    ["advocacyCap", "Advocacy Cap", 0, 10, 8, HELP_TEXT.advocacyCap],
+    ["aiCap", "AI Shadow", 0, 3, 1, HELP_TEXT.aiCap],
   ];
   return `
     <section class="settings-panel">
-      <p class="eyebrow">Policy Knobs</p>
+      <div class="row-between">
+        <p class="eyebrow">Policy Knobs</p>
+        ${chip("Prototype only", "info")}
+      </div>
+      <p class="setting-note">These controls model launch admin settings. They do not write back to policy yet.</p>
       ${controls
         .map(
-          ([id, label, min, max, value]) => `
+          ([id, label, min, max, value, help]) => `
             <div class="setting-row">
-              <label for="${id}">${label}</label>
+              <label for="${id}">${label} ${helpBubble(help)}</label>
               <output id="${id}Output">${value}%</output>
               <input id="${id}" type="range" min="${min}" max="${max}" value="${value}" />
             </div>
