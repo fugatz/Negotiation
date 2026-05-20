@@ -277,6 +277,24 @@ For featured actors, the simulator can turn the prior into a rough session fee a
 Those numbers are admin calibration context only. If Coke actuals show Bulgaria featured actors actually
 top out closer to 800 for the day, the paid-rate actual should override the cost-of-living prior.
 
+### Published Actor Rate Cards
+
+When a market has a published actor rate card for the relevant role and work pattern, that rate card
+should take priority over the country cost-of-living prior.
+
+The first modeled example is the 2026 UK PACT/FAA background/supporting-artist card from the user-provided
+PDF. For a standard day / continuous working day, the simulator uses:
+
+- basic daily rate: 111.21 GBP
+- holiday pay on the basic daily rate: 13.42 GBP
+- modeled agreement floor: 124.63 GBP, rounded to a 125 GBP project quote floor
+- overtime per 30 minutes, including holiday pay: 11.69 GBP
+- travel allowances from 1 March 2026: 17.09, 23.89, and 20.91 GBP depending on travel band
+
+This is not a commercial featured/lead buyout model. It is a published agreement floor for applicable UK
+background or supporting-artist work. Supplementary fees, meal penalties, overtime, and travel allowances
+remain event-based actualization triggers.
+
 ## Actor Role Hierarchy
 
 Actor pricing needs role-weighted logic. A lead budget does not imply supporting cast share the same

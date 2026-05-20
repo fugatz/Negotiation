@@ -68,6 +68,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - nullable local minimum wage smoke checks for actor legal floors
 - user-provided European cost-of-living fixture for provisional country market-cost priors
 - featured-actor country prior smoke scenarios for France and Bulgaria
+- UK PACT/FAA published actor rate-card fixture for background/supporting-artist work
 - readiness gate that blocks binding Outreach & Lock when project credibility is below threshold
 - active quote lifecycle records with quote version, audit events, and DFOS no-recalculation handoff
 - expected booking ranges with assumptions and actualization triggers

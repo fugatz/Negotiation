@@ -92,6 +92,7 @@ manual curation, or human-confirmed scope details not yet structured.
 - exclusivity: category, term, territory, competitor conflict scope
 - buyout versus day-rate structure
 - optional market-cost prior context or a country key the pricing engine can resolve
+- optional published actor rate-card id or source document for market/role-specific floors
 - union status and applicable jurisdiction
 - local minimum wage inputs when known; null is allowed and should create admin review
 - minor status or minor-role flag when applicable

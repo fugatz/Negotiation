@@ -48,6 +48,12 @@ def _event_delta(project: dict, talent: dict, event: str) -> float:
     return production_deltas.get(event, 0.0)
 
 
+def _actualized_amount(value: float) -> int:
+    if value < 1000:
+        return int(round(value))
+    return money(value)
+
+
 def _booked_events(project: dict, talent: dict, rec: dict) -> list[str]:
     allowed = set(rec["expected_booking_range"]["actualizationTriggers"])
     events: list[str] = []
@@ -170,7 +176,7 @@ def simulate_actualization(project: dict, talent: dict, rec: dict, decision: dic
     if is_booked_status(status):
         events = _booked_events(project, talent, rec)
         event_delta = sum(_event_delta(project, talent, event) for event in events)
-        actualized_cost = money(locked_quote * (1.0 + event_delta))
+        actualized_cost = _actualized_amount(locked_quote * (1.0 + event_delta))
 
     range_state = _range_state(actualized_cost, expected_range)
     return {

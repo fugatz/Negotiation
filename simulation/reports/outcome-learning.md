@@ -25,18 +25,18 @@ ranges remain the source of authority.
 | Metric | Base | Stricter Market Health |
 | --- | ---: | ---: |
 | Validation status | pass | pass |
-| Actualized records | 16 | 16 |
+| Actualized records | 17 | 17 |
 | Actualized above expected range | 4 | 4 |
 | Optional talent-guidance messages | 10 | 10 |
-| Cohort summaries | 30 | 30 |
-| Optional cohort-guidance messages | 16 | 16 |
+| Cohort summaries | 31 | 31 |
+| Optional cohort-guidance messages | 15 | 15 |
 | Pending holds | 1 | 1 |
 | Confirmation checkpoints | 4 | 4 |
 | Hold expirations | 4 | 4 |
 | Expired holds | 1 | 1 |
 | Budget-health warnings | 1 | 1 |
 | Scope-calibration outcomes | 3 | 3 |
-| Average actualization lift | 11.66% | 11.66% |
+| Average actualization lift | 10.98% | 10.98% |
 | Validation failures | 0 | 0 |
 
 Two above-range records still come from the last-minute automotive stress case, where prep, travel,
@@ -46,6 +46,9 @@ flagship, and major CPG cohort signals.
 The new France and Bulgaria featured-actor smoke tests also actualize above their narrow expected ranges
 after usage expansion, which is useful because actor buyout assumptions are exactly where country-level
 actuals should start improving the model.
+The new UK PACT/FAA background smoke test books and actualizes inside its GBP expected range, showing
+published rate cards can stabilize low-denomination actor records without relying on coarse project-rate
+rounding.
 The race-to-bottom stress case now actualizes as `booked_with_market_health_warning`, so it remains part
 of conversion learning while preserving the market-health warning.
 The prestige, exploratory-readiness, and minimum-wage smoke cases now resolve as
@@ -96,11 +99,13 @@ Current directional signals:
 | --- | --- |
 | Category: automotive | 20.08% average actualization lift, above-range actualization in the last-minute stress case |
 | Category: beverage | actor market-prior smoke signal; above-range actualization after usage expansion |
+| Category: background | UK PACT/FAA smoke signal; published agreement floor books inside expected range |
 | Category: beauty | 13.52% average actualization lift, medium-confidence sample |
 | Category: food | 4.45% average actualization lift, medium-confidence sample |
 | Market: Bulgaria | country-prior smoke signal with materially lower rate pressure than France |
 | Market: Detroit | 20.08% average actualization lift, medium-confidence sample |
 | Market: France | country-prior baseline smoke signal |
+| Market: United Kingdom | published PACT/FAA rate-card smoke signal |
 | Market: New York | 13.52% average actualization lift, medium-confidence sample |
 | Market: Unknown | 3.06% average actualization lift, medium-confidence sample |
 | Project size: flagship | 14.83% average actualization lift, directional-only sample |

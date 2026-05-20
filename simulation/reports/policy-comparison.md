@@ -38,6 +38,8 @@ prestige as a separate desirability signal.
 The simulator also now consumes the user-provided European country cost-of-living table as an
 admin-only market-cost prior for actor pricing context. France is the baseline; Bulgaria now stress-tests
 lower local rate pressure and stronger local budget leverage.
+For UK background/supporting-artist work, a published PACT/FAA rate card now takes precedence over the
+country cost prior and supplies the agreement floor.
 
 The interpretation is important:
 
@@ -60,10 +62,10 @@ All other config inherits from the base policy.
 | Metric | Base | Stricter | Read |
 | --- | ---: | ---: | --- |
 | Validation | pass | pass | No policy validity regressions. |
-| Scenarios | 16 | 16 | Same fixture set, now including ingested Mike and Ike plus France/Bulgaria actor market-prior smoke tests. |
-| Booked scenarios | 11 | 11 | Stricter ranking did not reduce booking count. |
-| Booking rate | 68.8% | 68.8% | Ingested CPG and country-prior actor smoke tests book cleanly; scope calibration and missed holds still restrain conversion. |
-| Availability checks | 51 | 51 | Readiness gate blocks the exploratory low-credibility project before outreach. |
+| Scenarios | 17 | 17 | Same fixture set, now including ingested Mike and Ike, UK PACT/FAA, and France/Bulgaria actor market-prior smoke tests. |
+| Booked scenarios | 12 | 12 | Stricter ranking did not reduce booking count. |
+| Booking rate | 70.6% | 70.6% | Ingested CPG, country-prior actor, and UK rate-card smoke tests book cleanly; scope calibration and missed holds still restrain conversion. |
+| Availability checks | 52 | 52 | Readiness gate blocks the exploratory low-credibility project before outreach. |
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
@@ -71,10 +73,11 @@ All other config inherits from the base policy.
 | Mature autonomy candidates | 21 | 21 | No autonomy readiness gain yet. |
 | Admin inclusion overrides | 1 | 1 | Manual curation is policy-stable across variants. |
 | Readiness-blocked scenarios | 1 | 1 | Low-readiness project does not enter binding Outreach & Lock. |
-| Quote audit events | 259 | 259 | Every client-presentable recommendation has quote lifecycle audit events. |
+| Quote audit events | 264 | 264 | Every client-presentable recommendation has quote lifecycle audit events. |
 | Derived talent budget review triggers | 4 | 4 | Ingested all-in budget estimate stays admin-reviewed. |
 | Market-cost prior review triggers | 2 | 2 | Country priors remain advisory until paid-rate actuals exist. |
-| Actor market-prior recommendations | 2 | 2 | France and Bulgaria featured-actor smoke tests carry role/country/buyout context. |
+| Actor market-prior recommendations | 3 | 3 | UK, France, and Bulgaria actor smoke tests carry role/country context. |
+| Actor rate-card recommendations | 1 | 1 | UK PACT/FAA supplies a published agreement floor and GBP range. |
 | Pending holds | 1 | 1 | Ready long-horizon work stays out of normal booking flow. |
 | Confirmation checkpoints | 4 | 4 | Pending and expired holds carry checkpoint plans. |
 | Hold expirations | 4 | 4 | Pending and expired holds expire without confirmation signals. |
@@ -158,7 +161,7 @@ Recommended follow-up:
 
 ### Other Scenarios
 
-Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, ingested Mike and Ike, France/Bulgaria actor
+Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, ingested Mike and Ike, UK PACT/FAA, France/Bulgaria actor
 market-prior smoke tests, prestige editorial,
 exploratory readiness, long-horizon, minimum wage, and bad-faith repricing scenarios have the same
 high-level outcomes under both policies. Prestige, exploratory readiness, and the minimum-wage smoke case
@@ -168,8 +171,9 @@ policies.
 The ingested Mike and Ike fixture confirms that a real-shaped extraction payload can map into the
 simulation while preserving the critical distinction between all-in project budget and talent-specific
 quote capacity.
-The new France/Bulgaria fixtures confirm that market-cost priors can be attached to actor pricing context
-without becoming live rate authority or surfacing to brands/talent.
+The UK fixture confirms that published rate cards can override country-cost priors for applicable actor
+work, while the France/Bulgaria fixtures confirm that fallback market-cost priors can be attached without
+becoming live rate authority or surfacing to brands/talent.
 
 Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
 That candidate appears in the admin override slate at a locked talent-approved quote, remains outside

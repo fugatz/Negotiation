@@ -82,6 +82,7 @@ Synthetic project briefs should include:
 - project type
 - market or location cohort supplied by upstream project data
 - country market-cost context, when supplied or inferable from market/country fields
+- published actor rate-card context, when available for the project market, role, and work pattern
 - talent class scope: actor, production talent, or mixed
 - actor role scope for actor-only opportunities
 - budget type
@@ -205,6 +206,7 @@ The simulation should generate these internal values:
 - recommendation lane
 - country market-cost prior state
 - actor market-rate prior state, when role, country, and usage are available
+- published actor agreement floor state, when a rate card applies
 
 Recommendation lanes:
 

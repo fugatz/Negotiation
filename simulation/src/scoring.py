@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from .common import clamp, money, weighted_average
+from .market_cost import actor_agreement_floor
 
 
 def talent_class(talent: dict) -> str:
@@ -87,20 +88,37 @@ def legal_floor_state(talent: dict, project: dict) -> dict:
     private_floor = int(talent["working_floor"])
     local_minimum_wage = project.get("local_minimum_wage_hourly")
     estimated_hours = project.get("estimated_work_hours")
+    agreement_floor = actor_agreement_floor(project) if talent_class(talent) == "actor" else None
     minimum_wage_floor = None
     minimum_wage_status = "not_applicable"
     warnings: list[str] = []
 
     if talent_class(talent) == "actor":
         if local_minimum_wage is None or estimated_hours is None:
-            minimum_wage_status = "unknown"
-            warnings.append("minimum_wage_floor_unknown")
+            if agreement_floor:
+                minimum_wage_status = "not_supplied_rate_card_available"
+            else:
+                minimum_wage_status = "unknown"
+                warnings.append("minimum_wage_floor_unknown")
         else:
             minimum_wage_floor = int(round(float(local_minimum_wage) * float(estimated_hours)))
             minimum_wage_status = "known"
 
-    effective_floor = max(private_floor, minimum_wage_floor or 0)
-    basis = "local_minimum_wage" if minimum_wage_floor and minimum_wage_floor >= private_floor else "private_working_floor"
+    floor_priority = {
+        "private_working_floor": 1,
+        "published_actor_rate_card": 2,
+        "local_minimum_wage": 3,
+    }
+    floor_candidates = [("private_working_floor", private_floor)]
+    if agreement_floor:
+        floor_candidates.append(("published_actor_rate_card", int(agreement_floor["amount"])))
+    if minimum_wage_floor:
+        floor_candidates.append(("local_minimum_wage", minimum_wage_floor))
+
+    basis, effective_floor = max(
+        floor_candidates,
+        key=lambda item: (item[1], floor_priority[item[0]]),
+    )
 
     return {
         "talentClass": talent_class(talent),
@@ -111,6 +129,12 @@ def legal_floor_state(talent: dict, project: dict) -> dict:
         "estimatedWorkHours": estimated_hours,
         "minimumWageFloor": minimum_wage_floor,
         "minimumWageStatus": minimum_wage_status,
+        "agreementFloor": agreement_floor["amount"] if agreement_floor else None,
+        "agreementFloorExactAmount": agreement_floor["exactAmount"] if agreement_floor else None,
+        "agreementFloorCurrency": agreement_floor["currency"] if agreement_floor else None,
+        "agreementFloorSource": agreement_floor["source"] if agreement_floor else None,
+        "agreementFloorSourceUrl": agreement_floor["sourceUrl"] if agreement_floor else None,
+        "agreementFloorStatus": "known" if agreement_floor else "not_applicable",
         "effectiveFloor": effective_floor,
         "warnings": warnings,
     }

@@ -369,7 +369,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     minimum_wage_floor_unknown_count = 0
     market_cost_prior_count = 0
     actor_market_prior_count = 0
+    actor_rate_card_count = 0
     market_cost_prior_review_count = 0
+    agreement_floor_applied_count = 0
     expected_range_count = 0
     actualized_record_count = 0
     actualized_above_range_count = 0
@@ -410,6 +412,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
             legal_floor = rec["legalFloor"]
             if legal_floor["basis"] == "local_minimum_wage":
                 minimum_wage_floor_applied_count += 1
+            if legal_floor["basis"] == "published_actor_rate_card":
+                agreement_floor_applied_count += 1
             if legal_floor["minimumWageStatus"] == "unknown":
                 minimum_wage_floor_unknown_count += 1
             market_cost_context = rec["budgetContext"].get("marketCostContext", {})
@@ -417,6 +421,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 market_cost_prior_count += 1
             if market_cost_context.get("actorMarketRatePrior"):
                 actor_market_prior_count += 1
+            if market_cost_context.get("actorRateCard"):
+                actor_rate_card_count += 1
             if market_cost_context.get("adminReviewRequired"):
                 market_cost_prior_review_count += 1
             if rec.get("expectedBookingRange"):
@@ -471,8 +477,10 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "prePresentationTalentCounterCount": pre_presentation_counter_count,
         "minimumWageFloorAppliedCount": minimum_wage_floor_applied_count,
         "minimumWageFloorUnknownCount": minimum_wage_floor_unknown_count,
+        "agreementFloorAppliedCount": agreement_floor_applied_count,
         "marketCostPriorRecommendationCount": market_cost_prior_count,
         "actorMarketPriorRecommendationCount": actor_market_prior_count,
+        "actorRateCardRecommendationCount": actor_rate_card_count,
         "marketCostPriorReviewCount": market_cost_prior_review_count,
         "expectedBookingRangeCount": expected_range_count,
         "actualizedRecordCount": actualized_record_count,

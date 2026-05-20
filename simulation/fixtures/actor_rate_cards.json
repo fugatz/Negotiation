@@ -1,0 +1,106 @@
+[
+  {
+    "id": "uk_pact_faa_2026",
+    "country": "United Kingdom",
+    "market": "London",
+    "agreement": "PACT/FAA",
+    "sourceName": "Extra People 2026 Pact FAA Rate Card PDF",
+    "sourceFileName": "Extra+People+2026+Pact+FAA+Rate+Card+Updated+Travel+(1).pdf",
+    "sourcePath": "/Users/gibbin/Desktop/Extra+People+2026+Pact+FAA+Rate+Card+Updated+Travel+(1).pdf",
+    "sourceUrl": "https://sabellcasting.co.uk/pact-faa-rates/",
+    "standardRatesImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2655.jpg",
+    "supplementaryFeesImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2656.jpg",
+    "mealTravelImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2657.jpg",
+    "effectiveFrom": "2026-01-14",
+    "effectiveThrough": "2026-12-31",
+    "currency": "GBP",
+    "appliesTo": {
+      "talentClass": "actor",
+      "actorRoles": ["background"],
+      "projectTypes": ["background_casting", "film_tv_supporting_artist"],
+      "usageScopes": ["background"]
+    },
+    "standardRates": {
+      "standardDayContinuousWorkingDay": {
+        "basicDailyRate": 111.21,
+        "holidayPayOnBasicDailyRate": 13.42,
+        "totalWithHolidayPay": 124.63,
+        "overtimePer30MinutesIncludingHolidayPay": 11.69,
+        "publicHolidayRate": 166.82,
+        "holidayPayOnPublicHolidayRate": 20.14,
+        "publicHolidayOvertimePer30MinutesIncludingHolidayPay": 17.54
+      },
+      "standardNightContinuousWorkingNight": {
+        "basicDailyRate": 166.82,
+        "holidayPayOnBasicDailyRate": 20.14,
+        "totalWithHolidayPay": 186.96,
+        "overtimePer30MinutesIncludingHolidayPay": 17.54,
+        "publicHolidayRate": 250.22,
+        "holidayPayOnPublicHolidayRate": 30.20,
+        "publicHolidayOvertimePer30MinutesIncludingHolidayPay": 26.29
+      },
+      "shiftCall": {
+        "basicDailyRate": 69.51,
+        "holidayPayOnBasicDailyRate": 8.39,
+        "totalWithHolidayPay": 77.90,
+        "overtimePer30MinutesIncludingHolidayPay": 11.69,
+        "publicHolidayRate": 104.27,
+        "holidayPayOnPublicHolidayRate": 12.58,
+        "publicHolidayOvertimePer30MinutesIncludingHolidayPay": 17.54
+      },
+      "nonPerformanceCallUpToFourHours": {
+        "basicDailyRate": 55.61,
+        "holidayPayOnBasicDailyRate": 6.71,
+        "totalWithHolidayPay": 62.32
+      }
+    },
+    "supplementaryFees": {
+      "categoryA": {
+        "amount": 23.00,
+        "items": ["change_of_clothing_and_haircuts"]
+      },
+      "categoryAUnusedChangeOfClothesPerSet": {
+        "amount": 11.50,
+        "capSets": 3
+      },
+      "categoryB": {
+        "amount": 23.00,
+        "items": ["doubling", "special_clothing", "sports_equipment", "inclement_weather_or_wetting_down"]
+      },
+      "categoryC": {
+        "amount": 30.51,
+        "items": ["firearms", "swimming", "driving", "stills_and_scans", "minimal_dialogue", "specialised_dancing", "domesticated_animals"]
+      },
+      "categoryD": {
+        "amount": 37.22,
+        "items": ["creative_reaction", "uniforms", "specialised_driving", "provision_of_car"]
+      },
+      "categoryE": {
+        "amount": 61.63,
+        "items": ["lookalike_doubling", "stand_in", "dialogue"]
+      }
+    },
+    "mealBreakPenalties": {
+      "lateLunch": {"standardDay": 23.38, "standardNight": 35.08, "publicHolidayDay": 35.08, "publicHolidayNight": 52.58},
+      "shortLunch": {"standardDay": 23.38, "standardNight": 35.08, "publicHolidayDay": 35.08, "publicHolidayNight": 52.58},
+      "shortSupper": {"standardDay": 23.38, "standardNight": 35.08, "publicHolidayDay": 35.08, "publicHolidayNight": 52.58}
+    },
+    "mealAllowances": {
+      "breakfast": 5.00,
+      "lunch": 10.00,
+      "dinner": 25.00,
+      "overnightStayAdditional": 10.00
+    },
+    "travelAllowances": {
+      "tflZones1To3": 17.09,
+      "selectedStudiosAndWithinFortyMileRadiusOfCharingCross": 23.89,
+      "earlyCallAdditionalPayment": 20.91
+    },
+    "notes": [
+      "Holiday pay is modeled at the published amount on the card rather than recalculated.",
+      "Overtime rows use the PDF totals including holiday pay.",
+      "Non-performance calls over four hours should use the full basic daily rate.",
+      "Travel allowances use the PDF values marked from 1 March 2026."
+    ]
+  }
+]

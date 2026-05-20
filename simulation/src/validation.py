@@ -435,13 +435,6 @@ def validate_report(report: dict) -> dict:
                     "country market-cost priors should not automatically override talent-owned rates",
                 )
                 if rec["talentClass"] == "actor":
-                    _check(
-                        "market cost prior requires actuals review" in governance["exceptionTriggers"],
-                        failures,
-                        "market_cost_review_exception_missing",
-                        context,
-                        "actor country market-cost priors should require actuals review before autonomy",
-                    )
                     actor_market_prior = market_cost.get("actorMarketRatePrior")
                     _check(
                         actor_market_prior is not None,
@@ -451,6 +444,22 @@ def validate_report(report: dict) -> dict:
                         "actor country market-cost context should include role-level market-rate prior details",
                     )
                     if actor_market_prior:
+                        source_type = actor_market_prior.get("sourceType")
+                        _check(
+                            source_type in {"cost_of_living_prior", "published_rate_card"},
+                            failures,
+                            "actor_market_prior_source_invalid",
+                            context,
+                            "actor market-rate priors should identify whether they come from a cost prior or published card",
+                        )
+                        if source_type == "cost_of_living_prior":
+                            _check(
+                                "market cost prior requires actuals review" in governance["exceptionTriggers"],
+                                failures,
+                                "market_cost_review_exception_missing",
+                                context,
+                                "actor country market-cost priors should require actuals review before autonomy",
+                            )
                         _check(
                             actor_market_prior.get("rateAuthority") == "talent_owned_rate_range",
                             failures,
@@ -459,11 +468,11 @@ def validate_report(report: dict) -> dict:
                             "actor market-rate priors must remain guidance and not override talent-owned rates",
                         )
                         _check(
-                            actor_market_prior.get("calibrationAuthority") == "advisory_prior",
+                            actor_market_prior.get("calibrationAuthority") in {"advisory_prior", "published_rate_card"},
                             failures,
                             "actor_market_prior_calibration_authority_invalid",
                             context,
-                            "actor market-rate priors should remain advisory until paid-rate actuals mature",
+                            "actor market-rate priors should remain advisory or cite a published rate card",
                         )
             _check(
                 availability_check.get("proposedRange") is not None,
@@ -802,6 +811,21 @@ def validate_report(report: dict) -> dict:
             )
 
             if rec["talentClass"] == "actor":
+                if legal_floor["agreementFloorStatus"] == "known":
+                    _check(
+                        int(rec["quote"]) >= int(legal_floor["agreementFloor"]),
+                        failures,
+                        "agreement_floor_violation",
+                        context,
+                        "actor quote must not fall below supplied published agreement rate card floor",
+                    )
+                    _check(
+                        int(expected_range["low"]) >= int(legal_floor["agreementFloor"]),
+                        failures,
+                        "range_below_agreement_floor",
+                        context,
+                        "actor expected booking range must not dip below supplied published agreement rate card floor",
+                    )
                 if legal_floor["minimumWageStatus"] == "known":
                     _check(
                         int(rec["quote"]) >= int(legal_floor["minimumWageFloor"]),

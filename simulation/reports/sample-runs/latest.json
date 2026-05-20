@@ -17,6 +17,7 @@
         "projectSizeBand": "small",
         "projectType": "social_content",
         "market": "los_angeles",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -77,6 +78,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -189,6 +196,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -227,6 +240,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -246,7 +260,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "4af574dee364b7cd",
+            "inputSnapshotHash": "7e5fcff28ccb2370",
             "lockedGrossQuote": 6800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -487,6 +501,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -525,6 +545,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -544,7 +565,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a2eba168d20563f8",
+            "inputSnapshotHash": "c04befd0872a6c69",
             "lockedGrossQuote": 12000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -787,6 +808,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
           },
@@ -825,6 +852,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -844,7 +872,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "9d2d815adb62f7c7",
+            "inputSnapshotHash": "a600a3652ac4b7ed",
             "lockedGrossQuote": 21600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1094,6 +1122,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
           },
@@ -1132,6 +1166,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -1151,7 +1186,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5ab059fe5a8dd92f",
+            "inputSnapshotHash": "d8590169f047cf92",
             "lockedGrossQuote": 12800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1615,6 +1650,7 @@
         "projectSizeBand": "premium",
         "projectType": "national_campaign",
         "market": "new_york",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -1677,6 +1713,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -1789,6 +1831,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -1827,6 +1875,7 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -1846,7 +1895,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "aa8ad6c92fe7fa97",
+            "inputSnapshotHash": "74fb0c5518280a41",
             "lockedGrossQuote": 8900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2090,6 +2139,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -2128,6 +2183,7 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -2147,7 +2203,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "c5a94cc5e0b599d4",
+            "inputSnapshotHash": "79826c262c093ac4",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2389,6 +2445,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
           },
@@ -2427,6 +2489,7 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -2446,7 +2509,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "da71564aa6feb734",
+            "inputSnapshotHash": "b1c52507a9dca7d0",
             "lockedGrossQuote": 14000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2695,6 +2758,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -2733,6 +2802,7 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -2752,7 +2822,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "2de4ca5073aaa246",
+            "inputSnapshotHash": "a84d4ec3b0b004f5",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -3006,6 +3076,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
           },
@@ -3044,6 +3120,7 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -3063,7 +3140,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "2007a829a305f7e1",
+            "inputSnapshotHash": "384ecabd9f19c2eb",
             "lockedGrossQuote": 20900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -3691,6 +3768,7 @@
         "projectSizeBand": "large_scale",
         "projectType": "national_campaign",
         "market": "new_york",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -3753,6 +3831,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -3867,6 +3951,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -3906,6 +3996,7 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -3925,7 +4016,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "942af2ecdb6cf4e9",
+            "inputSnapshotHash": "97f87442eff525b0",
             "lockedGrossQuote": 8800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4171,6 +4262,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -4210,6 +4307,7 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -4229,7 +4327,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "978ccb09779a9982",
+            "inputSnapshotHash": "5b633357733405fb",
             "lockedGrossQuote": 13300,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4473,6 +4571,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
           },
@@ -4512,6 +4616,7 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -4531,7 +4636,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "aa850ea9a5bca9ef",
+            "inputSnapshotHash": "62ee14dcdd6fc722",
             "lockedGrossQuote": 13900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4782,6 +4887,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -4821,6 +4932,7 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -4840,7 +4952,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "6561bdebae480b28",
+            "inputSnapshotHash": "aee1509ab780cf00",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5335,6 +5447,7 @@
         "projectSizeBand": "flagship",
         "projectType": "commercial_campaign",
         "market": "detroit",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -5397,6 +5510,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -5511,6 +5630,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 12000,
             "warnings": []
           },
@@ -5550,6 +5675,7 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -5569,7 +5695,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "69dcc66042a98433",
+            "inputSnapshotHash": "6810ec2beb33e426",
             "lockedGrossQuote": 20000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5810,6 +5936,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -5849,6 +5981,7 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -5868,7 +6001,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "23f8061738a1eb4f",
+            "inputSnapshotHash": "5c8eaf37c6d79029",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6110,6 +6243,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -6149,6 +6288,7 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -6168,7 +6308,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "682bbbc6bb74b131",
+            "inputSnapshotHash": "b0c13f872711cb1d",
             "lockedGrossQuote": 12900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6410,6 +6550,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
           },
@@ -6449,6 +6595,7 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -6468,7 +6615,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f6e15768a36ca044",
+            "inputSnapshotHash": "8401dd225107b236",
             "lockedGrossQuote": 20700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6963,6 +7110,7 @@
         "projectSizeBand": "premium",
         "projectType": "commercial_campaign",
         "market": "detroit",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -7043,6 +7191,12 @@
         },
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -7157,6 +7311,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -7195,6 +7355,7 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -7214,7 +7375,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "dc8234131a77bd16",
+            "inputSnapshotHash": "b6e0d0b5724f7721",
             "lockedGrossQuote": 7900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7454,6 +7615,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -7492,6 +7659,7 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -7511,7 +7679,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7093ba61a7cd6812",
+            "inputSnapshotHash": "e4e04d47a5cb489d",
             "lockedGrossQuote": 13700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7751,6 +7919,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -7789,6 +7963,7 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -7808,7 +7983,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5c0669bfde10be16",
+            "inputSnapshotHash": "2d751c4cab8b84ea",
             "lockedGrossQuote": 8900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8047,6 +8222,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 2800,
             "warnings": []
           },
@@ -8085,6 +8266,7 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -8104,7 +8286,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0a43987a29236ee0",
+            "inputSnapshotHash": "8939d49ec01c436e",
             "lockedGrossQuote": 4600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8601,6 +8783,7 @@
         "projectSizeBand": "low_cash",
         "projectType": "editorial_prestige",
         "market": "new_york",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -8681,6 +8864,12 @@
         },
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -8793,6 +8982,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
           },
@@ -8831,6 +9026,7 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -8850,7 +9046,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "bcd4c77bf03345cf",
+            "inputSnapshotHash": "4b73116cc3fba894",
             "lockedGrossQuote": 12400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9097,6 +9293,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -9135,6 +9337,7 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -9154,7 +9357,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "cf77f3d86f54f8dd",
+            "inputSnapshotHash": "c415f28a7adcbf7d",
             "lockedGrossQuote": 10800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9397,6 +9600,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -9435,6 +9644,7 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -9454,7 +9664,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "c26268c312406a42",
+            "inputSnapshotHash": "926e81370887d3a1",
             "lockedGrossQuote": 7100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9696,6 +9906,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -9734,6 +9950,7 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -9753,7 +9970,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a9111622a865e542",
+            "inputSnapshotHash": "f3569b731e4f1b5e",
             "lockedGrossQuote": 6200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10249,6 +10466,7 @@
         "projectSizeBand": "small",
         "projectType": "exploratory_research",
         "market": "los_angeles",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -10346,6 +10564,7 @@
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -10408,6 +10627,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -10520,6 +10745,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -10558,6 +10789,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -10577,7 +10809,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0b68748f2811cf4f",
+            "inputSnapshotHash": "4261660650dbabd8",
             "lockedGrossQuote": 8700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10827,6 +11059,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -10865,6 +11103,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -10884,7 +11123,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "67fe30c6629cae6f",
+            "inputSnapshotHash": "c67a03b0e3eca151",
             "lockedGrossQuote": 13200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11132,6 +11371,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -11170,6 +11415,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -11189,7 +11435,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "054f2bd975760d29",
+            "inputSnapshotHash": "2c980e841fb69f25",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11435,6 +11681,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
           },
@@ -11473,6 +11725,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -11492,7 +11745,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "836b7674d14edce3",
+            "inputSnapshotHash": "654ef795892b1d12",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12017,6 +12270,7 @@
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -12079,6 +12333,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -12191,6 +12451,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -12229,6 +12495,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -12248,7 +12515,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "36f3e4c2347aa629",
+            "inputSnapshotHash": "0461008084b6d66d",
             "lockedGrossQuote": 7200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12486,6 +12753,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
           },
@@ -12524,6 +12797,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -12543,7 +12817,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3a97f49411fbeef1",
+            "inputSnapshotHash": "07dc1e0a84943926",
             "lockedGrossQuote": 22800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12790,6 +13064,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -12828,6 +13108,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -12847,7 +13128,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "ec941ef9dc1bd41e",
+            "inputSnapshotHash": "3f78e3e497382fcd",
             "lockedGrossQuote": 12600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -13089,6 +13370,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
           },
@@ -13127,6 +13414,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -13146,7 +13434,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "d87554bf69824802",
+            "inputSnapshotHash": "bb45f684ee04054c",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -13395,6 +13683,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
           },
@@ -13433,6 +13727,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -13452,7 +13747,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "d87554bf69824802",
+            "inputSnapshotHash": "bb45f684ee04054c",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14055,6 +14350,7 @@
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -14117,6 +14413,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -14229,6 +14531,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -14267,6 +14575,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -14286,7 +14595,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0e4f3d3c28bffc44",
+            "inputSnapshotHash": "d79071551670f75b",
             "lockedGrossQuote": 8700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14536,6 +14845,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -14574,6 +14889,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -14593,7 +14909,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "68cc502ca0c0721b",
+            "inputSnapshotHash": "21fd8dec8687d302",
             "lockedGrossQuote": 13200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14841,6 +15157,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -14879,6 +15201,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -14898,7 +15221,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e2971c7b13b0bc45",
+            "inputSnapshotHash": "aa585f6d1022dbe6",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15144,6 +15467,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 9000,
             "warnings": []
           },
@@ -15182,6 +15511,7 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -15201,7 +15531,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "732a48b445517694",
+            "inputSnapshotHash": "18c378d46db802d4",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15736,6 +16066,7 @@
         "projectSizeBand": "small",
         "projectType": "social_content",
         "market": "austin",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -15796,6 +16127,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -15908,6 +16245,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -15946,6 +16289,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -15965,7 +16309,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3bb6e5ff7bac4cd5",
+            "inputSnapshotHash": "cd548d7d9cf31df8",
             "lockedGrossQuote": 6800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16207,6 +16551,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 2800,
             "warnings": []
           },
@@ -16245,6 +16595,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -16264,7 +16615,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "460fc55eab531151",
+            "inputSnapshotHash": "187e7ca0117bdd87",
             "lockedGrossQuote": 4100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16506,6 +16857,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -16544,6 +16901,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -16563,7 +16921,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "1b27fd9fa930d971",
+            "inputSnapshotHash": "c724f20a8f76648f",
             "lockedGrossQuote": 12000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16807,6 +17165,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 5200,
             "warnings": []
           },
@@ -16845,6 +17209,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -16864,7 +17229,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "8a1085c50a51eea7",
+            "inputSnapshotHash": "b344ebad98ac1030",
             "lockedGrossQuote": 7800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17108,6 +17473,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 2800,
             "warnings": []
           },
@@ -17146,6 +17517,7 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -17165,7 +17537,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "460fc55eab531151",
+            "inputSnapshotHash": "187e7ca0117bdd87",
             "lockedGrossQuote": 4100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17640,6 +18012,7 @@
         "projectSizeBand": "major",
         "projectType": "commercial_campaign",
         "market": "unknown_market",
+        "currency": "USD",
         "talentClassScope": "production_talent",
         "marketCostContext": {
           "available": false,
@@ -17702,6 +18075,12 @@
       "excluded": [
         {
           "talent": "Background Extra Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "UK PACT/FAA Background Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -17826,6 +18205,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 14000,
             "warnings": []
           },
@@ -17870,6 +18255,7 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -17889,7 +18275,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7ddfa8db3312a701",
+            "inputSnapshotHash": "42320409d549b4c2",
             "lockedGrossQuote": 23200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -18147,6 +18533,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7800,
             "warnings": []
           },
@@ -18191,6 +18583,7 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -18210,7 +18603,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "4eb0676099fcffcb",
+            "inputSnapshotHash": "c340b7ecd7ea11df",
             "lockedGrossQuote": 12900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -18467,6 +18860,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 4500,
             "warnings": []
           },
@@ -18511,6 +18910,7 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -18530,7 +18930,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "1dc3fc776c4f61c2",
+            "inputSnapshotHash": "a78f23be1880bcfb",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -18787,6 +19187,12 @@
             "estimatedWorkHours": null,
             "minimumWageFloor": null,
             "minimumWageStatus": "not_applicable",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 7000,
             "warnings": []
           },
@@ -18831,6 +19237,7 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
+            "currency": "USD",
             "talentClassScope": "production_talent",
             "marketCostContext": {
               "available": false,
@@ -18850,7 +19257,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "6b08096d8dcdb6be",
+            "inputSnapshotHash": "809bf0e557e3e963",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -19344,6 +19751,7 @@
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
         "market": "los_angeles",
+        "currency": "USD",
         "talentClassScope": "actor",
         "marketCostContext": {
           "available": false,
@@ -19451,6 +19859,12 @@
           ]
         },
         {
+          "talent": "UK PACT/FAA Background Actor",
+          "reasons": [
+            "outside local talent market"
+          ]
+        },
+        {
           "talent": "Featured Actor Unknown Wage",
           "reasons": [
             "outside actor role scope"
@@ -19459,13 +19873,15 @@
         {
           "talent": "France Featured Commercial Actor",
           "reasons": [
-            "outside actor role scope"
+            "outside actor role scope",
+            "outside local talent market"
           ]
         },
         {
           "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
-            "outside actor role scope"
+            "outside actor role scope",
+            "outside local talent market"
           ]
         }
       ],
@@ -19556,6 +19972,12 @@
             "estimatedWorkHours": 12,
             "minimumWageFloor": 216,
             "minimumWageStatus": "known",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 216,
             "warnings": []
           },
@@ -19593,6 +20015,7 @@
             "projectSizeBand": "low_cash",
             "projectType": "background_casting",
             "market": "los_angeles",
+            "currency": "USD",
             "talentClassScope": "actor",
             "marketCostContext": {
               "available": false,
@@ -19612,7 +20035,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "67ae6695ab9e985f",
+            "inputSnapshotHash": "aed4905894320aaa",
             "lockedGrossQuote": 216,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -19961,6 +20384,7 @@
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
         "market": "unknown_market",
+        "currency": "USD",
         "talentClassScope": "actor",
         "marketCostContext": {
           "available": false,
@@ -20068,6 +20492,12 @@
           ]
         },
         {
+          "talent": "UK PACT/FAA Background Actor",
+          "reasons": [
+            "outside local talent market"
+          ]
+        },
+        {
           "talent": "Featured Actor Unknown Wage",
           "reasons": [
             "outside actor role scope"
@@ -20076,13 +20506,15 @@
         {
           "talent": "France Featured Commercial Actor",
           "reasons": [
-            "outside actor role scope"
+            "outside actor role scope",
+            "outside local talent market"
           ]
         },
         {
           "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
-            "outside actor role scope"
+            "outside actor role scope",
+            "outside local talent market"
           ]
         }
       ],
@@ -20173,6 +20605,12 @@
             "estimatedWorkHours": 12,
             "minimumWageFloor": null,
             "minimumWageStatus": "unknown",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 100,
             "warnings": [
               "minimum_wage_floor_unknown"
@@ -20212,6 +20650,7 @@
             "projectSizeBand": "low_cash",
             "projectType": "background_casting",
             "market": "unknown_market",
+            "currency": "USD",
             "talentClassScope": "actor",
             "marketCostContext": {
               "available": false,
@@ -20231,7 +20670,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "9232e0694cb48b2c",
+            "inputSnapshotHash": "2edb2c2d82b1f458",
             "lockedGrossQuote": 100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -20545,6 +20984,775 @@
       ]
     },
     {
+      "project": "UK PACT/FAA Background Rate Card Smoke Test",
+      "projectId": "uk_pact_faa_background_rate_card_smoke",
+      "client": "Firm-Budget Producer",
+      "budget": 200,
+      "projectContext": {
+        "allInBudget": 20000,
+        "talentBudget": 200,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
+        "projectSizeBand": "low_cash",
+        "projectType": "background_casting",
+        "market": "united_kingdom",
+        "currency": "GBP",
+        "talentClassScope": "actor",
+        "marketCostContext": {
+          "available": true,
+          "source": "user_provided_cost_of_living_table",
+          "sourceFileName": "Untitled spreadsheet - Sheet1.csv",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "actualsOverride": "Paid-rate actuals by market, role, usage, and buyout structure override this prior when available.",
+          "country": "United Kingdom",
+          "baselineCountry": "France",
+          "rank": 10,
+          "costOfLivingIndex": 59.2,
+          "rentIndex": 30.0,
+          "costOfLivingPlusRentIndex": 46.3,
+          "localPurchasingPowerIndex": 119.9,
+          "costOfLivingRelativeToBaseline": 1.021,
+          "localPurchasingPowerRelativeToBaseline": 1.09,
+          "talentCostPriorVsBaseline": 1.113,
+          "localBudgetLeverageVsBaseline": 0.899,
+          "expectedLocalRatePressure": "near_baseline",
+          "adminReviewRequired": false,
+          "rateSourcePriority": "published_actor_rate_card_before_cost_prior",
+          "actorRateCard": {
+            "available": true,
+            "id": "uk_pact_faa_2026",
+            "country": "United Kingdom",
+            "market": "London",
+            "agreement": "PACT/FAA",
+            "sourceName": "Extra People 2026 Pact FAA Rate Card PDF",
+            "sourceFileName": "Extra+People+2026+Pact+FAA+Rate+Card+Updated+Travel+(1).pdf",
+            "sourcePath": "/Users/gibbin/Desktop/Extra+People+2026+Pact+FAA+Rate+Card+Updated+Travel+(1).pdf",
+            "sourceUrl": "https://sabellcasting.co.uk/pact-faa-rates/",
+            "standardRatesImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2655.jpg",
+            "supplementaryFeesImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2656.jpg",
+            "mealTravelImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2657.jpg",
+            "effectiveFrom": "2026-01-14",
+            "effectiveThrough": "2026-12-31",
+            "currency": "GBP",
+            "standardDayTotalWithHolidayPay": 124.63,
+            "basicDailyRate": 111.21,
+            "holidayPayOnBasicDailyRate": 13.42,
+            "overtimePer30MinutesIncludingHolidayPay": 11.69,
+            "supplementaryFeeCategoryCount": 6,
+            "mealBreakPenaltyTypes": [
+              "lateLunch",
+              "shortLunch",
+              "shortSupper"
+            ],
+            "travelAllowanceTypes": [
+              "earlyCallAdditionalPayment",
+              "selectedStudiosAndWithinFortyMileRadiusOfCharingCross",
+              "tflZones1To3"
+            ],
+            "rateAuthority": "published_rate_card",
+            "appliesAutomatically": true
+          },
+          "actorMarketRatePrior": {
+            "role": "background",
+            "sourceType": "published_rate_card",
+            "sourceAgreement": "PACT/FAA",
+            "sourceUrl": "https://sabellcasting.co.uk/pact-faa-rates/",
+            "referenceCountry": "United Kingdom",
+            "referenceCurrency": "GBP",
+            "estimatedLocalHighDayRate": 124.63,
+            "estimatedLocalHighDayRateCurrency": "GBP",
+            "buyoutMultiplier": 0.0,
+            "estimatedBuyout": 0.0,
+            "estimatedOneShootDayTotal": 124.63,
+            "currencyHandling": "published_local_currency_rate",
+            "basis": "published PACT/FAA standard day plus holiday pay",
+            "calibrationAuthority": "published_rate_card",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        }
+      },
+      "clientCredibility": {
+        "clientTrustScore": 45,
+        "clientTrustTier": "established",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "known",
+        "completedProjectCount": 1,
+        "verifiedBrand": false,
+        "agencyAccount": false,
+        "brandPrestigeTier": "none",
+        "brandPrestigeScore": 0,
+        "brandPrestigeSource": "main_site_admin_field",
+        "brandPrestigeNotes": [],
+        "scoreBreakdown": {
+          "completedProjects": 10,
+          "completedProjectCount": 1,
+          "paymentSpeed": 15,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": false,
+          "verifiedBrandPoints": 0,
+          "agencyAccount": false,
+          "agencyAccountPoints": 0
+        },
+        "projectCredibilityScore": 82,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
+      "readinessGate": {
+        "projectCredibilityScore": 82,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy",
+        "projectReadinessTier": "ready",
+        "projectReadinessTierSource": "derived_from_project_credibility_score",
+        "bindingQuoteThreshold": 50,
+        "bindingQuoteAllowed": true,
+        "gateState": "binding_quote_allowed",
+        "reason": "project is ready enough for binding Outreach & Lock",
+        "adminOverride": {
+          "applied": false,
+          "reasonCode": null,
+          "reason": null,
+          "actor": null
+        }
+      },
+      "budgetType": "firm",
+      "leadTimeDays": 14,
+      "timingHorizon": "last_minute",
+      "eligibleTalentCount": 1,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "UK PACT/FAA Background Actor",
+          "talentClass": "actor",
+          "role": "background",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Best Fit",
+          "quote": 125,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.907,
+          "creativeFit": 0.979,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.865,
+          "availabilityCheck": {
+            "talent_id": "uk_pact_faa_background_actor",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 125,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 125,
+              "high": 135,
+              "expectedClose": 125,
+              "currency": "GBP",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "PACT/FAA standard day and continuous working day assumed",
+                "9 hour stipulated period including meal break assumed",
+                "background supporting artist role",
+                "published UK agreement rate card supplied",
+                "travel, meal penalties, and supplementary fees excluded unless triggered"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "meal penalty triggered",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "supplementary fee category added",
+                "travel allowance required",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 125,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 125,
+              "high": 135,
+              "expectedClose": 125,
+              "currency": "GBP",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "PACT/FAA standard day and continuous working day assumed",
+                "9 hour stipulated period including meal break assumed",
+                "background supporting artist role",
+                "published UK agreement rate card supplied",
+                "travel, meal penalties, and supplementary fees excluded unless triggered"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "meal penalty triggered",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "supplementary fee category added",
+                "travel allowance required",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "published_actor_rate_card",
+            "privateWorkingFloor": 100,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": 9,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "not_supplied_rate_card_available",
+            "agreementFloor": 125,
+            "agreementFloorExactAmount": 124.63,
+            "agreementFloorCurrency": "GBP",
+            "agreementFloorSource": "PACT/FAA",
+            "agreementFloorSourceUrl": "https://sabellcasting.co.uk/pact-faa-rates/",
+            "agreementFloorStatus": "known",
+            "effectiveFloor": 125,
+            "warnings": []
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 125,
+            "high": 135,
+            "expectedClose": 125,
+            "currency": "GBP",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "PACT/FAA standard day and continuous working day assumed",
+              "9 hour stipulated period including meal break assumed",
+              "background supporting artist role",
+              "published UK agreement rate card supplied",
+              "travel, meal penalties, and supplementary fees excluded unless triggered"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "meal penalty triggered",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "supplementary fee category added",
+              "travel allowance required",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 20000,
+            "talentBudget": 200,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "low_cash",
+            "projectType": "background_casting",
+            "market": "united_kingdom",
+            "currency": "GBP",
+            "talentClassScope": "actor",
+            "marketCostContext": {
+              "available": true,
+              "source": "user_provided_cost_of_living_table",
+              "sourceFileName": "Untitled spreadsheet - Sheet1.csv",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "actualsOverride": "Paid-rate actuals by market, role, usage, and buyout structure override this prior when available.",
+              "country": "United Kingdom",
+              "baselineCountry": "France",
+              "rank": 10,
+              "costOfLivingIndex": 59.2,
+              "rentIndex": 30.0,
+              "costOfLivingPlusRentIndex": 46.3,
+              "localPurchasingPowerIndex": 119.9,
+              "costOfLivingRelativeToBaseline": 1.021,
+              "localPurchasingPowerRelativeToBaseline": 1.09,
+              "talentCostPriorVsBaseline": 1.113,
+              "localBudgetLeverageVsBaseline": 0.899,
+              "expectedLocalRatePressure": "near_baseline",
+              "adminReviewRequired": false,
+              "rateSourcePriority": "published_actor_rate_card_before_cost_prior",
+              "actorRateCard": {
+                "available": true,
+                "id": "uk_pact_faa_2026",
+                "country": "United Kingdom",
+                "market": "London",
+                "agreement": "PACT/FAA",
+                "sourceName": "Extra People 2026 Pact FAA Rate Card PDF",
+                "sourceFileName": "Extra+People+2026+Pact+FAA+Rate+Card+Updated+Travel+(1).pdf",
+                "sourcePath": "/Users/gibbin/Desktop/Extra+People+2026+Pact+FAA+Rate+Card+Updated+Travel+(1).pdf",
+                "sourceUrl": "https://sabellcasting.co.uk/pact-faa-rates/",
+                "standardRatesImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2655.jpg",
+                "supplementaryFeesImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2656.jpg",
+                "mealTravelImageUrl": "https://sabellcasting.co.uk/wp-content/uploads/2026/02/IMG_2657.jpg",
+                "effectiveFrom": "2026-01-14",
+                "effectiveThrough": "2026-12-31",
+                "currency": "GBP",
+                "standardDayTotalWithHolidayPay": 124.63,
+                "basicDailyRate": 111.21,
+                "holidayPayOnBasicDailyRate": 13.42,
+                "overtimePer30MinutesIncludingHolidayPay": 11.69,
+                "supplementaryFeeCategoryCount": 6,
+                "mealBreakPenaltyTypes": [
+                  "lateLunch",
+                  "shortLunch",
+                  "shortSupper"
+                ],
+                "travelAllowanceTypes": [
+                  "earlyCallAdditionalPayment",
+                  "selectedStudiosAndWithinFortyMileRadiusOfCharingCross",
+                  "tflZones1To3"
+                ],
+                "rateAuthority": "published_rate_card",
+                "appliesAutomatically": true
+              },
+              "actorMarketRatePrior": {
+                "role": "background",
+                "sourceType": "published_rate_card",
+                "sourceAgreement": "PACT/FAA",
+                "sourceUrl": "https://sabellcasting.co.uk/pact-faa-rates/",
+                "referenceCountry": "United Kingdom",
+                "referenceCurrency": "GBP",
+                "estimatedLocalHighDayRate": 124.63,
+                "estimatedLocalHighDayRateCurrency": "GBP",
+                "buyoutMultiplier": 0.0,
+                "estimatedBuyout": 0.0,
+                "estimatedOneShootDayTotal": 124.63,
+                "currencyHandling": "published_local_currency_rate",
+                "basis": "published PACT/FAA standard day plus holiday pay",
+                "calibrationAuthority": "published_rate_card",
+                "rateAuthority": "talent_owned_rate_range"
+              }
+            }
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "f90a02fb2000431f",
+            "lockedGrossQuote": 125,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 125,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_accepted_quote",
+                "quoteId": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "accepted_project_specific_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "last_minute",
+            "platformTrustTier": "known",
+            "clientTrustScore": 45,
+            "clientTrustTier": "established",
+            "rateDelta": 0.04,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "short confirmation window",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "under 21 days; platform last-minute urgency premium"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": 0.03,
+            "combinedBehaviorRateDelta": 0.04,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "high-friction client behavior risk",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+              "reasons": [
+                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "United Kingdom has a published PACT/FAA rate card available for this actor context."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": true,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep film tv supporting artist experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep film tv supporting artist experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "admin pricing rationale flagged for review"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "adminOverrideSlate": [],
+      "adminOverrideExcluded": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "uk_pact_faa_background_actor",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "call_for_details_or_email_offer",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 125,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 125,
+            "high": 135,
+            "expectedClose": 125,
+            "currency": "GBP",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "PACT/FAA standard day and continuous working day assumed",
+              "9 hour stipulated period including meal break assumed",
+              "background supporting artist role",
+              "published UK agreement rate card supplied",
+              "travel, meal penalties, and supplementary fees excluded unless triggered"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "meal penalty triggered",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "supplementary fee category added",
+              "travel allowance required",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 125,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 125,
+            "high": 135,
+            "expectedClose": 125,
+            "currency": "GBP",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "PACT/FAA standard day and continuous working day assumed",
+              "9 hour stipulated period including meal break assumed",
+              "background supporting artist role",
+              "published UK agreement rate card supplied",
+              "travel, meal penalties, and supplementary fees excluded unless triggered"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "meal penalty triggered",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "supplementary fee category added",
+              "travel allowance required",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "uk_pact_faa_background_actor",
+          "status": "booked",
+          "locked_quote": 125,
+          "client_capacity": 200,
+          "quote_id": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
+          "quote_version": 1,
+          "active_quote_version": 1,
+          "locked_gross_quote": 125,
+          "dfos_handoff": {
+            "source": "locked_gross_quote",
+            "lockedGrossQuote": 125,
+            "dfosMayRecalculateQuote": false,
+            "commissionCapHandledDownstream": true,
+            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+          },
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "talentGuidanceCount": 0,
+          "averageActualizationLift": 0.0,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "uk_pact_faa_background_actor",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "background",
+              "category": "background",
+              "projectSizeBand": "low_cash",
+              "market": "united_kingdom",
+              "clientTrustTier": "established"
+            },
+            "lockedQuote": 125,
+            "expectedRange": {
+              "low": 125,
+              "high": 135,
+              "expectedClose": 125,
+              "currency": "GBP"
+            },
+            "actualizedCost": 125,
+            "actualizationEvents": [],
+            "allowedActualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "meal penalty triggered",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "supplementary fee category added",
+              "travel allowance required",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "rangeState": "inside_expected_range",
+            "varianceFromExpectedRange": 0.0,
+            "adminCalibrationNotes": [
+              "Booked at the locked quote inside the expected range; no formula pressure."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": false,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": []
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
+      "outcome": "booked",
+      "warnings": []
+    },
+    {
       "project": "France Featured Actor Market Prior Smoke Test",
       "projectId": "featured_actor_france_market_prior",
       "client": "High-Trust Repeat Client",
@@ -20559,6 +21767,7 @@
         "projectSizeBand": "premium",
         "projectType": "pan_european_commercial",
         "market": "france",
+        "currency": "USD",
         "talentClassScope": "actor",
         "marketCostContext": {
           "available": true,
@@ -20581,8 +21790,11 @@
           "localBudgetLeverageVsBaseline": 1.0,
           "expectedLocalRatePressure": "near_baseline",
           "adminReviewRequired": true,
+          "rateSourcePriority": "cost_of_living_prior_only",
+          "actorRateCard": null,
           "actorMarketRatePrior": {
             "role": "featured",
+            "sourceType": "cost_of_living_prior",
             "referenceCountry": "France",
             "referenceHighDayRate": 2500,
             "referenceCurrency": "EUR",
@@ -20703,6 +21915,13 @@
           ]
         },
         {
+          "talent": "UK PACT/FAA Background Actor",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        },
+        {
           "talent": "Featured Actor Unknown Wage",
           "reasons": [
             "outside local talent market"
@@ -20808,6 +22027,12 @@
             "estimatedWorkHours": 10,
             "minimumWageFloor": null,
             "minimumWageStatus": "unknown",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 2500,
             "warnings": [
               "minimum_wage_floor_unknown"
@@ -20850,6 +22075,7 @@
             "projectSizeBand": "premium",
             "projectType": "pan_european_commercial",
             "market": "france",
+            "currency": "USD",
             "talentClassScope": "actor",
             "marketCostContext": {
               "available": true,
@@ -20872,8 +22098,11 @@
               "localBudgetLeverageVsBaseline": 1.0,
               "expectedLocalRatePressure": "near_baseline",
               "adminReviewRequired": true,
+              "rateSourcePriority": "cost_of_living_prior_only",
+              "actorRateCard": null,
               "actorMarketRatePrior": {
                 "role": "featured",
+                "sourceType": "cost_of_living_prior",
                 "referenceCountry": "France",
                 "referenceHighDayRate": 2500,
                 "referenceCurrency": "EUR",
@@ -20897,7 +22126,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f8f18a5728d03f55",
+            "inputSnapshotHash": "3285eb35aff05021",
             "lockedGrossQuote": 10700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -21251,6 +22480,7 @@
         "projectSizeBand": "premium",
         "projectType": "pan_european_commercial",
         "market": "bulgaria",
+        "currency": "USD",
         "talentClassScope": "actor",
         "marketCostContext": {
           "available": true,
@@ -21273,8 +22503,11 @@
           "localBudgetLeverageVsBaseline": 2.422,
           "expectedLocalRatePressure": "materially_lower_than_baseline",
           "adminReviewRequired": true,
+          "rateSourcePriority": "cost_of_living_prior_only",
+          "actorRateCard": null,
           "actorMarketRatePrior": {
             "role": "featured",
+            "sourceType": "cost_of_living_prior",
             "referenceCountry": "France",
             "referenceHighDayRate": 2500,
             "referenceCurrency": "EUR",
@@ -21395,6 +22628,13 @@
           ]
         },
         {
+          "talent": "UK PACT/FAA Background Actor",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        },
+        {
           "talent": "Featured Actor Unknown Wage",
           "reasons": [
             "outside local talent market"
@@ -21500,6 +22740,12 @@
             "estimatedWorkHours": 10,
             "minimumWageFloor": null,
             "minimumWageStatus": "unknown",
+            "agreementFloor": null,
+            "agreementFloorExactAmount": null,
+            "agreementFloorCurrency": null,
+            "agreementFloorSource": null,
+            "agreementFloorSourceUrl": null,
+            "agreementFloorStatus": "not_applicable",
             "effectiveFloor": 800,
             "warnings": [
               "minimum_wage_floor_unknown"
@@ -21542,6 +22788,7 @@
             "projectSizeBand": "premium",
             "projectType": "pan_european_commercial",
             "market": "bulgaria",
+            "currency": "USD",
             "talentClassScope": "actor",
             "marketCostContext": {
               "available": true,
@@ -21564,8 +22811,11 @@
               "localBudgetLeverageVsBaseline": 2.422,
               "expectedLocalRatePressure": "materially_lower_than_baseline",
               "adminReviewRequired": true,
+              "rateSourcePriority": "cost_of_living_prior_only",
+              "actorRateCard": null,
               "actorMarketRatePrior": {
                 "role": "featured",
+                "sourceType": "cost_of_living_prior",
                 "referenceCountry": "France",
                 "referenceHighDayRate": 2500,
                 "referenceCurrency": "EUR",
@@ -21589,7 +22839,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "dae803fdd812ffd9",
+            "inputSnapshotHash": "d2b8c329172ad15f",
             "lockedGrossQuote": 3500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -21936,8 +23186,8 @@
       "clientTrustTier"
     ],
     "summary": {
-      "cohortCount": 30,
-      "cohortGuidanceCount": 16,
+      "cohortCount": 31,
+      "cohortGuidanceCount": 15,
       "calibrationAuthority": "guidance_only",
       "rateAuthority": "talent_owned_rate_range"
     },
@@ -21946,9 +23196,9 @@
         {
           "dimension": "role",
           "value": "background",
-          "recordCount": 2,
-          "bookedRecordCount": 1,
-          "actualizedRecordCount": 1,
+          "recordCount": 3,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
           "averageActualizationLift": 0.0,
           "confidence": "directional_only",
@@ -22131,9 +23381,9 @@
         {
           "dimension": "category",
           "value": "background",
-          "recordCount": 2,
-          "bookedRecordCount": 1,
-          "actualizedRecordCount": 1,
+          "recordCount": 3,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
           "averageActualizationLift": 0.0,
           "confidence": "directional_only",
@@ -22337,9 +23587,9 @@
         {
           "dimension": "projectSizeBand",
           "value": "low_cash",
-          "recordCount": 4,
-          "bookedRecordCount": 1,
-          "actualizedRecordCount": 1,
+          "recordCount": 5,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
           "averageActualizationLift": 0.0,
           "confidence": "directional_only",
@@ -22617,6 +23867,30 @@
         },
         {
           "dimension": "market",
+          "value": "united_kingdom",
+          "recordCount": 1,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 0,
+          "averageActualizationLift": 0.0,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Actualized outcomes stayed inside expected ranges for this cohort."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": false,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": []
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
           "value": "unknown_market",
           "recordCount": 3,
           "bookedRecordCount": 3,
@@ -22668,26 +23942,23 @@
         {
           "dimension": "clientTrustTier",
           "value": "established",
-          "recordCount": 11,
-          "bookedRecordCount": 6,
-          "actualizedRecordCount": 6,
+          "recordCount": 12,
+          "bookedRecordCount": 7,
+          "actualizedRecordCount": 7,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.0928,
+          "averageActualizationLift": 0.0796,
           "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
           "talentGuidance": {
             "visibility": "talent-guidance",
-            "available": true,
+            "available": false,
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
             "confidence": "medium",
-            "messages": [
-              "Directional client-trust cohort signal: established outcomes are landing about 9% above accepted project rates in this simulation sample.",
-              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
-            ]
+            "messages": []
           },
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
@@ -22723,27 +23994,29 @@
     }
   },
   "metrics": {
-    "scenarioCount": 16,
-    "bookedCount": 11,
-    "bookingRate": 0.688,
+    "scenarioCount": 17,
+    "bookedCount": 12,
+    "bookingRate": 0.706,
     "longHorizonScenarioCount": 3,
-    "behaviorNudgeShareOfRecommendations": 0.922,
-    "timingNudgeShareOfRecommendations": 0.275,
-    "aiRationaleCount": 51,
-    "brandFacingRationaleCount": 51,
+    "behaviorNudgeShareOfRecommendations": 0.923,
+    "timingNudgeShareOfRecommendations": 0.288,
+    "aiRationaleCount": 52,
+    "brandFacingRationaleCount": 52,
     "brandFacingRationaleLeakageCount": 0,
     "talentFacingJobSpecificRationaleCount": 0,
-    "adminApprovalRequiredCount": 51,
+    "adminApprovalRequiredCount": 52,
     "matureAutonomyCandidateCount": 21,
-    "availabilityCheckCount": 51,
+    "availabilityCheckCount": 52,
     "prePresentationTalentCounterCount": 4,
     "minimumWageFloorAppliedCount": 1,
     "minimumWageFloorUnknownCount": 3,
-    "marketCostPriorRecommendationCount": 2,
-    "actorMarketPriorRecommendationCount": 2,
+    "agreementFloorAppliedCount": 1,
+    "marketCostPriorRecommendationCount": 3,
+    "actorMarketPriorRecommendationCount": 3,
+    "actorRateCardRecommendationCount": 1,
     "marketCostPriorReviewCount": 2,
-    "expectedBookingRangeCount": 51,
-    "actualizedRecordCount": 16,
+    "expectedBookingRangeCount": 52,
+    "actualizedRecordCount": 17,
     "actualizedAboveExpectedRangeCount": 4,
     "talentGuidanceCount": 10,
     "budgetHealthWarningCount": 1,
@@ -22756,14 +24029,14 @@
     "holdExpiredWarningCount": 1,
     "adminInclusionOverrideCount": 1,
     "readinessBlockedCount": 1,
-    "quoteAuditEventCount": 259,
-    "averageActualizationLift": 0.1166,
-    "aiHumanReviewShareOfRecommendations": 0.51,
-    "averageAbsoluteShadowDiscretionDelta": 0.0014,
+    "quoteAuditEventCount": 264,
+    "averageActualizationLift": 0.1098,
+    "aiHumanReviewShareOfRecommendations": 0.519,
+    "averageAbsoluteShadowDiscretionDelta": 0.0013,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
       "admin inclusion override": 1,
-      "admin pricing rationale flagged for review": 26,
+      "admin pricing rationale flagged for review": 27,
       "derived talent budget requires review": 4,
       "market cost prior requires actuals review": 2,
       "market-health guardrail": 3,
@@ -22787,17 +24060,17 @@
       "scope calibration required": 3
     },
     "brandPrestigeTierCounts": {
-      "none": 5,
+      "none": 6,
       "tier_1": 7,
       "tier_2": 2,
       "tier_3": 2
     },
-    "cohortCount": 30,
-    "cohortGuidanceCount": 16
+    "cohortCount": 31,
+    "cohortGuidanceCount": 15
   },
   "validation": {
     "status": "pass",
-    "checkedRecommendationCount": 51,
+    "checkedRecommendationCount": 52,
     "failureCount": 0,
     "warningCount": 3,
     "failures": [],

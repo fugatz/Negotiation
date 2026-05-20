@@ -72,6 +72,7 @@ Key invariants:
 - This engine can consume `projectCredibilityScore` when supplied.
 - Client trust and brand desirability should remain separate concepts.
 - Country market-cost priors are admin-only advisory context until paid-rate actuals exist.
+- Published actor rate cards can override country market-cost priors for applicable markets/roles.
 - Admin inclusion override is curation-only, not a rate override.
 - Admin overrides cannot bypass hard eligibility, legal floors, or talent acceptance.
 - Talent must see the project-specific rate during call-for-details or email-offer outreach.
@@ -85,14 +86,15 @@ Latest validated dry-run metrics:
 ```json
 {
   "policy": "phase-3-hold-expiration-v1",
-  "scenarioCount": 16,
-  "bookedCount": 11,
-  "bookingRate": 0.688,
-  "availabilityCheckCount": 51,
-  "adminApprovalRequiredCount": 51,
+  "scenarioCount": 17,
+  "bookedCount": 12,
+  "bookingRate": 0.706,
+  "availabilityCheckCount": 52,
+  "adminApprovalRequiredCount": 52,
   "adminInclusionOverrideCount": 1,
-  "marketCostPriorRecommendationCount": 2,
-  "actorMarketPriorRecommendationCount": 2,
+  "marketCostPriorRecommendationCount": 3,
+  "actorMarketPriorRecommendationCount": 3,
+  "actorRateCardRecommendationCount": 1,
   "brandFacingRationaleLeakageCount": 0,
   "talentFacingJobSpecificRationaleCount": 0,
   "validationFailures": 0,
@@ -114,6 +116,7 @@ Recent simulator additions:
 - Main-site `clientTrustScore` and `clientTrustTier` consumption.
 - Call-for-details or email-offer outreach channel.
 - European cost-of-living fixture for France/Bulgaria actor market-prior smoke tests.
+- UK PACT/FAA published actor rate-card fixture and background actor smoke test.
 
 ## Review Prompt
 
@@ -158,14 +161,15 @@ NEGOTIATION ENGINE SUMMARY:
 - Uses country market-cost priors as admin-only advisory context until paid-rate actuals exist.
 
 CURRENT VALIDATION:
-- 16 scenarios.
-- 51 checked recommendations.
+- 17 scenarios.
+- 52 checked recommendations.
 - 0 validation failures.
 - Brand-facing leakage count: 0.
 - Talent-facing job-specific pricing rationales: 0.
 - Admin inclusion override count: 1.
-- Market-cost prior recommendation count: 2.
-- Actor market-prior recommendation count: 2.
+- Market-cost prior recommendation count: 3.
+- Actor market-prior recommendation count: 3.
+- Actor rate-card recommendation count: 1.
 - Nullable minimum-wage warnings are expected smoke-test warnings.
 
 REVIEW QUESTIONS:

@@ -133,9 +133,14 @@ def _build_admin_pricing_rationale(
     market_cost = rec.get("budget_context", {}).get("marketCostContext", {})
     actor_market_prior = market_cost.get("actorMarketRatePrior") if market_cost else None
     if actor_market_prior:
-        reasons.append(
-            f"{market_cost['country']} market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."
-        )
+        if actor_market_prior.get("sourceType") == "published_rate_card":
+            reasons.append(
+                f"{market_cost['country']} has a published {actor_market_prior['sourceAgreement']} rate card available for this actor context."
+            )
+        else:
+            reasons.append(
+                f"{market_cost['country']} market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."
+            )
 
     if rec["creative_fit"] >= 0.86 and rec["price_fit"] < 0.8:
         reasons.append(

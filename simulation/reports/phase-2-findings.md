@@ -29,6 +29,8 @@ The current system protects against several core failure modes:
 - project-size context now separates $500k+ large-scale and $1M+ flagship productions
 - European country market-cost priors are available for actor pricing context, with France as the
   current baseline and Bulgaria showing materially lower local rate pressure
+- the UK PACT/FAA background actor rate card is now modeled as a published agreement floor, so it
+  overrides the country cost prior for applicable UK background/supporting-artist work
 - long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
 - missed long-horizon checkpoints release holds and require fresh rate-quoted outreach before reactivation
 - admin-curated inclusion overrides can surface edge-case talent without changing their owned rate
@@ -54,24 +56,26 @@ Policy: `phase-3-hold-expiration-v1`
 | Metric | Result |
 | --- | ---: |
 | Validation status | pass |
-| Scenario count | 16 |
-| Booked scenarios | 11 |
-| Booking rate | 68.8% |
+| Scenario count | 17 |
+| Booked scenarios | 12 |
+| Booking rate | 70.6% |
 | Long-horizon scenarios | 3 |
 | Pending holds | 1 |
 | Confirmation checkpoints | 4 |
 | Hold expirations | 4 |
 | Expired holds | 1 |
-| Availability checks | 51 |
+| Availability checks | 52 |
 | Pre-presentation talent counters | 4 |
-| Admin approval required | 51 |
+| Admin approval required | 52 |
 | Mature autonomy candidates | 21 |
 | Admin inclusion overrides | 1 |
 | Readiness-blocked scenarios | 1 |
-| Quote audit events | 259 |
+| Quote audit events | 264 |
 | Derived talent budget review triggers | 4 |
 | Market-cost prior review triggers | 2 |
-| Actor market-prior recommendations | 2 |
+| Actor market-prior recommendations | 3 |
+| Actor rate-card recommendations | 1 |
+| Published agreement floors applied | 1 |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 3 |
 | Brand-facing leakage count | 0 |
@@ -87,6 +91,7 @@ Policy: `phase-3-hold-expiration-v1`
 | $500k+ Large-Scale Beauty Campaign | booked | Large-scale context creates wider expected ranges and a separate cohort signal. | Healthy: all-in scale affects assumption scrutiny without becoming a budget split. |
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Ingested Mike and Ike Campaign | booked | Real-shaped brief extraction maps to a major all-in CPG campaign; trust is emerging while brand prestige is tier 2. | Healthy: project readiness can allow Outreach & Lock while all-in budget stays separate from talent allocation. |
+| UK PACT/FAA Background Rate Card Smoke Test | booked | Published UK PACT/FAA standard-day rate card creates a GBP 125 agreement floor and GBP expected range. | Healthy: published rate card beats the country-cost prior for applicable UK actor work. |
 | France Featured Actor Market Prior Smoke Test | booked | France is the baseline country; featured actor context produces a 2500 session / 7500 buyout prior for pan-European usage. | Healthy as admin context: prior is advisory and talent-owned rate remains authoritative. |
 | Bulgaria Featured Actor Market Prior Smoke Test | booked | Bulgaria produces about 0.413x France talent-cost prior and about 2.42x local budget leverage. | Healthy as a placeholder: actual paid-rate data should override this prior when Coke actuals arrive. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
@@ -163,7 +168,7 @@ Policy implication:
 
 Each client-presentable recommendation now includes a `quoteLifecycle` with active quote version,
 locked gross quote, input snapshot hash, DFOS handoff contract, and append-only quote audit events.
-The base run produced 259 quote audit events across 51 recommendations.
+The base run produced 264 quote audit events across 52 recommendations.
 
 Policy implication:
 
@@ -187,7 +192,7 @@ Policy implication:
 
 ### 7. AI Rationales Are Separated By Audience
 
-The run generated 51 admin pricing rationales and 51 brand-facing match rationales. Brand-facing leakage
+The run generated 52 admin pricing rationales and 52 brand-facing match rationales. Brand-facing leakage
 count was zero, and talent-facing job-specific rationale count was zero.
 
 Policy implication:
@@ -334,7 +339,7 @@ Recommended revision:
 
 ### Admin Review Load
 
-Launch mode requires admin approval for all 51 recommendations. That is correct for early validation, but
+Launch mode requires admin approval for all 52 recommendations. That is correct for early validation, but
 too heavy for a mature autonomous system.
 
 Why it matters:

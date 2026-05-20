@@ -34,6 +34,7 @@ def project_context(project: dict) -> dict:
         "projectSizeBand": project.get("project_size_band", infer_project_size_band(all_in_budget)),
         "projectType": project.get("project_type", project["usage_scope"]),
         "market": project.get("market", "unknown_market"),
+        "currency": project.get("currency", "USD"),
         "talentClassScope": project.get("talent_class_scope", "production_talent"),
         "marketCostContext": market_cost_context(project),
     }
@@ -139,7 +140,7 @@ def expected_booking_range(project: dict, talent: dict, rec: dict) -> dict:
         "low": low,
         "high": high,
         "expectedClose": quote,
-        "currency": "USD",
+        "currency": project.get("currency", "USD"),
         "rangeWidth": round(width, 3),
         "assumptionsIncluded": pricing_assumptions(project),
         "actualizationTriggers": actualization_triggers(project, talent),

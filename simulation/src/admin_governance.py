@@ -52,7 +52,12 @@ def build_admin_governance(rec: dict) -> dict:
     if rec.get("budget_context", {}).get("talentBudgetMayBeWrong"):
         exception_triggers.append("derived talent budget requires review")
     market_cost = rec.get("budget_context", {}).get("marketCostContext", {})
-    if rec.get("legal_floor", {}).get("talentClass") == "actor" and market_cost.get("adminReviewRequired"):
+    actor_market_prior = market_cost.get("actorMarketRatePrior") or {}
+    if (
+        rec.get("legal_floor", {}).get("talentClass") == "actor"
+        and market_cost.get("adminReviewRequired")
+        and actor_market_prior.get("sourceType") == "cost_of_living_prior"
+    ):
         exception_triggers.append("market cost prior requires actuals review")
 
     return {
