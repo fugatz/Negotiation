@@ -34,6 +34,15 @@ def _actor_rate_cards() -> list[dict]:
         return json.load(handle)
 
 
+@lru_cache(maxsize=1)
+def _paid_rate_actuals() -> list[dict]:
+    path = FIXTURE_DIR / "paid_rate_actuals.json"
+    if not path.exists():
+        return []
+    with path.open() as handle:
+        return json.load(handle)
+
+
 def _project_country_record(project: dict) -> dict | None:
     records_by_slug = _market_fixture()["recordsBySlug"]
     candidates = [
@@ -60,6 +69,13 @@ def _project_country_slug(project: dict) -> str:
         if slug:
             return slug
     return ""
+
+
+def _matches_any(value: object, options: list[object] | None) -> bool:
+    if not options:
+        return True
+    option_slugs = {_slug(option) for option in options}
+    return "any" in option_slugs or _slug(value) in option_slugs
 
 
 def actor_rate_card_context(project: dict) -> dict | None:
@@ -114,6 +130,62 @@ def actor_rate_card_context(project: dict) -> dict | None:
     return None
 
 
+def actor_paid_rate_actual_context(project: dict) -> dict | None:
+    if project.get("talent_class_scope") != "actor":
+        return None
+
+    country_slug = _project_country_slug(project)
+    role = project.get("actor_role_scope")
+    project_type = project.get("project_type")
+    usage_scope = project.get("usage_scope")
+    usage_territory = project.get("usage_territory")
+    usage_term = project.get("usage_term")
+
+    for actual in _paid_rate_actuals():
+        applies_to = actual.get("appliesTo", {})
+        if _slug(actual["country"]) != country_slug:
+            continue
+        if not _matches_any(role, applies_to.get("actorRoles")):
+            continue
+        if not _matches_any(project_type, applies_to.get("projectTypes")):
+            continue
+        if not _matches_any(usage_scope, applies_to.get("usageScopes")):
+            continue
+        if not _matches_any(usage_territory, applies_to.get("usageTerritories")):
+            continue
+        if not _matches_any(usage_term, applies_to.get("usageTerms")):
+            continue
+
+        rates = actual["observedRates"]
+        high_day_rate = float(rates["highDayRate"])
+        buyout_multiplier = float(rates.get("buyoutMultiplier", _buyout_multiplier(project)))
+        estimated_buyout = float(rates.get("buyout", high_day_rate * buyout_multiplier))
+        one_shoot_day_total = float(rates.get("oneShootDayTotal", high_day_rate + estimated_buyout))
+
+        return {
+            "available": True,
+            "id": actual["id"],
+            "country": actual["country"],
+            "market": actual.get("market"),
+            "sourceName": actual["sourceName"],
+            "sourceType": actual.get("sourceType", "manual_paid_rate_actual"),
+            "observedYear": actual.get("observedYear"),
+            "sampleSize": int(actual.get("sampleSize", 1)),
+            "confidence": actual.get("confidence", "directional_paid_actual"),
+            "currency": actual["currency"],
+            "observedHighDayRate": _rounded_amount(high_day_rate),
+            "observedBuyoutMultiplier": buyout_multiplier,
+            "observedBuyout": _rounded_amount(estimated_buyout),
+            "observedOneShootDayTotal": _rounded_amount(one_shoot_day_total),
+            "basis": actual["basis"],
+            "notes": list(actual.get("notes", [])),
+            "rateAuthority": "talent_owned_rate_range",
+            "calibrationAuthority": "paid_rate_actuals",
+            "appliesAutomatically": False,
+        }
+    return None
+
+
 def actor_agreement_floor(project: dict) -> dict | None:
     card = actor_rate_card_context(project)
     if not card:
@@ -160,11 +232,38 @@ def _rate_pressure(prior: float) -> str:
     return "near_baseline"
 
 
-def _actor_market_rate_prior(project: dict, talent_cost_prior: float, rate_card: dict | None = None) -> dict | None:
+def _actor_market_rate_prior(
+    project: dict,
+    talent_cost_prior: float,
+    paid_actual: dict | None = None,
+    rate_card: dict | None = None,
+) -> dict | None:
     if project.get("talent_class_scope") != "actor":
         return None
 
     role = project.get("actor_role_scope") or "featured"
+    if paid_actual:
+        return {
+            "role": role,
+            "sourceType": "paid_rate_actuals",
+            "sourceName": paid_actual["sourceName"],
+            "sourceId": paid_actual["id"],
+            "sourceConfidence": paid_actual["confidence"],
+            "sampleSize": paid_actual["sampleSize"],
+            "observedYear": paid_actual["observedYear"],
+            "referenceCountry": paid_actual["country"],
+            "referenceCurrency": paid_actual["currency"],
+            "estimatedLocalHighDayRate": paid_actual["observedHighDayRate"],
+            "estimatedLocalHighDayRateCurrency": paid_actual["currency"],
+            "buyoutMultiplier": paid_actual["observedBuyoutMultiplier"],
+            "estimatedBuyout": paid_actual["observedBuyout"],
+            "estimatedOneShootDayTotal": paid_actual["observedOneShootDayTotal"],
+            "currencyHandling": "observed_local_currency_rate_no_fx_conversion",
+            "basis": paid_actual["basis"],
+            "calibrationAuthority": "paid_rate_actuals",
+            "rateAuthority": "talent_owned_rate_range",
+        }
+
     if rate_card:
         session_day = round(float(rate_card["standardDayTotalWithHolidayPay"]), 2)
         return {
@@ -230,16 +329,18 @@ def market_cost_context(project: dict) -> dict:
     cost_relative = float(record["costOfLivingIndex"]) / float(baseline["costOfLivingIndex"])
     purchasing_relative = float(record["localPurchasingPowerIndex"]) / float(baseline["localPurchasingPowerIndex"])
     talent_cost_prior = max(0.25, min(cost_relative * purchasing_relative, 1.6))
+    paid_actual = actor_paid_rate_actual_context(project)
     rate_card = actor_rate_card_context(project)
-    actor_market_prior = _actor_market_rate_prior(project, talent_cost_prior, rate_card)
-    prior_needs_review = not rate_card and bool(actor_market_prior)
+    actor_market_prior = _actor_market_rate_prior(project, talent_cost_prior, paid_actual, rate_card)
+    source_type = actor_market_prior.get("sourceType") if actor_market_prior else None
+    prior_needs_review = source_type == "cost_of_living_prior"
 
     return {
         "available": True,
         "source": fixture["source"],
         "sourceFileName": fixture["sourceFileName"],
         "basis": fixture["basis"],
-        "confidence": fixture["confidence"],
+        "confidence": "paid_rate_actuals_available" if paid_actual else fixture["confidence"],
         "appliesAutomatically": bool(fixture["appliesAutomatically"]),
         "actualsOverride": fixture["actualsOverride"],
         "country": record["country"],
@@ -255,11 +356,8 @@ def market_cost_context(project: dict) -> dict:
         "localBudgetLeverageVsBaseline": round(1.0 / talent_cost_prior, 3),
         "expectedLocalRatePressure": _rate_pressure(talent_cost_prior),
         "adminReviewRequired": prior_needs_review,
-        "rateSourcePriority": (
-            "published_actor_rate_card_before_cost_prior"
-            if rate_card
-            else "cost_of_living_prior_only"
-        ),
+        "rateSourcePriority": "paid_rate_actuals_before_published_actor_rate_card_before_cost_prior",
+        "paidRateActual": paid_actual,
         "actorRateCard": rate_card,
         "actorMarketRatePrior": actor_market_prior,
     }

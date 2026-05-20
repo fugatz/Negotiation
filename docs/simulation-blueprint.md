@@ -207,6 +207,7 @@ The simulation should generate these internal values:
 - recommendation lane
 - country market-cost prior state
 - actor market-rate prior state, when role, country, and usage are available
+- paid-rate actual state, when imported observed market rates match the actor context
 - published actor agreement floor state, when a rate card applies
 - talent advocacy uplift state and cap
 

@@ -143,6 +143,10 @@ def _build_admin_pricing_rationale(
             reasons.append(
                 f"{market_cost['country']} has a published {actor_market_prior['sourceAgreement']} rate card available for this actor context."
             )
+        elif actor_market_prior.get("sourceType") == "paid_rate_actuals":
+            reasons.append(
+                f"{market_cost['country']} has paid-rate actual context for this actor role, which overrides the cost-of-living proxy as advisory market evidence."
+            )
         else:
             reasons.append(
                 f"{market_cost['country']} market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."

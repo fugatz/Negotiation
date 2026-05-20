@@ -72,6 +72,7 @@ Key invariants:
 - This engine can consume `projectCredibilityScore` when supplied.
 - Client trust and brand desirability should remain separate concepts.
 - Country market-cost priors are admin-only advisory context until paid-rate actuals exist.
+- Paid-rate actuals can override country market-cost priors as advisory market evidence.
 - Published actor rate cards can override country market-cost priors for applicable markets/roles.
 - Actor recommendations include a bounded internal talent-advocacy uplift because Distinkt represents
   talent and tries to improve the outcome when booking realism allows.
@@ -97,6 +98,8 @@ Latest validated dry-run metrics:
   "marketCostPriorRecommendationCount": 3,
   "actorMarketPriorRecommendationCount": 3,
   "actorRateCardRecommendationCount": 1,
+  "paidRateActualRecommendationCount": 2,
+  "marketCostPriorReviewCount": 0,
   "talentAdvocacyUpliftCount": 5,
   "averageTalentAdvocacyUplift": 0.024,
   "maxTalentAdvocacyUplift": 0.03,
@@ -121,6 +124,7 @@ Recent simulator additions:
 - Main-site `clientTrustScore` and `clientTrustTier` consumption.
 - Call-for-details or email-offer outreach channel.
 - European cost-of-living fixture for France/Bulgaria actor market-prior smoke tests.
+- Paid-rate actual fixture that overrides the cost proxy when actor market context matches.
 - UK PACT/FAA published actor rate-card fixture and background actor smoke test.
 - Bounded actor talent-advocacy uplift, admin-only and never client-visible.
 
@@ -165,6 +169,7 @@ NEGOTIATION ENGINE SUMMARY:
 - Uses admin inclusion overrides only to rescue visibility, not to override rates.
 - Uses readiness gate, quote lifecycle audit, and an ingested Mike and Ike fixture.
 - Uses country market-cost priors as admin-only advisory context until paid-rate actuals exist.
+- Uses paid-rate actuals as higher-priority advisory market evidence when available.
 
 CURRENT VALIDATION:
 - 17 scenarios.
@@ -176,6 +181,8 @@ CURRENT VALIDATION:
 - Market-cost prior recommendation count: 3.
 - Actor market-prior recommendation count: 3.
 - Actor rate-card recommendation count: 1.
+- Paid-rate actual recommendation count: 2.
+- Market-cost prior review count: 0.
 - Talent advocacy uplift count: 5.
 - Nullable minimum-wage warnings are expected smoke-test warnings.
 

@@ -43,7 +43,7 @@ Two above-range records still come from the last-minute automotive stress case, 
 turnaround compression, and overtime stack beyond the expected range. The new $500k+, $1M+, and ingested
 Mike and Ike scenarios stay inside their wider expected ranges while creating separate large-scale,
 flagship, and major CPG cohort signals.
-The new France and Bulgaria featured-actor smoke tests also actualize above their narrow expected ranges
+The France and Bulgaria featured-actor smoke tests also actualize above their narrow expected ranges
 after usage expansion, which is useful because actor buyout assumptions are exactly where country-level
 actuals should start improving the model.
 The new UK PACT/FAA background smoke test books and actualizes inside its GBP expected range, showing
@@ -102,9 +102,9 @@ Current directional signals:
 | Category: background | UK PACT/FAA smoke signal; published agreement floor books inside expected range |
 | Category: beauty | 13.52% average actualization lift, medium-confidence sample |
 | Category: food | 4.45% average actualization lift, medium-confidence sample |
-| Market: Bulgaria | country-prior smoke signal with materially lower rate pressure than France |
+| Market: Bulgaria | paid-rate actual smoke signal with materially lower rate pressure than France |
 | Market: Detroit | 20.08% average actualization lift, medium-confidence sample |
-| Market: France | country-prior baseline smoke signal |
+| Market: France | paid-rate actual baseline smoke signal |
 | Market: United Kingdom | published PACT/FAA rate-card smoke signal |
 | Market: New York | 13.52% average actualization lift, medium-confidence sample |
 | Market: Unknown | 3.06% average actualization lift, medium-confidence sample |

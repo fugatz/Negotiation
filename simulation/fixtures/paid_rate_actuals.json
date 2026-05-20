@@ -1,0 +1,80 @@
+[
+  {
+    "id": "seed_france_featured_pan_european_commercial_2025",
+    "country": "France",
+    "market": "france",
+    "sourceName": "Seed paid-rate actual fixture",
+    "sourceType": "manual_paid_rate_actual",
+    "observedYear": 2025,
+    "sampleSize": 1,
+    "confidence": "directional_paid_actual",
+    "currency": "EUR",
+    "appliesTo": {
+      "talentClass": "actor",
+      "actorRoles": [
+        "featured"
+      ],
+      "projectTypes": [
+        "pan_european_commercial"
+      ],
+      "usageScopes": [
+        "campaign"
+      ],
+      "usageTerritories": [
+        "pan_european"
+      ],
+      "usageTerms": [
+        "12_months"
+      ]
+    },
+    "observedRates": {
+      "highDayRate": 2500,
+      "buyoutMultiplier": 3.0,
+      "oneShootDayTotal": 10000
+    },
+    "basis": "directional featured actor commercial rate pending broader paid-rate actual import",
+    "notes": [
+      "Used as the France baseline until more verified paid-rate actuals are imported.",
+      "Talent-owned rate ranges remain the rate authority."
+    ]
+  },
+  {
+    "id": "seed_bulgaria_featured_pan_european_commercial_2025",
+    "country": "Bulgaria",
+    "market": "bulgaria",
+    "sourceName": "Seed paid-rate actual fixture",
+    "sourceType": "manual_paid_rate_actual",
+    "observedYear": 2025,
+    "sampleSize": 1,
+    "confidence": "directional_paid_actual",
+    "currency": "EUR",
+    "appliesTo": {
+      "talentClass": "actor",
+      "actorRoles": [
+        "featured"
+      ],
+      "projectTypes": [
+        "pan_european_commercial"
+      ],
+      "usageScopes": [
+        "campaign"
+      ],
+      "usageTerritories": [
+        "pan_european"
+      ],
+      "usageTerms": [
+        "12_months"
+      ]
+    },
+    "observedRates": {
+      "highDayRate": 800,
+      "buyoutMultiplier": 3.0,
+      "oneShootDayTotal": 3200
+    },
+    "basis": "directional featured actor commercial rate pending Coke Europe actuals",
+    "notes": [
+      "Overrides the cost-of-living proxy for Bulgaria featured actor context.",
+      "Talent-owned rate ranges remain the rate authority."
+    ]
+  }
+]

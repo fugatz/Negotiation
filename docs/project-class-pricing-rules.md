@@ -277,10 +277,35 @@ For featured actors, the simulator can turn the prior into a rough session fee a
 Those numbers are admin calibration context only. If Coke actuals show Bulgaria featured actors actually
 top out closer to 800 for the day, the paid-rate actual should override the cost-of-living prior.
 
+### Paid-Rate Actual Overrides
+
+Paid-rate actuals are now modeled as their own fixture at
+`simulation/fixtures/paid_rate_actuals.json`. Matching actuals take priority over the country
+cost-of-living proxy for actor market context.
+
+Initial source priority:
+
+1. paid-rate actuals by country, role, project type, usage scope, territory, and term
+2. published actor rate cards, when applicable
+3. country cost-of-living proxy
+
+This means Coke Europe or similar real paid-rate data can be imported without changing code. The actual
+record supplies observed local day rate, buyout multiplier, one-shoot-day total, currency, sample size,
+and confidence. It still remains advisory:
+
+- it replaces the proxy as market evidence
+- it does not override talent-owned rate ranges
+- it does not move a live quote automatically
+- it remains admin-facing calibration context
+- broader samples should eventually increase confidence and reduce manual review
+
+The seed fixture currently includes directional France and Bulgaria featured commercial examples so the
+shape is ready for verified paid-rate imports.
+
 ### Published Actor Rate Cards
 
 When a market has a published actor rate card for the relevant role and work pattern, that rate card
-should take priority over the country cost-of-living prior.
+should take priority over the country cost-of-living prior when no matching paid-rate actual exists.
 
 The first modeled example is the 2026 UK PACT/FAA background/supporting-artist card from the user-provided
 PDF. For a standard day / continuous working day, the simulator uses:

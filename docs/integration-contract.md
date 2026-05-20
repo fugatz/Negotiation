@@ -92,6 +92,7 @@ manual curation, or human-confirmed scope details not yet structured.
 - exclusivity: category, term, territory, competitor conflict scope
 - buyout versus day-rate structure
 - optional market-cost prior context or a country key the pricing engine can resolve
+- optional paid-rate actuals by country, role, project type, usage scope, territory, and term
 - optional published actor rate-card id or source document for market/role-specific floors
 - optional actor talent-advocacy policy override, if admin has approved a different uplift cap
 - union status and applicable jurisdiction

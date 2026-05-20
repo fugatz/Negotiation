@@ -380,6 +380,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     market_cost_prior_count = 0
     actor_market_prior_count = 0
     actor_rate_card_count = 0
+    paid_rate_actual_count = 0
     market_cost_prior_review_count = 0
     agreement_floor_applied_count = 0
     talent_advocacy_count = 0
@@ -435,6 +436,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 actor_market_prior_count += 1
             if market_cost_context.get("actorRateCard"):
                 actor_rate_card_count += 1
+            if market_cost_context.get("paidRateActual"):
+                paid_rate_actual_count += 1
             if market_cost_context.get("adminReviewRequired"):
                 market_cost_prior_review_count += 1
             if rec.get("expectedBookingRange"):
@@ -505,6 +508,7 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "marketCostPriorRecommendationCount": market_cost_prior_count,
         "actorMarketPriorRecommendationCount": actor_market_prior_count,
         "actorRateCardRecommendationCount": actor_rate_card_count,
+        "paidRateActualRecommendationCount": paid_rate_actual_count,
         "marketCostPriorReviewCount": market_cost_prior_review_count,
         "expectedBookingRangeCount": expected_range_count,
         "actualizedRecordCount": actualized_record_count,

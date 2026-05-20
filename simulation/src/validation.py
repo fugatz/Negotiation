@@ -443,11 +443,14 @@ def validate_report(report: dict) -> dict:
             market_cost = budget_context.get("marketCostContext", {})
             if market_cost.get("available"):
                 _check(
-                    market_cost.get("confidence") == "cost_of_living_prior_only",
+                    market_cost.get("confidence") in {
+                        "cost_of_living_prior_only",
+                        "paid_rate_actuals_available",
+                    },
                     failures,
                     "market_cost_confidence_invalid",
                     context,
-                    "country market-cost context should remain marked as a cost-of-living prior until actuals exist",
+                    "country market-cost context should identify either cost-prior-only or paid-actuals-available confidence",
                 )
                 _check(
                     market_cost.get("appliesAutomatically") is False,
@@ -468,11 +471,15 @@ def validate_report(report: dict) -> dict:
                     if actor_market_prior:
                         source_type = actor_market_prior.get("sourceType")
                         _check(
-                            source_type in {"cost_of_living_prior", "published_rate_card"},
+                            source_type in {
+                                "cost_of_living_prior",
+                                "paid_rate_actuals",
+                                "published_rate_card",
+                            },
                             failures,
                             "actor_market_prior_source_invalid",
                             context,
-                            "actor market-rate priors should identify whether they come from a cost prior or published card",
+                            "actor market-rate priors should identify whether they come from paid actuals, a cost prior, or a published card",
                         )
                         if source_type == "cost_of_living_prior":
                             _check(
@@ -482,6 +489,30 @@ def validate_report(report: dict) -> dict:
                                 context,
                                 "actor country market-cost priors should require actuals review before autonomy",
                             )
+                        if source_type == "paid_rate_actuals":
+                            paid_actual = market_cost.get("paidRateActual")
+                            _check(
+                                paid_actual is not None,
+                                failures,
+                                "paid_rate_actual_context_missing",
+                                context,
+                                "paid-rate actual source should include the matched actual record context",
+                            )
+                            if paid_actual:
+                                _check(
+                                    paid_actual.get("appliesAutomatically") is False,
+                                    failures,
+                                    "paid_rate_actual_applies_automatically",
+                                    context,
+                                    "paid-rate actuals should override the proxy as advisory context, not automatic live pricing",
+                                )
+                                _check(
+                                    paid_actual.get("rateAuthority") == "talent_owned_rate_range",
+                                    failures,
+                                    "paid_rate_actual_rate_authority_invalid",
+                                    context,
+                                    "paid-rate actuals must not override talent-owned rate authority",
+                                )
                         _check(
                             actor_market_prior.get("rateAuthority") == "talent_owned_rate_range",
                             failures,
@@ -490,11 +521,12 @@ def validate_report(report: dict) -> dict:
                             "actor market-rate priors must remain guidance and not override talent-owned rates",
                         )
                         _check(
-                            actor_market_prior.get("calibrationAuthority") in {"advisory_prior", "published_rate_card"},
+                            actor_market_prior.get("calibrationAuthority")
+                            in {"advisory_prior", "paid_rate_actuals", "published_rate_card"},
                             failures,
                             "actor_market_prior_calibration_authority_invalid",
                             context,
-                            "actor market-rate priors should remain advisory or cite a published rate card",
+                            "actor market-rate priors should remain advisory, cite paid actuals, or cite a published rate card",
                         )
             _check(
                 availability_check.get("proposedRange") is not None,

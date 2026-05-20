@@ -38,6 +38,8 @@ prestige as a separate desirability signal.
 The simulator also now consumes the user-provided European country cost-of-living table as an
 admin-only market-cost prior for actor pricing context. France is the baseline; Bulgaria now stress-tests
 lower local rate pressure and stronger local budget leverage.
+Paid-rate actual fixtures now sit above the cost proxy in source priority, so matching France/Bulgaria
+featured actor records override the cost-of-living estimate while remaining advisory.
 For UK background/supporting-artist work, a published PACT/FAA rate card now takes precedence over the
 country cost prior and supplies the agreement floor.
 Actor recommendations also now include a bounded Distinkt talent-advocacy uplift, which is admin-only,
@@ -66,20 +68,21 @@ All other config inherits from the base policy.
 | Validation | pass | pass | No policy validity regressions. |
 | Scenarios | 17 | 17 | Same fixture set, now including ingested Mike and Ike, UK PACT/FAA, and France/Bulgaria actor market-prior smoke tests. |
 | Booked scenarios | 12 | 12 | Stricter ranking did not reduce booking count. |
-| Booking rate | 70.6% | 70.6% | Ingested CPG, country-prior actor, and UK rate-card smoke tests book cleanly; scope calibration and missed holds still restrain conversion. |
+| Booking rate | 70.6% | 70.6% | Ingested CPG, paid-actual actor, and UK rate-card smoke tests book cleanly; scope calibration and missed holds still restrain conversion. |
 | Availability checks | 52 | 52 | Readiness gate blocks the exploratory low-credibility project before outreach. |
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
 | Talent-facing job-specific rationales | 0 | 0 | No talent pricing-rationale leakage. |
-| Human review share | 54.9% | 56.9% | Stricter policy increases review share slightly. |
+| Human review share | 51.9% | 53.8% | Stricter policy increases review share slightly. |
 | Mature autonomy candidates | 21 | 21 | No autonomy readiness gain yet. |
 | Admin inclusion overrides | 1 | 1 | Manual curation is policy-stable across variants. |
 | Readiness-blocked scenarios | 1 | 1 | Low-readiness project does not enter binding Outreach & Lock. |
 | Quote audit events | 264 | 264 | Every client-presentable recommendation has quote lifecycle audit events. |
 | Derived talent budget review triggers | 4 | 4 | Ingested all-in budget estimate stays admin-reviewed. |
-| Market-cost prior review triggers | 2 | 2 | Country priors remain advisory until paid-rate actuals exist. |
+| Market-cost prior review triggers | 0 | 0 | France/Bulgaria actor contexts now match paid-rate actual fixtures instead of cost-proxy-only priors. |
 | Actor market-prior recommendations | 3 | 3 | UK, France, and Bulgaria actor smoke tests carry role/country context. |
 | Actor rate-card recommendations | 1 | 1 | UK PACT/FAA supplies a published agreement floor and GBP range. |
+| Paid-rate actual recommendations | 2 | 2 | France and Bulgaria featured actor contexts use paid actuals as advisory market evidence. |
 | Talent advocacy uplift count | 5 | 5 | Actor recommendations receive a small explicit representation uplift. |
 | Average talent advocacy uplift | 2.4% | 2.4% | Background uses 2%; featured uses 3%. |
 | Max talent advocacy uplift | 3.0% | 3.0% | Current fixture set does not include supporting/lead actor roles yet. |
@@ -91,7 +94,7 @@ All other config inherits from the base policy.
 | Scope-calibration outcomes | 3 | 3 | Prestige, readiness, and compliance-floor cases require budget/scope recalibration. |
 | Race-to-bottom flags in traced recs | 3 | 2 | Stricter penalties demote at least one flagged candidate out of traced slate. |
 | Market-health guardrail triggers | 3 | 2 | Fewer flagged recs reach reviewed recommendation surfaces. |
-| Outside-budget triggers | 15 | 15 | Budget mismatch is unchanged. |
+| Outside-budget triggers | 13 | 13 | Budget mismatch is unchanged for the same structurally hard cases. |
 | Max shadow AI discretion | 1.0% | 1.0% | AI discretion remains capped and shadow-only. |
 
 ## Client Trust And Prestige Inputs
@@ -177,9 +180,9 @@ The ingested Mike and Ike fixture confirms that a real-shaped extraction payload
 simulation while preserving the critical distinction between all-in project budget and talent-specific
 quote capacity.
 The UK fixture confirms that published rate cards can override country-cost priors for applicable actor
-work, while the France/Bulgaria fixtures confirm that fallback market-cost priors can be attached without
-becoming live rate authority or surfacing to brands/talent. All three actor market fixtures now carry the
-bounded talent-advocacy posture before rate-quoted outreach.
+work, while the France/Bulgaria fixtures confirm that paid-rate actuals can replace the fallback proxy
+without becoming live rate authority or surfacing to brands/talent. All three actor market fixtures now
+carry the bounded talent-advocacy posture before rate-quoted outreach.
 
 Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
 That candidate appears in the admin override slate at a locked talent-approved quote, remains outside

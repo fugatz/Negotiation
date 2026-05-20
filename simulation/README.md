@@ -67,6 +67,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - validation checks for rationale leakage, approval state, discretion caps, behavior caps, and timing rules
 - nullable local minimum wage smoke checks for actor legal floors
 - user-provided European cost-of-living fixture for provisional country market-cost priors
+- paid-rate actual fixture that can override the cost-of-living proxy for matching actor contexts
 - featured-actor country prior smoke scenarios for France and Bulgaria
 - UK PACT/FAA published actor rate-card fixture for background/supporting-artist work
 - bounded Distinkt talent-advocacy uplift for actor recommendations
