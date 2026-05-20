@@ -238,6 +238,45 @@ Actor pricing should not reuse production-talent floor and ceiling logic. Actors
 floors that are lower than commercial value, and their ceiling can expand significantly with usage,
 prominence, exclusivity, and brand reach.
 
+### Country Market-Cost Priors
+
+Until Distinkt has enough paid-rate actuals by market, country-level pricing should use a provisional
+market-cost prior. The current simulation fixture stores the user-provided European cost-of-living table
+in `simulation/fixtures/market_cost_indexes.json` and uses France as the baseline because the first
+directional actor example was a featured actor in France at about 2500 EUR for the day.
+
+The prior is intentionally advisory:
+
+- it does not override talent-owned rate ranges
+- it does not override union, wage, or legal floors
+- it does not move a live quote automatically
+- it should trigger admin review until paid-rate actuals exist
+- it should be hidden from brand-facing and talent-facing explanation surfaces
+
+Current actor prior formula:
+
+```text
+talent_cost_prior_vs_france =
+  (country_cost_of_living_index / france_cost_of_living_index)
+  * (country_local_purchasing_power_index / france_local_purchasing_power_index)
+```
+
+The formula is capped and labeled `cost_of_living_prior_only`. It is a bridge, not a truth source. For
+example, Bulgaria currently produces a prior of about 0.413 versus France and a local budget leverage
+signal of about 2.42x. That is directionally close to the idea that a production dollar can go much
+further in Bulgaria, but it still may overstate or understate actual talent cost until real paid rates
+arrive.
+
+For featured actors, the simulator can turn the prior into a rough session fee and buyout context:
+
+- reference high featured day rate in France: 2500 EUR
+- pan-European 12 month usage buyout multiplier: 3.0x
+- France prior one-shoot-day total: 2500 + 7500 buyout = 10000
+- Bulgaria cost-prior one-shoot-day total: about 1050 + 3150 buyout = 4200
+
+Those numbers are admin calibration context only. If Coke actuals show Bulgaria featured actors actually
+top out closer to 800 for the day, the paid-rate actual should override the cost-of-living prior.
+
 ## Actor Role Hierarchy
 
 Actor pricing needs role-weighted logic. A lead budget does not imply supporting cast share the same
@@ -433,10 +472,14 @@ Project:
 - `project_size_band`
 - `project_type`
 - `talent_class_scope`: actor, production_talent, or mixed
+- `actor_role_scope`: nullable, for actor role-targeted projects
 - `assumptions`
 - `project_readiness_tier`
 - `project_credibility_score`
 - `expected_actualization_events`
+- `shoot_country`
+- `local_talent_market`
+- `usage_territory`
 - `usage_term`
 - `paid_media`
 - `exclusivity`

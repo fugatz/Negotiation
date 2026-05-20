@@ -71,6 +71,7 @@ Key invariants:
 - This engine does not own `clientTrustScore` or `clientTrustTier`; it consumes them from the main site.
 - This engine can consume `projectCredibilityScore` when supplied.
 - Client trust and brand desirability should remain separate concepts.
+- Country market-cost priors are admin-only advisory context until paid-rate actuals exist.
 - Admin inclusion override is curation-only, not a rate override.
 - Admin overrides cannot bypass hard eligibility, legal floors, or talent acceptance.
 - Talent must see the project-specific rate during call-for-details or email-offer outreach.
@@ -84,12 +85,14 @@ Latest validated dry-run metrics:
 ```json
 {
   "policy": "phase-3-hold-expiration-v1",
-  "scenarioCount": 14,
-  "bookedCount": 9,
-  "bookingRate": 0.643,
+  "scenarioCount": 16,
+  "bookedCount": 11,
+  "bookingRate": 0.688,
   "availabilityCheckCount": 51,
   "adminApprovalRequiredCount": 51,
   "adminInclusionOverrideCount": 1,
+  "marketCostPriorRecommendationCount": 2,
+  "actorMarketPriorRecommendationCount": 2,
   "brandFacingRationaleLeakageCount": 0,
   "talentFacingJobSpecificRationaleCount": 0,
   "validationFailures": 0,
@@ -110,6 +113,7 @@ Recent simulator additions:
 - Admin inclusion override slate for high-profile/manual-review talent.
 - Main-site `clientTrustScore` and `clientTrustTier` consumption.
 - Call-for-details or email-offer outreach channel.
+- European cost-of-living fixture for France/Bulgaria actor market-prior smoke tests.
 
 ## Review Prompt
 
@@ -151,14 +155,17 @@ NEGOTIATION ENGINE SUMMARY:
 - Uses outcome learning as optional guidance only.
 - Uses admin inclusion overrides only to rescue visibility, not to override rates.
 - Uses readiness gate, quote lifecycle audit, and an ingested Mike and Ike fixture.
+- Uses country market-cost priors as admin-only advisory context until paid-rate actuals exist.
 
 CURRENT VALIDATION:
-- 14 scenarios.
+- 16 scenarios.
 - 51 checked recommendations.
 - 0 validation failures.
 - Brand-facing leakage count: 0.
 - Talent-facing job-specific pricing rationales: 0.
 - Admin inclusion override count: 1.
+- Market-cost prior recommendation count: 2.
+- Actor market-prior recommendation count: 2.
 - Nullable minimum-wage warnings are expected smoke-test warnings.
 
 REVIEW QUESTIONS:
@@ -167,11 +174,12 @@ REVIEW QUESTIONS:
 3. Does the current treatment of clientTrustScore/clientTrustTier align with main-site AI rules?
 4. Does projectCredibilityScore need stronger handling before pricing runs?
 5. Should brand desirability / strategic value be a separate upstream score from client trust?
-6. Are there risks in showing top-tier talent to premium/verified brands before project details are complete?
-7. Does the call-for-details or email-offer outreach model fit current Distinkt operations?
-8. What should trigger curator/admin review before any client-facing slate?
-9. What should the main-site AI never say in brand-facing or talent-facing language?
-10. What are the highest-risk integration mistakes to avoid?
+6. Should country market-cost priors be passed from the main site, loaded by the engine, or both?
+7. Are there risks in showing top-tier talent to premium/verified brands before project details are complete?
+8. Does the call-for-details or email-offer outreach model fit current Distinkt operations?
+9. What should trigger curator/admin review before any client-facing slate?
+10. What should the main-site AI never say in brand-facing or talent-facing language?
+11. What are the highest-risk integration mistakes to avoid?
 
 Respond with JSON only. No markdown, no prose outside the JSON.
 

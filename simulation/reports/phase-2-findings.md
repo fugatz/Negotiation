@@ -1,6 +1,6 @@
 # Phase 3 Findings Report
 
-Generated from dry runs on May 19, 2026.
+Generated from dry runs on May 20, 2026.
 
 Source commands:
 
@@ -27,6 +27,8 @@ The current system protects against several core failure modes:
 - client-visible recommendations now carry active quote versions and quote audit events
 - brand prestige/desirability is tracked separately from client trust
 - project-size context now separates $500k+ large-scale and $1M+ flagship productions
+- European country market-cost priors are available for actor pricing context, with France as the
+  current baseline and Bulgaria showing materially lower local rate pressure
 - long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
 - missed long-horizon checkpoints release holds and require fresh rate-quoted outreach before reactivation
 - admin-curated inclusion overrides can surface edge-case talent without changing their owned rate
@@ -52,9 +54,9 @@ Policy: `phase-3-hold-expiration-v1`
 | Metric | Result |
 | --- | ---: |
 | Validation status | pass |
-| Scenario count | 14 |
-| Booked scenarios | 9 |
-| Booking rate | 64.3% |
+| Scenario count | 16 |
+| Booked scenarios | 11 |
+| Booking rate | 68.8% |
 | Long-horizon scenarios | 3 |
 | Pending holds | 1 |
 | Confirmation checkpoints | 4 |
@@ -68,6 +70,8 @@ Policy: `phase-3-hold-expiration-v1`
 | Readiness-blocked scenarios | 1 |
 | Quote audit events | 259 |
 | Derived talent budget review triggers | 4 |
+| Market-cost prior review triggers | 2 |
+| Actor market-prior recommendations | 2 |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 3 |
 | Brand-facing leakage count | 0 |
@@ -83,6 +87,8 @@ Policy: `phase-3-hold-expiration-v1`
 | $500k+ Large-Scale Beauty Campaign | booked | Large-scale context creates wider expected ranges and a separate cohort signal. | Healthy: all-in scale affects assumption scrutiny without becoming a budget split. |
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Ingested Mike and Ike Campaign | booked | Real-shaped brief extraction maps to a major all-in CPG campaign; trust is emerging while brand prestige is tier 2. | Healthy: project readiness can allow Outreach & Lock while all-in budget stays separate from talent allocation. |
+| France Featured Actor Market Prior Smoke Test | booked | France is the baseline country; featured actor context produces a 2500 session / 7500 buyout prior for pan-European usage. | Healthy as admin context: prior is advisory and talent-owned rate remains authoritative. |
+| Bulgaria Featured Actor Market Prior Smoke Test | booked | Bulgaria produces about 0.413x France talent-cost prior and about 2.42x local budget leverage. | Healthy as a placeholder: actual paid-rate data should override this prior when Coke actuals arrive. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
 | Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
 | Exploratory Food Research Brief | needs scope calibration | Project readiness score is 38, so binding Outreach & Lock is blocked before talent outreach. | Healthy: vague long-horizon projects should calibrate scope before consuming talent attention. |

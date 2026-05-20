@@ -17,7 +17,16 @@
         "projectSizeBand": "small",
         "projectType": "social_content",
         "market": "los_angeles",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "los_angeles",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 45,
@@ -74,6 +83,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -206,7 +227,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__reliable_generalist_dp__v1",
@@ -216,7 +246,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5daa2ddbe3f6279a",
+            "inputSnapshotHash": "4af574dee364b7cd",
             "lockedGrossQuote": 6800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -495,7 +525,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__idle_high_quality_director__v1",
@@ -505,7 +544,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "8b8bfa396d42e81f",
+            "inputSnapshotHash": "a2eba168d20563f8",
             "lockedGrossQuote": 12000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -786,7 +825,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__premium_food_director__v1",
@@ -796,7 +844,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f944e3890fb6411e",
+            "inputSnapshotHash": "9d2d815adb62f7c7",
             "lockedGrossQuote": 21600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1084,7 +1132,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_firm_food_social__volatile_rep_managed_talent__v1",
@@ -1094,7 +1151,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "b102a8343a7d3c93",
+            "inputSnapshotHash": "5ab059fe5a8dd92f",
             "lockedGrossQuote": 12800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -1558,7 +1615,16 @@
         "projectSizeBand": "premium",
         "projectType": "national_campaign",
         "market": "new_york",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "new_york",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 80,
@@ -1617,6 +1683,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -1749,7 +1827,16 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__emerging_beauty_photographer__v1",
@@ -1759,7 +1846,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "0c052cba008e1eff",
+            "inputSnapshotHash": "aa8ad6c92fe7fa97",
             "lockedGrossQuote": 8900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2041,7 +2128,16 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__idle_high_quality_director__v1",
@@ -2051,7 +2147,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7479b55022657dbe",
+            "inputSnapshotHash": "c5a94cc5e0b599d4",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2331,7 +2427,16 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__luxury_fashion_editor__v1",
@@ -2341,7 +2446,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3d81e9b727c9cc48",
+            "inputSnapshotHash": "da71564aa6feb734",
             "lockedGrossQuote": 14000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2628,7 +2733,16 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__reliable_generalist_dp__v1",
@@ -2638,7 +2752,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "ac1d6bd94c37e4b1",
+            "inputSnapshotHash": "2de4ca5073aaa246",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -2930,7 +3044,16 @@
             "projectSizeBand": "premium",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flexible_beauty_national__premium_food_director__v1",
@@ -2940,7 +3063,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f68c9f01ea81748a",
+            "inputSnapshotHash": "2007a829a305f7e1",
             "lockedGrossQuote": 20900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -3568,7 +3691,16 @@
         "projectSizeBand": "large_scale",
         "projectType": "national_campaign",
         "market": "new_york",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "new_york",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 95,
@@ -3627,6 +3759,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -3762,7 +3906,16 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__emerging_beauty_photographer__v1",
@@ -3772,7 +3925,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "c0d360a441e17d47",
+            "inputSnapshotHash": "942af2ecdb6cf4e9",
             "lockedGrossQuote": 8800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4057,7 +4210,16 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__idle_high_quality_director__v1",
@@ -4067,7 +4229,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "12048e8d5b6ab257",
+            "inputSnapshotHash": "978ccb09779a9982",
             "lockedGrossQuote": 13300,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4350,7 +4512,16 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__luxury_fashion_editor__v1",
@@ -4360,7 +4531,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "8617bdbd5888b74f",
+            "inputSnapshotHash": "aa850ea9a5bca9ef",
             "lockedGrossQuote": 13900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -4650,7 +4821,16 @@
             "projectSizeBand": "large_scale",
             "projectType": "national_campaign",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_large_scale_beauty_campaign__reliable_generalist_dp__v1",
@@ -4660,7 +4840,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "b534a2d4933d8064",
+            "inputSnapshotHash": "6561bdebae480b28",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5155,7 +5335,16 @@
         "projectSizeBand": "flagship",
         "projectType": "commercial_campaign",
         "market": "detroit",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "detroit",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 95,
@@ -5214,6 +5403,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -5349,7 +5550,16 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__automotive_specialist__v1",
@@ -5359,7 +5569,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "49483a8e4dcfa720",
+            "inputSnapshotHash": "69dcc66042a98433",
             "lockedGrossQuote": 20000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5639,7 +5849,16 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__reliable_generalist_dp__v1",
@@ -5649,7 +5868,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "387149361576c087",
+            "inputSnapshotHash": "23f8061738a1eb4f",
             "lockedGrossQuote": 7500,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -5930,7 +6149,16 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__idle_high_quality_director__v1",
@@ -5940,7 +6168,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7019003624920e69",
+            "inputSnapshotHash": "682bbbc6bb74b131",
             "lockedGrossQuote": 12900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6221,7 +6449,16 @@
             "projectSizeBand": "flagship",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_flagship_automotive_launch__premium_food_director__v1",
@@ -6231,7 +6468,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7eb176cb7a30c6d1",
+            "inputSnapshotHash": "f6e15768a36ca044",
             "lockedGrossQuote": 20700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -6726,7 +6963,16 @@
         "projectSizeBand": "premium",
         "projectType": "commercial_campaign",
         "market": "detroit",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "detroit",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 70,
@@ -6805,6 +7051,20 @@
           "talent": "Featured Actor Unknown Wage",
           "reasons": [
             "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class",
+            "below talent minimum notice window"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class",
+            "below talent minimum notice window"
           ]
         }
       ],
@@ -6935,7 +7195,16 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__reliable_generalist_dp__v1",
@@ -6945,7 +7214,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "cf741082d7a581ea",
+            "inputSnapshotHash": "dc8234131a77bd16",
             "lockedGrossQuote": 7900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7223,7 +7492,16 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__idle_high_quality_director__v1",
@@ -7233,7 +7511,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5a107d533812eee2",
+            "inputSnapshotHash": "7093ba61a7cd6812",
             "lockedGrossQuote": 13700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7511,7 +7789,16 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__emerging_beauty_photographer__v1",
@@ -7521,7 +7808,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "90741f79bec87ab7",
+            "inputSnapshotHash": "5c0669bfde10be16",
             "lockedGrossQuote": 8900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -7798,7 +8085,16 @@
             "projectSizeBand": "premium",
             "projectType": "commercial_campaign",
             "market": "detroit",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "detroit",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_last_minute_automotive__low_rate_fast_responder__v1",
@@ -7808,7 +8104,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "9be31c4c5f53853e",
+            "inputSnapshotHash": "0a43987a29236ee0",
             "lockedGrossQuote": 4600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8305,7 +8601,16 @@
         "projectSizeBand": "low_cash",
         "projectType": "editorial_prestige",
         "market": "new_york",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "new_york",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 5,
@@ -8382,6 +8687,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -8514,7 +8831,16 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__luxury_fashion_editor__v1",
@@ -8524,7 +8850,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "46de70d523072356",
+            "inputSnapshotHash": "bcd4c77bf03345cf",
             "lockedGrossQuote": 12400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -8809,7 +9135,16 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__idle_high_quality_director__v1",
@@ -8819,7 +9154,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "22346647b22a55f1",
+            "inputSnapshotHash": "cf77f3d86f54f8dd",
             "lockedGrossQuote": 10800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9100,7 +9435,16 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__emerging_beauty_photographer__v1",
@@ -9110,7 +9454,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a98d187b7ceb3207",
+            "inputSnapshotHash": "c26268c312406a42",
             "lockedGrossQuote": 7100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9390,7 +9734,16 @@
             "projectSizeBand": "low_cash",
             "projectType": "editorial_prestige",
             "market": "new_york",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "new_york",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_prestige_editorial_low_cash__reliable_generalist_dp__v1",
@@ -9400,7 +9753,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "328d660502a8c976",
+            "inputSnapshotHash": "a9111622a865e542",
             "lockedGrossQuote": 6200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -9896,7 +10249,16 @@
         "projectSizeBand": "small",
         "projectType": "exploratory_research",
         "market": "los_angeles",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "los_angeles",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 5,
@@ -9984,7 +10346,16 @@
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "los_angeles",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 95,
@@ -10043,6 +10414,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -10175,7 +10558,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__emerging_beauty_photographer__v1",
@@ -10185,7 +10577,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "075485e2008ce2d7",
+            "inputSnapshotHash": "0b68748f2811cf4f",
             "lockedGrossQuote": 8700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10473,7 +10865,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__idle_high_quality_director__v1",
@@ -10483,7 +10884,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "a334cb497335dd0c",
+            "inputSnapshotHash": "67fe30c6629cae6f",
             "lockedGrossQuote": 13200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -10769,7 +11170,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__reliable_generalist_dp__v1",
@@ -10779,7 +11189,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e80f5e4ee144f6c2",
+            "inputSnapshotHash": "054f2bd975760d29",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11063,7 +11473,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_beauty_campaign__luxury_fashion_editor__v1",
@@ -11073,7 +11492,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "dfc3b9bcc3612707",
+            "inputSnapshotHash": "836b7674d14edce3",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -11598,7 +12017,16 @@
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "los_angeles",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 70,
@@ -11657,6 +12085,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -11789,7 +12229,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__reliable_generalist_dp__v1",
@@ -11799,7 +12248,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "7c414f2a9c50efc7",
+            "inputSnapshotHash": "36f3e4c2347aa629",
             "lockedGrossQuote": 7200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12075,7 +12524,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__premium_food_director__v1",
@@ -12085,7 +12543,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "548acf7bd26729a5",
+            "inputSnapshotHash": "3a97f49411fbeef1",
             "lockedGrossQuote": 22800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12370,7 +12828,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__idle_high_quality_director__v1",
@@ -12380,7 +12847,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "dae0d99697c0a5e9",
+            "inputSnapshotHash": "ec941ef9dc1bd41e",
             "lockedGrossQuote": 12600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12660,7 +13127,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__volatile_rep_managed_talent__v1",
@@ -12670,7 +13146,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3929b370dd51524a",
+            "inputSnapshotHash": "d87554bf69824802",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -12957,7 +13433,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_bad_faith_repricing_test__volatile_rep_managed_talent__v1",
@@ -12967,7 +13452,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3929b370dd51524a",
+            "inputSnapshotHash": "d87554bf69824802",
             "lockedGrossQuote": 13400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -13570,7 +14055,16 @@
         "projectSizeBand": "mid",
         "projectType": "commercial_campaign",
         "market": "los_angeles",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "los_angeles",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 95,
@@ -13629,6 +14123,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -13761,7 +14267,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__emerging_beauty_photographer__v1",
@@ -13771,7 +14286,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "94c927c2708a2fe1",
+            "inputSnapshotHash": "0e4f3d3c28bffc44",
             "lockedGrossQuote": 8700,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14059,7 +14574,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__idle_high_quality_director__v1",
@@ -14069,7 +14593,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "27e366c295e2573b",
+            "inputSnapshotHash": "68cc502ca0c0721b",
             "lockedGrossQuote": 13200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14355,7 +14879,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__reliable_generalist_dp__v1",
@@ -14365,7 +14898,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "259c5f25de632fa1",
+            "inputSnapshotHash": "e2971c7b13b0bc45",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -14649,7 +15182,16 @@
             "projectSizeBand": "mid",
             "projectType": "commercial_campaign",
             "market": "los_angeles",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_long_horizon_missed_checkpoint__luxury_fashion_editor__v1",
@@ -14659,7 +15201,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "b9e838a2d51e7474",
+            "inputSnapshotHash": "732a48b445517694",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15194,7 +15736,16 @@
         "projectSizeBand": "small",
         "projectType": "social_content",
         "market": "austin",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "austin",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 45,
@@ -15251,6 +15802,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -15383,7 +15946,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "austin",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__reliable_generalist_dp__v1",
@@ -15393,7 +15965,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "910c88f8a43afd93",
+            "inputSnapshotHash": "3bb6e5ff7bac4cd5",
             "lockedGrossQuote": 6800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15673,7 +16245,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "austin",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__low_rate_fast_responder__v1",
@@ -15683,7 +16264,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5aeb47b510796131",
+            "inputSnapshotHash": "460fc55eab531151",
             "lockedGrossQuote": 4100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -15963,7 +16544,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "austin",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__idle_high_quality_director__v1",
@@ -15973,7 +16563,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "8d62bb1a7eb282b6",
+            "inputSnapshotHash": "1b27fd9fa930d971",
             "lockedGrossQuote": 12000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16255,7 +16845,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "austin",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__emerging_beauty_photographer__v1",
@@ -16265,7 +16864,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "6d7fde9ec809f9cb",
+            "inputSnapshotHash": "8a1085c50a51eea7",
             "lockedGrossQuote": 7800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -16547,7 +17146,16 @@
             "projectSizeBand": "small",
             "projectType": "social_content",
             "market": "austin",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "austin",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_race_to_bottom_social_test__low_rate_fast_responder__v1",
@@ -16557,7 +17165,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5aeb47b510796131",
+            "inputSnapshotHash": "460fc55eab531151",
             "lockedGrossQuote": 4100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17032,7 +17640,16 @@
         "projectSizeBand": "major",
         "projectType": "commercial_campaign",
         "market": "unknown_market",
-        "talentClassScope": "production_talent"
+        "talentClassScope": "production_talent",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "unknown_market",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 20,
@@ -17091,6 +17708,18 @@
         },
         {
           "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
           "reasons": [
             "outside upstream matched talent class"
           ]
@@ -17241,7 +17870,16 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "unknown_market",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_ingested_mike_and_ike_campaign__premium_food_director__v1",
@@ -17251,7 +17889,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "ec935c823e8b9b11",
+            "inputSnapshotHash": "7ddfa8db3312a701",
             "lockedGrossQuote": 23200,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17553,7 +18191,16 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "unknown_market",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_ingested_mike_and_ike_campaign__idle_high_quality_director__v1",
@@ -17563,7 +18210,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "9756ee1f5522d8b0",
+            "inputSnapshotHash": "4eb0676099fcffcb",
             "lockedGrossQuote": 12900,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -17864,7 +18511,16 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "unknown_market",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_ingested_mike_and_ike_campaign__reliable_generalist_dp__v1",
@@ -17874,7 +18530,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "39cf15560f51c38f",
+            "inputSnapshotHash": "1dc3fc776c4f61c2",
             "lockedGrossQuote": 7400,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -18175,7 +18831,16 @@
             "projectSizeBand": "major",
             "projectType": "commercial_campaign",
             "market": "unknown_market",
-            "talentClassScope": "production_talent"
+            "talentClassScope": "production_talent",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "unknown_market",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_ingested_mike_and_ike_campaign__volatile_rep_managed_talent__v1",
@@ -18185,7 +18850,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "77e34d39da3cf104",
+            "inputSnapshotHash": "6b08096d8dcdb6be",
             "lockedGrossQuote": 13800,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -18679,7 +19344,16 @@
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
         "market": "los_angeles",
-        "talentClassScope": "actor"
+        "talentClassScope": "actor",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "los_angeles",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 45,
@@ -18726,7 +19400,7 @@
       "budgetType": "firm",
       "leadTimeDays": 14,
       "timingHorizon": "last_minute",
-      "eligibleTalentCount": 2,
+      "eligibleTalentCount": 1,
       "excluded": [
         {
           "talent": "Premium Food Tabletop Director",
@@ -18774,6 +19448,24 @@
           "talent": "Low-Rate Fast Responder",
           "reasons": [
             "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside actor role scope"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside actor role scope"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
+          "reasons": [
+            "outside actor role scope"
           ]
         }
       ],
@@ -18901,7 +19593,16 @@
             "projectSizeBand": "low_cash",
             "projectType": "background_casting",
             "market": "los_angeles",
-            "talentClassScope": "actor"
+            "talentClassScope": "actor",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "los_angeles",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_background_extra_minimum_wage_smoke__background_extra_actor__v1",
@@ -18911,7 +19612,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f85bc9949c0d45f9",
+            "inputSnapshotHash": "67ae6695ab9e985f",
             "lockedGrossQuote": 216,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -19069,297 +19770,6 @@
             "matureAutonomyCandidate": false,
             "auditRequired": true
           }
-        },
-        {
-          "talent": "Featured Actor Unknown Wage",
-          "talentClass": "actor",
-          "role": "featured",
-          "candidateSource": "algorithmic",
-          "adminInclusionOverride": null,
-          "lane": "Emerging Value",
-          "quote": 216,
-          "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.678,
-          "creativeFit": 0.846,
-          "priceFit": 0.14,
-          "acceptanceProbability": 0.592,
-          "availabilityCheck": {
-            "talent_id": "featured_actor_unknown_wage",
-            "status": "accepted_at_presented_rate",
-            "outreachChannel": "call_for_details_or_email_offer",
-            "rateSource": "pricing_engine_project_rate",
-            "ratePresentedDuringOutreach": true,
-            "talentVisibleRate": true,
-            "proposedQuote": 216,
-            "proposedRange": {
-              "label": "Expected Booking Range",
-              "low": 216,
-              "high": 233,
-              "expectedClose": 216,
-              "currency": "USD",
-              "rangeWidth": 0.08,
-              "assumptionsIncluded": [
-                "12 hour background day",
-                "non-union actor",
-                "local minimum wage supplied by upstream compliance input"
-              ],
-              "actualizationTriggers": [
-                "exclusivity added",
-                "fitting added",
-                "overtime triggered",
-                "paid media added",
-                "scope materially changes after quote lock",
-                "shoot day added",
-                "union or legal requirement changes",
-                "usage expanded"
-              ],
-              "visibility": "talent-outreach-and-admin"
-            },
-            "committedQuote": 216,
-            "completedBeforeClientPresentation": true,
-            "clientVisible": false,
-            "events": [
-              "talent accepted rate-quoted outreach before presentation"
-            ],
-            "warnings": [],
-            "committedRange": {
-              "label": "Expected Booking Range",
-              "low": 216,
-              "high": 233,
-              "expectedClose": 216,
-              "currency": "USD",
-              "rangeWidth": 0.08,
-              "assumptionsIncluded": [
-                "12 hour background day",
-                "non-union actor",
-                "local minimum wage supplied by upstream compliance input"
-              ],
-              "actualizationTriggers": [
-                "exclusivity added",
-                "fitting added",
-                "overtime triggered",
-                "paid media added",
-                "scope materially changes after quote lock",
-                "shoot day added",
-                "union or legal requirement changes",
-                "usage expanded"
-              ],
-              "visibility": "talent-outreach-and-admin"
-            }
-          },
-          "legalFloor": {
-            "talentClass": "actor",
-            "basis": "local_minimum_wage",
-            "privateWorkingFloor": 100,
-            "localMinimumWageHourly": 18,
-            "localMinimumWageSource": "fixture_city_state_input",
-            "estimatedWorkHours": 12,
-            "minimumWageFloor": 216,
-            "minimumWageStatus": "known",
-            "effectiveFloor": 216,
-            "warnings": []
-          },
-          "expectedBookingRange": {
-            "label": "Expected Booking Range",
-            "low": 216,
-            "high": 233,
-            "expectedClose": 216,
-            "currency": "USD",
-            "rangeWidth": 0.08,
-            "assumptionsIncluded": [
-              "12 hour background day",
-              "non-union actor",
-              "local minimum wage supplied by upstream compliance input"
-            ],
-            "actualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "visibility": "talent-outreach-and-admin"
-          },
-          "budgetContext": {
-            "allInBudget": 5000,
-            "talentBudget": 100,
-            "talentBudgetSource": "stated_or_fixture_talent_budget",
-            "talentBudgetConfidence": "normal",
-            "talentBudgetMayBeWrong": false,
-            "talentBudgetDerivation": null,
-            "projectSizeBand": "low_cash",
-            "projectType": "background_casting",
-            "market": "los_angeles",
-            "talentClassScope": "actor"
-          },
-          "quoteLifecycle": {
-            "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-            "quoteVersion": 1,
-            "activeQuoteVersion": 1,
-            "quoteState": "locked",
-            "sourceOfTruth": "server_authoritative_active_quote",
-            "policyVersion": "phase-3-hold-expiration-v1",
-            "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "e89faefada34d78d",
-            "lockedGrossQuote": 216,
-            "dfosHandoff": {
-              "source": "locked_gross_quote",
-              "lockedGrossQuote": 216,
-              "dfosMayRecalculateQuote": false,
-              "commissionCapHandledDownstream": true,
-              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
-            },
-            "auditEvents": [
-              {
-                "eventType": "quote_generated",
-                "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "pricing_engine",
-                "reasonCode": "computed_project_rate",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "quote_sent_to_talent",
-                "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "main_site",
-                "reasonCode": "outreach_and_lock",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "talent_accepted_quote",
-                "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "talent",
-                "reasonCode": "accepted_project_specific_rate",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "quote_locked",
-                "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "main_site",
-                "reasonCode": "accepted_before_client_visibility",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "quote_presented_to_client",
-                "quoteId": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "main_site",
-                "reasonCode": "client_slate_visible",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              }
-            ]
-          },
-          "marketHealth": {
-            "score": 0.8,
-            "flags": [
-              "specialist_value_protected"
-            ]
-          },
-          "timing": {
-            "horizon": "last_minute",
-            "platformTrustTier": "known",
-            "clientTrustScore": 45,
-            "clientTrustTier": "established",
-            "rateDelta": 0.04,
-            "confidenceDelta": 0.0,
-            "holdPolicy": "short confirmation window",
-            "confirmation": {
-              "required": false,
-              "state": "not_applicable",
-              "checkpointDaysBeforeStart": null,
-              "softHoldExpiresInDays": null,
-              "expiresWithoutConfirmation": false,
-              "firmHoldMinimumConfidence": null,
-              "firmHoldRequires": []
-            },
-            "reason": "under 21 days; platform last-minute urgency premium"
-          },
-          "behavior": {
-            "talentRateDelta": 0.01,
-            "clientRateDelta": 0.03,
-            "combinedBehaviorRateDelta": 0.04,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk",
-            "talentSource": "upstream actor readiness score",
-            "clientSource": "main site clientTrustScore"
-          },
-          "aiRationales": {
-            "adminPricingRationale": {
-              "audience": "admin",
-              "visibility": "admin-only",
-              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-              "reasons": [
-                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
-              ],
-              "discretionDelta": 0.0,
-              "discretionMode": "shadow",
-              "discretionAppliesToLiveQuote": false,
-              "discretionEvidence": "No sufficient similar outcome evidence yet.",
-              "calibrationAuthority": "guidance_only",
-              "rateAuthority": "talent_owned_rate_range",
-              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": true,
-              "leakageWarningsIfSurfaced": [
-                "percentage"
-              ]
-            },
-            "brandFacingRationale": {
-              "audience": "brand",
-              "visibility": "brand-facing",
-              "summary": "Relevant extras background with a clear connection to the brief.",
-              "reasons": [
-                "Relevant extras background with a clear connection to the brief.",
-                "The portfolio shows meaningful experience in this kind of work.",
-                "Production fit is strong across availability, scope, and schedule needs.",
-                "The profile supports a confident path through confirmation."
-              ],
-              "humanReviewRecommended": false,
-              "leakageWarnings": []
-            },
-            "talentFacingRationale": {
-              "audience": "talent",
-              "visibility": "not-generated",
-              "available": false,
-              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
-            }
-          },
-          "adminGovernance": {
-            "mode": "launch_admin_approval",
-            "approvalRequired": true,
-            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
-            "allowedAdminSettings": [
-              "timing thresholds and caps",
-              "behavior nudge caps",
-              "AI discretion mode and cap",
-              "market-health override thresholds",
-              "brand-facing rationale templates",
-              "quote lock exception categories",
-              "long-horizon hold policy settings"
-            ],
-            "maxSmallSettingTweak": 0.02,
-            "reviewReasons": [
-              "Launch mode requires admin approval before client presentation."
-            ],
-            "exceptionTriggers": [
-              "admin pricing rationale flagged for review",
-              "outside stated budget"
-            ],
-            "matureAutonomyCandidate": false,
-            "auditRequired": true
-          }
         }
       ],
       "stressShortlist": [],
@@ -19368,70 +19778,6 @@
       "availabilityChecks": [
         {
           "talent_id": "background_extra_actor",
-          "status": "accepted_at_presented_rate",
-          "outreachChannel": "call_for_details_or_email_offer",
-          "rateSource": "pricing_engine_project_rate",
-          "ratePresentedDuringOutreach": true,
-          "talentVisibleRate": true,
-          "proposedQuote": 216,
-          "proposedRange": {
-            "label": "Expected Booking Range",
-            "low": 216,
-            "high": 233,
-            "expectedClose": 216,
-            "currency": "USD",
-            "rangeWidth": 0.08,
-            "assumptionsIncluded": [
-              "12 hour background day",
-              "non-union actor",
-              "local minimum wage supplied by upstream compliance input"
-            ],
-            "actualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "visibility": "talent-outreach-and-admin"
-          },
-          "committedQuote": 216,
-          "completedBeforeClientPresentation": true,
-          "clientVisible": false,
-          "events": [
-            "talent accepted rate-quoted outreach before presentation"
-          ],
-          "warnings": [],
-          "committedRange": {
-            "label": "Expected Booking Range",
-            "low": 216,
-            "high": 233,
-            "expectedClose": 216,
-            "currency": "USD",
-            "rangeWidth": 0.08,
-            "assumptionsIncluded": [
-              "12 hour background day",
-              "non-union actor",
-              "local minimum wage supplied by upstream compliance input"
-            ],
-            "actualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "visibility": "talent-outreach-and-admin"
-          }
-        },
-        {
-          "talent_id": "featured_actor_unknown_wage",
           "status": "accepted_at_presented_rate",
           "outreachChannel": "call_for_details_or_email_offer",
           "rateSource": "pricing_engine_project_rate",
@@ -19533,44 +19879,6 @@
             ],
             "talentId": "background_extra_actor"
           }
-        },
-        {
-          "talent_id": "featured_actor_unknown_wage",
-          "status": "needs_scope_calibration",
-          "locked_quote": 216,
-          "client_capacity": 100,
-          "quote_id": "quote_background_extra_minimum_wage_smoke__featured_actor_unknown_wage__v1",
-          "quote_version": 1,
-          "active_quote_version": 1,
-          "locked_gross_quote": 216,
-          "dfos_handoff": {
-            "source": "locked_gross_quote",
-            "lockedGrossQuote": 216,
-            "dfosMayRecalculateQuote": false,
-            "commissionCapHandledDownstream": true,
-            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
-          },
-          "events": [
-            "client evaluated locked presentation quote",
-            "scope calibration review: all evaluated talent exceeded client capacity"
-          ],
-          "warnings": [
-            "final quote exceeded client capacity",
-            "scope calibration required"
-          ],
-          "scope_calibration": {
-            "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
-            "clientBudgetType": "firm",
-            "lowestEvaluatedQuote": 216,
-            "clientCapacity": 100,
-            "gapToLowestEvaluatedQuote": 0.537,
-            "recommendedActions": [
-              "recalibrate client budget",
-              "reduce scope, usage, schedule, or deliverables",
-              "reframe as a special opt-in opportunity if appropriate"
-            ],
-            "talentId": "featured_actor_unknown_wage"
-          }
         }
       ],
       "outcomeLearning": {
@@ -19589,51 +19897,6 @@
             "status": "needs_scope_calibration",
             "cohortSignals": {
               "role": "background",
-              "category": "background",
-              "projectSizeBand": "low_cash",
-              "market": "los_angeles",
-              "clientTrustTier": "established"
-            },
-            "lockedQuote": 216,
-            "expectedRange": {
-              "low": 216,
-              "high": 233,
-              "expectedClose": 216,
-              "currency": "USD"
-            },
-            "actualizedCost": null,
-            "actualizationEvents": [],
-            "allowedActualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "rangeState": "not_actualized",
-            "varianceFromExpectedRange": null,
-            "adminCalibrationNotes": [
-              "Scope calibration required; client budget, usage, schedule, or opportunity framing does not yet support evaluated talent at locked rates."
-            ],
-            "talentGuidance": {
-              "visibility": "talent-guidance",
-              "available": false,
-              "appliesAutomatically": false,
-              "guidanceAuthority": "guidance_only",
-              "rateAuthority": "talent_owned_rate_range",
-              "messages": []
-            },
-            "calibrationAuthority": "guidance_only",
-            "rateAuthority": "talent_owned_rate_range"
-          },
-          {
-            "talent_id": "featured_actor_unknown_wage",
-            "status": "needs_scope_calibration",
-            "cohortSignals": {
-              "role": "featured",
               "category": "background",
               "projectSizeBand": "low_cash",
               "market": "los_angeles",
@@ -19698,7 +19961,16 @@
         "projectSizeBand": "low_cash",
         "projectType": "background_casting",
         "market": "unknown_market",
-        "talentClassScope": "actor"
+        "talentClassScope": "actor",
+        "marketCostContext": {
+          "available": false,
+          "source": "user_provided_cost_of_living_table",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "country": "unknown_market",
+          "baselineCountry": "France"
+        }
       },
       "clientCredibility": {
         "clientTrustScore": 45,
@@ -19745,7 +20017,7 @@
       "budgetType": "firm",
       "leadTimeDays": 14,
       "timingHorizon": "last_minute",
-      "eligibleTalentCount": 2,
+      "eligibleTalentCount": 1,
       "excluded": [
         {
           "talent": "Premium Food Tabletop Director",
@@ -19793,6 +20065,24 @@
           "talent": "Low-Rate Fast Responder",
           "reasons": [
             "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside actor role scope"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside actor role scope"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
+          "reasons": [
+            "outside actor role scope"
           ]
         }
       ],
@@ -19922,7 +20212,16 @@
             "projectSizeBand": "low_cash",
             "projectType": "background_casting",
             "market": "unknown_market",
-            "talentClassScope": "actor"
+            "talentClassScope": "actor",
+            "marketCostContext": {
+              "available": false,
+              "source": "user_provided_cost_of_living_table",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "country": "unknown_market",
+              "baselineCountry": "France"
+            }
           },
           "quoteLifecycle": {
             "quoteId": "quote_background_extra_unknown_wage_smoke__background_extra_actor__v1",
@@ -19932,7 +20231,7 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "5f6a39866b33b00b",
+            "inputSnapshotHash": "9232e0694cb48b2c",
             "lockedGrossQuote": 100,
             "dfosHandoff": {
               "source": "locked_gross_quote",
@@ -20087,300 +20386,6 @@
             "matureAutonomyCandidate": false,
             "auditRequired": true
           }
-        },
-        {
-          "talent": "Featured Actor Unknown Wage",
-          "talentClass": "actor",
-          "role": "featured",
-          "candidateSource": "algorithmic",
-          "adminInclusionOverride": null,
-          "lane": "Emerging Value",
-          "quote": 200,
-          "clientVisiblePriceState": "outside stated budget",
-          "overallScore": 0.774,
-          "creativeFit": 0.846,
-          "priceFit": 0.56,
-          "acceptanceProbability": 0.709,
-          "availabilityCheck": {
-            "talent_id": "featured_actor_unknown_wage",
-            "status": "accepted_at_presented_rate",
-            "outreachChannel": "call_for_details_or_email_offer",
-            "rateSource": "pricing_engine_project_rate",
-            "ratePresentedDuringOutreach": true,
-            "talentVisibleRate": true,
-            "proposedQuote": 200,
-            "proposedRange": {
-              "label": "Expected Booking Range",
-              "low": 184,
-              "high": 216,
-              "expectedClose": 200,
-              "currency": "USD",
-              "rangeWidth": 0.08,
-              "assumptionsIncluded": [
-                "12 hour background day",
-                "non-union actor",
-                "local minimum wage input unavailable"
-              ],
-              "actualizationTriggers": [
-                "exclusivity added",
-                "fitting added",
-                "overtime triggered",
-                "paid media added",
-                "scope materially changes after quote lock",
-                "shoot day added",
-                "union or legal requirement changes",
-                "usage expanded"
-              ],
-              "visibility": "talent-outreach-and-admin"
-            },
-            "committedQuote": 200,
-            "completedBeforeClientPresentation": true,
-            "clientVisible": false,
-            "events": [
-              "talent accepted rate-quoted outreach before presentation"
-            ],
-            "warnings": [],
-            "committedRange": {
-              "label": "Expected Booking Range",
-              "low": 184,
-              "high": 216,
-              "expectedClose": 200,
-              "currency": "USD",
-              "rangeWidth": 0.08,
-              "assumptionsIncluded": [
-                "12 hour background day",
-                "non-union actor",
-                "local minimum wage input unavailable"
-              ],
-              "actualizationTriggers": [
-                "exclusivity added",
-                "fitting added",
-                "overtime triggered",
-                "paid media added",
-                "scope materially changes after quote lock",
-                "shoot day added",
-                "union or legal requirement changes",
-                "usage expanded"
-              ],
-              "visibility": "talent-outreach-and-admin"
-            }
-          },
-          "legalFloor": {
-            "talentClass": "actor",
-            "basis": "private_working_floor",
-            "privateWorkingFloor": 100,
-            "localMinimumWageHourly": null,
-            "localMinimumWageSource": null,
-            "estimatedWorkHours": 12,
-            "minimumWageFloor": null,
-            "minimumWageStatus": "unknown",
-            "effectiveFloor": 100,
-            "warnings": [
-              "minimum_wage_floor_unknown"
-            ]
-          },
-          "expectedBookingRange": {
-            "label": "Expected Booking Range",
-            "low": 184,
-            "high": 216,
-            "expectedClose": 200,
-            "currency": "USD",
-            "rangeWidth": 0.08,
-            "assumptionsIncluded": [
-              "12 hour background day",
-              "non-union actor",
-              "local minimum wage input unavailable"
-            ],
-            "actualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "visibility": "talent-outreach-and-admin"
-          },
-          "budgetContext": {
-            "allInBudget": 5000,
-            "talentBudget": 150,
-            "talentBudgetSource": "stated_or_fixture_talent_budget",
-            "talentBudgetConfidence": "normal",
-            "talentBudgetMayBeWrong": false,
-            "talentBudgetDerivation": null,
-            "projectSizeBand": "low_cash",
-            "projectType": "background_casting",
-            "market": "unknown_market",
-            "talentClassScope": "actor"
-          },
-          "quoteLifecycle": {
-            "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-            "quoteVersion": 1,
-            "activeQuoteVersion": 1,
-            "quoteState": "locked",
-            "sourceOfTruth": "server_authoritative_active_quote",
-            "policyVersion": "phase-3-hold-expiration-v1",
-            "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "197eaf509ea2d469",
-            "lockedGrossQuote": 200,
-            "dfosHandoff": {
-              "source": "locked_gross_quote",
-              "lockedGrossQuote": 200,
-              "dfosMayRecalculateQuote": false,
-              "commissionCapHandledDownstream": true,
-              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
-            },
-            "auditEvents": [
-              {
-                "eventType": "quote_generated",
-                "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "pricing_engine",
-                "reasonCode": "computed_project_rate",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "quote_sent_to_talent",
-                "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "main_site",
-                "reasonCode": "outreach_and_lock",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "talent_accepted_quote",
-                "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "talent",
-                "reasonCode": "accepted_project_specific_rate",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "quote_locked",
-                "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "main_site",
-                "reasonCode": "accepted_before_client_visibility",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              },
-              {
-                "eventType": "quote_presented_to_client",
-                "quoteId": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-                "quoteVersion": 1,
-                "actor": "main_site",
-                "reasonCode": "client_slate_visible",
-                "timestamp": "simulation_clock",
-                "policyVersion": "phase-3-hold-expiration-v1"
-              }
-            ]
-          },
-          "marketHealth": {
-            "score": 0.8,
-            "flags": [
-              "specialist_value_protected"
-            ]
-          },
-          "timing": {
-            "horizon": "last_minute",
-            "platformTrustTier": "known",
-            "clientTrustScore": 45,
-            "clientTrustTier": "established",
-            "rateDelta": 0.04,
-            "confidenceDelta": 0.0,
-            "holdPolicy": "short confirmation window",
-            "confirmation": {
-              "required": false,
-              "state": "not_applicable",
-              "checkpointDaysBeforeStart": null,
-              "softHoldExpiresInDays": null,
-              "expiresWithoutConfirmation": false,
-              "firmHoldMinimumConfidence": null,
-              "firmHoldRequires": []
-            },
-            "reason": "under 21 days; platform last-minute urgency premium"
-          },
-          "behavior": {
-            "talentRateDelta": 0.01,
-            "clientRateDelta": 0.03,
-            "combinedBehaviorRateDelta": 0.04,
-            "talentReason": "solid dependable behavior",
-            "clientReason": "high-friction client behavior risk",
-            "talentSource": "upstream actor readiness score",
-            "clientSource": "main site clientTrustScore"
-          },
-          "aiRationales": {
-            "adminPricingRationale": {
-              "audience": "admin",
-              "visibility": "admin-only",
-              "summary": "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-              "reasons": [
-                "A +4.0% timing premium reflects the short lead time and schedule disruption.",
-                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
-              ],
-              "discretionDelta": 0.0,
-              "discretionMode": "shadow",
-              "discretionAppliesToLiveQuote": false,
-              "discretionEvidence": "No sufficient similar outcome evidence yet.",
-              "calibrationAuthority": "guidance_only",
-              "rateAuthority": "talent_owned_rate_range",
-              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
-              "humanReviewRecommended": true,
-              "leakageWarningsIfSurfaced": [
-                "percentage"
-              ]
-            },
-            "brandFacingRationale": {
-              "audience": "brand",
-              "visibility": "brand-facing",
-              "summary": "Relevant extras background with a clear connection to the brief.",
-              "reasons": [
-                "Relevant extras background with a clear connection to the brief.",
-                "The portfolio shows meaningful experience in this kind of work.",
-                "Production fit is strong across availability, scope, and schedule needs.",
-                "The profile supports a confident path through confirmation."
-              ],
-              "humanReviewRecommended": false,
-              "leakageWarnings": []
-            },
-            "talentFacingRationale": {
-              "audience": "talent",
-              "visibility": "not-generated",
-              "available": false,
-              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
-            }
-          },
-          "adminGovernance": {
-            "mode": "launch_admin_approval",
-            "approvalRequired": true,
-            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
-            "allowedAdminSettings": [
-              "timing thresholds and caps",
-              "behavior nudge caps",
-              "AI discretion mode and cap",
-              "market-health override thresholds",
-              "brand-facing rationale templates",
-              "quote lock exception categories",
-              "long-horizon hold policy settings"
-            ],
-            "maxSmallSettingTweak": 0.02,
-            "reviewReasons": [
-              "Launch mode requires admin approval before client presentation."
-            ],
-            "exceptionTriggers": [
-              "admin pricing rationale flagged for review",
-              "minimum wage floor unknown",
-              "outside stated budget"
-            ],
-            "matureAutonomyCandidate": false,
-            "auditRequired": true
-          }
         }
       ],
       "stressShortlist": [],
@@ -20450,70 +20455,6 @@
             ],
             "visibility": "talent-outreach-and-admin"
           }
-        },
-        {
-          "talent_id": "featured_actor_unknown_wage",
-          "status": "accepted_at_presented_rate",
-          "outreachChannel": "call_for_details_or_email_offer",
-          "rateSource": "pricing_engine_project_rate",
-          "ratePresentedDuringOutreach": true,
-          "talentVisibleRate": true,
-          "proposedQuote": 200,
-          "proposedRange": {
-            "label": "Expected Booking Range",
-            "low": 184,
-            "high": 216,
-            "expectedClose": 200,
-            "currency": "USD",
-            "rangeWidth": 0.08,
-            "assumptionsIncluded": [
-              "12 hour background day",
-              "non-union actor",
-              "local minimum wage input unavailable"
-            ],
-            "actualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "visibility": "talent-outreach-and-admin"
-          },
-          "committedQuote": 200,
-          "completedBeforeClientPresentation": true,
-          "clientVisible": false,
-          "events": [
-            "talent accepted rate-quoted outreach before presentation"
-          ],
-          "warnings": [],
-          "committedRange": {
-            "label": "Expected Booking Range",
-            "low": 184,
-            "high": 216,
-            "expectedClose": 200,
-            "currency": "USD",
-            "rangeWidth": 0.08,
-            "assumptionsIncluded": [
-              "12 hour background day",
-              "non-union actor",
-              "local minimum wage input unavailable"
-            ],
-            "actualizationTriggers": [
-              "exclusivity added",
-              "fitting added",
-              "overtime triggered",
-              "paid media added",
-              "scope materially changes after quote lock",
-              "shoot day added",
-              "union or legal requirement changes",
-              "usage expanded"
-            ],
-            "visibility": "talent-outreach-and-admin"
-          }
         }
       ],
       "clientDecisions": [
@@ -20537,33 +20478,12 @@
             "client evaluated locked presentation quote"
           ],
           "warnings": []
-        },
-        {
-          "talent_id": "featured_actor_unknown_wage",
-          "status": "booked",
-          "locked_quote": 200,
-          "client_capacity": 200,
-          "quote_id": "quote_background_extra_unknown_wage_smoke__featured_actor_unknown_wage__v1",
-          "quote_version": 1,
-          "active_quote_version": 1,
-          "locked_gross_quote": 200,
-          "dfos_handoff": {
-            "source": "locked_gross_quote",
-            "lockedGrossQuote": 200,
-            "dfosMayRecalculateQuote": false,
-            "commissionCapHandledDownstream": true,
-            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
-          },
-          "events": [
-            "client evaluated locked presentation quote"
-          ],
-          "warnings": []
         }
       ],
       "outcomeLearning": {
         "summary": {
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 0,
           "talentGuidanceCount": 0,
           "averageActualizationLift": 0.0,
@@ -20615,26 +20535,658 @@
             },
             "calibrationAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": []
+      },
+      "outcome": "booked",
+      "warnings": [
+        "minimum_wage_floor_unknown"
+      ]
+    },
+    {
+      "project": "France Featured Actor Market Prior Smoke Test",
+      "projectId": "featured_actor_france_market_prior",
+      "client": "High-Trust Repeat Client",
+      "budget": 12000,
+      "projectContext": {
+        "allInBudget": 250000,
+        "talentBudget": 12000,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
+        "projectSizeBand": "premium",
+        "projectType": "pan_european_commercial",
+        "market": "france",
+        "talentClassScope": "actor",
+        "marketCostContext": {
+          "available": true,
+          "source": "user_provided_cost_of_living_table",
+          "sourceFileName": "Untitled spreadsheet - Sheet1.csv",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "actualsOverride": "Paid-rate actuals by market, role, usage, and buyout structure override this prior when available.",
+          "country": "France",
+          "baselineCountry": "France",
+          "rank": 13,
+          "costOfLivingIndex": 58.0,
+          "rentIndex": 19.4,
+          "costOfLivingPlusRentIndex": 41.0,
+          "localPurchasingPowerIndex": 110.0,
+          "costOfLivingRelativeToBaseline": 1.0,
+          "localPurchasingPowerRelativeToBaseline": 1.0,
+          "talentCostPriorVsBaseline": 1.0,
+          "localBudgetLeverageVsBaseline": 1.0,
+          "expectedLocalRatePressure": "near_baseline",
+          "adminReviewRequired": true,
+          "actorMarketRatePrior": {
+            "role": "featured",
+            "referenceCountry": "France",
+            "referenceHighDayRate": 2500,
+            "referenceCurrency": "EUR",
+            "estimatedLocalHighDayRate": 2500,
+            "estimatedLocalHighDayRateCurrency": "EUR",
+            "buyoutMultiplier": 3.0,
+            "estimatedBuyout": 7500,
+            "estimatedOneShootDayTotal": 10000,
+            "currencyHandling": "relative_index_only_no_fx_conversion",
+            "basis": "user directional example while awaiting actual paid-rate data",
+            "calibrationAuthority": "advisory_prior",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        }
+      },
+      "clientCredibility": {
+        "clientTrustScore": 95,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "high_repeat",
+        "completedProjectCount": 4,
+        "verifiedBrand": true,
+        "agencyAccount": true,
+        "brandPrestigeTier": "tier_1",
+        "brandPrestigeScore": 95,
+        "brandPrestigeSource": "main_site_admin_field",
+        "brandPrestigeNotes": [
+          "high-trust repeat client with strong brand pull"
+        ],
+        "scoreBreakdown": {
+          "completedProjects": 25,
+          "completedProjectCount": 4,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 88,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
+      "readinessGate": {
+        "projectCredibilityScore": 88,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy",
+        "projectReadinessTier": "ready",
+        "projectReadinessTierSource": "derived_from_project_credibility_score",
+        "bindingQuoteThreshold": 50,
+        "bindingQuoteAllowed": true,
+        "gateState": "binding_quote_allowed",
+        "reason": "project is ready enough for binding Outreach & Lock",
+        "adminOverride": {
+          "applied": false,
+          "reasonCode": null,
+          "reason": null,
+          "actor": null
+        }
+      },
+      "budgetType": "flexible",
+      "leadTimeDays": 35,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 1,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
+          "reasons": [
+            "outside local talent market"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "France Featured Commercial Actor",
+          "talentClass": "actor",
+          "role": "featured",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Best Fit",
+          "quote": 10700,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.911,
+          "creativeFit": 0.952,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.971,
+          "availabilityCheck": {
+            "talent_id": "france_featured_commercial_actor",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 10700,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 9800,
+              "high": 11600,
+              "expectedClose": 10700,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "featured commercial actor",
+                "1 shoot day assumed",
+                "pan-European 12 month usage assumed",
+                "buyout modeled as a multiple of session fee",
+                "local production market assumed",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 10700,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 9800,
+              "high": 11600,
+              "expectedClose": 10700,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "featured commercial actor",
+                "1 shoot day assumed",
+                "pan-European 12 month usage assumed",
+                "buyout modeled as a multiple of session fee",
+                "local production market assumed",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
           },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 2500,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": 10,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "unknown",
+            "effectiveFloor": 2500,
+            "warnings": [
+              "minimum_wage_floor_unknown"
+            ]
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 9800,
+            "high": 11600,
+            "expectedClose": 10700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "featured commercial actor",
+              "1 shoot day assumed",
+              "pan-European 12 month usage assumed",
+              "buyout modeled as a multiple of session fee",
+              "local production market assumed",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 250000,
+            "talentBudget": 12000,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "pan_european_commercial",
+            "market": "france",
+            "talentClassScope": "actor",
+            "marketCostContext": {
+              "available": true,
+              "source": "user_provided_cost_of_living_table",
+              "sourceFileName": "Untitled spreadsheet - Sheet1.csv",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "actualsOverride": "Paid-rate actuals by market, role, usage, and buyout structure override this prior when available.",
+              "country": "France",
+              "baselineCountry": "France",
+              "rank": 13,
+              "costOfLivingIndex": 58.0,
+              "rentIndex": 19.4,
+              "costOfLivingPlusRentIndex": 41.0,
+              "localPurchasingPowerIndex": 110.0,
+              "costOfLivingRelativeToBaseline": 1.0,
+              "localPurchasingPowerRelativeToBaseline": 1.0,
+              "talentCostPriorVsBaseline": 1.0,
+              "localBudgetLeverageVsBaseline": 1.0,
+              "expectedLocalRatePressure": "near_baseline",
+              "adminReviewRequired": true,
+              "actorMarketRatePrior": {
+                "role": "featured",
+                "referenceCountry": "France",
+                "referenceHighDayRate": 2500,
+                "referenceCurrency": "EUR",
+                "estimatedLocalHighDayRate": 2500,
+                "estimatedLocalHighDayRateCurrency": "EUR",
+                "buyoutMultiplier": 3.0,
+                "estimatedBuyout": 7500,
+                "estimatedOneShootDayTotal": 10000,
+                "currencyHandling": "relative_index_only_no_fx_conversion",
+                "basis": "user directional example while awaiting actual paid-rate data",
+                "calibrationAuthority": "advisory_prior",
+                "rateAuthority": "talent_owned_rate_range"
+              }
+            }
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "f8f18a5728d03f55",
+            "lockedGrossQuote": 10700,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 10700,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_accepted_quote",
+                "quoteId": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "accepted_project_specific_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.8,
+            "flags": [
+              "specialist_value_protected"
+            ]
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "Brand prestige is high, but launch policy keeps desirability separate from client trust and does not apply automatic rate movement from prestige alone.",
+                "France market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep featured experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep featured experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "market cost prior requires actuals review",
+              "minimum wage floor unknown"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "adminOverrideSlate": [],
+      "adminOverrideExcluded": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "france_featured_commercial_actor",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "call_for_details_or_email_offer",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 10700,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 9800,
+            "high": 11600,
+            "expectedClose": 10700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "featured commercial actor",
+              "1 shoot day assumed",
+              "pan-European 12 month usage assumed",
+              "buyout modeled as a multiple of session fee",
+              "local production market assumed",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 10700,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 9800,
+            "high": 11600,
+            "expectedClose": 10700,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "featured commercial actor",
+              "1 shoot day assumed",
+              "pan-European 12 month usage assumed",
+              "buyout modeled as a multiple of session fee",
+              "local production market assumed",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "france_featured_commercial_actor",
+          "status": "booked",
+          "locked_quote": 10700,
+          "client_capacity": 13900,
+          "quote_id": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
+          "quote_version": 1,
+          "active_quote_version": 1,
+          "locked_gross_quote": 10700,
+          "dfos_handoff": {
+            "source": "locked_gross_quote",
+            "lockedGrossQuote": 10700,
+            "dfosMayRecalculateQuote": false,
+            "commissionCapHandledDownstream": true,
+            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+          },
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 1,
+          "talentGuidanceCount": 1,
+          "averageActualizationLift": 0.1776,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
           {
-            "talent_id": "featured_actor_unknown_wage",
+            "talent_id": "france_featured_commercial_actor",
             "status": "booked",
             "cohortSignals": {
               "role": "featured",
-              "category": "background",
-              "projectSizeBand": "low_cash",
-              "market": "unknown_market",
-              "clientTrustTier": "established"
+              "category": "beverage",
+              "projectSizeBand": "premium",
+              "market": "france",
+              "clientTrustTier": "premium"
             },
-            "lockedQuote": 200,
+            "lockedQuote": 10700,
             "expectedRange": {
-              "low": 184,
-              "high": 216,
-              "expectedClose": 200,
+              "low": 9800,
+              "high": 11600,
+              "expectedClose": 10700,
               "currency": "USD"
             },
-            "actualizedCost": 200,
-            "actualizationEvents": [],
+            "actualizedCost": 12600,
+            "actualizationEvents": [
+              "usage expanded"
+            ],
             "allowedActualizationTriggers": [
               "exclusivity added",
               "fitting added",
@@ -20645,24 +21197,729 @@
               "union or legal requirement changes",
               "usage expanded"
             ],
-            "rangeState": "inside_expected_range",
-            "varianceFromExpectedRange": 0.0,
+            "rangeState": "above_expected_range",
+            "varianceFromExpectedRange": 0.0862,
             "adminCalibrationNotes": [
-              "Booked at the locked quote inside the expected range; no formula pressure."
+              "Actualized above expected range; review range width or assumption language for similar future deals."
             ],
             "talentGuidance": {
               "visibility": "talent-guidance",
-              "available": false,
+              "available": true,
               "appliesAutomatically": false,
               "guidanceAuthority": "guidance_only",
               "rateAuthority": "talent_owned_rate_range",
-              "messages": []
+              "messages": [
+                "Similar featured outcomes are landing about 18% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
             },
             "calibrationAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range"
           }
         ],
-        "talentGuidanceExamples": []
+        "talentGuidanceExamples": [
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar featured outcomes are landing about 18% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          }
+        ]
+      },
+      "outcome": "booked",
+      "warnings": [
+        "minimum_wage_floor_unknown"
+      ]
+    },
+    {
+      "project": "Bulgaria Featured Actor Market Prior Smoke Test",
+      "projectId": "featured_actor_bulgaria_market_prior",
+      "client": "High-Trust Repeat Client",
+      "budget": 4500,
+      "projectContext": {
+        "allInBudget": 120000,
+        "talentBudget": 4500,
+        "talentBudgetSource": "stated_or_fixture_talent_budget",
+        "talentBudgetConfidence": "normal",
+        "talentBudgetMayBeWrong": false,
+        "talentBudgetDerivation": null,
+        "projectSizeBand": "premium",
+        "projectType": "pan_european_commercial",
+        "market": "bulgaria",
+        "talentClassScope": "actor",
+        "marketCostContext": {
+          "available": true,
+          "source": "user_provided_cost_of_living_table",
+          "sourceFileName": "Untitled spreadsheet - Sheet1.csv",
+          "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+          "confidence": "cost_of_living_prior_only",
+          "appliesAutomatically": false,
+          "actualsOverride": "Paid-rate actuals by market, role, usage, and buyout structure override this prior when available.",
+          "country": "Bulgaria",
+          "baselineCountry": "France",
+          "rank": 33,
+          "costOfLivingIndex": 35.4,
+          "rentIndex": 10.1,
+          "costOfLivingPlusRentIndex": 24.2,
+          "localPurchasingPowerIndex": 74.4,
+          "costOfLivingRelativeToBaseline": 0.61,
+          "localPurchasingPowerRelativeToBaseline": 0.676,
+          "talentCostPriorVsBaseline": 0.413,
+          "localBudgetLeverageVsBaseline": 2.422,
+          "expectedLocalRatePressure": "materially_lower_than_baseline",
+          "adminReviewRequired": true,
+          "actorMarketRatePrior": {
+            "role": "featured",
+            "referenceCountry": "France",
+            "referenceHighDayRate": 2500,
+            "referenceCurrency": "EUR",
+            "estimatedLocalHighDayRate": 1050,
+            "estimatedLocalHighDayRateCurrency": "EUR",
+            "buyoutMultiplier": 3.0,
+            "estimatedBuyout": 3150,
+            "estimatedOneShootDayTotal": 4200,
+            "currencyHandling": "relative_index_only_no_fx_conversion",
+            "basis": "user directional example while awaiting actual paid-rate data",
+            "calibrationAuthority": "advisory_prior",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        }
+      },
+      "clientCredibility": {
+        "clientTrustScore": 95,
+        "clientTrustTier": "premium",
+        "source": "main_site_clientScoring",
+        "timingPlatformTrustTier": "high_repeat",
+        "completedProjectCount": 4,
+        "verifiedBrand": true,
+        "agencyAccount": true,
+        "brandPrestigeTier": "tier_1",
+        "brandPrestigeScore": 95,
+        "brandPrestigeSource": "main_site_admin_field",
+        "brandPrestigeNotes": [
+          "high-trust repeat client with strong brand pull"
+        ],
+        "scoreBreakdown": {
+          "completedProjects": 25,
+          "completedProjectCount": 4,
+          "paymentSpeed": 20,
+          "personaIdVerification": 15,
+          "hasWebsite": 5,
+          "verifiedBrand": true,
+          "verifiedBrandPoints": 20,
+          "agencyAccount": true,
+          "agencyAccountPoints": 10
+        },
+        "projectCredibilityScore": 88,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy"
+      },
+      "readinessGate": {
+        "projectCredibilityScore": 88,
+        "projectCredibilitySource": "fixture_project_commitment_confidence_proxy",
+        "projectReadinessTier": "ready",
+        "projectReadinessTierSource": "derived_from_project_credibility_score",
+        "bindingQuoteThreshold": 50,
+        "bindingQuoteAllowed": true,
+        "gateState": "binding_quote_allowed",
+        "reason": "project is ready enough for binding Outreach & Lock",
+        "adminOverride": {
+          "applied": false,
+          "reasonCode": null,
+          "reason": null,
+          "actor": null
+        }
+      },
+      "budgetType": "flexible",
+      "leadTimeDays": 35,
+      "timingHorizon": "normal",
+      "eligibleTalentCount": 1,
+      "excluded": [
+        {
+          "talent": "Premium Food Tabletop Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Emerging Beauty Photographer",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Reliable Generalist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Automotive Specialist DP",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Luxury Fashion Editor",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Idle High-Quality Director",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Volatile Rep-Managed Talent",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Low-Rate Fast Responder",
+          "reasons": [
+            "outside upstream matched talent class"
+          ]
+        },
+        {
+          "talent": "Background Extra Actor",
+          "reasons": [
+            "outside actor role scope",
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "Featured Actor Unknown Wage",
+          "reasons": [
+            "outside local talent market"
+          ]
+        },
+        {
+          "talent": "France Featured Commercial Actor",
+          "reasons": [
+            "outside local talent market"
+          ]
+        }
+      ],
+      "recommendedSlate": [
+        {
+          "talent": "Bulgaria Featured Commercial Actor",
+          "talentClass": "actor",
+          "role": "featured",
+          "candidateSource": "algorithmic",
+          "adminInclusionOverride": null,
+          "lane": "Best Fit",
+          "quote": 3500,
+          "clientVisiblePriceState": "within expected range",
+          "overallScore": 0.897,
+          "creativeFit": 0.932,
+          "priceFit": 0.95,
+          "acceptanceProbability": 0.967,
+          "availabilityCheck": {
+            "talent_id": "bulgaria_featured_commercial_actor",
+            "status": "accepted_at_presented_rate",
+            "outreachChannel": "call_for_details_or_email_offer",
+            "rateSource": "pricing_engine_project_rate",
+            "ratePresentedDuringOutreach": true,
+            "talentVisibleRate": true,
+            "proposedQuote": 3500,
+            "proposedRange": {
+              "label": "Expected Booking Range",
+              "low": 3200,
+              "high": 3800,
+              "expectedClose": 3500,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "featured commercial actor",
+                "1 shoot day assumed",
+                "pan-European 12 month usage assumed",
+                "buyout modeled as a multiple of session fee",
+                "local production market assumed",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            },
+            "committedQuote": 3500,
+            "completedBeforeClientPresentation": true,
+            "clientVisible": false,
+            "events": [
+              "talent accepted rate-quoted outreach before presentation"
+            ],
+            "warnings": [],
+            "committedRange": {
+              "label": "Expected Booking Range",
+              "low": 3200,
+              "high": 3800,
+              "expectedClose": 3500,
+              "currency": "USD",
+              "rangeWidth": 0.08,
+              "assumptionsIncluded": [
+                "featured commercial actor",
+                "1 shoot day assumed",
+                "pan-European 12 month usage assumed",
+                "buyout modeled as a multiple of session fee",
+                "local production market assumed",
+                "no exclusivity assumed"
+              ],
+              "actualizationTriggers": [
+                "exclusivity added",
+                "fitting added",
+                "overtime triggered",
+                "paid media added",
+                "scope materially changes after quote lock",
+                "shoot day added",
+                "union or legal requirement changes",
+                "usage expanded"
+              ],
+              "visibility": "talent-outreach-and-admin"
+            }
+          },
+          "legalFloor": {
+            "talentClass": "actor",
+            "basis": "private_working_floor",
+            "privateWorkingFloor": 800,
+            "localMinimumWageHourly": null,
+            "localMinimumWageSource": null,
+            "estimatedWorkHours": 10,
+            "minimumWageFloor": null,
+            "minimumWageStatus": "unknown",
+            "effectiveFloor": 800,
+            "warnings": [
+              "minimum_wage_floor_unknown"
+            ]
+          },
+          "expectedBookingRange": {
+            "label": "Expected Booking Range",
+            "low": 3200,
+            "high": 3800,
+            "expectedClose": 3500,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "featured commercial actor",
+              "1 shoot day assumed",
+              "pan-European 12 month usage assumed",
+              "buyout modeled as a multiple of session fee",
+              "local production market assumed",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "budgetContext": {
+            "allInBudget": 120000,
+            "talentBudget": 4500,
+            "talentBudgetSource": "stated_or_fixture_talent_budget",
+            "talentBudgetConfidence": "normal",
+            "talentBudgetMayBeWrong": false,
+            "talentBudgetDerivation": null,
+            "projectSizeBand": "premium",
+            "projectType": "pan_european_commercial",
+            "market": "bulgaria",
+            "talentClassScope": "actor",
+            "marketCostContext": {
+              "available": true,
+              "source": "user_provided_cost_of_living_table",
+              "sourceFileName": "Untitled spreadsheet - Sheet1.csv",
+              "basis": "cost_of_living_index_and_local_purchasing_power_prior",
+              "confidence": "cost_of_living_prior_only",
+              "appliesAutomatically": false,
+              "actualsOverride": "Paid-rate actuals by market, role, usage, and buyout structure override this prior when available.",
+              "country": "Bulgaria",
+              "baselineCountry": "France",
+              "rank": 33,
+              "costOfLivingIndex": 35.4,
+              "rentIndex": 10.1,
+              "costOfLivingPlusRentIndex": 24.2,
+              "localPurchasingPowerIndex": 74.4,
+              "costOfLivingRelativeToBaseline": 0.61,
+              "localPurchasingPowerRelativeToBaseline": 0.676,
+              "talentCostPriorVsBaseline": 0.413,
+              "localBudgetLeverageVsBaseline": 2.422,
+              "expectedLocalRatePressure": "materially_lower_than_baseline",
+              "adminReviewRequired": true,
+              "actorMarketRatePrior": {
+                "role": "featured",
+                "referenceCountry": "France",
+                "referenceHighDayRate": 2500,
+                "referenceCurrency": "EUR",
+                "estimatedLocalHighDayRate": 1050,
+                "estimatedLocalHighDayRateCurrency": "EUR",
+                "buyoutMultiplier": 3.0,
+                "estimatedBuyout": 3150,
+                "estimatedOneShootDayTotal": 4200,
+                "currencyHandling": "relative_index_only_no_fx_conversion",
+                "basis": "user directional example while awaiting actual paid-rate data",
+                "calibrationAuthority": "advisory_prior",
+                "rateAuthority": "talent_owned_rate_range"
+              }
+            }
+          },
+          "quoteLifecycle": {
+            "quoteId": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+            "quoteVersion": 1,
+            "activeQuoteVersion": 1,
+            "quoteState": "locked",
+            "sourceOfTruth": "server_authoritative_active_quote",
+            "policyVersion": "phase-3-hold-expiration-v1",
+            "policyConfigPath": "simulation/config/policy.json",
+            "inputSnapshotHash": "dae803fdd812ffd9",
+            "lockedGrossQuote": 3500,
+            "dfosHandoff": {
+              "source": "locked_gross_quote",
+              "lockedGrossQuote": 3500,
+              "dfosMayRecalculateQuote": false,
+              "commissionCapHandledDownstream": true,
+              "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+            },
+            "auditEvents": [
+              {
+                "eventType": "quote_generated",
+                "quoteId": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "pricing_engine",
+                "reasonCode": "computed_project_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_sent_to_talent",
+                "quoteId": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "outreach_and_lock",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "talent_accepted_quote",
+                "quoteId": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "talent",
+                "reasonCode": "accepted_project_specific_rate",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_locked",
+                "quoteId": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "accepted_before_client_visibility",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              },
+              {
+                "eventType": "quote_presented_to_client",
+                "quoteId": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+                "quoteVersion": 1,
+                "actor": "main_site",
+                "reasonCode": "client_slate_visible",
+                "timestamp": "simulation_clock",
+                "policyVersion": "phase-3-hold-expiration-v1"
+              }
+            ]
+          },
+          "marketHealth": {
+            "score": 0.68,
+            "flags": []
+          },
+          "timing": {
+            "horizon": "normal",
+            "platformTrustTier": "high_repeat",
+            "clientTrustScore": 95,
+            "clientTrustTier": "premium",
+            "rateDelta": 0.0,
+            "confidenceDelta": 0.0,
+            "holdPolicy": "standard",
+            "confirmation": {
+              "required": false,
+              "state": "not_applicable",
+              "checkpointDaysBeforeStart": null,
+              "softHoldExpiresInDays": null,
+              "expiresWithoutConfirmation": false,
+              "firmHoldMinimumConfidence": null,
+              "firmHoldRequires": []
+            },
+            "reason": "normal lead time"
+          },
+          "behavior": {
+            "talentRateDelta": 0.01,
+            "clientRateDelta": -0.02,
+            "combinedBehaviorRateDelta": -0.01,
+            "talentReason": "solid dependable behavior",
+            "clientReason": "dependable client reduces transaction risk",
+            "talentSource": "upstream actor readiness score",
+            "clientSource": "main site clientTrustScore"
+          },
+          "aiRationales": {
+            "adminPricingRationale": {
+              "audience": "admin",
+              "visibility": "admin-only",
+              "summary": "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+              "reasons": [
+                "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
+                "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "Brand prestige is high, but launch policy keeps desirability separate from client trust and does not apply automatic rate movement from prestige alone.",
+                "Bulgaria market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."
+              ],
+              "discretionDelta": 0.0,
+              "discretionMode": "shadow",
+              "discretionAppliesToLiveQuote": false,
+              "discretionEvidence": "No sufficient similar outcome evidence yet.",
+              "calibrationAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "guidanceNote": "Outcome evidence may suggest coaching or admin review, but it does not override talent-owned rates.",
+              "humanReviewRecommended": false,
+              "leakageWarningsIfSurfaced": [
+                "percentage"
+              ]
+            },
+            "brandFacingRationale": {
+              "audience": "brand",
+              "visibility": "brand-facing",
+              "summary": "Deep featured experience and a strong creative match for the brief.",
+              "reasons": [
+                "Deep featured experience and a strong creative match for the brief.",
+                "Specialized portfolio depth supports a confident recommendation.",
+                "Production fit is strong across availability, scope, and schedule needs.",
+                "The profile supports a confident path through confirmation."
+              ],
+              "humanReviewRecommended": false,
+              "leakageWarnings": []
+            },
+            "talentFacingRationale": {
+              "audience": "talent",
+              "visibility": "not-generated",
+              "available": false,
+              "adminNote": "This pricing layer does not generate job-specific pricing rationales for talent. Talent-facing score education is handled by upstream readiness or reliability systems."
+            }
+          },
+          "adminGovernance": {
+            "mode": "launch_admin_approval",
+            "approvalRequired": true,
+            "autonomyTarget": "eventual autonomous execution with exception-based admin review",
+            "allowedAdminSettings": [
+              "timing thresholds and caps",
+              "behavior nudge caps",
+              "AI discretion mode and cap",
+              "market-health override thresholds",
+              "brand-facing rationale templates",
+              "quote lock exception categories",
+              "long-horizon hold policy settings"
+            ],
+            "maxSmallSettingTweak": 0.02,
+            "reviewReasons": [
+              "Launch mode requires admin approval before client presentation."
+            ],
+            "exceptionTriggers": [
+              "market cost prior requires actuals review",
+              "minimum wage floor unknown"
+            ],
+            "matureAutonomyCandidate": false,
+            "auditRequired": true
+          }
+        }
+      ],
+      "stressShortlist": [],
+      "adminOverrideSlate": [],
+      "adminOverrideExcluded": [],
+      "availabilityChecks": [
+        {
+          "talent_id": "bulgaria_featured_commercial_actor",
+          "status": "accepted_at_presented_rate",
+          "outreachChannel": "call_for_details_or_email_offer",
+          "rateSource": "pricing_engine_project_rate",
+          "ratePresentedDuringOutreach": true,
+          "talentVisibleRate": true,
+          "proposedQuote": 3500,
+          "proposedRange": {
+            "label": "Expected Booking Range",
+            "low": 3200,
+            "high": 3800,
+            "expectedClose": 3500,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "featured commercial actor",
+              "1 shoot day assumed",
+              "pan-European 12 month usage assumed",
+              "buyout modeled as a multiple of session fee",
+              "local production market assumed",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          },
+          "committedQuote": 3500,
+          "completedBeforeClientPresentation": true,
+          "clientVisible": false,
+          "events": [
+            "talent accepted rate-quoted outreach before presentation"
+          ],
+          "warnings": [],
+          "committedRange": {
+            "label": "Expected Booking Range",
+            "low": 3200,
+            "high": 3800,
+            "expectedClose": 3500,
+            "currency": "USD",
+            "rangeWidth": 0.08,
+            "assumptionsIncluded": [
+              "featured commercial actor",
+              "1 shoot day assumed",
+              "pan-European 12 month usage assumed",
+              "buyout modeled as a multiple of session fee",
+              "local production market assumed",
+              "no exclusivity assumed"
+            ],
+            "actualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "visibility": "talent-outreach-and-admin"
+          }
+        }
+      ],
+      "clientDecisions": [
+        {
+          "talent_id": "bulgaria_featured_commercial_actor",
+          "status": "booked",
+          "locked_quote": 3500,
+          "client_capacity": 5200,
+          "quote_id": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
+          "quote_version": 1,
+          "active_quote_version": 1,
+          "locked_gross_quote": 3500,
+          "dfos_handoff": {
+            "source": "locked_gross_quote",
+            "lockedGrossQuote": 3500,
+            "dfosMayRecalculateQuote": false,
+            "commissionCapHandledDownstream": true,
+            "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
+          },
+          "events": [
+            "client evaluated locked presentation quote"
+          ],
+          "warnings": []
+        }
+      ],
+      "outcomeLearning": {
+        "summary": {
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 1,
+          "talentGuidanceCount": 1,
+          "averageActualizationLift": 0.1714,
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        "actualizationRecords": [
+          {
+            "talent_id": "bulgaria_featured_commercial_actor",
+            "status": "booked",
+            "cohortSignals": {
+              "role": "featured",
+              "category": "beverage",
+              "projectSizeBand": "premium",
+              "market": "bulgaria",
+              "clientTrustTier": "premium"
+            },
+            "lockedQuote": 3500,
+            "expectedRange": {
+              "low": 3200,
+              "high": 3800,
+              "expectedClose": 3500,
+              "currency": "USD"
+            },
+            "actualizedCost": 4100,
+            "actualizationEvents": [
+              "usage expanded"
+            ],
+            "allowedActualizationTriggers": [
+              "exclusivity added",
+              "fitting added",
+              "overtime triggered",
+              "paid media added",
+              "scope materially changes after quote lock",
+              "shoot day added",
+              "union or legal requirement changes",
+              "usage expanded"
+            ],
+            "rangeState": "above_expected_range",
+            "varianceFromExpectedRange": 0.0789,
+            "adminCalibrationNotes": [
+              "Actualized above expected range; review range width or assumption language for similar future deals."
+            ],
+            "talentGuidance": {
+              "visibility": "talent-guidance",
+              "available": true,
+              "appliesAutomatically": false,
+              "guidanceAuthority": "guidance_only",
+              "rateAuthority": "talent_owned_rate_range",
+              "messages": [
+                "Similar featured outcomes are landing about 17% above the accepted project rate in this simulation cohort.",
+                "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+              ]
+            },
+            "calibrationAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range"
+          }
+        ],
+        "talentGuidanceExamples": [
+          {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "messages": [
+              "Similar featured outcomes are landing about 17% above the accepted project rate in this simulation cohort.",
+              "Consider testing a 3% listed-rate increase next quarter if deal flow remains healthy; this is optional guidance, not an automatic change."
+            ]
+          }
+        ]
       },
       "outcome": "booked",
       "warnings": [
@@ -20679,8 +21936,8 @@
       "clientTrustTier"
     ],
     "summary": {
-      "cohortCount": 27,
-      "cohortGuidanceCount": 11,
+      "cohortCount": 30,
+      "cohortGuidanceCount": 16,
       "calibrationAuthority": "guidance_only",
       "rateAuthority": "talent_owned_rate_range"
     },
@@ -20792,22 +22049,25 @@
           "dimension": "role",
           "value": "featured",
           "recordCount": 2,
-          "bookedRecordCount": 1,
-          "actualizedRecordCount": 1,
-          "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.1745,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
-            "Actualized outcomes stayed inside expected ranges for this cohort."
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
           "talentGuidance": {
             "visibility": "talent-guidance",
-            "available": false,
+            "available": true,
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
             "confidence": "directional_only",
-            "messages": []
+            "messages": [
+              "Directional role cohort signal: featured outcomes are landing about 17% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
           },
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
@@ -20871,9 +22131,9 @@
         {
           "dimension": "category",
           "value": "background",
-          "recordCount": 4,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 2,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 0,
           "averageActualizationLift": 0.0,
           "confidence": "directional_only",
@@ -20913,6 +22173,33 @@
             "confidence": "medium",
             "messages": [
               "Directional category cohort signal: beauty outcomes are landing about 14% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "category",
+          "value": "beverage",
+          "recordCount": 2,
+          "bookedRecordCount": 2,
+          "actualizedRecordCount": 2,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.1745,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional category cohort signal: beverage outcomes are landing about 17% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -21050,9 +22337,9 @@
         {
           "dimension": "projectSizeBand",
           "value": "low_cash",
-          "recordCount": 6,
-          "bookedRecordCount": 2,
-          "actualizedRecordCount": 2,
+          "recordCount": 4,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 0,
           "averageActualizationLift": 0.0,
           "confidence": "directional_only",
@@ -21122,11 +22409,11 @@
         {
           "dimension": "projectSizeBand",
           "value": "premium",
-          "recordCount": 5,
-          "bookedRecordCount": 4,
-          "actualizedRecordCount": 4,
-          "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.1908,
+          "recordCount": 7,
+          "bookedRecordCount": 6,
+          "actualizedRecordCount": 6,
+          "actualizedAboveExpectedRangeCount": 4,
+          "averageActualizationLift": 0.1853,
           "confidence": "medium",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -21198,6 +22485,33 @@
         },
         {
           "dimension": "market",
+          "value": "bulgaria",
+          "recordCount": 1,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 1,
+          "averageActualizationLift": 0.1714,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional market cohort signal: bulgaria outcomes are landing about 17% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
           "value": "detroit",
           "recordCount": 4,
           "bookedRecordCount": 4,
@@ -21225,8 +22539,35 @@
         },
         {
           "dimension": "market",
+          "value": "france",
+          "recordCount": 1,
+          "bookedRecordCount": 1,
+          "actualizedRecordCount": 1,
+          "actualizedAboveExpectedRangeCount": 1,
+          "averageActualizationLift": 0.1776,
+          "confidence": "directional_only",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "directional_only",
+            "messages": [
+              "Directional market cohort signal: france outcomes are landing about 18% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "market",
           "value": "los_angeles",
-          "recordCount": 11,
+          "recordCount": 10,
           "bookedRecordCount": 2,
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 0,
@@ -21277,12 +22618,12 @@
         {
           "dimension": "market",
           "value": "unknown_market",
-          "recordCount": 4,
-          "bookedRecordCount": 4,
-          "actualizedRecordCount": 4,
+          "recordCount": 3,
+          "bookedRecordCount": 3,
+          "actualizedRecordCount": 3,
           "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.0306,
-          "confidence": "medium",
+          "averageActualizationLift": 0.0408,
+          "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Actualized outcomes stayed inside expected ranges for this cohort."
           ],
@@ -21292,7 +22633,7 @@
             "appliesAutomatically": false,
             "guidanceAuthority": "guidance_only",
             "rateAuthority": "talent_owned_rate_range",
-            "confidence": "medium",
+            "confidence": "directional_only",
             "messages": []
           },
           "calibrationAuthority": "guidance_only",
@@ -21327,38 +22668,14 @@
         {
           "dimension": "clientTrustTier",
           "value": "established",
-          "recordCount": 13,
-          "bookedRecordCount": 7,
-          "actualizedRecordCount": 7,
-          "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.0796,
-          "confidence": "medium",
-          "adminCalibrationNotes": [
-            "Above-range actualization appeared in this cohort; review range width and assumptions."
-          ],
-          "talentGuidance": {
-            "visibility": "talent-guidance",
-            "available": false,
-            "appliesAutomatically": false,
-            "guidanceAuthority": "guidance_only",
-            "rateAuthority": "talent_owned_rate_range",
-            "confidence": "medium",
-            "messages": []
-          },
-          "calibrationAuthority": "guidance_only",
-          "rateAuthority": "talent_owned_rate_range"
-        },
-        {
-          "dimension": "clientTrustTier",
-          "value": "premium",
           "recordCount": 11,
           "bookedRecordCount": 6,
           "actualizedRecordCount": 6,
-          "actualizedAboveExpectedRangeCount": 0,
-          "averageActualizationLift": 0.1396,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.0928,
           "confidence": "medium",
           "adminCalibrationNotes": [
-            "Actualized outcomes stayed inside expected ranges for this cohort."
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
           ],
           "talentGuidance": {
             "visibility": "talent-guidance",
@@ -21368,7 +22685,34 @@
             "rateAuthority": "talent_owned_rate_range",
             "confidence": "medium",
             "messages": [
-              "Directional client-trust cohort signal: premium outcomes are landing about 14% above accepted project rates in this simulation sample.",
+              "Directional client-trust cohort signal: established outcomes are landing about 9% above accepted project rates in this simulation sample.",
+              "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
+            ]
+          },
+          "calibrationAuthority": "guidance_only",
+          "rateAuthority": "talent_owned_rate_range"
+        },
+        {
+          "dimension": "clientTrustTier",
+          "value": "premium",
+          "recordCount": 13,
+          "bookedRecordCount": 8,
+          "actualizedRecordCount": 8,
+          "actualizedAboveExpectedRangeCount": 2,
+          "averageActualizationLift": 0.1483,
+          "confidence": "medium",
+          "adminCalibrationNotes": [
+            "Above-range actualization appeared in this cohort; review range width and assumptions."
+          ],
+          "talentGuidance": {
+            "visibility": "talent-guidance",
+            "available": true,
+            "appliesAutomatically": false,
+            "guidanceAuthority": "guidance_only",
+            "rateAuthority": "talent_owned_rate_range",
+            "confidence": "medium",
+            "messages": [
+              "Directional client-trust cohort signal: premium outcomes are landing about 15% above accepted project rates in this simulation sample.",
               "Use this as optional market guidance only; talent-owned rates remain the authority and no rate changes apply automatically."
             ]
           },
@@ -21379,12 +22723,12 @@
     }
   },
   "metrics": {
-    "scenarioCount": 14,
-    "bookedCount": 9,
-    "bookingRate": 0.643,
+    "scenarioCount": 16,
+    "bookedCount": 11,
+    "bookingRate": 0.688,
     "longHorizonScenarioCount": 3,
     "behaviorNudgeShareOfRecommendations": 0.922,
-    "timingNudgeShareOfRecommendations": 0.314,
+    "timingNudgeShareOfRecommendations": 0.275,
     "aiRationaleCount": 51,
     "brandFacingRationaleCount": 51,
     "brandFacingRationaleLeakageCount": 0,
@@ -21393,12 +22737,15 @@
     "matureAutonomyCandidateCount": 21,
     "availabilityCheckCount": 51,
     "prePresentationTalentCounterCount": 4,
-    "minimumWageFloorAppliedCount": 2,
-    "minimumWageFloorUnknownCount": 2,
+    "minimumWageFloorAppliedCount": 1,
+    "minimumWageFloorUnknownCount": 3,
+    "marketCostPriorRecommendationCount": 2,
+    "actorMarketPriorRecommendationCount": 2,
+    "marketCostPriorReviewCount": 2,
     "expectedBookingRangeCount": 51,
-    "actualizedRecordCount": 15,
-    "actualizedAboveExpectedRangeCount": 2,
-    "talentGuidanceCount": 8,
+    "actualizedRecordCount": 16,
+    "actualizedAboveExpectedRangeCount": 4,
+    "talentGuidanceCount": 10,
     "budgetHealthWarningCount": 1,
     "scopeCalibrationCount": 3,
     "scopeCalibrationWarningCount": 3,
@@ -21410,48 +22757,49 @@
     "adminInclusionOverrideCount": 1,
     "readinessBlockedCount": 1,
     "quoteAuditEventCount": 259,
-    "averageActualizationLift": 0.1011,
-    "aiHumanReviewShareOfRecommendations": 0.549,
+    "averageActualizationLift": 0.1166,
+    "aiHumanReviewShareOfRecommendations": 0.51,
     "averageAbsoluteShadowDiscretionDelta": 0.0014,
     "maxAbsoluteShadowDiscretionDelta": 0.01,
     "adminExceptionTriggerCounts": {
       "admin inclusion override": 1,
-      "admin pricing rationale flagged for review": 28,
+      "admin pricing rationale flagged for review": 26,
       "derived talent budget requires review": 4,
+      "market cost prior requires actuals review": 2,
       "market-health guardrail": 3,
-      "minimum wage floor unknown": 2,
+      "minimum wage floor unknown": 3,
       "nonzero AI discretion proposal": 7,
-      "outside stated budget": 15,
+      "outside stated budget": 13,
       "pre-presentation talent counter": 4
     },
     "marketHealthFlagCounts": {
       "idle_access_without_discounting": 8,
       "race_to_bottom_risk": 3,
-      "specialist_value_protected": 9
+      "specialist_value_protected": 8
     },
     "warningCounts": {
       "budget-driven commodity booking risk": 1,
       "final quote exceeded client capacity": 6,
       "long-horizon commitment uncertainty": 1,
       "long-horizon hold expired": 1,
-      "minimum_wage_floor_unknown": 1,
+      "minimum_wage_floor_unknown": 3,
       "pre-presentation counter increased locked quote": 1,
       "scope calibration required": 3
     },
     "brandPrestigeTierCounts": {
       "none": 5,
-      "tier_1": 5,
+      "tier_1": 7,
       "tier_2": 2,
       "tier_3": 2
     },
-    "cohortCount": 27,
-    "cohortGuidanceCount": 11
+    "cohortCount": 30,
+    "cohortGuidanceCount": 16
   },
   "validation": {
     "status": "pass",
     "checkedRecommendationCount": 51,
     "failureCount": 0,
-    "warningCount": 2,
+    "warningCount": 3,
     "failures": [],
     "warnings": [
       {
@@ -21461,7 +22809,12 @@
       },
       {
         "code": "minimum_wage_floor_unknown",
-        "context": "background_extra_unknown_wage_smoke / Featured Actor Unknown Wage",
+        "context": "featured_actor_france_market_prior / France Featured Commercial Actor",
+        "detail": "actor quote could not be checked against local minimum wage because wage input is null"
+      },
+      {
+        "code": "minimum_wage_floor_unknown",
+        "context": "featured_actor_bulgaria_market_prior / Bulgaria Featured Commercial Actor",
         "detail": "actor quote could not be checked against local minimum wage because wage input is null"
       }
     ]

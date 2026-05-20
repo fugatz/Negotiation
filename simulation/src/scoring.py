@@ -20,6 +20,19 @@ def hard_eligible(talent: dict, project: dict) -> tuple[bool, list[str]]:
     if talent_scope != "mixed" and talent_class(talent) != talent_scope:
         reasons.append("outside upstream matched talent class")
 
+    actor_role_scope = project.get("actor_role_scope")
+    if (
+        actor_role_scope
+        and actor_role_scope not in {"any", "mixed"}
+        and talent_class(talent) == "actor"
+        and talent.get("actor_role") != actor_role_scope
+    ):
+        reasons.append("outside actor role scope")
+
+    local_talent_market = project.get("local_talent_market")
+    if local_talent_market and talent_class(talent) == "actor" and talent.get("home_market") != local_talent_market:
+        reasons.append("outside local talent market")
+
     if lead_time < int(talent["minimum_notice_days"]):
         reasons.append("below talent minimum notice window")
 

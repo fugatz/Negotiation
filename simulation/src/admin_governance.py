@@ -51,6 +51,9 @@ def build_admin_governance(rec: dict) -> dict:
         exception_triggers.append("outside stated budget")
     if rec.get("budget_context", {}).get("talentBudgetMayBeWrong"):
         exception_triggers.append("derived talent budget requires review")
+    market_cost = rec.get("budget_context", {}).get("marketCostContext", {})
+    if rec.get("legal_floor", {}).get("talentClass") == "actor" and market_cost.get("adminReviewRequired"):
+        exception_triggers.append("market cost prior requires actuals review")
 
     return {
         "mode": admin_config["mode"],

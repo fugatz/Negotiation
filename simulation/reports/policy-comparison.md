@@ -1,6 +1,6 @@
 # Policy Comparison Report
 
-Generated from dry runs on May 19, 2026.
+Generated from dry runs on May 20, 2026.
 
 Compared policies:
 
@@ -35,6 +35,9 @@ talent-owned rate or bypassing rate-quoted outreach.
 The simulator now consumes main-site `clientTrustScore` / `clientTrustTier` as product-owned inputs
 instead of treating fixture-only platform trust fields as the source of truth, and consumes brand
 prestige as a separate desirability signal.
+The simulator also now consumes the user-provided European country cost-of-living table as an
+admin-only market-cost prior for actor pricing context. France is the baseline; Bulgaria now stress-tests
+lower local rate pressure and stronger local budget leverage.
 
 The interpretation is important:
 
@@ -57,9 +60,9 @@ All other config inherits from the base policy.
 | Metric | Base | Stricter | Read |
 | --- | ---: | ---: | --- |
 | Validation | pass | pass | No policy validity regressions. |
-| Scenarios | 14 | 14 | Same fixture set, now including the ingested Mike and Ike brief fixture. |
-| Booked scenarios | 9 | 9 | Stricter ranking did not reduce booking count. |
-| Booking rate | 64.3% | 64.3% | Ingested CPG campaign books cleanly; scope calibration and missed holds still restrain conversion. |
+| Scenarios | 16 | 16 | Same fixture set, now including ingested Mike and Ike plus France/Bulgaria actor market-prior smoke tests. |
+| Booked scenarios | 11 | 11 | Stricter ranking did not reduce booking count. |
+| Booking rate | 68.8% | 68.8% | Ingested CPG and country-prior actor smoke tests book cleanly; scope calibration and missed holds still restrain conversion. |
 | Availability checks | 51 | 51 | Readiness gate blocks the exploratory low-credibility project before outreach. |
 | Pre-presentation counters | 4 | 4 | Market-health policy does not affect counter behavior. |
 | Brand-facing leakage count | 0 | 0 | Audience separation remains intact. |
@@ -70,6 +73,8 @@ All other config inherits from the base policy.
 | Readiness-blocked scenarios | 1 | 1 | Low-readiness project does not enter binding Outreach & Lock. |
 | Quote audit events | 259 | 259 | Every client-presentable recommendation has quote lifecycle audit events. |
 | Derived talent budget review triggers | 4 | 4 | Ingested all-in budget estimate stays admin-reviewed. |
+| Market-cost prior review triggers | 2 | 2 | Country priors remain advisory until paid-rate actuals exist. |
+| Actor market-prior recommendations | 2 | 2 | France and Bulgaria featured-actor smoke tests carry role/country/buyout context. |
 | Pending holds | 1 | 1 | Ready long-horizon work stays out of normal booking flow. |
 | Confirmation checkpoints | 4 | 4 | Pending and expired holds carry checkpoint plans. |
 | Hold expirations | 4 | 4 | Pending and expired holds expire without confirmation signals. |
@@ -153,7 +158,8 @@ Recommended follow-up:
 
 ### Other Scenarios
 
-Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, ingested Mike and Ike, prestige editorial,
+Firm food, flexible beauty, $500k+ beauty, $1M+ automotive, ingested Mike and Ike, France/Bulgaria actor
+market-prior smoke tests, prestige editorial,
 exploratory readiness, long-horizon, minimum wage, and bad-faith repricing scenarios have the same
 high-level outcomes under both policies. Prestige, exploratory readiness, and the minimum-wage smoke case
 resolve as `needs_scope_calibration`; the missed-checkpoint fixture resolves as `hold_expired` under both
@@ -162,6 +168,8 @@ policies.
 The ingested Mike and Ike fixture confirms that a real-shaped extraction payload can map into the
 simulation while preserving the critical distinction between all-in project budget and talent-specific
 quote capacity.
+The new France/Bulgaria fixtures confirm that market-cost priors can be attached to actor pricing context
+without becoming live rate authority or surfacing to brands/talent.
 
 Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
 That candidate appears in the admin override slate at a locked talent-approved quote, remains outside

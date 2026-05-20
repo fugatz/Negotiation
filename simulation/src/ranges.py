@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from .common import money
+from .market_cost import market_cost_context
 from .scoring import talent_class
 
 
@@ -34,6 +35,7 @@ def project_context(project: dict) -> dict:
         "projectType": project.get("project_type", project["usage_scope"]),
         "market": project.get("market", "unknown_market"),
         "talentClassScope": project.get("talent_class_scope", "production_talent"),
+        "marketCostContext": market_cost_context(project),
     }
 
 

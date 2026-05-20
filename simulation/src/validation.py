@@ -418,6 +418,53 @@ def validate_report(report: dict) -> dict:
                     context,
                     "derived talent budget should carry low or directional confidence",
                 )
+            market_cost = budget_context.get("marketCostContext", {})
+            if market_cost.get("available"):
+                _check(
+                    market_cost.get("confidence") == "cost_of_living_prior_only",
+                    failures,
+                    "market_cost_confidence_invalid",
+                    context,
+                    "country market-cost context should remain marked as a cost-of-living prior until actuals exist",
+                )
+                _check(
+                    market_cost.get("appliesAutomatically") is False,
+                    failures,
+                    "market_cost_applied_automatically",
+                    context,
+                    "country market-cost priors should not automatically override talent-owned rates",
+                )
+                if rec["talentClass"] == "actor":
+                    _check(
+                        "market cost prior requires actuals review" in governance["exceptionTriggers"],
+                        failures,
+                        "market_cost_review_exception_missing",
+                        context,
+                        "actor country market-cost priors should require actuals review before autonomy",
+                    )
+                    actor_market_prior = market_cost.get("actorMarketRatePrior")
+                    _check(
+                        actor_market_prior is not None,
+                        failures,
+                        "actor_market_prior_missing",
+                        context,
+                        "actor country market-cost context should include role-level market-rate prior details",
+                    )
+                    if actor_market_prior:
+                        _check(
+                            actor_market_prior.get("rateAuthority") == "talent_owned_rate_range",
+                            failures,
+                            "actor_market_prior_rate_authority_invalid",
+                            context,
+                            "actor market-rate priors must remain guidance and not override talent-owned rates",
+                        )
+                        _check(
+                            actor_market_prior.get("calibrationAuthority") == "advisory_prior",
+                            failures,
+                            "actor_market_prior_calibration_authority_invalid",
+                            context,
+                            "actor market-rate priors should remain advisory until paid-rate actuals mature",
+                        )
             _check(
                 availability_check.get("proposedRange") is not None,
                 failures,

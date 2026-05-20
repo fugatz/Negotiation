@@ -367,6 +367,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     pre_presentation_counter_count = 0
     minimum_wage_floor_applied_count = 0
     minimum_wage_floor_unknown_count = 0
+    market_cost_prior_count = 0
+    actor_market_prior_count = 0
+    market_cost_prior_review_count = 0
     expected_range_count = 0
     actualized_record_count = 0
     actualized_above_range_count = 0
@@ -409,6 +412,13 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 minimum_wage_floor_applied_count += 1
             if legal_floor["minimumWageStatus"] == "unknown":
                 minimum_wage_floor_unknown_count += 1
+            market_cost_context = rec["budgetContext"].get("marketCostContext", {})
+            if market_cost_context.get("available"):
+                market_cost_prior_count += 1
+            if market_cost_context.get("actorMarketRatePrior"):
+                actor_market_prior_count += 1
+            if market_cost_context.get("adminReviewRequired"):
+                market_cost_prior_review_count += 1
             if rec.get("expectedBookingRange"):
                 expected_range_count += 1
             quote_audit_event_count += len(rec["quoteLifecycle"]["auditEvents"])
@@ -461,6 +471,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "prePresentationTalentCounterCount": pre_presentation_counter_count,
         "minimumWageFloorAppliedCount": minimum_wage_floor_applied_count,
         "minimumWageFloorUnknownCount": minimum_wage_floor_unknown_count,
+        "marketCostPriorRecommendationCount": market_cost_prior_count,
+        "actorMarketPriorRecommendationCount": actor_market_prior_count,
+        "marketCostPriorReviewCount": market_cost_prior_review_count,
         "expectedBookingRangeCount": expected_range_count,
         "actualizedRecordCount": actualized_record_count,
         "actualizedAboveExpectedRangeCount": actualized_above_range_count,

@@ -81,7 +81,9 @@ Synthetic project briefs should include:
 - project size band
 - project type
 - market or location cohort supplied by upstream project data
+- country market-cost context, when supplied or inferable from market/country fields
 - talent class scope: actor, production talent, or mixed
+- actor role scope for actor-only opportunities
 - budget type
 - pricing assumptions: prep, shoot days, fitting, travel, usage, exclusivity, revisions, overtime
 - lead time in days
@@ -92,6 +94,7 @@ Synthetic project briefs should include:
 - schedule urgency
 - location
 - usage scope
+- usage territory and usage term, especially for actor buyouts
 - creative specificity
 - prestige value
 - client flexibility
@@ -200,6 +203,8 @@ The simulation should generate these internal values:
 - bounded admin setting tweak controls
 - market health score
 - recommendation lane
+- country market-cost prior state
+- actor market-rate prior state, when role, country, and usage are available
 
 Recommendation lanes:
 

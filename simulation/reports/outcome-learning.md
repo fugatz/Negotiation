@@ -1,6 +1,6 @@
 # Outcome Learning Report
 
-Generated from dry runs on May 19, 2026.
+Generated from dry runs on May 20, 2026.
 
 Source commands:
 
@@ -25,24 +25,27 @@ ranges remain the source of authority.
 | Metric | Base | Stricter Market Health |
 | --- | ---: | ---: |
 | Validation status | pass | pass |
-| Actualized records | 15 | 15 |
-| Actualized above expected range | 2 | 2 |
-| Optional talent-guidance messages | 8 | 8 |
-| Cohort summaries | 27 | 27 |
-| Optional cohort-guidance messages | 11 | 11 |
+| Actualized records | 16 | 16 |
+| Actualized above expected range | 4 | 4 |
+| Optional talent-guidance messages | 10 | 10 |
+| Cohort summaries | 30 | 30 |
+| Optional cohort-guidance messages | 16 | 16 |
 | Pending holds | 1 | 1 |
 | Confirmation checkpoints | 4 | 4 |
 | Hold expirations | 4 | 4 |
 | Expired holds | 1 | 1 |
 | Budget-health warnings | 1 | 1 |
 | Scope-calibration outcomes | 3 | 3 |
-| Average actualization lift | 10.11% | 10.11% |
+| Average actualization lift | 11.66% | 11.66% |
 | Validation failures | 0 | 0 |
 
-The two above-range records still come from the last-minute automotive stress case, where prep, travel,
+Two above-range records still come from the last-minute automotive stress case, where prep, travel,
 turnaround compression, and overtime stack beyond the expected range. The new $500k+, $1M+, and ingested
 Mike and Ike scenarios stay inside their wider expected ranges while creating separate large-scale,
 flagship, and major CPG cohort signals.
+The new France and Bulgaria featured-actor smoke tests also actualize above their narrow expected ranges
+after usage expansion, which is useful because actor buyout assumptions are exactly where country-level
+actuals should start improving the model.
 The race-to-bottom stress case now actualizes as `booked_with_market_health_warning`, so it remains part
 of conversion learning while preserving the market-health warning.
 The prestige, exploratory-readiness, and minimum-wage smoke cases now resolve as
@@ -92,9 +95,12 @@ Current directional signals:
 | Cohort | Signal |
 | --- | --- |
 | Category: automotive | 20.08% average actualization lift, above-range actualization in the last-minute stress case |
+| Category: beverage | actor market-prior smoke signal; above-range actualization after usage expansion |
 | Category: beauty | 13.52% average actualization lift, medium-confidence sample |
 | Category: food | 4.45% average actualization lift, medium-confidence sample |
+| Market: Bulgaria | country-prior smoke signal with materially lower rate pressure than France |
 | Market: Detroit | 20.08% average actualization lift, medium-confidence sample |
+| Market: France | country-prior baseline smoke signal |
 | Market: New York | 13.52% average actualization lift, medium-confidence sample |
 | Market: Unknown | 3.06% average actualization lift, medium-confidence sample |
 | Project size: flagship | 14.83% average actualization lift, directional-only sample |

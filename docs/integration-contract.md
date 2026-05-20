@@ -80,15 +80,18 @@ manual curation, or human-confirmed scope details not yet structured.
 - category and subcategory
 - project type
 - talent class scope: actor, production talent, or mixed
+- actor role scope when the opportunity targets lead, supporting, featured, or background talent
 - all-in project size band
 - stated talent budget or role budget, if available
 - budget type: firm, flexible, exploratory, prestige, unknown
 - market or jurisdiction
+- shoot country and local talent market, when known
 - shoot/work dates and lead time
 - prep days, shoot days, fitting days, travel days, post days, when known
 - usage rights: channel, media type, paid media, term length, territory, perpetuity flag
 - exclusivity: category, term, territory, competitor conflict scope
 - buyout versus day-rate structure
+- optional market-cost prior context or a country key the pricing engine can resolve
 - union status and applicable jurisdiction
 - local minimum wage inputs when known; null is allowed and should create admin review
 - minor status or minor-role flag when applicable
@@ -119,6 +122,7 @@ measures strategic desirability and talent attraction value.
 - `talent_id`
 - talent class: actor or production talent
 - production role or actor role
+- home/local market, when relevant for actor market-specific pricing
 - listed rate
 - talent-approved operating band, initially 25% below to 30% above listed rate
 - private working floor or policy floor
