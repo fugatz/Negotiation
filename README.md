@@ -50,3 +50,17 @@ Run with a policy variant:
 ```bash
 python3 -m simulation.src.runner --policy simulation/config/variants/stricter_market_health.json
 ```
+
+## Admin UI Prototype
+
+The admin prototype reads `simulation/reports/sample-runs/latest.json`.
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open:
+
+```text
+http://localhost:4173/admin-ui/
+```

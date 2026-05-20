@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Distinkt Pricing Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Distinkt</p>
+          <h1>Pricing Admin</h1>
+        </div>
+        <div class="topbar-actions">
+          <span class="status-pill" id="policyPill">Loading</span>
+          <button class="icon-button" id="refreshButton" type="button" aria-label="Refresh data" title="Refresh data">
+            <i data-lucide="refresh-cw"></i>
+          </button>
+        </div>
+      </header>
+
+      <section class="metric-strip" id="metrics"></section>
+
+      <section class="workspace">
+        <aside class="project-rail">
+          <div class="rail-head">
+            <h2>Project Queue</h2>
+            <span id="projectCount">0</span>
+          </div>
+          <div class="search-row">
+            <i data-lucide="search"></i>
+            <input id="searchInput" type="search" placeholder="Search projects or talent" />
+          </div>
+          <div class="filter-row" role="tablist" aria-label="Project filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="review">Review</button>
+            <button class="filter-button" type="button" data-filter="actuals">Actuals</button>
+            <button class="filter-button" type="button" data-filter="blocked">Blocked</button>
+          </div>
+          <div class="project-list" id="projectList"></div>
+        </aside>
+
+        <main class="review-pane">
+          <div class="project-summary" id="projectSummary"></div>
+          <div class="slate-toolbar">
+            <div>
+              <p class="eyebrow">Client Slate</p>
+              <h2 id="slateTitle">Recommendations</h2>
+            </div>
+            <div class="segmented" aria-label="Recommendation view">
+              <button class="segment active" type="button" data-view="all">All</button>
+              <button class="segment" type="button" data-view="exceptions">Exceptions</button>
+              <button class="segment" type="button" data-view="actors">Actors</button>
+            </div>
+          </div>
+          <div class="slate-list" id="slateList"></div>
+        </main>
+
+        <aside class="detail-pane" id="detailPane"></aside>
+      </section>
+    </div>
+
+    <template id="emptyStateTemplate">
+      <div class="empty-state">
+        <i data-lucide="inbox"></i>
+        <h3>No matching records</h3>
+      </div>
+    </template>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
