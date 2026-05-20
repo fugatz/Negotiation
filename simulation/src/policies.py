@@ -1,19 +1,29 @@
 from __future__ import annotations
 
 from .behavior import cap_behavior_rate_delta
-from .common import clamp, money, weighted_average
+from .common import clamp, rate_amount, weighted_average
 from .policy_config import load_policy_config
+from .talent_advocacy import actor_talent_advocacy_uplift
 
 
-def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict, client_behavior: dict) -> dict:
+def apply_nudges(
+    score: dict,
+    talent: dict,
+    project: dict,
+    timing: dict,
+    talent_behavior: dict,
+    client_behavior: dict,
+) -> dict:
     behavior_delta = cap_behavior_rate_delta(
         float(talent_behavior["rate_delta"]),
         float(client_behavior["rate_delta"]),
     )
     timing_delta = clamp(float(timing["rate_delta"]), -0.02, 0.08)
-    total_delta = timing_delta + behavior_delta
+    advocacy = actor_talent_advocacy_uplift(talent, project, score)
+    advocacy_delta = float(advocacy["rateDelta"])
+    total_delta = timing_delta + behavior_delta + advocacy_delta
 
-    quote = money(float(score["base_quote"]) * (1.0 + total_delta))
+    quote = rate_amount(float(score["base_quote"]) * (1.0 + total_delta))
     quote = max(quote, int(score.get("legal_floor", {}).get("effectiveFloor", talent["working_floor"])))
 
     confidence = clamp(
@@ -28,6 +38,7 @@ def apply_nudges(score: dict, talent: dict, timing: dict, talent_behavior: dict,
         {
             "final_quote": quote,
             "rate_delta": round(total_delta, 3),
+            "talent_advocacy_uplift": advocacy,
             "timing_nudge": timing,
             "talent_behavior_nudge": talent_behavior,
             "client_behavior_nudge": client_behavior,

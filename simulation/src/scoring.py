@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .common import clamp, money, weighted_average
+from .common import clamp, rate_amount, weighted_average
 from .market_cost import actor_agreement_floor
 
 
@@ -154,7 +154,7 @@ def base_quote(talent: dict, project: dict, fit: float) -> int:
         quote *= 1.0 - prestige_discount
 
     floor = legal_floor_state(talent, project)
-    return max(money(quote), int(floor["effectiveFloor"]))
+    return max(rate_amount(quote), int(floor["effectiveFloor"]))
 
 
 def price_fit(talent: dict, project: dict, quote: int, floor: dict) -> float:

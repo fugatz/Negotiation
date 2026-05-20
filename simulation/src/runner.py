@@ -127,6 +127,15 @@ def compact_recommendation(rec: dict, talent_by_id: dict) -> dict:
             "talentSource": rec["talent_behavior_nudge"]["source"],
             "clientSource": rec["client_behavior_nudge"]["source"],
         },
+        "talentAdvocacy": {
+            "applies": rec["talent_advocacy_uplift"]["applies"],
+            "rateDelta": round(rec["talent_advocacy_uplift"]["rateDelta"], 3),
+            "cap": round(rec["talent_advocacy_uplift"]["cap"], 3),
+            "reason": rec["talent_advocacy_uplift"]["reason"],
+            "source": rec["talent_advocacy_uplift"]["source"],
+            "rateAuthority": rec["talent_advocacy_uplift"]["rateAuthority"],
+            "clientVisible": rec["talent_advocacy_uplift"]["clientVisible"],
+        },
         "aiRationales": rec["ai_rationales"],
         "adminGovernance": build_admin_governance(rec),
     }
@@ -172,6 +181,7 @@ def simulate_project(project: dict, talent: list[dict], clients_by_id: dict, out
         adjusted = apply_nudges(
             base_score,
             person,
+            project,
             timing,
             talent_behavior_nudge(person),
             client_behavior_nudge(client),
@@ -372,6 +382,8 @@ def aggregate_metrics(traces: list[dict]) -> dict:
     actor_rate_card_count = 0
     market_cost_prior_review_count = 0
     agreement_floor_applied_count = 0
+    talent_advocacy_count = 0
+    talent_advocacy_deltas: list[float] = []
     expected_range_count = 0
     actualized_record_count = 0
     actualized_above_range_count = 0
@@ -427,6 +439,10 @@ def aggregate_metrics(traces: list[dict]) -> dict:
                 market_cost_prior_review_count += 1
             if rec.get("expectedBookingRange"):
                 expected_range_count += 1
+            advocacy = rec.get("talentAdvocacy", {})
+            if advocacy.get("applies") and float(advocacy.get("rateDelta", 0.0)) > 0:
+                talent_advocacy_count += 1
+                talent_advocacy_deltas.append(float(advocacy["rateDelta"]))
             quote_audit_event_count += len(rec["quoteLifecycle"]["auditEvents"])
             rationales = rec["aiRationales"]
             admin_rationale = rationales["adminPricingRationale"]
@@ -459,6 +475,11 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         if actualization_lifts
         else 0.0
     )
+    avg_talent_advocacy = (
+        sum(talent_advocacy_deltas) / len(talent_advocacy_deltas)
+        if talent_advocacy_deltas
+        else 0.0
+    )
 
     return {
         "scenarioCount": len(traces),
@@ -478,6 +499,9 @@ def aggregate_metrics(traces: list[dict]) -> dict:
         "minimumWageFloorAppliedCount": minimum_wage_floor_applied_count,
         "minimumWageFloorUnknownCount": minimum_wage_floor_unknown_count,
         "agreementFloorAppliedCount": agreement_floor_applied_count,
+        "talentAdvocacyUpliftCount": talent_advocacy_count,
+        "averageTalentAdvocacyUplift": round(avg_talent_advocacy, 4),
+        "maxTalentAdvocacyUplift": round(max(talent_advocacy_deltas) if talent_advocacy_deltas else 0.0, 4),
         "marketCostPriorRecommendationCount": market_cost_prior_count,
         "actorMarketPriorRecommendationCount": actor_market_prior_count,
         "actorRateCardRecommendationCount": actor_rate_card_count,

@@ -343,6 +343,7 @@ def validate_report(report: dict) -> dict:
             legal_floor = rec["legalFloor"]
             expected_range = rec["expectedBookingRange"]
             budget_context = rec["budgetContext"]
+            talent_advocacy = rec["talentAdvocacy"]
             admin_override = rec.get("adminInclusionOverride")
             quote_lifecycle = rec["quoteLifecycle"]
 
@@ -402,6 +403,27 @@ def validate_report(report: dict) -> dict:
                 "presentation_quote_not_committed",
                 context,
                 "client-facing quote must equal the pre-presentation talent committed quote",
+            )
+            _check(
+                talent_advocacy["clientVisible"] is False,
+                failures,
+                "talent_advocacy_client_visible",
+                context,
+                "talent advocacy uplift is internal/admin context and should not be client-facing",
+            )
+            _check(
+                talent_advocacy["rateAuthority"] == "talent_owned_rate_range",
+                failures,
+                "talent_advocacy_rate_authority_invalid",
+                context,
+                "talent advocacy cannot override talent-owned rate authority",
+            )
+            _check(
+                0.0 <= float(talent_advocacy["rateDelta"]) <= float(talent_advocacy["cap"]),
+                failures,
+                "talent_advocacy_cap_violation",
+                context,
+                "talent advocacy uplift must stay inside the configured cap",
             )
             if budget_context.get("talentBudgetMayBeWrong"):
                 _check(
@@ -811,6 +833,13 @@ def validate_report(report: dict) -> dict:
             )
 
             if rec["talentClass"] == "actor":
+                _check(
+                    talent_advocacy["applies"] is True,
+                    failures,
+                    "actor_talent_advocacy_missing",
+                    context,
+                    "actor recommendations should carry the bounded Distinkt talent advocacy posture",
+                )
                 if legal_floor["agreementFloorStatus"] == "known":
                     _check(
                         int(rec["quote"]) >= int(legal_floor["agreementFloor"]),

@@ -115,6 +115,12 @@ def _build_admin_pricing_rationale(
             f"A {_pct(client_behavior['rate_delta'])} client risk adjustment reflects added negotiation or scope uncertainty."
         )
 
+    talent_advocacy = rec.get("talent_advocacy_uplift", {})
+    if talent_advocacy.get("applies") and float(talent_advocacy.get("rateDelta", 0.0)) > 0:
+        reasons.append(
+            f"A {_pct(talent_advocacy['rateDelta'])} Distinkt talent-advocacy uplift reflects the default representation posture."
+        )
+
     if prestige["brandPrestigeTier"] == "tier_1":
         reasons.append(
             "Brand prestige is high, but launch policy keeps desirability separate from client trust and does not apply automatic rate movement from prestige alone."

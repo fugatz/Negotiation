@@ -69,6 +69,7 @@ python3 -m simulation.src.runner --project last_minute_automotive
 - user-provided European cost-of-living fixture for provisional country market-cost priors
 - featured-actor country prior smoke scenarios for France and Bulgaria
 - UK PACT/FAA published actor rate-card fixture for background/supporting-artist work
+- bounded Distinkt talent-advocacy uplift for actor recommendations
 - readiness gate that blocks binding Outreach & Lock when project credibility is below threshold
 - active quote lifecycle records with quote version, audit events, and DFOS no-recalculation handoff
 - expected booking ranges with assumptions and actualization triggers

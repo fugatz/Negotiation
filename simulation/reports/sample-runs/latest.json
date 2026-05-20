@@ -349,6 +349,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -396,6 +405,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -656,6 +666,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -703,6 +722,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -963,6 +983,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -1013,6 +1042,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -1277,6 +1307,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -1324,6 +1363,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -1984,6 +2024,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -2033,6 +2082,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -2294,6 +2344,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -2342,6 +2401,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -2607,6 +2667,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -2655,6 +2724,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -2911,6 +2981,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -2959,6 +3038,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -3229,6 +3309,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -3277,6 +3366,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -4105,6 +4195,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -4154,6 +4253,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -4418,6 +4518,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -4466,6 +4575,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -4734,6 +4844,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -4782,6 +4901,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -5041,6 +5161,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -5089,6 +5218,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -5784,6 +5914,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -5831,6 +5970,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -6090,6 +6230,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -6138,6 +6287,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -6397,6 +6547,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -6445,6 +6604,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -6704,6 +6864,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -6752,6 +6921,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -7464,6 +7634,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -7512,6 +7691,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -7768,6 +7948,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -7816,6 +8005,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -8072,6 +8262,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -8119,6 +8318,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -8377,6 +8577,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -8423,6 +8632,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -9137,6 +9347,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -9187,6 +9406,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -9446,6 +9666,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -9494,6 +9723,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -9753,6 +9983,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -9800,6 +10039,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -10059,6 +10299,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -10107,6 +10356,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -10903,6 +11153,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -10953,6 +11212,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -11219,6 +11479,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -11268,6 +11537,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -11529,6 +11799,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -11578,6 +11857,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -11848,6 +12128,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -11897,6 +12186,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -12604,6 +12894,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -12650,6 +12949,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -12908,6 +13208,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -12957,6 +13266,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -13219,6 +13529,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -13265,6 +13584,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -13525,6 +13845,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -13572,6 +13901,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -13838,6 +14168,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -13885,6 +14224,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -14689,6 +15029,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -14739,6 +15088,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -15005,6 +15355,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -15054,6 +15413,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -15315,6 +15675,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -15364,6 +15733,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -15634,6 +16004,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -15683,6 +16062,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -16398,6 +16778,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -16445,6 +16834,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -16706,6 +17096,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -16751,6 +17150,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -17012,6 +17412,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -17059,6 +17468,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -17318,6 +17728,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -17365,6 +17784,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -17628,6 +18048,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -17673,6 +18102,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -18364,6 +18794,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -18414,6 +18853,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -18694,6 +19134,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -18742,6 +19191,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -19019,6 +19469,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -19067,6 +19526,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -19346,6 +19806,15 @@
             "talentSource": "upstream talent reliability metric",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": false,
+            "rateDelta": 0.0,
+            "cap": 0.08,
+            "reason": "not an actor pricing context",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -19394,6 +19863,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -19893,7 +20363,7 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Best Fit",
-          "quote": 216,
+          "quote": 238,
           "clientVisiblePriceState": "outside stated budget",
           "overallScore": 0.74,
           "creativeFit": 0.993,
@@ -19906,12 +20376,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 216,
+            "proposedQuote": 238,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 216,
-              "high": 233,
-              "expectedClose": 216,
+              "low": 219,
+              "high": 257,
+              "expectedClose": 238,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -19931,7 +20401,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 216,
+            "committedQuote": 238,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -19940,9 +20410,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 216,
-              "high": 233,
-              "expectedClose": 216,
+              "low": 219,
+              "high": 257,
+              "expectedClose": 238,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -19983,9 +20453,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 216,
-            "high": 233,
-            "expectedClose": 216,
+            "low": 219,
+            "high": 257,
+            "expectedClose": 238,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -20035,11 +20505,11 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "aed4905894320aaa",
-            "lockedGrossQuote": 216,
+            "inputSnapshotHash": "3467a2891badf65d",
+            "lockedGrossQuote": 238,
             "dfosHandoff": {
               "source": "locked_gross_quote",
-              "lockedGrossQuote": 216,
+              "lockedGrossQuote": 238,
               "dfosMayRecalculateQuote": false,
               "commissionCapHandledDownstream": true,
               "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -20126,6 +20596,15 @@
             "talentSource": "upstream actor readiness score",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": true,
+            "rateDelta": 0.02,
+            "cap": 0.08,
+            "reason": "Distinkt representation posture seeks a modest lift over the computed actor baseline when booking realism allows.",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -20135,6 +20614,7 @@
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "A +2.0% Distinkt talent-advocacy uplift reflects the default representation posture.",
                 "The premium posture is defensible because creative fit is unusually strong for this category."
               ],
               "discretionDelta": 0.0,
@@ -20176,6 +20656,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -20206,12 +20687,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 216,
+          "proposedQuote": 238,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 216,
-            "high": 233,
-            "expectedClose": 216,
+            "low": 219,
+            "high": 257,
+            "expectedClose": 238,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -20231,7 +20712,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 216,
+          "committedQuote": 238,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -20240,9 +20721,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 216,
-            "high": 233,
-            "expectedClose": 216,
+            "low": 219,
+            "high": 257,
+            "expectedClose": 238,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -20268,15 +20749,15 @@
         {
           "talent_id": "background_extra_actor",
           "status": "needs_scope_calibration",
-          "locked_quote": 216,
+          "locked_quote": 238,
           "client_capacity": 100,
           "quote_id": "quote_background_extra_minimum_wage_smoke__background_extra_actor__v1",
           "quote_version": 1,
           "active_quote_version": 1,
-          "locked_gross_quote": 216,
+          "locked_gross_quote": 238,
           "dfos_handoff": {
             "source": "locked_gross_quote",
-            "lockedGrossQuote": 216,
+            "lockedGrossQuote": 238,
             "dfosMayRecalculateQuote": false,
             "commissionCapHandledDownstream": true,
             "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -20292,9 +20773,9 @@
           "scope_calibration": {
             "reason": "Stated budget or scope cannot support evaluated talent at locked outreach rates.",
             "clientBudgetType": "firm",
-            "lowestEvaluatedQuote": 216,
+            "lowestEvaluatedQuote": 238,
             "clientCapacity": 100,
-            "gapToLowestEvaluatedQuote": 0.537,
+            "gapToLowestEvaluatedQuote": 0.5798,
             "recommendedActions": [
               "recalibrate client budget",
               "reduce scope, usage, schedule, or deliverables",
@@ -20325,11 +20806,11 @@
               "market": "los_angeles",
               "clientTrustTier": "established"
             },
-            "lockedQuote": 216,
+            "lockedQuote": 238,
             "expectedRange": {
-              "low": 216,
-              "high": 233,
-              "expectedClose": 216,
+              "low": 219,
+              "high": 257,
+              "expectedClose": 238,
               "currency": "USD"
             },
             "actualizedCost": null,
@@ -20526,7 +21007,7 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Best Fit",
-          "quote": 100,
+          "quote": 110,
           "clientVisiblePriceState": "within expected range",
           "overallScore": 0.915,
           "creativeFit": 0.993,
@@ -20539,12 +21020,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 100,
+            "proposedQuote": 110,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 100,
-              "high": 108,
-              "expectedClose": 100,
+              "low": 101,
+              "high": 119,
+              "expectedClose": 110,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -20564,7 +21045,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 100,
+            "committedQuote": 110,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -20573,9 +21054,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 100,
-              "high": 108,
-              "expectedClose": 100,
+              "low": 101,
+              "high": 119,
+              "expectedClose": 110,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -20618,9 +21099,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 100,
-            "high": 108,
-            "expectedClose": 100,
+            "low": 101,
+            "high": 119,
+            "expectedClose": 110,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -20670,11 +21151,11 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "2edb2c2d82b1f458",
-            "lockedGrossQuote": 100,
+            "inputSnapshotHash": "cd2f88414004805c",
+            "lockedGrossQuote": 110,
             "dfosHandoff": {
               "source": "locked_gross_quote",
-              "lockedGrossQuote": 100,
+              "lockedGrossQuote": 110,
               "dfosMayRecalculateQuote": false,
               "commissionCapHandledDownstream": true,
               "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -20759,6 +21240,15 @@
             "talentSource": "upstream actor readiness score",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": true,
+            "rateDelta": 0.02,
+            "cap": 0.08,
+            "reason": "Distinkt representation posture seeks a modest lift over the computed actor baseline when booking realism allows.",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -20767,7 +21257,8 @@
               "reasons": [
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
-                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty."
+                "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "A +2.0% Distinkt talent-advocacy uplift reflects the default representation posture."
               ],
               "discretionDelta": 0.0,
               "discretionMode": "shadow",
@@ -20808,6 +21299,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -20838,12 +21330,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 100,
+          "proposedQuote": 110,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 100,
-            "high": 108,
-            "expectedClose": 100,
+            "low": 101,
+            "high": 119,
+            "expectedClose": 110,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -20863,7 +21355,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 100,
+          "committedQuote": 110,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -20872,9 +21364,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 100,
-            "high": 108,
-            "expectedClose": 100,
+            "low": 101,
+            "high": 119,
+            "expectedClose": 110,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -20900,15 +21392,15 @@
         {
           "talent_id": "background_extra_actor",
           "status": "booked",
-          "locked_quote": 100,
+          "locked_quote": 110,
           "client_capacity": 200,
           "quote_id": "quote_background_extra_unknown_wage_smoke__background_extra_actor__v1",
           "quote_version": 1,
           "active_quote_version": 1,
-          "locked_gross_quote": 100,
+          "locked_gross_quote": 110,
           "dfos_handoff": {
             "source": "locked_gross_quote",
-            "lockedGrossQuote": 100,
+            "lockedGrossQuote": 110,
             "dfosMayRecalculateQuote": false,
             "commissionCapHandledDownstream": true,
             "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -20940,14 +21432,14 @@
               "market": "unknown_market",
               "clientTrustTier": "established"
             },
-            "lockedQuote": 100,
+            "lockedQuote": 110,
             "expectedRange": {
-              "low": 100,
-              "high": 108,
-              "expectedClose": 100,
+              "low": 101,
+              "high": 119,
+              "expectedClose": 110,
               "currency": "USD"
             },
-            "actualizedCost": 100,
+            "actualizedCost": 110,
             "actualizationEvents": [],
             "allowedActualizationTriggers": [
               "exclusivity added",
@@ -21206,7 +21698,7 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Best Fit",
-          "quote": 125,
+          "quote": 138,
           "clientVisiblePriceState": "within expected range",
           "overallScore": 0.907,
           "creativeFit": 0.979,
@@ -21219,12 +21711,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 125,
+            "proposedQuote": 138,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 125,
-              "high": 135,
-              "expectedClose": 125,
+              "low": 127,
+              "high": 149,
+              "expectedClose": 138,
               "currency": "GBP",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -21249,7 +21741,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 125,
+            "committedQuote": 138,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -21258,9 +21750,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 125,
-              "high": 135,
-              "expectedClose": 125,
+              "low": 127,
+              "high": 149,
+              "expectedClose": 138,
               "currency": "GBP",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -21306,9 +21798,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 125,
-            "high": 135,
-            "expectedClose": 125,
+            "low": 127,
+            "high": 149,
+            "expectedClose": 138,
             "currency": "GBP",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -21428,11 +21920,11 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "f90a02fb2000431f",
-            "lockedGrossQuote": 125,
+            "inputSnapshotHash": "921012112456bb1b",
+            "lockedGrossQuote": 138,
             "dfosHandoff": {
               "source": "locked_gross_quote",
-              "lockedGrossQuote": 125,
+              "lockedGrossQuote": 138,
               "dfosMayRecalculateQuote": false,
               "commissionCapHandledDownstream": true,
               "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -21517,6 +22009,15 @@
             "talentSource": "upstream actor readiness score",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": true,
+            "rateDelta": 0.02,
+            "cap": 0.08,
+            "reason": "Distinkt representation posture seeks a modest lift over the computed actor baseline when booking realism allows.",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -21526,6 +22027,7 @@
                 "A +4.0% timing premium reflects the short lead time and schedule disruption.",
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A +3.0% client risk adjustment reflects added negotiation or scope uncertainty.",
+                "A +2.0% Distinkt talent-advocacy uplift reflects the default representation posture.",
                 "United Kingdom has a published PACT/FAA rate card available for this actor context."
               ],
               "discretionDelta": 0.0,
@@ -21567,6 +22069,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -21596,12 +22099,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 125,
+          "proposedQuote": 138,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 125,
-            "high": 135,
-            "expectedClose": 125,
+            "low": 127,
+            "high": 149,
+            "expectedClose": 138,
             "currency": "GBP",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -21626,7 +22129,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 125,
+          "committedQuote": 138,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -21635,9 +22138,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 125,
-            "high": 135,
-            "expectedClose": 125,
+            "low": 127,
+            "high": 149,
+            "expectedClose": 138,
             "currency": "GBP",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -21668,15 +22171,15 @@
         {
           "talent_id": "uk_pact_faa_background_actor",
           "status": "booked",
-          "locked_quote": 125,
+          "locked_quote": 138,
           "client_capacity": 200,
           "quote_id": "quote_uk_pact_faa_background_rate_card_smoke__uk_pact_faa_background_actor__v1",
           "quote_version": 1,
           "active_quote_version": 1,
-          "locked_gross_quote": 125,
+          "locked_gross_quote": 138,
           "dfos_handoff": {
             "source": "locked_gross_quote",
-            "lockedGrossQuote": 125,
+            "lockedGrossQuote": 138,
             "dfosMayRecalculateQuote": false,
             "commissionCapHandledDownstream": true,
             "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -21708,14 +22211,14 @@
               "market": "united_kingdom",
               "clientTrustTier": "established"
             },
-            "lockedQuote": 125,
+            "lockedQuote": 138,
             "expectedRange": {
-              "low": 125,
-              "high": 135,
-              "expectedClose": 125,
+              "low": 127,
+              "high": 149,
+              "expectedClose": 138,
               "currency": "GBP"
             },
-            "actualizedCost": 125,
+            "actualizedCost": 138,
             "actualizationEvents": [],
             "allowedActualizationTriggers": [
               "exclusivity added",
@@ -21942,7 +22445,7 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Best Fit",
-          "quote": 10700,
+          "quote": 11000,
           "clientVisiblePriceState": "within expected range",
           "overallScore": 0.911,
           "creativeFit": 0.952,
@@ -21955,12 +22458,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 10700,
+            "proposedQuote": 11000,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 9800,
-              "high": 11600,
-              "expectedClose": 10700,
+              "low": 10100,
+              "high": 11900,
+              "expectedClose": 11000,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -21983,7 +22486,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 10700,
+            "committedQuote": 11000,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -21992,9 +22495,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 9800,
-              "high": 11600,
-              "expectedClose": 10700,
+              "low": 10100,
+              "high": 11900,
+              "expectedClose": 11000,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -22040,9 +22543,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 9800,
-            "high": 11600,
-            "expectedClose": 10700,
+            "low": 10100,
+            "high": 11900,
+            "expectedClose": 11000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -22126,11 +22629,11 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "3285eb35aff05021",
-            "lockedGrossQuote": 10700,
+            "inputSnapshotHash": "6014d04142c8ea8e",
+            "lockedGrossQuote": 11000,
             "dfosHandoff": {
               "source": "locked_gross_quote",
-              "lockedGrossQuote": 10700,
+              "lockedGrossQuote": 11000,
               "dfosMayRecalculateQuote": false,
               "commissionCapHandledDownstream": true,
               "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -22217,6 +22720,15 @@
             "talentSource": "upstream actor readiness score",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": true,
+            "rateDelta": 0.03,
+            "cap": 0.08,
+            "reason": "Distinkt representation posture seeks a modest lift over the computed actor baseline when booking realism allows.",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -22225,6 +22737,7 @@
               "reasons": [
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "A +3.0% Distinkt talent-advocacy uplift reflects the default representation posture.",
                 "Brand prestige is high, but launch policy keeps desirability separate from client trust and does not apply automatic rate movement from prestige alone.",
                 "France market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."
               ],
@@ -22267,6 +22780,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -22297,12 +22811,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 10700,
+          "proposedQuote": 11000,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 9800,
-            "high": 11600,
-            "expectedClose": 10700,
+            "low": 10100,
+            "high": 11900,
+            "expectedClose": 11000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -22325,7 +22839,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 10700,
+          "committedQuote": 11000,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -22334,9 +22848,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 9800,
-            "high": 11600,
-            "expectedClose": 10700,
+            "low": 10100,
+            "high": 11900,
+            "expectedClose": 11000,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -22365,15 +22879,15 @@
         {
           "talent_id": "france_featured_commercial_actor",
           "status": "booked",
-          "locked_quote": 10700,
+          "locked_quote": 11000,
           "client_capacity": 13900,
           "quote_id": "quote_featured_actor_france_market_prior__france_featured_commercial_actor__v1",
           "quote_version": 1,
           "active_quote_version": 1,
-          "locked_gross_quote": 10700,
+          "locked_gross_quote": 11000,
           "dfos_handoff": {
             "source": "locked_gross_quote",
-            "lockedGrossQuote": 10700,
+            "lockedGrossQuote": 11000,
             "dfosMayRecalculateQuote": false,
             "commissionCapHandledDownstream": true,
             "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -22390,7 +22904,7 @@
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 1,
           "talentGuidanceCount": 1,
-          "averageActualizationLift": 0.1776,
+          "averageActualizationLift": 0.1818,
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
         },
@@ -22405,14 +22919,14 @@
               "market": "france",
               "clientTrustTier": "premium"
             },
-            "lockedQuote": 10700,
+            "lockedQuote": 11000,
             "expectedRange": {
-              "low": 9800,
-              "high": 11600,
-              "expectedClose": 10700,
+              "low": 10100,
+              "high": 11900,
+              "expectedClose": 11000,
               "currency": "USD"
             },
-            "actualizedCost": 12600,
+            "actualizedCost": 13000,
             "actualizationEvents": [
               "usage expanded"
             ],
@@ -22427,7 +22941,7 @@
               "usage expanded"
             ],
             "rangeState": "above_expected_range",
-            "varianceFromExpectedRange": 0.0862,
+            "varianceFromExpectedRange": 0.0924,
             "adminCalibrationNotes": [
               "Actualized above expected range; review range width or assumption language for similar future deals."
             ],
@@ -22655,7 +23169,7 @@
           "candidateSource": "algorithmic",
           "adminInclusionOverride": null,
           "lane": "Best Fit",
-          "quote": 3500,
+          "quote": 3600,
           "clientVisiblePriceState": "within expected range",
           "overallScore": 0.897,
           "creativeFit": 0.932,
@@ -22668,12 +23182,12 @@
             "rateSource": "pricing_engine_project_rate",
             "ratePresentedDuringOutreach": true,
             "talentVisibleRate": true,
-            "proposedQuote": 3500,
+            "proposedQuote": 3600,
             "proposedRange": {
               "label": "Expected Booking Range",
-              "low": 3200,
-              "high": 3800,
-              "expectedClose": 3500,
+              "low": 3300,
+              "high": 3900,
+              "expectedClose": 3600,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -22696,7 +23210,7 @@
               ],
               "visibility": "talent-outreach-and-admin"
             },
-            "committedQuote": 3500,
+            "committedQuote": 3600,
             "completedBeforeClientPresentation": true,
             "clientVisible": false,
             "events": [
@@ -22705,9 +23219,9 @@
             "warnings": [],
             "committedRange": {
               "label": "Expected Booking Range",
-              "low": 3200,
-              "high": 3800,
-              "expectedClose": 3500,
+              "low": 3300,
+              "high": 3900,
+              "expectedClose": 3600,
               "currency": "USD",
               "rangeWidth": 0.08,
               "assumptionsIncluded": [
@@ -22753,9 +23267,9 @@
           },
           "expectedBookingRange": {
             "label": "Expected Booking Range",
-            "low": 3200,
-            "high": 3800,
-            "expectedClose": 3500,
+            "low": 3300,
+            "high": 3900,
+            "expectedClose": 3600,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -22839,11 +23353,11 @@
             "sourceOfTruth": "server_authoritative_active_quote",
             "policyVersion": "phase-3-hold-expiration-v1",
             "policyConfigPath": "simulation/config/policy.json",
-            "inputSnapshotHash": "d2b8c329172ad15f",
-            "lockedGrossQuote": 3500,
+            "inputSnapshotHash": "5552ce50d8e9e171",
+            "lockedGrossQuote": 3600,
             "dfosHandoff": {
               "source": "locked_gross_quote",
-              "lockedGrossQuote": 3500,
+              "lockedGrossQuote": 3600,
               "dfosMayRecalculateQuote": false,
               "commissionCapHandledDownstream": true,
               "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -22928,6 +23442,15 @@
             "talentSource": "upstream actor readiness score",
             "clientSource": "main site clientTrustScore"
           },
+          "talentAdvocacy": {
+            "applies": true,
+            "rateDelta": 0.03,
+            "cap": 0.08,
+            "reason": "Distinkt representation posture seeks a modest lift over the computed actor baseline when booking realism allows.",
+            "source": "distinkt_talent_advocacy_policy",
+            "rateAuthority": "talent_owned_rate_range",
+            "clientVisible": false
+          },
           "aiRationales": {
             "adminPricingRationale": {
               "audience": "admin",
@@ -22936,6 +23459,7 @@
               "reasons": [
                 "A +1.0% talent reliability premium reflects stable quotes and low booking friction.",
                 "A -2.0% client reliability adjustment reflects lower transaction risk.",
+                "A +3.0% Distinkt talent-advocacy uplift reflects the default representation posture.",
                 "Brand prestige is high, but launch policy keeps desirability separate from client trust and does not apply automatic rate movement from prestige alone.",
                 "Bulgaria market-cost context is available as an advisory prior only; paid-rate actuals should override it when available."
               ],
@@ -22978,6 +23502,7 @@
             "allowedAdminSettings": [
               "timing thresholds and caps",
               "behavior nudge caps",
+              "talent advocacy uplift caps",
               "AI discretion mode and cap",
               "market-health override thresholds",
               "brand-facing rationale templates",
@@ -23008,12 +23533,12 @@
           "rateSource": "pricing_engine_project_rate",
           "ratePresentedDuringOutreach": true,
           "talentVisibleRate": true,
-          "proposedQuote": 3500,
+          "proposedQuote": 3600,
           "proposedRange": {
             "label": "Expected Booking Range",
-            "low": 3200,
-            "high": 3800,
-            "expectedClose": 3500,
+            "low": 3300,
+            "high": 3900,
+            "expectedClose": 3600,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -23036,7 +23561,7 @@
             ],
             "visibility": "talent-outreach-and-admin"
           },
-          "committedQuote": 3500,
+          "committedQuote": 3600,
           "completedBeforeClientPresentation": true,
           "clientVisible": false,
           "events": [
@@ -23045,9 +23570,9 @@
           "warnings": [],
           "committedRange": {
             "label": "Expected Booking Range",
-            "low": 3200,
-            "high": 3800,
-            "expectedClose": 3500,
+            "low": 3300,
+            "high": 3900,
+            "expectedClose": 3600,
             "currency": "USD",
             "rangeWidth": 0.08,
             "assumptionsIncluded": [
@@ -23076,15 +23601,15 @@
         {
           "talent_id": "bulgaria_featured_commercial_actor",
           "status": "booked",
-          "locked_quote": 3500,
+          "locked_quote": 3600,
           "client_capacity": 5200,
           "quote_id": "quote_featured_actor_bulgaria_market_prior__bulgaria_featured_commercial_actor__v1",
           "quote_version": 1,
           "active_quote_version": 1,
-          "locked_gross_quote": 3500,
+          "locked_gross_quote": 3600,
           "dfos_handoff": {
             "source": "locked_gross_quote",
-            "lockedGrossQuote": 3500,
+            "lockedGrossQuote": 3600,
             "dfosMayRecalculateQuote": false,
             "commissionCapHandledDownstream": true,
             "notes": "DFOS consumes the locked gross quote and applies downstream commission rules."
@@ -23101,7 +23626,7 @@
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 1,
           "talentGuidanceCount": 1,
-          "averageActualizationLift": 0.1714,
+          "averageActualizationLift": 0.1667,
           "calibrationAuthority": "guidance_only",
           "rateAuthority": "talent_owned_rate_range"
         },
@@ -23116,14 +23641,14 @@
               "market": "bulgaria",
               "clientTrustTier": "premium"
             },
-            "lockedQuote": 3500,
+            "lockedQuote": 3600,
             "expectedRange": {
-              "low": 3200,
-              "high": 3800,
-              "expectedClose": 3500,
+              "low": 3300,
+              "high": 3900,
+              "expectedClose": 3600,
               "currency": "USD"
             },
-            "actualizedCost": 4100,
+            "actualizedCost": 4200,
             "actualizationEvents": [
               "usage expanded"
             ],
@@ -23138,7 +23663,7 @@
               "usage expanded"
             ],
             "rangeState": "above_expected_range",
-            "varianceFromExpectedRange": 0.0789,
+            "varianceFromExpectedRange": 0.0769,
             "adminCalibrationNotes": [
               "Actualized above expected range; review range width or assumption language for similar future deals."
             ],
@@ -23302,7 +23827,7 @@
           "bookedRecordCount": 2,
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.1745,
+          "averageActualizationLift": 0.1742,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -23436,7 +23961,7 @@
           "bookedRecordCount": 2,
           "actualizedRecordCount": 2,
           "actualizedAboveExpectedRangeCount": 2,
-          "averageActualizationLift": 0.1745,
+          "averageActualizationLift": 0.1742,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -23740,7 +24265,7 @@
           "bookedRecordCount": 1,
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1714,
+          "averageActualizationLift": 0.1667,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -23794,7 +24319,7 @@
           "bookedRecordCount": 1,
           "actualizedRecordCount": 1,
           "actualizedAboveExpectedRangeCount": 1,
-          "averageActualizationLift": 0.1776,
+          "averageActualizationLift": 0.1818,
           "confidence": "directional_only",
           "adminCalibrationNotes": [
             "Above-range actualization appeared in this cohort; review range width and assumptions."
@@ -24011,6 +24536,9 @@
     "minimumWageFloorAppliedCount": 1,
     "minimumWageFloorUnknownCount": 3,
     "agreementFloorAppliedCount": 1,
+    "talentAdvocacyUpliftCount": 5,
+    "averageTalentAdvocacyUplift": 0.024,
+    "maxTalentAdvocacyUplift": 0.03,
     "marketCostPriorRecommendationCount": 3,
     "actorMarketPriorRecommendationCount": 3,
     "actorRateCardRecommendationCount": 1,
@@ -24030,7 +24558,7 @@
     "adminInclusionOverrideCount": 1,
     "readinessBlockedCount": 1,
     "quoteAuditEventCount": 264,
-    "averageActualizationLift": 0.1098,
+    "averageActualizationLift": 0.1097,
     "aiHumanReviewShareOfRecommendations": 0.519,
     "averageAbsoluteShadowDiscretionDelta": 0.0013,
     "maxAbsoluteShadowDiscretionDelta": 0.01,

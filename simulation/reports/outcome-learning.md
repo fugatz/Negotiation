@@ -36,7 +36,7 @@ ranges remain the source of authority.
 | Expired holds | 1 | 1 |
 | Budget-health warnings | 1 | 1 |
 | Scope-calibration outcomes | 3 | 3 |
-| Average actualization lift | 10.98% | 10.98% |
+| Average actualization lift | 10.97% | 10.97% |
 | Validation failures | 0 | 0 |
 
 Two above-range records still come from the last-minute automotive stress case, where prep, travel,

@@ -295,6 +295,25 @@ This is not a commercial featured/lead buyout model. It is a published agreement
 background or supporting-artist work. Supplementary fees, meal penalties, overtime, and travel allowances
 remain event-based actualization triggers.
 
+### Distinkt Talent Advocacy Uplift
+
+For actors, Distinkt should not behave as a neutral price calculator. The engine should estimate a fair
+local baseline and then try to improve the outcome for talent when booking realism allows.
+
+Initial simulation policy:
+
+- default actor talent-advocacy uplift: 3%
+- background role uplift: 2%
+- featured role uplift: 3%
+- supporting role uplift: 4%
+- lead or co-lead uplift: 5%
+- hard cap: 8%
+- published rate-card cases may use a smaller 2% uplift over the agreement floor
+
+The uplift is internal/admin context only. It is not shown to brands as pricing math and it is not shown
+to talent as a job-specific rationale. It is still subject to talent acceptance during rate-quoted
+outreach, and it does not override talent-owned rate authority.
+
 ## Actor Role Hierarchy
 
 Actor pricing needs role-weighted logic. A lead budget does not imply supporting cast share the same

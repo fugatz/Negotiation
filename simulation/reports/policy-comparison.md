@@ -40,6 +40,8 @@ admin-only market-cost prior for actor pricing context. France is the baseline; 
 lower local rate pressure and stronger local budget leverage.
 For UK background/supporting-artist work, a published PACT/FAA rate card now takes precedence over the
 country cost prior and supplies the agreement floor.
+Actor recommendations also now include a bounded Distinkt talent-advocacy uplift, which is admin-only,
+client-hidden, and capped by policy.
 
 The interpretation is important:
 
@@ -78,6 +80,9 @@ All other config inherits from the base policy.
 | Market-cost prior review triggers | 2 | 2 | Country priors remain advisory until paid-rate actuals exist. |
 | Actor market-prior recommendations | 3 | 3 | UK, France, and Bulgaria actor smoke tests carry role/country context. |
 | Actor rate-card recommendations | 1 | 1 | UK PACT/FAA supplies a published agreement floor and GBP range. |
+| Talent advocacy uplift count | 5 | 5 | Actor recommendations receive a small explicit representation uplift. |
+| Average talent advocacy uplift | 2.4% | 2.4% | Background uses 2%; featured uses 3%. |
+| Max talent advocacy uplift | 3.0% | 3.0% | Current fixture set does not include supporting/lead actor roles yet. |
 | Pending holds | 1 | 1 | Ready long-horizon work stays out of normal booking flow. |
 | Confirmation checkpoints | 4 | 4 | Pending and expired holds carry checkpoint plans. |
 | Hold expirations | 4 | 4 | Pending and expired holds expire without confirmation signals. |
@@ -173,7 +178,8 @@ simulation while preserving the critical distinction between all-in project budg
 quote capacity.
 The UK fixture confirms that published rate cards can override country-cost priors for applicable actor
 work, while the France/Bulgaria fixtures confirm that fallback market-cost priors can be attached without
-becoming live rate authority or surfacing to brands/talent.
+becoming live rate authority or surfacing to brands/talent. All three actor market fixtures now carry the
+bounded talent-advocacy posture before rate-quoted outreach.
 
 Flexible beauty now also carries one admin-curated inclusion override: Premium Food Tabletop Director.
 That candidate appears in the admin override slate at a locked talent-approved quote, remains outside

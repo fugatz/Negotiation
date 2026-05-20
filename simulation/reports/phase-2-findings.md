@@ -31,6 +31,8 @@ The current system protects against several core failure modes:
   current baseline and Bulgaria showing materially lower local rate pressure
 - the UK PACT/FAA background actor rate card is now modeled as a published agreement floor, so it
   overrides the country cost prior for applicable UK background/supporting-artist work
+- actor recommendations now carry a bounded Distinkt talent-advocacy uplift, reflecting the explicit
+  representation posture of trying to improve talent outcomes when booking realism allows
 - long-horizon work now includes confirmation checkpoints, hold expiration, and firm-hold requirements
 - missed long-horizon checkpoints release holds and require fresh rate-quoted outreach before reactivation
 - admin-curated inclusion overrides can surface edge-case talent without changing their owned rate
@@ -76,6 +78,9 @@ Policy: `phase-3-hold-expiration-v1`
 | Actor market-prior recommendations | 3 |
 | Actor rate-card recommendations | 1 |
 | Published agreement floors applied | 1 |
+| Talent advocacy uplift count | 5 |
+| Average talent advocacy uplift | 2.4% |
+| Max talent advocacy uplift | 3.0% |
 | Budget-health warnings | 1 |
 | Scope-calibration outcomes | 3 |
 | Brand-facing leakage count | 0 |
@@ -92,8 +97,8 @@ Policy: `phase-3-hold-expiration-v1`
 | $1M+ Flagship Automotive Launch | booked | Automotive specialist leads the slate with flagship range behavior. | Healthy: $1M+ projects are now separated from ordinary major campaigns. |
 | Ingested Mike and Ike Campaign | booked | Real-shaped brief extraction maps to a major all-in CPG campaign; trust is emerging while brand prestige is tier 2. | Healthy: project readiness can allow Outreach & Lock while all-in budget stays separate from talent allocation. |
 | UK PACT/FAA Background Rate Card Smoke Test | booked | Published UK PACT/FAA standard-day rate card creates a GBP 125 agreement floor and GBP expected range. | Healthy: published rate card beats the country-cost prior for applicable UK actor work. |
-| France Featured Actor Market Prior Smoke Test | booked | France is the baseline country; featured actor context produces a 2500 session / 7500 buyout prior for pan-European usage. | Healthy as admin context: prior is advisory and talent-owned rate remains authoritative. |
-| Bulgaria Featured Actor Market Prior Smoke Test | booked | Bulgaria produces about 0.413x France talent-cost prior and about 2.42x local budget leverage. | Healthy as a placeholder: actual paid-rate data should override this prior when Coke actuals arrive. |
+| France Featured Actor Market Prior Smoke Test | booked | France is the baseline country; featured actor context produces a 2500 session / 7500 buyout prior for pan-European usage, then applies a bounded actor advocacy uplift. | Healthy as admin context: prior is advisory and talent-owned rate remains authoritative. |
+| Bulgaria Featured Actor Market Prior Smoke Test | booked | Bulgaria produces about 0.413x France talent-cost prior and about 2.42x local budget leverage, then applies a bounded actor advocacy uplift. | Healthy as a placeholder: actual paid-rate data should override this prior when Coke actuals arrive. |
 | Last-Minute Automotive Shoot | booked | Urgency premium applies; unavailable specialists are excluded. | Healthy: compression is priced, but impossible options are not shown. |
 | Low-Cash Prestige Editorial | needs scope calibration | Opt-in filtering works, but all realistic options exceed client capacity. | Improved: prestige is treated as a scope/budget calibration problem, not talent underpricing pressure. |
 | Exploratory Food Research Brief | needs scope calibration | Project readiness score is 38, so binding Outreach & Lock is blocked before talent outreach. | Healthy: vague long-horizon projects should calibrate scope before consuming talent attention. |

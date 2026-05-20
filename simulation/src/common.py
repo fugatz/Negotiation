@@ -15,6 +15,12 @@ def money(value: float) -> int:
     return int(round(value / 100.0) * 100)
 
 
+def rate_amount(value: float) -> int:
+    if value < 1000:
+        return int(round(value))
+    return money(value)
+
+
 def weighted_average(parts: list[tuple[float, float]]) -> float:
     total_weight = sum(weight for _, weight in parts)
     if total_weight == 0:

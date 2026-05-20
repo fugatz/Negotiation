@@ -73,6 +73,8 @@ Key invariants:
 - Client trust and brand desirability should remain separate concepts.
 - Country market-cost priors are admin-only advisory context until paid-rate actuals exist.
 - Published actor rate cards can override country market-cost priors for applicable markets/roles.
+- Actor recommendations include a bounded internal talent-advocacy uplift because Distinkt represents
+  talent and tries to improve the outcome when booking realism allows.
 - Admin inclusion override is curation-only, not a rate override.
 - Admin overrides cannot bypass hard eligibility, legal floors, or talent acceptance.
 - Talent must see the project-specific rate during call-for-details or email-offer outreach.
@@ -95,6 +97,9 @@ Latest validated dry-run metrics:
   "marketCostPriorRecommendationCount": 3,
   "actorMarketPriorRecommendationCount": 3,
   "actorRateCardRecommendationCount": 1,
+  "talentAdvocacyUpliftCount": 5,
+  "averageTalentAdvocacyUplift": 0.024,
+  "maxTalentAdvocacyUplift": 0.03,
   "brandFacingRationaleLeakageCount": 0,
   "talentFacingJobSpecificRationaleCount": 0,
   "validationFailures": 0,
@@ -117,6 +122,7 @@ Recent simulator additions:
 - Call-for-details or email-offer outreach channel.
 - European cost-of-living fixture for France/Bulgaria actor market-prior smoke tests.
 - UK PACT/FAA published actor rate-card fixture and background actor smoke test.
+- Bounded actor talent-advocacy uplift, admin-only and never client-visible.
 
 ## Review Prompt
 
@@ -170,6 +176,7 @@ CURRENT VALIDATION:
 - Market-cost prior recommendation count: 3.
 - Actor market-prior recommendation count: 3.
 - Actor rate-card recommendation count: 1.
+- Talent advocacy uplift count: 5.
 - Nullable minimum-wage warnings are expected smoke-test warnings.
 
 REVIEW QUESTIONS:
